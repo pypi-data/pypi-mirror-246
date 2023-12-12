@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pozo
+Version: 0.1.0
+Summary: A visualization library based on plotly to explore well log data
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# Pozo
+
+Pozo is an open source, intuitive api for graphing well logs. It accepts las objects from [lasio](https://github.com/kinverarity1/lasio).
+
+This week, styling, defaults, and spanish documentation will be published.
+
+## Español
+
+Pozo es una API intuitiva, y de codigo abierto, para visualizar registros de pozos. Se acepta objetos de LAS de [lasio](https://github.com/kinverarity1/lasio).
+
+Esta semana, se publicará estilo, defectos, y más documentación!
+
+## Example/Ejemplo
+
+```python
+from pozo.graphs import Graphs
+import lasio
+las = lasio.read("/your/las/file/here") 
+Graph(las).render()
+```
