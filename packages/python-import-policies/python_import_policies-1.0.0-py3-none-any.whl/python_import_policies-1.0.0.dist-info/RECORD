@@ -1,0 +1,6 @@
+import_policies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+import_policies/contracts.py,sha256=5Gwquqw8_HPoGp4F5T-YY_KfAGm_p8f6WkIYifuDAs0,1460
+python_import_policies-1.0.0.dist-info/LICENSE.md,sha256=0dE_bBNmsniPIZbV6DYilZvqJ5VpdsFyO4UIUJXmTEo,1077
+python_import_policies-1.0.0.dist-info/METADATA,sha256=qL1bGggnAwTqxzzjXr4f8iV0yjKCKJNZvVbUveRvtBs,2247
+python_import_policies-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_import_policies-1.0.0.dist-info/RECORD,,
