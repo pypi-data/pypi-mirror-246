@@ -1,0 +1,14 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+ccamacho/.pypirc
+ccamacho/__init__.py
+ccamacho/cli.py
+ccamacho/get_banner.py
+ccamacho.egg-info/PKG-INFO
+ccamacho.egg-info/SOURCES.txt
+ccamacho.egg-info/dependency_links.txt
+ccamacho.egg-info/entry_points.txt
+ccamacho.egg-info/requires.txt
+ccamacho.egg-info/top_level.txt
