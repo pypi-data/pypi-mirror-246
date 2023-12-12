@@ -1,0 +1,17 @@
+matplotlib
+scipy
+opencv-python
+numpy
+pandas
+pydantic
+tqdm
+shapely
+pyvista
+scikit-image
+scikit-learn
+sympy
+streamlit
+stpyvista
+pyecharts
+streamlit_echarts
+plotly
