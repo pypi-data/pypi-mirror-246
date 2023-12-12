@@ -1,0 +1,2 @@
+[console_scripts]
+timeanalysismoon = timeanalysismoon.cli:main
