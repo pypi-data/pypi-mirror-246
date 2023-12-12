@@ -1,0 +1,10 @@
+nestedjson2sql/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+nestedjson2sql/main.py,sha256=DTx5Woab6qz24G5BIDjISfYpdgEeS9fs-oghZ-plmpw,901
+nestedjson2sql/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nestedjson2sql/src/json_processor.py,sha256=Xft2zLSsvsGblfuilA1dAV_Bj3DUBSEyO5Jmb6gWrL4,1161
+nestedjson2sql/src/sql_processor.py,sha256=bF4g6Z47xaoxSTIff9hc8dvDmtq0ymiYb3-xlQKW8Bo,639
+nestedjson2sql-0.1.0.dist-info/METADATA,sha256=YZHaO9-UNgv0Hnk2YVaKx8puD4Iw0M_rNmo9-HfPvnU,138
+nestedjson2sql-0.1.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+nestedjson2sql-0.1.0.dist-info/entry_points.txt,sha256=HpyGda-ox3TqwOl5TjLtq608flyNW-rj7K0MOLGohJU,54
+nestedjson2sql-0.1.0.dist-info/top_level.txt,sha256=dOPHWWWgMw0K7sK4FHHa_RupFk8cwJXIptq67SRAzBc,15
+nestedjson2sql-0.1.0.dist-info/RECORD,,
