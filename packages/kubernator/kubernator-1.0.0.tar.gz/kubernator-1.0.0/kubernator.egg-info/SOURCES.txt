@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+kubernator/LICENSE
+kubernator/__init__.py
+kubernator/__main__.py
+kubernator/api.py
+kubernator/app.py
+kubernator/proc.py
+kubernator.egg-info/PKG-INFO
+kubernator.egg-info/SOURCES.txt
+kubernator.egg-info/dependency_links.txt
+kubernator.egg-info/entry_points.txt
+kubernator.egg-info/namespace_packages.txt
+kubernator.egg-info/requires.txt
+kubernator.egg-info/top_level.txt
+kubernator.egg-info/zip-safe
