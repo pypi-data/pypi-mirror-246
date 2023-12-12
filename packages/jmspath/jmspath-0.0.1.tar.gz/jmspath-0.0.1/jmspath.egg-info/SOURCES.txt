@@ -1,0 +1,6 @@
+setup.py
+jmspath.egg-info/PKG-INFO
+jmspath.egg-info/SOURCES.txt
+jmspath.egg-info/dependency_links.txt
+jmspath.egg-info/not-zip-safe
+jmspath.egg-info/top_level.txt
