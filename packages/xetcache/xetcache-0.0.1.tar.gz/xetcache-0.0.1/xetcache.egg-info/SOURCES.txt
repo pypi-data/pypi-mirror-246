@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+xetcache/__init__.py
+xetcache/config.py
+xetcache/util.py
+xetcache/xetmemo_kernel_extension.py
+xetcache.egg-info/PKG-INFO
+xetcache.egg-info/SOURCES.txt
+xetcache.egg-info/dependency_links.txt
+xetcache.egg-info/requires.txt
+xetcache.egg-info/top_level.txt
