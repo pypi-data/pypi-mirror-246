@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hdf
+Version: 2023.12.4
+Summary: Framework for personal use.
+Author: Horia Filimonescu
+Author-email: horia.filimonescu+github@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: flask-mail (>=0.9.1,<0.10.0)
+Requires-Dist: flask-marshmallow (>=0.15.0,<0.16.0)
+Requires-Dist: flask-migrate (>=4.0.5,<5.0.0)
+Requires-Dist: flask-sqlalchemy (>=3.1.1,<4.0.0)
+Requires-Dist: marshmallow-sqlalchemy (>=0.29.0,<0.30.0)
+Requires-Dist: setuptools (>=69.0.2,<70.0.0)
+Description-Content-Type: text/markdown
+
+

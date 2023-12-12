@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hdf"
+version = "2023.12.4"
+description = "Framework for personal use."
+authors = ["Horia Filimonescu <horia.filimonescu+github@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "hdf", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.0"
+flask-sqlalchemy = "^3.1.1"
+flask-migrate = "^4.0.5"
+flask-mail = "^0.9.1"
+flask-marshmallow = "^0.15.0"
+setuptools = "^69.0.2"
+marshmallow-sqlalchemy = "^0.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
