@@ -1,0 +1,4 @@
+django
+multidb_admin
+waffle_app
+waffle_project
