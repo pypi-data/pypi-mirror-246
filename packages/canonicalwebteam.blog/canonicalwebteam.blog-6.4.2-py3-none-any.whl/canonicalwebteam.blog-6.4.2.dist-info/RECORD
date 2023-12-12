@@ -1,0 +1,14 @@
+canonicalwebteam/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+canonicalwebteam/blog/__init__.py,sha256=7EMO2_ZAoXYDumYT9_7VtdSPJePSDUpzMOqmQi93h54,299
+canonicalwebteam/blog/blog_api.py,sha256=7z89dYdjUeGyXS8MKQV-n0x8vMEIyPnkYZM6uQw2H94,8343
+canonicalwebteam/blog/blueprint.py,sha256=HPexKB8igbeHFtddZFN2v5Y7G_FUuIHb5tXROw6hV-o,5308
+canonicalwebteam/blog/views.py,sha256=cbuhUO0PdnKWTvvL2eAFh7nXU6jEMguYpaUo68tUWdc,14778
+canonicalwebteam/blog/wordpress.py,sha256=2tRz7_D-6FSiMArCzK6p8eMdtFAaGM84Vb52-JSYwI4,5022
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_blog_api.py,sha256=WqTk1Zc-K7iXj6tP_ikL46tp6NfKFd-OgUewPq5uBbo,4289
+tests/test_blueprint.py,sha256=-_P8qeFGD7Mi-1VwQI6lrBM5t26k8iiebXxpFtBh9Ec,8753
+tests/test_wordpress.py,sha256=y71_rRCh_gQCAg61qIV7vtaR32QAKombqn2UhNjBKSE,3025
+canonicalwebteam.blog-6.4.2.dist-info/METADATA,sha256=IQDaTRYRuBKHIp_OaasW6YJ0qQ5fd_E3zo8OqVUhY-4,2997
+canonicalwebteam.blog-6.4.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+canonicalwebteam.blog-6.4.2.dist-info/top_level.txt,sha256=3QzUW8NsRMpxkXDuvyTsaZnBKpWaxA2k0Ofz7ELl5eM,23
+canonicalwebteam.blog-6.4.2.dist-info/RECORD,,
