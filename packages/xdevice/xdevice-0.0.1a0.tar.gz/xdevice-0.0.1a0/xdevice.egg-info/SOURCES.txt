@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+xdevice/__init__.py
+xdevice/device.py
+xdevice.egg-info/PKG-INFO
+xdevice.egg-info/SOURCES.txt
+xdevice.egg-info/dependency_links.txt
+xdevice.egg-info/top_level.txt
