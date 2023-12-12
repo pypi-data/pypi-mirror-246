@@ -1,0 +1,3 @@
+lightcon
+spinnaker-python==2.0.0.147
+lklib
