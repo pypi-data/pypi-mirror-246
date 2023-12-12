@@ -1,0 +1,10 @@
+gammaspotter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gammaspotter/cli.py,sha256=Ii-Xxh_gWjcbMFziKnn8Gx_fh006Gi9amb9-_sHrxi4,5503
+gammaspotter/fit_models.py,sha256=z_Sw__H83oMflGu3SRmQA5vj5tclNOgnS09t7vBLmB4,303
+gammaspotter/gui.py,sha256=3gDKwT45sV6kXRtLvIM2-Ypm1Uq2iQPEZKCsRyr4hY8,26943
+gammaspotter/match_features.py,sha256=Bs2PcuYLtIqU8N4EX7LegBK68kcZxSWcvWaYP-N7MX8,2522
+gammaspotter/process_data.py,sha256=73-qsX-CWIAI9aATKMfcwgRmdfd-eboocpAlfV_ndRs,6163
+gammaspotter-0.1.0.dist-info/entry_points.txt,sha256=cAbZVAvVOVIfQ-U7pwdeqRZiNqrvKzNxFOnz9mtVB58,54
+gammaspotter-0.1.0.dist-info/METADATA,sha256=A-PnX-QblQ3ZS8oJkrdGjthwpKNp7hue3CKC8UfTeoQ,2763
+gammaspotter-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gammaspotter-0.1.0.dist-info/RECORD,,
