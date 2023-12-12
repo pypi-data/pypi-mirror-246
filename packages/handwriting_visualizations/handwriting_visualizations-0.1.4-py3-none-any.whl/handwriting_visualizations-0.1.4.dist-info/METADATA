@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: handwriting_visualizations
+Version: 0.1.4
+Summary: 
+Author: Bdalab team
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: handwriting-features (>=1.0.8,<2.0.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Description-Content-Type: text/markdown
+
+# Handwriting visualizations
+- stable version: 0.1.4
+
+
+
