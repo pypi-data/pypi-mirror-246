@@ -1,0 +1,34 @@
+# godel-jupyter
+Godel 的 Jupyter 内核。提供在 Jupyter 环境上 交互式地执行 Godel 脚本
+
+This requires IPython 3, metakernel and json2html.
+
+## 安装
+godel-jupyter 已经上传到蚂蚁内部的 PyPi 上，使用 Python的包安装器 pip 安装 godel-jupyter：
+```shell
+pip3 install godel-jupyter -i https://pypi.antfin-inc.com/simple/
+python3 -m godel-jupyter install
+```
+## 使用
+在 Jupyter notebook 界面新建 notebook，选择 `Godel kernel`
+
+```shell
+# In the notebook interface, select Godel kernel from the 'New' menu
+jupyter notebook
+```
+
+## 发布
+
+首先确认你有权限访问 [蚂蚁 Artifacts PyPI 制品库](https://artifacts.antgroup-inc.cn) ，一般使用域账号即可登陆。
+
+然后确认你有 [godel-jupyter](https://artifacts.antgroup-inc.cn/artifact/repositories/simple/godel-jupyter/) 的`write`权限，权限问题可以联系友恒。
+
+* 蚂蚁PyPI教程：[蚂蚁 Artifacts PyPI 制品库 Token 使用说明](https://yuque.antfin.com/docs/share/66814f52-3f0b-4e7c-aa95-0a944eac05fa?#)
+
+确认 `godel-jupyter/__init__.py` 里的版本，最后运行命令：
+```bash
+make release
+```
+
+## 版权声明
+[Copyright (c) 2004, Alipay.com Inc. - All Rights Reserved.](LICENSE)

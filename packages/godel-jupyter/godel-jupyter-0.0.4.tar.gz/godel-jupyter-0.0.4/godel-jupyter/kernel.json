@@ -1,0 +1,13 @@
+{
+    "argv": [
+        "python",
+        "-m",
+        "godel-jupyter",
+        "-f",
+        "{connection_file}"
+    ],
+    "display_name": "Godel kernel",
+    "language": "rust",
+    "mimetype": "text/x-sh",
+    "name": "godel-jupyter"
+}

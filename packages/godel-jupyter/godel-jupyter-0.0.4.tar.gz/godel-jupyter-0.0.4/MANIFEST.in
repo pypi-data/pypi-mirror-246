@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include setup.py
+include Makefile
+include getting_started.ipynb
+include test_kernel.py
+recursive-include godel-jupyter *.py *.json *.png
