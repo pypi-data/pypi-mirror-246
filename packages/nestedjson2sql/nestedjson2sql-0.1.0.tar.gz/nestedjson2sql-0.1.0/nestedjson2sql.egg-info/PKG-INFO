@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: nestedjson2sql
+Version: 0.1.0
+Requires-Dist: json-relational
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
