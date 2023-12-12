@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: django-microservices-communication
+Version: 2.1.0
+Summary: Pub/Sub for service on django
+Home-page: https://github.com/ksinn/django-microservices-communication
+Author: ksinn
+Author-email: ksinnd@gmail.com
+Description-Content-Type: text/markdown
