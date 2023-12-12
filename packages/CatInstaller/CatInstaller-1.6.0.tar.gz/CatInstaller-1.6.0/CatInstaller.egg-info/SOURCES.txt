@@ -1,0 +1,9 @@
+README.rst
+setup.py
+CatInstaller/__init__.py
+CatInstaller/__main__.py
+CatInstaller.egg-info/PKG-INFO
+CatInstaller.egg-info/SOURCES.txt
+CatInstaller.egg-info/dependency_links.txt
+CatInstaller.egg-info/requires.txt
+CatInstaller.egg-info/top_level.txt
