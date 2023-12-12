@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "python-import-policies"
+version = "1.0.0"
+description = "Import Policies"
+license = "MIT"
+authors = ["Yunier Rojas <yunier@sombra.cc>"]
+readme = "README.md"
+packages = [{ include = "import_policies" }]
+maintainers = [
+    "Yunier Rojas García <yunier.rojas@gmail.com>",
+]
+repository = "https://gitlab.com/sombrahq/python-libs/python-import-policies"
+keywords = ["python", "import", "policy"]
+classifiers = [
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+import-linter = "^1.12.1"
+
+[tool.poetry.group.ci.dependencies]
+python-semantic-release = "^8.3.0"
+
+[tool.poetry.group.local.dependencies]
+skjold = "^0.6.1"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
