@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+learngene/__init__.py
+learngene.egg-info/PKG-INFO
+learngene.egg-info/SOURCES.txt
+learngene.egg-info/dependency_links.txt
+learngene.egg-info/requires.txt
+learngene.egg-info/top_level.txt
