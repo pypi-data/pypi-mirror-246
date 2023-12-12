@@ -1,0 +1,8 @@
+README.md
+setup.py
+fusionx3.egg-info/PKG-INFO
+fusionx3.egg-info/SOURCES.txt
+fusionx3.egg-info/dependency_links.txt
+fusionx3.egg-info/top_level.txt
+src/__init__.py
+src/main.py
