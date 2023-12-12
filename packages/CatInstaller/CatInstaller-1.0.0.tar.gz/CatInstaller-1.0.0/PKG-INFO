@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: CatInstaller
+Version: 1.0.0
+Summary: Catch file, and Installing.
+Home-page: http://github.com/diamondgotcat/CatInstaller
+Author: TechCat56
+Author-email: techcat28@gmail.com
+License: MIT
+Keywords: Install,Catch,Download
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: rich
+Requires-Dist: requests
+
+CatInstaller
+##
+
+CatInstaller is an installer that allows you to easily install something on your OS.
+
+All you need is Python and the necessary modules.
+
+How to support CatInstaller
+==
+
+To support CatInstaller, simply write a program in a Python file.
+
+Upload Installer.py to GitHub and it will be ready for installation.
+
+Installer.py must be written in the following format.
+
+::
+
+  requiments = ["time"] # Enter the required Python modules here.
+
+  numbersofprogress = 10 # Enter the steps
+
+  import time # import required python modules
+
+  def install(progress): # "progress" is number of steps
+      print("Output ", progress) # Enter the install process here.
+
+  # Enter the other functions...
