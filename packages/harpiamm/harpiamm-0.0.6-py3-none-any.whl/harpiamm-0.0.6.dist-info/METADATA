@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: harpiamm
+Version: 0.0.6
+Summary: A Python library for the HARPIA microscopy module.
+Home-page: https://bitbucket.org/lukaskontenis/harpiamm/
+Author: Lukas Kontenis
+Author-email: lukas.kontenis@lightcon.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lightcon
+Requires-Dist: spinnaker-python (>=2.0.0.147)
+Requires-Dist: lklib (>=0.0.16)
+
+=== harpiamm ===
+
+A Python library for the HARPIA microscopy module.
+
+Author: Lukas Kontenis
+Copyright 2019-2020 Light Conversion
+Contact: lukas.kontenis@lightcon.com, dse.ssd@gmail.com
+
+
