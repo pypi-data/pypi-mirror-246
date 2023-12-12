@@ -1,0 +1,14 @@
+/open_pdk
+/c4m/pdk/ihpsg13g2/models
+/MANIFEST.in
+/drc
+
+/tarballs
+
+__pycache__
+/build
+/dist
+c4m_pdk_ihpsg13g2.egg-info
+
+.doit.db*
+.ipynb_checkpoints

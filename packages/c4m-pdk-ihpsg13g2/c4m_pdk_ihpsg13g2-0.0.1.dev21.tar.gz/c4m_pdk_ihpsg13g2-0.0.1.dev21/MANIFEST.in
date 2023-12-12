@@ -1,0 +1,14 @@
+include c4m/pdk/ihpsg13g2/models/sg13g2_moslv_mod.lib
+include c4m/pdk/ihpsg13g2/models/sg13g2_moslv_parm.lib
+include c4m/pdk/ihpsg13g2/models/sg13g2_moslv_stat.lib
+include c4m/pdk/ihpsg13g2/models/cornerMOSlv.lib
+include c4m/pdk/ihpsg13g2/models/sg13g2_moshv_mod.lib
+include c4m/pdk/ihpsg13g2/models/sg13g2_moshv_parm.lib
+include c4m/pdk/ihpsg13g2/models/sg13g2_moshv_stat.lib
+include c4m/pdk/ihpsg13g2/models/cornerMOShv.lib
+include c4m/pdk/ihpsg13g2/models/resistors_mod.lib
+include c4m/pdk/ihpsg13g2/models/resistors_parm.lib
+include c4m/pdk/ihpsg13g2/models/resistors_stat.lib
+include c4m/pdk/ihpsg13g2/models/cornerRES.lib
+include c4m/pdk/ihpsg13g2/models/diodes.lib
+include c4m/pdk/ihpsg13g2/models/all.spice
