@@ -1,0 +1,168 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "itkdb_browser"
+authors = [
+  { name = "Giordon Stark", email = "kratsg@gmail.com" },
+]
+description = "TUI browser for ITk Production DB using itkdb"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Typing :: Typed",
+]
+dynamic = ["version"]
+dependencies = [
+   "typer",
+   "rich >= 13.0.0",
+   "textual >=0.40.0",
+   "itkdb >= 0.4.13"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest >=6",
+  "pytest-cov >=3",
+]
+dev = [
+  "pytest >=6",
+  "pytest-cov >=3",
+]
+docs = [
+  "Sphinx>=4.0",
+  "myst_parser>=0.13",
+  "sphinx-book-theme>=0.1.0",
+  "sphinx_copybutton",
+]
+
+[project.urls]
+Homepage = "https://github.com/kratsg/itkdb-browser"
+"Bug Tracker" = "https://github.com/kratsg/itkdb-browser/issues"
+Discussions = "https://github.com/kratsg/itkdb-browser/discussions"
+Changelog = "https://github.com/kratsg/itkdb-browser/releases"
+
+[project.scripts]
+itkdb-browser = "itkdb_browser.__main__:app"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/itkdb_browser/_version.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest",
+    "pytest-cov",
+    "tbump>=6.7.0",
+    "pylint",
+    "build",
+    "twine",
+]
+
+[tool.hatch.envs.default.scripts]
+tag = "tbump {args}"
+lint = "pylint src"
+build = "python -m build"
+validate = "twine check dist/*"
+# https://github.com/linkchecker/linkchecker/issues/678
+build-check = [
+  "build",
+  "validate",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+xfail_strict = true
+filterwarnings = ["error"]
+log_cli_level = "INFO"
+testpaths = [
+  "tests",
+]
+
+
+[tool.mypy]
+files = "src"
+python_version = "3.8"
+warn_unused_configs = true
+strict = true
+show_error_codes = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+warn_unreachable = true
+
+
+[[tool.mypy.overrides]]
+module = ["itkdb.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "itkdb_browser.tui"
+disable_error_code = ["attr-defined", "type-arg"]
+
+[tool.ruff]
+select = [
+  "E", "F", "W", # flake8
+  "B", "B904",  # flake8-bugbear
+  "I",           # isort
+  "ARG",         # flake8-unused-arguments
+  "C4",          # flake8-comprehensions
+  "EM",          # flake8-errmsg
+  "ICN",         # flake8-import-conventions
+  "ISC",         # flake8-implicit-str-concat
+  "PGH",         # pygrep-hooks
+  "PIE",         # flake8-pie
+  "PL",          # pylint
+  "PT",          # flake8-pytest-style
+  "PTH",         # flake8-use-pathlib
+  "RET",         # flake8-return
+  "RUF",         # Ruff-specific
+  "SIM",         # flake8-simplify
+  "T20",         # flake8-print
+  "UP",          # pyupgrade
+  "YTT",         # flake8-2020
+]
+extend-ignore = ["E203", "E501", "E722"]
+target-version = "py38"
+typing-modules = ["itkdb_browser._compat.typing"]
+src = ["src"]
+unfixable = ["T20", "F841"]
+exclude = []
+isort.required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.per-file-ignores]
+"tests/**" = ["T"]
+"noxfile.py" = ["T"]
+"src/itkdb_browser/__main__.py" = ["B008"]
+
+[tool.pylint]
+py-version = "3.8"
+ignore-paths= ["src/itkdb_browser/_version.py"]
+reports.output-format = "colorized"
+similarities.ignore-imports = "yes"
+messages_control.disable = [
+  "design",
+  "fixme",
+  "line-too-long",
+  "missing-module-docstring",
+  "wrong-import-position",
+]
