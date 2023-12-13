@@ -1,0 +1,10 @@
+setup.py
+AditiRai-GBdistributions/Binomialdistribution.py
+AditiRai-GBdistributions/Gaussiandistribution.py
+AditiRai-GBdistributions/Generaldistribution.py
+AditiRai-GBdistributions/__init__.py
+AditiRai_GBdistributions.egg-info/PKG-INFO
+AditiRai_GBdistributions.egg-info/SOURCES.txt
+AditiRai_GBdistributions.egg-info/dependency_links.txt
+AditiRai_GBdistributions.egg-info/not-zip-safe
+AditiRai_GBdistributions.egg-info/top_level.txt
