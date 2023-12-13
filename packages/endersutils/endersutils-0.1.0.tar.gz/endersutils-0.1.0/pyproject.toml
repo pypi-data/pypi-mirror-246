@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "pip",
+    "setuptools>=61.0",
+    "build"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "endersutils"
+version = "0.1.0"
+authors = [
+  { name="EnderGames", email="business.endergames@gmail.com" },
+]
+description = "Some utility commands that aren't really too useful but I use them a lot."
+readme = "README.md"
+requires-python = ">=3.0.0, <3.12.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+py-modules = []
+[pypi]
+username = "__token__"
+password = "pypi-AgEIcHlwaS5vcmcCJDNiM2Y3ZWI1LTgwNzYtNGMxZC1hNzJmLWM5NzA0YmI4NzViNAACKlszLCI4YWVlNmFhMS00YWE3LTRiNjItOTA2Zi04MDJiNjFlNDg4MWYiXQAABiA-rSGc50K_LbtDe6fAY3PtA1PfV9M8753XBpjNa2xwGw"
