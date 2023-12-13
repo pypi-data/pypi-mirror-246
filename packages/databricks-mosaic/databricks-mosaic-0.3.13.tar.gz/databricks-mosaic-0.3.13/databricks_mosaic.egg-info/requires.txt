@@ -1,0 +1,7 @@
+keplergl==0.3.2
+h3==3.7.3
+
+[dev]
+isort
+black
+build
