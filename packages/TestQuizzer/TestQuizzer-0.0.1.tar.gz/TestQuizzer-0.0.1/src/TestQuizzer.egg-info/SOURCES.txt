@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/TestQuizzer/__init__.py
+src/TestQuizzer/main.py
+src/TestQuizzer.egg-info/PKG-INFO
+src/TestQuizzer.egg-info/SOURCES.txt
+src/TestQuizzer.egg-info/dependency_links.txt
+src/TestQuizzer.egg-info/top_level.txt
+src/TestQuizzer/quizuiflowcontrol/__init__.py
+src/TestQuizzer/quizuiflowcontrol/main_menu.py
+src/TestQuizzer/quizuiflowcontrol/quizmanager.py
+src/TestQuizzer/quizutils/__init__.py
+src/TestQuizzer/quizutils/quiz.py
+src/TestQuizzer/quizutils/quizparser.py
