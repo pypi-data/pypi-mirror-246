@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+django_template_website_ui.egg-info/PKG-INFO
+django_template_website_ui.egg-info/SOURCES.txt
+django_template_website_ui.egg-info/dependency_links.txt
+django_template_website_ui.egg-info/requires.txt
+django_template_website_ui.egg-info/top_level.txt
+tests/test_merge_production_dotenvs_in_dotenv.py
