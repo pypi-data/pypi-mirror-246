@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+src/iris/Create_ir_model_files.py
+src/iris/__init_.py
+src/iris/moldata.py
+src/iris/spectrum.py
+src/iris_jwst.egg-info/PKG-INFO
+src/iris_jwst.egg-info/SOURCES.txt
+src/iris_jwst.egg-info/dependency_links.txt
+src/iris_jwst.egg-info/top_level.txt
