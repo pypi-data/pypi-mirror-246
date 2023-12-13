@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: enf
+Version: 0.0.1
+Summary: Chronolocate audio recorded in the UK
+Author: m31r2701
+Project-URL: Homepage, https://github.com/m31r2701/enf
+Project-URL: Issues, https://github.com/m31r2701/enf/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: cycler
+Requires-Dist: fonttools
+Requires-Dist: idna
+Requires-Dist: kiwisolver
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: requests==2.28.1
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: urllib3
+
+# enf
+Chronolocate audio recorded in the UK - a lightly edited fork of https://github.com/robert/enf-matching packaged for PyPI.
+
+## Install
+
+```shell
+pip install enf
+```
+
+## Call
+
+```python
+from enf import enf.match
+
+enf.match(presumed_year, presumed_month, path_to_wav)
+```
