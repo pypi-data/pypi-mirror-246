@@ -1,0 +1,6 @@
+README.md
+setup.py
+tqsdk2_fclib.egg-info/PKG-INFO
+tqsdk2_fclib.egg-info/SOURCES.txt
+tqsdk2_fclib.egg-info/dependency_links.txt
+tqsdk2_fclib.egg-info/top_level.txt
