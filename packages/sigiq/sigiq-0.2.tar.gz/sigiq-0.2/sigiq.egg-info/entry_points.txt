@@ -1,0 +1,3 @@
+[console_scripts]
+sigiq-inject = sigiq.inject:inject_main
+sigiq-login = sigiq.login:login_main
