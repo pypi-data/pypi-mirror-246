@@ -1,0 +1,5 @@
+aws_cfn_custom_resource_resolve_parser/__init__.py,sha256=M6-7mA9jGRcF4oWFNcSq1OFrP-V0RdpuWJVrSHL8CD8,4131
+aws_cfn_custom_resource_resolve_parser-0.3.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+aws_cfn_custom_resource_resolve_parser-0.3.1.dist-info/METADATA,sha256=2PQd1-4eDJAUQLEwusk1sZDFD2Y6l0RVUlUZLkxn6Qo,2855
+aws_cfn_custom_resource_resolve_parser-0.3.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+aws_cfn_custom_resource_resolve_parser-0.3.1.dist-info/RECORD,,
