@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Faizur-URL
+Version: 1.0
+Summary: A Python module for URL shortening with various services BY Faizur
+Author: Faizur
+Author-email: Faizursearch@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyshorteners
+
+URL shortening module made by Faizur. This module supports 10 URL shortening services:
+1. TinyURL
+2. Bitly
+3. Ow.ly
+4. is.gd
+5. v.gd
+6. turl.ca
+7. qr.cx
+8. bc.vc
+9. adf.ly
+10. nullpointer.at
