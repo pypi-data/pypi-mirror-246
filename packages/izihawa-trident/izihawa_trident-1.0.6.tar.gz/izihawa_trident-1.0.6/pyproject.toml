@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "izihawa-trident"
+version = "1.0.6"
+description = ""
+authors = ["Pasha Podolsky <ppodolsky@me.com>"]
+readme = "README.md"
+packages = [{include = "trident"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+aiofiles = "^23.2.1"
+confuse = "^2.0.1"
+izihawa-loglib = "^1.1.1"
+arq = "^0.25.0"
+uhashring = "^2.3"
+stc-geck = "^1.8.44"
+aiobaseclient = "^0.2.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+trident-importer = "trident.importer:main"
