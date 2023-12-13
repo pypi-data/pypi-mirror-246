@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sussysort_alg
+Version: 0.1.0
+Summary: A small kinda sus package
+Project-URL: Homepage, https://github.com/DanielMartinecCZ/SussySort
+Author-email: Istarios <10dan10@email.cz>
+License-File: LICENCE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
