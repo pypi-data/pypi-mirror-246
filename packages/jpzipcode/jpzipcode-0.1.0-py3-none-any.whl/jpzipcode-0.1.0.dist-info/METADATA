@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jpzipcode
+Version: 0.1.0
+Summary: 日本の郵便番号から住所を取得するAPI
+Author-email: kokardy <mgc1028@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# jpzipcode
+郵便番号から住所を取得するためのライブラリ
