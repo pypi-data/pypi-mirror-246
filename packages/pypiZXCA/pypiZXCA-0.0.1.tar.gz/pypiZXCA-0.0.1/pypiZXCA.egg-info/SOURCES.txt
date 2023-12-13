@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pypiZXCA/__init__.py
+pypiZXCA/test.py
+pypiZXCA.egg-info/PKG-INFO
+pypiZXCA.egg-info/SOURCES.txt
+pypiZXCA.egg-info/dependency_links.txt
+pypiZXCA.egg-info/requires.txt
+pypiZXCA.egg-info/top_level.txt
