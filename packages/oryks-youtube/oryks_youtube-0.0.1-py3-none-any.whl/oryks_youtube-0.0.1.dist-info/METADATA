@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: oryks-youtube
+Version: 0.0.1
+Summary: A python library that wraps around the YouTube V3 API. You can use it find and manage YouTube resources including Videos, Playlists, Channels and Comments.
+Home-page: https://youtube-wrapper.readthedocs.io/en/latest/index.html
+Author: Lyle Okoth
+Author-email: lyceokoth@gmail.com
+License: MIT
+Keywords: youtube,youtube-api,youtube comments,youtube videos,youtube channels,youtube comment thread,create youtube playlist
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+
+# youtube
+A python library for working with the youtube api.
+
+
