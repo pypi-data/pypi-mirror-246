@@ -1,0 +1,16 @@
+scikit-image
+scikit-spatial
+opencv-python
+numpy
+matplotlib
+scikit-learn
+mido
+scipy
+imagecodecs
+
+[midi2disc]
+cairosvg
+vnoise
+
+[progressbar]
+enlighten
