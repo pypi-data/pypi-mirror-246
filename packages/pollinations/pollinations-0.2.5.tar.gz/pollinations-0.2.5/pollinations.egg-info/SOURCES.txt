@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pollinations/__init__.py
+pollinations.egg-info/PKG-INFO
+pollinations.egg-info/SOURCES.txt
+pollinations.egg-info/dependency_links.txt
+pollinations.egg-info/requires.txt
+pollinations.egg-info/top_level.txt
