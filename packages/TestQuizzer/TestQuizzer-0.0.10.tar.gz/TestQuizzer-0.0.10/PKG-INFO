@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TestQuizzer
+Version: 0.0.10
+Summary: An example package
+Author-email: Kulaphong Jitareera <kulaphong.j@gmail.com>
+Project-URL: Homepage, https://github.com/Nijat27/Quizzer
+Project-URL: Issues, https://github.com/Nijat27/Quizzer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Example Package
+
+This is a simple example package. 
