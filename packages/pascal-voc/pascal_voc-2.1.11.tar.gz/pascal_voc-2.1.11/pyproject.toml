@@ -1,0 +1,25 @@
+[project]
+name = "pascal_voc"
+version = "2.1.11"
+authors = [
+    { name = "Alexander Barmin", email = "barmin1@mail.ru" },
+]
+description = "Tool to work with annotation formats"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+dependencies = [
+    "Pillow>=8.1.0",
+    "transliterate>=1.10.2",
+    "xmlobj>=1.2.2",
+    "typing_extensions>=4.1.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Alek-dr/PascalVOC"
+Issues = "https://github.com/Alek-dr/PascalVOC/issues"
