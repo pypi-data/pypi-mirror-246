@@ -1,0 +1,3 @@
+[console_scripts]
+dns-tool=dnstoolutility.app:cli
+
