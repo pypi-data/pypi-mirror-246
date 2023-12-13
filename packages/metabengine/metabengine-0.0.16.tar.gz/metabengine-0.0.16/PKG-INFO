@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: metabengine
+Version: 0.0.16
+Summary: Data preprocessing for mass spectrometry-based metabolomics data
+Project-URL: Homepage, https://github.com/Waddlessss/metabengine
+Author-email: Huaxu Yu <yhxchem@outlook.com>
+Maintainer-email: Huaxu Yu <yhxchem@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: lxml>=4.9.2
+Requires-Dist: matplotlib
+Requires-Dist: ms-entropy>=1.1.1
+Requires-Dist: numpy>=1.24
+Requires-Dist: pandas>=2.0
+Requires-Dist: pyteomics>=4.6
+Requires-Dist: scipy>=1.10.1
+Requires-Dist: tensorflow>=2.12.0
+Requires-Dist: tqdm>=4.65.0
+Description-Content-Type: text/markdown
+
+# MetabEngine
+
+[![Generic badge](https://img.shields.io/badge/metabengine-ver_0.0.15-%3CCOLOR%3E.svg)](https://github.com/Waddlessss/metabengine/)
+![Maintainer](https://img.shields.io/badge/maintainer-Huaxu_Yu-blue)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/bago.svg?label=PyPI%20downloads)](https://pypi.org/project/metabengine/)
+
+**metabengine** is an integrated Python package for liquid chromatography-mass spectrometry (LC-MS) data processing.
+
+* **Documentation:** https://metabengine.readthedocs.io/en/latest/
+* **Source code:** https://github.com/Waddlessss/metabengine/
+* **Bug reports:** https://github.com/Waddlessss/metabengine/issues/
+
+It provides:
+
+* Ion-identity-based feature detection (i.e. peak picking).
+* Peak quality evaluation via artificial neural network.
+* Accurate annotation of isotopes, adducts, and in-source fragments.
+* Ultra-fast annotation of MS/MS spectra supported by [Flash Entropy Search](https://github.com/YuanyueLi/MSEntropy)
+
+## Installation
+
+```sh
+pip install metabengine
+```
