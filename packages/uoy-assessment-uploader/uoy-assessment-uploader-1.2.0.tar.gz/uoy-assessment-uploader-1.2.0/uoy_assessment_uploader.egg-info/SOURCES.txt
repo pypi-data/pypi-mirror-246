@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+uoy_assessment_uploader/__init__.py
+uoy_assessment_uploader/__main__.py
+uoy_assessment_uploader/argparse.py
+uoy_assessment_uploader/constants.py
+uoy_assessment_uploader/credentials.py
+uoy_assessment_uploader/requests.py
+uoy_assessment_uploader.egg-info/PKG-INFO
+uoy_assessment_uploader.egg-info/SOURCES.txt
+uoy_assessment_uploader.egg-info/dependency_links.txt
+uoy_assessment_uploader.egg-info/entry_points.txt
+uoy_assessment_uploader.egg-info/requires.txt
+uoy_assessment_uploader.egg-info/top_level.txt
