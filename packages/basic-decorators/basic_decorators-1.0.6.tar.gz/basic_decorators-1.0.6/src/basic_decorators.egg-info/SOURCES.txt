@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+.git/config
+src/basic_decorators/__init__.py
+src/basic_decorators.egg-info/PKG-INFO
+src/basic_decorators.egg-info/SOURCES.txt
+src/basic_decorators.egg-info/dependency_links.txt
+src/basic_decorators.egg-info/top_level.txt
+test/test.py
