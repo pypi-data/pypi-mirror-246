@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: iris-jwst
+Version: 0.1.2
+Summary: iris-jwst is a GPU-accelerated package to generate high-resolution                  opacity-weighted molecular line intensities to model JWST MIRI MRS spectra.
+Author: Carlos E. Muñoz-Romero
+Author-email: carlos.munoz_romero@cfa.harvard.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
