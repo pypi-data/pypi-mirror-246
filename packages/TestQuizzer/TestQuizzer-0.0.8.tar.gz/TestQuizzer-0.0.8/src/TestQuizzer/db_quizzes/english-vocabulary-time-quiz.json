@@ -1,0 +1,117 @@
+{
+    "quizname": "Time Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is the equivalent of one millennium?",
+            "answer": "1000 years",
+            "choices": {
+                "1": "100 years",
+                "2": "1000 years",
+                "3": "1000 milliseconds"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Night-time is the time from",
+            "answer": "dusk to dawn",
+            "choices": {
+                "1": "sunrise to sunset",
+                "2": "midnight to dawn",
+                "3": "dusk to dawn"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "How many hours are there between midnight and noon?",
+            "answer": "twelve",
+            "choices": {
+                "1": "six",
+                "2": "twelve",
+                "3": "twenty-four"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "How many minutes are there in an hour and a half? ",
+            "answer": "90",
+            "choices": {
+                "1": "90",
+                "2": "75",
+                "3": "60.5"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "How many weekdays are there in one week?",
+            "answer": "five",
+            "choices": {
+                "1": "five",
+                "2": "six",
+                "3": "seven"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "\"My train leaves at 2pm.\" What does pm stand for?",
+            "answer": "post-meridiem",
+            "choices": {
+                "1": "past-meridiem",
+                "2": "post-meridiem",
+                "3": "post-midday"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which format is being used when a date is written as March 28th, 2019?",
+            "answer": "American",
+            "choices": {
+                "1": "American",
+                "2": "British",
+                "3": "Informal"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is another way of saying six forty-five when telling the time?",
+            "answer": "a quarter to seven",
+            "choices": {
+                "1": "forty-five past six",
+                "2": "fifteen to seven",
+                "3": "a quarter to seven"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "In British English, which comes first when writing the date?",
+            "answer": "the day",
+            "choices": {
+                "1": "the day",
+                "2": "the month",
+                "3": "the year"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "\"Genghis Khan died in 1227 AD.\" This means he died 1227 years",
+            "answer": "after Christ was born",
+            "choices": {
+                "1": "before now",
+                "2": "before Christ",
+                "3": "after Christ was born"
+            }
+        }
+    ]
+}
