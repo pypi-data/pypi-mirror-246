@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: digiscreens_uib
+Version: 1.1
+Summary: Digiscreens package
+Home-page: https://git.app.uib.no/ii/inf219/23h/digiscreens
+Author: Digiscreens_team_uib
+License: MIT
+Description-Content-Type: text/markdown
+
+# Digiscreens
+
+## Description
+The DigiScreens project is a python project that includes Python classes and modules for data visualization('MovieTVVis') and web scraping('Scraper). It is designed to do data analayzing and visualization on tv series and film data. It also offers tools for importing, processing, filtering and scraping metadata from web sources.
+
+## Structure
+* Data: Contains various data files like CSVs and Excel files.
+
+* Info: Contains various information files for using the project.
+
+* Notebooks: Jupyter notebooks for visualising and testing the functionalities of the prosject.
+
+* src:
+    * MovieTVVis: Python module for data visualization.
+    
+    * NorwayTop10: Python script specific for finding top 10 film and tv serie data from every country.
+
+    * Scraper: Python module for web scraping.
+
+* Tests: Unit tests for the different modules
+
+## Installation
+1. Clone the repository:
+
+git clone git@git.app.uib.no:ii/inf219/23h/digiscreens.git
+
+2. Install all the required packages:
+
+pip install -r requirements.txt
+
+## Usage
+
+If you want a detailed description on how to use the different modules and functions in this project you can look at the user guidance docs:
+
+* [MovieTVVis](info/Userguidance_MovieTVVis.md)
+* [Web scraper](info/user_manual_scraper.md)
+* [Netflix popularity calculator](info/user_manual_netflix.md)
+
+
+Example usage for the different modules:
+
+* MovieTVVis: It can be used to visualize and data analayze on movie- and TV-seriedata.
+
+* Scraper: Web scraping to get metadata from different sources.
+
+Other examples and demonstrations of how to use it. Can you find in jupyter notebooks in the notebooks- folder.
+
+## Testing 
+To run tests, navigate to the tests directory and execute:
+
+python -m unittest
+
+## Support
+This git repo is a delivery for the course INF219 at The University of Bergen. Users are free to add issues, but there is no guarantee that these will be taken care of. 
+
+## Contributing
+If anyone wises to continue development of the code, they can contact one of the authors.
+
+## Authors and acknowledgment
+* Authors:
+Kristoffer Breivik
+Kristoffer Eik
+Kavya Malhotra 
+Henrik Johansen

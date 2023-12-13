@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+src/MovieTVVis/MTVFilter.py
+src/MovieTVVis/MovieTVVis.py
+src/MovieTVVis/__init__.py
+src/MovieTVVis/dash_app.py
+src/MovieTVVis/helper.py
+src/NorwayTop10/NorwayTop10.py
+src/NorwayTop10/__init__.py
+src/Scraper/Scraper.py
+src/Scraper/__init__.py
+src/digiscreens_uib.egg-info/PKG-INFO
+src/digiscreens_uib.egg-info/SOURCES.txt
+src/digiscreens_uib.egg-info/dependency_links.txt
+src/digiscreens_uib.egg-info/requires.txt
+src/digiscreens_uib.egg-info/top_level.txt
