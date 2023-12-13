@@ -1,0 +1,10 @@
+
+[async_defaults]
+aiofiles
+httpx
+
+[async_files]
+aiofiles
+
+[sync_defaults]
+requests
