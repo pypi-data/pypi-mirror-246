@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: parathaa
+Version: 0.1.0
+Summary: PARATHAA: Preserving and Assimilating Region-specific Ambiguities in Taxonomic Hierarchical Assignments for Amplicons.
+Home-page: https://github.com/biobakery/parathaa
+Author: PARATHAA Development Team
+Author-email: jnearing@hsph.harvard.edu
+License: MIT
+Keywords: microbial,microbiome,bioinformatics,microbiology,metagenomic,baqlava,anadama2
+Platform: Linux
+Platform: MacOS
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: anadama2 >=0.7.4
+Requires-Dist: taxtastic
+
+UNKNOWN
+
+
