@@ -1,0 +1,2 @@
+[console_scripts]
+wyoming-openwakeword = wyoming_openwakeword:__main__.run
