@@ -1,0 +1,7 @@
+[console_scripts]
+chgver = z7z8.chgver:main
+dfslow = z7z8.dfslow:dfslow
+dsync = z7z8.dsync:dsync
+md2pdf = z7z8.md2pdf:main
+smod = z7z8.smod:main
+sshall = z7z8.sshall:main
