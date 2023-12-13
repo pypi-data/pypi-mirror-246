@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "audioooooooooooooops"
+version = "0.1.0"
+description = ""
+authors = ["xssfox <xss@sprocketfox.io>"]
+readme = "README.md"
+packages = [
+    {include = "audioop"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.build] 
+script = "build.py" 
+generate-setup-file = true 
