@@ -1,0 +1,9 @@
+borgctl/__init__.py,sha256=IY91bJcKrN9eDz3E4qAUGNHRefYQ6VH6tlBC8JUrIIE,6730
+borgctl/default.yml.template,sha256=UCjHrXcF6BlpMEnheR4xpRVmpl7M4EXkl57ceY19Tm4,570
+borgctl/tools.py,sha256=D524xDcHARR4VRV9KN9aOKLV5PVlwWJVX3NvWx6Q7qY,4730
+borgctl/utils.py,sha256=33C1npUsVivBYPoDGzQTMg6YuSPwuYrRnvAbbQpCcvU,5259
+borgctl/wordlist.py,sha256=deKz7dB9HHsFF5Ag52bYYIoh7lTQiKWY7EbKo6aF4cY,13448
+borgctl-0.1.1a0.dist-info/METADATA,sha256=45DVefXiTvELRar-9zz5jF1r3h8e7SifuhxiHY3sHJo,382
+borgctl-0.1.1a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+borgctl-0.1.1a0.dist-info/entry_points.txt,sha256=-6gYCO2-tx2ii-9eAcawVB8jyBSx4HiW24CScXMuQws,49
+borgctl-0.1.1a0.dist-info/RECORD,,
