@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nic2proxy/README.MD
+nic2proxy/__init__.py
+nic2proxy/requirements.txt
+nic2proxy/s5light-windows-amd64-v3.exe
+nic2proxy/thirdparty.json
+nic2proxy.egg-info/PKG-INFO
+nic2proxy.egg-info/SOURCES.txt
+nic2proxy.egg-info/dependency_links.txt
+nic2proxy.egg-info/requires.txt
+nic2proxy.egg-info/top_level.txt

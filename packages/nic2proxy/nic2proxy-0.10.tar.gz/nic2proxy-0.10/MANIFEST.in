@@ -1,0 +1,4 @@
+include nic2proxy/requirements.txt
+include nic2proxy/thirdparty.json
+include nic2proxy/README.MD
+include nic2proxy/s5light-windows-amd64-v3.exe
