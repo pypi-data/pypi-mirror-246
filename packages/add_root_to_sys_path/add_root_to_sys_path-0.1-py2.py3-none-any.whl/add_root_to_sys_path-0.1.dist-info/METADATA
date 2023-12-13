@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: add_root_to_sys_path
+Version: 0.1
+Summary: Searches a given file's parents for a directory with a given name and adds it to sys.path.
+Author-email: coreyarms <coreyarms@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
