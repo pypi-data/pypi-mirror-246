@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/pFirstp/__init__.py
+src/pFirstp/__version__.py
+src/pFirstp/hello.py
+src/pFirstp.egg-info/PKG-INFO
+src/pFirstp.egg-info/SOURCES.txt
+src/pFirstp.egg-info/dependency_links.txt
+src/pFirstp.egg-info/top_level.txt
