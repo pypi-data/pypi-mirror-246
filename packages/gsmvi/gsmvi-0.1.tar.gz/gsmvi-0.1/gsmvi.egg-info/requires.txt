@@ -1,0 +1,7 @@
+
+[full]
+jax
+jaxlib
+numpyro
+optax
+scipy
