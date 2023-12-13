@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shieldsentry
+Version: 0.0.7
+Summary: ShieldSentry is a Python wrapper for a language agnostic specification created to prevent security attacks.
+Home-page: https://github.com/apratimshukla6/ShieldSentry.py
+Download-URL: https://pypi.org/project/shieldsentry/
+Author: Apratim Shukla
+Author-email: apratimshukla6@gmail.com
+License: Apache
+Keywords: Shield,ShieldSentry
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ShieldSentry Python
+
