@@ -1,0 +1,6 @@
+setup.py
+publicationpackage.egg-info/PKG-INFO
+publicationpackage.egg-info/SOURCES.txt
+publicationpackage.egg-info/dependency_links.txt
+publicationpackage.egg-info/requires.txt
+publicationpackage.egg-info/top_level.txt
