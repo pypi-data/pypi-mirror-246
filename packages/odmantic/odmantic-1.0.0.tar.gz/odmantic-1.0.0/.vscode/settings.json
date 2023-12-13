@@ -1,0 +1,19 @@
+{
+  "editor.rulers": [88],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3.8",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "python.testing.pytestEnabled": true,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    ".venv/": false,
+    ".pytest_cache/": true,
+    ".mypy_cache/": true
+  },
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
+}
