@@ -1,0 +1,3 @@
+api-management-local
+variable-local
+boto3>=1.28.70
