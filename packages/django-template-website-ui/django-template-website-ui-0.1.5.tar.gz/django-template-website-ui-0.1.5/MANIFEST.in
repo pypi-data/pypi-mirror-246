@@ -1,0 +1,2 @@
+recursive-include website_ui *  # 包括website_ui目录下的所有文件
+include LICENSE README.md       # 包括根目录下的LICENSE和README.md文件
