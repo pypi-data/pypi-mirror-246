@@ -1,0 +1,9 @@
+README.md
+setup.py
+is_codes/__init__.py
+is_codes/text_reader.py
+is_codes.egg-info/PKG-INFO
+is_codes.egg-info/SOURCES.txt
+is_codes.egg-info/dependency_links.txt
+is_codes.egg-info/top_level.txt
+is_codes/data/my_code.py
