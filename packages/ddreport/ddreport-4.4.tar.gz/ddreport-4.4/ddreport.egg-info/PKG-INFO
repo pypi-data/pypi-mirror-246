@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ddreport
+Version: 4.4
+Summary: pytest测试报告
+Home-page: https://blog.csdn.net/weixin_43975720/article/details/130559489
+Author: duanliangcong
+Author-email: 137562703@qq.com
+License: MIT Licence
+Keywords: pip,pytest,testReport
+Platform: any
+
+
+    1.弃用requests.session逻辑；
+    2.加添ddreport.pyexit方法；
+    3.暴露环境host,方便跨域访问；
+    4.优化代码异常时，报告中展示异常信息及代码路径和行数
+    5.优化测试报告：ddreport.pyexit的提示；table可根据响应时间排序；
+    
+
