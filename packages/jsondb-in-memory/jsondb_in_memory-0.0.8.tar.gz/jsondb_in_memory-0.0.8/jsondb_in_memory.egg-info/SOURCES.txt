@@ -1,0 +1,12 @@
+LICENSE
+jsondb_in_memory.c
+pyproject.toml
+setup.py
+./Exceptions.py
+./__init__.py
+./jsondb_in_memory.py
+jsondb_in_memory.egg-info/PKG-INFO
+jsondb_in_memory.egg-info/SOURCES.txt
+jsondb_in_memory.egg-info/dependency_links.txt
+jsondb_in_memory.egg-info/not-zip-safe
+jsondb_in_memory.egg-info/top_level.txt
