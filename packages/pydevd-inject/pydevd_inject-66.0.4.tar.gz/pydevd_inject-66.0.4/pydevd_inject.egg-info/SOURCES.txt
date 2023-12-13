@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pydevd_inject.egg-info/PKG-INFO
+pydevd_inject.egg-info/SOURCES.txt
+pydevd_inject.egg-info/dependency_links.txt
+pydevd_inject.egg-info/requires.txt
+pydevd_inject.egg-info/top_level.txt
