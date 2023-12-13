@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: zrcl3
+Version: 1.0.0
+Summary: zack's common reusable library
+Author: ZackaryW
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE

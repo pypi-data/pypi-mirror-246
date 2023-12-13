@@ -1,0 +1,5 @@
+zrcl3
+zrcl3\__pycache__
+zrcl3\_internal
+zrcl3\auto_click
+zrcl3\auto_save_dict
