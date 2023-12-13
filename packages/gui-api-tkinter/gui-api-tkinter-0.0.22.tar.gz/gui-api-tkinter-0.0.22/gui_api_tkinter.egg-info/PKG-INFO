@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gui-api-tkinter
+Version: 0.0.22
+Summary: Base Class for interacting with a GUI based in tkinter
+Home-page: https://bitbucket.org/arrizza-public/gui-api-tkinter/src/master
+Download-URL: https://bitbucket.org/arrizza-public/gui-api-tkinter/get/master.zip
+Author: JA
+Author-email: cppgent0@gmail.com
+License: MIT
+Keywords: gui,tkinter,test,verification
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: unknown
+License-File: LICENSE.txt
+Requires-Dist: pytest-ver
+Requires-Dist: pytest
+Requires-Dist: socket-oneline
+
+unknown
