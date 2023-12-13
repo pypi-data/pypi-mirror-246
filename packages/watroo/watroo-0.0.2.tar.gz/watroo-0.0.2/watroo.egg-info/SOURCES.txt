@@ -1,0 +1,12 @@
+LICENSE.rst
+README.md
+pyproject.toml
+requirements.txt
+watroo/__init__.py
+watroo/utils.py
+watroo/wavelets.py
+watroo.egg-info/PKG-INFO
+watroo.egg-info/SOURCES.txt
+watroo.egg-info/dependency_links.txt
+watroo.egg-info/requires.txt
+watroo.egg-info/top_level.txt
