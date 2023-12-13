@@ -1,0 +1,117 @@
+{
+    "quizname": "Criminals Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A criminal is a person who has _______ the law.",
+            "answer": "broken",
+            "choices": {
+                "1": "committed",
+                "2": "offended",
+                "3": "broken"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Criminals can also be called law breakers or _______ . ",
+            "answer": "offenders",
+            "choices": {
+                "1": "lawyers",
+                "2": "offenders",
+                "3": "baddies"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What can we call someone who steals?",
+            "answer": "a thief",
+            "choices": {
+                "1": "a thief",
+                "2": "a theft",
+                "3": "a thieve"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Tommy can bump into someone and take their wallet without their knowing. What is he?",
+            "answer": "a pickpocket",
+            "choices": {
+                "1": "a burglar",
+                "2": "a pickpocket",
+                "3": "a mugger"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Betsy had no money to buy food for her kids, so she took it from a supermarket without paying. What was her crime?",
+            "answer": "shoplifting",
+            "choices": {
+                "1": "kidnapping",
+                "2": "being poor",
+                "3": "shoplifting"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do we call someone who sells illegal drugs?",
+            "answer": "a drug dealer",
+            "choices": {
+                "1": "a drug dealer",
+                "2": "a drug user",
+                "3": "a drug taker"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What kind of criminal is a businessman who imports goods without paying tax?",
+            "answer": "a smuggler",
+            "choices": {
+                "1": "a forger",
+                "2": "a smuggler",
+                "3": "a deserter"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "In 2001, Saudi Arabian terrorists led an attack on the USA in which passenger airlines were _______ and crashed into buildings. ",
+            "answer": "hijacked",
+            "choices": {
+                "1": "vandalized",
+                "2": "kidnapped",
+                "3": "hijacked"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Jack breaks into rich people's homes and steals money and jewellery. He's an expert at",
+            "answer": "burglary",
+            "choices": {
+                "1": "burglary",
+                "2": "treachery",
+                "3": "bigamy"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A professional killer who's paid to murder people for political reasons is called",
+            "answer": "an assassin",
+            "choices": {
+                "1": "a soldier",
+                "2": "a spy",
+                "3": "an assassin"
+            }
+        }
+    ]
+}
