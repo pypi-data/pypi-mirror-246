@@ -1,0 +1,5 @@
+setup.py
+iris_jwst.egg-info/PKG-INFO
+iris_jwst.egg-info/SOURCES.txt
+iris_jwst.egg-info/dependency_links.txt
+iris_jwst.egg-info/top_level.txt
