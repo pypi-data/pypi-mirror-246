@@ -1,0 +1,12 @@
+uoy_assessment_uploader/__init__.py,sha256=9buegOdcPzFl-mn5YZryNE2J2CTfaPhrmY0h-2hNWMU,5330
+uoy_assessment_uploader/__main__.py,sha256=U9EC5f2-LJuwqkz0iqpQyHeUf6NKAj6LCevsVWtYxjc,61
+uoy_assessment_uploader/argparse.py,sha256=VbRWgJYUqIqUdDdwdB5FXUqXK8xPGP_kq80h94qtOcQ,3490
+uoy_assessment_uploader/constants.py,sha256=b-fML-fW4CQPcbd8gyKekgMxmr7ZiWT_TUKzpI3T134,403
+uoy_assessment_uploader/credentials.py,sha256=JyEVOH-Yo2qahLfEIQe5bYW1SZHrIEsflcrGmZeczxQ,5232
+uoy_assessment_uploader/requests.py,sha256=WfzVL6hmtH6_KiricGv3St32iAZHjA9Pl20pczkwJZM,11096
+uoy_assessment_uploader-1.2.1.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+uoy_assessment_uploader-1.2.1.dist-info/METADATA,sha256=iQj1XSkwxOpIS1NdkT6sD6CU_sWMd22nr33xs5bsZUc,39805
+uoy_assessment_uploader-1.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+uoy_assessment_uploader-1.2.1.dist-info/entry_points.txt,sha256=2rsY9n3C0S2IbyUhqhqMsBGOtz12XhCwNunqBuOcTRw,73
+uoy_assessment_uploader-1.2.1.dist-info/top_level.txt,sha256=AMdC--t5bJOV4RYX22oQRCJQQTmZMFTAoMQnFXRygUg,24
+uoy_assessment_uploader-1.2.1.dist-info/RECORD,,
