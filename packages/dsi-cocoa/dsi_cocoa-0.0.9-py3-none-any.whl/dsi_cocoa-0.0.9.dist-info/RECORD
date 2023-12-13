@@ -1,0 +1,11 @@
+cocoa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cocoa/constants.py,sha256=eYQsUYQKiySduoXRBQNMruOSohXPcD3l1eXDsOeo8Hs,149
+cocoa/evaluate_repo.py,sha256=mKkUxX3E1i5u92byQy5f6Nc-gxAVuE4OspEYOC7_vzU,3594
+cocoa/git.py,sha256=4xhar6_IbwnhtfF_Y_GJjTmtng79mLPDTQISf6E3OXY,1952
+cocoa/linting.py,sha256=4VCOuoGcWd3eY2_fxmxNQLGHCZmSqZnQqa5QO5kuF28,4391
+cocoa/notebooks.py,sha256=jU3zUAuri6HVv7smWCTnnlH9biPH6cGFwzNiodoS7R0,1108
+dsi_cocoa-0.0.9.dist-info/METADATA,sha256=fqQm11NYXjTE52T3Bp9KdG1lxR088H9hrPEvDTKhAo0,1853
+dsi_cocoa-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dsi_cocoa-0.0.9.dist-info/entry_points.txt,sha256=0rEWBDynemrOXdrIr0seTqUIbwEZu3fFkjL5sumX9Ek,51
+dsi_cocoa-0.0.9.dist-info/top_level.txt,sha256=Khsq7w4bT8ikT5DfV5Cn8c2_eQRxrq-lFC843WHWKxQ,6
+dsi_cocoa-0.0.9.dist-info/RECORD,,
