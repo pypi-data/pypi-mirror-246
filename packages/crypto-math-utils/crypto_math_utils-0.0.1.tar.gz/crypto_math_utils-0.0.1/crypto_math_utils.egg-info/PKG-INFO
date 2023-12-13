@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: crypto-math-utils
+Version: 0.0.1
+Summary: Computes the coefficient of Bezouts identity
+Home-page: 
+Author: Pratyush Prasad Sahoo
+Author-email: prats.sahoo2k22@gmail.com
+License: MIT
+Keywords: gcd bezouts euclidean
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+The Extended Euclidean Algorithm is an extension of the Euclidean Algorithm for finding the greatest common divisor (GCD) of two integers. In addition to finding the GCD, the Extended Euclidean Algorithm also computes the coefficients of BÃ©zout's identity, which are integers x and y such that:
+
+GCD(a,b)=ax+by
+
+This algorithm is particularly useful in various areas, including number theory and cryptography.
+
+Change Log
+==========
+
+0.0.1 (12/12/2023)
+------------------
+- First Release
