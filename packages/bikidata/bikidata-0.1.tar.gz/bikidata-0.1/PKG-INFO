@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: bikidata
+Version: 0.1
+Summary: Queries over Wikidata dumps
+Home-page: https://github.com/ISE-FIZKarlsruhe/bikidata
+Author: Etienne Posthumus
+Author-email: ep@epoz.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
