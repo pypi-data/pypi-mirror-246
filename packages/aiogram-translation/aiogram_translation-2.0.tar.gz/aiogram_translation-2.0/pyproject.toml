@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aiogram-translation"
+version = "2.0"
+description = "Simple aiogram translation plugin built using pydantic."
+authors = ["Roman Poltorabatko <barabum@duck.com>"]
+urls = {source = "https://github.com/barabum0/aiogram-translation", bug_tracker = "https://github.com/barabum0/aiogram-translation/issues"}
+readme = "README.md"
+license = "MIT"
+keywords = ["python", "aiogram", "telegram", "pydantic", "translation"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+repository = "https://github.com/barabum0/aiogram-translation"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = ">=3"
+pydantic = "^2.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
