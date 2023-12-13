@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/Quizzer/main.py
+src/Quizzer/quizuiflowcontrol/__init__.py
+src/Quizzer/quizuiflowcontrol/main_menu.py
+src/Quizzer/quizuiflowcontrol/quizmanager.py
+src/Quizzer/quizutils/__init__.py
+src/Quizzer/quizutils/quiz.py
+src/Quizzer/quizutils/quizparser.py
+src/myQuizzer.egg-info/PKG-INFO
+src/myQuizzer.egg-info/SOURCES.txt
+src/myQuizzer.egg-info/dependency_links.txt
+src/myQuizzer.egg-info/top_level.txt
