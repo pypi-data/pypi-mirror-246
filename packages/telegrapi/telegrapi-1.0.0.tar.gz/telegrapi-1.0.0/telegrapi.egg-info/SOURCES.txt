@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+samples/__init__.py
+samples/ping_test.py
+samples/send_message.py
+telegrapi/__init__.py
+telegrapi/api.py
+telegrapi/method.py
+telegrapi.egg-info/PKG-INFO
+telegrapi.egg-info/SOURCES.txt
+telegrapi.egg-info/dependency_links.txt
+telegrapi.egg-info/requires.txt
+telegrapi.egg-info/top_level.txt
