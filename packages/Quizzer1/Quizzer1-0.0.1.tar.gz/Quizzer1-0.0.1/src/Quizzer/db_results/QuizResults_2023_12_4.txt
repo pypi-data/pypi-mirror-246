@@ -1,0 +1,109 @@
+******************************************** 
+
+RESULTS for Tester_name
+Date: 2023-12-04 23:19:16.251671
+QUESTIONS: 2 out of 10 correct
+SCORE: 2.00 points of possible 10.00
+SCORE EXTRA: 10.00 points
+TOTAL SCORE: 12.00 points
+******************************************** 
+
+
+
+************** Result Details ************** 
+
+Question: A computer program is a piece of
+Correct Answer: software
+Your Answer: 	hardware
+Time Spending: 	2.42 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Devices that are connected to computers, such as printers, scanners and modems, are called
+Correct Answer: peripherals
+Your Answer: 	formats
+Time Spending: 	0.91 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: What do we call a specific computer record containing data or a small program?
+Correct Answer: a file
+Your Answer: 	an icon
+Time Spending: 	0.51 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: What do we call the part of a computer that stores programs and information?
+Correct Answer: the hard disk
+Your Answer: 	the hotspot
+Time Spending: 	0.68 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: What do we call a program for exploring the Web and viewing websites?
+Correct Answer: a browser
+Your Answer: 	a browser
+Time Spending: 	0.38 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: To open a particular folder, file or app, you just have to click on its
+Correct Answer: icon
+Your Answer: 	font
+Time Spending: 	0.37 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: RAM, ROM and cache are different types of _______ that computers can use.
+Correct Answer: memory
+Your Answer: 	Wi-Fi
+Time Spending: 	0.88 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Which allows wireless data communication?
+Correct Answer: a Bluetooth connection
+Your Answer: 	a Bluetooth connection
+Time Spending: 	0.67 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: What do people go to public hotspots for?
+Correct Answer: Internet access
+Your Answer: 	free viruses
+Time Spending: 	0.34 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: A computer's _______ is called its heart or "brains" because it's where data is processed.
+Correct Answer: CPU
+Your Answer: 	RAM
+Time Spending: 	0.47 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+SCORE: 	2.00 points of possible 10.00
+SCORE EXTRA: 	10.00 points
+TOTAL SCORE: 	12.00 points
+******************************************** 
+

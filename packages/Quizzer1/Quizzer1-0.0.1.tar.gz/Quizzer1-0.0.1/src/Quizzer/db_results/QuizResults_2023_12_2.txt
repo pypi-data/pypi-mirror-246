@@ -1,0 +1,109 @@
+******************************************** 
+
+RESULTS for l
+Date: 2023-12-02 15:24:20.191893
+QUESTIONS: 3 out of 10 correct
+SCORE: 3.00 points of possible 10.00
+SCORE EXTRA: 14.16 points
+TOTAL SCORE: 17.16 points
+******************************************** 
+
+
+
+************** Result Details ************** 
+
+Question: The rain's nearly stopped. It's only _______ now.
+Correct Answer: drizzling
+Your Answer: 	drizzling
+Time Spending: 	1.20 seconds
+Score: 		1.00 points
+Extra Score: 	4.16 points
+Total Score: 	5.16 points
+-------------------------------------------- 
+
+Question: A _______ is a tropical storm with very strong winds.
+Correct Answer: hurricane
+Your Answer: 	precipitation
+Time Spending: 	0.28 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: I stepped in a _______ and got the bottom of my pants all wet.
+Correct Answer: puddle
+Your Answer: 	puddle
+Time Spending: 	0.74 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: We didn't use the airconditioner at all during that _______ last summer.
+Correct Answer: cold spell
+Your Answer: 	sunburn
+Time Spending: 	1.20 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: You can get struck by _______ during an electrical storm.
+Correct Answer: lightning
+Your Answer: 	sunshine
+Time Spending: 	3.02 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: It was too _______ for the pilot to land the plane.
+Correct Answer: foggy
+Your Answer: 	mild
+Time Spending: 	1.98 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: If you let me put your _______ on I'll be able to see better.
+Correct Answer: shades
+Your Answer: 	shades
+Time Spending: 	0.55 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: There's often a light _______ in the afternoon on this island.
+Correct Answer: shower
+Your Answer: 	heat stroke
+Time Spending: 	0.55 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: When I looked at the _______ it said it was ten degrees.
+Correct Answer: thermometer
+Your Answer: 	scorcher
+Time Spending: 	0.85 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Putting on _______ is supposed to prevent sunburn.
+Correct Answer: sunscreen
+Your Answer: 	suntan
+Time Spending: 	2.61 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+SCORE: 	3.00 points of possible 10.00
+SCORE EXTRA: 	14.16 points
+TOTAL SCORE: 	17.16 points
+******************************************** 
+

@@ -1,0 +1,109 @@
+******************************************** 
+
+RESULTS for Nijat
+Date: 2023-12-03 21:51:35.356540
+QUESTIONS: 6 out of 10 correct
+SCORE: 6.00 points of possible 10.00
+SCORE EXTRA: 0.00 points
+TOTAL SCORE: 6.00 points
+******************************************** 
+
+
+
+************** Result Details ************** 
+
+Question: Which is the equivalent of one millennium?
+Correct Answer: 1000 years
+Your Answer: 	1000 years
+Time Spending: 	9.37 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: Night-time is the time from
+Correct Answer: dusk to dawn
+Your Answer: 	dusk to dawn
+Time Spending: 	24.29 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: How many hours are there between midnight and noon?
+Correct Answer: twelve
+Your Answer: 	twelve
+Time Spending: 	7.74 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: How many minutes are there in an hour and a half? 
+Correct Answer: 90
+Your Answer: 	90
+Time Spending: 	11.71 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: How many weekdays are there in one week?
+Correct Answer: five
+Your Answer: 	seven
+Time Spending: 	5.51 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: "My train leaves at 2pm." What does pm stand for?
+Correct Answer: post-meridiem
+Your Answer: 	post-meridiem
+Time Spending: 	15.59 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: Which format is being used when a date is written as March 28th, 2019?
+Correct Answer: American
+Your Answer: 	British
+Time Spending: 	61.99 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Which is another way of saying six forty-five when telling the time?
+Correct Answer: a quarter to seven
+Your Answer: 	fifteen to seven
+Time Spending: 	20.96 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: In British English, which comes first when writing the date?
+Correct Answer: the day
+Your Answer: 	the year
+Time Spending: 	5.11 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: "Genghis Khan died in 1227 AD." This means he died 1227 years
+Correct Answer: after Christ was born
+Your Answer: 	after Christ was born
+Time Spending: 	7.80 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+SCORE: 	6.00 points of possible 10.00
+SCORE EXTRA: 	0.00 points
+TOTAL SCORE: 	6.00 points
+******************************************** 
+
