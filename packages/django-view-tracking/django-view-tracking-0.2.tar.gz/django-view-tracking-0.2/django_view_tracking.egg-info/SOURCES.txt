@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+django_view_tracking/__init__.py
+django_view_tracking/admin.py
+django_view_tracking/apps.py
+django_view_tracking/cleanup.py
+django_view_tracking/middleware.py
+django_view_tracking/models.py
+django_view_tracking.egg-info/PKG-INFO
+django_view_tracking.egg-info/SOURCES.txt
+django_view_tracking.egg-info/dependency_links.txt
+django_view_tracking.egg-info/requires.txt
+django_view_tracking.egg-info/top_level.txt
+django_view_tracking/migrations/0001_initial.py
+django_view_tracking/migrations/__init__.py
