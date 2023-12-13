@@ -1,0 +1,4 @@
+[plugins]
+[infini]
+rules = []
+rule_dir = ["rules"]
