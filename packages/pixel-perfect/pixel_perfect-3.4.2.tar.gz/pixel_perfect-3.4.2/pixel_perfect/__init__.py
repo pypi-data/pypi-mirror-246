@@ -1,0 +1,35 @@
+# __init__.py
+
+from pixel_perfect.image_comparer import image_similarity 
+from pixel_perfect.image_comparer import image_similarity_score
+
+from pixel_perfect.baseline_screenshots import take_screenshots
+from pixel_perfect.baseline_screenshots import take_screenshots_custom_screen_size
+from pixel_perfect.baseline_screenshots import take_screenshot_desktop
+from pixel_perfect.baseline_screenshots import take_screenshot_tablet
+from pixel_perfect.baseline_screenshots import take_screenshot_mobile
+from pixel_perfect.baseline_screenshots import take_screenshot_in_custom_screen_size
+from pixel_perfect.baseline_screenshots import capture_baselines
+
+
+from pixel_perfect.utils import click_element_by_xpath
+from pixel_perfect.utils import get_image_offset_ratio_xpath
+from pixel_perfect.utils import get_count
+from pixel_perfect.utils import get_image_offset_ratio
+from pixel_perfect.utils import get_text_by_xpath
+from pixel_perfect.utils import get_element_by_xpath
+from pixel_perfect.utils import get_property_by_xpath
+from pixel_perfect.utils import get_image_aspect_ratio
+from pixel_perfect.utils import get_element_from_desktop
+from pixel_perfect.utils import get_element_from_tablet
+from pixel_perfect.utils import get_element_from_mobile
+from pixel_perfect.utils import assert_elements_UI
+
+from pixel_perfect.actual_screenshots import get_baseline_loc
+from pixel_perfect.actual_screenshots import get_actual_loc
+from pixel_perfect.actual_screenshots import capture_assert_screenshots
+from pixel_perfect.actual_screenshots import capture_screenshot
+from pixel_perfect.actual_screenshots import capture_assert_screenshots_in_custom_screen_size
+from pixel_perfect.actual_screenshots import verify_screenshot
+
+
