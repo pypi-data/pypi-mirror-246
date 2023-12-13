@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/mesdi/__init__.py
+src/mesdi/py.typed
+src/mesdi.egg-info/PKG-INFO
+src/mesdi.egg-info/SOURCES.txt
+src/mesdi.egg-info/dependency_links.txt
+src/mesdi.egg-info/requires.txt
+src/mesdi.egg-info/top_level.txt
