@@ -1,0 +1,17 @@
+pyverified/__init__.py,sha256=422fbUEUII_Lc-ACeFv85xYuVlDhTjHYj4Qjlh4WDwQ,512
+pyverified/exc.py,sha256=UWpIYyVrn_saX4tgllT9fAfa-DYLeZkKxG5r40HoNnY,138
+pyverified/msg.py,sha256=Gdm2Nn5V7AmRi8w1xGjEiavdBVrfm0468Mlvx4Adl5E,5332
+pyverified/version.py,sha256=Sdxv0CConiQKKSm5sfECoFuxTNAY1tMhd81t3Y9-apg,18
+pyverified/frame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyverified/frame/base.py,sha256=CWhVjiPaEH40DZ6HFLzIr-ZvbisZob6GVP5_ZdF60H0,143
+pyverified/frame/flask.py,sha256=jTyTGmU2JFJ-JN89X1isbVkv0h2pawPKY1Kzg5Deq_0,1856
+pyverified/verify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyverified/verify/_unset.py,sha256=kLPakIYwIhlDWPDjOHd6aq-uJw-LiWAc4OOnuC-H2Eo,100
+pyverified/verify/base.py,sha256=OoTSXZMYl3xrVAJRC1QXgiLrW1HrOZxb5HghO858b58,4243
+pyverified/verify/type_.py,sha256=m1IB-QBjfkRaDd6zvelbjkK3icGCoGuvYKbjbsuyFgw,23209
+pyverified/verify/verify.py,sha256=Uj1kJzc2KTp-lL13bvc2saNQi73yLYJ6_5-RVtADtzA,2272
+pyverified-1.0.0.dist-info/LICENSE,sha256=44szscfRc2fj69HdtTCV3khPS7H-QZm3hHgjPd1E5tU,1061
+pyverified-1.0.0.dist-info/METADATA,sha256=Wly7u2zNQIWoN2nSZtWwlQsPM5fPPWUbdoplC_dtxGg,17625
+pyverified-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyverified-1.0.0.dist-info/top_level.txt,sha256=akNLOviZq7o-PTbKMRGv-Oey4smSP-9M-Qf1GCkckL4,11
+pyverified-1.0.0.dist-info/RECORD,,
