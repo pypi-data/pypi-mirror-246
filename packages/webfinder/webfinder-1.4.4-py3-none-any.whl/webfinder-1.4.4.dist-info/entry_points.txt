@@ -1,0 +1,3 @@
+[console_scripts]
+f = finder.server:cmd_http_server
+finder = finder.server:cmd_http_server
