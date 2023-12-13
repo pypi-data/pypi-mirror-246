@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dictcruncher/__init__.py
+dictcruncher/dictcruncher.py
+dictcruncher.egg-info/PKG-INFO
+dictcruncher.egg-info/SOURCES.txt
+dictcruncher.egg-info/dependency_links.txt
+dictcruncher.egg-info/top_level.txt

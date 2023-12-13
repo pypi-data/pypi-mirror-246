@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dictcruncher
+Version: 0.1
+Summary: A library for flattening json objects
+Home-page: https://github.com/trtrojo/dictcruncher
+Author: Tommy Rojo
+Author-email: tr.trojo@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+UNKNOWN
+
