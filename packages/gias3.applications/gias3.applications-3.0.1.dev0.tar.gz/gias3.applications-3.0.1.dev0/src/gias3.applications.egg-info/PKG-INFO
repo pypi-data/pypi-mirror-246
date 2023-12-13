@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gias3.applications
+Version: 3.0.1.dev0
+Summary: Application modules for GIAS3
+License: MPL 2.0
+Keywords: musculoskeletal,modelling
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: gias3.common
+Requires-Dist: gias3.fieldwork
+Requires-Dist: gias3.image_analysis
+Requires-Dist: gias3.mesh
+Requires-Dist: gias3.registration
+Requires-Dist: gias3.visualisation
+
+GIAS3 (Geometry Image-Analysis Statistics) Applications
+=======================================================
+
+Applications that use GIAS3 libraries.
