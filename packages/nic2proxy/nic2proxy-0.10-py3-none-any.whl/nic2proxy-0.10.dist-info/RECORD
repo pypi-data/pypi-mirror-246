@@ -1,0 +1,10 @@
+nic2proxy/README.MD,sha256=wy-TpKmui_tF-74svHME6nCyQUHjpiLEnFW-dPmUniQ,1639
+nic2proxy/__init__.py,sha256=8jAp4cXpHQWSXhe1C1eaEdf8NWrpVNq07_TEf8ZxsZU,11147
+nic2proxy/requirements.txt,sha256=X2noTiFP3ie0F82-ZTxHQGyTVTJCMtrHAdvRbmMscOM,25
+nic2proxy/s5light-windows-amd64-v3.exe,sha256=Y_z1QzYmOru35Pc38T2FPwXgas82Gf6ZtdWWKILVpCc,6827008
+nic2proxy/thirdparty.json,sha256=sgQWjLjGYCH-7KJKV4kX6aWWFQbppy8Frvn_jb6z-3k,2498
+nic2proxy-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+nic2proxy-0.10.dist-info/METADATA,sha256=4vGo4R4VXNttHDqdel9F1cr75VnIYwQsRG0GmpoS0OI,2318
+nic2proxy-0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+nic2proxy-0.10.dist-info/top_level.txt,sha256=H7dAOfAyHLPXgzA8BmekdkmLtQlMItTX_ELdFtaIoOo,10
+nic2proxy-0.10.dist-info/RECORD,,
