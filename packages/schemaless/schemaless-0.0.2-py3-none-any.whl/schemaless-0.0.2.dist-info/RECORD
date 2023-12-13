@@ -1,0 +1,14 @@
+schemaless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemaless/bases.py,sha256=Ex7wW5ireYyXazl7qNUgV8w3CgwRQposFj0xlpvM1w4,1150
+schemaless/commit.py,sha256=w5zK89N0XoV7-sprhZqYDtT-rC7KGxmM5RzkG9hM_uQ,1636
+schemaless/config.py,sha256=ILN0FF2PyKNCSZgA9l-DBPg7IH7Zml_o2UkXnvNA9kg,464
+schemaless/delta.py,sha256=yHQ8ligH6ySRr9Lw-OuAiQWzofABWfEXN3ZI-MbhCn4,578
+schemaless/domain.py,sha256=CU6YCibS64Gg5iUeW8iXy1FvenTKRzc3aQ2RTpk2yLU,1910
+schemaless/http_client.py,sha256=lTS4-NNhN5Jsk6VcFvPP-6dReOSgrTfcB6NVOVfrZCg,3299
+schemaless/rid.py,sha256=hxTjuo_7_lZ2QIVJmQl386C6RFwDTNi0ZPwPD6yDEus,356
+schemaless/utils.py,sha256=vh7Y_1DUgbbbMxpcmwpT-4vgXom4jdYXqWcuXNcud9U,175
+schemaless/version_control.py,sha256=mcCMPq6BKJhDV6dIsjqbxPnvV_QZPeKe5344GinVfIA,2584
+schemaless/webhook.py,sha256=s-K3LNoaL5dEdN5LLG5jl-Dysuk2uSsYaMY25hXZpxE,3876
+schemaless-0.0.2.dist-info/METADATA,sha256=K4UMSEe5FlyLJ5Mk0TfBdydA3z2nedKcNONbziyYazI,615
+schemaless-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+schemaless-0.0.2.dist-info/RECORD,,
