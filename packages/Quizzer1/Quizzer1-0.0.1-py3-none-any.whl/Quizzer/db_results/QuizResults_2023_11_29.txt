@@ -1,0 +1,109 @@
+******************************************** 
+
+RESULTS for yok
+Date: 2023-11-29 18:47:05.653651
+QUESTIONS: 4 out of 10 correct
+SCORE: 4.00 points of possible 10.00
+SCORE EXTRA: 20.00 points
+TOTAL SCORE: 24.00 points
+******************************************** 
+
+
+
+************** Result Details ************** 
+
+Question: If the weather forecast says it'll be "overcast", it means it'll be 
+Correct Answer: cloudy
+Your Answer: 	rainy
+Time Spending: 	0.38 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Which word best describes very cold weather?
+Correct Answer: freezing
+Your Answer: 	freezing
+Time Spending: 	0.38 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: A storm with lots of snow and very strong winds is called 
+Correct Answer: a blizzard
+Your Answer: 	a blizzard
+Time Spending: 	0.28 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: It was a ________ night, so we lay on our backs and looked at the stars.
+Correct Answer: clear
+Your Answer: 	foggy
+Time Spending: 	0.31 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: The temperature at which water freezes is 32 degrees 
+Correct Answer: Fahrenheit
+Your Answer: 	Centigrade
+Time Spending: 	0.27 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Which results from air pollution?
+Correct Answer: smog
+Your Answer: 	sleet
+Time Spending: 	0.64 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: If it's raining very lightly, it's
+Correct Answer: drizzling
+Your Answer: 	puddling
+Time Spending: 	0.31 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: If it's hot with a lot of moisture in the air, we can say it's 
+Correct Answer: humid
+Your Answer: 	rainy
+Time Spending: 	0.64 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Which is not a form of precipitation?
+Correct Answer: lightning
+Your Answer: 	lightning
+Time Spending: 	0.71 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: What do we use to measure the temperature?
+Correct Answer: a thermometer
+Your Answer: 	a thermometer
+Time Spending: 	0.37 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+SCORE: 	4.00 points of possible 10.00
+SCORE EXTRA: 	20.00 points
+TOTAL SCORE: 	24.00 points
+******************************************** 
+
