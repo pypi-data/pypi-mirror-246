@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: guardrails-ai-unbabel-comet
+Version: 2.2.1
+Summary: High-quality Machine Translation Evaluation
+Home-page: https://github.com/Unbabel/COMET
+License: Apache-2.0
+Keywords: Machine Translation,Evaluation,Unbabel,COMET
+Author: Ricardo Rei, Craig Stewart, Catarina Farinha, Alon Lavie
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: entmax (>=1.1,<2.0)
+Requires-Dist: huggingface-hub (>=0.16.0,<0.17.0)
+Requires-Dist: jsonargparse (==3.13.1)
+Requires-Dist: numpy (>=1.20.0,<2.0.0)
+Requires-Dist: pandas (>=1.4.1)
+Requires-Dist: protobuf (>=4.24.4,<5.0.0)
+Requires-Dist: pytorch-lightning (>=2.0.0,<3.0.0)
+Requires-Dist: sacrebleu (>=2.0.0,<3.0.0)
+Requires-Dist: scipy (>=1.5.4,<2.0.0)
+Requires-Dist: sentencepiece (>=0.1.96,<0.2.0)
+Requires-Dist: torch (>=1.6.0)
+Requires-Dist: torchmetrics (>=0.10.2,<0.11.0)
+Requires-Dist: transformers (>=4.17,<5.0)
+Project-URL: Documentation, https://unbabel.github.io/COMET/html/index.html
+Project-URL: Repository, https://github.com/Unbabel/COMET
+Description-Content-Type: text/markdown
+
+THIS PROJECT IS A FORK OF https://github.com/guardrails-ai/COMET/tree/master. IT HAS ONLY BEEN CREATED TO DO A SMALL RELEASE TO PYPI OF A BUG FIX WE REALLY NEEDED FOR OUR OPEN SOURCE PROJECT. PLEASE USE THE ORIGINAL PROJECT IF YOU CAN.
