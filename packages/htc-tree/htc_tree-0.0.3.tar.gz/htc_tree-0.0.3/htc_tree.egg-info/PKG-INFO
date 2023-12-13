@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: htc-tree
+Version: 0.0.3
+Summary: A framework for Hierarchical Text Classification.
+Author: Rowan Andruko
+Keywords: python,text classification,hierarchical,text labeling
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+Requires-Dist: matplotlib
+
+A framework for Hierarchical Text Classification. I WILL ADD A LONG DESC LATER
