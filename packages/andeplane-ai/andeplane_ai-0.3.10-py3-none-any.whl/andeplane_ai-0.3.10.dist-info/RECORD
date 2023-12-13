@@ -1,0 +1,11 @@
+cognite/.DS_Store,sha256=b4iXNRaO0NXNxxBlICTkG8v43pCQIe-p0q9zBt986Lc,6148
+cognite/ai/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+cognite/ai/__init__.py,sha256=VZyK5nHp7xsh0mUpqS6eyoEdQQirf2mauSADT546Hto,192
+cognite/ai/_version.py,sha256=88sMV1NYWroy2-572uHnugaP-FYZbIQpcERC-gtfC5s,22
+cognite/ai/embeddingmodel.py,sha256=LGgXILbXiB-uO1AJ2U3UxEdpKlkrb8tJgRRtILR8A5c,1289
+cognite/ai/pandasai.py,sha256=CMyBtvu2li3Y2WnqHptYhbaLs5J5NqZCY3KrDfs0n-g,4848
+cognite/ai/utils.py,sha256=UI9WiSBFp3khxZrokWwmtydfXlhvNqOqkgM6MRZD1Z0,969
+cognite/ai/vectorstore.py,sha256=8e4_Nc1PE0W-zvSvEM6ksjMRzv9W2WOyF2y4q_stWzg,3070
+andeplane_ai-0.3.10.dist-info/METADATA,sha256=nnt36yfccdDmtSUdOv2xw5lNPPjtDLJsl7az-Lrcjjw,2679
+andeplane_ai-0.3.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+andeplane_ai-0.3.10.dist-info/RECORD,,
