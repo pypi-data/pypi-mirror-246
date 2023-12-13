@@ -1,0 +1,3 @@
+[console_scripts]
+compile = mcdil:cli.cli_compile
+parse = mcdil:cli.cli_parse
