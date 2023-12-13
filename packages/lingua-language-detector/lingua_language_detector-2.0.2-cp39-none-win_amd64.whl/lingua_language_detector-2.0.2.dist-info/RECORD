@@ -1,0 +1,8 @@
+lingua_language_detector-2.0.2.dist-info/METADATA,sha256=agFZ6U5Rso-XJl7Pmv6HD0AqmRzrUWlKc44C7Zzp6JI,353213
+lingua_language_detector-2.0.2.dist-info/WHEEL,sha256=aUq0YpgMqG5VWoJyiSBR74qbEJt2FULFr1Rdxybsy1A,94
+lingua_language_detector-2.0.2.dist-info/license_files/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+lingua/__init__.py,sha256=1jQbQwAQLMPA7Y__sqdo15IcospRd878AjZUuUk79OE,107
+lingua/__init__.pyi,sha256=XNsubw6jefL-a0YuPMv78I9566nPwIXT_PX6nLyaBGE,25326
+lingua/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lingua/lingua.cp39-win_amd64.pyd,sha256=EFgnoyoIDp7TdDabVMh4hW_1Fjd8VenZyjyxOSycBzE,76254208
+lingua_language_detector-2.0.2.dist-info/RECORD,,
