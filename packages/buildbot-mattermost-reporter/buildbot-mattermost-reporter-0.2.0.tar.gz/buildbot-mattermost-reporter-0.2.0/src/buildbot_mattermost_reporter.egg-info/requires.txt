@@ -1,0 +1,8 @@
+buildbot>=3.0
+
+[test]
+black
+flake8
+pytest
+pytest-mock
+txrequests

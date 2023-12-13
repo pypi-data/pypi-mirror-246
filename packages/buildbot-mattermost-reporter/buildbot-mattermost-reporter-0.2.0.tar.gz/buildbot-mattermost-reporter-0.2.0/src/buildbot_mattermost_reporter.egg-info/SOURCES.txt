@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/buildbot_mattermost/__init__.py
+src/buildbot_mattermost/reporter.py
+src/buildbot_mattermost_reporter.egg-info/PKG-INFO
+src/buildbot_mattermost_reporter.egg-info/SOURCES.txt
+src/buildbot_mattermost_reporter.egg-info/dependency_links.txt
+src/buildbot_mattermost_reporter.egg-info/entry_points.txt
+src/buildbot_mattermost_reporter.egg-info/requires.txt
+src/buildbot_mattermost_reporter.egg-info/top_level.txt
+tests/test_reporter.py
