@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: syn-magia
+Version: 0.0a0
+Summary: ...
+License: LICENSE
+Author: khwong-c64
+Author-email: kin.hin.wong.c@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# syn-magia
