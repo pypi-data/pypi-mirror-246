@@ -1,0 +1,3 @@
+[console_scripts]
+qtdevops=quanttide_devops.cli:app
+

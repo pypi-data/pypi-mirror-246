@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: quanttide-devops
+Version: 0.1.0b1
+Summary: Python SDK for Specification of QuantTide DevOps
+Author: QuantTide Inc.
+Author-email: opensource@quanttide.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: coding-devops-sdk-py (>=0.1.2,<0.2.0)
+Requires-Dist: gitpython (>=3.1.40,<4.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: pygithub (>=2.1.1,<3.0.0)
+Requires-Dist: semantic-version (>=2.10.0,<3.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# `quanttide-devops-python`
+
+Python SDK for Specification of QuantTide DevOps
+
+
+## Installation
+
+```shell
+pip install quanttide-devops
+```
+
+
+## Usage
+
+```shell
+qtdevops repo sync <url_from> <url_to>
+```
+
