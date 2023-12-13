@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+area-calculator-dci1234/src/area_calculator_dci1234.egg-info/PKG-INFO
+area-calculator-dci1234/src/area_calculator_dci1234.egg-info/SOURCES.txt
+area-calculator-dci1234/src/area_calculator_dci1234.egg-info/dependency_links.txt
+area-calculator-dci1234/src/area_calculator_dci1234.egg-info/top_level.txt
