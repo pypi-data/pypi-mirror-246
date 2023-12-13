@@ -1,0 +1,11 @@
+colorama
+python-slugify
+termcolor
+terminaltables
+typing
+
+[reportportal]
+reportportal-client~=5.5
+
+[slack]
+slacker
