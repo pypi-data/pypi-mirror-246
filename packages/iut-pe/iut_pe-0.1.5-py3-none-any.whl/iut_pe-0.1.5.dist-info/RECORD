@@ -1,0 +1,10 @@
+iut_pe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iut_pe/helpers.py,sha256=ZHX-cZzpgONrJIXD2YO4nKFNB96rR43ptqrbYRHGcjw,3521
+iut_pe/scodoc.py,sha256=Hx6m4c7h_v4q39n09h5RFJpYn58UfO98ZsQwkrXxfbo,2118
+iut_pe/scripts.py,sha256=axIGm760FXW1nRmVabNwZ7L_eYou700rwc9-TmsOjVY,11798
+iut_pe/static/template.tex,sha256=jCSrA1GQPUR7GDUCnuW37ws9Lf0C3g0wMUA0MN2vJK4,5051
+iut_pe-0.1.5.dist-info/LICENSE,sha256=lvF4V_PrKKfZPa2TC8CZo8tlqaKvs3Bpv9G6XsWWQ4k,483
+iut_pe-0.1.5.dist-info/METADATA,sha256=zXs3n3q6XS6R9haOZKrPa_zU7lMMTpedwLPVC0SRW6w,7322
+iut_pe-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+iut_pe-0.1.5.dist-info/entry_points.txt,sha256=bCMHINRTtkPLf2JeWJzw5_77UIr5yBizRzdOXVEJuDM,119
+iut_pe-0.1.5.dist-info/RECORD,,
