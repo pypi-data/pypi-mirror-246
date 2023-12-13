@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "iut-pe"
+version = "0.1.1"
+description = "Outil de création de fiches de poursuites d'études lié à ScoDoc"
+authors = ["Emmanuel Roubin <emmanuel.roubin@univ-grenoble-alpes.fr>"]
+maintainers = ["Emmanuel Roubin <emmanuel.roubin@univ-grenoble-alpes.fr>"]
+homepage = "https://gricad-gitlab.univ-grenoble-alpes.fr/roubine/iut-pe"
+repository = "https://gricad-gitlab.univ-grenoble-alpes.fr/roubine/iut-pe"
+keywords = ["poursuites d'études", "BUT"]
+readme = "README.md"
+license = "WTFPL"
+# include = ["template.tex"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "*"
+pyyaml = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+iut-pe-ping = "iut_pe.scripts:ping"
+iut-pe-fetch= "iut_pe.scripts:fetch"
+iut-pe-build= "iut_pe.scripts:build"
