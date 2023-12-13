@@ -1,0 +1,9 @@
+hybridnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hybridnn/activation.py,sha256=blswJtq9hFb05kG61tbr22-z_ArBOXQSAHrI_kEyLnw,3214
+hybridnn/hybridnn.py,sha256=MnZjQt_hL3Sru9-q13gRlPW-EYXDnCVZ7bMpmQ2OkxA,8183
+hybridnn/preprocessing.py,sha256=BB-pxwNF8-vem3VSR6JLy5dU6dIoXfle1NuHf1T7e7w,2534
+hybridnn-0.0.2.dist-info/LICENSE,sha256=5nmzjb0m2pNqGcA5ABnYnzNm8yQXh1G1crn4F9RPaC4,1103
+hybridnn-0.0.2.dist-info/METADATA,sha256=RDgTANcsSw-j4xl4LcO4b4y21aOQwxH5LjxZP-iXDZ0,2006
+hybridnn-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hybridnn-0.0.2.dist-info/top_level.txt,sha256=PfXaTkF6i7tb4gg9JvhgNOORThQPJ1PSszBw6Uj47xs,9
+hybridnn-0.0.2.dist-info/RECORD,,
