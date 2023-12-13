@@ -1,0 +1,8 @@
+pyframelessutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyframelessutils/token_utilities/__init__.py,sha256=XDSOxghCv1bUeAOgTNDh5f4GnIGAhubn0K7E-xa3A2Y,38
+pyframelessutils/token_utilities/_custom_errors.py,sha256=o8Q1FlgJ-Bso8QQUI8bokDcDSdyMbvUywAwFcDctrhs,458
+pyframelessutils/token_utilities/_token_utils.py,sha256=aBiiJCr7-geTHRuaA2Dhakqs4tDWklvjaBNKpJNCRTQ,701
+py_frameless_utils-0.0.7.dist-info/METADATA,sha256=858zDA3qUwTtreWgL9e_yBlKIaTHKZroFFNtvqWn1r4,485
+py_frameless_utils-0.0.7.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+py_frameless_utils-0.0.7.dist-info/top_level.txt,sha256=B68wgUG3nEh0dnliyIJa8rubWtMeFp8b09_i1yKycHo,17
+py_frameless_utils-0.0.7.dist-info/RECORD,,
