@@ -1,0 +1,10 @@
+verysimplemodule/__init__.py,sha256=0vod57BKTwjarPow2-PQAJQ9sjcXnZUqS-Qb1hw-RPo,50
+verysimplemodule/add.py,sha256=tBTj6KHMhNCRRxcnVEw1P2DbWfwr6hDuVi7Od0EJFb4,49
+verysimplemodule/subtract.py,sha256=uxPli9Jbesz5etb0fmcf-vSg30eHKSHXHhvAf2dGf34,54
+verysimplemodule/extras/__init__.py,sha256=Nc6Gf0EMOr2f4fqPQC_gFWRvMCvTh7A2QaY4_GklaJY,56
+verysimplemodule/extras/divide.py,sha256=qoTfzpg4ajDezkDLlUJ_dpssPhqs1t-th_wg7CwdkIM,58
+verysimplemodule/extras/multiply.py,sha256=okIzPH6rYixFgydO3alb05e1sUsaEz3RHhmVRhjemSk,54
+elihoole_simplemath-0.0.1.dist-info/METADATA,sha256=vzpylpxhhjmH_7WqvFwIosmiQCJRlB97a0SiAcn31QE,641
+elihoole_simplemath-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+elihoole_simplemath-0.0.1.dist-info/top_level.txt,sha256=O7jJdRhhd2YuNuu2k3zZJfWL4reFylFWj3ab29lrPU8,17
+elihoole_simplemath-0.0.1.dist-info/RECORD,,
