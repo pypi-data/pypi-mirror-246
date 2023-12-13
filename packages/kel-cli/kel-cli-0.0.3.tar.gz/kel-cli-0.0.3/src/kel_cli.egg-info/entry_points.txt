@@ -1,0 +1,2 @@
+[console_scripts]
+kel_package = kel_package.__main__:main
