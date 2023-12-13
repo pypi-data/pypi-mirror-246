@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/myCalculatorPackageCraig/__init__.py
+src/myCalculatorPackageCraig.egg-info/PKG-INFO
+src/myCalculatorPackageCraig.egg-info/SOURCES.txt
+src/myCalculatorPackageCraig.egg-info/dependency_links.txt
+src/myCalculatorPackageCraig.egg-info/top_level.txt
+src/myCalculatorPackageCraig/division/__init__.py
+src/myCalculatorPackageCraig/division/divide.py
+src/myCalculatorPackageCraig/multiplication/__init__.py
+src/myCalculatorPackageCraig/multiplication/multiply.py
+tests/test_divide_by_three.py
+tests/test_multiply_by_three.py
