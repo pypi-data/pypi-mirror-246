@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mateo_pip
+Version: 0.0.7
+Summary: Testing package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Matt <mateousme@melonn.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: mysql-connector-python==8.1.0
+Requires-Dist: pandas==2.1.1
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+Para crear carpeta dist: 
+
+build
+
+para subir:
+
+twine upload dist/*  
+
+nombre: __token__
+
+clave: APIToken secreto
