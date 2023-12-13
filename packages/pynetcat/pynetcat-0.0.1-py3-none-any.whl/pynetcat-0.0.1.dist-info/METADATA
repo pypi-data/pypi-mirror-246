@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pynetcat
+Version: 0.0.1
+Summary: A python based netcat utility with shell emulation for windows
+Project-URL: Homepage, https://github.com/rai68/pynetcat
+Project-URL: Issues, https://github.com/rai68/pynetcat/issues
+Author-email: rai68 <1234561567b@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+
+# Python based netcat utility
