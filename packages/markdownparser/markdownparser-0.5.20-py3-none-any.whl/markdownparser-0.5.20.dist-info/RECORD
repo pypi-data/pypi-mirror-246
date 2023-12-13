@@ -1,0 +1,10 @@
+MarkdownParser/__init__.py,sha256=vOSW6qznSabqGg1PsXDh0ZkGe0flII1jU_z-QCD181Y,123
+MarkdownParser/base_class.py,sha256=1Qxdau88tJ-TMl7_zpOc5XTZHIiE1n_PS8jDDrqDKZ0,5981
+MarkdownParser/block_parser.py,sha256=53sSFEqmMo2zYt-EbItAkcybVtpd4NXONM9LX2qU5Z4,26324
+MarkdownParser/core.py,sha256=KQ2lEcWeJBtlRjQAMkTKMkO_vhBvk0Z02ikfeQQmOrM,7095
+MarkdownParser/preprocess_parser.py,sha256=nzUHXCPabLj1Y5_VCX09a9KnF9ArDChfLJSiC9obHWY,3285
+MarkdownParser/tree_parser.py,sha256=EFa0TensyJxNac5WyJCaQsvzS7rKRLOhaEf8F6e-Fmw,22239
+markdownparser-0.5.20.dist-info/LICENSE,sha256=S1YTWsa_xuJiutCv1lu-c5Q8T8P0jb18ZPtgfqjhias,1064
+markdownparser-0.5.20.dist-info/METADATA,sha256=jwLM9Y4628-hpxDvBtErtGgsk9HHahVxPQm6VFbuOU4,5699
+markdownparser-0.5.20.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+markdownparser-0.5.20.dist-info/RECORD,,
