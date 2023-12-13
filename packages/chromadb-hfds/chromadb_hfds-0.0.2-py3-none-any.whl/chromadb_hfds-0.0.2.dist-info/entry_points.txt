@@ -1,0 +1,3 @@
+[console_scripts]
+chromadb-hfds=chromadb_hfds:__init__:app
+
