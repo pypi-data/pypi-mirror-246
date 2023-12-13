@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: erpl
+Version: 0.1
+Summary: Módulo principal para o pacote erpl.
+Author-email: surumkata <a93277@uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: imageplustxt
+Requires-Dist: lark
+Requires-Dist: argparse
+Requires-Dist: pygame
+Requires-Dist: Pillow
+
+# **ERPL**
+
+TBD
