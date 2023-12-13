@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+majamask/__init__.py
+majamask/rastermask.py
+majamask.egg-info/PKG-INFO
+majamask.egg-info/SOURCES.txt
+majamask.egg-info/dependency_links.txt
+majamask.egg-info/entry_points.txt
+majamask.egg-info/requires.txt
+majamask.egg-info/top_level.txt

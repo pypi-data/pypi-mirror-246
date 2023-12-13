@@ -1,0 +1,2 @@
+[console_scripts]
+rastermask = majamask.rastermask:main

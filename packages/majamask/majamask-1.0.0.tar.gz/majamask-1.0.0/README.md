@@ -1,0 +1,100 @@
+
+
+# MAJAMASK
+<img  title="logo MAJA" src="https://labo.obs-mip.fr/wp-content-labo/uploads/sites/19/2015/11/logo_maja.png" alt="" width="80"  />  <img  title="logo CNES" src="https://labo.obs-mip.fr/wp-content-labo/uploads/sites/19/2015/03/Logo-CNES-horizontal-bleu-300-e1425986175723.png" alt="" width="130"  /> <img  title="logo CESBIO" src="https://labo.obs-mip.fr/wp-content-labo/uploads/sites/19/2012/12/logo_cesbio.png" alt="" width="110"  /> <img  title="logo CS GROUP - France" src="https://www.2isd.com/wp-content/uploads/2020/01/cs-group-squarelogo-1570645224076.png" alt="" width="150"  />  <img  title="logo DLR" src="https://labo.obs-mip.fr/wp-content-labo/uploads/sites/19/2015/11/logo_DLR.jpg" alt="" width="90"  />
+
+MajaMask is a small application that lets you create a simplified rastermask from two bitmasks present in Muscate products : CLM and MG2 masks. It can help to visualize key features, though decreases the amount of information initially available.
+
+MajaMask can be used as a standalone python module or through StartMaja to compute the rastermask as a direct output.
+
+1. [Output mask description](#Description)
+2. [MajaMask as a Standalone](#Standalone)
+3. [MajaMask with StartMaja](#StartMaja)
+
+<a name="Description"></a>
+## 1 - Output mask description
+
+MajaMask generates a rastermask from CLM and MG2 masks of Muscate products. A description of those two masks can be found [here](https://labo.obs-mip.fr/multitemp/sentinel-2/theias-sentinel-2-l2a-product-format/). Both mask contain information stored in 8-bit images, a combination of which giving the set of detected features for each pixel. In contrast, MajaMask outputs a mask containing only 9 values, each corresponding to one feature. As a result, the output rastermask contains less information but allows quick visual interpretation. 
+
+The 9 classes of pixels are attributed following a priority order described in the following table :
+
+| Pixel value | Feature | Bit considered in input masks |
+| :--------: | --------: | --------: |
+| 1   | Cirrus | CLM bit 7 |
+| 2   | All clouds except cirrus | CLM bit 1 |
+| 3   | Cloud shadows | MG2 bit 3 |
+| 4   | Snow | MG2 bit 2 |
+| 5   | Water | MG2 bit 0 |
+| 6   | Topological shadows | MG2 bit 4 |
+| 7   | Hidden areas due to terrain | MG2 bit 5 |
+| 8   | Tangent or low sun | MG2 bit 6 or 7 |
+| 0   | Valid reflectance | None of the above |
+
+<a name="Standalone"></a>
+## MajaMask as a Standalone
+
+### Requirements
+
+MajaMask requires that you work with python >= 3.
+
+Additionally, MajaMask will install some dependencies on your environment. In order for majaMask to install dependencies successfully, please :
+ - upgrade pip to latest version using `pip install --upgrade pip` on your python environment (required by numba)
+ - install the following package on your system (required by GDAL) :
+
+    On Debian/Ubuntu :
+    `apt get install libgdal-dev`
+
+    On ReadHat :
+    `dnf install gdal-devel`
+
+### Installation
+
+It is advised to install MajaMask in a dedicated python environment.
+
+And then, simply use:
+
+```
+    pip install numpy==1.24.4 && pip install --no-cache-dir gdal==GDAL_VERSION majamask
+```
+The order is important, to get GDAL_VERSION you can execute `gdalinfo --version`
+
+### Use
+
+Use MajaMask as a command line in a terminal :
+```
+rastermask -clm <path/to/CLM/tif> -mg2 <path/to/MG2/tif> -out <path/to/output/tif>
+```
+
+MajaMask may raise an error if one of these arguments is missing or if CLM and MG2 masks are not 8-bit images of the same size.
+
+Alternatively, you can give the path to a L2 product and the application will automatically generate one rastermask for each couple of CLM and MG2 masks found at each resolution :  
+
+```
+rastermask -product <path/to/L2/product> 
+```
+
+The generated rastermask(s) will be stored in the `<product/Path>/MASKS/` folder and will be called rastermask.tif (respectively rastermask_R1.tif for R1 resolution, and so on).
+
+Command line arguments (-clm, -mg2, -out) and (-product) are mutually exclusive, please provide one of the two options exactly.
+
+You can also use MajaMask as a module in your own python modules, for example:
+```
+import majamask.rastermask as rastermask
+```
+
+You can then create a rastermask using the `create_rastermask(input_mask_clm, input_mask_mg2, output_raster)` function. It can be combined with the `find_inputs(product_path)` function to automatically find and process all CLM and MG2 masks present in a L2 product :
+
+```
+input_array = rastermask.find_inputs(product_folder)
+for clm, mg2, out in input_array :
+    rastermask.create_rastermask(clm, mg2, out)
+```
+
+<a name="StartMaja"></a>
+## MajaMask with StartMaja
+
+MajaMask module is pre-installed in StartMaja. Details to install MAJA and use StartMaja can be found [here](https://gitlab.orfeo-toolbox.org/maja/maja/-/blob/develop/README.md).
+
+MajaMask can be used in StartMaja by setting the option `--rastermask` in the StartMaja command line. This will generate the rastermask for all output L2A images. The rastermask will be stored in the same directory as the CLM and MG2 masks (`<product/Path>/MASKS/`) and called `rastermask.tif`. One rastermask will be generated for each resolution (`rastermask_R1.tif`, `rastermask_R2.tif`, ...)
+
+
