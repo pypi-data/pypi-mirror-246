@@ -1,0 +1,14 @@
+pytest
+scipy
+matplotlib
+numpy
+pyocclient
+yachalk
+seaborn
+
+[ML]
+torch
+pytorch-lightning
+torcheval
+torchmetrics
+scikit-learn
