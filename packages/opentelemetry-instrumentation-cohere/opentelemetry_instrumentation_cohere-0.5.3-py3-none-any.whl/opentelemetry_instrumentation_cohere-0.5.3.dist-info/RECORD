@@ -1,0 +1,5 @@
+opentelemetry/instrumentation/cohere/__init__.py,sha256=QArBJzT6St7I5uZwNlUpOc03DinICDMFbZGYy8nD5kU,6817
+opentelemetry/instrumentation/cohere/version.py,sha256=tgzuqHKcEdKBaP57F5oXxq4XlW2n9J4Fj8ZGu7nGOZg,22
+opentelemetry_instrumentation_cohere-0.5.3.dist-info/METADATA,sha256=hnR57t0xTf-iRcZbuXJVgsNr7_x41thbKN2oOnsKVPM,1774
+opentelemetry_instrumentation_cohere-0.5.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+opentelemetry_instrumentation_cohere-0.5.3.dist-info/RECORD,,
