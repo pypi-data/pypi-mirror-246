@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kuantsol-evaluate
+Version: 0.0.1
+Summary: Kuantsol Evaluate Package
+Author: Barış Coşkun
+Author-email: <baris.coskun@kuantsol.ai>
+Keywords: python,kuantsol-evaluate
+Classifier: Programming Language :: Python :: 3
+
+Kuantsol Evaluate Package

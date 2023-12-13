@@ -1,0 +1,6 @@
+README.md
+setup.py
+kuantsol_evaluate.egg-info/PKG-INFO
+kuantsol_evaluate.egg-info/SOURCES.txt
+kuantsol_evaluate.egg-info/dependency_links.txt
+kuantsol_evaluate.egg-info/top_level.txt
