@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: betdaq_wng
+Version: 0.0.16
+Summary: Betdaq API Python wrapper
+License: MIT
+Author: Rory Cole
+Author-email: rory.cole1990@gmail.com
+Maintainer: Luka Tavkhelidze
+Maintainer-email: tavkhelidzeluka@gmail.com
+Requires-Python: >=3.11,<=3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: zeep (>=4.2.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# betdaq
+Python wrapper for Betdaq API.
+
+[Betdaq Documentation](http://api.betdaq.com/v2.0/Docs/default.aspx)
+
+# Installation
+
+```bash
+pip install git+https://github.com/tavkhelidzeluka/betdaq.git
+```
+
+# Usage
+
+```python
+from betdaq.apiclient import APIClient
+
+api = APIClient('username', 'password')
+sport_ids = api.marketdata.get_sports()
+all_markets = api.marketdata.get_sports_markets([100005]) 
+```
+
