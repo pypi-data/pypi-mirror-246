@@ -1,0 +1,12 @@
+streamlit_authenticator_mongo/__init__.py,sha256=Z54Cpy61BC6uoItmq1mpe26rEXiKH7tLZvbIaYDmM0E,2688
+streamlit_authenticator_mongo/authenticate.py,sha256=vyuPj5hMBttjbOJ__BeIbEqnNNUasO0FTiRmQgh0eVQ,22410
+streamlit_authenticator_mongo/db.py,sha256=dRm2_MABaB637NKRIfgDJ_5nHkqjaHZWG31SVh3MyvA,356
+streamlit_authenticator_mongo/exceptions.py,sha256=o_NsBzBLGhFhvI4Cc3gM1BYK-LsuIC_X5V_QvXwINTs,1703
+streamlit_authenticator_mongo/hasher.py,sha256=lRF6JwscUzCU2ofwhZbvASzqiEM8uqTLsGLzC1MAoSM,1031
+streamlit_authenticator_mongo/utils.py,sha256=OGD0IYpwJKPpNzQa8WepWDVpLdPDVFqyucJZYNxRx24,439
+streamlit_authenticator_mongo/validator.py,sha256=Mm98cuNNTyVulSQmyPClvXF-ccFGHAGDS9ffdzz9DO8,1328
+streamlit_authenticator_mongo-0.1.4.dist-info/LICENSE,sha256=2yxxkO4qbWosedJLL74PWjdS19qbVGX1UYmiYFla_K8,10456
+streamlit_authenticator_mongo-0.1.4.dist-info/METADATA,sha256=r4mliTY30dfG0QRhr-ZpaP8gMS9bl41mGNXNOdMsIME,7753
+streamlit_authenticator_mongo-0.1.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+streamlit_authenticator_mongo-0.1.4.dist-info/top_level.txt,sha256=uDraw2lekKNy04b0nyPENtz56D6eqACDsxBLLgK16lc,30
+streamlit_authenticator_mongo-0.1.4.dist-info/RECORD,,
