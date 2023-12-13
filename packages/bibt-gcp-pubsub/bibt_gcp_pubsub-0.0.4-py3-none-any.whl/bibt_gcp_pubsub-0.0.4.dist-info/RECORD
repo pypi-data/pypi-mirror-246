@@ -1,0 +1,10 @@
+bibt/__init__.py,sha256=8tkdZMytST5vyHv-q2abYIZDQje16WBHsRLOKyHYIGA,1014
+bibt/gcp/__init__.py,sha256=8tkdZMytST5vyHv-q2abYIZDQje16WBHsRLOKyHYIGA,1014
+bibt/gcp/pubsub/__init__.py,sha256=oHT9F2HcRRf1wjon1KUDF_rTyPcoDFJDpxOwzs1HguQ,98
+bibt/gcp/pubsub/classes.py,sha256=IVotkXQqZI07y10SXQbEkd4uEPFkvdfNviVTi2CyfDM,235
+bibt/gcp/pubsub/params.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibt/gcp/pubsub/version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+bibt_gcp_pubsub-0.0.4.dist-info/METADATA,sha256=kR4PAp4IRdUnNEWFt7l1eKXE6UiMKIS9a4DQ6auoKFc,2264
+bibt_gcp_pubsub-0.0.4.dist-info/WHEEL,sha256=0wCxn4rnLsvRWBK-NC7mK2QMIQ_aZSl7Qvk-8IWl_pY,87
+bibt_gcp_pubsub-0.0.4.dist-info/licenses/LICENSE,sha256=TDV6yQwODf_uwPkwskEh6wKRZ1gN2dzn22Dv6Gl0VsE,1054
+bibt_gcp_pubsub-0.0.4.dist-info/RECORD,,
