@@ -1,0 +1,53 @@
+{% load static i18n compress %}
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+
+  <title>
+    Soft UI Design System by Creative Tim
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+
+  <!-- Nucleo Icons -->
+  <link href="{% static 'css/nucleo-icons.css' %}" rel="stylesheet"/>
+  <link href="{% static 'css/nucleo-svg.css' %}" rel="stylesheet"/>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="{% static 'css/nucleo-svg.css' %}" rel="stylesheet"/>
+
+  <!-- CSS Files -->
+  <link id="pagestyle" href="{% static 'css/soft-design-system.css' %}" rel="stylesheet"/>
+</head>
+
+<body {% block body %}{% endblock body %} >
+
+{% block header %}
+
+  {% include 'website/navigation.html' %}
+
+{% endblock header %}
+
+{% block content %}{% endblock content %}
+
+{% block footer %}
+
+  {% include 'website/footer_background.html' %}
+
+{% endblock footer %}
+
+{% include 'website/scripts.html' %}
+
+{% block javascripts %}{% endblock javascripts %}
+
+</body>
+</html>
