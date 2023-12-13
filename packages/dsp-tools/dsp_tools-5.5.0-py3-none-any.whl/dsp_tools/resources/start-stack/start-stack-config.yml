@@ -1,0 +1,4 @@
+---
+
+# take commit hash of latest DSP-API release from https://github.com/dasch-swiss/dsp-api/commits/main
+DSP-API commit: 9fc109cc9ec91e7e8245ec4a438cdf775b32f48d
