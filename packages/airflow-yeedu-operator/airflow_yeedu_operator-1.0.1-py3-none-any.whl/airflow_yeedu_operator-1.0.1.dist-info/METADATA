@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: airflow-yeedu-operator
+Version: 1.0.1
+Project-URL: GitHub, https://github.com/yeedu-io/Apache-Airflow-Operator
+License-File: LICENSE
+Requires-Dist: apache-airflow (>=2.5.0)
+Requires-Dist: requests (>=2.27)
+
