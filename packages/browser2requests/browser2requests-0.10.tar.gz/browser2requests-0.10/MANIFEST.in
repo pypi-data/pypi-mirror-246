@@ -1,0 +1,3 @@
+include browser2requests/requirements.txt
+include browser2requests/thirdparty.json
+include browser2requests/README.MD

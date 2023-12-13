@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+browser2requests/README.MD
+browser2requests/__init__.py
+browser2requests/requirements.txt
+browser2requests/thirdparty.json
+browser2requests.egg-info/PKG-INFO
+browser2requests.egg-info/SOURCES.txt
+browser2requests.egg-info/dependency_links.txt
+browser2requests.egg-info/requires.txt
+browser2requests.egg-info/top_level.txt
