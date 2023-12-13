@@ -1,0 +1,117 @@
+{
+    "quizname": "Numbers Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is an ordinal number?",
+            "answer": "third",
+            "choices": {
+                "1": "three",
+                "2": "third",
+                "3": "point three"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is a cardinal number?",
+            "answer": "three",
+            "choices": {
+                "1": "three",
+                "2": "third",
+                "3": "point three"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is a decimal number?",
+            "answer": "point three",
+            "choices": {
+                "1": "three",
+                "2": "third",
+                "3": "point three"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which uses a fraction to express a period of time? ",
+            "answer": "an hour and a half",
+            "choices": {
+                "1": "1.5 hours",
+                "2": "ninety minutes",
+                "3": "an hour and a half"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "How is the number 4.55 pronounced?",
+            "answer": "four point five five",
+            "choices": {
+                "1": "four fifty-five",
+                "2": "four point fifty-five",
+                "3": "four point five five"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "In spoken English, 6 \u00f7 2 = 3 is expressed as \"six _______ two equals three\".",
+            "answer": "divided by",
+            "choices": {
+                "1": "divide",
+                "2": "divided",
+                "3": "divided by"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What does twenty times five equal?",
+            "answer": "one hundred",
+            "choices": {
+                "1": "one hundred",
+                "2": "twenty-five",
+                "3": "fifteen"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Complete with the correct word: Two plus two _______ four.",
+            "answer": "equals",
+            "choices": {
+                "1": "equalizes",
+                "2": "equals",
+                "3": "equal"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Complete with the correct word or words: 12 ___ 3 = 9.",
+            "answer": "minus",
+            "choices": {
+                "1": "minus by",
+                "2": "minus",
+                "3": "subtracted from"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which number is written as XIX in Roman numerals?",
+            "answer": "nineteen",
+            "choices": {
+                "1": "nine",
+                "2": "eleven",
+                "3": "nineteen"
+            }
+        }
+    ]
+}
