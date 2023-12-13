@@ -1,0 +1,9 @@
+koozie/__init__.py,sha256=zWw9HkxKYvOBbheaXTBJuRuaJ9ELyMwkaVCo6tX5AZU,90
+koozie/__main__.py,sha256=63lCwE2QxdH2SH5ju5YM2xXFst7uFIPIw9_nyL99LQM,176
+koozie/cli.py,sha256=Z6VivNyuiyyo34Iqe7LdluBkrHKBCCs-rMvJ_SKam8w,2281
+koozie/koozie.py,sha256=6iZg4oRMI6eJQQJpWq7SJ5nGrsbZ3ReKpvZoCju7Oaw,5476
+koozie-1.2.0.dist-info/entry_points.txt,sha256=56NtIQRZZhPRI8Mzgw14s80DjsOQMQtWhBCRS7TKAPw,48
+koozie-1.2.0.dist-info/LICENSE.txt,sha256=bylI36tuwYltIWBQp3NKB-Ut2x5YRiwZf-DlQ28xxJs,1473
+koozie-1.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+koozie-1.2.0.dist-info/METADATA,sha256=32reKsqah28BtntsQ7gps2fGcK-sgEGxU38Xi-m3Kxw,3369
+koozie-1.2.0.dist-info/RECORD,,
