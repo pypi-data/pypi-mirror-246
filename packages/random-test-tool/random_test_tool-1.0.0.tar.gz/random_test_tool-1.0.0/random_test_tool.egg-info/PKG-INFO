@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: random-test-tool
+Version: 1.0.0
+Summary: A simple python tool used form validating pseudo random generators output.
+Author: Antoine Rigoureau
+Author-email: antoine.rigoureau@xmco.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
