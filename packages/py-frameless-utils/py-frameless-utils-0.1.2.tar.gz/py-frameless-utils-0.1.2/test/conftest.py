@@ -1,0 +1,10 @@
+import pytest as pytest
+
+
+@pytest.fixture(scope="function")
+def fake_token():
+    return {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4g"
+        "RG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.keH6T3x1z7mmhKL1T3r9sQdAxxdzB6siemGMr_6ZOwU",
+        "secret": "123456",
+    }
