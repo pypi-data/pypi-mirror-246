@@ -1,0 +1,13 @@
+TestQuizzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TestQuizzer/main.py,sha256=QqpdvHXRRNDatl4F3JioLJvJBHiSlIHMgJw2cRof67Q,154
+TestQuizzer/quizuiflowcontrol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TestQuizzer/quizuiflowcontrol/main_menu.py,sha256=XsCY7gHFIS994_fLdOsLKPLVhZxujq7TKtN0L-MOnZg,4718
+TestQuizzer/quizuiflowcontrol/quizmanager.py,sha256=fg1a4gsiZUGb8ORfH4mFIWKkZsNFEEicElY4dCiJM6g,4257
+TestQuizzer/quizutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TestQuizzer/quizutils/quiz.py,sha256=T-iZPy3Cd0s8eMMFsLrCJglhBpHRx4o-YaVAV_UgMYY,12385
+TestQuizzer/quizutils/quizparser.py,sha256=97PdkV5L8FA44-wsummrXWllBkppjdjQp9PvQMJ1gm8,2985
+TestQuizzer-0.0.1.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+TestQuizzer-0.0.1.dist-info/METADATA,sha256=t0UL055PlDMzoiAcsmBMJXGPvk1FHYXzbOtg0-O9xe4,552
+TestQuizzer-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+TestQuizzer-0.0.1.dist-info/top_level.txt,sha256=rIwT75-ElscvYm9Hlwef9vuijP9zVMAof7urakbesQI,12
+TestQuizzer-0.0.1.dist-info/RECORD,,
