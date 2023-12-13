@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: endersutils
+Version: 0.2.1
+Summary: Some utility commands that aren't really too useful but I use them a lot.
+Author-email: EnderGames <business.endergames@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.12.0,>=3.0.0
+Description-Content-Type: text/markdown
+
+# Ender's Utils
+## How to use:
+### `from endersutils import endersutils`
+Would recommend using `as` to make it easier
+### `from endersutils import endersutils as eu`
+It will be shown as `eu` throughout the docs so that is all the explanation you're getting
+
+## `eu.globs`
+### Global variables for the project
+- `LIBVERSION`: The project version
+- `LIBNUMVERSION`: The easier numerical version. Only used when I want to completely disallow use of other versions
+
+## `eu.funcs`
+### Functions
+- `component`: Component related functions(technically a class but not important)
+    - `Components()`: Component group/manager, can have multiple
+        - `add_component(func, params)`: Creates a new component under the `Component` class of the `func` callable, passing in `params` arguments, in order
+        - `run_component(idx)`: Runs the component at the specified index(Order of which it was created in)
+        - `del_component(idx)`: Removes the component at the specified index
+        - `list_components()`: Lists all the components in an object and prints them(if you want all objects as an array use `Component.component`)
+- `fixedindex`: Makes indexes slightly easier, or harder, but I added it
+    - `fixedindex(idx)`: Returns idx - 1, yes thats all this does, yes I wasted my time, but so did you.
+- `fixedrange(stop)`: Returns a range from `1` to `stop + 1`, as opposed to from `0` to `stop`(I.E. using(`range(3)` returns `0, 1, 2` where as `fixedrange(3)` returns `(1, 2, 3)`))
