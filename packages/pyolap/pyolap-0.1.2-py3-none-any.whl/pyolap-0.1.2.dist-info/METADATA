@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyolap
+Version: 0.1.2
+Summary: Python for EuclidOLAP.
+Home-page: https://github.com/EuclidOLAP/EuclidOLAP
+Author: euclidolap
+Author-email: euclidolap@outlook.com
+Keywords: olap
+
