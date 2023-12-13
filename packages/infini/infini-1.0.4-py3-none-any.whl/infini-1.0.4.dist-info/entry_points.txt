@@ -1,0 +1,4 @@
+[console_scripts]
+HRC = infini.cli:Cli.parse_args
+infini = infini.cli:Cli.parse_args
+
