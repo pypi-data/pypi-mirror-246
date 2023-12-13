@@ -1,0 +1,10 @@
+geocode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geocode/flags.py,sha256=OJam2qMxHp54ZNhmlnoCVQwdgu6EZxtZhjtxO-K0oKg,10159
+geocode/geocode.py,sha256=B0iHvblDTTrq-bA3omqj1M9HBTD96S-eygwddotDuFU,15713
+geocode/data/geonames_6b64aaafc53116f.pkl,sha256=IB0VUjNZOpLZTindy9mLMNMWajgurWANVIAnR3idcJw,18080271
+geocode/data/geonames_keyword_processor_6b64aaafc53116f.pkl,sha256=681WCt-lX2TrvdMsXHoEZGTNsZwmPnAa_9JteP-7GBc,12859555
+local_geocode-0.0.2.dist-info/LICENSE,sha256=cruXVt3UZUsPqoBZbZ3vWhuI1zuskPoD0C_TubwVFb0,1071
+local_geocode-0.0.2.dist-info/METADATA,sha256=vDMf48xpTYpShfCJ8owtUPwC9QvHkqaMIcb1aRwiba4,4971
+local_geocode-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+local_geocode-0.0.2.dist-info/top_level.txt,sha256=HqaJvC-1Bi_mm_3v7qmB5lwBCRW5jVoxCP7MFIyYhzg,8
+local_geocode-0.0.2.dist-info/RECORD,,
