@@ -1,0 +1,2 @@
+[gui_scripts]
+hapsolutely = itaxotools.hapsolutely:run
