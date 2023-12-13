@@ -1,0 +1,8 @@
+[
+  "tests/test_viewer.py::test_resolve_config",
+  "tests/test_viewer.py::test_resolve_config_item",
+  "tests/test_viewer.py::test_resolves_file_path_to_url",
+  "tests/test_viewer.py::test_resolves_url_as_is[http://example.com-http://example.com]",
+  "tests/test_viewer.py::test_resolves_url_as_is[https://example.com-https://example.com]",
+  "tests/test_viewer.py::test_viewer"
+]
