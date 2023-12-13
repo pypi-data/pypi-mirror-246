@@ -1,0 +1,14 @@
+db4me/__init__.py,sha256=oWsWnkTodLhXkNxbl9HpZSXNn3tskIbQNlgYoDrpW24,395
+db4me/__version__.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+db4me/connection.py,sha256=imiMzvKLTmi2YP3cFOWckBfYqbThtQvoHlHFX4FCHeg,1681
+db4me/connection_tests.py,sha256=vr6LHpRCwGMDpPBOzdotCJrHg175Oa_ba94jqoYN2xE,1192
+db4me/errors.py,sha256=w1SsZaeqe_VwzC5uPo_cEQf2d7ZhStOk88ojET7475M,218
+db4me/settings.py,sha256=Z_xK8BKixbS5QT8GBd6qdGNW60jCdU4WoOA_fpXrNYs,3442
+docs/api.md,sha256=Db39orvGyH-yCGm_veK0iLC3dCED7ENVz4wBOHHBtZo,135
+docs/index.md,sha256=ey3aBuq6E-PrHh06tRlnAneXLoQaKxacn-d9N9FMDxc,14
+docs/requirements.txt,sha256=Qdk_Gys69t5fkLJpDwrY-xj7thznnsQczgHbMUVvMOE,134
+db4me-0.1.0.dist-info/LICENSE,sha256=ZGkFfsX2lEoSsbJk6CSCHiy_oYTLlTVUC_KCNwyzU64,1078
+db4me-0.1.0.dist-info/METADATA,sha256=Ov_auh8OxCcQRQfG0HwKmo46JeyjI6pXdoUsdC9HX_Q,3246
+db4me-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+db4me-0.1.0.dist-info/top_level.txt,sha256=tOAECJTqEHgVscgs3VPxxzz9YYnoRnhs7r50Yi9elBM,11
+db4me-0.1.0.dist-info/RECORD,,
