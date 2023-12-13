@@ -1,0 +1,9 @@
+bibt/__init__.py,sha256=8tkdZMytST5vyHv-q2abYIZDQje16WBHsRLOKyHYIGA,1014
+bibt/slack/__init__.py,sha256=XRoqU2BdhBNPSI3-uSjNpQxpc-FxSbuiK6KxGIcZYmw,110
+bibt/slack/methods.py,sha256=L34QhA_mntYH92y0rFqfoTNUUSUGmkeZVU-oR1gcN7Y,4916
+bibt/slack/params.py,sha256=PjxQVD-lTCGpX4cMU1CImkGljtPjNU78_cbX1ssTxTc,179
+bibt/slack/version.py,sha256=71Tw8stu19MsLPyF1q_DF5mb_BefzOTPYggLlSLvCms,23
+bibt_slack-0.0.14.dist-info/METADATA,sha256=K2r0NwpHnQwaS6fhXJ6abnNCGGwhho1BX1UxCkoqOvE,2312
+bibt_slack-0.0.14.dist-info/WHEEL,sha256=0wCxn4rnLsvRWBK-NC7mK2QMIQ_aZSl7Qvk-8IWl_pY,87
+bibt_slack-0.0.14.dist-info/licenses/LICENSE,sha256=TDV6yQwODf_uwPkwskEh6wKRZ1gN2dzn22Dv6Gl0VsE,1054
+bibt_slack-0.0.14.dist-info/RECORD,,
