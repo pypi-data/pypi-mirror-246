@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/myCalculatorPackage_Jade_trial/__init__.py
+src/myCalculatorPackage_Jade_trial.egg-info/PKG-INFO
+src/myCalculatorPackage_Jade_trial.egg-info/SOURCES.txt
+src/myCalculatorPackage_Jade_trial.egg-info/dependency_links.txt
+src/myCalculatorPackage_Jade_trial.egg-info/top_level.txt
+src/myCalculatorPackage_Jade_trial/division/__init__.py
+src/myCalculatorPackage_Jade_trial/division/divide.py
+src/myCalculatorPackage_Jade_trial/multiplication/__init__.py
+src/myCalculatorPackage_Jade_trial/multiplication/multiply.py
+tests/test_divide_by_three.py
+tests/test_multiply_by_three.py

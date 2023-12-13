@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: myCalculatorPackage_Jade_trial
+Version: 0.0.2
+Summary: Change the name of example myCalculatorPackage
+Author-email: Jade Yu <yujinxin01@gmail.com>
+Project-URL: Homepage, https://github.com/khalad-hasan/myCalculatorPackage
+Project-URL: Issues, https://github.com/khalad-hasan/myCalculatorPackage/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Example Package
+
+This is a simple example package. 
