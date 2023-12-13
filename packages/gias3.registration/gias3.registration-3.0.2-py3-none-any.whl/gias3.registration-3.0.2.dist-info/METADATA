@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gias3.registration
+Version: 3.0.2
+Summary: Common modules for GIAS3
+License: MPL 2.0
+Keywords: musculoskeletal,modelling
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: gias3.common
+
+GIAS3 (Geometry Image-Analysis Statistics) Registration
+=======================================================
+
+The registration packages of the GIAS3 libraries.
