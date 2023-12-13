@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bustercp"
+version = "0.0.2"
+description = "Buster Chunking Pipeline 🤖✂️"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["bustercp"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+
+[tool.poetry]
+name = "bustercp"
+version = "v0.0.2"
+description = "Buster Chunking Pipeline 🤖✂️"
+license = "MIT"
+authors = [
+    "Jan Sturm <jan.sturm@ijs.si",
+]
+readme = "README.md"
+repository = "https://gitlab.com/jansturm1/addit"
+
+packages = [
+    { include = "bustercp" },
+    { include = "bustercp/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
