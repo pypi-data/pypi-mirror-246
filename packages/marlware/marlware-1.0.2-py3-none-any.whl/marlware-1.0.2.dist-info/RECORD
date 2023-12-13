@@ -1,0 +1,11 @@
+marlware/__init__.py,sha256=RAMOd9fzHFruF19roCNrPtG9R3frM4VP7JppKocuTG4,6128
+marlware/agv_002.py,sha256=HimmDP91E76ACQOVuw-LbZPAnmB6C7IWm78rmwUr60k,56235
+marlware/rendering.py,sha256=4BDYDnLuEj82azucBcPNukFlHFGHkxaoWcFDzXxX5yE,13983
+marlware/utils/__init__.py,sha256=BeXfTdjexbQKQsTlD85kwX0ULLYuWQ2c7isJa4pikVQ,70
+marlware/utils/spaces.py,sha256=iN3nKcFYSg0LQn2T6oZYHvGwefC3eOUDwkYHmfR5sI4,942
+marlware/utils/wrappers.py,sha256=OTzIzk9KRhmu0NkUEXIKm494LbLdH6o8fyex6YQBb1E,3223
+marlware-1.0.2.dist-info/LICENSE,sha256=-5SM4j9UTQRsFZ6vsos4in1KWKfmcQMKptTAisypWTU,1077
+marlware-1.0.2.dist-info/METADATA,sha256=yy6cd3rbwUldyAKIxSowHAjwBD1lMKnmBfzBWR0SDJg,10550
+marlware-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+marlware-1.0.2.dist-info/top_level.txt,sha256=YOtPgDYhBzEqfTXNMiIdG9yA7__HpzuFKMkvWAs0OS8,9
+marlware-1.0.2.dist-info/RECORD,,
