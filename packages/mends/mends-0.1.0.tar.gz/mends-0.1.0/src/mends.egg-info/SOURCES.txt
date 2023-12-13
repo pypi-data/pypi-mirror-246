@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/mends/__init__.py
+src/mends/py.typed
+src/mends.egg-info/PKG-INFO
+src/mends.egg-info/SOURCES.txt
+src/mends.egg-info/dependency_links.txt
+src/mends.egg-info/requires.txt
+src/mends.egg-info/top_level.txt
