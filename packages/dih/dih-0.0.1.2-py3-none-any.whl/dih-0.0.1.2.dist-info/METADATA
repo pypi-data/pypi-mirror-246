@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: dih
+Version: 0.0.1.2
+Summary: A tool to save and load the docker image tarball file
+Author-email: Max Chang <p513817@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Max-C
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/p513817/dih
+Project-URL: Issues, https://github.com/p513817/dih/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: coverage ==7.3.2
+Requires-Dist: docker ==7.0.0
+Requires-Dist: exceptiongroup ==1.2.0
+Requires-Dist: idna ==3.6
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: packaging ==23.2
+Requires-Dist: pluggy ==1.3.0
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: pytest ==7.4.3
+Requires-Dist: pytest-cov ==4.1.0
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: rich ==13.7.0
+Requires-Dist: tomli ==2.0.1
+Requires-Dist: urllib3 ==2.1.0
+
+<div align="center">
+
+![cover](./assets/cover.png)
+# DIH: Docker Image Handler
+Help to save and load docker image.
+**A tool to save and load the docker image tarball file.**
+
+![GitHub License](https://img.shields.io/github/license/p513817/dih)
+![Codecov](https://img.shields.io/codecov/c/github/p513817/dih)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/dih)
+[![PyPI version](https://badge.fury.io/py/dih.svg)](https://badge.fury.io/py/dih)
+![GitHub tag checks state](https://img.shields.io/github/checks-status/p513817/dih/master)
+![GitHub issues](https://img.shields.io/github/issues/p513817/dih)
+
+
+</div>
+
+## Requirements
+* `python >3.8`
+
+## Install module with PyPI
+```bash
+pip install dih
+```
+
+## Load docker image with tarball file
+* Load docker image with specific folder or file
+    ```bash
+    dih load -f ./archives
+    ```
+* Load docker image with manual selection
+    ```bash
+    python3 src/main.py load -f ./archives --select
+    ```
+* Load docker image with specific folder and verify with compose file.
+    ```bash
+    dih load -f ./archives -c <path/to/compose>
+    ```
+## Save docker image with tarball file
+* Save docker image into tarball file.
+    ```bash
+    dih save -f ./archives
+    # Select the index of the docker images
+    ```
+* Save specific docker image into tarball file.
+    ```bash
+    # dih save -f ./archives -inc <include keys> -exc <exclude keys>
+    dih save -f ./archives -inc innodisk -exc none
+    ```
+
+# For Developer
+## Requirements
+* `python 3.10`
+* [Virtualenv, VirtualenvWrapper](./assets/install-venv.md)
+* `mkvirtualenv dih`
+* `pip install -r requirements.txt`
+
+## Testing
+```bash
+pytest -v
+pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
+```
+
+## Distribute
+* Current
+    ```bash
+    python3 -m pip install --upgrade build
+    sudo apt install python3.10-venv
+    python3 -m build
+    ```
+* Legacy
+    ```bash
+    python setup.py sdist bdist_wheel
+    pip3 install --force-reinstall dist/dih-*.whl
+    twine upload dist/*
+    ```
