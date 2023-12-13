@@ -1,0 +1,85 @@
+[companies]
+supported_companies = ["OpenAI", "Anthropic", "Ollama"]
+
+[general]
+protocol = "https"
+default_language = "english"
+default_company_name = "OpenAI"
+copy_to_clipboard = true
+display_llm_company_model_name = true
+
+[style]
+# Supported colors: https://rich.readthedocs.io/en/stable/appendix/colors.html#appendix-colors
+response_color = "green"
+warning_color = "yellow"
+error_color = "red"
+info_color = "cyan"
+
+[stats]
+display_cost = true
+display_tokens = true
+display_response_time = true
+
+[openai]
+default_openai_model_name = "gpt-3.5-turbo-1106"
+default_openai_org_name = ""
+default_openai_endpoint = "api.openai.com"
+default_openai_uri = "/v1/chat/completions"
+default_openai_max_tokens = 100
+default_openai_temperature = 0.9
+default_openai_prompt = """
+You are an expert in the field of software engineering and command line tools.
+If I ask for the commands, please give me only the commands which is enclosed in
+quotes.
+Do not return anything other than the command. Do not wrap responses in quotes.
+"""
+
+[openai_assistant]
+enable_openai_assistant = false
+openai_assistant_model_name = "gpt-4-1106-preview"
+openai_assistant_instructions = """
+Analyse the file and answer questions about performance stats. Give me the stats in a table format unless I ask it in a different way.
+If you have trouble in understanding the file format, consider it as a CSV file unless I specify the file format.
+Keep the answers short and simple unless I ask for a detailed explanation.
+"""
+openai_assistant_prompt = """
+Do not give detailed explanation. If you find any bottleneck, please share that as well.
+"""
+openai_assistant_choice_1 = "Give me min, max, 95 percentile, 99 percentile elapsed or response time in a table format."
+openai_assistant_choice_2 = "Analyze the data and give me the bottleneck in a simple sentence."
+openai_assistant_choice_3 = "Give me the passed and failed transactions in a table format."
+openai_assistant_choice_4 = "Give me the HTTP response code split by transaction in a table format."
+
+openai_delete_assistant_at_exit = true
+
+
+[anthropic]
+# chat mode is not available for Anthropic yet
+anthropic_enable_chat = false
+default_anthropic_model_name = "claude-2.1"
+default_anthropic_max_tokens = 100
+default_anthropic_streaming_response = true
+default_anthropic_prompt = """
+You are an expert in the field of software engineering and command line tools.
+If I ask for the commands, please give me only the commands which is enclosed in
+quotes.
+Give me the command in one sentence, unless I ask you to give it in a different way.
+Do not return anything other than the command. Do not wrap responses in quotes.
+"""
+
+[ollama]
+ollama_endpoint = "localhost:11434"
+# chat mode is not available for Ollama yet
+ollama_enable_chat = false
+default_ollama_model_name = "llama2"
+default_ollama_max_tokens = 100
+default_ollama_streaming_response = true
+default_ollama_prompt = """
+You are an expert in the field of software engineering and command line tools.
+If I ask for the commands, please give me only the commands which is enclosed in
+quotes.
+Give me the command in one sentence, unless I ask you to give it in a different way.
+Do not return anything other than the command. Do not wrap responses in quotes.
+"""
+
+
