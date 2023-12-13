@@ -1,0 +1,132 @@
+{
+  "human": [
+    {
+      "desc": "AC",
+      "acronym": "AC"
+    },
+    {
+      "desc": "PC",
+      "acronym": "PC"
+    },
+    {
+      "desc": "infracollicular sulcus",
+      "acronym": "ICS"
+    },
+    {
+      "desc": "PMJ",
+      "acronym": "PMJ"
+    },
+    {
+      "desc": "superior interpeduncular fossa",
+      "acronym": "SIPF"
+    },
+    {
+      "desc": "R superior LMS",
+      "acronym": "RSLMS"
+    },
+    {
+      "desc": "L superior LMS",
+      "acronym": "LSLMS"
+    },
+    {
+      "desc": "R inferior LMS",
+      "acronym": "RILMS"
+    },
+    {
+      "desc": "L inferior LMS",
+      "acronym": "LILMS"
+    },
+    {
+      "desc": "Culmen",
+      "acronym": "CUL"
+    },
+    {
+      "desc": "Intermammillary sulcus",
+      "acronym": "IMS"
+    },
+    {
+      "desc": "R MB",
+      "acronym": "RMB"
+    },
+    {
+      "desc": "L MB",
+      "acronym": "LMB"
+    },
+    {
+      "desc": "pineal gland",
+      "acronym": "PG"
+    },
+    {
+      "desc": "R LV at AC",
+      "acronym": "RLVAC"
+    },
+    {
+      "desc": "L LV at AC",
+      "acronym": "LLVAC"
+    },
+    {
+      "desc": "R LV at PC",
+      "acronym": "RLVPC"
+    },
+    {
+      "desc": "L LV at PC",
+      "acronym": "LLVPC"
+    },
+    {
+      "desc": "Genu of CC",
+      "acronym": "GENU"
+    },
+    {
+      "desc": "Splenium of CC",
+      "acronym": "SPLE"
+    },
+    {
+      "desc": "R AL temporal horn",
+      "acronym": "RALTH"
+    },
+    {
+      "desc": "L AL temporal horn",
+      "acronym": "LALTH"
+    },
+    {
+      "desc": "R superior AM temporal horn",
+      "acronym": "RSAMTH"
+    },
+    {
+      "desc": "L superior AM temporal horn",
+      "acronym": "LSAMTH"
+    },
+    {
+      "desc": "R inferior AM temporal horn",
+      "acronym": "RIAMTH"
+    },
+    {
+      "desc": "L inferior AM temporal horn",
+      "acronym": "LIAMTH"
+    },
+    {
+      "desc": "R indusium griseum origin",
+      "acronym": "RIGO"
+    },
+    {
+      "desc": "L indusium griseum origin",
+      "acronym": "LIGO"
+    },
+    {
+      "desc": "R ventral occipital horn",
+      "acronym": "RVOH"
+    },
+    {
+      "desc": "L ventral occipital horn",
+      "acronym": "LVOH"
+    },
+    {
+      "desc": "R olfactory sulcal fundus",
+      "acronym": "ROSF"
+    },
+    {
+      "desc": "L olfactory sulcal fundus",
+      "acronym": "LOSF"
+    }
+  ]
+}
