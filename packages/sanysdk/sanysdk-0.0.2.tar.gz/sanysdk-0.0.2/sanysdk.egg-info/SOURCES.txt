@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+sanysdk.egg-info/PKG-INFO
+sanysdk.egg-info/SOURCES.txt
+sanysdk.egg-info/dependency_links.txt
+sanysdk.egg-info/requires.txt
+sanysdk.egg-info/top_level.txt
