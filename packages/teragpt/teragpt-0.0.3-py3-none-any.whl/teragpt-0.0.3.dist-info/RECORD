@@ -1,0 +1,8 @@
+teragpt/__init__.py,sha256=fN6j4O2QDEe_dhSqwnIg_RkoJhXvZJpB0lE_z2AAEec,122
+teragpt/main.py,sha256=P89vUEgvaMeBAR7yYebx5qV1jl9JW90BTU-H1bOsajA,1935
+teragpt/tokenizer.py,sha256=J7EBvRuVFasJ0V6RShaIuNdutTeTFCs5uGEfPHMoBnA,3044
+teragpt/train.py,sha256=JCzdqQw1LxKv_coIUUbwsdPib5vEMI5JYStkulMOIeg,9300
+teragpt-0.0.3.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+teragpt-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+teragpt-0.0.3.dist-info/METADATA,sha256=sOt4pj8xzShTXyJJ2yhk5JTmWK5dHimrGa1l1Si3Svo,6535
+teragpt-0.0.3.dist-info/RECORD,,
