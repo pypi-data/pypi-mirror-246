@@ -1,0 +1,8 @@
+README.md
+setup.py
+euclidolap/__init__.py
+euclidolap/pyolap.py
+pyolap.egg-info/PKG-INFO
+pyolap.egg-info/SOURCES.txt
+pyolap.egg-info/dependency_links.txt
+pyolap.egg-info/top_level.txt
