@@ -1,0 +1,5 @@
+pyproject.toml
+gpt5.egg-info/PKG-INFO
+gpt5.egg-info/SOURCES.txt
+gpt5.egg-info/dependency_links.txt
+gpt5.egg-info/top_level.txt
