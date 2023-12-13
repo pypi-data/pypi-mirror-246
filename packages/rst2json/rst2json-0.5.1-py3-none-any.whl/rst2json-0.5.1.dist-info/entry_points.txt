@@ -1,0 +1,2 @@
+[console_scripts]
+rst2json = rst2json.__main__:main
