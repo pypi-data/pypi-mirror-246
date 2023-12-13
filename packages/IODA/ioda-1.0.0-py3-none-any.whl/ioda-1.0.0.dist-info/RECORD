@@ -1,0 +1,15 @@
+IODA/IODA_model.pt,sha256=k0ZQ2t6P4cES_X_0kKntDwAg4zYTd8_ivYRfBhdpVKo,134
+IODA/anonymize_video.py,sha256=i-nFzm_Tq1fWzOVJ6oj93_k2qq7KCHUibNgbdfkqU9Y,3961
+IODA/args.py,sha256=muJo8MxJjnWQVNikDDjvUpX6EUYQAvBfTaNkEcdp898,4184
+IODA/dali_pipeline.py,sha256=sGsIdiaFXelAa5T29vc4RfT4_GSp2ar5Unc40Oe2gqE,4240
+IODA/format_net_output.py,sha256=FLVKcY-KWHyWXN4WJCzfgijRKSGKwZ-KOkrZDW8nyxE,1187
+IODA/initialize.py,sha256=2ZUTg1HnB5CBiur6UUlIarohGEu5NqMGchiKswE8MB4,520
+IODA/loss.py,sha256=20yxNUTH2Rh14b7R1AkwbZ1qOHtMum9FD8_zeF2F8-0,2176
+IODA/lstm_alexnet.py,sha256=N8D3n95Bu8sPlHI324EBYcYIvKSYXIDWD3c7xzoPD8E,2329
+IODA/resume.py,sha256=En3JcAXrUq2GEUAujOpWa8p4gJ5-9HaI2WCaBB7c1LI,1611
+IODA/train.py,sha256=oTw68widVjEBUoepKiajHHTOeASoiaSF6sF2qc7z4dQ,3681
+IODA/utils.py,sha256=d4CyuHpkKClQOjH91xyn40evpgkrrAuy5u2QmzLYfvU,2931
+IODA/validate.py,sha256=0b9wRWupSjfHp69QiDqKcW64643X63216Qk-HDoxB-k,2444
+ioda-1.0.0.dist-info/METADATA,sha256=l15QXEnRnY2Aqv8hoho96bVaE1KG73tbBi6WEC0KOsM,4261
+ioda-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ioda-1.0.0.dist-info/RECORD,,
