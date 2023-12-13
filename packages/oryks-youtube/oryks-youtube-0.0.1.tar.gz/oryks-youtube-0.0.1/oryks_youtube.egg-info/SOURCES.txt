@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+oryks_youtube.egg-info/PKG-INFO
+oryks_youtube.egg-info/SOURCES.txt
+oryks_youtube.egg-info/dependency_links.txt
+oryks_youtube.egg-info/requires.txt
+oryks_youtube.egg-info/top_level.txt
+youtube/__init__.py
+youtube/youtube.py
