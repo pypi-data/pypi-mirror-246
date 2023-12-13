@@ -1,0 +1,7 @@
+sqlmodelx/__init__.py,sha256=7nHnz2EQxGZWU7daHjUhklA04jFeb62nu3SbrdZ2ciY,141
+sqlmodelx/enums.py,sha256=cMy0vBZEs6XVYyeM4xKJFp1zd85Lyt2Zn1f9EoLdgHg,2723
+sqlmodelx/main.py,sha256=AsYlt-UaXW24y2HtdTzoY8g3DEyKMLsr8Q7VNo3Mjb8,9478
+sqlmodelx/sqltypes.py,sha256=HJ40Wb2e_sLYs8tja7WWi-0WkkQ6mdrcpakhB55yxF4,854
+sqlmodelx-0.0.6.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+sqlmodelx-0.0.6.dist-info/METADATA,sha256=7Sj-9Z0k1jZzrhLG3wirFzIwPjznnkWSa5KVD6-uWo0,5764
+sqlmodelx-0.0.6.dist-info/RECORD,,
