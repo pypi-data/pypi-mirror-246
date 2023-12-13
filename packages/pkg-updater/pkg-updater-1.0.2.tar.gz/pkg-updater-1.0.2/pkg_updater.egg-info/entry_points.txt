@@ -1,0 +1,2 @@
+[console_scripts]
+pkg-updater = pkg_updater.updater:main
