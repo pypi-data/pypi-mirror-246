@@ -1,0 +1,12 @@
+snowblind/__init__.py,sha256=3BksZPp_hriWFNoIDZaApumbicr9Gneo_T0s1L8WGJQ,708
+snowblind/_version.py,sha256=H-qsvrxCpdhaQzyddR-yajEqI71hPxLa4KxzpP3uS1g,411
+snowblind/jump_plus.py,sha256=mqmJe2rNBr5z2_5TrYQ7WKF1ETMVw174jDM4aubU1hE,2301
+snowblind/persist.py,sha256=4P8WiOIytvCOS1AFitEhR6zv6GxV0IRPtikRUKCSSsM,5217
+snowblind/rc_selfcal.py,sha256=QLPhbyilm8FEm-7ftd6TMJcIj1fDjG9AlciFAfJwlzU,4112
+snowblind/snowblind.py,sha256=2ldgNyKO2vicDcksfLOQ5o6mH9RAMQZV7FZ4ZwwTzqc,7261
+snowblind-0.2.0.dist-info/LICENSE,sha256=p19XIQQYbC02PkD1jYSsE7chPAMBAXA2RdLA7AWZzc4,1543
+snowblind-0.2.0.dist-info/METADATA,sha256=Opmmp_DNgTqMCJbUCKPyDNJAZf8AddDDB_IT-oHZ5xs,4171
+snowblind-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+snowblind-0.2.0.dist-info/entry_points.txt,sha256=5FLK9h6ZzdNU8T3vAKEq_Wqd8tR7OkFqPrkJjhrDKnw,43
+snowblind-0.2.0.dist-info/top_level.txt,sha256=Cq3zFBp3XETRIEQ2Vu5AT661_oPCaTGOM3vwEDESDsI,10
+snowblind-0.2.0.dist-info/RECORD,,
