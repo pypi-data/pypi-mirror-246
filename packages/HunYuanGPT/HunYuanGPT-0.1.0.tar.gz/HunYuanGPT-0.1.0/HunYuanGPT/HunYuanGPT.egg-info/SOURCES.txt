@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+HunYuanGPT/HunYuanGPT.egg-info/PKG-INFO
+HunYuanGPT/HunYuanGPT.egg-info/SOURCES.txt
+HunYuanGPT/HunYuanGPT.egg-info/dependency_links.txt
+HunYuanGPT/HunYuanGPT.egg-info/entry_points.txt
+HunYuanGPT/HunYuanGPT.egg-info/requires.txt
+HunYuanGPT/HunYuanGPT.egg-info/top_level.txt
