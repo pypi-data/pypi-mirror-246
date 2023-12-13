@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bustercp
+Version: 0.0.1
+Summary: Buster Chunking Pipeline 🤖✂️
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pdfminer.six ==20221105
+Requires-Dist: chardet ==5.2.0
+Requires-Dist: nltk ==3.8.1
+Requires-Dist: pycountry ==22.3.5
+Requires-Dist: requests ==2.31.0
+Requires-Dist: selenium ==4.15.2
+Requires-Dist: webdriver-manager ==4.0.1
+Requires-Dist: beautifulsoup4 ==4.12.2
+
+### Buster Chunking Pipeline (BusterCP)
