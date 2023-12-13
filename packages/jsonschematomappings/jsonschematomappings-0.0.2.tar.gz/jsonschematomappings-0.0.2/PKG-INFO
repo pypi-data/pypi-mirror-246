@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: jsonschematomappings
+Version: 0.0.2
+Summary: Converts JSON schema to OpenSearch/ElasticSearch mappings
+Author: William McLaren
+Project-URL: Homepage, https://github.com/willmclaren/jsonschematomappings
+Project-URL: Bug Tracker, https://github.com/willmclaren/jsonschematomappings/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools>=65.5.1
+Requires-Dist: fastjsonschema<3,>=2.16.2
+
+# jsonschematomappings
+
+Convert JSON schema to OpenSearch/ElasticSearch mappings
+
+## Install
+
+From pypi:
+
+```
+pip install jsonschematomappings
+```
+
+From repository directory:
+
+```
+pip install -e .
+```
+
+If developing/running tests:
+
+```
+pip install -r requirements/requirements-test.txt
+```
+
+## Run
+
+```
+$ jsonschematomappings -h
+usage: jsonschematomappings [-h] [--template TEMPLATE] json_schema
+
+Convert a JSON schema document to an OpenSearch/ElasticSearch mappings document
+
+positional arguments:
+  json_schema          JSON schema document
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --template TEMPLATE  Template mappings document
+```

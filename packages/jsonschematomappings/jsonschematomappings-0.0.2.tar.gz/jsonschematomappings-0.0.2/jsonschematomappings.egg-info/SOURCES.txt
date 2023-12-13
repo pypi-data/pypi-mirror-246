@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+jsonschematomappings/__init__.py
+jsonschematomappings.egg-info/PKG-INFO
+jsonschematomappings.egg-info/SOURCES.txt
+jsonschematomappings.egg-info/dependency_links.txt
+jsonschematomappings.egg-info/entry_points.txt
+jsonschematomappings.egg-info/requires.txt
+jsonschematomappings.egg-info/top_level.txt
+requirements/requirements-test.txt
+requirements/requirements.txt
+tests/test_jsonschematomappings.py
