@@ -1,0 +1,11 @@
+chatgpt/VERSION,sha256=Qd60-DGk0CyAsfZTOK4DTPjIJ6aXFjyqch4-b7ff6f0,5
+chatgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt/main.py,sha256=bwl22dTepMUbrYPBzB30GrXwCuO6v6dBsVm1oYOpI6s,2047
+chatgpt/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt/core/gpt.py,sha256=HpbV80Npxfu8UfG5ojQeTygoG0LqhOCkYbhlx1IhHfI,5391
+asst-2.0.9.dist-info/LICENSE,sha256=_cdFfDpRnQl1R9CXRANvPdw97I6Jof2ir-eVf7XT1_M,1102
+asst-2.0.9.dist-info/METADATA,sha256=7oICD6ajkw-Aloh_mi9yg57_YCDnOdj3mUmEstYICsI,2967
+asst-2.0.9.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+asst-2.0.9.dist-info/entry_points.txt,sha256=V2aeIaUA2oo2z2aV-Lc4lHgtF1upg85jIlgJf0Au1mk,43
+asst-2.0.9.dist-info/top_level.txt,sha256=ogfFw9mYdqL6TZsrlfGumrd61piUQvJzgEobqC7_tio,8
+asst-2.0.9.dist-info/RECORD,,
