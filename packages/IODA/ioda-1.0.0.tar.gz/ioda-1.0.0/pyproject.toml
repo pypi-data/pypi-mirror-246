@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "IODA"
+version = "1.0.0"
+description = "Inside Outside Discrimination Algorithm (IODA)"
+authors = ["André Schulze <andre.schulze@med.uni-heidelberg.de>"]
+repository = "https://gitlab.com/aicor/ioda"
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "IODA", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+numpy = "^1.26.2"
+scikit-learn = "^1.3.2"
+tensorboard = "^2.15.1"
+tqdm = "^4.64.1"
+torch = "^1.13.1"                                                     # On linux this installs the gpu version of torch
+torchvision = "^0.14.1"
+nvidia-dali-cuda110 = { version = "^1.32.0", source = "nvidia_dali" }
+
+[tool.poetry.dev-dependencies]
+isort = "^5.12.0"
+black = "^23.11.0"
+flake8 = "^6.1.0"
+
+[[tool.poetry.source]]
+name = "nvidia_dali"
+url = "https://developer.download.nvidia.com/compute/redist"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.masonry.api"
