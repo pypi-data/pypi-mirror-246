@@ -1,0 +1,3 @@
+[console_scripts]
+focus-converter=focus_converter.main:app
+
