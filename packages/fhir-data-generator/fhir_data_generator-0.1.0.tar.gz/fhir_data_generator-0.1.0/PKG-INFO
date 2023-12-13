@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fhir-data-generator
+Version: 0.1.0
+Summary: The quick FHIR data generator for Python.
+Home-page: https://github.com/peter279k/fhir-data-generator
+License: MIT
+Keywords: FHIR,Data
+Author: Peter Li
+Author-email: peter279k@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (==2.31.0)
+Project-URL: Repository, https://github.com/peter279k/fhir-data-generator
+Description-Content-Type: text/markdown
+
+# Development setup
+
+- Running the `git clone` to clone the repository.
+- Preparing the `pipenv` environment.
+- Running the `pipenv install -e .`.
+
+# Packaging steps
+
+- Running the `poetry check` command.
+- Running the `poetry build` command.
+
+# Refrences
+
+- 
+
