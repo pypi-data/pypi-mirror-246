@@ -1,0 +1,7 @@
+{
+    "//": "formal: https://service.arthub.woa.com; test: https://arthub-service-test.woa.com",
+    "host": "https://arthub-service-test.woa.com",
+    "route": "account/account/openapi/v3/core/get-aivatar-projects-by-account",
+    "guide_page_url": "https://arthub.qq.com/user_manual/index.html",
+    "manager_page_url": "https://arthub.qq.com"
+}
