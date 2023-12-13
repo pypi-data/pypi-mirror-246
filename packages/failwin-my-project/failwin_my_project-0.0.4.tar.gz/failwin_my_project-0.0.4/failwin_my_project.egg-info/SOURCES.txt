@@ -1,0 +1,13 @@
+pyproject.toml
+readme.md
+failwin_my_project.egg-info/PKG-INFO
+failwin_my_project.egg-info/SOURCES.txt
+failwin_my_project.egg-info/dependency_links.txt
+failwin_my_project.egg-info/top_level.txt
+failwin_my_project/src/consts.py
+failwin_my_project/src/utils.py
+failwin_my_project/src/my_package/__init__.py
+failwin_my_project/src/my_package/my_mod_1.py
+failwin_my_project/src/my_package/my_mod_2.py
+failwin_my_project/src/my_package/my_folder/__init__.py
+failwin_my_project/src/my_package/my_folder/my_folder_mod_1.py

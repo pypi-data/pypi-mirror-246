@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: failwin_my_project
+Version: 0.0.4
+Summary: Read the latest Real Python tutorials
+Author-email: Yurii Kovalchuk <info@realpython.com>
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+## Test project 
