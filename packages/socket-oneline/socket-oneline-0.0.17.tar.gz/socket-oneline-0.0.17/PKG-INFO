@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: socket-oneline
+Version: 0.0.17
+Summary: Client server base class over socket
+Home-page: https://bitbucket.org/arrizza-public/socket-oneline/src/master
+Download-URL: https://bitbucket.org/arrizza-public/socket-oneline/get/master.zip
+Author: JA
+Author-email: cppgent0@gmail.com
+License: MIT
+Keywords: socket,client server,simple
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: unknown
+License-File: LICENSE.txt
+Requires-Dist: pytest-ver
+Requires-Dist: pytest
+
+unknown
