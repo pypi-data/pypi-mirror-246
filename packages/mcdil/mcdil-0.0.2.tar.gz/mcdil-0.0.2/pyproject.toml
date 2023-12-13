@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcdil"
+authors = [
+  { name="Minsung Kim", email="spongbob9876@naver.com" },
+]
+description = "McDic's Language for Minecraft JE Datapack"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+license = {file = "LICENSE"}
+keywords = ["minecraft", "language", "compiler"]
+dynamic = ["dependencies", "version"]
+
+[project.urls]
+"Homepage" = "https://github.com/McDic/MCDIL"
+
+[project.scripts]
+parse = "mcdil:cli.cli_parse"
+compile = "mcdil:cli.cli_compile"
+
+[tool.setuptools.packages.find]
+exclude = ["example*", "dist*", "mcdppy*", "*.egg-info*"]
+
+[tool.setuptools.package-data]
+mcdil = ["*.lark"]
+
+[tool.setuptools.dynamic]
+version = {attr = "mcdil.VERSION"}
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {dev = {file = ["requirements-dev.txt"]}}
