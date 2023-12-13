@@ -1,0 +1,117 @@
+{
+    "quizname": "Countries and Nationality Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Liverpool has quite a few South American players, including three from",
+            "answer": "Brazil",
+            "choices": {
+                "1": "Brazil",
+                "2": "Brazilian",
+                "3": "Brazilians"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Carlsberg is a _______ beer, isn't it? ",
+            "answer": "Danish",
+            "choices": {
+                "1": "Dane",
+                "2": "Danish",
+                "3": "Denmark"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A person from Nigeria is a ",
+            "answer": "Nigerian",
+            "choices": {
+                "1": "Nigerien",
+                "2": "Nigerese",
+                "3": "Nigerian"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Frankie loves French wine and _______ cheese.",
+            "answer": "Swiss",
+            "choices": {
+                "1": "Swiss",
+                "2": "Switz",
+                "3": "Suisse"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Yasmin is an Iranian, and her friend Sara is an",
+            "answer": "Iraqi",
+            "choices": {
+                "1": "Iraq",
+                "2": "Iraqi",
+                "3": "Iraqian"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Mr Erdo\u011fan's a _______ , isn't he? ",
+            "answer": "Turk",
+            "choices": {
+                "1": "Turk",
+                "2": "Turkey",
+                "3": "Turkish"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Musicians like Bj\u00f6rk and Sigur R\u00f3s are among the most famous _______ in the world right now.",
+            "answer": "Icelanders",
+            "choices": {
+                "1": "Icelandics",
+                "2": "Icelanders",
+                "3": "Icelandians"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "In 1973 the USA helped _______ military dictator Augusto Pinochet stage the coup that ended democracy in Chile. ",
+            "answer": "Chilean",
+            "choices": {
+                "1": "Chile",
+                "2": "Chilean",
+                "3": "Chilenian"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Marie Curie was a _______ chemist who discovered the element Polonium and named it after her country.",
+            "answer": "Polish",
+            "choices": {
+                "1": "Pole",
+                "2": "Polar",
+                "3": "Polish"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "In 2018, the _______ model, singer and artist Catriona Gray won the Miss Universe crown for the Philippines.",
+            "answer": "Filipino-Australian",
+            "choices": {
+                "1": "Philippino-Australian",
+                "2": "Filipinan-Australian",
+                "3": "Filipino-Australian"
+            }
+        }
+    ]
+}
