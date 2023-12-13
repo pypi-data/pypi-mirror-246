@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: iot-device-backbone-client
+Version: 0.0.1
+Summary: Python client to consume the CIOT Device Backbone GraphQL API
+Author-email: Adriaan Knapen <adriaan@claimr.tools>
+License: UNLICENSED
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: httpx
+Requires-Dist: websockets
+
+# IOT Device Backbone - Client (Python)
+
+## Getting Started
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Then, generate the client by running:
+
+```
+ariadne-codegen
+```
+
+## Usage
+
+See `example` directoy for examples. You can run them with:
+
+```command
+python -m example.main
+```
+
+## Development
+
+Install locally:
+
+```command
+python -m pip install -e .
+```
+
+## Publishing
+
+```command
+python -m pip install build twine
+
+python -m build
+
+twine check dist/*
+
+twine upload dist/*
+```

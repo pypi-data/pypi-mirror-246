@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "ariadne-codegen"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iot-device-backbone-client"
+version = "0.0.1"
+description = "Python client to consume the CIOT Device Backbone GraphQL API"
+readme = "README.md"
+authors = [{ name = "Adriaan Knapen", email = "adriaan@claimr.tools" }]
+license = { text = "UNLICENSED" }
+dependencies = ["pydantic", "httpx", "websockets"]
+
+
+[tool.ariadne-codegen]
+schema_path = "../../dist/schema.graphql"
+queries_path = "queries.graphql"
+client_name = "IotDeviceBackboneClient"
+target_package_name = "iot_device_backbone_client"
+
+[tool.ariadne-codegen.scalars.DateTime]
+type = "datetime.datetime"
