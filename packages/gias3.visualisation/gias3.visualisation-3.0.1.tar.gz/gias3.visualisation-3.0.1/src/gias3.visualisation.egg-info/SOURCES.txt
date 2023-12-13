@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/gias3/__init__.py
+src/gias3.visualisation.egg-info/PKG-INFO
+src/gias3.visualisation.egg-info/SOURCES.txt
+src/gias3.visualisation.egg-info/dependency_links.txt
+src/gias3.visualisation.egg-info/namespace_packages.txt
+src/gias3.visualisation.egg-info/requires.txt
+src/gias3.visualisation.egg-info/top_level.txt
+src/gias3/visualisation/__init__.py
+src/gias3/visualisation/fieldvi.py
+src/gias3/visualisation/frameviewer.py
+src/gias3/visualisation/vtkRender.py

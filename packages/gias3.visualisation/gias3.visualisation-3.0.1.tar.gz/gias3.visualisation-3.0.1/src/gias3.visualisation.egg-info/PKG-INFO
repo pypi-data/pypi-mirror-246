@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gias3.visualisation
+Version: 3.0.1
+Summary: Visualisation modules for GIAS3
+License: MPL 2.0
+Keywords: musculoskeletal,modelling
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: mayavi
+Requires-Dist: traits
+Requires-Dist: traitsui
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+GIAS3 (Geometry Image-Analysis Statistics) Visualisation
+========================================================
+
+The visualisation packages of the GIAS3 libraries.
+
+Make sure that::
+
+  os.environ['ETS_TOOLKIT'] = 'qt'
+
+Is set to the appropriate toolkit.
