@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+yerri/__init__.py
+yerri.egg-info/PKG-INFO
+yerri.egg-info/SOURCES.txt
+yerri.egg-info/dependency_links.txt
+yerri.egg-info/top_level.txt
