@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: databricks-genai
+Version: 0.0.1
+Summary: Interact with the Databricks API from python
+Home-page: https://docs.mosaicml.com/projects/mcli/en/latest/finetuning/finetuning.html
+Author: Databricks
+Author-email: genai-eng-team@databricks.com
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Requires-Dist: databricks-sdk >=0.14.0
+Requires-Dist: typing-extensions >=4.7.1
+Requires-Dist: mosaicml-cli >=0.5.30
+Provides-Extra: all
+Requires-Dist: pylint >=2.12.2 ; extra == 'all'
+Requires-Dist: pytest-mock >=3.7.0 ; extra == 'all'
+Requires-Dist: pytest-cov >=4.0.0 ; extra == 'all'
+Requires-Dist: pyright ==1.1.256 ; extra == 'all'
+Requires-Dist: isort >=5.9.3 ; extra == 'all'
+Requires-Dist: radon >=5.1.0 ; extra == 'all'
+Requires-Dist: twine >=4.0.2 ; extra == 'all'
+Requires-Dist: toml >=0.10.2 ; extra == 'all'
+Requires-Dist: pre-commit >=2.17.0 ; extra == 'all'
+Requires-Dist: build >=0.10.0 ; extra == 'all'
+Requires-Dist: yapf >=0.33.0 ; extra == 'all'
+Requires-Dist: pytest >=6.2.5 ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: build >=0.10.0 ; extra == 'dev'
+Requires-Dist: isort >=5.9.3 ; extra == 'dev'
+Requires-Dist: pre-commit >=2.17.0 ; extra == 'dev'
+Requires-Dist: pylint >=2.12.2 ; extra == 'dev'
+Requires-Dist: pyright ==1.1.256 ; extra == 'dev'
+Requires-Dist: pytest-cov >=4.0.0 ; extra == 'dev'
+Requires-Dist: pytest-mock >=3.7.0 ; extra == 'dev'
+Requires-Dist: pytest >=6.2.5 ; extra == 'dev'
+Requires-Dist: radon >=5.1.0 ; extra == 'dev'
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+Requires-Dist: toml >=0.10.2 ; extra == 'dev'
+Requires-Dist: yapf >=0.33.0 ; extra == 'dev'
+
