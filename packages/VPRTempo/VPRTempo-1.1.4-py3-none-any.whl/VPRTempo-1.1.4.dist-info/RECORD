@@ -1,0 +1,17 @@
+VPRTempo-1.1.4.data/scripts/main.py,sha256=h_h9fYRjH--QQzRvywNZbGT4zNqnOkV-D2L_CIpBk_w,7278
+vprtempo/VPRTempo.py,sha256=-B3lZob1omphFBmwETevCv0vU8HpfakOhwVn3O6eo70,7980
+vprtempo/VPRTempoQuant.py,sha256=rhb0hYbUwAm5xzzps3Kkjgj7TmmjwwAqNS0iJXYjsf0,8615
+vprtempo/VPRTempoQuantTrain.py,sha256=bWdJd-06qqVAPe9CkZTAL2cIrEyM-IPO7ib6I6bbz0M,11129
+vprtempo/VPRTempoTrain.py,sha256=fYrF0CPwPtuciHQ9_-4gE2CGYd8omDN0asbSZF7YGcA,11151
+vprtempo/__init__.py,sha256=vx34j_Zl2wsV-M5kgQJwCoSCd-DiNaNSBo5zwgu82rk,20
+vprtempo/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vprtempo/src/blitnet.py,sha256=7h1m3TCcRfkZYIwch6tj8N6f2tjb9Hze3k-VzB2ZDRg,10332
+vprtempo/src/dataset.py,sha256=WQn9a92utnpx0SAvI1UiOnoUuM6Q-XSil6zi1kl4Dxo,7857
+vprtempo/src/loggers.py,sha256=pnKHiEWnr6wx7CwxX8NddBAqXSX2jnqgsIbAQx05O28,6241
+vprtempo/src/metrics.py,sha256=GBZoS_vnvH56ITlXOqV5sgBujQFSW9Qmob0DnxA0MeE,6908
+vprtempo/src/nordland.py,sha256=LxmnaMiCD7fKTXWPcjdK5hcZxt-32bH-gMSDDCPJDU0,4456
+VPRTempo-1.1.4.dist-info/LICENSE,sha256=tNurOBFwdit7GfTWsDiPpw-R_qbnZmHE9WWXTXN0vgg,1067
+VPRTempo-1.1.4.dist-info/METADATA,sha256=cO9reBfdC6VlsIZhYkb_06hAuNczE_IgQRpks9UQxUA,10213
+VPRTempo-1.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+VPRTempo-1.1.4.dist-info/top_level.txt,sha256=K5JkUkTSlHT5RQaxFyCD-0Tt4eN2c-n9qzEiwuklKUU,9
+VPRTempo-1.1.4.dist-info/RECORD,,
