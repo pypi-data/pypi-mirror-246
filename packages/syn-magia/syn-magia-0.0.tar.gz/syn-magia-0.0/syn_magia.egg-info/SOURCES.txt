@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+syn_magia/__init__.py
+syn_magia.egg-info/PKG-INFO
+syn_magia.egg-info/SOURCES.txt
+syn_magia.egg-info/dependency_links.txt
+syn_magia.egg-info/top_level.txt
