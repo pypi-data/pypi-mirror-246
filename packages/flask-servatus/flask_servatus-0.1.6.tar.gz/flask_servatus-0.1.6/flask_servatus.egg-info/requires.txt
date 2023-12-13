@@ -1,0 +1,13 @@
+flask>=1.0.0
+
+[:(python_version >= "2.7" and python_full_version < "3.0.0") or python_full_version >= "3.3.0"]
+six>=1.11.0
+
+[develop]
+Sphinx==1.2.2
+sphinx_bootstrap_theme==0.4.5
+pytest>=6.0.0
+pytest-cov>=2.11
+pytest_spec>=3.1.0
+SQLAlchemy>=1.2
+Flask-Sqlalchemy==2.4.4

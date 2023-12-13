@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: flask_servatus
+Version: 0.1.6
+Summary: A port of djangos storages framework for use with flask applications
+Home-page: https://github.com/mikeywaites/Flask-Servatus
+Author: Mikey Waites, Jack Saunders
+Author-email: mikey.waites@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/mikeywaites/Flask-Servatus/releases/tag/0.1.6
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Provides-Extra: develop
+License-File: LICENSE
+
+UNKNOWN
+
