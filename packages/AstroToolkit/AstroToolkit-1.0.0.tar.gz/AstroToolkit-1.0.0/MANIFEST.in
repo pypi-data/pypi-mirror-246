@@ -1,0 +1,5 @@
+include src/WDPlanetsToolkit/Timeseries/*.f90
+include src/WDPlanetsToolkit/Timeseries/*.bat
+include src/WDPlanetsToolkit/Timeseries/*.sh
+include src/WDPlanetsToolkit/Timeseries/*.pyd
+include src/WDPlanetsToolkit/HRD/*.fits
