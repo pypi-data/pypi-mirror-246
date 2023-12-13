@@ -1,0 +1,2 @@
+[console_scripts]
+pytrust = pytrustplatform.cli_pytrust:main
