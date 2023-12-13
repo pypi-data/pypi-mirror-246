@@ -1,0 +1,117 @@
+{
+    "quizname": "Family Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My mother's daughter is my",
+            "answer": "sister",
+            "choices": {
+                "1": "aunt",
+                "2": "cousin",
+                "3": "sister"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My mother's mother is my",
+            "answer": "grandmother",
+            "choices": {
+                "1": "auntie",
+                "2": "great aunt",
+                "3": "grandmother"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My father's son is my",
+            "answer": "brother",
+            "choices": {
+                "1": "uncle",
+                "2": "cousin",
+                "3": "brother"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My step-mother's son is my",
+            "answer": "step-brother",
+            "choices": {
+                "1": "step-brother",
+                "2": "brother-in-law",
+                "3": "step-son"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My brother's daughter is my",
+            "answer": "niece",
+            "choices": {
+                "1": "nephew",
+                "2": "niece",
+                "3": "cousin"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My aunt's children are my",
+            "answer": "cousins",
+            "choices": {
+                "1": "step-children",
+                "2": "cousins",
+                "3": "nephews and nieces"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My grandpa's father is my",
+            "answer": "great grandpa",
+            "choices": {
+                "1": "great uncle",
+                "2": "great grandpa",
+                "3": "great great grandpa"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My dad's brother is my",
+            "answer": "uncle",
+            "choices": {
+                "1": "uncle",
+                "2": "cousin",
+                "3": "brother-in-law"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My sister's husband is my",
+            "answer": "brother-in-law",
+            "choices": {
+                "1": "brother-in-law",
+                "2": "sibling",
+                "3": "husband-in-law"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "My female spouse is my",
+            "answer": "wife",
+            "choices": {
+                "1": "grandmother",
+                "2": "mother-in-law",
+                "3": "wife"
+            }
+        }
+    ]
+}
