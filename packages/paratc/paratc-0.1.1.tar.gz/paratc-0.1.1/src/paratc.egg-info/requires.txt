@@ -1,0 +1,8 @@
+jupyterlab
+matplotlib
+netcdf4
+numpy
+pandas
+pip
+xarray
+xesmf
