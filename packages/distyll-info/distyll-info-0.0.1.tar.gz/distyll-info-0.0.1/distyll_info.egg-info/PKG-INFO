@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: distyll-info
+Version: 0.0.1
+Summary: Information digester assistant
+Author-email: JP Hwang <me@jphwang.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: weaviate-client
+Requires-Dist: pypdf
+Requires-Dist: beautifulsoup4
+Requires-Dist: yt-dlp
+Requires-Dist: pydub
+
+For the old version - please see the `distyll_old` branch.

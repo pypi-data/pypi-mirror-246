@@ -1,0 +1,5 @@
+weaviate-client
+pypdf
+beautifulsoup4
+yt-dlp
+pydub
