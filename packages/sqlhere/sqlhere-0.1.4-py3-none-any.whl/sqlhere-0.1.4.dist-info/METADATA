@@ -1,0 +1,202 @@
+Metadata-Version: 2.1
+Name: sqlhere
+Version: 0.1.4
+Summary: sqlhere is made with an intention to help you create and use sql data locally. For Data Science Uses.
+Author: Mayank Dwivedi (Data Scientist)
+Author-email: mayankdwivediofficial@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: csv
+Requires-Dist: json
+Requires-Dist: sqlite3
+Requires-Dist: datetime
+Requires-Dist: time
+
+Certainly! Below is an updated README.md file with more examples for SQL queries:
+
+### SQLHere | A library to help Data Handling, Locally
+
+SQLHere is a Python library developed by **Mayank Dwivedi, a Data Scientist.** This library is designed to streamline data storage for data science tasks, providing a fast and efficient way to create a local database, load data using various formats, and perform essential database operations.
+
+-------------------------------------------------------------------------------------------
+## Key Features
+*Latest version: 0.2.0*
+- **Efficient Data Loading:** SQLHere offers fast data loading times, making it a superior choice compared to traditional methods such as CSV, text, and simple variables like lists, tuples, sets, and dictionaries.
+
+- **Versatile Data Formats:** Users can load data into the local database using a variety of formats, including lists, dictionaries, sets, CSV files, and even from another database.
+
+- **Database Operations:** SQLHere supports essential database operations, including reading data from the database, deleting data, and creating a local database if it does not exist.
+-------------------------------------------------------------------------------------------
+
+## Installation
+
+You can install SQLHere using pip:
+
+```bash
+pip install sqlhere
+```
+
+## Overview
+-------------------------------------------------------------------------------------------
+
+```python
+from sqlhere import DataAdderDB
+
+# Example usage
+obj = DataAdderDB(
+    db_path='sample/extra/test.db',
+    table_name='table',
+)
+```
+
+### Usage
+
+###### To get started, import the `DataAdderDB` class from the `sqlhere` package and initialize it with the required parameters. Use the provided methods to perform various operations. Below are descriptions and example code for each function:To get started, import the `DataAdderDB` class from the `sqlhere` package and initialize it with the required parameters. Use the provided methods to perform various operations. Below are descriptions and example code for each function:
+-------------------------------------------------------------------------------------------
+
+### Class: DataAdderDB
+
+**Initialization**
+
+```python
+DataAdderDB(db_path, table_name)
+```
+
+- `db_path` (str): Path to the SQLite database file.
+- `table_name` (str): Name of the table in the database.
+
+**Example:**
+
+```python
+from sqlhere import DataAdderDB
+
+# Initialize DataAdderDB with the necessary parameters
+obj = DataAdderDB(
+    db_path='sample/extra/test.db',
+    table_name='table',
+)
+```
+
+### Methods
+
+-------------------------------------------------------------------------------------------
+#### `query(q)`
+
+Executes the provided SQL query and returns the results.
+
+```python
+query(q)
+```
+**Example 1: Select (Retrieve) Data**
+```python
+select_query = "SELECT * FROM table;"
+query_results = obj.query(select_query)
+print(query_results)
+```
+
+**Example 2: Insert Data**
+```python
+insert_query = "INSERT INTO table (column1, column2) VALUES ('value1', 'value2');"
+obj.query(insert_query)
+```
+
+**Example 3: Update Data**
+```python
+update_query = "UPDATE table SET column1 = 'new_value' WHERE condition;"
+obj.query(update_query)
+```
+
+**Example 4: Delete Data**
+```python
+delete_query = "DELETE FROM table WHERE condition;"
+obj.query(delete_query)
+```
+
+### Supported Raw File Types
+
+- JSON
+- CSV
+- TXT
+- List
+- Set
+- Dictionary
+- SQL
+
+## Example Usage
+
+```python
+from sqlhere import DataAdderDB
+
+# Initialize DataAdderDB with the necessary parameters
+obj = DataAdderDB(
+    db_path='sample/extra/test.db',
+    table_name='table',
+)
+
+# Perform the data addition operation
+obj.load_data({'item1', 'item2', 'item3'}, 'Example Data Source')
+
+# Execute SQL queries
+select_query = "SELECT * FROM table;"
+query_results = obj.query(select_query)
+print(query_results)
+
+insert_query = "INSERT INTO table (column1, column2) VALUES ('value1', 'value2');"
+obj.query(insert_query)
+
+update_query = "UPDATE table SET column1 = 'new_value' WHERE condition;"
+obj.query(update_query)
+
+delete_query = "DELETE FROM table WHERE condition;"
+obj.query(delete_query)
+```
+-----------------------------------------------------------
+
+#### Certainly! Here's the updated README.md with only the new feature:
+#### SQLHere | New Feature: Recycle Bin and Undo Delete
+
+SQLHere now includes a Recycle Bin feature, allowing users to move deleted tables to a designated database before permanent deletion. The Undo Delete function has been introduced to restore tables from the Recycle Bin to their original databases.
+
+### Usage
+
+#### `delete_data_from_db(table_name)`
+
+Moves the specified table to the Recycle Bin and then deletes it from the database.
+
+```python
+delete_data_from_db(table_name)
+```
+
+**Example:**
+```python
+obj.delete_data_from_db('table')
+```
+
+#### `undo_delete(table_name)`
+
+Restores the specified table from the Recycle Bin to the original database.
+
+```python
+undo_delete(table_name)
+```
+
+**Example:**
+```python
+obj.undo_delete('table')
+```
+
+The Recycle Bin database is named 'recycle_bin.db' and is created automatically if it doesn't exist. Each deleted table is stored in the Recycle Bin for potential restoration.
+
+### Disclaimer
+
+If the provided `db_path` directory does not have the database, SQLHere will create the necessary directories and an empty SQLite database at the specified path.
+Beware of deleting any table, well even if you that I got your back, there is an undo_delete() function as well.
+### **Connect with Mayank Dwivedi**
+
+LinkedIn: [Mayank Dwivedi](https://www.linkedin.com/in/mayank-dwivedi-468873236/)
+
+Happy coding!
+```
