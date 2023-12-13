@@ -1,0 +1,12 @@
+LICENSE
+i18n_json.c
+pyproject.toml
+setup.py
+./Exceptions.py
+./__init__.py
+./i18n_json.py
+i18n_json.egg-info/PKG-INFO
+i18n_json.egg-info/SOURCES.txt
+i18n_json.egg-info/dependency_links.txt
+i18n_json.egg-info/not-zip-safe
+i18n_json.egg-info/top_level.txt
