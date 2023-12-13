@@ -1,0 +1,12 @@
+{
+    "resources": [
+        "share:hxm:schema:fr:table:employees"
+    ],
+    "subjects": [
+        "user:frhcm"
+    ],
+    "privileges": [
+        "browse",
+        "open"
+    ]
+}

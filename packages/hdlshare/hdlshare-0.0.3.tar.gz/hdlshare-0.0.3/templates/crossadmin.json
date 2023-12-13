@@ -1,0 +1,12 @@
+{
+    "resources": [
+        "share:*"
+    ],
+    "subjects": [
+        "user:crossadmin"
+    ],
+    "privileges": [
+        "browse",
+        "open"
+    ]
+}

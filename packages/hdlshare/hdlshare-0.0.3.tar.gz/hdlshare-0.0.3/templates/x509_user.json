@@ -1,0 +1,12 @@
+{
+    "resources": [
+        "path:/data/US"
+    ],
+    "subjects": [
+        "x509:hdlmtUS"
+    ],
+    "privileges": [
+        "browse",
+        "open"
+    ]
+}

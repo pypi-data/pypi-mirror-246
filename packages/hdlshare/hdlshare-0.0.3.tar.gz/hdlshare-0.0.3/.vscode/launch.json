@@ -1,0 +1,889 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.0.1",
+    "configurations": [
+        {
+            "name": "codetests.py",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/codetests.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": []
+        },
+        {
+            "name": "dsclient -h",
+            "type": "python",
+            "request": "launch",
+            "program": "src/dsclient/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-h",
+            ]
+        },
+        {
+            "name": "hdlshare dbxglobal.json",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "profiles/dbxglobal.json",
+            ]
+        },
+        {
+            "name": "dsapi shares",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "profiles/dbxglobal.json",
+                "shares"
+            ]
+        },
+        {
+            "name": "dsapi getshare retail",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "profiles/dbxglobal.json",
+                "getshare",
+                "retail",
+            ]
+        },
+        {
+            "name": "dsapi schemas retail",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "profiles/dbxglobal.json",
+                "schemas",
+                "retail",
+            ]
+        },
+        {
+            "name": "dsapi schematables retail.schemas",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "profiles/dbxglobal.json",
+                "schematables",
+                "retail.transactions",
+            ]
+        },
+        {
+            "name": "dsapi alltables retail",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "profiles/dbxglobal.json",
+                "alltables",
+                "retail",
+            ]
+        },
+        {
+            "name": "dsapi version retail.transactions.france",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-e",
+                "2",
+                "profiles/dbxglobal.json",
+                "version",
+                "retail.transactions.france",
+            ]
+        },
+        {
+            "name": "dsapi -v 4 metadata retail.transactions.france",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "profiles/dbxglobal.json",
+                "metadata",
+                "retail.transactions.france",
+                "-v",
+                "4",
+                "-p",
+                "data2",
+            ]
+        },
+        {
+            "name": "dsapi -v 4 -l 50 readdata retail.transactions.israel",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-v",
+                "2",
+                "-l",
+                "50",
+                "profiles/dbxglobal.json",
+                "readdata",
+                "retail.transactions.israel"
+            ]
+        },
+        {
+            "name": "dsapi -v 1 readcdf retail.transactions.france",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsapi.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-v",
+                "1",
+                "-p",
+                "data2",
+                "profiles/dbxglobal.json",
+                "readcdf",
+                "retail.transactions.netherlands"
+            ]
+        },
+        {
+            "name": "sapcert create -p <service_key file> <CN>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/sapcert.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "create",
+                "-p",
+                "service_keys/pki_sk.json",
+                "-d",
+                "certificates",
+                "-v",
+                "60",
+                "-t",
+                "DAYS",
+                "hdlmt1",
+            ]
+        },
+        {
+            "name": "sapcert details <cert>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/sapcert.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "details",
+                "hdlmt1",
+            ]
+        },
+        {
+            "name": "sapcert list",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/sapcert.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "list"
+            ]
+        },
+        {
+            "name": "sapcert create <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/sapcert.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "create",
+                "hdlmtUS"
+            ]
+        },
+        {
+            "name": "sapcert create testcert -P <pwd>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/sapcert.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "create",
+                "testcert",
+                "-P",
+                "password12"
+            ]
+        },
+        {
+            "name": "hdlinstance list",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlinstance.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "list"
+            ]
+        },
+        {
+            "name": "hdlinstance user xpmmt1",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlinstance.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "params",
+                "xpmmt1"
+            ]
+        },
+        {
+            "name": "hdlinstance details xpmmt1",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlinstance.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "details",
+                "xpmmt1"
+            ]
+        },
+        {
+            "name": "hdlinstance add2config xpmmt1",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlinstance.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "add2config",
+                "xpmmt1",
+                "-C",
+                "hdlfsmt1"
+            ]
+        },
+        {
+            "name": "hdlinstance create <name> -a <admin> -u <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlinstance.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "create",
+                "xpm-hdl-mt1",
+                "--HanaServicename",
+                "hana-cloud",
+                "--admin",
+                "hdlmt1",
+                "--user",
+                "hdlmtcross"
+            ]
+        },
+        {
+            "name": "csv2delta data/...france.csv",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/csv2delta.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "data/retail_transactions_france.csv"
+            ]
+        },
+        {
+            "name": "hdlgendata show <country> <dataname>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendata.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "show",
+                "US",
+                "customer"
+            ]
+        },
+        {
+            "name": "hdlgendata insert <country> <dataname> -n 5 --cdf",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendata.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "insert",
+                "US",
+                "customer",
+                "-n",
+                "5",
+                "--cdf"
+            ]
+        },
+        {
+            "name": "hdlgendata insert <country> <dataname> -n 5",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendata.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "insert",
+                "US",
+                "customer",
+                "-n",
+                "5"
+            ]
+        },
+        {
+            "name": "hdlgendata update <country> <dataname> -n 2",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendata.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "update",
+                "US",
+                "employees",
+                "-n",
+                "2"
+            ]
+        },
+        {
+            "name": "hdlgendata delete <country> <dataname>n -n 3",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendata.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "delete",
+                "US",
+                "employees",
+                "-n",
+                "3"
+            ]
+        },
+        {
+            "name": "hdlgendataspark <hdl instance>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendataspark.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "xpm-hdl-mt1",
+                "xpm-hdl-mt2",
+                "xpm-hdl-mt3",
+                "-c",
+                "US",
+                "-n",
+                "10"
+            ]
+        },
+        {
+            "name": "hdlgendataspark insert <hdl instance> -u <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendataspark.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "insert",
+                "xpm-hdl-mt1",
+                "xpm-hdl-mt2",
+                "xpm-hdl-mt3",
+                "-c",
+                "US",
+                "-n",
+                "10",
+                "-u",
+                "hdlmtcross"
+            ]
+        },
+        {
+            "name": "hdlgendataspark create <hdl instance> -u <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlgendataspark.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "create",
+                "xpm-hdl-mt1",
+                "xpm-hdl-mt2",
+                "xpm-hdl-mt3",
+                "-y",
+                "FR",
+                "-n",
+                "10",
+                "-u",
+                "hdlmtcross"
+            ]
+        },
+        {
+            "name": "hdldeltatable <hdl instance> <path>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdldeltatable.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "xpm-hdl-mt1",
+                "/data/US/persons"
+            ]
+        },
+        {
+            "name": "hdlpolicy list",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "list"
+            ]
+        },
+        {
+            "name": "hdlpolicy delete <policy name>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "delete",
+                "usregion"
+            ]
+        },
+        {
+            "name": "hdlpolicy get <policy name>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "get",
+                "de_region"
+            ]
+        },
+        {
+            "name": "hdlpolicy add <policy> -p <{}>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "add",
+                "de_region",
+                "-p",
+                "{\"resources\": [\"share:crm\",\"share:hxm\",\"share:sbm\"],\"subjects\": [\"user:admin\"],\"privileges\": [\"browse\",\"open\"]}"
+            ]
+        },
+        {
+            "name": "hdlpolicy add <policy> -p <filename>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "add",
+                "crossadmin",
+                "-p",
+                "templates/crossadmin.json"
+            ]
+        },
+        {
+            "name": "hdlpolicy add <policy_name> -S user:dehr",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "add",
+                "de_region",
+                "-S",
+                "user:dehr"
+            ]
+        },
+        {
+            "name": "hdlpolicy delete <policy_name> -S user:dehr",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "delete",
+                "de_region",
+                "-S",
+                "user:dehr"
+            ]
+        },
+        {
+            "name": "hdlpolicy token -s <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "token",
+                "-s",
+                "admin"
+            ]
+        },
+        {
+            "name": "hdlpolicy showtoken -s <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "showtoken",
+                "-s",
+                "crossadmin"
+            ]
+        },
+        {
+            "name": "hdlpolicy cert_profile -s <user>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "cert_profile",
+                "-s",
+                "crossadmin"
+            ]
+        },
+        {
+            "name": "hdlpolicy copy de_region it_region",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlpolicy.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "copy",
+                "de_region",
+                "it_region"
+            ]
+        },
+        {
+            "name": "dsclient list <profile> -r",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsclient.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "admin",
+                "list",
+                "hxm",
+                "-r"
+            ]
+        },
+        {
+            "name": "dsclient admin metadata <profile> <share> <schema> <table>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsclient.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "admin",
+                "metadata",
+                "hxm",
+                "us",
+                "employees"
+            ]
+        },
+        {
+            "name": "dsclient crossadmin list",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsclient.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "crossadmin",
+                "list"
+            ]
+        },
+        {
+            "name": "dsclient <profile> metadata <share> <schema> <table>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsclient.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "admin",
+                "metadata",
+                "hxm",
+                "us",
+                "employees"
+            ]
+        },
+        {
+            "name": "dsclient <profile> download <share> <schema> <table>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsclient.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "admin",
+                "download",
+                "hxm",
+                "us",
+                "employees",
+                "-d",
+                "tmp"
+            ]
+        },
+        {
+            "name": "dsclient <profile> download_changes <share> <schema> <table> -v 1",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/dsclient.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "admin",
+                "download_changes",
+                "hxm",
+                "us",
+                "employees",
+                "-d",
+                "tmp",
+                "-v",
+                "30"
+            ]
+        },
+        {
+            "name": "hdlshare list",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "list",
+                "-r"
+            ]
+        },
+        {
+            "name": "hdlshare -rm list <share>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "list",
+                "hxm",
+                "-rm"
+            ]
+        },
+        {
+            "name": "hdlshare list <share> <schema> -r",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "list",
+                "hxm",
+                "us",
+                "-m"
+            ]
+        },
+        {
+            "name": "hdlshare add <share>" ,
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "add",
+                "hxm"
+            ]
+        },
+        {
+            "name": "hdlshare add <share> <schema>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "add",
+                "crm",
+                "us"
+            ]
+        },
+        {
+            "name": "hdlshare add <share> <schema> <table> -p <hdl path>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "add",
+                "crm",
+                "fr",
+                "customer",
+                "-p",
+                "data/deltalake/US/employees"
+            ]
+        },
+        {
+            "name": "hdlshare delete <share> <schema> <table>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "delete",
+                "crm",
+                "fr",
+                "customer",
+            ]
+        },
+        {
+            "name": "hdlshare delete <share> -c",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "delete",
+                "poc",
+                "-c"
+            ]
+        },
+        {
+            "name": "hdlshare get <share> <schema> <table>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlshare.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "get",
+                "crm",
+                "us",
+                "customer"
+            ]
+        },
+        {
+            "name": "hdlcatalog server_info",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlcatalog.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-c",
+                "xpm-hdl-mt1",
+                "server_info"
+            ]
+        },
+        {
+            "name": "hdlcatalog add <schema>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlcatalog.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-c",
+                "xpm-hdl-mt1",
+                "add",
+                "customer"
+            ]
+        },
+        {
+            "name": "hdlcatalog list",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlcatalog.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-c",
+                "xpm-hdl-mt1",
+                "list"
+            ]
+        },
+        {
+            "name": "hdlcatalog get <schema>",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/hdlcatalog.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-c",
+                "xpm-hdl-mt1",
+                "get", 
+                "customer"
+            ]
+        },
+        {
+            "name": "compare_profiles admin_profile.json admin_profile_hdlfscli.json",
+            "type": "python",
+            "request": "launch",
+            "program": "src/hdlshare/compare_profiles.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "canaryds",
+                "admin_profile.json",
+                "admin_profile_hdlfscli.json"
+            ]
+        }
+    ]
+}

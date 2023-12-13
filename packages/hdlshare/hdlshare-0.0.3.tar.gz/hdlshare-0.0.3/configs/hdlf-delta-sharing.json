@@ -1,0 +1,25 @@
+{
+    "data": {
+        "dataEncryption": {
+            "mode": "DEDICATED_KEY"
+        },
+        "fileContainer": {
+            "allowedNetworks": [
+                "0.0.0.0/0"
+            ],
+            "capabilities": {}
+        },
+        "iqEnabled": false,
+        "whitelistIPs": [
+            "0.0.0.0/0"
+        ]
+    },
+    "metadata": {
+        "hana.sap.com/tenantAdminVersion": "v1",
+        "hc.sap.com/context": "{\"env_provider\":\"cloudfoundry\",\"env_type\":\"cloudfoundry\",\"global_account_id\":\"260aa8c7-7538-4563-9f1a-774c868ed022\",\"instance_annotations\":{},\"instance_name\":\"hdlf-delta-sharing\",\"landscape_label\":\"cf-eu12-001\",\"license_type\":\"SAPDEV\",\"organization_annotations\":{},\"organization_guid\":\"1516a7be-df7b-4c12-8fcd-d25e109ac2f9\",\"organization_name\":\"SAP-HANA-Cloud-hc-dev-services-btp-eu12-001-bdfsdelta1-test\",\"origin\":\"cloudfoundry\",\"platform\":\"sapcp\",\"region\":\"cf-eu12\",\"service_instance_id\":\"b3218b7a-3026-4629-8d02-4666be64bb67\",\"signature\":\"FCtt5oXHzKewGJ1SGo2blyrMpIwJVK0ah4IKJO9YLXVM63x4SbtQXzlMo4lTcePvBPCA4LIg83uloxHiVK9OMkavzbrIJ2vy0ijfjYVO7fFimrQnLS+zy/Y6pmCnGmznGWtNZcAiTSugxlDEFwqsQu9sWme8uT2AbDgB1v0GZF4t16RJLAEFujoB+6cQaWLfwlnePX7BQgNU43eS7JZW0HNYHjnioC7Y3oxJEqMbI8AdApVEmS7WlpXcd+gpXqc2lwPMqprs/dgGnfPCazpZ1ywLb36kLU1gaO9vSgmGpJUk3KwFIbPbXjajKmjW/gWi0n4IO2ab7p0l+Lw7fDfCtfjnNA/vQeKfpBECjay0uHut5NqH4UuD4WFB0rD/Y9J5Eq5Tb+JFjpyBq/Dv7fgCPRyRwXHj6c5GSnn7jq7VGnafK4KpjiYuvJZnRQ7JVKoRAaBZ+9OrgiKRYDDBI1I1wvPNNdAoAp63MdDrPCRs+dsZyiTFnItv38b3+mkzRq6qA5Umfsb6T71LIzlmyStrh7Ax/QdBw9/qkyqi9T4yFEDNJpsHb4ase6WQU4cNDwvbEFzghlr6rCD+9vkPrxfgL4wyvnTDvkpxmJjg9OkValfP9pSR53kNKH5mavRh0mrbTd0tsCuVFt4OhMTHB0z8m5uekTM9REal3zSH8gZuqZo=\",\"space_annotations\":{},\"space_guid\":\"a1b6c598-f22c-4148-aa8b-28a23a1aad3f\",\"space_name\":\"bdfsdelta1-test\",\"subaccount_id\":\"653c8453-4b9c-40c7-afe5-0d3f91684ba3\",\"subdomain\":\"bdfsdelta1-test\",\"zone_id\":\"653c8453-4b9c-40c7-afe5-0d3f91684ba3\"}",
+        "hc.sap.com/hc-behaviors": "{\"hdl_cloud_native_volume_provider\":\"azure-files\",\"hdl_dioperator_di_tenant_status\":\"disabled\",\"hdl_iqserver_sapdba_uid\":\"dba\",\"hdl_uidscheme\":\"derived\"}",
+        "hc.sap.com/hc-toggles": "{\"HDLCustomerAudit\":true,\"cirrus_load\":true,\"cirrus_secure_ldap\":true,\"cirrus_unload\":true,\"database_schema_enabled\":true,\"haas-new-systemdb-routing\":true,\"hc_diagnosticfilecontainer_enabled\":true,\"hc_observability_plg_logging_enabled\":true,\"hdl-googlestore\":true,\"hdl_22q2_views\":true,\"hdl_allow_alter_table_owner_to_own_schema\":true,\"hdl_auto_reconcile_enabled\":true,\"hdl_azure_files\":true,\"hdl_batch_insertion\":true,\"hdl_cloud_dbspaces\":true,\"hdl_cloud_dbspaces_upgrade\":true,\"hdl_concise_auditing\":false,\"hdl_container_insert_select\":true,\"hdl_container_set_temporary_option_enabled\":true,\"hdl_credential_store\":true,\"hdl_ctr_encryption_algorithm\":true,\"hdl_customer_managed_keys\":true,\"hdl_customizable_backup_retention_enabled\":true,\"hdl_custvisiblelogs_enabled\":true,\"hdl_datetimex_default\":true,\"hdl_direct_access_enabled\":false,\"hdl_drop_any_connection_enabled\":true,\"hdl_execute_with_grant_enabled\":true,\"hdl_file_containers_enabled\":true,\"hdl_gbaas_enabled\":true,\"hdl_hana_boolean_support\":true,\"hdl_hana_to_iq_batch_insertion_enabled\":true,\"hdl_hdlfs_arbitrary_container\":true,\"hdl_hdlfs_multipart_upload\":true,\"hdl_hotsql_2022q1\":false,\"hdl_iq_multitenant_sof_enabled\":true,\"hdl_iqmpx_operator_managed_pvc\":true,\"hdl_iqserver_materialized_view_auto_refresh\":true,\"hdl_iqserver_materialized_view_incremental_refresh\":true,\"hdl_iqserver_multiple_containers\":true,\"hdl_iqserver_ocs_drivers\":true,\"hdl_iqserver_profiler\":true,\"hdl_iqserver_toggle_legacy_features\":true,\"hdl_iqserver_transactional_ddl\":true,\"hdl_jwt_multipleclaims\":true,\"hdl_load_prefetching\":true,\"hdl_load_with_etags\":true,\"hdl_load_with_wildcards\":true,\"hdl_manage_event_enabled\":true,\"hdl_move_container_table\":false,\"hdl_mpx_individual_statefulset\":true,\"hdl_mpx_nzd_upgrade\":true,\"hdl_multiple_availability_zones\":true,\"hdl_multitenant_sof_enabled\":true,\"hdl_parquet_clientfile_load\":true,\"hdl_parquet_multiple_schemas\":true,\"hdl_parquet_unload\":true,\"hdl_pin_iq_table_version\":true,\"hdl_pod_stacking\":true,\"hdl_random_iv_extension\":true,\"hdl_restore_using_triggered_sequence\":true,\"hdl_s3compatible\":true,\"hdl_self_service_restore\":true,\"hdl_self_service_upgrade\":true,\"hdl_smaller_shared_block_storage\":true,\"hdl_spclient\":true,\"hdl_sysprocperm_grantor\":true,\"hdl_tls_13\":false,\"hdl_track_hotsql_status\":false,\"hdl_uidscheme_enabled\":true,\"hdl_varchar_character_length_semantic_support_enabled\":true,\"hdl_virtual_cloud_backups\":true,\"hdl_x509_authentication\":true,\"realm_connection_tracking_enabled\":true,\"sofEnabled\":true}",
+        "ui.hc.sap.com/description": ""
+    },
+    "resource_version": "42935993"
+}

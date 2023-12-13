@@ -1,0 +1,8 @@
+[
+    {
+        "resources": [
+            "share:crm"
+        ],
+        "privileges": ["browse", "open"]
+    }
+]
