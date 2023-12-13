@@ -1,0 +1,3 @@
+zrcl3
+zrcl3\auto_click
+zrcl3\auto_save_dict
