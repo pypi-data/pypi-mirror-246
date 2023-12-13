@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: person-cache
+Version: 0.1.0
+Summary: Simple caching library for Python
+Author: Tiago Ventura
+Author-email: tiago.barbano@gmail.com
+Keywords: redis,aioredis,cache,Memory
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: aioredis>=2.0.1
+Requires-Dist: redis>=4.3.3

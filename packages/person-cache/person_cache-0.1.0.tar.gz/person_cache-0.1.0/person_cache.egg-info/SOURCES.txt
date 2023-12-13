@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+person_cache/main.py
+person_cache.egg-info/PKG-INFO
+person_cache.egg-info/SOURCES.txt
+person_cache.egg-info/dependency_links.txt
+person_cache.egg-info/requires.txt
+person_cache.egg-info/top_level.txt
