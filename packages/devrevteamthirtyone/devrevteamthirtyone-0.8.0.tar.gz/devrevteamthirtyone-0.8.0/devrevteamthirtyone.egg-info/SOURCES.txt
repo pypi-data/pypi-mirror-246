@@ -1,0 +1,6 @@
+setup.py
+devrevteamthirtyone.egg-info/PKG-INFO
+devrevteamthirtyone.egg-info/SOURCES.txt
+devrevteamthirtyone.egg-info/dependency_links.txt
+devrevteamthirtyone.egg-info/requires.txt
+devrevteamthirtyone.egg-info/top_level.txt
