@@ -1,0 +1,2 @@
+[console_scripts]
+binheat = binheat:main
