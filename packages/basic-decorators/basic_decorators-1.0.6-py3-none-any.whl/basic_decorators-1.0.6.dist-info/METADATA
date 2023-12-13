@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: basic-decorators
+Version: 1.0.6
+Summary: basic_decorators: Repository with usefull decorator methods
+Home-page: https://github.com/R-Rijnbeek/basic_decorators
+Author: Robert Rijnbeek
+Author-email: robert270384@gmail.com
+Project-URL: Bug Tracker, https://github.com/R-Rijnbeek/basic_decorators/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# basic_decorators
+
+Repository with usefull decorator methods
+
+## How it work:
+
+1. Create en python environent and install the package using de command:
+    ````
+    pip install basic_decorators
+    ````
+2. Once you get installed the package you can import the packahe in the python module by:
+    ````
+    from basic_decorators import argument_check
+    ````
+    or 
+
+    ````
+    import basic_decorators
+    ````
+and that's it!!
