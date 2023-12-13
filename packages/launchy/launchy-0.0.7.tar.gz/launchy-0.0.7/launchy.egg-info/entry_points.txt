@@ -1,0 +1,5 @@
+[console_scripts]
+macctl = daemon.mac.launchy:execute
+s = daemon.termux.svctl:execute
+svctl = daemon.termux.svctl:execute
+xlaunchy = daemon.mac.launchy:execute
