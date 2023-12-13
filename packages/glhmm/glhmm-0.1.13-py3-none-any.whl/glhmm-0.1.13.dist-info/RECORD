@@ -1,0 +1,14 @@
+glhmm/auxiliary.py,sha256=myJFHEDfsEl0oveYdf4sJPG0YBrfymWhces2-fTCWJU,13001
+glhmm/glhmm.py,sha256=SDOAs41ad1QsScTzcp0JgVguIE4Wu5CL3L8QCm7xT5A,81617
+glhmm/graphics.py,sha256=WI8idTfqiEzH_VJsy_iNHYwl-0oWYi1ylu11vo3I9eQ,11548
+glhmm/io.py,sha256=MGJ23hcwr7cwM2vyWqSFtLpmNBr1u6liDoTF9q-2YI8,7916
+glhmm/palm_functions.py,sha256=Tp6JcFceiUhErlLvYJBY6KjE66JnzYqN4iu5lu3Ofww,65084
+glhmm/permtest.py,sha256=zzCpPWbgAVuqWTxR5wj-43Z5NGQeZX6YIcNli2oev1E,69068
+glhmm/prediction.py,sha256=4_U_uoVP6-hmN4F9c7arhzVj2XkbEleH8v3sTD9p5WI,87246
+glhmm/preproc.py,sha256=BGc81dcrpEay4RHEe-Cx6pRmAjGXv0H_AVfdNFYWWtI,16779
+glhmm/utils.py,sha256=1qduDRLiD5VuQIlzN18lwRRiBVUrjcHCs1SGomTks2E,10443
+glhmm-0.1.13.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+glhmm-0.1.13.dist-info/METADATA,sha256=vtj9aMn31tg3SsYfco9aJAsIXxHihxJfC_GkaRM-A8c,709
+glhmm-0.1.13.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+glhmm-0.1.13.dist-info/top_level.txt,sha256=Wr7kMDtQTkogMVIUeY0mWBzhsQeULrtwL2nTixIz7rI,6
+glhmm-0.1.13.dist-info/RECORD,,
