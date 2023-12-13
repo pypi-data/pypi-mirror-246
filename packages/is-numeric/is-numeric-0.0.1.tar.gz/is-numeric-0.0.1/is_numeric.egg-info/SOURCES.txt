@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+is_numeric/__init__.py
+is_numeric/test_is_numeric.py
+is_numeric.egg-info/PKG-INFO
+is_numeric.egg-info/SOURCES.txt
+is_numeric.egg-info/dependency_links.txt
+is_numeric.egg-info/top_level.txt
