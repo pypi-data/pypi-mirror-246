@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: accurate-timed-loop
+Version: 0.0.15
+Summary: Accurate timed loop
+Home-page: https://bitbucket.org/arrizza-public/accurate-timed-loop/src/master
+Download-URL: https://bitbucket.org/arrizza-public/accurate-timed-loop/get/master.zip
+Author: JA
+Author-email: cppgent0@gmail.com
+License: MIT
+Keywords: accurate loop,utility
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: unknown
+License-File: LICENSE.txt
+Requires-Dist: pytest-ver
+Requires-Dist: pytest
+Requires-Dist: on_the_fly_stats
+
+unknown
