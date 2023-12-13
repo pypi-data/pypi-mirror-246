@@ -1,0 +1,10 @@
+setup.py
+axya_whisper/__init__.py
+axya_whisper/main.py
+axya_whisper/service.py
+axya_whisper.egg-info/PKG-INFO
+axya_whisper.egg-info/SOURCES.txt
+axya_whisper.egg-info/dependency_links.txt
+axya_whisper.egg-info/entry_points.txt
+axya_whisper.egg-info/requires.txt
+axya_whisper.egg-info/top_level.txt
