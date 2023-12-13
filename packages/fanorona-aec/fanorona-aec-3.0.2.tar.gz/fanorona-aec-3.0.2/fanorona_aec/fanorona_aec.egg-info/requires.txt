@@ -1,0 +1,5 @@
+pettingzoo
+
+[dev]
+pre-commit
+pytest
