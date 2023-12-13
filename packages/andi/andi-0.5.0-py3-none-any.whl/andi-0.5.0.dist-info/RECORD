@@ -1,0 +1,10 @@
+andi/__init__.py,sha256=X9JwZpfDQeO4cyxY-DjJ1tHpde5lpttO8bwbTS14_C0,90
+andi/andi.py,sha256=abofKrhehLjS68jqUeNSHcUyL8chrqZgBmKLnYLEqp8,18096
+andi/errors.py,sha256=nmZBJTMQ6VSfU_d5byE4JldMGV5JnS4Cnw054kZRI0s,2632
+andi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+andi/typeutils.py,sha256=iVYsvhuKqJCpl9MJ96RjU9gM9P-xqVT6YlSPqXTYNME,5877
+andi-0.5.0.dist-info/LICENSE,sha256=OwF91yZTgMQUkBEqH_5wV5MAzisd6zo3ATth7OmQNsU,1513
+andi-0.5.0.dist-info/METADATA,sha256=GVcfbEng4DMbpDeKmL_lFI2SVsD983orw8dhO3E26Ig,22111
+andi-0.5.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+andi-0.5.0.dist-info/top_level.txt,sha256=uo1OXTg9UO3pxrmLILe8es9AsdejdK-s0KtwUCwXqlg,5
+andi-0.5.0.dist-info/RECORD,,
