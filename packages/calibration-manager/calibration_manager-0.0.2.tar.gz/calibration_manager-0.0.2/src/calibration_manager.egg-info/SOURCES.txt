@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/calibration_manager.py
+src/example_ros.py
+src/calibration_manager.egg-info/PKG-INFO
+src/calibration_manager.egg-info/SOURCES.txt
+src/calibration_manager.egg-info/dependency_links.txt
+src/calibration_manager.egg-info/requires.txt
+src/calibration_manager.egg-info/top_level.txt
