@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyolap/__init__.py
+pyolap/pyolap.py
+python_olap.egg-info/PKG-INFO
+python_olap.egg-info/SOURCES.txt
+python_olap.egg-info/dependency_links.txt
+python_olap.egg-info/top_level.txt
