@@ -1,0 +1,12 @@
+pytech_calculator/__init__.py,sha256=np64g5uicaGpDdNt1--j-aWBYSr3mCHxTmxHFpfVN84,105
+pytech_calculator/add.py,sha256=HazaUYD8G3OACktTeViO-3wfNduDer4_yzyzMmJzwwk,32
+pytech_calculator/divide.py,sha256=Vl27Pmdln7PAxh7vPCJzv5m4wuVi6ufcBqEZld9ZpPg,36
+pytech_calculator/multiply.py,sha256=X9U5VXVXr-OYXtdh8-ElIQo-l60tC79sX06-1O6NPy0,37
+pytech_calculator/subtract.py,sha256=de3Tsotx08rZASPH6jMx22zfcfc8nQ3fn36odkh2VJM,37
+pytech_calculator/extras/__init__.py,sha256=WMdWQ2MDM2YsTe3wDkiazoUYoOiMUKZDi-nkEovmuEw,29
+pytech_calculator/extras/hello_world.py,sha256=J88PC0ReMTYIVV1Zam37Rohs2EA8CwlTY6AtP8NlTYo,46
+pytech_calculator-0.0.1.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+pytech_calculator-0.0.1.dist-info/METADATA,sha256=E6uBVSX-Rbmx4rxHqnJdCCRAAr4K9Mm09csfAd5VXCo,705
+pytech_calculator-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytech_calculator-0.0.1.dist-info/top_level.txt,sha256=QLbryzQqJjDN6pHkaXL5HEQNyYKUiRtyw5awpnJYss4,18
+pytech_calculator-0.0.1.dist-info/RECORD,,
