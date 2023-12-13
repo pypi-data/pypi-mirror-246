@@ -1,0 +1,16 @@
+monadic/__init__.py,sha256=Gjlqb-Iu7ir-W7rrN3O3znT4kvTqyIElav_L2rRmEJM,410
+monadic/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+monadic/dict.py,sha256=8_a725x7V44OwWF_x-PEhqdlNogtlzkmjf4Jyzwb7Z8,10310
+monadic/list.py,sha256=ffvsVhrAVKmT0Uu4Wxgnl42XvDM96CYvyvroZrzb-yo,4175
+monadic/option.py,sha256=Y5g4ckz_mKAJrFOG9Ol32Y1qcnlWKTA4meq5pZe_W44,4705
+monadic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monadic/result.py,sha256=MvOkxUQrSrah4P5VOzjuOZYVssSTo9SF4xONk17b4uQ,5473
+monadic/set.py,sha256=3MZ89AX2tSYdtNpRxKEVGMHq0U3X7GqQO8ZTpJJ-zJQ,3276
+monadic/interfaces/__init__.py,sha256=JDoJlaPs3kqou8n65qFybmtK1pzU7o3jIYyoWrjs3M8,217
+monadic/interfaces/iterable.py,sha256=ZVrjB7-kKdU9FKNmIvTrX-D2uKuZhSkhzGIN6nnWKmM,6061
+monadic/interfaces/maybe.py,sha256=LJo6UBb9tBjdtfonseImSkRIGt_VVMOVMjQSmNiJY8Q,1915
+monadic/interfaces/monad.py,sha256=64R_pjsLpOkBI6i7sszS_TqC71HlKcKScOkL2PCt4KU,2484
+monadic-0.0.1.dist-info/METADATA,sha256=X-oWN0S7ZIX4tHLSGB7RJYJ-t0dWekNr4-jPzZUK5lI,9607
+monadic-0.0.1.dist-info/WHEEL,sha256=0wCxn4rnLsvRWBK-NC7mK2QMIQ_aZSl7Qvk-8IWl_pY,87
+monadic-0.0.1.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+monadic-0.0.1.dist-info/RECORD,,
