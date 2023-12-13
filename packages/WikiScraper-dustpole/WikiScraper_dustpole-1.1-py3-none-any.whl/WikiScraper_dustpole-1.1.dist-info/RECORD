@@ -1,0 +1,9 @@
+WikiScraper/__init__.py,sha256=2QEs8q6ZvYjuOf1pIuA9KjszYxutWcjCepnYqgw6rqc,4196
+WikiScraper/__main__.py,sha256=2QEs8q6ZvYjuOf1pIuA9KjszYxutWcjCepnYqgw6rqc,4196
+WikiScraper/stop_lists/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WikiScraper/stop_lists/english.txt,sha256=KfVvmXPzQ3lC8JBQl65UaBLV1HjVfe--mdg4dc77qXk,8199
+WikiScraper_dustpole-1.1.dist-info/LICENSE,sha256=h74zTIr7rREiDeT7cnGQWLxaOh1I3PISXPuZFgkirSA,1093
+WikiScraper_dustpole-1.1.dist-info/METADATA,sha256=1bS52PBXCjkgSCTWzimhG4ZhSFiwlY7m1NNfDdAVEDM,1698
+WikiScraper_dustpole-1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+WikiScraper_dustpole-1.1.dist-info/top_level.txt,sha256=8zPZulCwnmAzE6KVEyLzNGhK26kjG8iXMpqU35ImZjU,12
+WikiScraper_dustpole-1.1.dist-info/RECORD,,
