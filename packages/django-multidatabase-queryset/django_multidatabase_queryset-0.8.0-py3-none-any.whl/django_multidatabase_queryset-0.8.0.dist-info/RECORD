@@ -1,0 +1,12 @@
+django_multidatabase_queryset/__about__.py,sha256=oZbUVMJdr0e88KP35KXZcO2KW5z9jJ-bolitWVD_1Z8,121
+django_multidatabase_queryset/__init__.py,sha256=_r6F0cRgcjmBEV_NFR-XzEeyqBn83OPsI8I6r2Cx-7E,99
+django_multidatabase_queryset/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_multidatabase_queryset/apps.py,sha256=-2q3I8-HgJxciMCRZD9FHpoF0VN_91cWBmZIrZAYbD8,188
+django_multidatabase_queryset/models.py,sha256=vf5VwN9jQO-YdKBwFTLYkZr3ibKujpnKd4YiG4TdOBI,5922
+django_multidatabase_queryset/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_multidatabase_queryset/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_multidatabase_queryset/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_multidatabase_queryset-0.8.0.dist-info/METADATA,sha256=E9sCqUGBwadSmL-ycoSTTSxg72nkIXFEMuTaELDQMyg,2757
+django_multidatabase_queryset-0.8.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_multidatabase_queryset-0.8.0.dist-info/licenses/LICENSE,sha256=G15tXHiBxzsk4ClV8-M5IKJ2JDB69OLOnayYmeKWwVg,1067
+django_multidatabase_queryset-0.8.0.dist-info/RECORD,,
