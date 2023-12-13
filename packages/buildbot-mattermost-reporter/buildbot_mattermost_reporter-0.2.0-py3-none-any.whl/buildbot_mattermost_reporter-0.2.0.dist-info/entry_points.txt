@@ -1,0 +1,2 @@
+[buildbot.reporters]
+MattermostStatusPush = buildbot_mattermost.reporter:MattermostStatusPush

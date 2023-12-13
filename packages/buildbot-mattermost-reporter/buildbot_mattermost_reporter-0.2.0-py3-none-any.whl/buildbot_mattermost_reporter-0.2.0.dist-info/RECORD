@@ -1,0 +1,8 @@
+buildbot_mattermost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildbot_mattermost/reporter.py,sha256=k66X0ORajnTQXf6jWkxTa6hbl7uhPNjGckInl24DNRQ,6661
+buildbot_mattermost_reporter-0.2.0.dist-info/LICENSE,sha256=wC3pAGGQYlvQC8Xm090ZECx0hgBk6wP9dKgeV_0tWrc,1071
+buildbot_mattermost_reporter-0.2.0.dist-info/METADATA,sha256=Gvu_zA4krpk6FHY4BBQzwfcEcF_prOER7P06L5D9Tcc,3164
+buildbot_mattermost_reporter-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+buildbot_mattermost_reporter-0.2.0.dist-info/entry_points.txt,sha256=ymKGU9tvK1Lo6Ogjv4zMpv23MyckpynIiQFNQDO4Zho,94
+buildbot_mattermost_reporter-0.2.0.dist-info/top_level.txt,sha256=izDORkDWOzl9W2_rNF_3lVKmoV55GnW7p0iCCoc4fwM,20
+buildbot_mattermost_reporter-0.2.0.dist-info/RECORD,,
