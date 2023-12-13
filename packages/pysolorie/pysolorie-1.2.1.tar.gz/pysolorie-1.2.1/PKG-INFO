@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pysolorie
+Version: 1.2.1
+Summary: Orientation Analysis of Solar Panel
+Home-page: https://github.com/aaghamohammadi/pysolorie
+Author: Alireza Aghamohammadi
+Author-email: "Alireza Aghamohammadi" <al.aghamohammadi@gmail.com>
+License: {file = "LICENSE" }
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy>=1.11.4
+
+# pysolorie
+
+[![Quality Checks](https://github.com/aaghamohammadi/pysolorie/actions/workflows/quality_checks.yml/badge.svg?branch=main)](https://github.com/aaghamohammadi/pysolorie/actions/workflows/quality_checks.yml)
+[![Publish](https://github.com/aaghamohammadi/pysolorie/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/aaghamohammadi/pysolorie/actions/workflows/publish.yml)
+![GitHub License](https://img.shields.io/github/license/aaghamohammadi/pysolorie)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pysolorie)
+
+
+
+Orientation Analysis of Solar Panel
