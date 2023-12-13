@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: calendar-cleanup
+Version: 0.2.0
+Summary: CLI utility to unclutter old calendar entries from WebDAV calendars.
+Home-page: https://github.com/top-on/calendar-cleanup
+Author: top-on
+Author-email: top-on@posteo.de
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ical (>=6.1.0,<7.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Requires-Dist: webdav4 (>=0.9.8,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Calendar Cleanup
+
+CLI utility to unclutter WebDAV calendars by deleting old entries.
+
+```bash
+    Usage: calendar-cleanup [OPTIONS]
+
+    CLI utility to unclutter WebDAV calendars by deleting old entries.
+
+    The CLI tools proposes which old entries to remove. If the user approves,
+    the events get deleted.
+
+    Options:
+    --days INTEGER  Number of days into past from which on to delete events.
+                    [default: 30]
+    --help          Show this message and exit.
+```
+
+# Roadmap
+
+- [ ] introduce logging at varing verbosity levels, replacing print statements
+
