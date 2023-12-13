@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: geography
+Version: 0.0.80
+Summary: Get info about countries and states
+Home-page: 
+Author: FrenchFries8854
+Author-email: frenchfries8854@gmail.com
+License: MIT
+Keywords: geography
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Geography Module
+## Description
+
+#### This Python module, Geography, provides classes that encapsulate information about geographical entities such as countries, states/provinces, continents, and regions. These classes retrieve various geographical and socioeconomic data attributes.
+
+## Installation
+
+### To use this module, follow these steps:
+
+#### 1. Open a terminal window and type the following command:
+#### 2. `pip install geography`
+#### 3. Enjoy!
+
+## Usage
+
+### Classes:
+
+####  AustralianState: Represents an Australian state with various attributes such as area, population, GDP, etc.
+#### CanadianProvince: Represents a Canadian province with attributes similar to `AustralianState`.
+#### Continent: Represents a continent with attributes like total area, population, GDP, etc.
+#### Country: Represents a country with a wide range of attributes including area, population, GDP, etc.
+#### CountrySimple: A simplified version of `Country` class with essential attributes.
+#### USState: Represents a state within the United States with attributes similar to `AustralianState`.
+#### USRegion: Represents a region within the United States with attributes similar to `Continent`.
+
+## How to Use:
+
+#### 1. Import the desired class from `Geography`.
+#### `import geography`
+#### 2. Instantiate the class with a specific identifier (alpha code).
+#### `country = geography.fetch_country('USA')`
+#### 3. Access various attributes of the instantiated object.
+#### `print(country.name)`
+
+## Available subdivisions:
+
+#### Australian States and Territories
+#### Canadian Provinces and Territories
+#### Continents
+#### Countries
+#### USA States and Territories
+#### USA Regions
+
+## Planned upcoming subdivisions:
+
+#### Brazil States
+#### China Provinces
+#### Ethiopia Regions
+#### France Regions
+#### Germany States
+#### India States and Territories
+#### Japan Prefectures
+#### Mexican States
+#### Russia Federal Subjects
+#### Saudi Arabia Provinces
+#### South African Provinces
+#### Spain Regions
+#### United Arab Emirates - Emirates
+
+## The information you can get:
+
+#### Alpha Code For Subdivisions `(ISO 3166-2)`
+#### Alpha-2 Code `(ISO 3166-1 alpha-2)`
+#### Alpha-3 Code `(ISO 3166-1 alpha-3)`
+#### Area in KM
+#### Area in Miles
+#### Area Ranking
+#### Area Ranking Dictionary
+#### Capital
+#### Continent
+#### Countries in Continent
+#### Flag URL
+#### GDP
+#### GDP Ranking
+#### GDP Ranking Dictionary
+#### GDP per Capita
+#### GDP per Capita Ranking
+#### GDP per Capita Ranking Dictionary
+#### Largest City
+#### Name
+#### Region
+#### Population
+#### Population Ranking
+#### Population Ranking Dictionary
+#### Population Density in KM
+#### Population Density in Miles
+#### Population Density Ranking
+#### Population Density Ranking Dictionary
+#### States in Region
+#### Get is State/Province/Territory type. (AST, CPT, SAP, UST)
+
+## Note
+
+### This module relies on external data sources and APIs for retrieving geographical and socioeconomic information. Ensure a stable internet connection for seamless functionality.
+
+### For detailed information on available attributes and methods for each class, refer to the class definitions in the main file.
