@@ -1,0 +1,9 @@
+jsondb_in_memory.cp310-win_amd64.pyd,sha256=EcPFX-9u2IA8s31PXGF3JL7L5B8GuJ_pGO20gibrLkk,310272
+jsondb_in_memory/Exceptions.py,sha256=-UnJJGQNPM0MzgnGOUaCu87wPNPJ3WvJOj4Y02ISjbg,1516
+jsondb_in_memory/__init__.py,sha256=Y09QXTTWrR30wGmmeDjcGpItpf7OODOq7v4tgWSF_dc,768
+jsondb_in_memory/jsondb_in_memory.py,sha256=SIIJ2uVkCFjkY71xcwHMurxIJOGMO1kv-CbrzsTePLQ,46463
+jsondb_in_memory-0.0.8.dist-info/LICENSE,sha256=fPWrrRnfxWbvqKmtGBfYLtoJ1is5JK_cHiYzcASikKg,11548
+jsondb_in_memory-0.0.8.dist-info/METADATA,sha256=IWlxIe5a6H6iAmvnc35RNQo8XOg8Sv9V56PHUHn2bTs,18663
+jsondb_in_memory-0.0.8.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+jsondb_in_memory-0.0.8.dist-info/top_level.txt,sha256=Q6hCQu2MzP5mwUc2HBpHe858HdKPBYXKr06bGpXCQ_Y,17
+jsondb_in_memory-0.0.8.dist-info/RECORD,,
