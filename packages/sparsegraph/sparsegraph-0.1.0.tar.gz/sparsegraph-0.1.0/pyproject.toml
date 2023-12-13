@@ -1,0 +1,24 @@
+[project]
+version = "0.1.0"
+name = "sparsegraph"
+requires-python = '>=3.10'
+description = "A graph library built on top of SciPy sparse matrices."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://sparsegraph.com"
+Issues = "https://github.com/gusberinger/sparsegraph/issues"
+
+
+[[project.authors]]
+name = "Gus Beringer"
+email = "gusberinger@gmail.com"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
