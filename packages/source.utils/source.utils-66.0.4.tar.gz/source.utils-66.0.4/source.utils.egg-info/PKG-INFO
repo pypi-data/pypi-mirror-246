@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: source.utils
+Version: 66.0.4
+Summary: Let me know if you have any questions: roman@roman-sv.ru
+Home-page: https://roman-sv.ru
+Author: Roman
+Author-email: roman@roman-sv.ru
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+
+
+This package only for ya.bugbounty research and do not contain malicious code.
+Let me know if you have any questions: roman@roman-sv.ru
