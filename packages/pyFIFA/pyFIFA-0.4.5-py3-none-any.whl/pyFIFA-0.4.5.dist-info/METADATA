@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyFIFA
+Version: 0.4.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyfiglet >=0.8.post1
+
+# OOP-Fifa-In-Terminal
+Codebase for terminal text based version of fifa my player career mode. 
