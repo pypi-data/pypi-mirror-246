@@ -1,0 +1,98 @@
+try:
+    from sage_lib.master.FileManager import FileManager
+except ImportError as e:
+    import sys
+    sys.stderr.write(f"An error occurred while importing FileManager: {str(e)}\n")
+    del sys
+
+try:
+    from sage_lib.master.AtomicProperties import AtomicProperties
+except ImportError as e:
+    import sys
+    sys.stderr.write(f"An error occurred while importing AtomicProperties: {str(e)}\n")
+    del sys
+
+
+try:
+    import numpy as np
+except ImportError as e:
+    import sys
+    sys.stderr.write(f"An error occurred while importing numpy: {str(e)}\n")
+    del sys
+
+try:
+    import re
+except ImportError as e:
+    import sys
+    sys.stderr.write(f"An error occurred while importing re: {str(e)}\n")
+    del sys
+
+class AIMS(FileManager, AtomicProperties):
+    def __init__(self, file_location:str=None, name:str=None, **kwargs):
+        FileManager.__init__(self, name=name, file_location=file_location)
+        AtomicProperties.__init__(self)
+
+    def export_as_AIMS(self, file_location:str=None, group_elements_and_positions:bool=False, verbose:bool=False) -> bool:
+        file_location  = file_location  if not file_location  is None else self.file_location+'POSCAR' if self.file_location is str else self.file_location
+
+        if group_elements_and_positions: self.group_elements_and_positions()
+
+        with open(file_location, 'w') as file:
+            # Escribir encabezado
+            file.write("#=======================================================\n")
+            file.write("# FHI-aims file: {}\n".format(file_location))
+            file.write("# Created using SAGE script \n")
+            file.write("#=======================================================\n")
+
+            # Escribir vectores de celda
+            for vector in self._latticeVectors:
+                file.write("lattice_vector {} {} {}\n".format(*vector))
+
+            # Escribir átomos
+            for label, position in zip(self._atomLabelsList, self._atomPositions):
+                file.write("atom {} {} {} {}\n".format(position[0], position[1], position[2], label))
+
+    def read_AIMS(self, file_location:str=None):
+        file_location = file_location if type(file_location) == str else self.file_location
+
+        lines = [n for n in self.read_file(file_location) ]
+
+        self._latticeVectors = []
+        self._atomLabelsList = []
+
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+
+            if line.startswith('lattice_vector'):
+                # Extraer vectores de celda
+                parts = line.split()
+                vector = [float(parts[1]), float(parts[2]), float(parts[3])]
+                self._latticeVectors.append(vector)
+
+            elif line.startswith('atom_frac'):
+                if self._atomPositions_fractional is None: self._atomPositions_fractional = []
+                # Extraer etiquetas y posiciones de los átomos
+                parts = line.split()
+                label = parts[4]
+                position = [float(parts[1]), float(parts[2]), float(parts[3])]
+                self._atomLabelsList.append(label)
+                self._atomPositions_fractional.append(position)
+
+            elif line.startswith('atom'):
+                if self._atomPositions is None: self._atomPositions = []
+                # Extraer etiquetas y posiciones de los átomos
+                parts = line.split()
+                label = parts[4]
+                position = [float(parts[1]), float(parts[2]), float(parts[3])]
+                self._atomLabelsList.append(label)
+                self._atomPositions.append(position)
+
+        if self.atomPositions is not None:
+            self._atomPositions  = np.array(self.atomPositions, np.float64)
+
+        if self._atomPositions_fractional is not None:
+            self._atomPositions_fractional  = np.array(self.atomPositions_fractional, np.float64)
+    
+        self._latticeVectors = np.array(self.latticeVectors, np.float64)
