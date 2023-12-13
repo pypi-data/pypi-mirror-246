@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: Flashon
+Version: 1.0.7
+Summary: Build your python project or pypi, Must be in the project directory (python -m flashon)
+Author: CaiqueONZZ
