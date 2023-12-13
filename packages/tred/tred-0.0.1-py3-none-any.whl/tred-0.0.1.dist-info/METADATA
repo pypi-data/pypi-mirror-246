@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: tred
+Version: 0.0.1
+Summary: Dimensionality reduction techniques for order-3 tensors
+Project-URL: Homepage, https://github.com/brendanlu/tred
+Project-URL: Issues, https://github.com/brendanlu/tred/issues
+Author-email: Brendan Lu <brendannlu5@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+
+TRED
+----
+Credit inspiration for our package: https://github.com/UriaMorP/mprod_package
+
+For the underlying tensor-product framework and tensor t-SVDM, see [1]. 
+
+For the explicit rank truncation, and the TCAM algorithm, see [2]. 
+
+References: 
+[1] Kilmer, M.E., Horesh, L., Avron, H. and Newman, E., 2021. Tensor-tensor 
+algebra for optimal representation and compression of multiway data. Proceedings 
+of the National Academy of Sciences, 118(28), p.e2015851118.
+
+[2] Mor, U., Cohen, Y., Valdés-Mas, R., Kviatcovsky, D., Elinav, E. and Avron, 
+H., 2022. Dimensionality reduction of longitudinal’omics data using modern 
+tensor factorizations. PLoS Computational Biology, 18(7), p.e1010212.
+
+NOTE: The original authors use m, p, n as the dimensions of the tensors, whereas 
+throughout this package one will see we prefer n, p, t instead. We will also use
+k = min(n, p), where from an `omics analysis perspective, typically means that
+k = n. 
