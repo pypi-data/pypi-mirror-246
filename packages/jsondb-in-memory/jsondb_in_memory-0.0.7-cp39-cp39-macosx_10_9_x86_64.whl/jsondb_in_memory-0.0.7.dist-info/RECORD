@@ -1,0 +1,9 @@
+jsondb_in_memory.cpython-39-darwin.so,sha256=sDm5FYvCDQbDtAhMqzZZsbsUbuS2kh2VzGwABq-sLOU,409696
+jsondb_in_memory/Exceptions.py,sha256=GKCZdoIaX_f2TcZm56y-enC7Pjs2PWBVPlcLIzmBXeE,1479
+jsondb_in_memory/__init__.py,sha256=Z3NAc680R5nxb778UJRf53akHTsugd6a7CKpUFVELb8,775
+jsondb_in_memory/jsondb_in_memory.py,sha256=cd0xoXpR29WkiFFvZfLne4UmZe4vs4Wgqq_kw4lBGKk,45339
+jsondb_in_memory-0.0.7.dist-info/LICENSE,sha256=Z7xZGkO0BgqkHOvtJzVqEJX3l0vxFIhuaQaVfat1uaU,11347
+jsondb_in_memory-0.0.7.dist-info/METADATA,sha256=GU0JNcfsQ9ZqmQakkS_Ydlm9Jf_UQD-DW8VkZRoAyko,18248
+jsondb_in_memory-0.0.7.dist-info/WHEEL,sha256=UlNw_PQRbc8y2O60L5paNCXmEdKCjgP3umWDtB6RxVY,109
+jsondb_in_memory-0.0.7.dist-info/top_level.txt,sha256=Q6hCQu2MzP5mwUc2HBpHe858HdKPBYXKr06bGpXCQ_Y,17
+jsondb_in_memory-0.0.7.dist-info/RECORD,,
