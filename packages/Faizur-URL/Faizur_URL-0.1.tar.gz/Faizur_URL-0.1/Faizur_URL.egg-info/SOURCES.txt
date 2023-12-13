@@ -1,0 +1,8 @@
+setup.py
+Faizur_URL/Faizur_URL.py
+Faizur_URL/__init__.py
+Faizur_URL.egg-info/PKG-INFO
+Faizur_URL.egg-info/SOURCES.txt
+Faizur_URL.egg-info/dependency_links.txt
+Faizur_URL.egg-info/requires.txt
+Faizur_URL.egg-info/top_level.txt
