@@ -1,0 +1,10 @@
+pyframelessutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyframelessutils/token_utilities/__init__.py,sha256=9ecf8_Uo5Syj5KwokUXTkpbKlVb9n26iOxjrcn51_AE,80
+pyframelessutils/token_utilities/_token_utils.py,sha256=KaMSU-P6jnuTS9MNu0pmZDn_NC8ZL6wN5AFqmwWM694,1361
+pyframelessutils/token_utilities/exceptions.py,sha256=o4GKad_8_GjqXXNhftHXOV-vlqY5Jo4-YtTX8Xc8_Q8,450
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=PFRX4a_LX06afK2RITddMomxmycR_pwYoiC9jvvjcuA,322
+py_frameless_utils-0.1.2.dist-info/METADATA,sha256=dqPjeVkP7uCb6i4g5ThkZOuRDBm2s0iYmV_yyPQZK-o,485
+py_frameless_utils-0.1.2.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+py_frameless_utils-0.1.2.dist-info/top_level.txt,sha256=wEo-2Zp0UsLo5eiocnI7nddRMYkg51ZimOBuO_PUcj4,22
+py_frameless_utils-0.1.2.dist-info/RECORD,,
