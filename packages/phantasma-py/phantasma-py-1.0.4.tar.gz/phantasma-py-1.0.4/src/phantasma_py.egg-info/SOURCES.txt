@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/phantasma_py/__init__.py
+src/phantasma_py.egg-info/PKG-INFO
+src/phantasma_py.egg-info/SOURCES.txt
+src/phantasma_py.egg-info/dependency_links.txt
+src/phantasma_py.egg-info/requires.txt
+src/phantasma_py.egg-info/top_level.txt
