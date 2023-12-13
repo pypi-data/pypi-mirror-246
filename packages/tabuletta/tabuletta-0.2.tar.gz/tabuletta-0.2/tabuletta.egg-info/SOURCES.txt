@@ -1,0 +1,8 @@
+README.md
+setup.py
+tabuletta/__init__.py
+tabuletta/tabuletta.py
+tabuletta.egg-info/PKG-INFO
+tabuletta.egg-info/SOURCES.txt
+tabuletta.egg-info/dependency_links.txt
+tabuletta.egg-info/top_level.txt
