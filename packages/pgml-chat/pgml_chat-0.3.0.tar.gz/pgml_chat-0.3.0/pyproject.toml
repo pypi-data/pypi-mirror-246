@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "pgml-chat"
+version = "0.3.0"
+description = "PostgresML bot builder for all your documentation"
+authors = ["PostgresML <team@postgresml.org>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pgml_chat"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+openai = ">=1.3.7"
+rich = "^13.4.2"
+python-dotenv = "^1.0.0"
+click = "^8.1.6"
+black = "^23.7.0"
+slack-bolt = "^1.18.0"
+discord-py = "^2.3.1"
+pendulum = "^2.1.2"
+pgml = "^0.10.0"
+requests = "^2.31.0"
+
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pgml-chat = "pgml_chat.main:main"
