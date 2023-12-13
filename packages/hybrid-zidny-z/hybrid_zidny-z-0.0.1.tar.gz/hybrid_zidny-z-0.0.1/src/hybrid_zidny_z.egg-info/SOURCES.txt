@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/hybrid_zidny_z.egg-info/PKG-INFO
+src/hybrid_zidny_z.egg-info/SOURCES.txt
+src/hybrid_zidny_z.egg-info/dependency_links.txt
+src/hybrid_zidny_z.egg-info/requires.txt
+src/hybrid_zidny_z.egg-info/top_level.txt
+src/hybridnn_zidny-z/__init__.py
+src/hybridnn_zidny-z/activation.py
+src/hybridnn_zidny-z/hybridnn.py
+src/hybridnn_zidny-z/preprocessing.py
