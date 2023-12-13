@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: toolskit-ofdc
+Version: 0.1.5
+Summary: kit de ferramentas
+Author: Isaac da Silva Farias
+Author-email: zackfarias.Pc@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
