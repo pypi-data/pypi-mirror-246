@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pysqlquery
+Version: 0.0.2
+Summary: A SQL query generator implemented in Python
+Home-page: https://github.com/Alberto-Frigatto/PySQLQuery
+Author: Alberto Frigatto
+Author-email: albertofrigattoferreira@gmail.com
+Project-URL: Bug Tracker, https://github.com/Alberto-Frigatto/PySQLQuery/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# SQLGen
