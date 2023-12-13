@@ -1,0 +1,16 @@
+pvlib
+openpyxl
+pandas
+matplotlib
+netCDF4
+cdsapi
+requests
+scipy
+suntimes
+pytest
+
+[dev]
+build
+twine
+sphinx
+sphinx-rtd-theme
