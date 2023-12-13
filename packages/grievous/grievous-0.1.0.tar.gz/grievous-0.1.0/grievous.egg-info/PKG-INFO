@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: grievous
+Version: 0.1.0
+Summary: Generalized Realignment of Innocuous and Essential Variants Otherwise Utilized as Skewed
+Home-page: https://github.com/jvtalwar/GRIEVOUS
+Author: James V. Talwar
+Author-email: jtalwar@ucsd.edu
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
