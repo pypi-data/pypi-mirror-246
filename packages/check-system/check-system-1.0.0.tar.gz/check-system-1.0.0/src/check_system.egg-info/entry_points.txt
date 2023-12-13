@@ -1,0 +1,2 @@
+[console_scripts]
+check-system = check_system:cli_wrapper
