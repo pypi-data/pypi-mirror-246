@@ -1,0 +1,13 @@
+buy_and_hold_vs_arima/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+buy_and_hold_vs_arima/_modidx.py,sha256=Wg6Ygj18YjE7fhajHzYOBWR87IO8vd08rMhmJNT7Rw0,4643
+buy_and_hold_vs_arima/arima_implement.py,sha256=3ZlJ8c7GT5JpjwlR9n7cHdlo3llbf6pE2IvG1E_dTME,385
+buy_and_hold_vs_arima/arima_stats.py,sha256=2ObMX4O23NIbY3CWhzrGdoQUcETY1SljAVbxHI3JUqY,2763
+buy_and_hold_vs_arima/core.py,sha256=UsHkTQ7lBMi1vP5OcvczXqG9lJNhAlCCMWfFWP8boSA,2624
+buy_and_hold_vs_arima/deploy_project.py,sha256=pNoU3R9l-GBIciFFDso-Ff-oBtyru84xe063vfnpMPQ,7447
+buy_and_hold_vs_arima/final_dash_product.py,sha256=psOlGOaf3jxUKcdNpa_xZBybAHtdBcnHFUb528hy6bM,3208
+buy_and_hold_vs_arima-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+buy_and_hold_vs_arima-0.0.3.dist-info/METADATA,sha256=AwdsQ0x1X8_L8oezDgo_V26PYX3Ld2vAu_XdSOxRHGc,1433
+buy_and_hold_vs_arima-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+buy_and_hold_vs_arima-0.0.3.dist-info/entry_points.txt,sha256=WXfKa7jL6eJCb_hXfAF5dwd7-NKMJN4_1ib22VqMzRE,64
+buy_and_hold_vs_arima-0.0.3.dist-info/top_level.txt,sha256=aO9CBFJpi5xyp4R5fSbZrAngBpyKtCYdhgy7l5igHv4,22
+buy_and_hold_vs_arima-0.0.3.dist-info/RECORD,,
