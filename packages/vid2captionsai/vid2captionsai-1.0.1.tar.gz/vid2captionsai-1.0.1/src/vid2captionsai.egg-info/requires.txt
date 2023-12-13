@@ -1,0 +1,7 @@
+static-ffmpeg>=2.5
+fire>=0.5.0
+
+[testing]
+setuptools
+pytest
+pytest-cov
