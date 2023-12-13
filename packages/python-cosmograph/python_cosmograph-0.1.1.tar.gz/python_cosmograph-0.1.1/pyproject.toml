@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python-cosmograph"
+version = "0.1.1"
+description = "Cosmograph is a  library for scheduling asynchronous tasks using the `apscheduler` library. It provides decorators to easily schedule tasks at specific times, intervals, or dates."
+authors = ["Iranildo Alves <117860354+IranTheCreator@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+apscheduler = "^3.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
