@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+zscTest/__init__.py
+zscTest/add_num.py
+zscTest.egg-info/PKG-INFO
+zscTest.egg-info/SOURCES.txt
+zscTest.egg-info/dependency_links.txt
+zscTest.egg-info/top_level.txt
