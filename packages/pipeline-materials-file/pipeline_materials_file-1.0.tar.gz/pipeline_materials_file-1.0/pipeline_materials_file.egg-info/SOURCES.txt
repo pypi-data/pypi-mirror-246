@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+pipeline_materials_file/__init__.py
+pipeline_materials_file.egg-info/PKG-INFO
+pipeline_materials_file.egg-info/SOURCES.txt
+pipeline_materials_file.egg-info/dependency_links.txt
+pipeline_materials_file.egg-info/requires.txt
+pipeline_materials_file.egg-info/top_level.txt
+pipeline_materials_file/__pycache__/__init__.cpython-311.pyc
