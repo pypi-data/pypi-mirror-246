@@ -1,0 +1,3 @@
+[console_scripts]
+r2dt-client=r2dt_client.__main__:main
+
