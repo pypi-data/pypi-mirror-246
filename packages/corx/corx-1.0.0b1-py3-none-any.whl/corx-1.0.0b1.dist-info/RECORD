@@ -1,0 +1,14 @@
+corx/__init__.py,sha256=nzl2E4NhTFKCiHvXbMiFpVVU9A7umUiVjyaOOWAKqM8,280
+corx/aggregate.py,sha256=S6_U9dm8NXWcFB1ywujvbuGAInpdKjcqjP67p5YEBjk,256
+corx/base.py,sha256=zLJdox9gKG9PGGBgox3FHd5txMSURwxgY6C3K2Dyu20,2697
+corx/bootstrap.py,sha256=hEmfBL7n3Q2uIOI1WlmTyKH7nxPrte18U739VAWAYnI,292
+corx/command.py,sha256=fQDrh3Wo0Dlu0r9TXHGB7tCgvNkGPZQ8xLoe9xUjJng,2180
+corx/dispatcher.py,sha256=dMgilHOV0pmrx_kTQWUOqyMpd63xObcnUjts9PNm628,1807
+corx/event.py,sha256=cG0m6YMnkboZSU3vjGIBi7j29Kzh77qo-RBf4zrT2fk,3327
+corx/query.py,sha256=g1fNMaWP2kstDSmrhwk7_4BcUHNjtBoBukPXCm6yNHM,2080
+corx/test.py,sha256=shFDEPDIEjjM8K9_135co64Pd4JSwMc6JO_ed1378vY,1706
+corx-1.0.0b1.dist-info/LICENSE.txt,sha256=wB2vWBeYIfVd3_gU16mxiPbhqBvPMmLbyp9uXbrimns,1086
+corx-1.0.0b1.dist-info/METADATA,sha256=cAiZR0cOglw5baQVWlz4g7jipdLYu5vDB6gsSGDggKU,2259
+corx-1.0.0b1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+corx-1.0.0b1.dist-info/top_level.txt,sha256=XpzYsgfVIuVqVRmPcZMi5nZGGxreMDYDSEhZnvmDQKg,5
+corx-1.0.0b1.dist-info/RECORD,,

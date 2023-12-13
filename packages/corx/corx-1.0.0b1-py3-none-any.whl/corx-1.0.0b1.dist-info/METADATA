@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: corx
+Version: 1.0.0b1
+Summary: Add a short description here!
+Home-page: https://github.com/neromantic/corx
+Author: Bohdan Kalvasinskyi
+Author-email: kalvasinskyib@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/neromantic/corx/tree/main/docs
+Project-URL: Source, https://github.com/neromantic/corx
+Project-URL: Changelog, https://github.com/neromantic/corx/blob/main/CHANGELOG.rst
+Project-URL: Tracker, https://github.com/neromantic/corx/issues
+Project-URL: Download, https://pypi.org/project/corx/#files
+Keywords: Python package to work with CQRS + ES architecture
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: tox
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+
+=======
+corx
+=======
+
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+    :target: https://opensource.org/licenses/MIT
+    :alt: License
+
+.. image:: https://badge.fury.io/py/corx.svg
+    :target: https://badge.fury.io/py/corx
+    :alt: PyPI version
+
+
+
+corx is a Python package designed to simplify the implementation of the Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) patterns. It provides essential components and utilities for developing systems that adhere to these patterns.
+
+Installation
+------------
+
+Install corx using pip::
+
+    pip install corx
+
+
+Architecture
+------------
+
+The core components of the corx architecture include:
+
+- **Command**: Represents a request or intention to change the state of the system.
+
+- **CommandHandler**: Handles specific types of commands, executing the logic associated with each command.
+
+- **Event**: Represents an occurrence or state change in the system, often triggered by the successful handling of a command.
+
+- **EventListener**: Reacts to specific events by executing custom logic.
+
+- **ProcessManager**: Orchestrates complex workflows by reacting to events and potentially issuing new commands.
+
+- **Dispatcher**: Responsible for handling and routing commands or events to the appropriate handlers.
