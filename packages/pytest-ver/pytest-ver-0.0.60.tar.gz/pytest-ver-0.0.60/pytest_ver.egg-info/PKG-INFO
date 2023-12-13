@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pytest-ver
+Version: 0.0.60
+Summary: Pytest module with Verification Protocol, Verification Report and Trace Matrix
+Home-page: https://bitbucket.org/arrizza-public/pytest-ver/src/master
+Download-URL: https://bitbucket.org/arrizza-public/pytest-ver/get/master.zip
+Author: JA
+Author-email: cppgent0@gmail.com
+License: MIT
+Keywords: verification,pytest
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing :: Acceptance
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: unknown
+License-File: LICENSE.txt
+Requires-Dist: docx
+Requires-Dist: jsmin
+Requires-Dist: pytest
+Requires-Dist: pytest-check
+Requires-Dist: python-docx
+Requires-Dist: reportlab
+
+unknown
