@@ -1,0 +1,9 @@
+ez-txt2html/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez-txt2html/ez_txt2html.py,sha256=EpMctlP7Ai7lwaM8fIYnFy-pmE8Sbaijmf9oZjnrPbs,8005
+ez-txt2html/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez-txt2html/utilities/process_arguments.py,sha256=romlvHkw42xzAxVKJ-vYPaM-mmxLnolNezmD3suygn0,1610
+ez-txt2html/utilities/process_configurations.py,sha256=pBkjiBMcFSePJ0OcEDfc0u-k7fTi8YR2Co6QHiraC0g,358
+ez_txt2html_bryce_seefieldt-1.0.2.dist-info/METADATA,sha256=PT3Z2ZT_nGgsSJJbmMs8N5Iyq37NUG_SQ1KEp_OWiHs,4485
+ez_txt2html_bryce_seefieldt-1.0.2.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+ez_txt2html_bryce_seefieldt-1.0.2.dist-info/licenses/LICENSE,sha256=VdqduFeSeLzDZUUKkKH3N4AGtfYf4TlhYeYhk5fzm58,1093
+ez_txt2html_bryce_seefieldt-1.0.2.dist-info/RECORD,,
