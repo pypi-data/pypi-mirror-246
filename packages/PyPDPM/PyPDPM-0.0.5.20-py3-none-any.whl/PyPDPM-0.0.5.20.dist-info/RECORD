@@ -1,0 +1,10 @@
+PyPDPM/HIPPS.py,sha256=mGzK8-JdWvakeuC2ij_1aU8ktLZHXsRjjlvbI7Z0pyk,29444
+PyPDPM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyPDPM/data/PDPM_ICD10_Mappings_FY2020_NTA.json,sha256=bBpSXAoMOemXYyvlIw2atmEKAS8soplpkxdIwo4x9as,168684
+PyPDPM/data/PDPM_ICD10_Mappings_FY2020_SLP.json,sha256=bBpSXAoMOemXYyvlIw2atmEKAS8soplpkxdIwo4x9as,168684
+PyPDPM/data/PDPM_ICD10_Mappings_FY2020_clinical_category.json,sha256=a-bOyppUj-OyGZ_Q3suSpDbfT5JsbIX6Rhq9k8EgT4U,3194084
+PyPDPM-0.0.5.20.dist-info/LICENSE.txt,sha256=XIOXnCME4W9M-MdSgFs60QgwXIBn_zD91nQ7yVgZmfw,1091
+PyPDPM-0.0.5.20.dist-info/METADATA,sha256=VWUZwzl37eqkLuajvKDMn7p2ybJmRUnM75jed_vHM48,32957
+PyPDPM-0.0.5.20.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+PyPDPM-0.0.5.20.dist-info/top_level.txt,sha256=Hohges1s3HgWYNrO8EgCXT12j6u0JT2SsZyHkmdkvwY,7
+PyPDPM-0.0.5.20.dist-info/RECORD,,
