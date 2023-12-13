@@ -1,0 +1,12 @@
+streamlit_activities_menu/__init__.py,sha256=aedsrdnnST9svgtqqMbdiKL8uD-5co3_K98GiAM6tL4,6919
+streamlit_activities_menu/example_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamlit_activities_menu/example_app/activities/data_processing.py,sha256=snY9PKSiwubmJxW5EL-oSgo0RYehGSxVje4BI5pg5g0,139
+streamlit_activities_menu/example_app/activities/main.py,sha256=lFLRX0SM-aps3mVgdZNKIoDZSoUMcbYoXhUwYXm89RY,123
+streamlit_activities_menu/example_app/activities/map.py,sha256=gU0AN0EF0PKSL7sfWECoGIcbiY8ICvszLTG7chZbEZA,100
+streamlit_activities_menu/example_app/app_activities.yaml,sha256=pMq-yigRJapCgPDjeWOD9ejDh0AuQHkwmfQpsRs462U,260
+streamlit_activities_menu/example_app/streamlit_app.py,sha256=3gj9M43TX7N8ylRUm7aT6mNGyXm6ZvXv1w1gNoBzb7Q,1544
+streamlit_activities_menu/requirements.txt,sha256=VIdI0ej5VjQzESXihU9b5xCvwatXTsu2VMlAdYgMdzA,6246
+streamlit_activities_menu/version.py,sha256=K4T2-0M0qt16p44N0qfA5TUtT8wBZy8WVr0cwkUoLgs,45
+streamlit_activities_menu-0.1.4.dist-info/METADATA,sha256=gB_Anm6dXrYxs8-gOadQ9mcBH4wE7ABb_hPSJft-fcQ,2733
+streamlit_activities_menu-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+streamlit_activities_menu-0.1.4.dist-info/RECORD,,
