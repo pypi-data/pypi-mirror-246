@@ -1,0 +1,9 @@
+pyproject.toml
+codeCompletionCore/CodeCompletionCore.py
+codeCompletionCore/__init__.py
+odsllib.egg-info/PKG-INFO
+odsllib.egg-info/SOURCES.txt
+odsllib.egg-info/dependency_links.txt
+odsllib.egg-info/top_level.txt
+tests/test_CodeCompletionCore_pytest.py
+tests/test_CodeCompletionCore_unittest.py

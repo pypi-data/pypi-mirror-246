@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odsllib
+Version: 0.38
+Summary: A port of antlr4-c3 (https://github.com/mike-lischke/antlr4-c3) for the OceanDSL project.
+Author-email: sgu <sgu@informatik.uni-kiel.de>
+License: Apache License (2.0)
+Project-URL: oceandsl · GitLab, https://git.se.informatik.uni-kiel.de/oceandsl
+Project-URL: OceanDSL · GitHub, https://github.com/OceanDSL
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
