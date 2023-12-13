@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: qwertypy
+Version: 0.4.0
+Summary: My personal utilities library.
+Home-page: https://github.com/qwertyvipul/qwertypy
+Author: Vipul Sharma
+Project-URL: Repository, https://github.com/qwertyvipul/qwertypy
+Project-URL: Changelog, https://github.com/qwertyvipul/qwertypy/blob/main/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# qwertypy
+
+My personal utilities library.
+
+## Installation
+
+```bash
+pip install qwertypy
+```
+
+### Upgrade
+
+```bash
+pip install --upgrade qwertypy
+```
+
+## Usage
+
+-   Try on colab: [Click here](https://colab.research.google.com/drive/1SK96YfBgIPY-CKNfvQxvBKkJnNA7fSCe?usp=sharing)
+
+### `qwertypy.greetings`
+
+```py
+import qwertypy.greetings as qpyGreetings
+
+print(qpyGreetings.hello())
+```
+
+### `qwertypy.tickertape.companies`
+
+```py
+import qwertypy.tickertape.companies as ttCompanies
+
+topCompanies = ttCompanies.getTopCompanies()
+print("TOP = ", len(topCompanies))
+# print("ALL = ", len(ttCompanies.getAllCompanies()))
+
+ttName = "reliance-industries-RELI"
+companyInfo = ttCompanies.getCompanyInfo(ttName)
+print(companyInfo)
+```
+
+### `qwertypy.tickertape.financials`
+
+```py
+import qwertypy.tickertape.financials as ttFinancials
+
+ttName = "reliance-industries-RELI"
+for statementType in ttFinancials.statementTypes:
+    statement = ttFinancials.getStatement(ttName, statementType)
+    print(statementType, type(statement))
+```
