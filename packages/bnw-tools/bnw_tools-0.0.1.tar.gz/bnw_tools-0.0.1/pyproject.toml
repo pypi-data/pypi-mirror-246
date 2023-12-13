@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bnw_tools"
+version = "0.0.1"
+authors = [
+  { name="BorgNetzWerk", email="info@borgnetzwerk.de" },
+  { name="Tim Wittenborg", email="tim.wittenborg@l3s.uni-hannover.de" },
+]
+description = "Tools developed in the BorgNetzWerk project for the extraction, analysis and publication of knowledge."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/borgnetzwerk/tools"
+Issues = "https://github.com/borgnetzwerk/tools/issues"
