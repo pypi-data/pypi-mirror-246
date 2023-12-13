@@ -1,0 +1,8 @@
+rule30py-0.1.0.dist-info/METADATA,sha256=BQILt0XgJvu-Y1zDWWko_JtshzAinYDWANiqIVthMYg,893
+rule30py-0.1.0.dist-info/WHEEL,sha256=bAvforyqMoEZ-4Yf_LmSG0ht53Ud_xsPhvjgrCdeJzk,104
+rule30/__init__.py,sha256=uANRsHccwPvR-ebfaCIS1jswUHnfW55wvTx1i71jeR4,83
+rule30/rand.py,sha256=gzWUZ_6HDZHdqEpmhQtqDGxcomUPA06KZlL6jcwl9wg,1527
+rule30/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+README.md,sha256=lOpEVHB3ZYDJdrdKoAiV17YDcDfo2dwoTbJkXA85jyI,425
+rule30/rule30py.cpython-311-darwin.so,sha256=6AfauY1xUha5wLBXiAOBQdxLZz-Gl3kQOuPsq1o2XOk,703138
+rule30py-0.1.0.dist-info/RECORD,,
