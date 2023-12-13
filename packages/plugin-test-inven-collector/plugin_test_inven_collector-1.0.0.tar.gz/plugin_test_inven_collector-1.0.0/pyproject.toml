@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plugin-test-inven-collector"
+dynamic = ["version"]
+description = 'This is a plugin for testing hatch'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+    { name = "Youngjin Jo", email = "yjinjo@berkeley.edu" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/unknown/plugin-test-inven-collector#readme"
+Issues = "https://github.com/unknown/plugin-test-inven-collector/issues"
+Source = "https://github.com/unknown/plugin-test-inven-collector"
+
+[tool.hatch.version]
+path = "src/plugin_test_inven_collector/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "coverage[toml]>=6.5",
+    "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+    "- coverage combine",
+    "coverage report",
+]
+cov = [
+    "test-cov",
+    "cov-report",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+    "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/plugin_test_inven_collector tests}"
+
+[tool.coverage.run]
+source_pkgs = ["plugin_test_inven_collector", "tests"]
+branch = true
+parallel = true
+omit = [
+    "src/plugin_test_inven_collector/__about__.py",
+]
+
+[tool.coverage.paths]
+plugin_test_inven_collector = ["src/plugin_test_inven_collector", "*/plugin-test-inven-collector/src/plugin_test_inven_collector"]
+tests = ["tests", "*/plugin-test-inven-collector/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "no cov",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
