@@ -1,0 +1,12 @@
+README.md,sha256=EMSoVTIJ9Xs4h-IJ3CdKB1lS_rUUCkJBYl7AcdBULYo,470
+naipyext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naipyext/autotime.py,sha256=rug1XCizMRXyzWGyCSrvTh2YEdo0mNOPaHrLopBz1gY,3152
+naipyext/be.py,sha256=68ZLjJ8tJN7tHNg8KSHGwrEPD5CLmCx5GdHF8kIwSOI,1533
+naipyext/be_o.py,sha256=GaIQhrshHB07VXytbNbeCiwh04dMpqcnW5wC3-Kj25g,2452
+naipyext/ns.py,sha256=eoUo-4TP7jshIt3kmSQa0mmob841oh_BnboYgc5OUgw,1853
+naipyext/pt.py,sha256=1Qzts_s9Yrsy3ww7phfOt0gfbBj-cJ3PS5uw9KhDERA,1657
+naipyext/sp.py,sha256=rvtliAoXef_y0kzois1CSRssRo69NsOOQAV5D-NVWz0,1379
+naipyext-0.10.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+naipyext-0.10.0.dist-info/METADATA,sha256=lUUBo_GatQGPbCXJfMTykPG91IXAsRx5vUOME7apdBs,1129
+naipyext-0.10.0.dist-info/licenses/LICENSE,sha256=P36FyeZP-2_PiP7ma1VbslA8kfMGi8pNpe2D6tsMBjY,35047
+naipyext-0.10.0.dist-info/RECORD,,
