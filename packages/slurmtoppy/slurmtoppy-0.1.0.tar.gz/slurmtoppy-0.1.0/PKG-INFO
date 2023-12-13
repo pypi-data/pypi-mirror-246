@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: slurmtoppy
+Version: 0.1.0
+Summary: A console-based SLURM job monitoring tool
+Home-page: https://github.com/ischurov/slurmtoppy
+Author: Ilya V. Schurov
+Author-email: ilya@schurov.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# slurmtoppy
+A console-based [SLURM](https://slurm.schedmd.com) job monitoring tool.
+
+What `top` is for `ps / kill`, `slurtoppy` is for `squeue / scancel`.
+
+## Installation
+```bash
+pip install slurmtoppy
+```
+There are no dependencies, except of standard SLURM commands.
+
+## Running
+```bash
+slurmtop
+```
+
+## Features
+- Show list of running jobs (a.k.a. `watch squeue`).
+- Cancel selected job (no job_id input needed!)
+- View output of selected job with `tail` or `less` (provided that output file in the current working directory)
+
