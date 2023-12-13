@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pathmr/__init__.py
+src/pathmr/pathmr.py
+src/pathmr.egg-info/PKG-INFO
+src/pathmr.egg-info/SOURCES.txt
+src/pathmr.egg-info/dependency_links.txt
+src/pathmr.egg-info/top_level.txt
+tests/test.py
