@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: chromadb-hfds
+Version: 0.0.1
+Summary: Chroma DB Hugging Face Datasets import/export utility
+License: MIT
+Author: Trayan Azarov
+Author-email: trayan.azarov@amikos.tech
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: chromadb-client (>=0.4.19.dev0,<0.5.0)
+Requires-Dist: datasets (>=2.15.0,<3.0.0)
+Requires-Dist: opentelemetry-api (>=1.2.0)
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc (>=1.2.0)
+Requires-Dist: opentelemetry-sdk (>=1.2.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/amikos-tech/chromadb-hfds/issues
+Project-URL: Homepage, https://github.com/amikos-tech/chromadb-hfds/
+Project-URL: Source, https://github.com/amikos-tech/chromadb-hfds/
+Description-Content-Type: text/markdown
+
+# About
+
+Small Python utility to import HF datasets to Chroma DB as well as export Chroma DB collections to HF datasets.
+
+## Installation
+
+```bash
+pip install chromadb-hfds
+```
+
+## Usage
+
+### Import
+
+- dataset (e.g. `KShivendu/dbpedia-entities-openai-1M`)
+- collection name (e.g. `dbpedia-entities-openai-1M`)
+- chroma_host (e.g. `http://localhost:8080`)
+- document_column (e.g. `text`)
+- embedding_column (e.g. `openai`)
+- metadata_columns (e.g. `["label", "uri"]`)
+- id_column (e.g. `uri` , defaults to `None` which will trigger automatic id generation)
+- limit (e.g. `1000`)
+- offset (e.g. `0`)
+- batch_size (e.g. `100`)
+- embedding_function (chromadb embedding function, e.g. `openai`)
+- create_collection (e.g. `True`)
+
+```python
+from chromadb_hfds import chromadb_hfds_import
+
+chromadb_hfds_import.from_dataset('').
+    into(host="http://localhost:8000", collection='collection_name', create=True, ).
+    with_document_column('text').
+    with_embedding_column('openai').
+    with_metadata_columns(['label', 'uri']).
+    with_id_column('uri').
+    with_limit(1000).
+    with_offset(0).
+    with_batch_size(100).
+    with_embedding_function('openai').
+    run()
+```
+
+Commandline:
+
+```bash
+
+pythom -m chromadb_hdfs.import \
+  --dataset KShivendu/dbpedia-entities-openai-1M \
+  --collection dbpedia-entities-openai-1M \
+  --host http://localhost:8000 --document_column text \
+  --embedding_column openai --metadata_columns label,uri \
+  --id_column uri \
+  --limit 1000 \
+  --offset 0 \
+  --batch_size 100 \
+  --embedding_function openai \
+  --create_collection True
+```
