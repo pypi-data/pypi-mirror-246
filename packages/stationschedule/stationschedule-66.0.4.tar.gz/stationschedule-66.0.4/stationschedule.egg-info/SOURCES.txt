@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+stationschedule.egg-info/PKG-INFO
+stationschedule.egg-info/SOURCES.txt
+stationschedule.egg-info/dependency_links.txt
+stationschedule.egg-info/requires.txt
+stationschedule.egg-info/top_level.txt
