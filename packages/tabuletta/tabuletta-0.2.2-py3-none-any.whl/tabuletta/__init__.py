@@ -1,0 +1,1 @@
+from .tabuletta import printTable
