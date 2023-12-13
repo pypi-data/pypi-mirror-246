@@ -1,0 +1,3 @@
+[console_scripts]
+cp_dsl = confLSPServer.__main__:main
+dcl_dsl = dclLSPServer.__main__:main
