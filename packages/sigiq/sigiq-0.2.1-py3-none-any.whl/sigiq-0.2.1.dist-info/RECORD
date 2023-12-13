@@ -1,0 +1,12 @@
+sigiq/__init__.py,sha256=k0OZArZ8apPN1cOUKjvygClrvUZ625VkHN_l8YasVN8,175
+sigiq/classes.py,sha256=CtuwWJMrY54P4FfPP57_0K7yA8Rc7OZM8NCGad9HiQA,4378
+sigiq/functions.py,sha256=Rz_aqUn144CxaJNVZomFrEaoFjIKWqNyQVqF_PAUrfY,1122
+sigiq/inject.py,sha256=kPUofn1oLctk2HF7kk36Q7nRcoKim1J8-c2GYVNyZC0,1657
+sigiq/login.py,sha256=S8TiAKW1v0xO1JgDrVIt3rm1aTepOvG3TC0QZ4ufzgU,464
+sigiq/openai.py,sha256=LDl261x8BBhwlsw_luerV4l6fR0xGAg5WvggIScwZcE,22265
+sigiq/utils.py,sha256=4U2EEz8VRSJq0QKS_m5XRfxUE5VHTl4wcGLD8OwAm-0,521
+sigiq-0.2.1.dist-info/METADATA,sha256=coOf_JcY1NimE1yxrNIPRubwyWIvWyZhLekRNQ0JPQ8,96
+sigiq-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sigiq-0.2.1.dist-info/entry_points.txt,sha256=gL-ELFterYYlyO_saeYmCoWrf72lyqHUP95Iqq0sfRQ,95
+sigiq-0.2.1.dist-info/top_level.txt,sha256=XGUI0UNE6iPCNH8CYMD3ghrqLDdO2x4lXEmZqrlv7Fc,6
+sigiq-0.2.1.dist-info/RECORD,,
