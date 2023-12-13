@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: on-the-fly-stats
+Version: 1.0.1
+Summary: On the fly statistics including standard deviation, average, min/max and counters
+Home-page: https://bitbucket.org/arrizza-public/on-the-fly-stats/src/master
+Download-URL: https://bitbucket.org/arrizza-public/on-the-fly-stats/get/master.zip
+Author: JA
+Author-email: cppgent0@gmail.com
+License: MIT
+Keywords: statistics,utility
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: unknown
+License-File: LICENSE.txt
+Requires-Dist: pytest-ver
+
+unknown
