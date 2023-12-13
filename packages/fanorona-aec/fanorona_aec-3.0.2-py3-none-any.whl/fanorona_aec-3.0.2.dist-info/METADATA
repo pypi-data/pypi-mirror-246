@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: fanorona-aec
+Version: 3.0.2
+Summary: A PettingZoo AECEnv implementation of the Fanorona board game.
+Author-email: Abhijeet Krishnan <abhijeet.krishnan@gmail.com>
+License: Copyright (c) 2023 Abhijeet Krishnan
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/AbhijeetKrishnan/fanorona-aec
+Project-URL: Bug Tracker, https://github.com/AbhijeetKrishnan/fanorona-aec/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pettingzoo
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Fanorona AEC Environment
+
+[![PyPI v3.0.2](https://img.shields.io/pypi/v/fanorona-aec)](https://pypi.org/project/fanorona-aec/3.0.2/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
+
+```
+  A B C D E F G H I
+5 ●─●─●─●─●─●─●─●─●
+  │╲│╱│╲│╱│╲│╱│╲│╱│
+4 ●─●─●─●─●─●─●─●─●
+  │╱│╲│╱│╲│╱│╲│╱│╲│
+3 ●─○─●─.─○─.─○─●─○
+  │╲│╱│╲│╱│╲│╱│╲│╱│
+2 ○─○─○─○─○─○─○─○─○
+  │╱│╲│╱│╲│╱│╲│╱│╲│
+1 ○─○─○─○─○─○─○─○─○
+
+W to play
+Last capture: E3 E
+Visited: D3, E3
+Half-moves: 0
+```
+
+This is an implementation of the Fanorona board game as a [PettingZoo](https://github.com/PettingZoo-Team/PettingZoo) [AEC](https://arxiv.org/abs/2009.13051) game.
+The rules have been sourced from [here](https://www.mindsports.nl/index.php/the-pit/528-fanorona).
+An additional rule where games exceeding $44$ moves end in a draw has been implemented, since the
+original rules do not have explicit draw conditions.
+
+## Installation
+
+### Using pip (recommended)
+
+```bash
+python -m pip install fanorona-aec
+```
+
+### Local
+
+```bash
+git clone https://github.com/AbhijeetKrishnan/fanorona-aec.git
+cd fanorona-aec
+python -m pip install .
+```
+
+## Usage
+
+### Setting up a basic environment
+
+In a Python shell, run the following:
+
+```python
+from fanorona_aec import fanorona_v3
+env = fanorona_v3.env()
+```
+
+See [`demo.py`](./demo.py) for a script that implements a simple random policy to interact with the environment.
+
+## Testing
+
+We use [pytest](http://doc.pytest.org/) for tests. You can run them via:
+
+```bash
+git clone https://github.com/AbhijeetKrishnan/fanorona-aec.git
+cd fanorona-aec
+python -m pip install .[dev]
+pytest
+```
