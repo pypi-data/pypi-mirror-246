@@ -1,0 +1,3 @@
+import clappform_integrations.clappform_itsperfect.src.clappform_itsperfect as Itsperfect
+import clappform_integrations.clappform_rudholm.src.clappform_rudholm as Rudholm
+import clappform_integrations.clappform_itris.src.clappform_itris as Itris
