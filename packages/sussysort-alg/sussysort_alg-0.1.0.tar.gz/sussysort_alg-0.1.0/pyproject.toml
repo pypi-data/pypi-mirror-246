@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sussysort_alg"
+version = "0.1.0"
+authors = [
+  { name="Istarios", email="10dan10@email.cz" },
+]
+description = "A small kinda sus package"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/DanielMartinecCZ/SussySort"
