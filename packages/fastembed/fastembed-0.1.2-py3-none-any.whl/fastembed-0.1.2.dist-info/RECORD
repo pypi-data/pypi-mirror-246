@@ -1,0 +1,12 @@
+fastembed/1.parquet,sha256=gqS1rdSCrAaxkgsF73UxQNqDqnZcG_tFkbosWdJG6KI,3336590
+fastembed/2.parquet,sha256=Zj_O90bHdk3G856woQVzAw8nvAWyMcxNuCMIKloJdTA,3334657
+fastembed/3.parquet,sha256=7LZDXeZVDAnr5m2tANrf6OPgDCiyFQqJtmQXSdRHF4w,3335057
+fastembed/4.parquet,sha256=PblrS_xcFrnKEyqoqlgJqHe5o3s19HERCJ3KKz7MYSk,3336255
+fastembed/5.parquet,sha256=6iJX3oX7H80o1ETF_Cb-34lV3dqKeB9moHrwFxsCyoM,3335010
+fastembed/download_openai.py,sha256=pwRp_oyaLL0ZtLzKdLWGLan57Yq715EnIRr4kVHqGOM,1769
+fastembed/embedding.py,sha256=u-GvmGbqTAmuFBNmUjkpYad_b4VFYHgjTWqtqNnlVOo,26242
+fastembed/parallel_processor.py,sha256=LqL8tpqjF22DA7I0gHIRUlXYZekR65TVRiGRCbjLW5Y,7525
+fastembed-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastembed-0.1.2.dist-info/METADATA,sha256=n2RkBAX8BacL7R2_a-jDr9BAxVWhlbUU6Rx19zGf41Q,3913
+fastembed-0.1.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+fastembed-0.1.2.dist-info/RECORD,,
