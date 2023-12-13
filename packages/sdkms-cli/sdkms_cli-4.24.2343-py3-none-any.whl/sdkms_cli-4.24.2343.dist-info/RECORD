@@ -1,0 +1,9 @@
+sdkms_cli/VERSION,sha256=YrUL3WNloycEID5sfWB20QmAAJG7jitv48Q23J-M-tM,10
+sdkms_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdkms_cli/__main__.py,sha256=_HdxyScjygDkwVHuoqFb4Jp4YqiqMIpOH3TZlALgsA8,183371
+sdkms_cli/pycompatible.py,sha256=fGaskx7Il5b3dsH8jA4j9Rx5NAyT8ugygkgcWbqHX74,2211
+sdkms_cli-4.24.2343.dist-info/METADATA,sha256=yWjVFYtbf0esiLCSodFS1NJWXpZ7j628MY_eBfQr8yw,1007
+sdkms_cli-4.24.2343.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sdkms_cli-4.24.2343.dist-info/entry_points.txt,sha256=QtgTgPkywV5HYv5DztoYKPoci_B-jCrvIyTtz3jQfyY,55
+sdkms_cli-4.24.2343.dist-info/top_level.txt,sha256=tAiXvbbvR_V6aCOV5lMzjBSRgQrcMbku1gFF5wFF4qk,10
+sdkms_cli-4.24.2343.dist-info/RECORD,,
