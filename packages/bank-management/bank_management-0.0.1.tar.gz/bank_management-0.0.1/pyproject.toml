@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bank_management"
+version = "0.0.1"
+authors = [
+  { name="Alan", email="zhangmuqing2011@163.com" },
+  { name="Yuyang", email="yuyangpeng15@gmail.com" }
+]
+description = "An project for DATA 533, UBCO"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pengyuyang-315/step3_banking_management"
+Issues = "https://github.com/pengyuyang-315/step3_banking_management/issues"
