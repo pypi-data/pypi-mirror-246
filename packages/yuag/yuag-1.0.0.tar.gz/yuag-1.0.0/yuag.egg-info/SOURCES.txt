@@ -1,0 +1,5 @@
+setup.py
+yuag.egg-info/PKG-INFO
+yuag.egg-info/SOURCES.txt
+yuag.egg-info/dependency_links.txt
+yuag.egg-info/top_level.txt
