@@ -1,0 +1,9 @@
+farmtool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farmtool/cows_api.py,sha256=Q5Xed3jfJo1YlEICWvnMzmW-h39zIFqgBX2b646Dlgg,3822
+farmtool/database_cows_functions.py,sha256=fKlSVFQPhGPZwqEqFY6JDOUy283DjnxD1_DekoD1hQU,1318
+farmtool/main.py,sha256=hVnjDrs3UB7ZCbjasKmmgOmMsfE9MgciRRcjdb17Ifc,733
+farmtool/models.py,sha256=BbGZantESquwTmrmrOvY-5T7oEv-9VmzLgbbt6YQKQU,2177
+farmtool-1.0.0.dist-info/entry_points.txt,sha256=5H6Vrr478z-FYQM36Q0ACZkiCCj2XnmOOIAv9eAlF48,47
+farmtool-1.0.0.dist-info/METADATA,sha256=xZcoyiqr1wvUePG-DKfuAn4Eimd4f_pnE3vv2NayVWI,1655
+farmtool-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+farmtool-1.0.0.dist-info/RECORD,,
