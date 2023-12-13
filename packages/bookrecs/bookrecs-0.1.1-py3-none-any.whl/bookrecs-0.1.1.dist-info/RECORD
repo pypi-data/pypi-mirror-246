@@ -1,0 +1,16 @@
+bookrecs/__init__.py,sha256=SQjKBgrxz6j0qjmZWhGwUAwC5Fje-AwQ87B6KO-uxxE,94
+bookrecs/utils.py,sha256=3aXXN4fcNU8CgaLVJMcdZutHMils66-ru5i5xMOsm_U,37
+bookrecs/api/__init__.py,sha256=Bbx_d79S5Y9eUpITx6prKs81-o4-IjfP7v830INqPhU,48
+bookrecs/api/api.py,sha256=-xLTvcr8AACyfF0uOtHAMw9ukRzd5j8l7IGcEigPHtQ,3606
+bookrecs/db/__init__.py,sha256=bL6pABbABT6_Y68zl_6t-mvhQ9CygCw4dwBXU0-wGQg,102
+bookrecs/db/data_generator.py,sha256=hav6V9obEIceBEbwCFTDXo2RrbtSovYxL59nUwtI5Dw,1121
+bookrecs/db/schema.py,sha256=8uO5io92P36tL1S7VMsmWdoJlEIP2zAHc1dnh1jlqOI,4427
+bookrecs/db/sql_interactions.py,sha256=HhZN1a-psTLW6jo71Lb7YQkdi2njsTDKMKUuSjAETaM,7896
+bookrecs/logger/__init__.py,sha256=9XOF0Hy2ryN0OuHS79E8BrGm-Vdox6dYInu1tpHdyok,38
+bookrecs/logger/logger.py,sha256=PKemBkVLddelMBjrm149MPR93JiTlU5cxRg4AA5zShg,1496
+bookrecs/model/__init__.py,sha256=ThUzk5NgQkHvFFyTCSznjuT_HsSBipKuSdyqEfpDg4c,47
+bookrecs/model/model.py,sha256=JhaX1yWUXSQjjhTz5hpVjFBd1qgwRLvbFu2zqA5c23o,2758
+bookrecs-0.1.1.dist-info/METADATA,sha256=jkU_YN5t3xTsc02E646MEDKUI1BSjJ-cJ1sj0HhWm7Q,1830
+bookrecs-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bookrecs-0.1.1.dist-info/top_level.txt,sha256=v1kTdf7aw2peaq3o7wCbqIEgyJyz9OT133gEWIsRJTQ,9
+bookrecs-0.1.1.dist-info/RECORD,,
