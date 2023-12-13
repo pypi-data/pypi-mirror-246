@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: llm-hygiene
+Version: 0.0.1
+Summary: a data preprocessing toolkit that makes it easy to create common LLM-related data structures; from training data to chain payloads!
+Home-page: https://github.com/Prismadic/hygiene
+Description-Content-Type: text/markdown
+License-File: LICENSE
