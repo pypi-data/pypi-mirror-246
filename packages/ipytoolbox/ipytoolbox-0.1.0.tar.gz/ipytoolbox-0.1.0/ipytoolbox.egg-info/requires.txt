@@ -1,0 +1,5 @@
+ipython
+
+[tests]
+pytest
+pytest-cov
