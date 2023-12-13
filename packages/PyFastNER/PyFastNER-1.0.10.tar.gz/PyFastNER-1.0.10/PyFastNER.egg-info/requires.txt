@@ -1,0 +1,2 @@
+cython
+quicksectx>=0.3.1
