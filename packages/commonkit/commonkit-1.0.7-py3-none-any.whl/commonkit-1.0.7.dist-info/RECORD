@@ -1,0 +1,17 @@
+commonkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commonkit/django/db/fields.py,sha256=GKISo3b9r11mF_Y--ge_VKG3Jvq3rNmfdnbPgaq33_s,1559
+commonkit/django/models.py,sha256=7M9deoopz7iyhnpWFIkF-QVHNp3WWbh2l0b552EWhU4,912
+commonkit/private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commonkit/private/errors.py,sha256=9GEi8c4GcBwwqa02v5huvJ3Wt7U33dJYHc30JcWSbBQ,2059
+commonkit/private/loggers.py,sha256=nAUQK8p4wdWhw1G-dB_V5eEl4Y4U4udSQfMrKYR8XNU,60
+commonkit/private/utils.py,sha256=Nu36J2bKzPCxSpX3yS2aUlbAgLG3AFng8SHTUgkf-OU,1258
+commonkit/rest_framework/pandas/__init__.py,sha256=LPpeAMtEyN2bTnyWYx9Ds6lvbptLsBJvRUl_6Si8sa4,731
+commonkit/rest_framework/polars/__init__.py,sha256=Bcu_M9cXaD1wNMqcrRIo4BjCaB15aYXmPjNaEpUQeAM,690
+commonkit/rest_framework/renderers.py,sha256=dv6glpVm6CwcHl0s9TlHfVE7rbdkqbO_yJjQ-s7sh0c,1302
+commonkit/rest_framework/serializers.py,sha256=iVN-VW53ciWCFtL3ptDLIcCbhr9rNABusUQIKn1Ypag,16600
+commonkit/rest_framework/viewsets.py,sha256=Spcz_Cx7kZgyCWPfqF3IiDTHt95xG8ZXHQ-XeGwKokA,2216
+commonkit/utils.py,sha256=f3YAy5pjxvycJhZyrvdpa3GdxEkTNR9KIjzvv53pBOw,1143
+commonkit-1.0.7.dist-info/LICENSE.txt,sha256=5OE2OEvphXA-8GrA11Y44MhoyFBwsodyk8qbIIWTtqs,1060
+commonkit-1.0.7.dist-info/METADATA,sha256=8aixWJ4tqOHj03VSrmvgYvjGHHdFU-dkCjrd9Ksk_xw,2438
+commonkit-1.0.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+commonkit-1.0.7.dist-info/RECORD,,
