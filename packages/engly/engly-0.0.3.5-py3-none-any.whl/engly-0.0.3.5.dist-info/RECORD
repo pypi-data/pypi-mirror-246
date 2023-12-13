@@ -1,0 +1,14 @@
+history.py,sha256=yjTn--q_aquqI2S75G0oEvhr1Zs0C6X5ud2CwnTeJSE,1335
+reading.py,sha256=9lUkGpnwxwFSkAf3J-2EPS73iBrncIfWfsYeGcKaS-Y,8768
+test.py,sha256=WhnvqW4AOwrRz9j_5WMePOShWk85fT2TPmQ_2TRLors,1160
+title.py,sha256=7Zf5f5Z9p7NECFEOEkptHBJU_KMKJx1CKnYFfsqyi6c,5936
+word_list.py,sha256=wYwNH-ucRckNZaU71tkSVFghtISExuo_piGDV3KgnWY,9350
+word_test.py,sha256=BYcUBGh_hUTp9IL6qrhOPrCrzp75MzlqAwllT8sy9FY,8947
+libs/common.py,sha256=L9YVGwKK-iTw-qFvP1qn__ZLi1OHQnPdQweOMzzAt0k,1169
+libs/newdate.py,sha256=S8CY4YxQGNdqc7mB4LONm9rXXXB6axOaXvYvZpkDMTo,1655
+engly-0.0.3.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+engly-0.0.3.5.dist-info/METADATA,sha256=kGp79-CHmSEAdcq1jrfj3DYt2ENNtnzeB3fFF2WaytY,1377
+engly-0.0.3.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+engly-0.0.3.5.dist-info/entry_points.txt,sha256=sMEN3MoW-ONUmg7ay4mBgGQ7ctPE39c7WwcMhcSDo4k,37
+engly-0.0.3.5.dist-info/top_level.txt,sha256=wFrPYNak4WAZ6xYhXUKbQALq0UV3lbQCxQW2alnOjzA,52
+engly-0.0.3.5.dist-info/RECORD,,
