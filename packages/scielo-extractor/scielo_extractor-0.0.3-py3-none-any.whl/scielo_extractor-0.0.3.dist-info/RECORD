@@ -1,0 +1,8 @@
+scielo_extractor/__init__.py,sha256=7YwKyMH-7c866HSajJCZTlqH1u-ovd2J0PD5BNo9m74,41
+scielo_extractor/cli.py,sha256=Ewduf86CqGvMZQeF-Pplpo1Axv69_E40n9WMoQqBLks,964
+scielo_extractor/extractor.py,sha256=6uOquTLLXmt1L9ZYZT8yviQwsH7-7mkDIKIFhOh46Nw,4266
+scielo_extractor-0.0.3.dist-info/METADATA,sha256=SMgJZ9aMuCQrQZEzlLj93U7gD3C-QM4R3DUnRTEVqf4,10676
+scielo_extractor-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+scielo_extractor-0.0.3.dist-info/entry_points.txt,sha256=rfO0wKPbxsCTpkwaPpKnCM75gRTP_MtJqSO-ZgavdVw,63
+scielo_extractor-0.0.3.dist-info/top_level.txt,sha256=oGwwJRm9_KTnH0VQc_Z9E4C_VJAmvNK70O2Ir3_G7VQ,17
+scielo_extractor-0.0.3.dist-info/RECORD,,
