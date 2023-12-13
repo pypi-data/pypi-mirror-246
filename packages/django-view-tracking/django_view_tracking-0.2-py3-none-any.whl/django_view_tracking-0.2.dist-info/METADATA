@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: django-view-tracking
+Version: 0.2
+Summary: Simple logging of user access to URLs in Django.
+Home-page: https://gitlab.com/accu-trade/django-view-tracking
+Author: Accu-Trade LLC
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=2.2
+
+# django-view-tracking
+
+Simple logging of user access to URLs in Django.
+
+## Usage
+
+**Install:**
+
+```shell
+pip install django-view-tracking
+```
+
+**Enable:**
+
+```python
+# settings.py
+
+INSTALLED_APPS = [
+    ...
+    'django_view_tracking',
+    ...
+]
+
+MIDDLEWARE = [
+    ...
+    'django_view_tracking.middleware.ViewTrackingMiddleware',
+    ...
+]
+```
+
+**Configure:**
+
+```python
+# global kill switch
+DJANGO_VIEW_TRACKING_ENABLED = True
+
+# switch logging for anonymous users on or off
+DJANGO_VIEW_TRACKING_ANONYMOUS_USER = True
+
+# ignore logging for specific paths
+DJANGO_VIEW_TRACKING_BLACKLIST = [
+    reverse('admin:index'),
+]
+```
+
+**Migrate:**
+
+```shell
+python manage.py migrate
+```
+
+**Enjoy:**
+
+View logs in the Django Admin under `Django View Tracking`.
+
+### License
+
+[MIT License](LICENSE)
+
+
