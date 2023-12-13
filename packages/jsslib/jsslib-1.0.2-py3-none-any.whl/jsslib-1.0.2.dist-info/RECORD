@@ -1,0 +1,13 @@
+jsslib/__init__.py,sha256=tkUQt-RtWhofhe7jT0KHRRpgmUYPQarKFgJ0IU2bFMM,22
+jsslib/__version__.py,sha256=evhynseXlAL0MsAeoQblVJn8ktNzftKXjxUJ--Q-iy0,63
+jsslib/base.lex,sha256=_vrcnjjUKj4_ajh_x76IYUCDPFNJh5VMplp48UiO7No,6835483
+jsslib/jsslib.dll,sha256=WY-nsN91vZbNSosxm7pbOqTgGj2tXBNJwqwpzs8wcMQ,936448
+jsslib/jsslib.py,sha256=YxsMBbpaU6fPLhsLWHQhv6RABLVG7plglO3EWkx8cXI,3516
+jsslib/libjsslib.dylib,sha256=nvGjwkWN7u13B7qPQRitH3Hvwvg2P5KU11TG1Uhg1Tg,1434096
+jsslib/libjsslib.so,sha256=0fXA2JblD32XbwcvmeynAL5rIAR1frqRUgRs9k9iHs0,1716840
+jsslib/test.py,sha256=zqr5nocWRc-I-9lE_8QJEkUt8-0ENtA9OqC10-z8TFE,351
+jsslib-1.0.2.dist-info/LICENSE,sha256=NqTlefKost5lRhF9Oa_pSjPpR9zbV8yBQVvEgNol5_o,1058
+jsslib-1.0.2.dist-info/METADATA,sha256=Uc9Cor8hkSGajE8SnMEBU8JM9TnjOhg9gDyL-ADoapE,1076
+jsslib-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jsslib-1.0.2.dist-info/top_level.txt,sha256=wWvHmCYZvXv9JI4OfIRVSYwneKF8hje-Df7B8W7nFXA,7
+jsslib-1.0.2.dist-info/RECORD,,
