@@ -1,0 +1,12 @@
+smpmgr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smpmgr/__main__.py,sha256=EDidpeRUuRjL-4RP177eZdG5CsRubDNIXFEHJoZ7Qf8,92
+smpmgr/common.py,sha256=-5W9_1Pa98wCO4as7TIdw_Pui78b-vAvBAJo4NZFNUI,3107
+smpmgr/image_management.py,sha256=h1uUCtAIJYO7dqzb89mDZ-Wc-Ia3vyUixfNU1QUjcEY,3174
+smpmgr/main.py,sha256=DX0bJ6r2OFTI6pqNNonGE0QMEaJkbw0IiM09R0VjNm4,3252
+smpmgr/os_management.py,sha256=uE3xA4MT8GG8loMkgef9FzNdaYNQiLFGQR-RjJsgf7Y,1086
+smpmgr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smpmgr-0.2.0.dist-info/LICENSE,sha256=A2b4wJsrFofw_F--w_JLNGMxcfFpf-FUef19awjUhow,11366
+smpmgr-0.2.0.dist-info/METADATA,sha256=r-WYtKmB_bVdIGQYFfJOzvYt90Npye60vjp3PupbhPk,674
+smpmgr-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+smpmgr-0.2.0.dist-info/entry_points.txt,sha256=9CZLeAOsiCx8J71hDyF7qCDjkTMQ-3x_ZKMYrxneYyU,42
+smpmgr-0.2.0.dist-info/RECORD,,
