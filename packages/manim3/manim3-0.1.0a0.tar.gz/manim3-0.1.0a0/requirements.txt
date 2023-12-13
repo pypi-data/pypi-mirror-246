@@ -1,0 +1,15 @@
+attrs
+cairocffi
+colour
+ffmpeg-python
+mapbox-earcut
+moderngl
+numpy
+pangocairocffi
+pangocffi
+pillow
+pyclipr
+pyglet
+rich
+scipy
+svgelements
