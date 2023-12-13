@@ -1,0 +1,11 @@
+falcon_observability/Home.py,sha256=5jWh6W3rSeNewKi_MQ8bcQuc9HV5gaNr7_7wA0ouEV8,1615
+falcon_observability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+falcon_observability/main.py,sha256=rFozUGTerE5tR-m2bsHvAmiAemqMVT1sP7g6bgjQ19c,3029
+falcon_observability/pages/1_👨‍💻_Log_Monitor.py,sha256=Cr8mqXi2c5ItlDtyYhwG346k2Swe3l_hGZ0DLaSYQXE,2904
+falcon_observability/pages/2_📊_Log_Analytics.py,sha256=dywBuMxyJEuvvt51nF7jjVacVx4Z77sukPEeQIE3i9Q,11234
+falcon_observability/static/AIAAS_FALCON.jpg,sha256=L2KNrPAFy8Pi8YXYkflVt3p5szW1SNoqOgFOzTIa0YE,60918
+falcon_observability/utils/format.py,sha256=VWoTuJstiovPwrp-H-C-fiu9LIcsuo27YEv8W6kABZU,11338
+falcon_observability-0.1.0.dist-info/LICENSE,sha256=Pj23WI_swXS51Cuc5Zf4tW-BKGq_tEFHS8FMbvfdfm8,1083
+falcon_observability-0.1.0.dist-info/METADATA,sha256=Z9yF7YsJdOFHFguyFtsJ2-Bz79LNEufqrwPGXS4Jqvo,4101
+falcon_observability-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+falcon_observability-0.1.0.dist-info/RECORD,,
