@@ -1,0 +1,7 @@
+pettingzoo
+
+[dev]
+pytest
+black
+pre-commit
+mypy
