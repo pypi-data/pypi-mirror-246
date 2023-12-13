@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dbbs-mod-collection
+Version: 4.0.0b0
+Summary: DBBS Mod Collection
+Author-email: Robin De Schepper <robingilbert.deschepper@unipv.it>
+Description-Content-Type: text/x-rst
+Requires-Dist: nmodl-glia>=4.0.0b0,<=4.0.0b9999
+
+===================
+DBBS Mod Collection
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/dbbs_mod_collection.svg
+        :target: https://pypi.python.org/pypi/dbbs_mod_collection
+
+
+DBBS collection of NMODL assets
+
+
