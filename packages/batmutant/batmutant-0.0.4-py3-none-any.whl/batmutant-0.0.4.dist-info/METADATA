@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: batmutant
+Version: 0.0.4
+Summary: Package for predicting peptide mutation effects on T cell receptor activation.
+Author-email: Amitava Banerjee <amitavab@cshl.edu>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11.5
+Requires-Dist: arviz>=0.16.0
+Requires-Dist: numpy>=1.25.2
+Requires-Dist: pandas>=2.1.1
+Requires-Dist: pymc>=5.6.1
