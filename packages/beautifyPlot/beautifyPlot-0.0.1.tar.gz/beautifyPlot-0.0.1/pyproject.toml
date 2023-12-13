@@ -1,0 +1,18 @@
+[project]
+name = "beautifyPlot"
+version = "0.0.1"
+authors = [
+  { name="Keerthi Vasan G.C.", email="kvch@ucdavis.edu" },
+]
+description = "A matplotlib wrapper to make plotting easier."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kvgc/beautifyPlot"
+Issues = "https://github.com/kvgc/beautifyPlot/issues"

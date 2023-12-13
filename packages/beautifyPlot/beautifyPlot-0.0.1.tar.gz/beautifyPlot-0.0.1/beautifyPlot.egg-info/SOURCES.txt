@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+beautifyPlot/__init__.py
+beautifyPlot/bplt.py
+beautifyPlot.egg-info/PKG-INFO
+beautifyPlot.egg-info/SOURCES.txt
+beautifyPlot.egg-info/dependency_links.txt
+beautifyPlot.egg-info/top_level.txt
