@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: txtar
+Version: 0.1.0
+Summary: Port of golang's [txtar](https://pkg.go.dev/golang.org/x/tools/txtar)
+Home-page: https://github.com/davidventura/txtar
+Author: david
+Author-email: davidventura27@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyfakefs (>=5.3.2,<6.0.0)
+Project-URL: Documentation, https://github.com/davidventura/txtar
+Project-URL: Repository, https://github.com/davidventura/txtar
