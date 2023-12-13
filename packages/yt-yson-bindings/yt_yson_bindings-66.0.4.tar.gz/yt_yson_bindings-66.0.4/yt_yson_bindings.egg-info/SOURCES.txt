@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+yt_yson_bindings.egg-info/PKG-INFO
+yt_yson_bindings.egg-info/SOURCES.txt
+yt_yson_bindings.egg-info/dependency_links.txt
+yt_yson_bindings.egg-info/requires.txt
+yt_yson_bindings.egg-info/top_level.txt
