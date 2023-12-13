@@ -1,0 +1,32 @@
+Package: baldr
+Version: 1.0
+Architecture: amd64
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Filename: pool/asgard/b/baldr/baldr_1.0_amd64.deb
+Size: 2144
+SHA256: c045f260ef0ad083093de053610299b615e49199a603b3e57b6bbc6f075f364e
+SHA1: 113e44700436278721c313b45d722af7fb029bb0
+MD5sum: cf04dcc6bec8e006c02622bb702f06d5
+Description: Baldr
+ Baldr is a god associated with light, joy, purity, and the summer sun.
+
+Package: eir
+Version: 1.0
+Architecture: all
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Filename: pool/asgard/e/eir/eir_1.0_all.deb
+Size: 2124
+SHA256: 8b4bdfa0e7ff53b6f3b63533370d53dc34295b4eb162dbf03297773ba1c6e4d5
+SHA1: 457d8f06b712831cecd9e7d21b0fa483e2abf7a5
+MD5sum: b11bf095834a6e74d24bc63e147a22fa
+Description: Eir
+ Eir is a valkyrie and goddess associated with medical skill.
+

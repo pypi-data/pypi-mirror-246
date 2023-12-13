@@ -1,0 +1,57 @@
+Package: frigg
+Version: 2.0
+Architecture: ppc64
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Task: Æsir
+Priority: optional
+Section: misc
+Filename: pool/asgard/f/frigg/frigg_2.0_ppc64.deb
+Size: 2120
+SHA256: 9a1289b69202c0d32c36ceb3884bfd3e3affc4a07adff5cb8dc011167ba67128
+SHA1: 6fe4c84ada8c5352696f6eff9af48883cfa64aae
+MD5sum: 40d20d0b68a7f15024082ad593ca2514
+Description: Frigg
+ Frigg is described as the wife of the god Odin.
+
+Package: heimdallr
+Version: 1.0
+Architecture: ppc64
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Task: Æsir
+Priority: optional
+Section: misc
+Filename: pool/asgard/h/heimdallr/heimdallr_1.0_ppc64.deb
+Size: 2236
+SHA256: 1d4dc0012d8ddf2b945de6d27e86a13c68952664169105c3d5a3cca78140b8bd
+SHA1: 244e727687f04fc7b515d27bc308490233397ce8
+MD5sum: 23aebf093f0507eea499c5bc8a4fb4fa
+Description: Heimdallr
+ Heimdallr is attested as possessing foreknowledge, keen eyesight and hearing,
+ and keeps watch for invaders and the onset of Ragnarök.
+ He is located where the burning rainbow bridge Bifröst meets the sky.
+
+Package: odin
+Version: 1.0
+Architecture: ppc64
+Essential: yes
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Description-md5: 654ca349ba8dade6580ba77c71d67eff
+Task: Æsir
+Priority: optional
+Section: misc
+Filename: pool/asgard/o/odin/odin_1.0_ppc64.deb
+Size: 2220
+SHA256: 79ae7e0c2674b3d780475462609a02b5e76f06fe47c3393b0d503d1b4b9210f8
+SHA1: d911f778cdef4aa2ced1977684d4f77241ba02a3
+MD5sum: cc5bdfc544affcc6d4fd9b2ba24277ef
+Description: Odin
+ Odin is associated with wisdom, healing, death, royalty, the gallows,
+ knowledge, battle, sorcery, poetry, frenzy, and the runic alphabet, and is
+ the husband of the goddess Frigg.
+

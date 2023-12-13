@@ -1,0 +1,32 @@
+Package: eir
+Version: 1.0
+Architecture: all
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Filename: pool/asgard/e/eir/eir_1.0_all.deb
+Size: 2124
+SHA256: 8b4bdfa0e7ff53b6f3b63533370d53dc34295b4eb162dbf03297773ba1c6e4d5
+SHA1: 457d8f06b712831cecd9e7d21b0fa483e2abf7a5
+MD5sum: b11bf095834a6e74d24bc63e147a22fa
+Description: Eir
+ Eir is a valkyrie and goddess associated with medical skill.
+
+Package: frigg
+Version: 1.0
+Architecture: ppc64
+Maintainer: Equivs Dummy Package Generator <root@>
+Installed-Size: 9
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Filename: pool/asgard/f/frigg/frigg_1.0_ppc64.deb
+Size: 2120
+SHA256: 9febca80c9dea2b6de69b9e031d1c790db5c2ba922404d5cc10125538ad375a1
+SHA1: efcba4a8d065c07cd791f3503ab554805f70df9f
+MD5sum: a1906433674f2b0232242f196dd7ac3d
+Description: Frigg
+ Frigg is described as the wife of the god Odin.
+
