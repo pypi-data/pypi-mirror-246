@@ -1,0 +1,117 @@
+{
+    "quizname": "Computer Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A computer program is a piece of",
+            "answer": "software",
+            "choices": {
+                "1": "hardware",
+                "2": "underwear",
+                "3": "software"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Devices that are connected to computers, such as printers, scanners and modems, are called",
+            "answer": "peripherals",
+            "choices": {
+                "1": "peripherals",
+                "2": "formats",
+                "3": "apps"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do we call a specific computer record containing data or a small program?",
+            "answer": "a file",
+            "choices": {
+                "1": "a file",
+                "2": "a format",
+                "3": "an icon"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do we call the part of a computer that stores programs and information?",
+            "answer": "the hard disk",
+            "choices": {
+                "1": "the hotspot",
+                "2": "the hard disk",
+                "3": "the notebook"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do we call a program for exploring the Web and viewing websites?",
+            "answer": "a browser",
+            "choices": {
+                "1": "a driver",
+                "2": "a browser",
+                "3": "a scanner"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "To open a particular folder, file or app, you just have to click on its",
+            "answer": "icon",
+            "choices": {
+                "1": "pixel",
+                "2": "icon",
+                "3": "font"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "RAM, ROM and cache are different types of _______ that computers can use.",
+            "answer": "memory",
+            "choices": {
+                "1": "Wi-Fi",
+                "2": "file",
+                "3": "memory"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which allows wireless data communication?",
+            "answer": "a Bluetooth connection",
+            "choices": {
+                "1": "a USB flash drive",
+                "2": "a Bluetooth connection",
+                "3": "an anti-virus app"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do people go to public hotspots for?",
+            "answer": "Internet access",
+            "choices": {
+                "1": "Internet access",
+                "2": "software bugs",
+                "3": "free viruses"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A computer's _______ is called its heart or \"brains\" because it's where data is processed.",
+            "answer": "CPU",
+            "choices": {
+                "1": "RAM",
+                "2": "USB",
+                "3": "CPU"
+            }
+        }
+    ]
+}
