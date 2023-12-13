@@ -1,0 +1,2 @@
+[console_scripts]
+gtdb_precurate = gtdb_precurate.__main__:main
