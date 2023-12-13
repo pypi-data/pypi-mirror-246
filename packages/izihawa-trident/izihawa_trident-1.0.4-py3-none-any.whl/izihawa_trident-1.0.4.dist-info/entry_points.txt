@@ -1,0 +1,3 @@
+[console_scripts]
+trident-importer=trident.importer:main
+
