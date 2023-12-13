@@ -1,0 +1,13 @@
+topicvelo/.DS_Store,sha256=GZaKlfkq51oedY3sOqu2dWi9UTj5BTar3ckKqo3TssM,6148
+topicvelo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+topicvelo/dist_pl.py,sha256=IbXa_c2HC2Sk3YOm_XZjk_eFGTQiWVRaP6ud1-gpWt4,19745
+topicvelo/embed_pl.py,sha256=uEl-AjUdLNqfvRLwpRS1ECZgKNPEjyO3z0lDmMR-NkY,33067
+topicvelo/inference_tools.py,sha256=AATMd8u3TgwZzMjco2sgO_jGBySPqYJ0bmZiIeV5jLM,15107
+topicvelo/tm_utils.py,sha256=m3OHmwUHrVHg6ubO63cLyGLTDEK-oAw9OkhCgt66L4U,9016
+topicvelo/transcription_simulation.py,sha256=unESxi946osj0uXf1cesitLj11GdAhleudWMo1rCsRY,5494
+topicvelo/transition_matrix.py,sha256=5oIp1oT9D4QiOj3dc3JK3D8SfN4yeMOeYg6wCyKvwKU,17996
+topicvelo/vel_eval_utils.py,sha256=Wn-IWohiUHRP1OquBU0lQzRadLGPIldIX0XfpoSkeC0,8024
+topicvelo-0.0.2.dist-info/METADATA,sha256=50sU_Dr1z0TbUZyN-3A86032XHIEdRoP6hKKaztxj5w,3872
+topicvelo-0.0.2.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+topicvelo-0.0.2.dist-info/licenses/LICENSE.txt,sha256=e_cediTzRjIGZZz2kt758lbX7lWkKIvO81IR3ewt1-M,1496
+topicvelo-0.0.2.dist-info/RECORD,,
