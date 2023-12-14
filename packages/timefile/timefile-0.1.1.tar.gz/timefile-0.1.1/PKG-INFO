@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: timefile
+Version: 0.1.1
+Summary: Probably the simplest time profiling in python
+Home-page: https://github.com/hugofe99/timefile
+License: MIT
+Author: hugofe99
+Author-email: fernstrom.hugo@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.2)
+Project-URL: Repository, https://github.com/hugofe99/timefile
+Description-Content-Type: text/markdown
+
+# ⏱️ timefile
+Probably the simplest time profiling in python 
+
+## 📍 Getting started
+```
+pip install timefile
+```
+
+To time your functions simply import <code>timelog</code> like this:
+```python
+from timefile import timelog
+import time
+
+@timelog
+def o_one(n):
+    time.sleep(n/10**4)
+
+@timelog
+def o_two(m):
+    time.sleep(m**2/10**4)
+
+for i in range(10):
+    o_one(i)
+    o_two(i)
+```
+Check out the plots saved in the **timefiles/plots/** directory for visualizations of the runtime.
+
+## 🍻 Feedback and Contributions
+I warmly welcome any contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas.
+Feel free to create issues or pull requests at the [timefile GitHub](https://github.com/hugofe99/timefile).
+
+## 🛣️ Roadmap
+ - [ ] Tests !!!
+ - [ ] Documentation
+ - [ ] Small fixes / cleanup
+ - [ ] Performance improvements
+ - [ ] Prettier plots
+ - [ ] Multivariable plots?
+ - [ ] Simple regression or analysis? 
+
+___
+
+#### ⚠️ Disclaimer 
+This package is designed for simple runtime insights and is **not** optmized for performance. For more comprehensive profiling in Python, consider using more robust tools like cProfile, timeit, line_profiler, etc.
