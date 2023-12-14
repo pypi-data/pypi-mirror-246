@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/c10typewriter/__init__.py
+src/c10typewriter.egg-info/PKG-INFO
+src/c10typewriter.egg-info/SOURCES.txt
+src/c10typewriter.egg-info/dependency_links.txt
+src/c10typewriter.egg-info/requires.txt
+src/c10typewriter.egg-info/top_level.txt
