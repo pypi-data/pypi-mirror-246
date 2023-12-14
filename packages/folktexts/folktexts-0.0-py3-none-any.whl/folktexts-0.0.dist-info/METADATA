@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: folktexts
+Version: 0.0
+Summary: A multi-lingual, multi-country Q&A dataset of social facts.
+Author: AndreFCruz
+Project-URL: Homepage, https://github.com/AndreFCruz/folktexts
+Project-URL: Documentation, https://andrefcruz.github.io/folktexts/
+Project-URL: Repository, https://github.com/AndreFCruz/folktexts
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-autopackagesummary ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'docs'
+Requires-Dist: sphinxemoji ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+# :book: folktexts   <!-- omit in toc -->
+> :construction: Package under construction
+
+![Tests status](https://github.com/AndreFCruz/folktexts/actions/workflows/python-package.yml/badge.svg)
+![PyPI status](https://github.com/AndreFCruz/folktexts/actions/workflows/python-publish.yml/badge.svg)
+![Documentation status](https://github.com/AndreFCruz/folktexts/actions/workflows/python-docs.yml/badge.svg)
+![PyPI version](https://badgen.net/pypi/v/folktexts)
+![OSI license](https://badgen.net/pypi/license/folktexts)
+![Python compatibility](https://badgen.net/pypi/python/folktexts)
+
+Repo to host the `folktexts` project.
+
+Package documentation can be found [here](https://andrefcruz.github.io/folktexts/)!
+
+**Table of contents:**
+- [Installing](#installing)
+- [Usage](#usage)
+- [License and terms of use](#license-and-terms-of-use)
+
+
+## Installing
+
+Install package from [PyPI](https://pypi.org/project/folktexts/):
+
+```
+pip install folktexts
+```
+
+
+## Usage
+
+*TODO*
+
+
+## License and terms of use
+
+*TODO* (data is licensed under CC BY-NC-SA 4.0; `folktexts` code can be licensed under MIT)
