@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: publicationpackage
+Version: 0.0.4
+Summary: Package needed for doing a publication in Jupyter Notebook
+Author: Jesse Faber
+Author-email: jesse.faber@aegon.com
+Keywords: python,publication,aws,pyspark,awsglue
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Jupyter
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+This package contains the following functions needed to do a publication in a Jupyter Notebook: load_table_from_catalog, load_data, run_sql, write_dataframe_to_s3, get_database_info
