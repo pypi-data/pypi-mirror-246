@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: duplipy
+Version: 0.2.0
+Summary: A package for formatting and text replication, with added support for image augmentation.
+Home-page: https://github.com/infinitode/duplipy
+Author: Infinitode Pty Ltd
+Author-email: infinitode.ltd@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: langcodes
+Requires-Dist: joblib
+Requires-Dist: tqdm
+Requires-Dist: pillow
+
+DupliPy is a quick and easy-to-use package that can handle text formatting and data augmentation tasks for NLP in Python, with added support for image augmentation.
