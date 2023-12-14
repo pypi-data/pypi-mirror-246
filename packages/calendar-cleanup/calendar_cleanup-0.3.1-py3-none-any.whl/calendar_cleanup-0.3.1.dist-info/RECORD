@@ -1,0 +1,12 @@
+calendar_cleanup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calendar_cleanup/cli.py,sha256=VKKNcpiR6UcJ42-yfwWo_wS4vT3k8JcWFLso6V6V3_A,2279
+calendar_cleanup/filter.py,sha256=Nv1injaDWA7y7zOP1t56yAs7OEm0u61vyexOi02DY8U,2790
+calendar_cleanup/io/auth.py,sha256=LyNpp_-XXGiaHR7nLnjbtjDhzeAutceBBTSmV5StOxU,1714
+calendar_cleanup/io/delete.py,sha256=t44wG8M6JXS4BRMS3NMkPSd4uiDssQN_taK6dHxX4YQ,1508
+calendar_cleanup/io/load.py,sha256=sWwopebSiHuDTAmwdTCwvTnLzu4sul7s_VPRf0d2w7w,2709
+calendar_cleanup/schema.py,sha256=fNyXyn0Co66ne0HEzrXI1dKhtbr8YWjnOZFR3ONMJL0,352
+calendar_cleanup-0.3.1.dist-info/LICENSE,sha256=a0qhcfDUb8jG5_nK4sqN5v1b2rjGV6cDANyusD4JLT8,1063
+calendar_cleanup-0.3.1.dist-info/METADATA,sha256=J-fYd-5rfOaX5hag_R7PTauCfmkAz7ku73qWIq5nYrk,1731
+calendar_cleanup-0.3.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+calendar_cleanup-0.3.1.dist-info/entry_points.txt,sha256=qtTLz5J2n2aSsk8fXIMekRFsNFGqO2cyeEZbdKD2vco,61
+calendar_cleanup-0.3.1.dist-info/RECORD,,
