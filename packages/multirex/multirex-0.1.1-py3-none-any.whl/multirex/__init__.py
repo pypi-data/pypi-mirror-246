@@ -1,0 +1,1 @@
+from multirex.version import version 
