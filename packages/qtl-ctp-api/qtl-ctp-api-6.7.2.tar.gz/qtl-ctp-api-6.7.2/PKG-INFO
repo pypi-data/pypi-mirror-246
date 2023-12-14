@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qtl-ctp-api
+Version: 6.7.2
+Summary: QTL CTP API
+Project-URL: Homepage, https://github.com/Quantalon/qtl-ctp-api
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# qtl-ctp-api
+
+**Only for Linux.**
+
+## prepare
+
+```
+sudo locale-gen zh_CN.GBK
+```
+
+## install
+
+```
+pip install qtl-ctp-api
+```
+
+## version
+
+- CTP: v6.7.2
