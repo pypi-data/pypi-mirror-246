@@ -1,0 +1,11 @@
+README.md
+setup.py
+Anime/Anime.py
+Anime/__init__.py
+Anime/img_anime.py
+Anime/video_anime.py
+Gao_Anime.egg-info/PKG-INFO
+Gao_Anime.egg-info/SOURCES.txt
+Gao_Anime.egg-info/dependency_links.txt
+Gao_Anime.egg-info/requires.txt
+Gao_Anime.egg-info/top_level.txt
