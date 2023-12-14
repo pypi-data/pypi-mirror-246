@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: chainlit_client
+Version: 0.1.0rc5
+Summary: An SDK for observability in Python applications
+Author: 
+License-File: LICENSE
