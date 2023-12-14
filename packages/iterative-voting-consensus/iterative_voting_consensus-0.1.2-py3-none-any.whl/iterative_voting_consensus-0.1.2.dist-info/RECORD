@@ -1,0 +1,6 @@
+ivc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ivc/algorithms.py,sha256=0kpKY6WLRzyLzjmWZ4ndZWP_PL_MKAfL27KgAFuBC94,4244
+ivc/utils.py,sha256=sDxSDFKyUksEIWL21BDwnb3XLUSNAXizfG3I8jtFpEE,3026
+iterative_voting_consensus-0.1.2.dist-info/METADATA,sha256=V94Da2NjJ9aNrd8fS31tyRN1x-eSKm_ARn2hw4Xbj_A,1106
+iterative_voting_consensus-0.1.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+iterative_voting_consensus-0.1.2.dist-info/RECORD,,
