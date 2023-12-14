@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hedeut"
+version = "0.1.dev0"
+authors = [
+  { name="Dimas Abreu Archanjo Dutra", email="dimas.dutra@mail.wvu.edu" },
+]
+description = "HElpful DEcorators and UTilities for working with JAX."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "jax",
+]
+
+[project.urls]
+Repository = "https://github.com/dimasad/hedeut"
