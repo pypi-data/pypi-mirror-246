@@ -1,0 +1,6 @@
+pyproject.toml
+test_pdm.egg-info/PKG-INFO
+test_pdm.egg-info/SOURCES.txt
+test_pdm.egg-info/dependency_links.txt
+test_pdm.egg-info/requires.txt
+test_pdm.egg-info/top_level.txt

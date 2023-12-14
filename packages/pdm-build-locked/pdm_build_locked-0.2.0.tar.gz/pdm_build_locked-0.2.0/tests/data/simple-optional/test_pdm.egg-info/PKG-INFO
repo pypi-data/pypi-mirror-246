@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: test-pdm
+Version: 0.1.0
+Requires-Python: >=3.8
+Requires-Dist: requests==2.31.0
+Provides-Extra: socks
+Requires-Dist: PySocks==1.7.1; extra == "socks"

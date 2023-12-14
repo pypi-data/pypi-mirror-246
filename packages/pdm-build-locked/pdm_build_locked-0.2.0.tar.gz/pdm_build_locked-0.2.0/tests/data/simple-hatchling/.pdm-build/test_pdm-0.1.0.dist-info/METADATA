@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: test-pdm
+Version: 0.1.0
+Requires-Python: >=3.8
+Requires-Dist: requests==2.31.0
+Requires-Dist: certifi==2023.11.17; extra == "locked"
+Requires-Dist: charset-normalizer==3.3.2; extra == "locked"
+Requires-Dist: idna==3.6; extra == "locked"
+Requires-Dist: requests==2.31.0; extra == "locked"
+Requires-Dist: urllib3==2.1.0; extra == "locked"
+Provides-Extra: locked

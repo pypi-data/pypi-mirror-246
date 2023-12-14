@@ -1,0 +1,4 @@
+requests==2.31.0
+
+[socks]
+PySocks==1.7.1

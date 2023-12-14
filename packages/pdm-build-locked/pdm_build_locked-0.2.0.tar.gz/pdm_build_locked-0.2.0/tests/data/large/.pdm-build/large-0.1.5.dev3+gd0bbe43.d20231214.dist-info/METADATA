@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: large
+Version: 0.1.5.dev3+gd0bbe43.d20231214
+Summary: test
+Keywords: python module
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: cement==3.0.8
+Requires-Dist: jinja2==3.1.2
+Requires-Dist: dacite==1.8.1
+Requires-Dist: matplotlib==3.7.2
+Requires-Dist: platformdirs==3.8.1
+Requires-Dist: packaging==23.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: gitpython==3.1.32
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: pycowsay; extra == "cow"
+Requires-Dist: typing-extensions; extra == "extras"
+Requires-Dist: typing-extensions==4.7.1; extra == "extras-locked"
+Requires-Dist: cement==3.0.8; extra == "locked"
+Requires-Dist: dacite==1.8.1; extra == "locked"
+Requires-Dist: gitpython==3.1.32; extra == "locked"
+Requires-Dist: jinja2==3.1.2; extra == "locked"
+Requires-Dist: matplotlib==3.7.1; extra == "locked"
+Requires-Dist: packaging==23.1; extra == "locked"
+Requires-Dist: platformdirs==3.8.1; extra == "locked"
+Requires-Dist: requests==2.31.0; extra == "locked"
+Requires-Dist: charset-normalizer==3.2.0; extra == "locked"
+Requires-Dist: gitdb==4.0.10; extra == "locked"
+Requires-Dist: idna==3.4; extra == "locked"
+Requires-Dist: urllib3==2.0.4; extra == "locked"
+Requires-Dist: certifi==2023.7.22; extra == "locked"
+Requires-Dist: contourpy==1.1.0; extra == "locked"
+Requires-Dist: numpy==1.24.4; extra == "locked"
+Requires-Dist: cycler==0.11.0; extra == "locked"
+Requires-Dist: fonttools==4.41.1; extra == "locked"
+Requires-Dist: importlib-resources==6.0.0; python_version < "3.10" and extra == "locked"
+Requires-Dist: kiwisolver==1.4.4; extra == "locked"
+Requires-Dist: MarkupSafe==2.1.3; extra == "locked"
+Requires-Dist: pillow==10.0.0; extra == "locked"
+Requires-Dist: pyparsing==3.1.0; extra == "locked"
+Requires-Dist: python-dateutil==2.8.2; extra == "locked"
+Requires-Dist: smmap==5.0.0; extra == "locked"
+Requires-Dist: six==1.16.0; extra == "locked"
+Requires-Dist: zipp==3.16.2; python_version < "3.10" and extra == "locked"
+Requires-Dist: pycowsay==0.0.0.1; extra == "cow-locked"
+Provides-Extra: cow
+Provides-Extra: extras
+Provides-Extra: extras-locked
+Provides-Extra: locked
+Provides-Extra: cow-locked
