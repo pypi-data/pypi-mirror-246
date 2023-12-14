@@ -1,0 +1,13 @@
+fargopy/__init__.py,sha256=q_tpw5_Mi4zmowrMUxQFrhHlTPVCUsmU3RX88-pRBE8,9326
+fargopy/fields.py,sha256=-f0Q-3J1dq2oZYpmiaAuT-B48qECCLhvmjiIUSjyXhg,8700
+fargopy/simulation.py,sha256=NPZes8MZ8xtbmfZqrhuGAGhYvEs2vUdJSpRFNB1hfjo,32901
+fargopy/sys.py,sha256=-RnUZJ5GnYHwIlI7UtjPlnyS88ptnrSBa9FvnF_2gDM,4311
+fargopy/util.py,sha256=y39aTcvK1lM3vbuK11lE2bfj-eCcOzc0lKMvyBRW2-M,1584
+fargopy/version.py,sha256=14vICHbg-AX_96xiJkVH7VdMy15awdqU6glK1dWQttc,16
+fargopy-0.3.0.data/scripts/ifargopy,sha256=t5E07jKzOLtNnlNyElQZbzjCW6wnR0bc8uCaZpw9yS8,382
+fargopy-0.3.0.dist-info/LICENSE,sha256=aIckKnNVrkXQMqEKlzGn_REfTwc82TF35BHMCRwPXCI,1097
+fargopy-0.3.0.dist-info/METADATA,sha256=nUDcNFKH-P0X7UM_cn0JuEaPIpFANqb1wPp_ahdkfeg,7823
+fargopy-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fargopy-0.3.0.dist-info/entry_points.txt,sha256=555NPKYbLCN0fgJbdW4b4azZ5sqjhqVqTUxujBBYEJY,49
+fargopy-0.3.0.dist-info/top_level.txt,sha256=_r66v1_-9T7dB5sQa12AdxaAdsv9-OTwtR-vft4OPBU,8
+fargopy-0.3.0.dist-info/RECORD,,
