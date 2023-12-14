@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: groceryManagement
+Version: 0.0.1
+Summary: A project for DATA 533, UBCO
+Author-email: Shiyi <shiyichen16@gmail.com>, Marina <ruomengtian@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/ubco-mds-2023-labs/project-step-3-marinatian
+Project-URL: Issues, https://github.com/ubco-mds-2023-labs/project-step-3-marinatian/issues
+
+# Grocery Management System ![example workflow](https://github.com/ubco-mds-2023-labs/project-step-3-marinatian/actions/workflows/python-app.yml/badge.svg)
+Project for 533
+
+## Developers:
+Marina && Coco
+
+## Overview
+Our Supermarket Management System allows users to manage products, stocks, and sales. We will organized our system into two different sections, inventory_management and sales_management. The following are short descriptions of our sub-packages and functions/methods.
+
+
