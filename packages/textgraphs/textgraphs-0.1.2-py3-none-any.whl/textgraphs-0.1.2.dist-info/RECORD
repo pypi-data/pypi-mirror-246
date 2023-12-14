@@ -1,0 +1,14 @@
+textgraphs/__init__.py,sha256=cvu6DGEndPEJy9L4GvwqswtiS9oXZGn9ylhjvtibz2U,1111
+textgraphs/defaults.py,sha256=NNuIAuU6lly0WduSXqsF45k63eGsPY1wOqhTakOea0U,835
+textgraphs/doc.py,sha256=lXRiSDEQ2YuKOuZ1IYChZP3KY1oGNbjTVesOEP8AW3E,28670
+textgraphs/elem.py,sha256=GgQ3qTxOf4KJi9z7uIdm9rmYFTF0qoIU6jpa7UCCow4,4402
+textgraphs/pipe.py,sha256=iXc7dmBbEcxIEFvVARvFfabKIHVtIEw5_ni3wyRQYU4,10027
+textgraphs/rebel.py,sha256=TeuW9LQDCNY11NN2dymuFwFgUay_CT-OPqG9kouzkY0,4541
+textgraphs/util.py,sha256=WwtCpXnehYstHmXXaUla1gb5V_Q8EFdlZt4n3RjkFUo,2017
+textgraphs/vis.py,sha256=SYkQA_WBFGpwr-gguTEkbQh-4U5Xvl2gVLtu-jm7_54,6559
+textgraphs/wiki.py,sha256=nYf9excUWS3YHyU3d_4s-uwSo5pIRSur_Etcbs_Kx3I,13098
+textgraphs-0.1.2.dist-info/LICENSE,sha256=vm3-Zio-DcK5cp-Cst_JhTGlb7EnqsKChnD_DQS1YQ0,1069
+textgraphs-0.1.2.dist-info/METADATA,sha256=DNG9hLot6qqTAbMB9O_-2539DpD17MFppprPL6qWJjQ,5203
+textgraphs-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+textgraphs-0.1.2.dist-info/top_level.txt,sha256=QFUvFfjdlwxoA7YY5YNwGdjq1SEkt2JOVNX5nQk5NlI,11
+textgraphs-0.1.2.dist-info/RECORD,,
