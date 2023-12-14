@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dqp
+Version: 0.1.0
+Summary: Cache iterators to disk
+Home-page: https://github.com/bneijt/dqp
+Author: Bram Neijt
+Author-email: bram@neijt.nl
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: msgpack (>=1.0.7,<2.0.0)
+Project-URL: Repository, https://github.com/bneijt/dqp
+Description-Content-Type: text/markdown
+
+Disk Queue Processing
+=====================
+
+
+This library makes it easy to serialize Python to disk using msgpack.
+
+The library contains two modules:
+
+- `dqp.disk_cache`: to easily read/write data to disk and support caching iterators to disk.
+- `dqp.disk_queue`: an approach to communicating lists of objects between runs with index/offset metadata.
+
