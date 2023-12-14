@@ -1,0 +1,5 @@
+setup.py
+testooolib.egg-info/PKG-INFO
+testooolib.egg-info/SOURCES.txt
+testooolib.egg-info/dependency_links.txt
+testooolib.egg-info/top_level.txt
