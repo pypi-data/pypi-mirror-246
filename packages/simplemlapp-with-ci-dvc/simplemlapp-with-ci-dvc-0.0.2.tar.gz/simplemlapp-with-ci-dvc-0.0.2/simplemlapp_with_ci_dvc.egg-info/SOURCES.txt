@@ -1,0 +1,16 @@
+README.md
+setup.py
+prediction_service/__init__.py
+prediction_service/prediction.py
+simplemlapp-with-ci-dvc/__init__.py
+simplemlapp-with-ci-dvc/get_data.py
+simplemlapp-with-ci-dvc/load_data.py
+simplemlapp-with-ci-dvc/split_data.py
+simplemlapp-with-ci-dvc/train_and_evaluate.py
+simplemlapp_with_ci_dvc.egg-info/PKG-INFO
+simplemlapp_with_ci_dvc.egg-info/SOURCES.txt
+simplemlapp_with_ci_dvc.egg-info/dependency_links.txt
+simplemlapp_with_ci_dvc.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_config.py
