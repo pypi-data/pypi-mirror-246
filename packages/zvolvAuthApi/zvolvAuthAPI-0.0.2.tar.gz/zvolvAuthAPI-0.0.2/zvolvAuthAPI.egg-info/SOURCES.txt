@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+zvolvAuthAPI.egg-info/PKG-INFO
+zvolvAuthAPI.egg-info/SOURCES.txt
+zvolvAuthAPI.egg-info/dependency_links.txt
+zvolvAuthAPI.egg-info/top_level.txt
+zvolv_sdk/__init__.py
+zvolv_sdk/client.py
+zvolv_sdk/common_api.py
+zvolv_sdk/server_configuration.py
+zvolv_sdk/submission.py
+zvolv_sdk/user_defined_exceptions.py
