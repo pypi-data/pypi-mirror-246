@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/tiledb/vector_search/__init__.py
+src/tiledb/vector_search/flat_index.py
+src/tiledb/vector_search/index.py
+src/tiledb/vector_search/ingestion.py
+src/tiledb/vector_search/ivf_flat_index.py
+src/tiledb/vector_search/module.py
+src/tiledb/vector_search/storage_formats.py
+src/tiledb/vector_search/utils.py
+src/tiledb/vector_search/version.py
