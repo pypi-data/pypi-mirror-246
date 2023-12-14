@@ -1,0 +1,211 @@
+Metadata-Version: 2.1
+Name: nswdesignsystem.plone6
+Version: 0.4.3
+Summary: Plone backend package for the NSW Design system
+Home-page: https://github.com/collective/nswdesignsystem.plone6
+Author: PretaGov
+Author-email: jeff.bledsoe@pretagov.com.au
+License: GPL version 2
+Project-URL: PyPI, https://pypi.python.org/pypi/nswdesignsystem.plone6
+Project-URL: Source, https://github.com/collective/nswdesignsystem.plone6
+Project-URL: Tracker, https://github.com/collective/nswdesignsystem.plone6/issues
+Keywords: Python Plone CMS
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.9, <3.12
+License-File: LICENSE.GPL
+License-File: LICENSE.rst
+Requires-Dist: setuptools
+Requires-Dist: z3c.jbot
+Requires-Dist: plone.app.registry
+Requires-Dist: plone.autoform
+Requires-Dist: plone.base
+Requires-Dist: plone.api >=1.8.4
+Requires-Dist: plone.restapi
+Requires-Dist: plone.supermodel
+Requires-Dist: Products.GenericSetup
+Requires-Dist: collective.volto.formsupport
+Requires-Dist: collective.volto.formsupport[recaptcha]
+Requires-Dist: collective.volto.formsupport[honeypot]
+Requires-Dist: collective.volto.subfooter ==1.1.0
+Provides-Extra: release
+Requires-Dist: zest.releaser[recommended] ; extra == 'release'
+Requires-Dist: zestreleaser.towncrier ; extra == 'release'
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+Requires-Dist: plone.app.dexterity ; extra == 'test'
+Requires-Dist: plone.browserlayer ; extra == 'test'
+Requires-Dist: plone.testing >=5.0.0 ; extra == 'test'
+Requires-Dist: robotsuite ; extra == 'test'
+Requires-Dist: plone.app.robotframework[debug] ; extra == 'test'
+
+.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+   This text does not appear on pypi or github. It is a comment.
+
+.. 
+    image:: https://github.com/collective/nswdesignsystem.plone6/actions/workflows/plone-package.yml/badge.svg
+    :target: https://github.com/collective/nswdesignsystem.plone6/actions/workflows/plone-package.yml
+
+.. image:: https://img.shields.io/pypi/v/nswdesignsystem.plone6.svg
+    :target: https://pypi.python.org/pypi/nswdesignsystem.plone6/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/status/nswdesignsystem.plone6.svg
+    :target: https://pypi.python.org/pypi/nswdesignsystem.plone6
+    :alt: Egg Status
+
+.. image:: https://img.shields.io/pypi/pyversions/nswdesignsystem.plone6.svg?style=plastic   :alt: Supported - Python Versions
+
+.. image:: https://img.shields.io/pypi/l/nswdesignsystem.plone6.svg
+    :target: https://pypi.python.org/pypi/nswdesignsystem.plone6/
+    :alt: License
+
+
+======================
+nswdesignsystem.plone6
+======================
+
+Plone backend package for the NSW Design system
+
+
+Features
+--------
+
+- Out-the-box backend configuration for the Digital NSW Design System.
+
+
+Examples
+--------
+
+This add-on can be seen in action at the following sites:
+
+- `Digital NSW Plone Starter Kit Demo <https://digitalnsw.pretagov.com.au>`_
+
+
+
+Installation
+------------
+
+Install nswdesignsystem.plone6 by adding it to your buildout::
+
+    [buildout]
+
+    ...
+
+    eggs =
+        nswdesignsystem.plone6
+
+
+and then running ``bin/buildout``. The addon should then be available to install in the site addons.
+
+
+Contributors
+------------
+
+This product was developed by **PretaGov**.
+
+.. image:: https://avatars.githubusercontent.com/u/20355512?s=200&v=4
+   :alt: PretaGov Site
+   :target: https://www.pretagov.com.au/
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/collective/nswdesignsystem.plone6/issues
+- Source Code: https://github.com/collective/nswdesignsystem.plone6
+
+
+License
+-------
+
+The project is licensed under the GPLv2.
+
+
+Contributors
+============
+
+- PretaGov, jeff.bledsoe@pretagov.com.au
+
+
+0.4.3 (2023-12-13)
+------------------
+
+No significant changes.
+
+
+0.4.2 (2023-11-28)
+------------------
+
+Bug fixes:
+
+
+- Fixed exception handling when `@nswSiteSettings` serialization is a dictionary not a JSON string
+  [@JeffersonBledsoe] (#19)
+
+
+0.4.1 (2023-11-27)
+------------------
+
+Internal:
+
+
+- Remove circular checker in CI
+  [@JeffersonBledsoe] (#17)
+
+
+Changelog
+=========
+
+
+0.4.1 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.4.0 (2023-11-27)
+------------------
+
+- Nothing changed yet.
+
+
+0.3.0 (2022-11-21)
+------------------
+
+- Added NSW Design System Control Panel
+  [JeffersonBledsoe] (#4)
+- Fixed Recaptcha for forms
+  [JeffersonBledsoe] (#5)
+- Added spacing to control panel title
+  [JeffersonBledsoe] (#6)
+- Added option to customise acknowledgement of country
+  [JeffersonBledsoe] (#7)
+- Added cusy.restapi.info view permission to all users
+  [JeffersonBledsoe] (#8)
+
+
+0.2.0 (2022-09-30)
+------------------
+
+- Added collective.volto.formsupport
+  [JeffersonBledsoe] (#2)
+- Added collective.volto.subfooter
+  [JeffersonBledsoe] (#3)
+
+
+0.1.0 (2022-09-21)
+------------------
+
+- Initial release.
+  [PretaGov]
