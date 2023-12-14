@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+include *.cfg
+include *.pkl
+include *.py
+include *.sav
+include *.csv
+
+include pred_data/*
+include processing/*.py
+recursive-include data *
+recursive-include trained_models *
+
+include ./requirements.txt
+exclude *.log
+exclude *.h5
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]Ne
