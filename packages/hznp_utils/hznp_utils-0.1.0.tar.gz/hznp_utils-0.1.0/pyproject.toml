@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "hznp_utils"
+version = "0.1.0"
+description = "Data Science utilities for Horizon Therapeutics"
+authors = ["Edwin Z. <ezamudio@amgen.com>", "David Josephs<djosephs@horizontherapeutics.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
