@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: graphql-explorer
+Version: 0.1.4
+Summary: 
+Author: Abhinand C
+Author-email: abhinandc.ac@gmail.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# GraphQL Explorer 
+
+An experimental package for consolidating web based graphql viewers & explorers. This was initially developed for a talk, and now continues to improved to provide enhanced features.
+
+### Interfaces
+1. Apollo Sandbox Explorer
+2. GraphiQL 
+3. GraphQL Voyager
+4. Pathfinder GraphQL IDE
+
+### Integrations/Helpers
+- [X] FastAPI
+- [ ] Django 
+- [ ] Flask 
+- [ ] Falcon 
+## Instructions
+
+### Installation
+```bash
+pip install graphql-explorer
+```
+
