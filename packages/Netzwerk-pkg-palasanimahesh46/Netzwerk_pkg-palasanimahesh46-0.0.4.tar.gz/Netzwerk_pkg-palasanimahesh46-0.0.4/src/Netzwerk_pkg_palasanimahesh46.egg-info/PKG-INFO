@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Netzwerk-pkg-palasanimahesh46
+Version: 0.0.4
+Summary: A small package for perceptron
+Home-page: https://github.com/palasanimahesh46/Netzwerk-pkg
+Author: palasanimahesh46
+Author-email: palasanimahesh46@gmail.com
+Project-URL: Bug Tracker, https://github.com/palasanimahesh46/Netzwerk-pkg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Netzwerk python package
+
+## Refferance -
+* [official python docs for PYPI](https://packaging.python.org/tutorials/packaging-projects/)
+
+
+
