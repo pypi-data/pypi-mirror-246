@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orchardmanagementCL"
+version = "0.0.10"
+authors = [
+    {name="Yahan Cong", email="yahan-cong@outlook.com"},
+    {name = "Lu Kang", email = "kangluhappy2020@gmail.com"}
+]
+description = "orchard management system"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/YahanCong/data533_project3"
+Issues = "https://github.com/YahanCong/data533_project3/orchardmanagement"
