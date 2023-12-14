@@ -1,0 +1,15 @@
+LSHkRepresentatives/ClusteringAlgorithm.py,sha256=kR0NftTUiYdlxRMwdBJguqmsgDVRCuaDilqeZW9O3jU,11392
+LSHkRepresentatives/DILCA.py,sha256=r3H7LtfygDJTlY3AB7eHRmOZcB5u5NITMKB0GmJhZu4,4702
+LSHkRepresentatives/LSH.py,sha256=1qtjGLWmirStVUfuZNfljKwTixRX1gbE9lX1wSuWMzc,4306
+LSHkRepresentatives/LSHkRepresentatives.py,sha256=6Z0zdS0TnIqG_lG8n7DebuAfPAnQB7SnyRhlzsCbwj8,16959
+LSHkRepresentatives/LSHkRepresentatives_Full.py,sha256=vKkYH_Gjl865eWXoC5bF7CtADTwFRw4OxYvzK04Vwgs,18403
+LSHkRepresentatives/MathUtils.py,sha256=Dqf2fnU4G5fKLODe9OhGTqloEcFW-tYWd0nMbyMN_7Q,7138
+LSHkRepresentatives/Measure.py,sha256=LeoSsG7Ozhx63FE5Qo9UjzGX-6um9wQFWzzMd1dwDgo,3050
+LSHkRepresentatives/MeasureManager.py,sha256=fvZQOb2wfzBe_CmAeVs8uJtv74yyAtt0uDp-9eiAACM,988
+LSHkRepresentatives/SimpleHashing.py,sha256=NKUQiex9vYtKpE6xoiQDX2hRqVlGKMfsCTaZ7foV4gw,2757
+LSHkRepresentatives/__init__.py,sha256=i1PTEJTrhfxQsAJrdHe7CxdYRnoc92SNk0Z2O_TFmxA,153
+lshkrepresentatives-1.1.6.dist-info/LICENSE,sha256=Inf4cKSVqenrMv3wlbw2c9VWA3tmm5zODNfsE-01lMg,1065
+lshkrepresentatives-1.1.6.dist-info/METADATA,sha256=dqysG70w_6_ej4WkaX2pkbtJw5VttNYmbH6m5sI-nmk,4389
+lshkrepresentatives-1.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lshkrepresentatives-1.1.6.dist-info/top_level.txt,sha256=rk-isy9xPEcfpRVx3Qb0JC2rYqnmqTwILTCrFJBPLqQ,20
+lshkrepresentatives-1.1.6.dist-info/RECORD,,
