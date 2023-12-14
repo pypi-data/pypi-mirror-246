@@ -1,0 +1,9 @@
+xcomstorage/__init__.py,sha256=sdcFE-0wsrDWKy_La2gazXGM_VI6MeFT7_8SAROYlmE,84
+xcomstorage/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcomstorage/conf/xcom.py,sha256=dooCsXaRmMTbDBvChbi0YmgcADmKnRNN6kkFciRzQl4,373
+xcomstorage/storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcomstorage/storage/xcom.py,sha256=mrMYlXdS9Iz7dfl0LMs8IaJ0fNJa0W_SxDbkU2AzCrU,2019
+xcomstorage/xcom.py,sha256=Lnp_TCMlQABG1lI3pBf9aPnx783tBpDDtpMUTfQ6NYw,754
+xcomstorage-0.1.0.dist-info/METADATA,sha256=wCf9TUaMOo7qi-97o8iqG0PtVx14M5z2l9v2dEduQ9M,472
+xcomstorage-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+xcomstorage-0.1.0.dist-info/RECORD,,
