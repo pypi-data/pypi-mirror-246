@@ -1,0 +1,2 @@
+[console_scripts]
+wyoming-satellite = wyoming_satellite:__main__.run

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wyoming-satellite
+Version: 1.0.0
+Summary: Wyoming server for remote voice satellite
+Home-page: http://github.com/rhasspy/wyoming-satellite
+Author: Michael Hansen
+Author-email: mike@rhasspy.org
+Keywords: rhasspy wyoming satellite
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.md
+Requires-Dist: wyoming ==1.4.1
+Requires-Dist: zeroconf ==0.88.0
+Requires-Dist: pyring-buffer ==1.0.0
+Provides-Extra: silerovad
+Requires-Dist: pysilero-vad ==1.0.0 ; extra == 'silerovad'
+Provides-Extra: webrtc
+Requires-Dist: webrtc-noise-gain ==1.2.3 ; extra == 'webrtc'
+
