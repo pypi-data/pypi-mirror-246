@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+folktexts/__init__.py
+folktexts/_version.py
+folktexts.egg-info/PKG-INFO
+folktexts.egg-info/SOURCES.txt
+folktexts.egg-info/dependency_links.txt
+folktexts.egg-info/requires.txt
+folktexts.egg-info/top_level.txt
+requirements/docs.txt
+requirements/main.txt
+requirements/tests.txt
+tests/test_dummy.py
