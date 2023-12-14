@@ -1,0 +1,3 @@
+include README.rst
+recursive-include drawranflow/templates *
+recursive-include drawranflow/servicelogic *.py *.json
