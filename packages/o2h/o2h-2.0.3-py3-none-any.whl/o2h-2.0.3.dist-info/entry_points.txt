@@ -1,0 +1,2 @@
+[console_scripts]
+obs2hexo = o2h.translator:o2h
