@@ -1,0 +1,16 @@
+velocycle/__init__.py,sha256=vjXASu5d84wolphOAp2uIyVg2koy1XVxEsB7_Aue70U,181
+velocycle/angularspeed.py,sha256=zsiyIt9fOqU1x07wsZgeM9MBa21no4bAXxWj_QgcyaA,12596
+velocycle/cycle.py,sha256=roL6xU7AbinsofRTRxFBOefnOxgRAdgOrmq1Fh0hVBk,16652
+velocycle/phase_inference_guide.py,sha256=rSVkKhEiBtdpBWIhaycw3XMQoVSy4pMC3Dx27Ey6ldk,5867
+velocycle/phase_inference_model.py,sha256=fS7AOpB0W6X3dPxStyye4G5MWmpctFaMxHmqP1XrJfs,20767
+velocycle/phases.py,sha256=ZA7saeqyMNK-Clhi4AAPJDOMJvOjjAzTgl0Ipph3nXg,16151
+velocycle/plots.py,sha256=r3ZZneHHKMvfULjm1mAbhqYIN8BHwxDfs4JVbfYZy-I,6341
+velocycle/preprocessing.py,sha256=mGVb2s3xtCVDgF35FDAiHQRZMmoK1QNRsf0CHMKaLd8,13280
+velocycle/utils.py,sha256=DMis-asL6DHom9hv2e36OvMta74h0N0BkqP16Be6xTs,36345
+velocycle/velocity_inference_guide.py,sha256=XBRVbZ4s4D1I_VhPN4ZOF63_qIfT1CMTiYLW7QSU42M,6958
+velocycle/velocity_inference_model.py,sha256=ZgHtcv6M6rgV5uO9JkWUt1PLdzzuBzTB-CZpqqIGJRk,24242
+velocycle-0.1.0.2.dist-info/LICENSE.md,sha256=5-Lvu0V1MXB29EyIQ1eaAXywcY28TaT3Kv9R7IVSyoA,17529
+velocycle-0.1.0.2.dist-info/METADATA,sha256=A_87VnkbukDwe8zApBalBjvjYVBguqOdZo7TRHMKW6k,7037
+velocycle-0.1.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+velocycle-0.1.0.2.dist-info/top_level.txt,sha256=L161x_xu5k91Nxc4KhCTJlSKRNklq91AfdyPnIndUmc,10
+velocycle-0.1.0.2.dist-info/RECORD,,
