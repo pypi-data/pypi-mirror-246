@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+foolproof.egg-info/PKG-INFO
+foolproof.egg-info/SOURCES.txt
+foolproof.egg-info/dependency_links.txt
+foolproof.egg-info/top_level.txt
