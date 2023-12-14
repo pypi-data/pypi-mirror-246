@@ -1,0 +1,2 @@
+[console_scripts]
+timepulse_cli = timepulse.cli:main

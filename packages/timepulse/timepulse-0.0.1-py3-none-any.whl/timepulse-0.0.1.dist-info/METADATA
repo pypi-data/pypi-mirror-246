@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: timepulse
+Version: 0.0.1
+Summary: A set of tools to help with timeseries flow
+Home-page: https://github.com/squaredev-io/timepulse
+Author: SQUAREDEV BV
+Author-email: hello@squaredev.io
+Keywords: timeseries tools ml flow python machine learning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: holidays >=0.38
+Requires-Dist: joblib >=1.1.1
+Requires-Dist: numpy >=1.24.3
+Requires-Dist: pandas >=2.0.2
+Requires-Dist: pytest >=7.4.3
+Requires-Dist: scikit-learn >=1.3.2
+Requires-Dist: setuptools >=65.5.0
+Requires-Dist: tensorflow >=2.14.0
+Requires-Dist: typer >=0.9.0
+Requires-Dist: xgboost >=2.0.2
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# 🚀 Timepulse: Unleash the Power of Time Series Processing and Modeling!
+
+Welcome to Timepulse, your ultimate destination for conquering the world of time series data with unprecedented ease and efficiency.
+
+## Table of Contents 🌟
+
+- [Installation Magic](#installation)
+- [Journey into the Time Dimension](#usage)
+- [Spellbinding Features](#features)
+- [Contribute to the Time Nexus](#contributing)
+- [License](#license)
+- [Credits: Makers of Timepulse](#credits)
+
+## Installation 🧙‍♂️
+
+To summon the might of Timepulse into your realm, a simple pip command shall suffice:
+
+```bash
+pip install timepulse
+```
+
+# Timepulse: Unleash the Power of Time Series Processing and Modeling!
+
+Witness the seamless integration of temporal mastery into your coding sanctum!
+
+## Journey into the Time Dimension ⏳
+
+Embark on an odyssey through time as you harness the Timepulse magic. Transform raw time series data into insights that transcend the ordinary. Your code, now a symphony of temporal brilliance!
+
+```{python}
+from timepulse.models.nn import MultivariateDenseWrapper
+from timepulse.utils.models import run_model
+
+ y_pred, result_metrics = run_model(model_instance, X_train.values, y_train, X_val.values, y_val, verbose=0)
+
+print( y_pred, results_metrics)
+
+```
+
+```
+[ 8287547.5 10593171.  12349981.  13229407.  10743349.   8585146.
+  7701900.   6690604.5  6193717.5  5999759.   5651086.5  5573535.5
+  9689985.  12014953.  14384974.  14222123. ],
+
+{'mae': 452268.53, 'mse': 452862200000.0, 'rmse': 672950.4, 'mape': 4.8490524, 'smape': 10.239903, 'mase': 0.31943747, 'r2_score': 0.94421965}
+```
+
+## Spellbinding Features ✨
+
+- **Temporal Alchemy:** Shape time series data effortlessly.
+- **Predictive Sorcery:** Unlock the future with powerful modeling.
+- **Intuitive Elixir:** Simplify complexities with an enchantingly user-friendly interface.
+
+## License 📜
+
+[Timepulse - The SQD License](https://www.squaredev.io/)
+
+## Credits: Makers of Timepulse 🌈
+
+Timepulse was conjured into existence by the brilliant minds at Squaredev. Their dedication to temporal excellence knows no bounds.
+
+Embark on a journey with Timepulse – where time meets brilliance, and magic unfolds! ✨🕰️🚀
