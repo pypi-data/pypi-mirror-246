@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/trussty/__init__.py
+src/trussty/mesh.py
+src/trussty/support_markers.py
+src/trussty.egg-info/PKG-INFO
+src/trussty.egg-info/SOURCES.txt
+src/trussty.egg-info/dependency_links.txt
+src/trussty.egg-info/top_level.txt
