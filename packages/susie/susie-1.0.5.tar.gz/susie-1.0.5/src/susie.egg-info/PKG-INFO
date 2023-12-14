@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: susie
+Version: 1.0.5
+Summary: Susie allows users to input exoplanet transit data and return information detailing possible tidal decay.
+Author: Malia Barker, Holly VanLooy
+Author-email: maliabarker@icloud.com, hollyvanlooy@u.boisestate.edu
+Project-URL: Bug Tracker, https://github.com/BoiseStatePlanetary/susie/issues
+Project-URL: repository, https://github.com/BoiseStatePlanetary/susie/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# The Susie Python Package
+A package for exoplanet transit decay calculations and visualizations.
+
+![Susie Superpig Cartoon Image](http://www.astrojack.com/wp-content/uploads/2013/12/susie-1024x748.png)
+
+## Statement of need
+The authors should clearly state what problems the software is designed to solve, who the target audience is, and its relation to other work.
+
+## Installation instructions
+To download this package, use:
+`pip install susie`
+
+This package uses numpy, scipy, matplotlib, and astropy software. These packages will be downloaded with the pip install command.
+
+## Example usage
+There are two main objects to use in this package:
+
+`Ephemeris` and `TransitTimes`.
+
+The ephemeris object contains methods for fitting transit data to model ephemerides to perform tidal decay calculations and visualizations. The transit data is inputted into the TransitTimes object. 
+
+The user must first instantiate a TransitTimes object. The transit times object takes the following attributes:
+ - `time_format` (str): 
+ - `epochs` (np.array of ints):
+ - `mid_transit_times` (np.array of floats):
+ - `mid_transit_times_uncertainties` (np.array of floats or None) 
+ - `time_scale` (str):
+ - `object_ra` (float):
+ - `object_dec` (float):
+ - `observatory_lon` (float):
+ - `observatory_lat` (float):
+
+The following are valid instantiations of the TransitTimes object:
+
+`transit_times = TransitTimes()`
+`transit_times = TransitTimes()`
+`transit_times = TransitTimes()`
+`transit_times = TransitTimes()`
+`transit_times = TransitTimes()`
+
+Once the TransitTimes object is instantiated, it can be used to instantiate the Ephemeris object. The following is a valid instantiation of the Ephemeris object.
+
+`ephemeris1 = Ephemeris(transit_times)`
+
+Once the ephemeris object is successfully created, the user can run the following methods:
+
+``
+``
+``
+``
+``
+``
+
+The authors should include examples of how to use the software (ideally to solve real-world analysis problems).
+TODO: This will probably somehow be pulled from a notebook, we can also include some graphs and stuff.
+
+## API documentation
+Reviewers should check that the software API is documented to a suitable level.
+TODO: <\insert link to documentation>
+
+## Community guidelines
+To report bugs or create pull requests, please visit the Github repository [here]().
+There should be clear guidelines for third-parties wishing to:
+Contribute to the software
+Report issues or problems with the software
+Seek support
+
+## Links
+[Test PyPi](https://test.pypi.org/project/Susie/0.0.1/)
+Copyright 2023 <COPYRIGHT HOLDER>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
