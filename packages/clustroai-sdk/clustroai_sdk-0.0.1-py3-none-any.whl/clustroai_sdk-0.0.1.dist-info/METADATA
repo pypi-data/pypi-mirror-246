@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: clustroai-sdk
+Version: 0.0.1
+Summary: clustroai-sdk
+Home-page: https://www.clustro.ai/
+Author: clustro ai
+Author-email: clustro@clustro.ai
+Requires-Dist: requests
+
