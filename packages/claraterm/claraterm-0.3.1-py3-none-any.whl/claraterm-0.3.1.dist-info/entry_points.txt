@@ -1,0 +1,2 @@
+[console_scripts]
+clara = claraterm.main:cli
