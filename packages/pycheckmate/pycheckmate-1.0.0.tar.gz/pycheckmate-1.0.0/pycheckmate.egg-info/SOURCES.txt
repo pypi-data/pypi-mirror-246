@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pycheckmate.py
+setup.py
+pycheckmate.egg-info/PKG-INFO
+pycheckmate.egg-info/SOURCES.txt
+pycheckmate.egg-info/dependency_links.txt
+pycheckmate.egg-info/top_level.txt
