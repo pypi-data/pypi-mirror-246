@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cnncc
+Version: 1.1.2
+Summary: A simple CNN for cell-cycle phase classification
+Author: F.Dumoncel, E.Billard, S. Boudouh
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: joblib
+
+### Build package 
+
+```console
+$ python setup.py sdist bdist_wheel
+```
+
+### Reinstall package 
+
+```console 
+$ pip install dist/<package-name> --force-reinstall
+```
+
+### Publish package to PyPi 
+
+```console
+$ twine upload dist/*
+```
