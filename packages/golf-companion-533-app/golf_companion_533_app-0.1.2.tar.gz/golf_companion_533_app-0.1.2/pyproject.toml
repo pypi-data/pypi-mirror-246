@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "golf_companion_533_app"
+version = "0.1.2"
+authors = [
+{ name="Dhun Sheth", email="dhun97@mail.ubc.ca" },
+{ name="Tim Pulfer", email="tim@gmail.com" }
+]
+description = "A golf companion package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/Dhunsheth/data_533_group_project"
+[tool.setuptools]
+include-package-data = true
+[tool.setuptools.packages.find]
+where = ["src"]
