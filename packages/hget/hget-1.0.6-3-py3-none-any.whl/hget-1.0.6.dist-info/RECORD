@@ -1,0 +1,12 @@
+hget/__init__.py,sha256=dixowGvs3I6gRwUF4K-n7VCXZtjmCePkaqVSwBTZhB4,56
+hget/_version.py,sha256=mqMuQB3aqJVPrHHqJMLjqiMKUiJjozc7EPLcX5DpKHg,22
+hget/ftp.py,sha256=i4hdRtW-_uWCx_bc-sIexjsYBLttCcE2nV2k7J3wn8Q,2293
+hget/main.py,sha256=iL82SgxFUo8trs4L6XXnhAIeRrc10rvwGwq4GzL0jVw,1033
+hget/src.py,sha256=SxkCS2bqdc5RAqTM6mk0EPakk2-IbVcSVOUs09luzFc,19926
+hget/utils.py,sha256=c_Vz01MdCGQDkYO5lOB5a3-8CERJZn4tIUtY5LImF-c,11193
+hget-1.0.6.dist-info/LICENSE,sha256=NPhTiU6xEYnFPLB9rlmsTVfU7qLJHuBT6bmQ3KFkBgE,1094
+hget-1.0.6.dist-info/METADATA,sha256=76Nr6UlmwmH9OaUCHfPiS7GbOlkgtmfKpCJtSLvgeBg,7770
+hget-1.0.6.dist-info/WHEEL,sha256=aLFc6Aji5qIUQ4y9eW8J8_oixZ50T9JelzKxYpllcMs,101
+hget-1.0.6.dist-info/entry_points.txt,sha256=FoqX-Sk2GR-pRv9GGolfAV3KoSv8iVDaL5zQdscMjqk,40
+hget-1.0.6.dist-info/top_level.txt,sha256=Czcr-hZO1LKFCS2vYVLj2KcgXQtgDezpvf1CkSMldCw,5
+hget-1.0.6.dist-info/RECORD,,
