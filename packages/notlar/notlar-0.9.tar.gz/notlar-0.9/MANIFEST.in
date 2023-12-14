@@ -1,0 +1,5 @@
+include requirements.txt
+include wsgi.py
+recursive-include notlar/static *
+recursive-include notlar/templates *
+recursive-include notlar/translations *
