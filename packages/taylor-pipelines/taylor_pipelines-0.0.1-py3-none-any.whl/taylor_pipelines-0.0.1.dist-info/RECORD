@@ -1,0 +1,9 @@
+taylor_pipelines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taylor_pipelines/argument.py,sha256=31IOTmzDe9u5fiFDOTPe2qXgTNrrx__Fmgorqcs11fw,9045
+taylor_pipelines/pipeline.py,sha256=jZ4f_2hmcK4HwsLJ9Au7UEin_yWOIM5hn7r-7Aa0MUU,7800
+taylor_pipelines/process.py,sha256=LX5PVYZ29X8x6Pdhecr96vUU3pt_PBhFbySwvJiIH7g,11813
+taylor_pipelines/source.py,sha256=_XrRHYxHDjMH8IbCgWPRI3FLzCGKaI16OKvZ58g8EdE,7940
+taylor_pipelines-0.0.1.dist-info/METADATA,sha256=JWUw3yADVUkvGIIsyiVwkDbODMd8hYyQTEHNiTvfRuU,582
+taylor_pipelines-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+taylor_pipelines-0.0.1.dist-info/top_level.txt,sha256=j3OeaU8jOSjTMTYp9WxdepdqlrSQqJ1IBz4yb83AuDo,17
+taylor_pipelines-0.0.1.dist-info/RECORD,,
