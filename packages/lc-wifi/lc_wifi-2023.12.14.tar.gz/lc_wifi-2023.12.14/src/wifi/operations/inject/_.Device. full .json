@@ -1,0 +1,11 @@
+{
+    "type": "get",
+    "epid": "%(epid)s",
+    "body": [
+        [
+            "Device."
+        ],
+        0
+    ],
+    "timeout": 100
+}

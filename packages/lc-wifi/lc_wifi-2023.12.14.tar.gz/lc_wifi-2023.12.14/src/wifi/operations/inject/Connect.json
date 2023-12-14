@@ -1,0 +1,1 @@
+{"session_id":"","final":0,"data":{"payload":{"c_epid":"fqdn::dev.axlc.net","c_nbi":"192.168.29.104:57879","ep_version":"","epid":"%(epid)s","list_type":"unauthenticated","mtp":{"security":"Encrypted","src":"80.152.53.174:52707","type":"websockets"},"type":"connect"}}}

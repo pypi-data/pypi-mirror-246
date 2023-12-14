@@ -1,0 +1,757 @@
+{
+  "last_scan_ts": 1550608284151,
+  "region": "ES-SE",
+  "job": {
+        "ondemand": false,
+        "jobid": "abc-123",
+        "steps": {
+            "1": {
+                "MappedSetParameterValues": {
+                    "WiFi.Radio.2.Channel": 11,
+                    "WiFi.Radio.2.AutoChannelEnable": 0,
+                    "WiFi.Radio.5.Channel": 102,
+                    "WiFi.Radio.5.AutoChannelEnable": 0
+                }
+            }
+        }
+    },
+  "WiFi": {
+    "NeighboringWiFiDiagnostic": {
+      "1": {
+        "DiagnosticsInterval": 86400,
+        "DiagnosticsState": "Completed",
+        "ResultNumberOfEntries": 4
+      },
+      "coll_dt": 2947,
+      "5": {
+        "DiagnosticsInterval": 86400,
+        "DiagnosticsState": "Completed",
+        "ResultNumberOfEntries": 7
+      }
+    },
+    "Radio": {
+      "1": {
+        "Status": "Up",
+        "Enable": 1,
+        "OperatingChannelBandwidth": "Auto",
+        "OperatingFrequencyBand": "2.4GHz",
+        "OperatingStandards": "b,g,n",
+        "AutoChannelEnable": 1,
+        "Stats": {
+          "Noise": -89,
+          "BytesReceived": 3363836,
+          "ErrorsSent": 22,
+          "PacketsReceived": 20722,
+          "ErrorsReceived": 0,
+          "BytesSent": 52579612,
+          "PacketsSent": 120433
+        },
+        "Channel": 8,
+        "noise": -89,
+        "enabled": 1,
+        "band": 2,
+        "radio_chan": 8,
+        "channel_width": 20,
+        "op_standard": 4,
+        "supported_radio_chans": "set()"
+      },
+      "wifi_fingerprint": [
+        "78-81-02-70-A8-91_8_vodafoneA890",
+        "78-81-02-70-A8-91_112_vodafoneA890_5G"
+      ],
+      "5": {
+        "Status": "Up",
+        "Enable": 1,
+        "OperatingChannelBandwidth": "Auto",
+        "OperatingFrequencyBand": "5GHz",
+        "OperatingStandards": "n,ac",
+        "AutoChannelEnable": 1,
+        "Stats": {
+          "Noise": -89,
+          "BytesReceived": 2252177714,
+          "ErrorsSent": 0,
+          "PacketsReceived": 5819841,
+          "ErrorsReceived": 1,
+          "BytesSent": 1763392521,
+          "PacketsSent": 8495431
+        },
+        "Channel": 112,
+        "noise": -89,
+        "enabled": 1,
+        "band": 5,
+        "radio_chan": 112,
+        "channel_width": 80,
+        "op_standard": 6,
+        "supported_radio_chans": "set()"
+      }
+    },
+    "SSID": {
+      "1": {
+        "LowerLayers": "Device.WiFi.Radio.1",
+        "SSID": "vodafoneA890",
+        "BSSID": "78-81-02-70-A8-91",
+        "Security": {
+          "ModeEnabled": "PSKAuthentication",
+          "EncryptionMode": "AESEncryption"
+        },
+        "SSIDAdvertisementEnabled": 1,
+        "SSIDReference": "Device.WiFi.SSID.1",
+        "band": 2,
+        "clients_count": 0,
+        "rid": "000E8F-E1728BXKA29518-1"
+      },
+      "5": {
+        "LowerLayers": "Device.WiFi.Radio.5",
+        "SSID": "vodafoneA890_5G",
+        "BSSID": "78-81-02-70-A8-91",
+        "Security": {
+          "ModeEnabled": "PSKAuthentication",
+          "EncryptionMode": "AESEncryption"
+        },
+        "SSIDAdvertisementEnabled": 1,
+        "AssociatedDevice": {
+          "1": {
+            "SignalStrength": -51,
+            "LastDataUplinkRate": 24084819,
+            "MACAddress": "58-C9-35-1C-C7-50",
+            "Hostname": "New-Host",
+            "OperatingStandard": "a,n",
+            "AssociationTime": 5751,
+            "LastDataDownlinkRate": 3271205,
+            "Active": 1,
+            "Retransmissions": 0
+          },
+          "2": {
+            "MACAddress": "BC-E1-43-8D-63-6E",
+            "LastDataUplinkRate": 180833347,
+            "SignalStrength": -57,
+            "Hostname": "iPhone-de-Laura",
+            "OperatingStandard": "ac",
+            "AssociationTime": 5710,
+            "LastDataDownlinkRate": 17681574,
+            "Active": 1,
+            "Retransmissions": 0
+          }
+        },
+        "SSIDReference": "Device.WiFi.SSID.5",
+        "band": 5,
+        "clients_sig_av": -54,
+        "clients_count": 2,
+        "client_0": {
+          "SignalStrength": -57,
+          "OperatingStandard": "ac",
+          "LastDataDownlinkRate": 17681574,
+          "LastDataUpLinkRate": 180833347,
+          "vendor": "n.a.",
+          "Active": 1
+        },
+        "client_1": {
+          "SignalStrength": -51,
+          "OperatingStandard": "a,n",
+          "LastDataDownlinkRate": 3271205,
+          "LastDataUpLinkRate": 24084819,
+          "vendor": "n.a.",
+          "Active": 1
+        },
+        "rid": "000E8F-E1728BXKA29518-1"
+      }
+    },
+    "AccessPoint": {
+      "1": {
+        "Security": {
+          "ModeEnabled": "PSKAuthentication",
+          "EncryptionMode": "AESEncryption"
+        },
+        "SSIDAdvertisementEnabled": 1,
+        "SSIDReference": "Device.WiFi.SSID.1"
+      },
+      "5": {
+        "Security": {
+          "ModeEnabled": "PSKAuthentication",
+          "EncryptionMode": "AESEncryption"
+        },
+        "SSIDAdvertisementEnabled": 1,
+        "AssociatedDevice": {
+          "1": {
+            "SignalStrength": -51,
+            "LastDataUplinkRate": 24084819,
+            "MACAddress": "58-C9-35-1C-C7-50",
+            "Hostname": "New-Host",
+            "OperatingStandard": "a,n",
+            "AssociationTime": 5751,
+            "LastDataDownlinkRate": 3271205,
+            "Active": 1,
+            "Retransmissions": 0
+          },
+          "2": {
+            "MACAddress": "BC-E1-43-8D-63-6E",
+            "LastDataUplinkRate": 180833347,
+            "SignalStrength": -57,
+            "Hostname": "iPhone-de-Laura",
+            "OperatingStandard": "ac",
+            "AssociationTime": 5710,
+            "LastDataDownlinkRate": 17681574,
+            "Active": 1,
+            "Retransmissions": 0
+          }
+        },
+        "SSIDReference": "Device.WiFi.SSID.5"
+      }
+    },
+    "RadioRefs": {
+      "2": "1",
+      "5": "5"
+    }
+  },
+  "DeviceInfo": {
+    "ProcessStatus": {
+      "CPUUsage": 3
+    },
+    "UpTime": 511440,
+    "SerialNumber": "E1728BXKA29518-1-1",
+    "ModelName": "Vodafone-H-500-s",
+    "MemoryStatus": {
+      "Total": 122852,
+      "Free": 46496
+    },
+    "SoftwareVersion": "Vodafone-H-500-s-v3.4.20",
+    "ManufacturerOUI": "000E8F",
+    "ProductClass": "Vodafone-H-500-s",
+    "HardwareVersion": "Vodafone-H-500-sv1",
+    "Manufacturer": "SERCOMM"
+  },
+  "ts": 1592380842,
+  "Hosts": {
+    "Host": {
+      "1": {
+        "Active": 1,
+        "IPAddress": "192.168.0.156"
+      },
+      "3": {
+        "Active": 1,
+        "IPAddress": "192.168.0.159"
+      },
+      "2": {
+        "Active": 1,
+        "IPAddress": "192.168.0.154"
+      },
+      "5": {
+        "Active": 1,
+        "IPAddress": "192.168.0.155"
+      },
+      "4": {
+        "Active": 1,
+        "IPAddress": "192.168.0.157"
+      }
+    }
+  },
+  "collector": {
+    "msg": "Full Scan",
+    "code": 200
+  },
+  "id": "603197-S172V24000016",
+  "metadata": {
+    "service_id": "VFH1087112269"
+  },
+  "sender": {
+    "ip": "10.168.16.19",
+    "port": 36224,
+    "hostname": "QTWESPROC02",
+    "pid": 32420,
+    "ts": 1550449198
+  },
+  "conf": {
+    "upper_chan_2": 13,
+    "dfs_weight": 0.95,
+    "regulatory_domain": "ETSI",
+    "algo_2": "odiac",
+    "algo_5": "base",
+    "allow_auto_enforce_2": true,
+    "allow_auto_enforce_5": true
+  },
+  "expert": {
+    "2": {
+      "cur_q": 0.38,
+      "cur_ch": 8,
+      "cur_bw": 20,
+      "target_q": 0.76,
+      "target_ch": 13,
+      "target_bw": 20,
+      "target_ch_aggr": 13,
+      "target_q_aggr": 0.76,
+      "delta_q": 0.38,
+      "gbases_raw_res": {
+        "init": [
+          8,
+          20,
+          0.3774327007124896
+        ],
+        "recom": [
+          13,
+          20,
+          0.7604686202942919
+        ],
+        "ch_q_all": [
+          0.4596660986723393,
+          0.40912005529493023,
+          0.39627935258655383,
+          0.18588407055602257,
+          0.3224001478240993,
+          0.4378273251213806,
+          0.34184595441627375,
+          0.3774327007124896,
+          0.4609224156582477,
+          0.48032833762791494,
+          0.5,
+          0.7234804819026108,
+          0.7604686202942919
+        ],
+        "ch_q_f": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "algo": "odiac",
+      "neighbors": 4,
+      "neighbors_cci_friends": 0,
+      "neighbors_cci_aliens": 0,
+      "neighbors_aci_friends": 0,
+      "neighbors_aci_aliens": 3,
+      "neighbors_non_int_friends": 0,
+      "neighbors_non_int_aliens": 1,
+      "qualities": {
+        "1": 0.4596660986723393,
+        "2": 0.40912005529493023,
+        "3": 0.39627935258655383,
+        "4": 0.18588407055602257,
+        "5": 0.3224001478240993,
+        "6": 0.4378273251213806,
+        "7": 0.34184595441627375,
+        "8": 0.3774327007124896,
+        "9": 0.4609224156582477,
+        "10": 0.48032833762791494,
+        "11": 0.5,
+        "12": 0.7234804819026108,
+        "13": 0.7604686202942919
+      },
+      "id": "000E8F-E1728BXKA29518-1"
+    },
+    "5": {
+      "cur_q": 0.34,
+      "cur_ch": 106,
+      "cur_bw": 80,
+      "cur_on_dfs": true,
+      "cur_radio_ch": 112,
+      "max_bw": 80,
+      "target_q_aggr": 0.34,
+      "target_ch_aggr": 58,
+      "target_radio_ch_aggr": 64,
+      "target_q": 0.34,
+      "target_ch": 58,
+      "target_bw": 80,
+      "target_radio_ch": 64,
+      "delta_q": 0,
+      "algo": "base",
+      "neighbors": 7,
+      "neighbors_int_friends": 0,
+      "neighbors_int_aliens": 2,
+      "neighbors_non_int_friends": 0,
+      "neighbors_non_int_aliens": 5,
+      "qualities": {
+        "32": 0.125,
+        "34": 0.25,
+        "36": 0.03016996419919963,
+        "38": 0.14569039885986243,
+        "40": 0.03016996419919963,
+        "42": 0.29138079771972486,
+        "44": 0.03016996419919963,
+        "46": 0.14569039885986243,
+        "48": 0.03016996419919963,
+        "50": 0.6263154019496446,
+        "52": 0.04069544601089341,
+        "54": 0.16922630309795234,
+        "56": 0.04069544601089341,
+        "58": 0.33845260619590467,
+        "60": 0.04069544601089341,
+        "62": 0.16922630309795234,
+        "64": 0.04069544601089341,
+        "68": 0.125,
+        "96": 0.125,
+        "100": 0.04069544601089341,
+        "104": 0.04069544601089341,
+        "106": 0.33845260619590467,
+        "108": 0.04069544601089341,
+        "110": 0.16922630309795234,
+        "112": 0.04069544601089341,
+        "114": 0.8073267438012474,
+        "116": 0.125,
+        "120": 0.125,
+        "124": 0.125,
+        "128": 0.125,
+        "132": 0.125,
+        "136": 0.125,
+        "140": 0.125
+      },
+      "id": "000E8F-E1728BXKA29518-1"
+    }
+  },
+  "to_band": {
+    "2": {
+      "band": 2,
+      "rid": "000E8F-E1728BXKA29518-1",
+      "Radio": {
+        "Status": "Up",
+        "Enable": 1,
+        "OperatingChannelBandwidth": "Auto",
+        "OperatingFrequencyBand": "2.4GHz",
+        "OperatingStandards": "b,g,n",
+        "AutoChannelEnable": 1,
+        "Stats": {
+          "Noise": -89,
+          "BytesReceived": 3363836,
+          "ErrorsSent": 22,
+          "PacketsReceived": 20722,
+          "ErrorsReceived": 0,
+          "BytesSent": 52579612,
+          "PacketsSent": 120433
+        },
+        "Channel": 8,
+        "noise": -89,
+        "enabled": 1,
+        "band": 2,
+        "radio_chan": 8,
+        "channel_width": 20,
+        "op_standard": 4,
+        "supported_radio_chans": "set()"
+      },
+      "SSID": {
+        "1": {
+          "LowerLayers": "Device.WiFi.Radio.1",
+          "SSID": "vodafoneA890",
+          "BSSID": "78-81-02-70-A8-91",
+          "Security": {
+            "ModeEnabled": "PSKAuthentication",
+            "EncryptionMode": "AESEncryption"
+          },
+          "SSIDAdvertisementEnabled": 1,
+          "SSIDReference": "Device.WiFi.SSID.1",
+          "band": 2,
+          "clients_count": 0,
+          "rid": "000E8F-E1728BXKA29518-1"
+        }
+      },
+      "scan": {
+        "11": {
+          "SecurityModeEnabled": "WPA2",
+          "Noise": -91,
+          "OperatingChannelBandwidth": "20",
+          "SSID": "MOVISTAR_EF84",
+          "OperatingFrequencyBand": "2.4GHz",
+          "OperatingStandards": "802.11b/g/n",
+          "auto_channel": -1,
+          "SignalStrength": -55,
+          "type": "A",
+          "Channel": 6,
+          "rssi": -55,
+          "noise": -91,
+          "enabled": true,
+          "band": 2,
+          "radio_chan": 6,
+          "channel_width": 20,
+          "op_standard": 4
+        },
+        "10": {
+          "SignalStrength": -64,
+          "Noise": -87,
+          "OperatingChannelBandwidth": "20",
+          "SSID": "DIGAMAX_27",
+          "OperatingFrequencyBand": "2.4GHz",
+          "OperatingStandards": "802.11b/g/n",
+          "auto_channel": -1,
+          "SecurityModeEnabled": "WPA2",
+          "type": "A",
+          "Channel": 1,
+          "rssi": -64,
+          "noise": -87,
+          "enabled": true,
+          "band": 2,
+          "radio_chan": 1,
+          "channel_width": 20,
+          "op_standard": 4
+        },
+        "9": {
+          "SecurityModeEnabled": "WPA/WPA2",
+          "Noise": -91,
+          "OperatingChannelBandwidth": "20",
+          "SSID": "MIPC_NOMAP2.4G",
+          "OperatingFrequencyBand": "2.4GHz",
+          "OperatingStandards": "802.11b/g/n",
+          "auto_channel": -1,
+          "SignalStrength": -75,
+          "type": "A",
+          "Channel": 4,
+          "rssi": -75,
+          "noise": -91,
+          "enabled": true,
+          "band": 2,
+          "radio_chan": 4,
+          "channel_width": 20,
+          "op_standard": 4
+        },
+        "8": {
+          "SecurityModeEnabled": "WPA2",
+          "Noise": -88,
+          "OperatingChannelBandwidth": "20",
+          "SSID": "MiFibra-6E40",
+          "OperatingFrequencyBand": "2.4GHz",
+          "OperatingStandards": "802.11b/g/n",
+          "auto_channel": -1,
+          "SignalStrength": -68,
+          "type": "A",
+          "Channel": 11,
+          "rssi": -68,
+          "noise": -88,
+          "enabled": true,
+          "band": 2,
+          "radio_chan": 11,
+          "channel_width": 20,
+          "op_standard": 4
+        }
+      },
+      "scan_dt": 2947
+    },
+    "5": {
+      "band": 5,
+      "rid": "000E8F-E1728BXKA29518-1",
+      "Radio": {
+        "Status": "Up",
+        "Enable": 1,
+        "OperatingChannelBandwidth": "Auto",
+        "OperatingFrequencyBand": "5GHz",
+        "OperatingStandards": "n,ac",
+        "AutoChannelEnable": 1,
+        "Stats": {
+          "Noise": -89,
+          "BytesReceived": 2252177714,
+          "ErrorsSent": 0,
+          "PacketsReceived": 5819841,
+          "ErrorsReceived": 1,
+          "BytesSent": 1763392521,
+          "PacketsSent": 8495431
+        },
+        "Channel": 112,
+        "noise": -89,
+        "enabled": 1,
+        "band": 5,
+        "radio_chan": 112,
+        "channel_width": 80,
+        "op_standard": 6,
+        "supported_radio_chans": "set()"
+      },
+      "SSID": {
+        "1": {
+          "LowerLayers": "Device.WiFi.Radio.5",
+          "SSID": "vodafoneA890_5G",
+          "BSSID": "78-81-02-70-A8-91",
+          "Security": {
+            "ModeEnabled": "PSKAuthentication",
+            "EncryptionMode": "AESEncryption"
+          },
+          "SSIDAdvertisementEnabled": 1,
+          "AssociatedDevice": {
+            "1": {
+              "SignalStrength": -51,
+              "LastDataUplinkRate": 24084819,
+              "MACAddress": "58-C9-35-1C-C7-50",
+              "Hostname": "New-Host",
+              "OperatingStandard": "a,n",
+              "AssociationTime": 5751,
+              "LastDataDownlinkRate": 3271205,
+              "Active": 1,
+              "Retransmissions": 0
+            },
+            "2": {
+              "MACAddress": "BC-E1-43-8D-63-6E",
+              "LastDataUplinkRate": 180833347,
+              "SignalStrength": -57,
+              "Hostname": "iPhone-de-Laura",
+              "OperatingStandard": "ac",
+              "AssociationTime": 5710,
+              "LastDataDownlinkRate": 17681574,
+              "Active": 1,
+              "Retransmissions": 0
+            }
+          },
+          "SSIDReference": "Device.WiFi.SSID.5",
+          "band": 5,
+          "clients_sig_av": -54,
+          "clients_count": 2,
+          "client_0": {
+            "SignalStrength": -57,
+            "OperatingStandard": "ac",
+            "LastDataDownlinkRate": 17681574,
+            "LastDataUpLinkRate": 180833347,
+            "vendor": "n.a.",
+            "Active": 1
+          },
+          "client_1": {
+            "SignalStrength": -51,
+            "OperatingStandard": "a,n",
+            "LastDataDownlinkRate": 3271205,
+            "LastDataUpLinkRate": 24084819,
+            "vendor": "n.a.",
+            "Active": 1
+          },
+          "rid": "000E8F-E1728BXKA29518-1"
+        }
+      },
+      "scan": {
+        "1": {
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MiFibra-6E405gh",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SignalStrength": -84,
+          "type": "A",
+          "Channel": 36,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 36,
+          "channel_width": 80,
+          "op_standard": 6
+        },
+        "3": {
+          "SignalStrength": -84,
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MOVISTAR_PLUS_A6AA",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "type": "A",
+          "Channel": 36,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 36,
+          "channel_width": 80,
+          "op_standard": 6
+        },
+        "2": {
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MOVISTAR_A6AA",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SignalStrength": -84,
+          "type": "A",
+          "Channel": 36,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 36,
+          "channel_width": 80,
+          "op_standard": 6
+        },
+        "5": {
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MOVISTAR_PLUS_FDCA",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SignalStrength": -84,
+          "type": "A",
+          "Channel": 52,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 52,
+          "channel_width": 80,
+          "op_standard": 6
+        },
+        "4": {
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MOVISTAR_FDCA",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SignalStrength": -84,
+          "type": "A",
+          "Channel": 52,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 52,
+          "channel_width": 80,
+          "op_standard": 6
+        },
+        "7": {
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MOVISTAR_PLUS_E216",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SignalStrength": -84,
+          "type": "A",
+          "Channel": 112,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 112,
+          "channel_width": 80,
+          "op_standard": 6
+        },
+        "6": {
+          "SecurityModeEnabled": "WPA2-PSK-CCMP",
+          "Noise": 0,
+          "OperatingChannelBandwidth": "80MHz",
+          "SSID": "MOVISTAR_E216",
+          "OperatingFrequencyBand": "5GHz",
+          "OperatingStandards": "802.11a/n/ac",
+          "auto_channel": -1,
+          "SignalStrength": -84,
+          "type": "A",
+          "Channel": 112,
+          "rssi": -84,
+          "noise": null,
+          "enabled": true,
+          "band": 5,
+          "radio_chan": 112,
+          "channel_width": 80,
+          "op_standard": 6
+        }
+      },
+      "scan_dt": 2947
+    }
+  }
+}

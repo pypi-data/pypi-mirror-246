@@ -1,0 +1,3992 @@
+[
+    {
+        "id": "t1",
+        "type": "tab",
+        "label": "AXTRACT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "t2",
+        "type": "tab",
+        "label": "AXUSP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "t3",
+        "type": "tab",
+        "label": "API",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "t4",
+        "type": "tab",
+        "label": "AXWIFI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "sf1.WifiCoreFlow",
+        "type": "subflow",
+        "name": "WifiCoreFlow",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "sf1.ao1.expert.fix_radio_refs"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 360,
+                "y": 560,
+                "wires": [
+                    {
+                        "id": "sf1.ao19.arrange_data",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "t2.g1.RPCs",
+        "type": "group",
+        "z": "t2",
+        "name": "RPCs",
+        "style": {
+            "label": true,
+            "stroke": "#92d04f"
+        },
+        "nodes": [
+            "t2.i9.TiggerFullScanAVM",
+            "t2.d1.job_result",
+            "t2.i10.HealthCheck",
+            "t2.i11.Hosts",
+            "t2.i12..WiFi.",
+            "t2.i13..Device.full",
+            "t2.axsn2.ax.snk.log",
+            "t2.i14.Reboot",
+            "t2.i15..DeviceInfo.level2",
+            "t2.ao32.usp.job",
+            "t2.i16.Ext.IP",
+            "t2.i17.BulkData.",
+            "t2.i18.LocalAgent.Subscription.",
+            "t2.i19.LightScan.",
+            "t2.i20.TiggerSpeedtest",
+            "t2.i21.SupportedDM",
+            "t2.i22.Set",
+            "t2.ao30.ax.file_read",
+            "t2.i24.Set",
+            "t2.i27.JointelliLightscan",
+            "t2.i28.USPLightscan"
+        ],
+        "x": 74,
+        "y": 559,
+        "w": 1092,
+        "h": 562
+    },
+    {
+        "id": "sf1.ao1.expert.fix_radio_refs",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "expert.fix_radio_refs",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 294,
+        "y": 76,
+        "wires": [
+            [
+                "sf1.ao2.expert.normalize_scan_result"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao2.expert.normalize_scan_result",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "expert.normalize_scan_result",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 614,
+        "y": 76,
+        "wires": [
+            [
+                "sf1.ao3.expert.access_points_into_ssids"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao3.expert.access_points_into_ssids",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "expert.access_points_into_ssids",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 934,
+        "y": 76,
+        "wires": [
+            [
+                "sf1.ao4.expert.band_into_ssids"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao4.expert.band_into_ssids",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "expert.band_into_ssids",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 314,
+        "y": 156,
+        "wires": [
+            [
+                "sf1.ao5.to_band"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao5.to_band",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "to_band",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 560,
+        "y": 140,
+        "wires": [
+            [
+                "sf1.ao6.intel.inspect_hosts"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao6.intel.inspect_hosts",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.inspect_hosts",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 854,
+        "y": 156,
+        "wires": [
+            [
+                "sf1.ao21.intel.inspect_ieee1905"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao7.intel.calculate_radio_stats",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.calculate_radio_stats",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 314,
+        "y": 236,
+        "wires": [
+            [
+                "sf1.ao8.expert.delta_q"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao8.expert.delta_q",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "expert.delta_q",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 534,
+        "y": 236,
+        "wires": [
+            [
+                "sf1.ao9.con.redis.get_events"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao9.con.redis.get_events",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "con.redis.get_events",
+        "label": "",
+        "async_timeout": 1,
+        "deep_copy": false,
+        "kw": "{\"key\":\"qualities:{d[id]}\",\"pth\":\"history\",\"count\":1000}",
+        "outputs": 1,
+        "x": 874,
+        "y": 236,
+        "wires": [
+            [
+                "sf1.ao20.internal_performance_kpis"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao10.intel.identify_changes",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.identify_changes",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 314,
+        "y": 316,
+        "wires": [
+            [
+                "sf1.ao11.intel.inspect_clients"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao11.intel.inspect_clients",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.inspect_clients",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 554,
+        "y": 316,
+        "wires": [
+            [
+                "sf1.ao12.calculate_rates"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao12.calculate_rates",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "calculate_rates",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"calculate\":[{\"prop\":\"WiFi.Radio.1.Stats.BytesSent\"},{\"prop\":\"WiFi.Radio.1.Stats.BytesReceived\"},{\"prop\":\"WiFi.Radio.5.Stats.BytesSent\"},{\"prop\":\"WiFi.Radio.5.Stats.BytesReceived\"},{\"prop\":\"WiFi.SSID.1.Stats.BytesSent\"},{\"prop\":\"WiFi.SSID.1.Stats.BytesReceived\"},{\"prop\":\"WiFi.SSID.1.Stats.PacketsSent\"},{\"prop\":\"WiFi.SSID.1.Stats.PacketsReceived\"},{\"prop\":\"WiFi.SSID.1.Stats.ErrorsSent\"},{\"prop\":\"WiFi.SSID.1.Stats.ErrorsReceived\"},{\"prop\":\"WiFi.SSID.1.Stats.RetransCount\"},{\"prop\":\"WiFi.SSID.2.Stats.BytesSent\"},{\"prop\":\"WiFi.SSID.2.Stats.BytesReceived\"},{\"prop\":\"WiFi.SSID.2.Stats.PacketsSent\"},{\"prop\":\"WiFi.SSID.2.Stats.PacketsReceived\"},{\"prop\":\"WiFi.SSID.2.Stats.ErrorsSent\"},{\"prop\":\"WiFi.SSID.2.Stats.ErrorsReceived\"},{\"prop\":\"WiFi.SSID.2.Stats.RetransCount\"},{\"prop\":\"WiFi.SSID.5.Stats.BytesSent\"},{\"prop\":\"WiFi.SSID.5.Stats.BytesReceived\"},{\"prop\":\"WiFi.SSID.5.Stats.PacketsSent\"},{\"prop\":\"WiFi.SSID.5.Stats.PacketsReceived\"},{\"prop\":\"WiFi.SSID.5.Stats.ErrorsSent\"},{\"prop\":\"WiFi.SSID.5.Stats.ErrorsReceived\"},{\"prop\":\"WiFi.SSID.5.Stats.RetransCount\"},{\"prop\":\"WiFi.SSID.6.Stats.BytesSent\"},{\"prop\":\"WiFi.SSID.6.Stats.BytesReceived\"},{\"prop\":\"WiFi.SSID.6.Stats.PacketsSent\"},{\"prop\":\"WiFi.SSID.6.Stats.PacketsReceived\"},{\"prop\":\"WiFi.SSID.6.Stats.ErrorsSent\"},{\"prop\":\"WiFi.SSID.6.Stats.ErrorsReceived\"},{\"prop\":\"WiFi.SSID.6.Stats.RetransCount\"}]}",
+        "outputs": 1,
+        "x": 834,
+        "y": 316,
+        "wires": [
+            [
+                "sf1.ao13.intel.identify_associateddevices"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao13.intel.identify_associateddevices",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.identify_associateddevices",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"mesh_models\":[{\"vendor_name\":\"model_name\"},{\"velop\":\"XXX\"}]}",
+        "outputs": 1,
+        "x": 314,
+        "y": 396,
+        "wires": [
+            [
+                "sf1.ao14.rolling_aggregation"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao14.rolling_aggregation",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "rolling_aggregation",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"config\":[{\"src\":\"collector.full_scan\",\"dst\":\"collector.full_scan_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"collector.light_scan\",\"dst\":\"collector.light_scan_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"2.changes.axwifi\",\"dst\":\"2.changes.axwifi_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"2.changes.manual\",\"dst\":\"2.changes.manual_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"2.changes.auto\",\"dst\":\"2.changes.auto_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"5.changes.axwifi\",\"dst\":\"5.changes.axwifi_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"5.changes.manual\",\"dst\":\"5.changes.manual_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"5.changes.auto\",\"dst\":\"5.changes.auto_last24h\",\"cf\":\"sum\",\"age\":86400},{\"src\":\"2.expert.neighbors.total\",\"dst\":\"2.expert.neighbors_last4h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"2.ssid.1.clients.total\",\"dst\":\"2.ssid.1.clients_last4h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"2.ssid.1.clients.total\",\"dst\":\"2.ssid.1.clients.total_last24h\",\"cf\":\"avg\",\"age\":86400},{\"src\":\"2.ssid.1.clients.low_rssi\",\"dst\":\"2.ssid.1.clients.low_rssi_last24h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"2.ssid.1.clients.low_rssi_macs\",\"dst\":\"2.ssid.1.clients.low_rssi_macs_last24h\",\"cf\":\"concat\",\"age\":86400},{\"src\":\"2.expert.cur_q\",\"dst\":\"2.expert.cur_q_last4h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"5.expert.neighbors.total\",\"dst\":\"5.expert.neighbors_last4h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"5.expert.cur_q\",\"dst\":\"5.expert.cur_q_last4h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"5.ssid.5.clients.total\",\"dst\":\"5.ssid.5.clients_last4h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"5.ssid.5.clients.total\",\"dst\":\"5.ssid.5.clients.total_last24h\",\"cf\":\"avg\",\"age\":86400},{\"src\":\"5.ssid.5.clients.low_rssi\",\"dst\":\"5.ssid.5.clients.low_rssi_last24h\",\"cf\":\"avg\",\"age\":14400},{\"src\":\"5.ssid.5.clients.low_rssi_macs\",\"dst\":\"5.ssid.5.clients.low_rssi_macs_last24h\",\"cf\":\"concat\",\"age\":86400},{\"src\":\"DeviceInfo.ProcessStatus.CPUUsage\",\"dst\":\"DeviceInfo.ProcessStatus.CPUUsage_last3h\",\"cf\":\"avg\",\"age\":10800},{\"src\":\"DeviceInfo.MemoryStatus.Free\",\"dst\":\"DeviceInfo.MemoryStatus.Free_last3h\",\"cf\":\"avg\",\"age\":10800},{\"src\":\"DeviceInfo.MemoryStatus.usage\",\"dst\":\"DeviceInfo.MemoryStatus.usage_last3h\",\"cf\":\"avg\",\"age\":10800},{\"src\":\"2.clients.mesh_count\",\"dst\":\"2.clients.mesh_count_last24h\",\"cf\":\"avg\",\"age\":86400},{\"src\":\"5.clients.mesh_count\",\"dst\":\"5.clients.mesh_count_last24h\",\"cf\":\"avg\",\"age\":86400},{\"src\":\"2.clients.extender_count\",\"dst\":\"2.clients.extender_count_last24h\",\"cf\":\"avg\",\"age\":86400},{\"src\":\"5.clients.extender_count\",\"dst\":\"5.clients.extender_count_last24h\",\"cf\":\"avg\",\"age\":86400}]}",
+        "outputs": 1,
+        "x": 554,
+        "y": 396,
+        "wires": [
+            [
+                "sf1.ao15.intel.generate_recommendations"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao15.intel.generate_recommendations",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.generate_recommendations",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"default\":{\"quality_thresholds\":{\"2\":{\"interf\":{\"above_delta_q\":0.1},\"perf\":{\"below_cur_q\":0.5,\"below_target_q\":0.5}},\"5\":{\"interf\":{\"above_delta_q\":0.1},\"perf\":{\"below_cur_q\":0.5,\"below_target_q\":0.5}}},\"bad_encryptions\":[\"WEPEncryption\",\"TKIPEncryption\",\"WEPandAESEncryption\",\"TKIPandAESEncryption\",\"WEPandTKIPandAESEncryption\",\"WEPandTKIPEncryption\"],\"bad_sec_modes\":[\"WEP-64\",\"WEP-128\",\"WEP\"],\"resources_threshold\":{\"cpu\":90,\"memory\":90},\"occurrences_threshold\":2,\"bad_op_standards\":{\"2\":[\"b\"],\"5\":[\"n\"]},\"weak_threshold_extender_mesh\":-70,\"extreme_threshold_extender_mesh\":-30},\"avm_fb7530\":{\"bad_sec_modes\":[\"WEP-64\"],\"resources_threshold\":{\"cpu\":93,\"memory\":90}}}",
+        "outputs": 1,
+        "x": 954,
+        "y": 396,
+        "wires": [
+            [
+                "sf1.ao16.intel.pme"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao16.intel.pme",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.pme",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"default\":[{\"name\":\"cpe.high_cpu\",\"title\":\"High CPU\",\"current\":\"DeviceInfo.ProcessStatus.CPUUsage\",\"mov_avg\":\"DeviceInfo.ProcessStatus.CPUUsage_last3h\",\"operation\":\"avg\",\"relation\":\"higher\",\"threshold\":90,\"action\":\"reboot\",\"enforce\":false,\"description\":\"High CPU Usage\",\"elastic_id\":\"pme_high_cpu\",\"display_function\":\"percent\"},{\"name\":\"cpe.high_memory\",\"title\":\"High Memory\",\"current\":\"DeviceInfo.MemoryStatus.usage\",\"mov_avg\":\"DeviceInfo.MemoryStatus.usage_last3h\",\"operation\":\"avg\",\"relation\":\"higher\",\"threshold\":90,\"action\":\"reboot\",\"enforce\":false,\"description\":\"Free memory is Low\",\"elastic_id\":\"pme_high_memory\",\"display_function\":\"percent\"},{\"name\":\"2.neighbors_zero\",\"title\":\"Neighbors Drop to Zero\",\"current\":\"2.expert.neighbors.total\",\"mov_avg\":\"2.expert.neighbors_last4h\",\"operation\":\"drop\",\"threshold\":0,\"action\":\"reboot\",\"description\":\"2.4GHz Sudden drop of neighbors to zero\",\"elastic_id\":\"pme_2_neighbors_zero\"},{\"name\":\"2.quality_drop\",\"title\":\"WiFi Quality Drop\",\"current\":\"2.expert.cur_q\",\"mov_avg\":\"2.expert.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.3,\"action\":\"optimize\",\"enforce\":false,\"min\":0.2,\"max\":1,\"description\":\"2.4GHz Significant Drop of WiFi Quality\",\"elastic_id\":\"pme_2_quality_drop\",\"display_function\":\"higher_than_percent\"},{\"name\":\"2.mesh_drop_to_zero\",\"title\":\"MESH node Loss\",\"current\":\"2.clients.mesh_count\",\"mov_avg\":\"2.clients.mesh_count_last24h\",\"operation\":\"drop\",\"relation\":\"equal\",\"threshold\":0,\"action\":\"reboot\",\"enforce\":false,\"description\":\"2.4GHz MESH node count dropped to zero\",\"elastic_id\":\"pme_2_mesh_drop\"},{\"name\":\"2.extender_drop_to_zero\",\"title\":\"Extender Loss\",\"current\":\"2.clients.extender_count\",\"mov_avg\":\"2.clients.extender_count_last24h\",\"operation\":\"drop\",\"relation\":\"equal\",\"threshold\":0,\"action\":\"reboot\",\"enforce\":false,\"description\":\"2.4GHz Extender count dropped to zero\",\"elastic_id\":\"pme_2_extender_drop\"},{\"name\":\"5.neighbors_zero\",\"title\":\"Neighbors Drop to Zero\",\"current\":\"5.expert.neighbors.total\",\"mov_avg\":\"5.expert.neighbors_last4h\",\"operation\":\"drop\",\"threshold\":0,\"action\":\"reboot\",\"description\":\"5GHz Sudden drop of neighbors to zero\",\"elastic_id\":\"pme_5_neighbors_zero\"},{\"name\":\"5.quality_drop\",\"title\":\"WiFi Quality Drop\",\"current\":\"5.expert.cur_q\",\"mov_avg\":\"5.expert.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.3,\"action\":\"optimize\",\"min\":0,\"max\":1,\"enforce\":false,\"description\":\"5GHz Significant Drop of WiFi Quality\",\"elastic_id\":\"pme_5_quality_drop\",\"display_function\":\"higher_than_percent\"},{\"name\":\"5.extender_drop_to_zero\",\"title\":\"Extender Loss\",\"current\":\"5.clients.extender_count\",\"mov_avg\":\"5.clients.extender_count_last24h\",\"operation\":\"drop\",\"threshold\":0,\"action\":\"reboot\",\"enforce\":false,\"description\":\"5GHz Extender count dropped to zero\",\"elastic_id\":\"pme_5_extender_drop\"},{\"name\":\"5.mesh_drop_to_zero\",\"title\":\"MESH node Loss\",\"current\":\"5.clients.mesh_count\",\"mov_avg\":\"5.clients.mesh_count_last24h\",\"operation\":\"drop\",\"threshold\":0,\"action\":\"reboot\",\"enforce\":false,\"description\":\"5GHz MESH node count dropped to zero\",\"elastic_id\":\"pme_5_mesh_drop\"}],\"avm_fb7530\":[{\"name\":\"cpe.high_cpu\",\"title\":\"High CPU\",\"current\":\"DeviceInfo.ProcessStatus.CPUUsage\",\"mov_avg\":\"DeviceInfo.ProcessStatus.CPUUsage_last3h\",\"operation\":\"avg\",\"relation\":\"higher\",\"threshold\":95,\"action\":\"reboot\",\"enforce\":false,\"description\":\"High CPU Usage\",\"elastic_id\":\"pme_high_cpu\",\"display_function\":\"percent\"}]}",
+        "outputs": 1,
+        "x": 204,
+        "y": 466,
+        "wires": [
+            [
+                "sf1.ao17.intel.axwifi_score"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao17.intel.axwifi_score",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.axwifi_score",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"config\":{\"cpe\":{\"cpu_usage\":14,\"mem_usage\":20},\"radio\":[{\"type\":[\"radio_op_standards\",\"security_mode\",\"security_encryption\"],\"threshold\":[1,3],\"points\":3},{\"type\":[\"steering_perf\"],\"threshold\":[1,2],\"points\":3},{\"type\":[\"steering_interf\"],\"threshold\":[1,2],\"points\":9}],\"clients\":[{\"type\":[\"clients_op_standards\"],\"threshold\":[20,50],\"points\":3},{\"type\":[\"clients_coverage\",\"extender_weak_signal\",\"mesh_weak_signal\",\"extender_extreme_signal\",\"mesh_extreme_signal\"],\"threshold\":[20,50],\"points\":10},{\"type\":[\"clients_steering_speed\",\"clients_steering_coverage\"],\"threshold\":[20,50],\"points\":5}]}}",
+        "outputs": 1,
+        "x": 444,
+        "y": 466,
+        "wires": [
+            [
+                "sf1.ao18.forced_actions"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao18.forced_actions",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "forced_actions",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"config\":{\"delay_between_forced_in_s\":{\"reboot\":86400,\"optimize\":86400}}}",
+        "outputs": 1,
+        "x": 834,
+        "y": 476,
+        "wires": [
+            [
+                "sf1.ao19.arrange_data"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao19.arrange_data",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "arrange_data",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 204,
+        "y": 566,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "sf1.ao20.internal_performance_kpis",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "internal_performance_kpis",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1194,
+        "y": 246,
+        "wires": [
+            [
+                "sf1.ao10.intel.identify_changes"
+            ]
+        ]
+    },
+    {
+        "id": "sf1.ao21.intel.inspect_ieee1905",
+        "type": "ax-op",
+        "z": "sf1.WifiCoreFlow",
+        "name": "intel.inspect_ieee1905",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1180,
+        "y": 160,
+        "wires": [
+            [
+                "sf1.ao7.intel.calculate_radio_stats"
+            ]
+        ]
+    },
+    {
+        "id": "t1.as1.con.kafka.src",
+        "type": "ax-src",
+        "z": "t1",
+        "name": "con.kafka.src",
+        "label": "TR069 Collections",
+        "primary": true,
+        "kw": "{\"group_id\":\"axwifi\",\"topics\":[\"axwifi_readings\"]}",
+        "outputs": 1,
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "t1.ao28.ax.set_log"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i1",
+        "type": "inject",
+        "z": "t1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/i1.json",
+        "payloadType": "str",
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "t1.ao22.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.ao22.ax.file_read",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.file_read",
+        "label": "file",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 560,
+        "y": 220,
+        "wires": [
+            [
+                "t1.ao23.ax.update"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i2.NoWiFi",
+        "type": "inject",
+        "z": "t1",
+        "name": "No WiFi",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/No WiFi.json",
+        "payloadType": "str",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "t1.ao22.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i3.avm",
+        "type": "inject",
+        "z": "t1",
+        "name": "avm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "primary",
+                "v": "true",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/avm.json",
+        "payloadType": "str",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "t1.ao22.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.ao23.ax.update",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.update",
+        "label": "set as primary msg",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{\"head\":true,\"primary\":true}",
+        "outputs": 1,
+        "x": 960,
+        "y": 220,
+        "wires": [
+            [
+                "t1.lo1.rx:tolightscan"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i4.SimulateMeshJSONfull",
+        "type": "inject",
+        "z": "t1",
+        "name": "Simulate Mesh JSON full",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/Simulate Mesh JSON full.json",
+        "payloadType": "str",
+        "x": 170,
+        "y": 800,
+        "wires": [
+            [
+                "t1.ao24.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.ao24.ax.file_read",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.file_read",
+        "label": "file",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 390,
+        "y": 760,
+        "wires": [
+            [
+                "t1.axsn1.con.kafka.snk"
+            ]
+        ]
+    },
+    {
+        "id": "t1.axsn1.con.kafka.snk",
+        "type": "ax-snk",
+        "z": "t1",
+        "name": "con.kafka.snk",
+        "label": "",
+        "kw": "{\"topic\":\"axwifi_avm_readings\",\"key\":\"{d[cpeid]}\",\"enc\":\"msgpack\"}",
+        "outputs": 0,
+        "x": 560,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "t1.i5.SimulateMeshJSON",
+        "type": "inject",
+        "z": "t1",
+        "name": "Simulate Mesh JSON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/Simulate Mesh JSON.json",
+        "payloadType": "str",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "t1.ao24.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i6.huaweimesh",
+        "type": "inject",
+        "z": "t1",
+        "name": "huawei mesh",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/huawei mesh.json",
+        "payloadType": "str",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "t1.ao22.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.lo1.rx:tolightscan",
+        "type": "link out",
+        "z": "t1",
+        "name": "rx: to lightscan",
+        "mode": "link",
+        "links": [
+            "t4.li1.lightscanin"
+        ],
+        "x": 1135,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "t1.ao25.rx.delay",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "rx.delay",
+        "label": "Delay first cached json",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{\"duetime\":2}",
+        "outputs": 1,
+        "x": 1080,
+        "y": 400,
+        "wires": [
+            [
+                "t1.lo2.rx:tojson"
+            ]
+        ]
+    },
+    {
+        "id": "t1.ao26.ax.dump",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.dump",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 880,
+        "y": 440,
+        "wires": [
+            [
+                "t1.ao25.rx.delay"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i7.SimulateMeshJSON",
+        "type": "inject",
+        "z": "t1",
+        "name": "Simulate Mesh JSON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/Simulate Mesh JSON.json",
+        "payloadType": "str",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "t1.ao27.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.ao27.ax.file_read",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.file_read",
+        "label": "file",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "t1.ao26.ax.dump"
+            ]
+        ]
+    },
+    {
+        "id": "t1.i8.SimulateMeshJSON2",
+        "type": "inject",
+        "z": "t1",
+        "name": "Simulate Mesh JSON2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "data/inject/Simulate Mesh JSON2.json",
+        "payloadType": "str",
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "t1.ao27.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t1.lo2.rx:tojson",
+        "type": "link out",
+        "z": "t1",
+        "name": "rx: to json",
+        "mode": "link",
+        "links": [
+            "t4.li2.jsonin"
+        ],
+        "x": 1225,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "t1.as2.con.kafka.src",
+        "type": "ax-src",
+        "z": "t1",
+        "name": "con.kafka.src",
+        "label": "AVM json uploads",
+        "primary": false,
+        "kw": "{\"group_id\":\"axwifi\",\"topics\":[\"axwifi_avm_readings\"]}",
+        "outputs": 1,
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "t1.ao25.rx.delay"
+            ]
+        ]
+    },
+    {
+        "id": "t1.ao28.ax.set_log",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.set_log",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"key\":\"{d[cpeid]}\"}",
+        "outputs": 1,
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "t1.lo1.rx:tolightscan"
+            ]
+        ]
+    },
+    {
+        "id": "t2.as3.con.axredis.src",
+        "type": "ax-src",
+        "z": "t2",
+        "name": "con.axredis.src",
+        "label": "USP Data",
+        "primary": false,
+        "kw": "{\"name\":\"usp.stream\",\"key\":\"DATA\"}",
+        "outputs": 1,
+        "x": 80,
+        "y": 60,
+        "wires": [
+            [
+                "t2.axsn4.ax.snk.log",
+                "t2.ao29.usp.qualify_msg"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao29.usp.qualify_msg",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.qualify_msg",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 580,
+        "y": 60,
+        "wires": [
+            [
+                "t2.ao31.ax.set_log"
+            ]
+        ]
+    },
+    {
+        "id": "t2.lo3.link2",
+        "type": "link out",
+        "z": "t2",
+        "name": "link2",
+        "mode": "link",
+        "links": [],
+        "x": 1805,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "t2.i9.TiggerFullScanAVM",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "TiggerFullScan AVM",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/TiggerFullScan AVM.json",
+        "payloadType": "str",
+        "x": 210,
+        "y": 600,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao30.ax.file_read",
+        "type": "ax-op",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "ax.file_read",
+        "label": "from file",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 620,
+        "y": 800,
+        "wires": [
+            [
+                "t2.ao32.usp.job"
+            ]
+        ]
+    },
+    {
+        "id": "t2.d1.job_result",
+        "type": "debug",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "job_result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "t2.i10.HealthCheck",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "HealthCheck",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/HealthCheck.json",
+        "payloadType": "str",
+        "x": 190,
+        "y": 740,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i11.Hosts",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "Hosts",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Hosts.json",
+        "payloadType": "str",
+        "x": 170,
+        "y": 780,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i12..WiFi.",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": ".WiFi.",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/_.WiFi..json",
+        "payloadType": "str",
+        "x": 170,
+        "y": 860,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i13..Device.full",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": ".Device. full ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/_.Device. full .json",
+        "payloadType": "str",
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.axsn2.ax.snk.log",
+        "type": "ax-snk",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "ax.snk.log",
+        "label": "Log",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 1070,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "t2.i14.Reboot",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "Reboot",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Reboot.json",
+        "payloadType": "str",
+        "x": 170,
+        "y": 700,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i15..DeviceInfo.level2",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": ".DeviceInfo. level 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/_.DeviceInfo. level 2.json",
+        "payloadType": "str",
+        "x": 210,
+        "y": 940,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ac1.bytype",
+        "type": "ax-cond",
+        "z": "t2",
+        "name": "by type",
+        "condition": "[[\"type\",\"eq\",\"axwifi_realtime_valuechange\"],[\"type\",\"eq\",\"lightscan\"],[\"type\",\"eq\",\"fullscan\"],[\"type\",\"eq\",\"promoted\"],true]",
+        "match_msg": false,
+        "outputs": 5,
+        "port_labels": [],
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "t2.axsn7.ax.snk.log"
+            ],
+            [
+                "t2.ao39.usp.lightscan.to_tr181"
+            ],
+            [
+                "t2.ao33.usp.lightscan.from_redis"
+            ],
+            [
+                "t2.ao48.provisioning.is_provisioned"
+            ],
+            [
+                "t2.axsn9.ax.snk.log"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ac2.runfullscan?",
+        "type": "ax-cond",
+        "z": "t2",
+        "name": "run fullscan?",
+        "condition": "[[\"cap_fullscans\",\"not\",\"eq\",false],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 1130,
+        "y": 160,
+        "wires": [
+            [
+                "t2.ao40.usp.req_fullscan"
+            ],
+            [
+                "t2.ao42.usp.to_datamodel"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ac3.havelightscan",
+        "type": "ax-cond",
+        "z": "t2",
+        "name": "have lightscan",
+        "condition": "[\"lightscan\"]",
+        "match_msg": false,
+        "outputs": 1,
+        "port_labels": [],
+        "x": 1140,
+        "y": 220,
+        "wires": [
+            [
+                "t2.ao42.usp.to_datamodel"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao31.ax.set_log",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "ax.set_log",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"key\":\"{d[id]}\"}",
+        "outputs": 1,
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "t2.ac1.bytype"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao32.usp.job",
+        "type": "ax-op",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "usp.job",
+        "label": "",
+        "async_timeout": 99,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 820,
+        "y": 800,
+        "wires": [
+            [
+                "t2.d1.job_result",
+                "t2.axsn2.ax.snk.log"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i16.Ext.IP",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "Ext.IP",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Ext.IP.json",
+        "payloadType": "str",
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i17.BulkData.",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "BulkData.",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/BulkData..json",
+        "payloadType": "str",
+        "x": 180,
+        "y": 900,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i18.LocalAgent.Subscription.",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "LocalAgent.Subscription.",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/LocalAgent.Subscription..json",
+        "payloadType": "str",
+        "x": 230,
+        "y": 980,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i19.LightScan.",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "LightScan.",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/LightScan..json",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1020,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao33.usp.lightscan.from_redis",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.lightscan.from_redis",
+        "label": "",
+        "async_timeout": 99,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 930,
+        "y": 220,
+        "wires": [
+            [
+                "t2.ac3.havelightscan"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i20.TiggerSpeedtest",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "TiggerSpeedtest",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/TiggerSpeedtest.json",
+        "payloadType": "str",
+        "x": 200,
+        "y": 640,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.axsn3.usp.lightscan.to_redis",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "usp.lightscan.to_redis",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 1520,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "t2.lo4.rx:tolightscan",
+        "type": "link out",
+        "z": "t2",
+        "name": "rx: to lightscan",
+        "mode": "link",
+        "links": [
+            "t4.li1.lightscanin"
+        ],
+        "x": 1805,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "t2.axsn4.ax.snk.log",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "ax.snk.log",
+        "label": "Log",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 370,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "t2.i21.SupportedDM",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "SupportedDM",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/SupportedDM.json",
+        "payloadType": "str",
+        "x": 470,
+        "y": 600,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i22.Set",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "Set",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Set.json",
+        "payloadType": "str",
+        "x": 450,
+        "y": 1040,
+        "wires": [
+            [
+                "t2.ao30.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i23.Jointelli_S22_USP.json",
+        "type": "inject",
+        "z": "t2",
+        "name": "Jointelli_S22_USP.json",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Jointelli_S22_USP.json",
+        "payloadType": "str",
+        "x": 200,
+        "y": 1520,
+        "wires": [
+            [
+                "t2.ao34.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao34.ax.file_read",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "ax.file_read",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 450,
+        "y": 1520,
+        "wires": [
+            [
+                "t2.ao35.usp.tools.get_res_to_dict"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao35.usp.tools.get_res_to_dict",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.tools.get_res_to_dict",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 710,
+        "y": 1520,
+        "wires": [
+            [
+                "t2.d2.debug8",
+                "t2.axsn5.ax.snk.clipboard"
+            ]
+        ]
+    },
+    {
+        "id": "t2.d2.debug8",
+        "type": "debug",
+        "z": "t2",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "t2.axsn5.ax.snk.clipboard",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "ax.snk.clipboard",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 980,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "t2.i24.Set",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "Set",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Set.json",
+        "payloadType": "str",
+        "x": 690,
+        "y": 940,
+        "wires": [
+            [
+                "t2.ao32.usp.job"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i25.ExploreDMRecursively",
+        "type": "inject",
+        "z": "t2",
+        "name": "Explore DM Recursively",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "os::E87829-CCKKCNC0N22000005",
+        "payloadType": "str",
+        "x": 200,
+        "y": 1620,
+        "wires": [
+            [
+                "t2.ao36.usp.tools.explore"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao36.usp.tools.explore",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.tools.explore",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 450,
+        "y": 1620,
+        "wires": [
+            [
+                "t2.d2.debug8"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao37.usp.lightscan.get",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.lightscan.get",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1640,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "t2.i26.ExploreDMRecursively",
+        "type": "inject",
+        "z": "t2",
+        "name": "Explore DM Recursively",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "os::E87829-CCKKCNC0N22000005",
+        "payloadType": "str",
+        "x": 200,
+        "y": 1700,
+        "wires": [
+            [
+                "t2.ao38.usp.tools.get_all"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao38.usp.tools.get_all",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.tools.get_all",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 440,
+        "y": 1700,
+        "wires": [
+            [
+                "t2.d2.debug8"
+            ]
+        ]
+    },
+    {
+        "id": "t2.as4.periodic_getter",
+        "type": "ax-src",
+        "z": "t2",
+        "name": "periodic_getter",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": true,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1430,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "t2.ao39.usp.lightscan.to_tr181",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.lightscan.to_tr181",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 920,
+        "y": 160,
+        "wires": [
+            [
+                "t2.ac2.runfullscan?"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao40.usp.req_fullscan",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.req_fullscan",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1320,
+        "y": 140,
+        "wires": [
+            [
+                "t2.axsn3.usp.lightscan.to_redis"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i27.JointelliLightscan",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "Jointelli Lightscan",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"type\":\"get\",\"epid\":\"os::E87829-CCKKCNC0N22000005\",\"timeout\":20,\"body\":[\"Device.DeviceInfo.\",\"Device.IP.Diagnostics.\"]}",
+        "payloadType": "json",
+        "x": 670,
+        "y": 640,
+        "wires": [
+            [
+                "t2.ao32.usp.job"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i28.USPLightscan",
+        "type": "inject",
+        "z": "t2",
+        "g": "t2.g1.RPCs",
+        "name": "USP Lightscan",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"type\":\"get\",\"epid\":\"os::00040E-1CED6F76FD94\",\"timeout\":20,\"body\":[\"Device.BulkData.Profile.1.ReportingInterval\",\"Device.DeviceInfo.ProcessStatus.CPUUsage\",\"Device.DeviceInfo.ProductClass\",\"Device.DeviceInfo.SerialNumber\",\"Device.DeviceInfo.SoftwareVersion\",\"Device.DeviceInfo.UpTime\",\"Device.Hosts.Host.\",\"Device.WiFi.AccessPoint.\",\"Device.WiFi.Radio.\",\"Device.WiFi.SSID.\",\"Device.LocalAgent.Controller.\",\"Device.DeviceInfo.HardwareVersion\",\"Device.DeviceInfo.Manufacturer\",\"Device.DeviceInfo.ManufacturerOUI\",\"Device.DeviceInfo.MemoryStatus.Free\",\"Device.DeviceInfo.MemoryStatus.Total\",\"Device.DeviceInfo.ModelName\",\"Device.Ethernet.Link.\",\"Device.IEEE1905.AL.NetworkTopology.\"]}",
+        "payloadType": "json",
+        "x": 1020,
+        "y": 600,
+        "wires": [
+            [
+                "t2.ao32.usp.job"
+            ]
+        ]
+    },
+    {
+        "id": "t2.as5.con.http_bulk_data.request",
+        "type": "ax-src",
+        "z": "t2",
+        "name": "con.http_bulk_data.request",
+        "label": "Http Bulk Data",
+        "primary": true,
+        "kw": "{\"streaming\":0}",
+        "outputs": 1,
+        "x": 150,
+        "y": 1940,
+        "wires": [
+            [
+                "t2.axsn6.ax.snk.log"
+            ]
+        ]
+    },
+    {
+        "id": "t2.axsn6.ax.snk.log",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "ax.snk.log",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 320,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "t2.i29.axwifi_realtime_valuechange",
+        "type": "inject",
+        "z": "t2",
+        "name": "axwifi_realtime_valuechange",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/axwifi_realtime_valuechange.json",
+        "payloadType": "str",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "t2.ao41.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao41.ax.file_read",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "ax.file_read",
+        "label": "file",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "t2.ao29.usp.qualify_msg"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i30.LightScan",
+        "type": "inject",
+        "z": "t2",
+        "name": "Light Scan",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Light Scan.json",
+        "payloadType": "str",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "t2.ao41.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i31.FullScanBulk",
+        "type": "inject",
+        "z": "t2",
+        "name": "FullScanBulk",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/FullScanBulk.json",
+        "payloadType": "str",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "t2.ao41.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao42.usp.to_datamodel",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.to_datamodel",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1410,
+        "y": 220,
+        "wires": [
+            [
+                "t2.ao43.usp.normalize_tr181_indexes"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao43.usp.normalize_tr181_indexes",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "usp.normalize_tr181_indexes",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1640,
+        "y": 220,
+        "wires": [
+            [
+                "t2.lo4.rx:tolightscan"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i32.avm_lightscan_as_bulk_data",
+        "type": "inject",
+        "z": "t2",
+        "name": "avm_lightscan_as_bulk_data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/avm_lightscan_as_bulk_data.json",
+        "payloadType": "str",
+        "x": 1000,
+        "y": 280,
+        "wires": [
+            [
+                "t2.ao44.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao44.ax.file_read",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "ax.file_read",
+        "label": "file",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1210,
+        "y": 280,
+        "wires": [
+            [
+                "t2.ao42.usp.to_datamodel"
+            ]
+        ]
+    },
+    {
+        "id": "t2.axsn7.ax.snk.log",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "ax.snk.log",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 880,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "t2.ao45.provisioning.provision",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "provisioning.provision",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 440,
+        "y": 1220,
+        "wires": [
+            [
+                "t2.d3.debug12"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i33.ProvisionF35",
+        "type": "inject",
+        "z": "t2",
+        "name": "Provision F35",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"epid\":\"os::00040E-B0F208762F35\"}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 1220,
+        "wires": [
+            [
+                "t2.ao45.provisioning.provision"
+            ]
+        ]
+    },
+    {
+        "id": "t2.d3.debug12",
+        "type": "debug",
+        "z": "t2",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "t2.ao46.provisioning.is_provisioned",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "provisioning.is_provisioned",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 460,
+        "y": 1400,
+        "wires": [
+            [
+                "t2.d4.debug14"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i34.IsF35provisioned?",
+        "type": "inject",
+        "z": "t2",
+        "name": "Is F35 provisioned?",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"epid\":\"os::00040E-B0F208762F35\"}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 1400,
+        "wires": [
+            [
+                "t2.ao46.provisioning.is_provisioned"
+            ]
+        ]
+    },
+    {
+        "id": "t2.d4.debug14",
+        "type": "debug",
+        "z": "t2",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "t2.ao47.provisioning.deprovision",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "provisioning.deprovision",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 450,
+        "y": 1320,
+        "wires": [
+            [
+                "t2.d5.debug15"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i35.DeprovisionF35",
+        "type": "inject",
+        "z": "t2",
+        "name": "Deprovision F35",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"epid\":\"os::00040E-B0F208762F35\"}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 1320,
+        "wires": [
+            [
+                "t2.ao47.provisioning.deprovision"
+            ]
+        ]
+    },
+    {
+        "id": "t2.d5.debug15",
+        "type": "debug",
+        "z": "t2",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "t2.ac4.Needsprovisioning?",
+        "type": "ax-cond",
+        "z": "t2",
+        "name": "Needs provisioning?",
+        "condition": "[\"is_provisioned\",\"eq\",false]",
+        "match_msg": false,
+        "outputs": 1,
+        "port_labels": [],
+        "x": 1200,
+        "y": 340,
+        "wires": [
+            [
+                "t2.ao49.provisioning.provision"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao48.provisioning.is_provisioned",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "provisioning.is_provisioned",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 940,
+        "y": 340,
+        "wires": [
+            [
+                "t2.ac4.Needsprovisioning?"
+            ]
+        ]
+    },
+    {
+        "id": "t2.ao49.provisioning.provision",
+        "type": "ax-op",
+        "z": "t2",
+        "name": "provisioning.provision",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1440,
+        "y": 340,
+        "wires": [
+            [
+                "t2.axsn8.ax.snk.log"
+            ]
+        ]
+    },
+    {
+        "id": "t2.axsn8.ax.snk.log",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "ax.snk.log",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 1640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "t2.axsn9.ax.snk.log",
+        "type": "ax-snk",
+        "z": "t2",
+        "name": "ax.snk.log",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 880,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "t2.i36.Boot",
+        "type": "inject",
+        "z": "t2",
+        "name": "Boot",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Boot.json",
+        "payloadType": "str",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "t2.ao41.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t2.i37.Connect",
+        "type": "inject",
+        "z": "t2",
+        "name": "Connect",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "data/inject/Connect.json",
+        "payloadType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "t2.ao41.ax.file_read"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as6.con.http.request",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "con.http.request",
+        "label": "API Hit",
+        "primary": false,
+        "kw": "{\"streaming\":0,\"token_key\":\"X-Ax-Api-Token\"}",
+        "outputs": 1,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "t3.ao50.con.http.push_to_subj"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn10.con.http.respond",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "con.http.respond",
+        "kw": "{}",
+        "outputs": 0,
+        "x": 810,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "t3.ao50.con.http.push_to_subj",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "con.http.push_to_subj",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "t3.axsn10.con.http.respond"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as7.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/reboot",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 111,
+        "y": 344.000039100647,
+        "wires": [
+            [
+                "t3.ac7.is_dbl_job"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn11.api2.update_redis",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "api2.update_redis",
+        "label": "WriteRedis",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 430,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "t3.as8.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/finish",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "t3.axsn11.api2.update_redis"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as9.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/status",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "t3.ao52.api2.read_redis_events"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as10.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/factory_reset",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 131,
+        "y": 384.000039100647,
+        "wires": [
+            [
+                "t3.ac7.is_dbl_job"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as11.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/progress",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "t3.axsn11.api2.update_redis"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn12.con.kafka.snk",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "con.kafka.snk",
+        "label": "tr-069 job to kafka",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"topic\":\"axwifi_adhoc\"}",
+        "outputs": 0,
+        "x": 1070,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "t3.as12.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/optimize",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 121,
+        "y": 464.000039100647,
+        "wires": [
+            [
+                "t3.ac7.is_dbl_job"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as13.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/reconfigure",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 131,
+        "y": 424.000039100647,
+        "wires": [
+            [
+                "t3.ac7.is_dbl_job"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as14.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/refresh",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 111,
+        "y": 304.000039100647,
+        "wires": [
+            [
+                "t3.ac7.is_dbl_job"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao51.api2.update_redis",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "api2.update_redis",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 870,
+        "y": 420,
+        "wires": [
+            [
+                "t3.ac8.NotUSP"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao52.api2.read_redis_events",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "api2.read_redis_events",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "t3.axsn13.ax.noop"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn13.ax.noop",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "ax.noop",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "t3.ao53.rx.buffer_with_time_or_count",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "rx.buffer_with_time_or_count",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"timespan\": 0.6, \"count\": 8}",
+        "outputs": 1,
+        "x": 1160,
+        "y": 1480,
+        "wires": [
+            [
+                "t3.axsn14.con.redis.set_events"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao54.data_filter",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "data_filter",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"path\":\"history\",\"allow\":[\"id\",\"ts\",\"job\",\"cache\",\"collector.full_scan\",\"collector.light_scan\",\"2.changes.auto\",\"2.changes.axwifi\",\"2.changes.manual\",\"2.changes.owner\",\"2.changes.ts\",\"2.expert.cur_ch\",\"2.expert.cur_bw\",\"2.expert.cur_q\",\"2.expert.cur_radio_ch\",\"2.expert.target_ch\",\"2.expert.target_bw\",\"2.expert.target_q\",\"2.expert.delta_q\",\"2.expert.neighbors.aci\",\"2.expert.neighbors.cci\",\"2.expert.neighbors.aci_cci\",\"2.expert.neighbors.friends\",\"2.expert.neighbors.total\",\"2.pme.all\",\"2.recommendations.total\",\"2.ssid.1.clients.total\",\"2.ssid.1.clients.low_rssi\",\"2.ssid.1.clients.low_rssi_macs\",\"2.ssid.1.clients.sig_avg\",\"2.issues.interf\",\"2.changes.issues.perf\",\"2.clients.mesh_count\",\"2.clients.extender_count\",\"WiFi.Radio.1.Channel\",\"WiFi.Radio.1.AutoChannelEnable\",\"WiFi.Radio.1.Stats.BytesSent\",\"WiFi.Radio.1.Stats.BytesReceived\",\"5.changes.auto\",\"5.changes.axwifi\",\"5.changes.manual\",\"5.changes.owner\",\"5.changes.ts\",\"5.expert.cur_ch\",\"5.expert.cur_bw\",\"5.expert.cur_q\",\"5.expert.cur_radio_ch\",\"5.expert.target_ch\",\"5.expert.target_bw\",\"5.expert.target_q\",\"5.expert.delta_q\",\"5.expert.neighbors.aci\",\"5.expert.neighbors.cci\",\"5.expert.neighbors.friends\",\"5.expert.neighbors.total\",\"5.pme.all\",\"5.recommendations.total\",\"5.ssid.5.clients.total\",\"5.ssid.5.clients.low_rssi\",\"5.ssid.5.clients.low_rssi_macs\",\"5.ssid.5.clients.sig_avg\",\"5.issues.interf\",\"5.changes.issues.perf\",\"5.clients.mesh_count\",\"5.clients.extender_count\",\"WiFi.Radio.5.Channel\",\"WiFi.Radio.5.AutoChannelEnable\",\"WiFi.Radio.5.Stats.BytesSent\",\"WiFi.Radio.5.Stats.BytesReceived\",\"WiFi.SSID.1.Stats.BytesSent\",\"WiFi.SSID.1.Stats.BytesReceived\",\"WiFi.SSID.1.Stats.PacketsSent\",\"WiFi.SSID.1.Stats.PacketsReceived\",\"WiFi.SSID.1.Stats.ErrorsSent\",\"WiFi.SSID.1.Stats.ErrorsReceived\",\"WiFi.SSID.1.Stats.RetransCount\",\"WiFi.SSID.2.Stats.BytesSent\",\"WiFi.SSID.2.Stats.BytesReceived\",\"WiFi.SSID.2.Stats.PacketsSent\",\"WiFi.SSID.2.Stats.PacketsReceived\",\"WiFi.SSID.2.Stats.ErrorsSent\",\"WiFi.SSID.2.Stats.ErrorsReceived\",\"WiFi.SSID.2.Stats.RetransCount\",\"WiFi.SSID.5.Stats.BytesSent\",\"WiFi.SSID.5.Stats.BytesReceived\",\"WiFi.SSID.5.Stats.PacketsSent\",\"WiFi.SSID.5.Stats.PacketsReceived\",\"WiFi.SSID.5.Stats.ErrorsSent\",\"WiFi.SSID.5.Stats.ErrorsReceived\",\"WiFi.SSID.5.Stats.RetransCount\",\"WiFi.SSID.6.Stats.BytesSent\",\"WiFi.SSID.6.Stats.BytesReceived\",\"WiFi.SSID.6.Stats.PacketsSent\",\"WiFi.SSID.6.Stats.PacketsReceived\",\"WiFi.SSID.6.Stats.ErrorsSent\",\"WiFi.SSID.6.Stats.ErrorsReceived\",\"WiFi.SSID.6.Stats.RetransCount\",\"DeviceInfo.ProcessStatus.CPUUsage\",\"DeviceInfo.MemoryStatus.Free\",\"DeviceInfo.MemoryStatus.usage\",\"cpe.recommendations.details.mem_usage\"]}",
+        "outputs": 1,
+        "x": 940,
+        "y": 1480,
+        "wires": [
+            [
+                "t3.ao53.rx.buffer_with_time_or_count"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn14.con.redis.set_events",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "con.redis.set_events",
+        "label": "cache into redis",
+        "kw": "{\"key\":\"qualities:{d[id]}\",\"enc\":\"compressed\",\"maxlen\":96}",
+        "outputs": 0,
+        "x": 1400,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "t3.ao55.ax.conv.axtree",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "ax.conv.axtree",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 760,
+        "y": 1480,
+        "wires": [
+            [
+                "t3.ao54.data_filter"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao56.api2.qualify_adhoc",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "api2.qualify_adhoc",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 550,
+        "y": 1480,
+        "wires": [
+            [
+                "t3.axsn16.con.kafka.snk",
+                "t3.ao55.ax.conv.axtree",
+                "t3.axsn15.con.elastic.snk"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn15.con.elastic.snk",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "con.elastic.snk",
+        "label": "job to elastic",
+        "kw": "{\"index\":\"wifi\"}",
+        "outputs": 0,
+        "x": 750,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "t3.axsn16.con.kafka.snk",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "con.kafka.snk",
+        "label": "job to kafka",
+        "kw": "{\"topic\":\"axwifi_adhoc\"}",
+        "outputs": 0,
+        "x": 750,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "t3.as15.con.kafka.src",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "con.kafka.src",
+        "label": "Adhoc TR069 Collections",
+        "primary": true,
+        "kw": "{\"group_id\":\"axwifi\",\"topics\":[\"axwifi_readings_adhoc\"]}",
+        "outputs": 1,
+        "x": 170,
+        "y": 940,
+        "wires": [
+            [
+                "t3.ac6.is_reading"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao57.ax.set_log",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "ax.set_log",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"key\":\"{d[cpeid]}\"}",
+        "outputs": 1,
+        "x": 390,
+        "y": 1020,
+        "wires": [
+            [
+                "t3.ao58.ax.add_conf"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao58.ax.add_conf",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "ax.add_conf",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"country\": \"Europe\",\"upper_chan_2\":13,\"dfs_weight\":0.95,\"regulatory_domain\":\"ETSI\",\"algo_2\":\"odiac\",\"algo_5\":\"base\",\"allow_auto_enforce_2\":true,\"allow_auto_enforce_5\":true}",
+        "outputs": 1,
+        "x": 390,
+        "y": 1080,
+        "wires": [
+            [
+                "t3.ao59.configs_by_tenant"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao59.configs_by_tenant",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "configs_by_tenant",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"t01\":{\"elastic\":{\"index\":\"t01\",\"idx_at\":\"conf.tenant_id\",\"alias\":{\"tenant1\":{}}},\"country\":\"Europe\",\"upper_chan_2\":11},\"t02\":{\"elastic\":{\"index\":\"t02\",\"idx_at\":\"conf.tenant_id\",\"alias\":{\"tenant2\":{}}},\"country\":\"Europe\",\"upper_chan_2\":13},\"live\":{\"elastic\":{\"index\":\"live\",\"idx_at\":\"conf.tenant_id\",\"alias\":{\"generic\":{}}},\"country\":\"Europe\",\"upper_chan_2\":11,\"intel.pme\":{\"default\":[{\"name\":\"2.quality_drop\",\"current\":\"2.expert.cur_q\",\"mov_avg\":\"2.pme.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.35,\"action\":\"optimize\",\"min\":0.2,\"max\":1,\"description\":\"Sudden drop of quality\"}],\"avm_fb7530\":[{\"name\":\"2.quality_drop\",\"current\":\"2.expert.cur_q\",\"mov_avg\":\"2.pme.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.3,\"action\":\"optimize\",\"min\":0.2,\"max\":1,\"description\":\"Sudden drop of quality\"}]},\"intel.generate_recommendations\":{\"default\":{\"resources_threshold\":{\"cpu\":90,\"memory\":95}},\"avm_fb7530\":{\"bad_sec_modes\":[\"WEP-64\"],\"resources_threshold\":{\"cpu\":96,\"memory\":95}}}}}",
+        "outputs": 1,
+        "x": 370,
+        "y": 1140,
+        "wires": [
+            [
+                "t3.ao60.validate_and_arrange_data"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao60.validate_and_arrange_data",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "validate_and_arrange_data",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 340,
+        "y": 1200,
+        "wires": [
+            [
+                "t3.ac5.IsAVM"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ac5.IsAVM",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "Is AVM",
+        "condition": "[[\"metadata.mode\",\"in\",[\"avm_fb7590\",\"avm_fb7530\"]],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 400,
+        "y": 1260,
+        "wires": [
+            [
+                "t3.aj1.waitfor1or2jsonposts"
+            ],
+            [
+                "t3.ac11.hasHuaweiMesh"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as16.con.kafka.src",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "con.kafka.src",
+        "label": "Adhoc AVM json uploads",
+        "primary": false,
+        "kw": "{\"group_id\":\"axwifi\",\"topics\":[\"axwifi_avm_readings_adhoc\"]}",
+        "outputs": 1,
+        "x": 690,
+        "y": 940,
+        "wires": [
+            [
+                "t3.ao61.rx.delay"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao61.rx.delay",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "rx.delay",
+        "label": "Delay first cached json",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{\"duetime\":2}",
+        "outputs": 1,
+        "x": 960,
+        "y": 940,
+        "wires": [
+            [
+                "t3.aj1.waitfor1or2jsonposts"
+            ]
+        ]
+    },
+    {
+        "id": "t3.aj1.waitfor1or2jsonposts",
+        "type": "ax-join",
+        "z": "t3",
+        "name": "wait for 1 or 2 json posts",
+        "mode": "custom",
+        "build": "merged",
+        "property": "join.combine_tr069_with_avm_json",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "join.id_from_kafka_or_json",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "30",
+        "count": "3",
+        "ipc_via": "redis",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 1240,
+        "wires": [
+            [
+                "t3.ao62.avm.inspect_avm_clients"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao62.avm.inspect_avm_clients",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "avm.inspect_avm_clients",
+        "label": "Enrich AVM Clients data",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 970,
+        "y": 1240,
+        "wires": [
+            [
+                "t3.sfi1"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ac6.is_reading",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "is_reading",
+        "condition": "[[\"cpeid\",\"and\",\"props.WiFi\"]]",
+        "match_msg": false,
+        "outputs": 1,
+        "port_labels": [],
+        "x": 390,
+        "y": 940,
+        "wires": [
+            [
+                "t3.ao57.ax.set_log"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao63.api2.prepare_kafka_job",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "api2.prepare_kafka_job",
+        "label": "prepare_job",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 650,
+        "y": 420,
+        "wires": [
+            [
+                "t3.ao51.api2.update_redis"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ac7.is_dbl_job",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "is_dbl_job",
+        "condition": "{\"lookup_provider\":\"api2\",\"expression\":[[\":chk\"],true]}",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 440,
+        "y": 340,
+        "wires": [
+            [
+                "t3.axsn10.con.http.respond"
+            ],
+            [
+                "t3.ao63.api2.prepare_kafka_job"
+            ]
+        ]
+    },
+    {
+        "id": "t3.i38.GenerateToken",
+        "type": "inject",
+        "z": "t3",
+        "name": "Generate Token",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "{\"verbs\":\"*\",\"pth\":\"/api\",\"user\":\"admin\"}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 40,
+        "wires": [
+            [
+                "t3.ao64.con.http.gen_token"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao64.con.http.gen_token",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "con.http.gen_token",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "t3.d6.show_token"
+            ]
+        ]
+    },
+    {
+        "id": "t3.d6.show_token",
+        "type": "debug",
+        "z": "t3",
+        "name": "show_token",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "t3.ac8.NotUSP",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "Not USP",
+        "condition": "[[\"id\",\"not\",\"contains\",\"::\"],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 837,
+        "y": 503,
+        "wires": [
+            [
+                "t3.axsn12.con.kafka.snk"
+            ],
+            [
+                "t3.ac9.reboot,facreset"
+            ]
+        ]
+    },
+    {
+        "id": "t3.as17.ax.src.on_demand",
+        "type": "ax-src",
+        "z": "t3",
+        "name": "ax.src.on_demand",
+        "label": "/written",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "t3.axsn11.api2.update_redis"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ac9.reboot,facreset",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "reboot, facreset",
+        "condition": "[[\"type\",\"not\",\"in\",[\"refresh\",\"optimize\",\"reconfigure\"]],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 1060,
+        "y": 600,
+        "wires": [
+            [
+                "t3.axsn17.usp.req_operate"
+            ],
+            [
+                "t3.ao65.usp.lightscan.get"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao65.usp.lightscan.get",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "usp.lightscan.get",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1287,
+        "y": 643,
+        "wires": [
+            [
+                "t3.ao68.usp.lightscan.to_tr181"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ac10.wantnofullscan",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "want no fullscan",
+        "condition": "[[[\"type\",\"eq\",\"reconfigure\"],\"or\",[\"params.light\",\"eq\",\"true\"]],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 1280,
+        "y": 760,
+        "wires": [
+            [
+                "t3.ao69.usp.to_datamodel"
+            ],
+            [
+                "t3.ao66.usp.lightscan.to_redis"
+            ]
+        ]
+    },
+    {
+        "id": "t3.axsn17.usp.req_operate",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "usp.req_operate",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 1277,
+        "y": 583,
+        "wires": []
+    },
+    {
+        "id": "t3.axsn18.usp.req_operate",
+        "type": "ax-snk",
+        "z": "t3",
+        "name": "usp.req_operate",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 0,
+        "x": 1537,
+        "y": 823,
+        "wires": []
+    },
+    {
+        "id": "t3.ao66.usp.lightscan.to_redis",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "usp.lightscan.to_redis",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1297,
+        "y": 823,
+        "wires": [
+            [
+                "t3.axsn18.usp.req_operate"
+            ]
+        ]
+    },
+    {
+        "id": "t3.lo5.rx:tolightscan",
+        "type": "link out",
+        "z": "t3",
+        "name": "rx: to lightscan",
+        "mode": "link",
+        "links": [
+            "t4.li1.lightscanin"
+        ],
+        "x": 1915,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "t3.ao67.huawei.to_hosts",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "huawei.to_hosts",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 760,
+        "y": 1300,
+        "wires": [
+            [
+                "t3.sfi1"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ac11.hasHuaweiMesh",
+        "type": "ax-cond",
+        "z": "t3",
+        "name": "has Huawei Mesh",
+        "condition": "[[\"Huawei.Mesh\"],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 550,
+        "y": 1320,
+        "wires": [
+            [
+                "t3.ao67.huawei.to_hosts"
+            ],
+            [
+                "t3.sfi1"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao68.usp.lightscan.to_tr181",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "usp.lightscan.to_tr181",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1300,
+        "y": 700,
+        "wires": [
+            [
+                "t3.ac10.wantnofullscan"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao69.usp.to_datamodel",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "usp.to_datamodel",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1530,
+        "y": 740,
+        "wires": [
+            [
+                "t3.ao70.usp.normalize_tr181_indexes"
+            ]
+        ]
+    },
+    {
+        "id": "t3.ao70.usp.normalize_tr181_indexes",
+        "type": "ax-op",
+        "z": "t3",
+        "name": "usp.normalize_tr181_indexes",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1760,
+        "y": 740,
+        "wires": [
+            [
+                "t3.lo5.rx:tolightscan"
+            ]
+        ]
+    },
+    {
+        "id": "t3.sfi1",
+        "type": "subflow:sf1.WifiCoreFlow",
+        "z": "t3",
+        "name": "",
+        "x": 987.9999389648438,
+        "y": 1321,
+        "wires": [
+            [
+                "t3.ao56.api2.qualify_adhoc"
+            ]
+        ]
+    },
+    {
+        "id": "t4.c1.AXWIFI-DEV",
+        "type": "comment",
+        "z": "t4",
+        "name": "AXWIFI-DEV",
+        "info": "Release 2.4",
+        "x": 130,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "t4.ah1.ax-hub",
+        "type": "ax-hub",
+        "z": "t4",
+        "name": "ax-hub",
+        "x": 730,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            [
+                "t4.hr1"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ac12.is_reading",
+        "type": "ax-cond",
+        "z": "t4",
+        "name": "is_reading",
+        "condition": "[[\"cpeid\",\"and\",\"props.WiFi\"]]",
+        "match_msg": false,
+        "outputs": 1,
+        "port_labels": [],
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "t4.ao80.multiap_to_hosts"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ao71.ax.add_conf",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "ax.add_conf",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"country\":\"Europe\",\"upper_chan_2\":13}",
+        "outputs": 1,
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "t4.ao72.configs_by_tenant"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ao72.configs_by_tenant",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "configs_by_tenant",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"t01\":{\"elastic\":{\"index\":\"t01\",\"idx_at\":\"conf.tenant_id\",\"alias\":{\"tenant1\":{}}},\"country\":\"Europe\",\"upper_chan_2\":11},\"t02\":{\"elastic\":{\"index\":\"t02\",\"idx_at\":\"conf.tenant_id\",\"alias\":{\"tenant2\":{}}},\"country\":\"Europe\",\"upper_chan_2\":13},\"live\":{\"elastic\":{\"index\":\"live\",\"idx_at\":\"conf.tenant_id\",\"alias\":{\"generic\":{}}},\"country\":\"Europe\",\"upper_chan_2\":11,\"intel.pme\":{\"default\":[{\"name\":\"2.quality_drop\",\"current\":\"2.expert.cur_q\",\"mov_avg\":\"2.pme.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.35,\"action\":\"optimize\",\"min\":0.2,\"max\":1,\"description\":\"Sudden drop of quality\"}],\"avm_fb7530\":[{\"name\":\"2.quality_drop\",\"current\":\"2.expert.cur_q\",\"mov_avg\":\"2.pme.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.3,\"action\":\"optimize\",\"min\":0.2,\"max\":1,\"description\":\"Sudden drop of quality\"}]},\"intel.generate_recommendations\":{\"default\":{\"resources_threshold\":{\"cpu\":90,\"memory\":95}},\"avm_fb7530\":{\"bad_sec_modes\":[\"WEP-64\"],\"resources_threshold\":{\"cpu\":96,\"memory\":95}}}}}",
+        "outputs": 1,
+        "x": 290,
+        "y": 400,
+        "wires": [
+            [
+                "t4.ao73.validate_and_arrange_data"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ao73.validate_and_arrange_data",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "validate_and_arrange_data",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "t4.ac13.isAVM"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ac13.isAVM",
+        "type": "ax-cond",
+        "z": "t4",
+        "name": "is AVM",
+        "condition": "[[\"metadata.mode\",\"in\",[\"avm_fb7590\",\"avm_fb7530\"]],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "t4.aj2.waitfor1or2jsonposts"
+            ],
+            [
+                "t4.sfi2"
+            ]
+        ]
+    },
+    {
+        "id": "t4.aj2.waitfor1or2jsonposts",
+        "type": "ax-join",
+        "z": "t4",
+        "name": "wait for 1 or 2 json posts",
+        "mode": "custom",
+        "build": "merged",
+        "property": "join.combine_tr069_with_avm_json",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "join.id_from_kafka_or_json",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "30",
+        "count": "3",
+        "ipc_via": "redis",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 724,
+        "y": 406,
+        "wires": [
+            [
+                "t4.ao74.avm.inspect_avm_clients"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ao74.avm.inspect_avm_clients",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "avm.inspect_avm_clients",
+        "label": "Enrich AVM Clients data",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "t4.sfi2"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ac14.usprecon|optim|nousp",
+        "type": "ax-cond",
+        "z": "t4",
+        "name": "usp recon | optim | no usp",
+        "condition": "[[\"collector.job.type\",\"eq\",\"reconfigure\"],[\"collector.job.type\",\"eq\",\"optimize\"],true]",
+        "match_msg": false,
+        "outputs": 3,
+        "port_labels": [],
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "t4.ao75.usp.enforce"
+            ],
+            [
+                "t4.ao76.api2.qualify_adhoc"
+            ],
+            [
+                "t4.ac15.qualify"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ao75.usp.enforce",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "usp.enforce",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 976,
+        "y": 554,
+        "wires": [
+            [
+                "t4.axsn19.con.kafka.snk"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ao76.api2.qualify_adhoc",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "api2.qualify_adhoc",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "t4.ao75.usp.enforce"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ac15.qualify",
+        "type": "ax-cond",
+        "z": "t4",
+        "name": "qualify",
+        "condition": "{\"lookup_provider\":\"lookup\",\"expression\":{\"root\":[\"ts\",\"and\",[\":enforce2\",\"xor\",\":enforce5\",\"xor\",\":rollback2\",\"xor\",\":rollback5\"]],\"enforce2\":[\":auto_enforce2\",\"and\",\":enf_delta2\",\"and\",\"2.expert\",\"and\",[\":qual_improve2\",\"or\",\":qual_worst2\",\"or\",[\":window\",\"and\",[\"2.expert.delta_q\",\">=\",0.1]]],\"and\",\":add_enforce_2\"],\"enforce5\":[\":auto_enforce5\",\"and\",\":enf_delta5\",\"and\",\"5.expert\",\"and\",[\":qual_improve5\",\"or\",\":qual_worst5\",\"or\",[\":window\",\"and\",[\"5.expert.delta_q\",\">=\",0.1]]],\"and\",\":add_enforce_5\"],\"rollback2\":[\":allow_rollback2\",\"and\",\":autochsel_off2\",\"and\",\":add_rollback_2\"],\"rollback5\":[\":allow_rollback5\",\"and\",\":autochsel_off5\",\"and\",\":add_rollback_5\"],\"qual_improve2\":[[[\"2.expert.cur_q\",\"and\",\"2.expert.cur_q\",\"<\",0.9],\"and\",[\"2.expert.delta_q\",\">=\",0.1]],\"or\",[[\"2.expert.cur_q\",\">=\",0.9,\"and\",\"2.expert.cur_q\",\"<\",1],\"and\",[\"2.expert.delta_q\",\">=\",0.05,\"or\",\"2.expert.target_q\",\"==\",1]]],\"qual_improve5\":[[[\"5.expert.cur_q\",\"and\",\"5.expert.cur_q\",\"<\",0.9],\"and\",[\"5.expert.delta_q\",\">=\",0.1]],\"or\",[[\"5.expert.cur_q\",\">=\",0.9,\"and\",\"5.expert.cur_q\",\"<\",1],\"and\",[\"5.expert.delta_q\",\">=\",0.05,\"or\",\"5.expert.target_q\",\"==\",1]]],\"qual_worst2\":[[\"2.expert.cur_q\",\"and\",\"2.expert.cur_q\",\"<=\",0.3],\"and\",[\"2.expert.delta_q\",\">=\",0.01]],\"qual_worst5\":[[\"5.expert.cur_q\",\"and\",\"5.expert.cur_q\",\"<=\",0.3],\"and\",[\"5.expert.delta_q\",\">=\",0.01]],\"window\":[\"dt:hour\",\">=\",2,\"and\",\"dt:hour\",\"<=\",5],\"auto_enforce2\":[\"metadata.allow_auto_enforce_2\",\"and\",\"metadata.allow_auto_enforce_2\",\"==\",1],\"auto_enforce5\":[\"metadata.allow_auto_enforce_5\",\"and\",\"metadata.allow_auto_enforce_5\",\"==\",1],\"allow_rollback2\":[\"metadata.rollback_2\",\"and\",\"metadata.rollback_2\",\"==\",1],\"allow_rollback5\":[\"metadata.rollback_5\",\"and\",\"metadata.rollback_5\",\"==\",1],\"enf_delta2\":[\"not\",\"cache.2.dt_last_enf\",\"or\",\"cache.2.dt_last_enf\",\">\",7500],\"enf_delta5\":[\"not\",\"cache.5.dt_last_enf\",\"or\",\"cache.5.dt_last_enf\",\">\",7500],\"autochsel_off2\":[\"WiFi.Radio.1.AutoChannelEnable\",\"==\",0],\"autochsel_off5\":[\"WiFi.Radio.5.AutoChannelEnable\",\"==\",0]}}",
+        "match_msg": false,
+        "outputs": 1,
+        "port_labels": [],
+        "x": 666,
+        "y": 782,
+        "wires": [
+            [
+                "t4.ao77.ax.conv.axtree",
+                "t4.ac16.IsUSP",
+                "t4.axsn20.con.elastic.snk"
+            ]
+        ]
+    },
+    {
+        "id": "t4.axsn19.con.kafka.snk",
+        "type": "ax-snk",
+        "z": "t4",
+        "name": "con.kafka.snk",
+        "label": "usp result_to_kafka",
+        "kw": "{\"topic\":\"usp_data_results\"}",
+        "outputs": 0,
+        "x": 1290,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "t4.ao77.ax.conv.axtree",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "ax.conv.axtree",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 1080,
+        "y": 820,
+        "wires": [
+            [
+                "t4.ao78.data_filter"
+            ]
+        ]
+    },
+    {
+        "id": "t4.ac16.IsUSP",
+        "type": "ax-cond",
+        "z": "t4",
+        "name": "Is USP",
+        "condition": "[[\"id\",\"contains\",\"::\"],true]",
+        "match_msg": false,
+        "outputs": 2,
+        "port_labels": [],
+        "x": 886,
+        "y": 742,
+        "wires": [
+            [
+                "t4.axsn21.con.kafka.snk"
+            ],
+            [
+                "t4.axsn22.con.kafka.snk"
+            ]
+        ]
+    },
+    {
+        "id": "t4.axsn20.con.elastic.snk",
+        "type": "ax-snk",
+        "z": "t4",
+        "name": "con.elastic.snk",
+        "label": "job to elastic",
+        "kw": "{\"index\":\"wifi\"}",
+        "outputs": 0,
+        "x": 846,
+        "y": 842,
+        "wires": []
+    },
+    {
+        "id": "t4.ao78.data_filter",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "data_filter",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"path\":\"history\",\"allow\":[\"id\",\"ts\",\"job\",\"cache\",\"collector.full_scan\",\"collector.light_scan\",\"2.changes.auto\",\"2.changes.axwifi\",\"2.changes.manual\",\"2.changes.owner\",\"2.changes.ts\",\"2.expert.cur_ch\",\"2.expert.cur_bw\",\"2.expert.cur_q\",\"2.expert.cur_radio_ch\",\"2.expert.target_ch\",\"2.expert.target_bw\",\"2.expert.target_q\",\"2.expert.delta_q\",\"2.expert.neighbors.aci\",\"2.expert.neighbors.cci\",\"2.expert.neighbors.aci_cci\",\"2.expert.neighbors.friends\",\"2.expert.neighbors.total\",\"2.pme.all\",\"2.recommendations.total\",\"2.ssid.1.clients.total\",\"2.ssid.1.clients.low_rssi\",\"2.ssid.1.clients.low_rssi_macs\",\"2.ssid.1.clients.sig_avg\",\"2.issues.interf\",\"2.changes.issues.perf\",\"2.clients.mesh_count\",\"2.clients.extender_count\",\"WiFi.Radio.1.Channel\",\"WiFi.Radio.1.AutoChannelEnable\",\"WiFi.Radio.1.Stats.BytesSent\",\"WiFi.Radio.1.Stats.BytesReceived\",\"5.changes.auto\",\"5.changes.axwifi\",\"5.changes.manual\",\"5.changes.owner\",\"5.changes.ts\",\"5.expert.cur_ch\",\"5.expert.cur_bw\",\"5.expert.cur_q\",\"5.expert.cur_radio_ch\",\"5.expert.target_ch\",\"5.expert.target_bw\",\"5.expert.target_q\",\"5.expert.delta_q\",\"5.expert.neighbors.aci\",\"5.expert.neighbors.cci\",\"5.expert.neighbors.friends\",\"5.expert.neighbors.total\",\"5.pme.all\",\"5.recommendations.total\",\"5.ssid.5.clients.total\",\"5.ssid.5.clients.low_rssi\",\"5.ssid.5.clients.low_rssi_macs\",\"5.ssid.5.clients.sig_avg\",\"5.issues.interf\",\"5.changes.issues.perf\",\"5.clients.mesh_count\",\"5.clients.extender_count\",\"WiFi.Radio.5.Channel\",\"WiFi.Radio.5.AutoChannelEnable\",\"WiFi.Radio.5.Stats.BytesSent\",\"WiFi.Radio.5.Stats.BytesReceived\",\"WiFi.SSID.1.Stats.BytesSent\",\"WiFi.SSID.1.Stats.BytesReceived\",\"WiFi.SSID.1.Stats.PacketsSent\",\"WiFi.SSID.1.Stats.PacketsReceived\",\"WiFi.SSID.1.Stats.ErrorsSent\",\"WiFi.SSID.1.Stats.ErrorsReceived\",\"WiFi.SSID.1.Stats.RetransCount\",\"WiFi.SSID.2.Stats.BytesSent\",\"WiFi.SSID.2.Stats.BytesReceived\",\"WiFi.SSID.2.Stats.PacketsSent\",\"WiFi.SSID.2.Stats.PacketsReceived\",\"WiFi.SSID.2.Stats.ErrorsSent\",\"WiFi.SSID.2.Stats.ErrorsReceived\",\"WiFi.SSID.2.Stats.RetransCount\",\"WiFi.SSID.5.Stats.BytesSent\",\"WiFi.SSID.5.Stats.BytesReceived\",\"WiFi.SSID.5.Stats.PacketsSent\",\"WiFi.SSID.5.Stats.PacketsReceived\",\"WiFi.SSID.5.Stats.ErrorsSent\",\"WiFi.SSID.5.Stats.ErrorsReceived\",\"WiFi.SSID.5.Stats.RetransCount\",\"WiFi.SSID.6.Stats.BytesSent\",\"WiFi.SSID.6.Stats.BytesReceived\",\"WiFi.SSID.6.Stats.PacketsSent\",\"WiFi.SSID.6.Stats.PacketsReceived\",\"WiFi.SSID.6.Stats.ErrorsSent\",\"WiFi.SSID.6.Stats.ErrorsReceived\",\"WiFi.SSID.6.Stats.RetransCount\",\"DeviceInfo.ProcessStatus.CPUUsage\",\"DeviceInfo.MemoryStatus.Free\",\"DeviceInfo.MemoryStatus.usage\",\"cpe.recommendations.details.mem_usage\",\"forced_actions\"]}",
+        "outputs": 1,
+        "x": 1266,
+        "y": 822,
+        "wires": [
+            [
+                "t4.ao79.rx.buffer_with_time_or_count"
+            ]
+        ]
+    },
+    {
+        "id": "t4.axsn21.con.kafka.snk",
+        "type": "ax-snk",
+        "z": "t4",
+        "name": "con.kafka.snk",
+        "label": "usp result_to_kafka",
+        "kw": "{\"topic\":\"usp_data_results\"}",
+        "outputs": 0,
+        "x": 1286,
+        "y": 702,
+        "wires": []
+    },
+    {
+        "id": "t4.axsn22.con.kafka.snk",
+        "type": "ax-snk",
+        "z": "t4",
+        "name": "con.kafka.snk",
+        "label": "tr069 result to kafka",
+        "kw": "{\"topic\":\"axwifi_results\"}",
+        "outputs": 0,
+        "x": 1286,
+        "y": 762,
+        "wires": []
+    },
+    {
+        "id": "t4.ao79.rx.buffer_with_time_or_count",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "rx.buffer_with_time_or_count",
+        "label": "",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"timespan\":0.6,\"count\":8}",
+        "outputs": 1,
+        "x": 1266,
+        "y": 882,
+        "wires": [
+            [
+                "t4.axsn23.con.redis.set_events"
+            ]
+        ]
+    },
+    {
+        "id": "t4.axsn23.con.redis.set_events",
+        "type": "ax-snk",
+        "z": "t4",
+        "name": "con.redis.set_events",
+        "label": "cache to redis",
+        "kw": "{\"key\":\"qualities:{d[id]}\",\"enc\":\"compressed\",\"maxlen\":96}",
+        "outputs": 0,
+        "x": 1506,
+        "y": 882,
+        "wires": []
+    },
+    {
+        "id": "t4.li1.lightscanin",
+        "type": "link in",
+        "z": "t4",
+        "name": "lightscan in",
+        "links": [
+            "t2.lo4.rx:tolightscan",
+            "t3.lo5.rx:tolightscan",
+            "t1.lo1.rx:tolightscan"
+        ],
+        "x": 255,
+        "y": 100,
+        "wires": [
+            [
+                "t4.ac12.is_reading"
+            ]
+        ]
+    },
+    {
+        "id": "t4.li2.jsonin",
+        "type": "link in",
+        "z": "t4",
+        "name": "json in",
+        "links": [
+            "t1.lo2.rx:tojson"
+        ],
+        "x": 639,
+        "y": 346,
+        "wires": [
+            [
+                "t4.aj2.waitfor1or2jsonposts"
+            ]
+        ]
+    },
+    {
+        "id": "t4.hi1",
+        "type": "http in",
+        "z": "t4",
+        "name": "",
+        "url": "/api/:path",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "t4.ah1.ax-hub"
+            ]
+        ]
+    },
+    {
+        "id": "t4.i39",
+        "type": "inject",
+        "z": "t4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "t4.ah1.ax-hub"
+            ]
+        ]
+    },
+    {
+        "id": "t4.hr1",
+        "type": "http response",
+        "z": "t4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "t4.ao80.multiap_to_hosts",
+        "type": "ax-op",
+        "z": "t4",
+        "name": "multiap_to_hosts",
+        "label": "",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "primary": false,
+        "kw": "{}",
+        "outputs": 1,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "t4.ao71.ax.add_conf"
+            ]
+        ]
+    },
+    {
+        "id": "t4.sfi2",
+        "type": "subflow:sf1.WifiCoreFlow",
+        "z": "t4",
+        "name": "",
+        "x": 690,
+        "y": 520,
+        "wires": [
+            [
+                "t4.ac14.usprecon|optim|nousp"
+            ]
+        ]
+    }
+]

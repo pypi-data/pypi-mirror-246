@@ -1,0 +1,10 @@
+{
+    "type": "get",
+    "epid": "%(epid)s",
+    "body": [
+        [
+            "Device.BulkData."
+        ],
+        0
+    ]
+}

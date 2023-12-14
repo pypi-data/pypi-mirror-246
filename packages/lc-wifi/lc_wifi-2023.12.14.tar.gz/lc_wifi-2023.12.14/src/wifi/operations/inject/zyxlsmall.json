@@ -1,0 +1,121 @@
+{
+    "cpeid": "1c740d-A0E4CBC9DBB3",
+    "sender": {
+        "hosts": "axwifi-aio",
+        "pid": 2299,
+        "name": "axtract_collector",
+        "event_source": "main_collector_http_ipv4"
+    },
+    "ts": 1701964283,
+    "props": {
+        "collector": {
+            "msg": "Light Scan",
+            "full_scan": 0,
+            "code": 201,
+            "details": "",
+            "light_scan": 1
+        },
+        "WiFi": {
+            "Radio": {
+                "1": {
+                    "Status": "Up",
+                    "Enable": 1,
+                    "Stats": {
+                        "BytesReceived": 1447513399,
+                        "ErrorsSent": 21,
+                        "PacketsReceived": 5832786,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 1889172455,
+                        "PacketsSent": 10348789
+                    },
+                    "OperatingStandards": "b/g/n",
+                    "RegulatoryDomain": "EU",
+                    "AutoChannelEnable": 0,
+                    "PossibleChannels": "1,2,3,4,5,6,7,8,9,10,11,12,13,",
+                    "Channel": 6
+                },
+                "5": {
+                    "Status": "Up",
+                    "Enable": 1,
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 0,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "OperatingStandards": "a",
+                    "RegulatoryDomain": "EU",
+                    "AutoChannelEnable": 0,
+                    "PossibleChannels": "36,40,44,48,52,56,60,64,100,104,108,112,116,120,124,128,132,136,140,",
+                    "Channel": 36
+                }
+            },
+            "SSID": {
+                "1": {
+                    "BSSID": "A0-E4-CB-C9-DB-B4",
+                    "SSID": "Internet_50",
+                    "LowerLayers": "Device.WiFi.Radio.1"
+                },
+                "5": {
+                    "BSSID": "A0-E4-CB-C9-DB-B5",
+                    "SSID": "Internet_5G_50",
+                    "LowerLayers": "Device.WiFi.Radio.5"
+                }
+            },
+            "AccessPoint": {
+                "1": {
+                    "Security": {
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "AssociatedDevice": {
+                        "1": {
+                            "AuthenticationState": 1,
+                            "Active": 1,
+                            "MACAddress": "B8-94-36-81-45-B3"
+                        },
+                        "2": {
+                            "Active": 1,
+                            "MACAddress": "FC-66-CF-DC-A7-E6",
+                            "AuthenticationState": 1
+                        }
+                    },
+                    "SSIDReference": "Device.WiFi.SSID.1"
+                },
+                "5": {
+                    "Security": {
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "SSIDReference": "Device.WiFi.SSID.5"
+                }
+            }
+        },
+        "DeviceInfo": {
+            "UpTime": 7268577,
+            "HardwareVersion": "tmp_hardware1.0",
+            "ModelName": "VMG8924-B30A",
+            "SerialNumber": "A0E4CBC9DBB3",
+            "SoftwareVersion": "1.00(AAZQ.0)b11",
+            "ManufacturerOUI": "1c740d",
+            "ProductClass": "VMG8924-B30A",
+            "Manufacturer": "ZyXEL"
+        },
+        "metadata": {
+            "allow_auto_enforce_5": null,
+            "last_scan_ts": null,
+            "allow_auto_enforce_2": null,
+            "mode": "zyxel_vmg8924_b30a",
+            "allow_collection": 1,
+            "tenant": "live",
+            "location": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    }
+}

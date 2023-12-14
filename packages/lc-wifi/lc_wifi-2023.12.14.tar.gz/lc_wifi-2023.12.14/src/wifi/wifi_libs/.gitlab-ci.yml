@@ -1,0 +1,30 @@
+image: python:3.8.0-buster
+
+variables:
+  VERSION: 1.${CI_PIPELINE_IID}
+
+stages:
+  - test
+  - upload
+
+unittest:
+  stage: test
+  script:
+    - python3 ./tests/test_gbase.py
+    - python3 ./tests/test_bruteforce.py
+    - python3 ./tests/test_5G.py
+    - python3 ./tests/test_metagreedy.py
+  only:
+  - master
+  - refactoring-03
+
+pypi:
+  stage: upload
+  script:
+    - pip3 install -U twine
+    - python3 setup.py sdist
+    - twine upload --repository-url ${PYPI_SERVER} --username $PYPI_USER --password $PYPI_PASSWORDD dist/*
+  only:
+  - master
+  - refactoring-03
+

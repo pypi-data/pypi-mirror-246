@@ -1,0 +1,11 @@
+{
+    "type": "operate",
+    "epid": "%(epid)s",
+    "body": {
+        "args": [[ "DownloadURL", "http://proof.ovh.net/files/10Mb.dat"]
+    ],
+        "command": "Device.IP.Diagnostics.DownloadDiagnostics()",
+        "command_key": "speedtest_api",
+        "send_resp": true
+    }
+}

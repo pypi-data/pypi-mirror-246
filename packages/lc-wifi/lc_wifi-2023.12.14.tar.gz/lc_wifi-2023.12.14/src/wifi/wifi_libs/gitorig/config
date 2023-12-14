@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin-ru"]
+	url = https://devel.tr069.ru:9090/wifi/wifi-libs.git
+	fetch = +refs/heads/*:refs/remotes/origin-ru/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "origin"]
+	url = git@gitlab.axiros.com:devapps/wifi-libs.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

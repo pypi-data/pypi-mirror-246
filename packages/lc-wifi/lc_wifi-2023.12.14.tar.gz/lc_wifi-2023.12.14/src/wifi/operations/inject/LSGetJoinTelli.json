@@ -1,0 +1,653 @@
+{
+  "type": "get",
+  "epid": "%(epid)s",
+  "timeout": 20,
+  "body": [
+    "Device.DeviceInfo.",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.",
+    "Device.X_JOINTELLI_COM_H.Common.MACAddress",
+    "Device.IP.Interface.",
+    "Device.Routing.Router."
+  ],
+  "endpoint": "http://testbed.axiros.hr:10296/v1/%(epid)s/get",
+  "resp_status": 200,
+  "resp": {
+    "Response": {
+      "GetResp": {
+        "req_path_results": [
+          {
+            "requested_path": "Device.DeviceInfo.",
+            "err_code": 0,
+            "err_msg": "",
+            "resolved_path_results": [
+              {
+                "resolved_path": "Device.DeviceInfo.",
+                "result_params": {
+                  "DeviceLog": "[51926.616588] .(0)[6715:mipc_submonitor]PROSLIC register si321xx_component_get_volsw",
+                  "ProductClass": "S22",
+                  "Manufacturer": "Jointelli",
+                  "HardwareVersion": "V1.0",
+                  "ModelName": "S22",
+                  "SpecVersion": "1.0",
+                  "UpTime": "51927",
+                  "SerialNumber": "CCKKCNC0N22000005",
+                  "ProvisioningCode": "",
+                  "ManufacturerOUI": "E87829",
+                  "SoftwareVersion": "JY_22H02_U1_v1.06"
+                }
+              },
+              {
+                "resolved_path": "Device.DeviceInfo.MemoryStatus.",
+                "result_params": {
+                  "Free": "261660",
+                  "Total": "653476"
+                }
+              }
+            ]
+          },
+          {
+            "requested_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.",
+            "err_code": 0,
+            "err_msg": "",
+            "resolved_path_results": [
+              {
+                "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.",
+                "result_params": {
+                  "Enable": "0",
+                  "Passwd": "********",
+                  "Associations": "0",
+                  "SSID": "home-guest",
+                  "SecurityMode": "open",
+                  "Duration": "unlimited"
+                }
+              },
+              {
+                "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.",
+                "result_params": {
+                  "Duration": "unlimited",
+                  "Passwd": "********",
+                  "Associations": "0",
+                  "Enable": "0",
+                  "SSID": "home-guest5G",
+                  "SecurityMode": "open"
+                }
+              },
+              {
+                "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.",
+                "result_params": {
+                  "OperatingChannel": "13",
+                  "Bandwidth": "auto",
+                  "SSID": "TR369-Jointelli-S22-2.4GHz",
+                  "Passwd": "********",
+                  "SecurityMode": "WPA2-PSK/WPA3-SAE",
+                  "Channel": "0",
+                  "AutoChannelEnabled": "1",
+                  "Hidden": "0",
+                  "NetworkMode": "b/g/n/ax",
+                  "Enable": "1",
+                  "Associations": "0"
+                }
+              },
+              {
+                "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.",
+                "result_params": {
+                  "AutoChannelEnabled": "1",
+                  "Channel": "0",
+                  "Hidden": "0",
+                  "Passwd": "********",
+                  "Enable": "1",
+                  "NetworkMode": "a/n/ac/ax",
+                  "SSID": "TR369-Jointelli-S22-5GHz",
+                  "SecurityMode": "WPA2-PSK/WPA3-SAE",
+                  "Bandwidth": "80MHz",
+                  "Associations": "0",
+                  "OperatingChannel": "104"
+                }
+              }
+            ]
+          },
+          {
+            "requested_path": "Device.X_JOINTELLI_COM_H.Common.MACAddress",
+            "err_code": 0,
+            "err_msg": "",
+            "resolved_path_results": [
+              {
+                "resolved_path": "Device.X_JOINTELLI_COM_H.Common.",
+                "result_params": {
+                  "MACAddress": "E87829100A2F"
+                }
+              }
+            ]
+          },
+          {
+            "requested_path": "Device.IP.Interface.",
+            "err_code": 0,
+            "err_msg": "",
+            "resolved_path_results": [
+              {
+                "resolved_path": "Device.IP.Interface.1.",
+                "result_params": {
+                  "Name": "loopback",
+                  "Router": "Device.Routing.Router.1.",
+                  "Type": "Loopback",
+                  "IPv4AddressNumberOfEntries": "1",
+                  "Enable": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.1.IPv4Address.1.",
+                "result_params": {
+                  "SubnetMask": "255.0.0.0",
+                  "AddressingType": "Static",
+                  "IPAddress": "127.0.0.1",
+                  "Enable": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.1.Stats.",
+                "result_params": {
+                  "DiscardPacketsReceived": "0",
+                  "ErrorsReceived": "0",
+                  "PacketsReceived": "843423",
+                  "BytesReceived": "66448606",
+                  "BytesSent": "66448606",
+                  "DiscardPacketsSent": "0",
+                  "ErrorsSent": "0",
+                  "PacketsSent": "843423"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.2.",
+                "result_params": {
+                  "Name": "wan",
+                  "Enable": "1",
+                  "IPv4AddressNumberOfEntries": "1",
+                  "Type": "Normal",
+                  "Router": "Device.Routing.Router.1."
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.2.IPv4Address.1.",
+                "result_params": {
+                  "SubnetMask": "255.255.255.0",
+                  "IPAddress": "192.168.70.66",
+                  "AddressingType": "DHCP",
+                  "Enable": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.2.Stats.",
+                "result_params": {
+                  "ErrorsSent": "0",
+                  "BytesSent": "7302245500",
+                  "BytesReceived": "1839010687",
+                  "PacketsReceived": "2318266",
+                  "DiscardPacketsReceived": "0",
+                  "PacketsSent": "5840362",
+                  "DiscardPacketsSent": "521",
+                  "ErrorsReceived": "0"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.3.",
+                "result_params": {
+                  "Enable": "1",
+                  "Name": "wan6",
+                  "Router": "Device.Routing.Router.1.",
+                  "Type": "Normal",
+                  "IPv4AddressNumberOfEntries": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.3.IPv4Address.1.",
+                "result_params": {
+                  "IPAddress": "",
+                  "Enable": "1",
+                  "SubnetMask": "0.0.0.0",
+                  "AddressingType": ""
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.3.Stats.",
+                "result_params": {
+                  "DiscardPacketsSent": "521",
+                  "BytesSent": "7302245500",
+                  "DiscardPacketsReceived": "0",
+                  "PacketsSent": "5840362",
+                  "BytesReceived": "1839010687",
+                  "PacketsReceived": "2318266",
+                  "ErrorsReceived": "0",
+                  "ErrorsSent": "0"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.4.",
+                "result_params": {
+                  "Name": "lan",
+                  "IPv4AddressNumberOfEntries": "1",
+                  "Enable": "1",
+                  "Router": "Device.Routing.Router.1.",
+                  "Type": "Normal"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.4.IPv4Address.1.",
+                "result_params": {
+                  "SubnetMask": "255.255.255.0",
+                  "AddressingType": "Static",
+                  "Enable": "1",
+                  "IPAddress": "192.168.100.1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.4.Stats.",
+                "result_params": {
+                  "PacketsReceived": "707226",
+                  "PacketsSent": "614003",
+                  "DiscardPacketsSent": "0",
+                  "ErrorsSent": "0",
+                  "DiscardPacketsReceived": "0",
+                  "ErrorsReceived": "0",
+                  "BytesReceived": "186676618",
+                  "BytesSent": "323871086"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.5.",
+                "result_params": {
+                  "Type": "Normal",
+                  "Enable": "1",
+                  "Name": "bond0",
+                  "Router": "Device.Routing.Router.1.",
+                  "IPv4AddressNumberOfEntries": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.5.IPv4Address.1.",
+                "result_params": {
+                  "AddressingType": "",
+                  "SubnetMask": "0.0.0.0",
+                  "Enable": "1",
+                  "IPAddress": ""
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.5.Stats.",
+                "result_params": {
+                  "DiscardPacketsReceived": "0",
+                  "BytesReceived": "0",
+                  "ErrorsReceived": "0",
+                  "ErrorsSent": "0",
+                  "DiscardPacketsSent": "0",
+                  "BytesSent": "0",
+                  "PacketsSent": "0",
+                  "PacketsReceived": "0"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.6.",
+                "result_params": {
+                  "Router": "Device.Routing.Router.1.",
+                  "Type": "Normal",
+                  "Enable": "1",
+                  "IPv4AddressNumberOfEntries": "1",
+                  "Name": "guest"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.6.IPv4Address.1.",
+                "result_params": {
+                  "IPAddress": "172.23.9.1",
+                  "AddressingType": "Static",
+                  "SubnetMask": "255.255.255.0",
+                  "Enable": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.6.Stats.",
+                "result_params": {
+                  "BytesSent": "746",
+                  "DiscardPacketsSent": "0",
+                  "DiscardPacketsReceived": "0",
+                  "PacketsSent": "7",
+                  "BytesReceived": "0",
+                  "ErrorsSent": "0",
+                  "ErrorsReceived": "0",
+                  "PacketsReceived": "0"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.7.",
+                "result_params": {
+                  "IPv4AddressNumberOfEntries": "1",
+                  "Name": "pdp1",
+                  "Type": "Normal",
+                  "Router": "Device.Routing.Router.1.",
+                  "Enable": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.7.IPv4Address.1.",
+                "result_params": {
+                  "SubnetMask": "0.0.0.0",
+                  "Enable": "1",
+                  "IPAddress": "",
+                  "AddressingType": ""
+                }
+              },
+              {
+                "resolved_path": "Device.IP.Interface.7.Stats.",
+                "result_params": {
+                  "DiscardPacketsSent": "0",
+                  "BytesReceived": "0",
+                  "ErrorsSent": "0",
+                  "BytesSent": "0",
+                  "DiscardPacketsReceived": "0",
+                  "PacketsSent": "0",
+                  "ErrorsReceived": "0",
+                  "PacketsReceived": "0"
+                }
+              }
+            ]
+          },
+          {
+            "requested_path": "Device.Routing.Router.",
+            "err_code": 0,
+            "err_msg": "",
+            "resolved_path_results": [
+              {
+                "resolved_path": "Device.Routing.Router.1.",
+                "result_params": {
+                  "Status": "Enabled",
+                  "IPv4ForwardingNumberOfEntries": "4",
+                  "Enable": "1"
+                }
+              },
+              {
+                "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.1.",
+                "result_params": {
+                  "ForwardingPolicy": "-1",
+                  "ForwardingMetric": "0",
+                  "StaticRoute": "0",
+                  "Origin": "Static",
+                  "GatewayIPAddress": "0.0.0.0",
+                  "DestIPAddress": "172.23.9.0",
+                  "Alias": "cpe-1",
+                  "DestSubnetMask": "255.255.255.0",
+                  "Enable": "1",
+                  "Status": "Enabled",
+                  "Interface": "Device.IP.Interface.6"
+                }
+              },
+              {
+                "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.2.",
+                "result_params": {
+                  "Interface": "Device.IP.Interface.4",
+                  "ForwardingPolicy": "-1",
+                  "Origin": "Static",
+                  "StaticRoute": "0",
+                  "Enable": "1",
+                  "GatewayIPAddress": "0.0.0.0",
+                  "DestIPAddress": "192.168.100.0",
+                  "Alias": "cpe-2",
+                  "Status": "Enabled",
+                  "DestSubnetMask": "255.255.255.0",
+                  "ForwardingMetric": "0"
+                }
+              },
+              {
+                "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.3.",
+                "result_params": {
+                  "ForwardingPolicy": "-1",
+                  "Alias": "cpe-3",
+                  "Origin": "Static",
+                  "Interface": "Device.IP.Interface.2",
+                  "StaticRoute": "0",
+                  "ForwardingMetric": "0",
+                  "GatewayIPAddress": "192.168.70.254",
+                  "Status": "Enabled",
+                  "DestIPAddress": "0.0.0.0",
+                  "Enable": "1",
+                  "DestSubnetMask": "0.0.0.0"
+                }
+              },
+              {
+                "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.4.",
+                "result_params": {
+                  "Origin": "Static",
+                  "StaticRoute": "0",
+                  "Alias": "cpe-4",
+                  "Interface": "Device.IP.Interface.2",
+                  "Status": "Enabled",
+                  "Enable": "1",
+                  "ForwardingMetric": "0",
+                  "GatewayIPAddress": "0.0.0.0",
+                  "DestSubnetMask": "255.255.255.0",
+                  "DestIPAddress": "192.168.70.0",
+                  "ForwardingPolicy": "-1"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "resp_dict": {
+    "Device.DeviceInfo.DeviceLog": "[51926.616588] .(0)[6715:mipc_submonitor]PROSLIC register si321xx_component_get_volsw",
+    "Device.DeviceInfo.ProductClass": "S22",
+    "Device.DeviceInfo.Manufacturer": "Jointelli",
+    "Device.DeviceInfo.HardwareVersion": "V1.0",
+    "Device.DeviceInfo.ModelName": "S22",
+    "Device.DeviceInfo.SpecVersion": "1.0",
+    "Device.DeviceInfo.UpTime": "51927",
+    "Device.DeviceInfo.SerialNumber": "CCKKCNC0N22000005",
+    "Device.DeviceInfo.ProvisioningCode": "",
+    "Device.DeviceInfo.ManufacturerOUI": "E87829",
+    "Device.DeviceInfo.SoftwareVersion": "JY_22H02_U1_v1.06",
+    "Device.DeviceInfo.MemoryStatus.Free": "261660",
+    "Device.DeviceInfo.MemoryStatus.Total": "653476",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.Enable": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.Passwd": "********",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.Associations": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.SSID": "home-guest",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.SecurityMode": "open",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.Duration": "unlimited",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.Duration": "unlimited",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.Passwd": "********",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.Associations": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.Enable": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.SSID": "home-guest5G",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.SecurityMode": "open",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.OperatingChannel": "13",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.Bandwidth": "auto",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.SSID": "TR369-Jointelli-S22-2.4GHz",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.Passwd": "********",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.SecurityMode": "WPA2-PSK/WPA3-SAE",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.Channel": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.AutoChannelEnabled": "1",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.Hidden": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.NetworkMode": "b/g/n/ax",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.Enable": "1",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.Associations": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.AutoChannelEnabled": "1",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.Channel": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.Hidden": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.Passwd": "********",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.Enable": "1",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.NetworkMode": "a/n/ac/ax",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.SSID": "TR369-Jointelli-S22-5GHz",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.SecurityMode": "WPA2-PSK/WPA3-SAE",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.Bandwidth": "80MHz",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.Associations": "0",
+    "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.OperatingChannel": "104",
+    "Device.X_JOINTELLI_COM_H.Common.MACAddress": "E87829100A2F",
+    "Device.IP.Interface.1.Name": "loopback",
+    "Device.IP.Interface.1.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.1.Type": "Loopback",
+    "Device.IP.Interface.1.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.1.Enable": "1",
+    "Device.IP.Interface.1.IPv4Address.1.SubnetMask": "255.0.0.0",
+    "Device.IP.Interface.1.IPv4Address.1.AddressingType": "Static",
+    "Device.IP.Interface.1.IPv4Address.1.IPAddress": "127.0.0.1",
+    "Device.IP.Interface.1.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.1.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.1.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.1.Stats.PacketsReceived": "843423",
+    "Device.IP.Interface.1.Stats.BytesReceived": "66448606",
+    "Device.IP.Interface.1.Stats.BytesSent": "66448606",
+    "Device.IP.Interface.1.Stats.DiscardPacketsSent": "0",
+    "Device.IP.Interface.1.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.1.Stats.PacketsSent": "843423",
+    "Device.IP.Interface.2.Name": "wan",
+    "Device.IP.Interface.2.Enable": "1",
+    "Device.IP.Interface.2.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.2.Type": "Normal",
+    "Device.IP.Interface.2.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.2.IPv4Address.1.SubnetMask": "255.255.255.0",
+    "Device.IP.Interface.2.IPv4Address.1.IPAddress": "192.168.70.66",
+    "Device.IP.Interface.2.IPv4Address.1.AddressingType": "DHCP",
+    "Device.IP.Interface.2.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.2.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.2.Stats.BytesSent": "7302245500",
+    "Device.IP.Interface.2.Stats.BytesReceived": "1839010687",
+    "Device.IP.Interface.2.Stats.PacketsReceived": "2318266",
+    "Device.IP.Interface.2.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.2.Stats.PacketsSent": "5840362",
+    "Device.IP.Interface.2.Stats.DiscardPacketsSent": "521",
+    "Device.IP.Interface.2.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.3.Enable": "1",
+    "Device.IP.Interface.3.Name": "wan6",
+    "Device.IP.Interface.3.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.3.Type": "Normal",
+    "Device.IP.Interface.3.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.3.IPv4Address.1.IPAddress": "",
+    "Device.IP.Interface.3.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.3.IPv4Address.1.SubnetMask": "0.0.0.0",
+    "Device.IP.Interface.3.IPv4Address.1.AddressingType": "",
+    "Device.IP.Interface.3.Stats.DiscardPacketsSent": "521",
+    "Device.IP.Interface.3.Stats.BytesSent": "7302245500",
+    "Device.IP.Interface.3.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.3.Stats.PacketsSent": "5840362",
+    "Device.IP.Interface.3.Stats.BytesReceived": "1839010687",
+    "Device.IP.Interface.3.Stats.PacketsReceived": "2318266",
+    "Device.IP.Interface.3.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.3.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.4.Name": "lan",
+    "Device.IP.Interface.4.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.4.Enable": "1",
+    "Device.IP.Interface.4.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.4.Type": "Normal",
+    "Device.IP.Interface.4.IPv4Address.1.SubnetMask": "255.255.255.0",
+    "Device.IP.Interface.4.IPv4Address.1.AddressingType": "Static",
+    "Device.IP.Interface.4.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.4.IPv4Address.1.IPAddress": "192.168.100.1",
+    "Device.IP.Interface.4.Stats.PacketsReceived": "707226",
+    "Device.IP.Interface.4.Stats.PacketsSent": "614003",
+    "Device.IP.Interface.4.Stats.DiscardPacketsSent": "0",
+    "Device.IP.Interface.4.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.4.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.4.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.4.Stats.BytesReceived": "186676618",
+    "Device.IP.Interface.4.Stats.BytesSent": "323871086",
+    "Device.IP.Interface.5.Type": "Normal",
+    "Device.IP.Interface.5.Enable": "1",
+    "Device.IP.Interface.5.Name": "bond0",
+    "Device.IP.Interface.5.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.5.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.5.IPv4Address.1.AddressingType": "",
+    "Device.IP.Interface.5.IPv4Address.1.SubnetMask": "0.0.0.0",
+    "Device.IP.Interface.5.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.5.IPv4Address.1.IPAddress": "",
+    "Device.IP.Interface.5.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.5.Stats.BytesReceived": "0",
+    "Device.IP.Interface.5.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.5.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.5.Stats.DiscardPacketsSent": "0",
+    "Device.IP.Interface.5.Stats.BytesSent": "0",
+    "Device.IP.Interface.5.Stats.PacketsSent": "0",
+    "Device.IP.Interface.5.Stats.PacketsReceived": "0",
+    "Device.IP.Interface.6.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.6.Type": "Normal",
+    "Device.IP.Interface.6.Enable": "1",
+    "Device.IP.Interface.6.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.6.Name": "guest",
+    "Device.IP.Interface.6.IPv4Address.1.IPAddress": "172.23.9.1",
+    "Device.IP.Interface.6.IPv4Address.1.AddressingType": "Static",
+    "Device.IP.Interface.6.IPv4Address.1.SubnetMask": "255.255.255.0",
+    "Device.IP.Interface.6.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.6.Stats.BytesSent": "746",
+    "Device.IP.Interface.6.Stats.DiscardPacketsSent": "0",
+    "Device.IP.Interface.6.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.6.Stats.PacketsSent": "7",
+    "Device.IP.Interface.6.Stats.BytesReceived": "0",
+    "Device.IP.Interface.6.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.6.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.6.Stats.PacketsReceived": "0",
+    "Device.IP.Interface.7.IPv4AddressNumberOfEntries": "1",
+    "Device.IP.Interface.7.Name": "pdp1",
+    "Device.IP.Interface.7.Type": "Normal",
+    "Device.IP.Interface.7.Router": "Device.Routing.Router.1.",
+    "Device.IP.Interface.7.Enable": "1",
+    "Device.IP.Interface.7.IPv4Address.1.SubnetMask": "0.0.0.0",
+    "Device.IP.Interface.7.IPv4Address.1.Enable": "1",
+    "Device.IP.Interface.7.IPv4Address.1.IPAddress": "",
+    "Device.IP.Interface.7.IPv4Address.1.AddressingType": "",
+    "Device.IP.Interface.7.Stats.DiscardPacketsSent": "0",
+    "Device.IP.Interface.7.Stats.BytesReceived": "0",
+    "Device.IP.Interface.7.Stats.ErrorsSent": "0",
+    "Device.IP.Interface.7.Stats.BytesSent": "0",
+    "Device.IP.Interface.7.Stats.DiscardPacketsReceived": "0",
+    "Device.IP.Interface.7.Stats.PacketsSent": "0",
+    "Device.IP.Interface.7.Stats.ErrorsReceived": "0",
+    "Device.IP.Interface.7.Stats.PacketsReceived": "0",
+    "Device.Routing.Router.1.Status": "Enabled",
+    "Device.Routing.Router.1.IPv4ForwardingNumberOfEntries": "4",
+    "Device.Routing.Router.1.Enable": "1",
+    "Device.Routing.Router.1.IPv4Forwarding.1.ForwardingPolicy": "-1",
+    "Device.Routing.Router.1.IPv4Forwarding.1.ForwardingMetric": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.1.StaticRoute": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.1.Origin": "Static",
+    "Device.Routing.Router.1.IPv4Forwarding.1.GatewayIPAddress": "0.0.0.0",
+    "Device.Routing.Router.1.IPv4Forwarding.1.DestIPAddress": "172.23.9.0",
+    "Device.Routing.Router.1.IPv4Forwarding.1.Alias": "cpe-1",
+    "Device.Routing.Router.1.IPv4Forwarding.1.DestSubnetMask": "255.255.255.0",
+    "Device.Routing.Router.1.IPv4Forwarding.1.Enable": "1",
+    "Device.Routing.Router.1.IPv4Forwarding.1.Status": "Enabled",
+    "Device.Routing.Router.1.IPv4Forwarding.1.Interface": "Device.IP.Interface.6",
+    "Device.Routing.Router.1.IPv4Forwarding.2.Interface": "Device.IP.Interface.4",
+    "Device.Routing.Router.1.IPv4Forwarding.2.ForwardingPolicy": "-1",
+    "Device.Routing.Router.1.IPv4Forwarding.2.Origin": "Static",
+    "Device.Routing.Router.1.IPv4Forwarding.2.StaticRoute": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.2.Enable": "1",
+    "Device.Routing.Router.1.IPv4Forwarding.2.GatewayIPAddress": "0.0.0.0",
+    "Device.Routing.Router.1.IPv4Forwarding.2.DestIPAddress": "192.168.100.0",
+    "Device.Routing.Router.1.IPv4Forwarding.2.Alias": "cpe-2",
+    "Device.Routing.Router.1.IPv4Forwarding.2.Status": "Enabled",
+    "Device.Routing.Router.1.IPv4Forwarding.2.DestSubnetMask": "255.255.255.0",
+    "Device.Routing.Router.1.IPv4Forwarding.2.ForwardingMetric": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.3.ForwardingPolicy": "-1",
+    "Device.Routing.Router.1.IPv4Forwarding.3.Alias": "cpe-3",
+    "Device.Routing.Router.1.IPv4Forwarding.3.Origin": "Static",
+    "Device.Routing.Router.1.IPv4Forwarding.3.Interface": "Device.IP.Interface.2",
+    "Device.Routing.Router.1.IPv4Forwarding.3.StaticRoute": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.3.ForwardingMetric": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.3.GatewayIPAddress": "192.168.70.254",
+    "Device.Routing.Router.1.IPv4Forwarding.3.Status": "Enabled",
+    "Device.Routing.Router.1.IPv4Forwarding.3.DestIPAddress": "0.0.0.0",
+    "Device.Routing.Router.1.IPv4Forwarding.3.Enable": "1",
+    "Device.Routing.Router.1.IPv4Forwarding.3.DestSubnetMask": "0.0.0.0",
+    "Device.Routing.Router.1.IPv4Forwarding.4.Origin": "Static",
+    "Device.Routing.Router.1.IPv4Forwarding.4.StaticRoute": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.4.Alias": "cpe-4",
+    "Device.Routing.Router.1.IPv4Forwarding.4.Interface": "Device.IP.Interface.2",
+    "Device.Routing.Router.1.IPv4Forwarding.4.Status": "Enabled",
+    "Device.Routing.Router.1.IPv4Forwarding.4.Enable": "1",
+    "Device.Routing.Router.1.IPv4Forwarding.4.ForwardingMetric": "0",
+    "Device.Routing.Router.1.IPv4Forwarding.4.GatewayIPAddress": "0.0.0.0",
+    "Device.Routing.Router.1.IPv4Forwarding.4.DestSubnetMask": "255.255.255.0",
+    "Device.Routing.Router.1.IPv4Forwarding.4.DestIPAddress": "192.168.70.0",
+    "Device.Routing.Router.1.IPv4Forwarding.4.ForwardingPolicy": "-1",
+    "Device.BulkData.Profile.1.ReportingInterval": 60
+  }
+}

@@ -1,0 +1,220 @@
+{
+    "cpeid": "%(cpeid)s",
+    "sender": {
+        "hosts": "axwifi-aio",
+        "pid": 2521,
+        "name": "axtract_collector",
+        "event_source": "avm_listener"
+    },
+    "mode": "avm_fb7530",
+    "ts": 1701966446,
+    "props": {
+        "data": {
+            "upload_method": "env",
+            "ap": [
+                {
+                    "ssid": "5716447BC35ED1B93A7AE6D53C89A0AC",
+                    "bssid": "c0:25:06:xx:xx:xx",
+                    "freqband": "2.4",
+                    "rssi": -33,
+                    "security": 0,
+                    "channel": 1
+                }
+            ],
+            "nf": [
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 140
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 136
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 132
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 128
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 124
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 120
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -94,
+                    "channel": 116
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -94,
+                    "channel": 112
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -94,
+                    "channel": 108
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -94,
+                    "channel": 104
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -93,
+                    "channel": 100
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -95,
+                    "channel": 64
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 60
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 56
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -90,
+                    "channel": 52
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 48
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -94,
+                    "channel": 44
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 40
+                },
+                {
+                    "freqband": "5.0",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 36
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 13
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 12
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -96,
+                    "channel": 11
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 10
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 9
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -92,
+                    "channel": 8
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 7
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 6
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 5
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 4
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 3
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 2
+                },
+                {
+                    "freqband": "2.4",
+                    "channel_load": 0.0,
+                    "noisefloor": -97,
+                    "channel": 1
+                }
+            ]
+        }
+    }
+}

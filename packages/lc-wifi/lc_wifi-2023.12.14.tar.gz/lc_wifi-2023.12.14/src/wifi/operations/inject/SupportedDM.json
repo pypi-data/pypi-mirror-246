@@ -1,0 +1,13 @@
+{
+    "type": "getsupporteddm",
+    "epid": "%(epid)s",
+    "body": {
+        "first_level_only": true,
+        "return_commands": true,
+        "return_events": true,
+        "return_params": true,
+        "paths": [
+            "Device.X_JOINTELLI_COM_H."
+        ]
+    }
+}
