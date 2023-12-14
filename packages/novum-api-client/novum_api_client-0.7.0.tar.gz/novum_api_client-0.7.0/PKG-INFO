@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: novum_api_client
+Version: 0.7.0
+Summary: This library contains the basic api functions for Novum Service Center.
+Author: Leonardo
+Author-email: l.biz@novum-engineering.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.28.2,<3.0.0)
