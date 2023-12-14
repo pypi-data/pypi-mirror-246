@@ -1,0 +1,9 @@
+xetcache/__init__.py,sha256=sBmP64nC2WGNa7fhFC9bX2LuETITaLDorUajrQp2cZg,7797
+xetcache/config.py,sha256=mSmt2cQsnfWqnf9pGN2uLsmE2CHjcTHaWNrZdRzHlFg,1573
+xetcache/util.py,sha256=fLr7c2xb5yf-XLKZiUqKasAbZbLZe2fxM7gjnix1Zkk,3142
+xetcache/xetmemo_kernel_extension.py,sha256=S_PHBVb21XjFGqg1QqmJpQLvk-tFtQdMwtYlc-u_SBw,4711
+xetcache-0.0.2.dist-info/LICENSE,sha256=mcu1E-GOzxgKJfXC6PKYCpHq2QnBkf1MNDI0l9E6PHQ,1494
+xetcache-0.0.2.dist-info/METADATA,sha256=jKqkf-60WjbWYB4AWXb1fHsTd6KtwuJsMCMzC2Nyns0,6626
+xetcache-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+xetcache-0.0.2.dist-info/top_level.txt,sha256=YiT7Jg46LQuKV5x-4Ts07c7FGUqk3HzzpJKqZVDS6E8,9
+xetcache-0.0.2.dist-info/RECORD,,
