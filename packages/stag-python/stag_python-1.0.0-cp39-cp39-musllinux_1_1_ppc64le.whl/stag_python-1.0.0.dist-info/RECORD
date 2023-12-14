@@ -1,0 +1,12 @@
+stag_python-1.0.0.dist-info/RECORD,,
+stag_python-1.0.0.dist-info/WHEEL,sha256=Eowpgr9NAI6EojtgNsrKL-bYxtlIDMncHEM2ykjzWkc,112
+stag_python-1.0.0.dist-info/LICENSE,sha256=SKxuiwd5r4TkuZIwu45lBhqrt5og_YQQlEXiQNTpk3c,1072
+stag_python-1.0.0.dist-info/METADATA,sha256=kxRjVC4dX51Btql3A2Duo2P3Kh5rTU3UNXcM_8jZq4Y,4301
+stag_python-1.0.0.dist-info/top_level.txt,sha256=Ttz8ZkiYUA6OUCDajwPA7q-Rhlgwvmp0rk2JX7Jzevo,5
+stag_python.libs/libgcc_s-a2b893f1.so.1,sha256=d5A3IRmDvDFV39axK6tg-QW8PoYKyh6C-XoMRaoYs7Q,134353
+stag_python.libs/libopencv_imgproc-0fcf5adb.so.4.8.1,sha256=m0euARGWyMKBzqDsQ9udppMT4tvoYM0MMZ1Pxw9dsHM,5544993
+stag_python.libs/libstdc++-1b005a64.so.6.0.28,sha256=ORWj6sLnki8fXsHapN3XkLfJAr95ljFkA8xZS8vULTw,2926513
+stag_python.libs/libopencv_core-c9575edf.so.4.8.1,sha256=Fk12ZsY6YsRtAovAFcI8l5LbfBQ-5NUPtJk92YEze3c,5678153
+stag_python.libs/libopencv_imgcodecs-f4666247.so.4.8.1,sha256=pOqaDQtI1tYxLRnzquYr0mENWVqySs599ANXWMriGiM,4604337
+stag/__init__.py,sha256=_GIbnwO-9gNyedobZMoKH1W2Ll9raG1OnbaraoOkayg,24
+stag/_core.cpython-39-powerpc64le-linux-gnu.so,sha256=ACCT2rUcIEryC9kdzJcgL8lFiKCmRBVyzOGKnyMYL78,1526777
