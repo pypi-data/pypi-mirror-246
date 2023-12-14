@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=-oRbaivUY9lN0t4A2_EFphxHYLY4OIHo09960Rkwbmk,684
+README.md,sha256=AKE82QM2Z6CapGp7eqRT-Wy3TCEjDkx4mZEhtju05Zs,313
+novum_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novum_api_client/api_type.py,sha256=shtG9uLj2sppLhPR1fGiCtnKfUtwW7dbNwnKVhxUs0w,11446
+novum_api_client/base_client.py,sha256=r4RaBAOjurQr9xA9fKvzo-uUgUlS071ZUzPWyv1iHJM,10916
+novum_api_client/client.py,sha256=semNqrGCdeviLeYf5uZqbFnEDSW6AfKB0Aylm4Vp2ic,23352
+novum_api_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novum_api_client/tests/test_api_base.py,sha256=RvA5NizND4KiZ2M21BSB1k8tFxpUxPBcVsNGNTq4PRs,10238
+novum_api_client/tests/test_api_public.py,sha256=d8Q2cLxY5tqnddKNmJ3zgj3198CGZRU9fVsXuHzKYHs,22575
+novum_api_client-0.8.0.dist-info/LICENSE,sha256=N3EGPbh4o9ArIPPEjWKlK22RmKqeh-OTVhvf8B3cvUg,1064
+novum_api_client-0.8.0.dist-info/METADATA,sha256=GgFgvCPsaRMxGXtmnUKK-0q5rPxtne6qgzMF_jLlZJk,472
+novum_api_client-0.8.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+novum_api_client-0.8.0.dist-info/RECORD,,
