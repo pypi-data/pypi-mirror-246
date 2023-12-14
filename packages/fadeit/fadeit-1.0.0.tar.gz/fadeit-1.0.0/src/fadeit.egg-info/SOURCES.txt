@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fadeit/__init__.py
+src/fadeit/fadeit.py
+src/fadeit.egg-info/PKG-INFO
+src/fadeit.egg-info/SOURCES.txt
+src/fadeit.egg-info/dependency_links.txt
+src/fadeit.egg-info/top_level.txt

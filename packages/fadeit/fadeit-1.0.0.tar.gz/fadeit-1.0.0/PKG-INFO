@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fadeit
+Version: 1.0.0
+Summary: A simple Censored Words Bypasser for social media apps.
+Home-page: https://github.com/anonfaded/fade-it
+Author: Faded
+Author-email: axonxx@proton.me
+Project-URL: Bug Tracker, https://github.com/anonfaded/fade-it/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Install the tool and the usage guide will be on the terminal :)

@@ -1,0 +1,1 @@
+Install the tool and the usage guide will be on the terminal :)
