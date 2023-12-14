@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+imbed/__init__.py
+imbed.egg-info/PKG-INFO
+imbed.egg-info/SOURCES.txt
+imbed.egg-info/dependency_links.txt
+imbed.egg-info/not-zip-safe
+imbed.egg-info/top_level.txt

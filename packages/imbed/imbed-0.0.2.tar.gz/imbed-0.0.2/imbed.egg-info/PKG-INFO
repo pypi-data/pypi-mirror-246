@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: imbed
+Version: 0.0.2
+Summary: Tools to work with embeddings
+Home-page: https://github.com/thorwhalen/imbed
+Author: Thor Whalen
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# imbed
+Tools to work with embeddings
+
+
+To install:	```pip install imbed```
