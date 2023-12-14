@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layers>
+  <layer interface="nswdesignsystem.plone6.interfaces.INswdesignsystemPlone6Layer"
+         name="nswdesignsystem.plone6"
+  />
+</layers>
