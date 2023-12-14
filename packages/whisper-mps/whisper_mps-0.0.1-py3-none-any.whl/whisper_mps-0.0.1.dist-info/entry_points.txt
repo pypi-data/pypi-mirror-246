@@ -1,0 +1,3 @@
+[console_scripts]
+whisper-mps = whisper-mps.cli:main
+
