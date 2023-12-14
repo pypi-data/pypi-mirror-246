@@ -1,0 +1,10 @@
+foodreversefda/__init__.py,sha256=w0Xo6emr9lenIYgZF7fHTUUwlCcDgCFjyXdLvG2wdCw,96
+foodreversefda/classification.py,sha256=cDBE-_lKNqLZUZra5v-k5z2zmoTiJNyzIwgxmslunYc,914
+foodreversefda/classification_test.py,sha256=hk_uUgH6s0CvQ5r2URpPOCPAC6Vd4LD3B7nTFyJTmWQ,396
+foodreversefda/date.py,sha256=AooXmS9-AmUS2d_39mdZOXL7-D4uqktQSmZdPYcoKJI,624
+foodreversefda/date_test.py,sha256=5e_o9qSlV3U4v4RIJUz8qZsB6RCk3Fap1RvLLgk6xQ8,244
+foodreversefda/ID.py,sha256=ZOOs-m7rZZSbsw-lRHnUGJrXvTrJC2shUqti6jitRQY,616
+foodreversefda/ID_test.py,sha256=GEkpw81bUu2aG2NYu14v01AbyUwLjkdu_FTiZElwICY,782
+foodreversefda-0.1.5.dist-info/METADATA,sha256=IzXEVER0FxPgi8HDt-Mx_4m5vcNNm2lk9a8DPpMK98o,577
+foodreversefda-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+foodreversefda-0.1.5.dist-info/RECORD,,
