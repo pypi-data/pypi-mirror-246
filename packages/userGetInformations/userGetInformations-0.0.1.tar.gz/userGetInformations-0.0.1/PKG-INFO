@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: userGetInformations
+Version: 0.0.1
+Summary: With this package you can make great popups
+Author: Nathan Langen
+Author-email: nathan.langen@web.de
+Keywords: popup,window
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This module provides several popups.
+It also provides a background blocker that prevents
+the user from using the background while the popup is displayed.

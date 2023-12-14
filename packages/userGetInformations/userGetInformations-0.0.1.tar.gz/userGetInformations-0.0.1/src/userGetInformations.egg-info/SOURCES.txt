@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+src/userGetInformations.egg-info/PKG-INFO
+src/userGetInformations.egg-info/SOURCES.txt
+src/userGetInformations.egg-info/dependency_links.txt
+src/userGetInformations.egg-info/top_level.txt
