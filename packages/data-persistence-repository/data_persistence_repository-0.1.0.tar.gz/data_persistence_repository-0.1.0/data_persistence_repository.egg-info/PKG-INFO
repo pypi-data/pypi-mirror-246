@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: data-persistence-repository
+Version: 0.1.0
+Summary: A repository implementation for data persistence.
+Home-page: https://github.com/smileservices/data_persistence_repository
+Author: vladimir gorea
+Author-email: vladimir@smileservices.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: exceptiongroup==1.2.0
+Requires-Dist: greenlet==3.0.2
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: packaging==23.2
+Requires-Dist: pluggy==1.3.0
+Requires-Dist: psycopg2==2.9.9
+Requires-Dist: pytest==7.4.3
+Requires-Dist: SQLAlchemy==2.0.23
+Requires-Dist: SQLAlchemy-Utils==0.41.1
+Requires-Dist: tomli==2.0.1
+Requires-Dist: typing_extensions==4.9.0
+
+
+# Data Persistence Repository SQL
+
+[![PyPI](https://img.shields.io/pypi/v/data_persistence_repository)](https://pypi.org/project/data-persistence-repository-sql/)
+[![Build Status](https://github.com/smileservices/data_persistence_repository/workflows/Tests/badge.svg)](https://github.com/smileservices/data_persistence_repository/actions)
+[![Coverage Status](https://coveralls.io/repos/github/yourusername/data_persistence_repository/badge.svg)](https://coveralls.io/github/smileservices/data_persistence_repository)
+
+**Data Persistence Repository SQL** is a Python package providing a portable SQL repository implementation, following the repository pattern for a data persistence layer. This package facilitates interaction with SQL databases through an abstracted interface, ensuring clean and maintainable database interaction in Python applications.
+
+## Features
+
+- Abstract repository interface for streamlined data layer interactions.
+- SQL repository implementation leveraging SQLAlchemy.
+- Context manager for robust database session management.
+- Comprehensive methods for CRUD operations (Create, Read, Update, Delete).
+- Support for filtering and bulk operations.
+
+## Installation
+
+Install **Data Persistence Repository SQL** from PyPI:
+
+```bash
+pip install data_persistence_repository
+```
+
+## Usage
+
+Basic usage example:
+
+```python
+from data_persistence_repository.sql_repository import SqlRepository
+
+# Initialize the repository
+repo = SqlRepository("sqlite:///your_database.db")
+
+# Use the repository within a managed context
+with repo.start_session() as session:
+    # Perform add, get, delete operations here
+```
+
+Replace `"sqlite:///your_database.db"` with your actual database URL.
+
+## Requirements
+
+- Python 3.x
+- Dependencies listed in `requirements.txt`.
+
+## Running Tests
+
+Execute tests using pytest:
+
+```bash
+pytest
+```
+
+## Contributing
+
+Contributions are welcomed! For substantial changes, please open an issue first to discuss what you'd like to change. Please make sure to update tests accordingly.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+---
+
+For more information on the repository pattern and its benefits in data persistence, please visit [Repository Pattern Information](https://example.com/repository-pattern-info).
