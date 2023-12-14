@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+MaLTHA/__main__.py
+MaLTHA/convert.py
+MaLTHA/database.py
+MaLTHA/generate.py
+MaLTHA.egg-info/PKG-INFO
+MaLTHA.egg-info/SOURCES.txt
+MaLTHA.egg-info/dependency_links.txt
+MaLTHA.egg-info/requires.txt
+MaLTHA.egg-info/top_level.txt
