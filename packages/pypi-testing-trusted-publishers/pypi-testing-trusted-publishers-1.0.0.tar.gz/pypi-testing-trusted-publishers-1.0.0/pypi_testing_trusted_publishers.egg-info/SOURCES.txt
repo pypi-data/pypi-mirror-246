@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pypi_testing_trusted_publishers.egg-info/PKG-INFO
+pypi_testing_trusted_publishers.egg-info/SOURCES.txt
+pypi_testing_trusted_publishers.egg-info/dependency_links.txt
+pypi_testing_trusted_publishers.egg-info/top_level.txt
+simplemodule/__init__.py
+simplemodule/add.py
+simplemodule/subtract.py
