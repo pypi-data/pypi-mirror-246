@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: orchardmanagement-package
+Version: 0.0.1
+Summary: orchard management system
+Home-page: UNKNOWN
+Author: Yahan Cong, Kang Lu
+Author-email: 
+License: UNKNOWN
+Keywords: python,orchard,orchardmanagement
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+This repository contains the code for an Orchard Management Package, designed to manage fruit production, inventory, and sales. The system is implemented in Python and utilizes the pandas library for data manipulation and matplotlib for plotting.
+
