@@ -1,0 +1,39 @@
+/* This is a commons file containing special proto messages for the
+ * server and client to communicate with each other.
+ */
+
+syntax = "proto3";
+
+enum ModuleType {
+  LINEAR = 0;
+  CONV2D = 1;
+  RELU = 2;
+  MAXPOOL2D = 3;
+  FLATTEN = 4;
+  SOFTMAX = 5;
+  BATCHNORM2D = 6;
+  DROPOUT = 7;
+  CONVTRANSPOSE2D = 8;
+  TANH = 9;
+  SIGMOID = 10;
+  LEAKYRELU = 11;
+  ELU = 12;
+  SELU = 13;
+  PRELU = 14;
+  GELU = 15;
+  GPT2 = 16;
+}
+
+message Tensor {
+  bytes buffer = 1;
+  repeated uint32 size = 2;
+  string dtype = 3;
+  int32 chunks = 5;
+}
+
+
+enum Status {
+  READY = 0;
+  RUNNING = 1;
+  FINISHED = 2;
+}
