@@ -1,0 +1,13 @@
+getr/__init__.py,sha256=Z7cGw7DbjPfk_myApNEy1vMKtvqPRrSC2nYwRXBxZqI,447
+getr/_modidx.py,sha256=HFkjUcrgIpwNrIKKd6vZCd1WvsV9gyvCFPtHRHt2kgc,3298
+getr/attr.py,sha256=3hiz-sxdvxiEjAr5TDcm4BAntj2ZRlqDZGNT3pPl9cQ,4289
+getr/atyp.py,sha256=YFRg_iuhCqnW1agftAs_14ZhLGh7bFnDRxor_n5ox2M,756
+getr/cons.py,sha256=Xr8u0dYZ8xZDHGP-H80DxMUKrCUr0oELfYybCyDriEc,1066
+getr/core.py,sha256=Hxnd5d2gRG5TvMUOlrOBx-rOux4znW-OBpV3o28u3AI,8747
+getr/grds.py,sha256=8eAvQPqyOxnRRlmnrXDHlufsk--nX0NdahnjzHCx-cg,932
+getr-0.0.7.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+getr-0.0.7.dist-info/METADATA,sha256=Yvzlvqqk_MyPLbvnQIXYe8sa_IDyTp8TCuErm1D7KcU,2118
+getr-0.0.7.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+getr-0.0.7.dist-info/entry_points.txt,sha256=r2gm1hlkGlkjEO9DawBZBn5aB650FQYzd-9qLmsrxJg,30
+getr-0.0.7.dist-info/top_level.txt,sha256=1yDc71rwqwsIY5NK4LOjaE7arfUlMgP_CrpnYzxasIs,5
+getr-0.0.7.dist-info/RECORD,,
