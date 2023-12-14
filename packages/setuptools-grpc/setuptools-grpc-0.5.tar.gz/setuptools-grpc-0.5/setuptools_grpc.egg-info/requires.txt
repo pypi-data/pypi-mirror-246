@@ -1,0 +1,13 @@
+setuptools
+grpcio-tools~=1.49
+
+[quality]
+black
+doc8
+flake8
+isort
+
+[tests]
+pytest
+pytest-cov
+testfixtures
