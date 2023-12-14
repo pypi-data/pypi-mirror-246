@@ -1,0 +1,2 @@
+[console_scripts]
+pyazureutils = pyazureutils.cli_pyazureutils:main

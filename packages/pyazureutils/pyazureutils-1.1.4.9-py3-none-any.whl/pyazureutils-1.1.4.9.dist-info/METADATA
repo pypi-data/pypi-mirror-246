@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: pyazureutils
+Version: 1.1.4.9
+Summary: A collection of utilities for interacting with Microsoft Azure
+Author-email: Microchip Technology <support@microchip.com>
+License: MIT
+Project-URL: Homepage, https://github.com/microchip-pic-avr-tools/pyazureutils
+Keywords: Microchip,Azure,PIC-IOT,SAM-IOT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pytz
+Requires-Dist: cryptography
+Requires-Dist: requests
+Requires-Dist: pytrustplatform >=0.12.3
+Requires-Dist: pykitinfo
+Provides-Extra: dev
+Requires-Dist: pylint >=2.15 ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: mock ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# pyazureutils
+pyazureutils is a collection of utilities for interacting with Microsoft Azure.
+
+![PyPI - Format](https://img.shields.io/pypi/format/pyazureutils)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyazureutils)
+![PyPI - License](https://img.shields.io/pypi/l/pyazureutils)
+
+## Overview
+pyazureutils is available:
+
+* install using pip from pypi: https://pypi.org/project/pyazureutils
+* browse source code on github: https://github.com/microchip-pic-avr-tools/pyazureutils
+* read API documentation on github: https://microchip-pic-avr-tools.github.io/pyazureutils
+* read the changelog on github: https://github.com/microchip-pic-avr-tools/pyazureutils/blob/main/CHANGELOG.md
+
+
+## Usage
+pyazureutils is intended as a library as well as a stand-alone CLI.
+Its primary consumer is iotprovision.
+The CLI requires that the Azure CLI ('az') is installed.
+
+## Command-line interface
+pyazureutils CLI is invoked with one command, one action and optional switches.  See help and examples below for more details.
+
+Getting help:
+```bash
+pyazureutils --help
+```
+
+Getting command-specific help (iotcentral command):
+```bash
+pyazureutils iotcentral --help
+```
+
+pyazureutils can optionally select the subscription to use:
+
+Example:
+```bash
+pyazureutils --subscription "My Azure" iotcentral register-device
+```
+
+### iotcentral command
+The iotcentral command supports device registration with Azure IoT Central
+
+Example:
+```bash
+pyazureutils iotcentral register-device
+```
+
+Device registration can optionally include the switches:
+```
+--application-name <application name (URL) to register with>
+--display-name <display name to use for the device registration>
+--certificate-file <certificate to use for registration, if not read from a kit>
+--device-template-name <device template to use for registration>
+```
+
+Example:
+```bash
+pyazureutils --subscription "My Azure" iotcentral register-device --app custom-227clcx93h8 --template "PIC-IoT WM" --display-name "My PIC-IoT Kit"
+```
+
+## Logging
+This package uses the Python logging module for publishing log messages to library users.
+A basic configuration can be used (see example below), but for best results a more thorough configuration is
+recommended in order to control the verbosity of output from dependencies in the stack which also use logging.
+```python
+import logging
+logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.WARNING)
+```
+
+## Dependencies
+This package uses pyedbglib through other libraries for USB communications.  For more information see: https://pypi.org/project/pyedbglib/.
+
+## Versioning
+pyazureutils version can be determined by:
+```python
+from pyazureutils import __version__ as pyazureutils_version
+print(f"pyazureutils version {pyazureutils_version}")
+```
+# Changelog
+
+## [1.1] - December 2023
+
+### Added
+- DSG-5753 CLI catch-all and return code
+
+### Fixed
+- DSG-5640 Clean up unused pyedbglib dependencies / requirements
+- DSG-5754 Removed erroneous relic: AzureCustomProvisioner
+
+## [1.0.0] - July 2022
+
+### Fixed
+- DSG-4387 corrections to pyazureutils library help
+- DSG-4718 Attempt iotcentral enrollment even if app name is not visible in subscription
+- DSG-5151 Support for setting the default subscription before enrollment
+
+### Added
+- DSG-4398 Link to github readme to github docs for pyazureutils
+- DSG-4471 Link to changelog
+- DSG-4727 Argument aliases for enrollment (--app, --application-name, --application-url)
+
+## [0.8.2] - December 2021
+
+### Fixed
+- DSG-4296 Better feedback when multiple subscriptions or IoT Central applications found
+- DSG-4293 Better device template handling
+
+### Changed
+- DSG-4355 Improved help
+
+## [0.7.1] - November 2021
+
+### Added
+- DSG-4029 Publication to GitHub + pypi
+- DSG-4001 Support for multiple subscriptions
+- DSG-3442 iotcentral enrollment
+
+### Fixed
+- DSG-4004 cross-platform subprocess calls
+- DSG-4000 packages dependencies corrected
+
+### Changed
+- DSG-3363 refactored provisioning
+
+## [0.6.3] - June 2021
+
+### Added
+- DSG-3565 pypi release
+
+## [0.5.0] - January 2021
+- First public release to PyPi
