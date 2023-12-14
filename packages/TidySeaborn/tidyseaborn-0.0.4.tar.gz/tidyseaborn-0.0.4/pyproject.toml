@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TidySeaborn"
+version = "0.0.4"
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "xlrd",
+  "openpyxl",
+  "xlwt",
+  "XlsxWriter",
+  "scipy",
+  "seaborn",
+  "statsmodels"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "LiuAndy", email = "andylau_dh@163.com"},
+]
+maintainers = [
+  {name = "LiuAndy", email = "andylau_dh@163.com"}
+]
+description = "使用Seaborn库绘图的简洁程序库，一行代码搞定所有统计图！"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["统计绘图", "Seaborn", "简介代码", "函数封装"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/LiuAndy-art/TidySeaborn"
+Documentation = "https://github.com/LiuAndy-art/TidySeaborn"
+Repository = "https://github.com/LiuAndy-art/TidySeaborn"
