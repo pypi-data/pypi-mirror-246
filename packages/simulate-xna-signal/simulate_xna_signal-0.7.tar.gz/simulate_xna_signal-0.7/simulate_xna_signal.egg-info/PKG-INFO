@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: simulate-xna-signal
+Version: 0.7
+Summary: pip-installable python package to simulate the expected nanopore signal produced by a given genetic sequence including unnatural bases (XNA), (J, K, P, Sc, V, X, and Z from the Artificially Expanded Genetic Information System).
+Home-page: https://github.com/jade-minzlaff/simulate_xna_signal
+Author: jade-minzlaff
+License: MIT License
+Description-Content-Type: text/markdown
+
+README.txt for simulate_xna_signal.py
