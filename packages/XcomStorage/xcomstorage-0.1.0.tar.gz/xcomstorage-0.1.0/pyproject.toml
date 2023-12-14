@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "XcomStorage"
+version = "0.1.0"
+description = "xflow xcom storage"
+authors = ["hanoch"]
+readme = "README.md"
+packages = [
+    { include = "xcomstorage" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "2.3.0"
+pydantic-settings = "2.1.0"
+redis = "5.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
