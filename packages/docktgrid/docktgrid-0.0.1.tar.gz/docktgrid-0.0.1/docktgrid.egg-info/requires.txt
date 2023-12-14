@@ -1,0 +1,8 @@
+torch<3.0.0,>=2.1.0
+biopandas<1.0.0,>=0.4.1
+scipy<2.0.0,>=1.11.3
+numpy<2.0.0,>=1.26.1
+
+[dev]
+black
+pytest
