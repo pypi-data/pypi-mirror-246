@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ugad4fun"
+version = "0.1.0"
+description = "A library providing some MRI reconstruction cases based on Gadgetron."
+authors = ["ADEPT"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/medlab/ugad4fun"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.2"
+pynufft = "^2023.2.1"
+ismrmrd = "^1.14.0"
+matplotlib = "^3.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/medlab/ugad4fun/issues"
