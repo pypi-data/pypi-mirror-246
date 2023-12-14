@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+fts_rtmidi.egg-info/PKG-INFO
+fts_rtmidi.egg-info/SOURCES.txt
+fts_rtmidi.egg-info/dependency_links.txt
+fts_rtmidi.egg-info/requires.txt
+fts_rtmidi.egg-info/top_level.txt
+ftsmidi/__init__.py
+ftsmidi/midi_sender.py

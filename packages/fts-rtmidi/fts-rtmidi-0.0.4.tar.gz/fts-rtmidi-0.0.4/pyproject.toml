@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fts-rtmidi"
+version = "0.0.4"
+authors = [
+    {name="Ferdinand Oliver M Tonby-Strandborg", email="ferdinand.tonby.strandborg@gmail.com"},
+]
+description = "A simple class for sending MIDI messages"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = '>=3.12'
+dependencies = ["python-rtmidi>=1.5.8"]
+
+[project.urls]
+Homepage = "https://github.com/Ferdi0412/fts-rtmidi"
