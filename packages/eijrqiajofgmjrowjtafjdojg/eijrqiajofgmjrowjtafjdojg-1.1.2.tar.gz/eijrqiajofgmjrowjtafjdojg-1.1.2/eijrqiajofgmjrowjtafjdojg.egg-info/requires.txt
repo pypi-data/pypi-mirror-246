@@ -1,0 +1,7 @@
+requests
+importlib-metadata
+beautifulsoup4
+colorama
+screen-brightness-control
+pyperclip
+PyAutoGUI
