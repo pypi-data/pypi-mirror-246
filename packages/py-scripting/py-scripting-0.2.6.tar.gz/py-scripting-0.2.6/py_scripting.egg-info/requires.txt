@@ -1,0 +1,16 @@
+six
+
+[build]
+build
+twine
+
+[dev]
+black
+isort
+flake8
+zest.releaser
+
+[test]
+pytest
+pytest-cov
+coverage
