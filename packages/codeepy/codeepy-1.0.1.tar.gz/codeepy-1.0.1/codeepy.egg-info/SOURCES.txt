@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+codeepy.egg-info/PKG-INFO
+codeepy.egg-info/SOURCES.txt
+codeepy.egg-info/dependency_links.txt
+codeepy.egg-info/requires.txt
+codeepy.egg-info/top_level.txt
