@@ -1,0 +1,10 @@
+pytest_sample/__init__.py,sha256=Om-eCB4rYRjUuON7Vc8iIRvVXgUEPrYCsMehnU3Ksaw,46
+pytest_sample/_routing.py,sha256=ov4ELxqAX1FmjbEgrX4eYjNQwHyAKEQFtsBOG0NMH38,65
+pytest_sample/_version.py,sha256=qwX_VmtTcxitUuo61-lzyWhU70ydr0gDejMn5eqC3Dk,21
+pytest_sample/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anglisano-0.0.0.dist-info/LICENSE,sha256=3lpHpoKSUn7p4buLRM5qAND7KAV6z7yhYRhv-D3IV0o,1098
+anglisano-0.0.0.dist-info/METADATA,sha256=yU1YsaPXl1Xp9I0VoH0nyDzmLhIOLrp19a146rcfpqo,694
+anglisano-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+anglisano-0.0.0.dist-info/top_level.txt,sha256=SYqIEf9EOT3G7uALYm6m0T4I6cd08ub4PgeIcrnVPBw,14
+anglisano-0.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+anglisano-0.0.0.dist-info/RECORD,,
