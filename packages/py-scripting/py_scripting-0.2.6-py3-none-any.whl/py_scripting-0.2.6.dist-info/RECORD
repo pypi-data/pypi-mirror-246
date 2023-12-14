@@ -1,0 +1,16 @@
+scripting/__init__.py,sha256=Oe8l1GpFu82bYTnb5Cyz9iVBjO4qSKXXqHFgvZ2ZM5g,255
+scripting/conda.py,sha256=e4WgTWePVYNHA9IB4Rg1DX5eE7mVwfrH5e4fZBVbLpI,1668
+scripting/contexts.py,sha256=lxz_x3uvku8NrCJoRK0Lmr9ctuGAJAEy1CYPJg6x29Q,5387
+scripting/git.py,sha256=ZxGoxRWBe6CynH3MG0c9nD_5FUNln4XYUm-VsZUu5UY,3593
+scripting/prompting.py,sha256=1rzMqn4QRFZSCeLZt2vn16rokFBy6El4pt4cwQgTz-c,1606
+scripting/termcolors.py,sha256=sLdGT7nW0--wcNix0tkOGpjiGp3mvHL25ExGggM9lbg,950
+scripting/unix.py,sha256=W_B5kKC4hVAcazvmS63qWrRFcFgHG5OGm8OPvl8Fr1I,6858
+scripting/url.py,sha256=66MjWTQ7kwF47a-6MI-zsoWyBetH3RfFOWWTPs0wDdk,646
+scripting/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripting/tests/test_cp.py,sha256=DDHhM75cl9mpMKMiKLEBuTfnQlaseWaiNLiZkhN5rpI,2780
+scripting/tests/test_prompting.py,sha256=3IKDPEFuId8Gt6V-aAHofPFGCH8H0hWBl5Epgc65EFM,128
+py_scripting-0.2.6.dist-info/LICENSE,sha256=9_eVGmL51YKQcZpCb5upG4YuL-FhmOlheshUsvmRF-U,1109
+py_scripting-0.2.6.dist-info/METADATA,sha256=3KiYwjr2JeKFOewaPoeypm2Daz0-FWW9D66YMcnaoJo,2855
+py_scripting-0.2.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+py_scripting-0.2.6.dist-info/top_level.txt,sha256=nJ8jkonl_qnOIDgRSdQfZmT6RtuTih13uXZp3DqRnNo,10
+py_scripting-0.2.6.dist-info/RECORD,,
