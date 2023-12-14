@@ -1,0 +1,11 @@
+pdm_dockerize-0.1.0.dist-info/METADATA,sha256=dln9SSV6EoKnYmJIj_QHdvMkXdCMIPGKVcOUvkf4gdY,4455
+pdm_dockerize-0.1.0.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+pdm_dockerize-0.1.0.dist-info/entry_points.txt,sha256=1NBaAa2Pr7kAPgjPShQHeXhsotJCbXPCGFtTMHKRBMo,40
+pdm_dockerize-0.1.0.dist-info/licenses/LICENSE,sha256=ihwqREO7MOYx7Vazbx2cjicGql1BhRg3NxfldW6uAcQ,1070
+pdm_dockerize/VERSION,sha256=6d2FB_S_DG9CRY5BrqgzrQvT9hJycjNe7pv01YVB7Wc,6
+pdm_dockerize/__init__.py,sha256=WzbPtmIxO-jpyw2tcdaV9-xJFUnFiWjncPRtQlyOIpA,321
+pdm_dockerize/commands.py,sha256=XPOMhHecL96y3TkvZyPrHxKqP5476o0F1tzRq3YxhLc,2476
+pdm_dockerize/config.py,sha256=gxv6TJ5XRNKt1jXw2dfRyroIRhB04QQT0M0XCw6OW7E,436
+pdm_dockerize/entrypoint.py,sha256=8GSv0lBPGKyPqu52nfLxVnOA71vHv5e9P3-c4K8rT-w,3793
+pdm_dockerize/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdm_dockerize-0.1.0.dist-info/RECORD,,
