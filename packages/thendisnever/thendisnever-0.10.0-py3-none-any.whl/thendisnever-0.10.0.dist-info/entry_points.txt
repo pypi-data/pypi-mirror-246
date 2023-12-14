@@ -1,0 +1,3 @@
+[console_scripts]
+thendisnever=thendisnever.thend:app
+
