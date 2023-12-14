@@ -1,0 +1,5 @@
+data
+model_codes
+pred_data
+processing
+trained_models

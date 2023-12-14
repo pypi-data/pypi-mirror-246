@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PolitiClassify
+Version: 0.0.6
+Summary: Classify Twitter users' political orientation based on their multiple tweets
+Home-page: https://github.com/LingshuHu/PolitiClassify
+Author: Lingshu Hu
+Author-email: lingshu.hu@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Requires-Dist: tensorflow (>=2.6.5)
+Requires-Dist: keras (>=2.6.0)
+Requires-Dist: transformers (>=4.26.0)
+Requires-Dist: scikit-learn (>=1.2.1)
+Requires-Dist: nltk (>=3.8.1)
+Requires-Dist: setuptools (>=41.0.0)
+Requires-Dist: wheel (>=0.35)
+
+UNKNOWN
+
+
