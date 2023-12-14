@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pymnash
+Version: 0.7.3
+Summary: Find Nash Equilibria of Multiplayer Games
+Project-URL: Homepage, https://github.com/gmweinberg/pymnash
+Project-URL: Issues, https://github.com/gmweinberg/pymnash/issues
+Author-email: George Weinberg <gmweinberg@fastmail.fm>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, George  Weinberg
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: game theory,nash,nash equilibria,nash equilibrium
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: sympy
+Description-Content-Type: text/plain
+
+This module contains functionality for finding Nash Equilibria of multi-player (more than 2 player) games.
+Because the number of possibilities that need to be checked explodes as the number of players increases,
+it reallyonly works for games with a relatively small number of players.
+
+In order to find the Nash Equilibrium for a game, first feed in the payoff profile of the game as a numpy
+tensor. There is one dimension for each player, with the length along that dimension being the number of
+possible actions for that player, plus one more dimension with a length equal to the number of players.
+
+Once that is created, one can ask if a given strategy profile is a Nash Equilibrim, search for Nash Equilibria with 
+a given support, or try to find all Nash Equilibria. You can also check to see if a strategy is dominated by 
+some other strategey or by a linear combination of two strategies.
+
+This module uses the awesome power of Sympy to solve systems of equations. Sympy will even find general solutions
+such as a player plays action 0 with probability 0, action 1 with probability p, 
+and action 2 with probability 1 - p.
+
+This package is intended more for students of game theory than for the practical value of finding Nash Equilibria,
+I'm not at all sure they have any practical value. One observation you will make after playing around with this
+is that for some multiplayer games, once some players have decided on a course of action it doesn't matter
+what the other players do.
+ 
