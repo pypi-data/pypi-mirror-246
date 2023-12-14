@@ -1,0 +1,2 @@
+[console_scripts]
+gstat_exporter = gstat_exporter.gstat_exporter:main

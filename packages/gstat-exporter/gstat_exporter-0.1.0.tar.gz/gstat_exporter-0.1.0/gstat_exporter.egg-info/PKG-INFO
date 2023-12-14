@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gstat-exporter
+Version: 0.1.0
+Summary: A Prometheus exporter for FreeBSD gstat data
+Author: Thomas Steen Rasmussen
+Author-email: thomas@gibfest.dk
+License: BSD 3-Clause License
+Project-URL: homepage, https://github.com/tykling/gstat_exporter
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prometheus-client==0.19.0
+Provides-Extra: dev
+Requires-Dist: twine==4.0.2; extra == "dev"
+Requires-Dist: pre-commit==3.5.0; extra == "dev"
+Requires-Dist: setuptools-scm==8.0.4; extra == "dev"
+Requires-Dist: build==1.0.3; extra == "dev"
+
+# gstat_exporter
+Prometheus exporter for FreeBSD gstat data
+
+# Blog post
+https://blog.tyk.nu/blog/all-in-a-days-work-prometheus-gstat_exporter-and-grafana-dashboard/
+
+# Grafana Dashboard
+https://grafana.com/grafana/dashboards/11223
