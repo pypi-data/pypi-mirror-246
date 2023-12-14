@@ -1,0 +1,28 @@
+data:
+  extension: wav
+  sampling_rate: 44100
+  data_dir: phi/assets/data/chirp
+model:
+  model_dir: phi/assets/models/chirp
+  block_size: 160
+  signal_length: 64000
+  hidden_size: 512
+  n_bands: 65
+  n_harmonics: 100
+  overlap: 0.75
+  scales:
+    - 4096
+    - 2048
+    - 1024
+    - 512
+    - 256
+    - 128
+train:
+  batch_size: 1
+  steps: 10
+  start_lr: 0.001
+  stop_lr: 0.0001
+  decay: 400000
+timbre_transfer:
+  input_file: "/home/maxwell/donuts/DSP/chirp.wav"
+  model: "./export/ddsp_rhodes_pretrained.ts"
