@@ -1,0 +1,13 @@
+# production requirements
+tensorflow>=2.6.5
+keras>=2.6.0
+transformers>=4.26.0
+scikit-learn>=1.2.1
+nltk>=3.8.1
+
+# packaging
+setuptools==41.0.0
+wheel==0.35
+
+# testing requirements
+pytest>=4.6.6,<5.0.0
