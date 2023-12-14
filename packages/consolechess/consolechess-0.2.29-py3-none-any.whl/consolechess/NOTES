@@ -1,0 +1,80 @@
+NOTES
+
+- Most time is spent in king_is_in_check.
+- 
+
+IDEAS
+
+- Replace PieceType, Color, and Side with integer representation. (~5% speedup)
+- Cache pieces, update upon hash change. (up to 10% speedup)
+- Add navigability_already_checked flag to can_move_piece to avoid redundant _get_squares calls.
+
+=================================================
+n=2000 sample with no mypyc compilation.
+87.46005779 seconds elapsed.
+=================================================
+
+High-level methods
+     2000    0.089    0.000   75.753    0.038 board.py:1188(submit_moves)
+     2000    0.078    0.000    5.303    0.003 board.py:1201(export_moves)
+   125229    1.163    0.000   75.490    0.001 board.py:1236(move)
+    42727    0.069    0.000    1.479    0.000 board.py:1371(can_castle)
+     2837    0.021    0.000    1.985    0.001 board.py:1427(castle)
+   675332    0.272    0.000   10.671    0.000 board.py:1577(pieces)
+   128171    0.248    0.000   36.135    0.000 board.py:1597(is_checkmate)
+     4000    0.045    0.000   10.460    0.003 board.py:1619(status)
+    10544    0.209    0.000    3.706    0.000 board.py:1712(can_block_check)
+   661846   13.134    0.000   65.488    0.000 board.py:1801(king_is_in_check)
+     2000    0.011    0.000   76.748    0.038 board.py:191(__init__)
+ 84491591    8.050    0.000    8.050    0.000 board.py:243(__getitem__)
+   125563    0.376    0.000    1.742    0.000 board.py:259(__hash__)
+   125229    0.096    0.000    1.889    0.000 board.py:299(alternate_turn)
+     2000    0.039    0.000    0.547    0.000 board.py:312(set_staunton_pattern)
+  1831838    1.093    0.000    1.967    0.000 board.py:334(test_position)
+   122342    1.443    0.000   69.056    0.001 board.py:981(move_piece)
+     4009    0.018    0.000    0.831    0.000 board.py:396(set_initial_positions)
+   129826    0.139    0.000   15.868    0.000 board.py:812(legal_moves)
+   149204    0.417    0.000   15.149    0.000 board.py:838(can_move_piece)
+   345079    0.630    0.000    1.221    0.000 board.py:864(_get_pawn_squares)
+   140337    0.048    0.000    0.048    0.000 board.py:893(<listcomp>)
+   500704    0.290    0.000    0.587    0.000 board.py:900(_get_rook_squares)
+   445420    0.274    0.000    0.617    0.000 board.py:915(_get_queen_squares)
+   288454    0.225    0.000    0.559    0.000 board.py:929(_get_bishop_squares)
+  2846169    7.891    0.000   14.802    0.000 board.py:943(_get_knight_squares)
+   442241    0.634    0.000    1.792    0.000 board.py:962(_get_king_squares)
+
+Miscellaneous
+
+    21629    0.071    0.000    1.093    0.000 board.py:1082(<listcomp>)
+    21629    0.107    0.000    0.737    0.000 board.py:1321(<listcomp>)
+    13332    0.427    0.000    0.914    0.000 board.py:1328(<listcomp>)
+      745    0.001    0.000    0.101    0.000 board.py:1339(<listcomp>)
+   128171    1.355    0.000    2.041    0.000 board.py:1602(<listcomp>)
+    10544    0.099    0.000    1.657    0.000 board.py:1728(<listcomp>)
+  1323692    3.850    0.000    9.330    0.000 board.py:1804(<genexpr>)
+   915919    0.364    0.000    0.505    0.000 board.py:342(<dictcomp>)
+ 17020669    3.974    0.000    3.974    0.000 <string>:2(__eq__)
+  2882099    0.567    0.000    0.775    0.000 <string>:2(__hash__)
+   161767    0.070    0.000    9.894    0.000 {method 'extend' of 'list' objects}
+ 12732728    1.574    0.000    1.574    0.000 {method 'index' of 'list' objects}
+
+Utils
+
+  5505488    2.309    0.000    2.309    0.000 utils.py:102(step_up)
+  5436745    2.178    0.000    2.178    0.000 utils.py:118(step_down)
+  3901223    1.607    0.000    2.104    0.000 utils.py:134(step_right)
+  3874011    1.593    0.000    2.090    0.000 utils.py:150(step_left)
+   965559    0.543    0.000    1.349    0.000 utils.py:166(step_diagonal_up_right)
+   957118    0.541    0.000    1.334    0.000 utils.py:175(step_diagonal_up_left)
+   945349    0.514    0.000    1.281    0.000 utils.py:184(step_diagonal_down_right)
+   936978    0.517    0.000    1.272    0.000 utils.py:193(step_diagonal_down_left)
+   177072    0.308    0.000    0.424    0.000 utils.py:20(get_adjacent_files)
+    16222    0.034    0.000    0.056    0.000 utils.py:202(get_squares_between)
+  2148124    0.719    0.000    0.719    0.000 utils.py:38(iter_to_top)
+  2044820    0.633    0.000    0.633    0.000 utils.py:44(iter_to_bottom)
+  2234518    0.619    0.000    0.724    0.000 utils.py:50(iter_to_right)
+  2529545    0.687    0.000    0.780    0.000 utils.py:56(iter_to_left)
+  1474153    0.842    0.000    0.924    0.000 utils.py:62(iter_top_right_diagonal)
+  1821699    1.149    0.000    1.239    0.000 utils.py:72(iter_bottom_left_diagonal)
+  1730587    0.969    0.000    1.054    0.000 utils.py:82(iter_top_left_diagonal)
+  1546345    0.912    0.000    0.999    0.000 utils.py:92(iter_bottom_right_diagonal)
