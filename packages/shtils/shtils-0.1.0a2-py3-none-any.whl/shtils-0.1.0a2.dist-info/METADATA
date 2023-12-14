@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: shtils
+Version: 0.1.0a2
+Summary: A collection of OS shell utils
+Home-page: UNKNOWN
+Author: alpenstorm (Mihai Negrean)
+Author-email: <mihai@negrean.net>
+License: UNKNOWN
+Keywords: python,os,shell,utils
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A collection of OS shell utils that allows a developer to implement often-used shell commands (like "ls" or "clear") in both Windows and Unix terms.
+
+
