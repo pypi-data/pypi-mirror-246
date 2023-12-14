@@ -1,0 +1,117 @@
+{
+    "quizname": "Speaking About the Weather Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The rain's nearly stopped. It's only _______ now.",
+            "answer": "drizzling",
+            "choices": {
+                "1": "a drought",
+                "2": "drizzling",
+                "3": "raining cats and dogs"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A _______ is a tropical storm with very strong winds.",
+            "answer": "hurricane",
+            "choices": {
+                "1": "blizzard",
+                "2": "hurricane",
+                "3": "precipitation"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "I stepped in a _______ and got the bottom of my pants all wet.",
+            "answer": "puddle",
+            "choices": {
+                "1": "puddle",
+                "2": "piddle",
+                "3": "poodle"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "We didn't use the airconditioner at all during that _______ last summer.",
+            "answer": "cold spell",
+            "choices": {
+                "1": "forecast",
+                "2": "cold spell",
+                "3": "sunburn"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "You can get struck by _______ during an electrical storm.",
+            "answer": "lightning",
+            "choices": {
+                "1": "thunder",
+                "2": "sunshine",
+                "3": "lightning"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "It was too _______ for the pilot to land the plane.",
+            "answer": "foggy",
+            "choices": {
+                "1": "mild",
+                "2": "sunny",
+                "3": "foggy"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "If you let me put your _______ on I'll be able to see better.",
+            "answer": "shades",
+            "choices": {
+                "1": "thermometer",
+                "2": "shades",
+                "3": "degrees"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "There's often a light _______ in the afternoon on this island.",
+            "answer": "shower",
+            "choices": {
+                "1": "shower",
+                "2": "tornado",
+                "3": "heat stroke"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "When I looked at the _______ it said it was ten degrees.",
+            "answer": "thermometer",
+            "choices": {
+                "1": "scorcher",
+                "2": "thermometer",
+                "3": "meteorologist"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Putting on _______ is supposed to prevent sunburn.",
+            "answer": "sunscreen",
+            "choices": {
+                "1": "sunscreen",
+                "2": "suntan",
+                "3": "sunglasses"
+            }
+        }
+    ]
+}
