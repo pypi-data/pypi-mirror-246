@@ -1,0 +1,21 @@
+[project]
+name = "test-pkg-iaosid"
+version = "0.1.0"
+description = "test project"
+authors = [
+    { name = "29th-Day", email = "43274844+29th-Day@users.noreply.github.com" },
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
