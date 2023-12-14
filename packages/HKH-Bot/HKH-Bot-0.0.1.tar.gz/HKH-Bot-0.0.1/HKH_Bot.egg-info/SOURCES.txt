@@ -1,0 +1,12 @@
+License.txt
+README.md
+setup.py
+HKH_Bot.egg-info/PKG-INFO
+HKH_Bot.egg-info/SOURCES.txt
+HKH_Bot.egg-info/dependency_links.txt
+HKH_Bot.egg-info/requires.txt
+HKH_Bot.egg-info/top_level.txt
+orangecontrib/__init__.py
+orangecontrib/hkh_bot/__init__.py
+orangecontrib/hkh_bot/widgets/__init__.py
+orangecontrib/hkh_bot/widgets/mybot.py
