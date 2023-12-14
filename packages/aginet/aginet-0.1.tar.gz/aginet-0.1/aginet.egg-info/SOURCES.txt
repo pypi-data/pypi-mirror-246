@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aginet/__init__.py
+aginet/aginet.py
+aginet.egg-info/PKG-INFO
+aginet.egg-info/SOURCES.txt
+aginet.egg-info/dependency_links.txt
+aginet.egg-info/top_level.txt
