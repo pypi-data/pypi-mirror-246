@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -x
+here="$(dirname "$0")"
+cd "$here"
+here="`pwd`"
+
+
+# test "$1" == "rev" && {
+#     set -x
+
+#     rsync -av --delete -e ssh doglr:/data/nodered/fs/root/.node-red/ax/* .
+#     exit
+# }
+
+while true
+do
+    sleep 2s
+    #find . | entr -d rsync -av --delete "$here/" -e ssh doglr:/data/nodered/fs/root/.node-red
+    find . | entr -s "rsync --delete -av "$here/" -e ssh root@157.230.102.229:/data/nodered/fs/root/.node-red/ax"
+done
+
+
+

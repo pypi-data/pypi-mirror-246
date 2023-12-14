@@ -1,0 +1,39 @@
+<script type="text/javascript">
+
+  RED.nodes.registerType('ax-hub', {
+    category: 'axiros',
+    color: '#8bd124',
+    kw: "{}",
+    defaults: {
+      name: {value: "AX Workers Mgmt"},
+      kw: {value: "{}"},
+    },
+    inputs: 1,
+    outputs: 3,
+    icon: "ax.svg",
+    label: function () {
+      return this.name || "AX Workers Mgmt";
+    },
+  });
+</script>
+
+<script type="text/html" data-template-name="ax-hub">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+<div class="form-row">
+      <!-- not in use -->
+  <label for="node-input-kw"><i class="icon-tag"></i>Keyword arguments (json)</label>
+  <input type="text" id="node-input-kw" placeholder="{}">
+</div>
+</script>
+<script type="text/html" data-help-name="ax-hub">
+    <p>Provides AX/LC Communication Protocol for Clients</p>
+    <h3>Outputs</h3>
+        <dl class="message-properties">
+       <dt>payload
+           <span class="property-type">Currently no output</span>
+       </dt>
+</script>

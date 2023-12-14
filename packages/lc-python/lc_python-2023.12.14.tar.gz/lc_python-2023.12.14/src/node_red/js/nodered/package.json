@@ -1,0 +1,36 @@
+{
+  "name": "@mason/red-project",
+  "description": "AX Node-RED Project",
+  "version": "2022.5.14",
+  "people": {
+    "url": "https://www.axiros.com",
+    "email": "gk@axiros.com"
+  },
+  "scripts": {
+    "@comment debug": "Say npm run debug",
+    "start": "node node_modules/node-red/red.js --title AXNodeRED -u .",
+    "start_test": "node node_modules/node-red/red.js --port 10880 --title AXNodeREDTest -u .",
+    "stop_test": "pkill --signal SIGINT AXNodeRED",
+    "stop": "pkill --signal SIGINT AXNodeRED",
+    "debug": "node --inspect-brk=0.0.0.0:1882 node_modules/node-red/red.js -u ."
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "private": true,
+  "dependencies": {
+    "@node-red-contrib-themes/theme-collection": "^3.1.5",
+    "lodash": "*",
+    "node-red": "^3.1.0",
+    "node-red-contrib-axiros": "file:ax",
+    "rxjs": "*",
+    "uuid": "*"
+  },
+  "engines": {
+    "node": ">=17"
+  },
+  "main": "settings.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

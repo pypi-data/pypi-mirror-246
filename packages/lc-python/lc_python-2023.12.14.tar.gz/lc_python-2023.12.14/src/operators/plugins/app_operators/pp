@@ -1,0 +1,843 @@
+"""
+Parsing RFC Textual State Tables into flows and python modules
+
+https://tools.ietf.org/html/rfc6733#page-68
+
+state            event            action           next state
+-----------------------------------------------------------------
+Closed           Start            I-Snd-Conn-Req   Wait-Conn-Ack
+                 R-Conn-CER       R-Accept,        R-Open
+                                  Process-CER,
+                                  R-Snd-CEA
+
+Wait-Conn-Ack    I-Rcv-Conn-Ack   I-Snd-CER        Wait-I-CEA
+                 I-Rcv-Conn-Nack  Cleanup          Closed
+                 R-Conn-CER       R-Accept,        Wait-Conn-Ack/
+                                  Process-CER      Elect
+                 Timeout          Error            Closed
+
+"""
+from devapp.app import run_app, do, app, system
+from devapp.tools import FLG, autoshort, exists, read_file, write_file, reverse_dict
+from devapp.tools import gitcmd
+from theming.formatting.markdown import deindent
+from node_red import http_api as api
+from node_red import nr_node_arranger
+from ast import literal_eval as liteval
+from collections import OrderedDict as D
+from functools import partial
+from operator import setitem
+import importlib
+import inspect
+import time
+import sys
+
+F = nr_node_arranger.Flags
+F.flow_layout.d = 'graphviz'
+
+
+class Flags(F):
+    autoshort = ''
+
+    class file_name_state_table:
+        n = '''Absolute or relative state file name.
+        Must be an ASCII table, e.g. copied from an RFC.
+        '''
+        d = ''
+
+    class name_tab:
+        d = 'State Table Flow in Node RED'
+
+    class event_sources:
+        n = 'Event sources generated. Internal means we will subscribe to subjects'
+        t = ('inject', 'internal', 'http')
+        d = 'inject'
+
+    class create_debug_output_node:
+        d = True
+
+    class file_name_flow:
+        n = '''Absolute or relative file_name to write created flow to.
+        - -(dash): Print to stdout
+        - hub:r  : Upload to hub, replacing conflicting ids
+        - hub    : Upload to hub, additionally deleting all on given tab name
+        - hub:c  : Upload to hub, clearing everything(!), before upload
+        - (empty): No flow file produced
+        '''
+        d = '-'
+
+    class py_file_name_mod:
+        n = 'Absolute or relative file_name of produced python module (- for stdout. Empty: No pymod created)'
+        d = ''
+
+    class py_file_name_mod_template:
+        n = 'Absolute or relative template file to use'
+        d = 'multi_instance.py'
+
+    class py_name_obj:
+        d = 'Name of python class to create in pymod. Root of all functions.'
+        d = 'obj'
+
+    class py_subs_action_hirarchy:
+        n = '''Regex to build an action hirarchy instead of all actions flat.
+
+        Example: Given action names "I_act_1" then supply '^I_,I.' to get "I.act_1", 
+                 which creates a hirarchy:
+                     class I:
+                        def act_1(data, msg):
+                            (...)
+        '''
+        t = 'multi_string'
+
+    class test_create:
+        n = 'Create a unit test file with all flows'
+        d = True
+
+
+g = getattr
+
+
+class S:
+    obj = None  # name of object
+    argv = None  # clie
+    states = {}  # all infos
+    events = D()  # by order
+    actions = D()  # just for looping
+    transitions = {}  # used in pymod for asserts
+    ctime = time.ctime()
+    start_state = None
+    statefile = None
+    statefile_content = None
+    # while pymod building:
+    action = action_id = action_table = action_functions = obj = None
+
+
+# -------------------------------------------------------------------------Table Parser
+cols = dict(state=0, event=0, action=0, next_state=0)
+
+flow = []
+
+
+def get_cell(k, l):
+    p = cols[k]
+    if l[p] == ' ':
+        return ''
+    return l[p:].split()[0]
+
+
+def get_cell_wipe(k, l, lines):
+    """
+    Modifies lines with whitespace where continuotions had been:
+
+    Example:
+    k = 'next_state'
+    l =      '        R-Conn-CER       R-Accept,        Wait-Conn-Ack/     '
+    lines = ['                         Process-CER      Elect              ', ...]
+
+    then we return 'Wait-Conn-AckElect' and modify lines to: 
+    lines = ['                         Process-CER                         ', ...]
+    i.e. with the second line value wiped away
+ 
+    """
+    v = get_cell(k, l)
+    if not v:
+        return v
+    i = 0
+    while v[-1][0] in ('/', ','):
+        l = lines[i]
+        vn = get_cell(k, l)
+        # replace it with spaces (wipe) in lines
+        p = cols[k]
+        sp = ' ' * len(vn)
+        lines[i] = l[:p] + sp + l[p + len(sp) :]
+        v += vn
+        i += 1
+    return v.replace('/', '')
+
+
+def parse_block(state, block):
+    B = S.states[state]
+    while block:
+        l = block.pop(0)
+        ev = get_cell_wipe('event', l, block)
+        if ev:
+            if not ev in S.events:
+                S.events[ev] = {'states': [state]}
+            else:
+                S.events[ev]['states'].append(state)
+
+            acts = []
+            B['events'][ev] = m = {'actions': acts}
+            a_ = get_cell_wipe('action', l, block).split(',')
+            a_ = act_subs(a_)  # I_foo -> I.foo
+            acts.extend(a_)
+            m['into'] = get_cell_wipe('next_state', l, block)
+            [setitem(S.actions, a, True) for a in acts]  # just remember those
+
+
+import re
+
+
+def build_action_hir_sub_regexes():
+    S._subs = r = []
+    for s in FLG.py_subs_action_hirarchy:
+        if s:
+            l = s.split(',')
+            r.append([re.compile(l[0]), l[1]])
+
+
+def act_sub(a):
+    for frm, to in S._subs:
+        a = frm.sub(to, a)
+    return a
+
+
+def check_no_namespace_collisions():
+    """
+    Foo.Process and we already have Foo.Process.Bar -> NS Collision!
+    User has to resolve manually, in the state table. 
+    """
+    l = S.actions
+    for A in l:
+        r = [k for k in l if k.startswith(A + '.')]
+        if r:
+            f = r[0].split('.')[0]
+            h = {
+                'colliding': {'Class Hirarchy': r[0], 'Action Function': f},
+                'hints': [
+                    'Possible resolutions:',
+                    'Create the hirarchy differently.',
+                    'Or append a _ behind the func or within the class!',
+                ],
+            }
+            app.die('Namespace Collision!', json=h)
+
+
+act_subs = lambda acts: [act_sub(a) for a in acts]
+
+
+def parse_state_table(fn):
+    """
+    - One word per cell
+    - ---- lines allowed (removed)
+    - Left spaces allowed
+    - / line sep allowed
+    - First row MUST be header with those names: state, event, action, next_state
+      and their aligment must be left of columns!
+
+    Example:
+
+        state            event            action           next_state
+        -----------------------------------------------------------------
+        Closed           Start            I-Snd-Conn-Req   Wait-Conn-Ack
+                         R-Conn-CER       R-Accept,        R-Open
+                                          Process-CER,
+                                          R-Snd-CEA
+
+        Wait-Conn-Ack    I-Rcv-Conn-Ack   I-Snd-CER        Wait-I-CEA
+                         I-Rcv-Conn-Nack  Cleanup          Closed
+                         R-Conn-CER       R-Accept,        Wait-Conn-Ack-/
+                                          Process-CER      Elect
+                         Timeout          Error            Closed
+
+    """
+
+    def parse_header_line_for_cols(l):
+        entries = 'state', 'event', 'action', 'next_state'
+        for k in entries:
+            cols[k] = l.index(k)
+
+    s = read_file(fn, dflt='').replace('-', '_')
+    if not s:
+        return app.die('not found', fn=fn)
+    S.statefile_content = s = deindent(s).lstrip()
+    S.statefile = fn
+    # clean:
+    orig_lines = [l for l in s.splitlines() if l.strip() and l[0] not in ('#', '_')]
+    header = orig_lines.pop(0)
+    parse_header_line_for_cols(header)
+    orig_lines = [l + ' ' * len(header) for l in orig_lines]
+
+    def get_state_blocks(lines):
+        blocks = {}
+        while lines:
+            l = lines.pop(0)
+            if l[0] != ' ':
+                block = []
+                state = get_cell_wipe('state', l, lines)
+                S.states[state] = {'events': {}}
+                blocks[state] = block
+            block.append(l)
+        return blocks
+
+    blocks = get_state_blocks(list(orig_lines))
+
+    for state, block in blocks.items():
+        if not S.start_state:
+            S.start_state = state
+        parse_block(state=state, block=block)
+
+    app.info(
+        'Parsed state table',
+        events=len(S.events),
+        states=len(S.states),
+        actions=len(S.actions),
+    )
+    return s
+
+
+def sort_dicts(*dicts):
+    for k in dicts:
+        m = {}
+        v = getattr(S, k)
+        m.update(v)
+        v.clear()
+        for k in sorted(m):
+            v[k] = m[k]
+
+
+def add_by_id_dicts(*dicts):
+    for k in dicts:
+        # k: events, actions, states
+        v = getattr(S, k)
+        # id_by_state, not id_by_stateS
+        k = k[:-1] if k.endswith('s') else k
+        m = {i: s for i, s in zip(range(len(v)), v)}
+        setattr(S, '%s_by_id' % k, m)
+        setattr(S, 'id_by_%s' % k, reverse_dict(m))
+
+
+def add_transitions_table():
+    """A big table of ids, for fast assertions against data in py funcs"""
+
+    def act_ids(am):
+        # am like {'actions': ['I_Snd_Conn_Req'], 'into': 'Wait_Conn_Ack'}
+        r = [S.id_by_action[a] for a in am['actions']]
+        r.append(S.id_by_state[am['into']])
+        return r
+
+    _ = S.transitions
+    for k, v in S.states.items():
+        _[S.id_by_state[k]] = {
+            S.id_by_event[k1]: act_ids(a) for k1, a in v['events'].items()
+        }
+
+
+def add_misc_infos():
+    S.obj = FLG.py_name_obj
+    S.obj_events_in_subj = S.obj + '_events_in'
+    S.cli = ' '.join(sys.argv)
+    gi = gitcmd(os.path.dirname(__file__))
+    try:
+        S.parser_rev = '%(url)s@%(cmd)s' % gi
+        S.gitrev = gi['cmd']
+    except Exception:
+        S.parser_rev, S.gitrev = ('n.a.',) * 2
+
+
+# ------------------------------------------------------------------------------- Flows
+
+
+def n_state(s):
+    return S.obj + '.state.%s' % s
+
+
+def n_act(s):
+    return S.obj + '.do.%s' % s
+
+
+ids = set()
+
+
+def uid(n):
+    i = '0'
+    while n in ids:
+        i = str(int(i) + 1)
+        if n.split('.')[-1].isdigit():
+            n = n.rsplit('.', 1)[0]
+        n += '.' + i
+    ids.add(n)
+    if 'Reject.4' in n:
+        breakpoint()  # FIXME BREAKPOINT
+    return n
+
+
+def ops_event_start(ev, ev_id):
+    r = []
+    for k in FLG.event_sources:
+        r.append(ev_src_ops(ev, ev, typ=k))
+        if not r[-1]:
+            app.die('Source event typ not supported', typ=k)
+    return r
+
+
+def ops_event_end(prev_op, have=set()):
+    if prev_op['id'] in have:
+        return []
+    have.add(prev_op['id'])
+    ts = prev_op['kw']['target_state']
+    r = []
+    ws = prev_op['wires']
+    for k in FLG.event_sources:
+        if k in ('internal',):
+            continue
+        r.append(ev_snk_ops(ts, typ=k))
+        id = r[-1]['id']
+        if not ws:
+            ws.append([])
+        if id not in ws[0]:
+            ws[0].append(id)
+    return r
+
+
+id_root_ev_src = lambda: S.obj_events_in_subj + '.id'
+root = [0]
+
+
+def add_internal_event_source():
+    n = id_root_ev_src()
+    flow.append(
+        {
+            'id': n,
+            'type': 'ax-src',
+            'name': 'ax.src.subject',
+            'kw': {'name': n},
+            'wires': [],
+            'states': D(),
+        }
+    )
+    root[0] = flow[-1]
+
+
+build_event_flows = lambda: [do(build_event_flow, ev, m) for ev, m in S.events.items()]
+
+
+def build_event_flow(ev, mev):
+    """
+    ev = 'Start'
+    mev: {'states': ['Closed']}
+    """
+    nfo = partial(app.info, event=ev)
+    n, ev_state_cond_id = ev, ev + '.by_state_cond'
+
+    for state in mev['states']:
+        prev_op = do(build_action_chain, state, ev, prev_op=root[0])
+        eevs = ops_event_end(prev_op)
+        flow.extend(eevs)
+
+
+state_setter_name = lambda a: 'set.%s' % a
+
+ops_by_actname = D()
+sources = set()
+by_id = {}
+
+
+def build_action_chain(state, ev, prev_op):
+    """prev_op always root at entry"""
+    r = prev_op
+    m = S.states[state]['events'][ev]
+    acts = list(m['actions'])
+    # if 'R.Snd_DPA' in str(acts[0]):
+    #     breakpoint()  # FIXME BREAKPOINT
+    acts.append(m['into'])  # last one (set state)
+    root_wire = False
+    while acts:
+        a = acts.pop(0)
+        app.debug('Action', a=a, state=state, evt=ev)
+        n = n_act(a) if acts else state_setter_name(a)
+        op = ops_by_actname.get(a)
+        if not op:
+            id = a + '.id'
+            op = {
+                'id': id,
+                'name': n,
+                'type': 'ax-op',
+                'kw': {},
+                'wires': [],
+                'states': D(),
+            }
+            if not acts:
+                op['kw'] = {'target_state': a}
+            flow.append(op)
+            ops_by_actname[a] = op
+        for k in to_list(prev_op):
+            k['states'][state] = op['id']
+        root_wire = root_wire or (prev_op['wires'].append([op['id']]) or 1)
+        prev_op = op
+    assert 'target_state' in op['kw']
+    return op
+
+
+to_list = lambda a: a if isinstance(a, list) else [a]
+
+
+def cap(s):
+    return ''.join([c for c in s if c.upper() == c and not c == '_'])
+
+
+def insert_event_routers():
+    """Insert post act state conditions if we have more state inputs into an action"""
+    by_id.update(dict([(n['id'], n) for n in flow]))
+    nr = 0
+    for op in list(flow):
+        nr += 1
+        s = op.get('states', 0)
+        if not s:
+            continue
+        tid_by_states = tbs = D()
+        # state target id
+        for st, tid in s.items():
+            tbs.setdefault(tid, []).append(st)
+        if len(tbs) == 1:
+            op['wires'] = [[list(tbs.keys())[0]]]
+        else:
+            id = '%s.pc' % op['id']
+            n = ''
+            c = []
+            for i, v in zip(range(len(tbs)), tbs.values()):
+                n += '%s:%s\n' % (i + 1, ','.join([cap(j) for j in v]))
+                c.append([S.obj + '.state', 'in', v])
+            op['wires'] = [[id]]
+            cond = {
+                'id': id,
+                'type': 'ax-cond',
+                'name': 'Event router: ' + n,
+                'wires': [[k] for k in tbs.keys()],
+                'condition': c,
+                'outputs': len(c),
+            }
+            flow.insert(nr, cond)
+            i += 1
+
+
+true, false = True, False
+ev_src_ops = lambda name, ev, typ: dict(
+    inject={
+        'id': name + '.inj',
+        'type': 'inject',
+        'name': name,
+        'props': [{'p': 'payload'}],
+        'repeat': '',
+        'crontab': '',
+        'once': True,
+        'onceDelay': '0',
+        'topic': '',
+        'payload': ev,
+        'payloadType': 'str',
+        'wires': [],
+    },
+    http={
+        'id': name + '.http_in',
+        'type': 'http in',
+        'name': name,
+        'url': '/' + name,
+        'method': 'get',
+        'wires': [],
+    },
+    internal={
+        'id': name + '.subj',
+        'type': 'ax-src',
+        'name': 'ev.src.%s' % name,
+        'wires': [],
+    },
+).get(typ)
+
+
+ev_snk_ops = lambda name, typ: dict(
+    inject={
+        'id': name + '.dbg',
+        'type': 'debug',
+        'name': name,
+        'active': True,
+        'tosidebar': True,
+        'console': False,
+        'tostatus': False,
+        'complete': 'false',
+        'statusVal': '',
+        'statusType': 'auto',
+        'wires': [],
+    },
+    http={
+        'id': name + '.http_out',
+        'type': 'http response',
+        'name': name,
+        'headers': {},
+        'wires': [],
+    },
+).get(typ)
+
+
+from json import dumps, loads
+
+
+def tab_nz():
+    n = z = FLG.name_tab
+    z = z.lower().replace(' ', '.')
+    return n, z
+
+
+def add_z():
+    n, z = tab_nz()
+    for op in flow:
+        op['z'] = z
+    flow.insert(0, {'type': 'tab', 'id': z, 'label': n})
+
+
+def serialize_inner_structs():
+    l = ['condition', 'kw']
+    for op in flow:
+        for k in l:
+            c = op.get(k)
+            if c is not None and isinstance(c, (dict, list, tuple)):
+                op[k] = dumps(c)
+
+
+# ------------------------------------------------------------------------- Results Out
+class Out:
+    def flow(fn):
+        if fn.startswith('hub:') or fn == 'hub':
+            if fn == 'hub:r':
+                nr_clear = 'ids'
+            elif fn == 'hub':
+                nr_clear = 'tab:%s' % tab_nz()[1]
+            elif fn == 'hub:c':
+                nr_clear = 'full'
+            else:
+                app.die('hub clear mode not understood', hint='help via -h')
+            api.upload_flows(flow, nr_clear=nr_clear)
+        else:
+            Out.write('flow', fn, dumps(flow, indent=2))
+
+    def pymod(fn, s):
+        fn = PyTmplCtx._with_ext(fn)
+        Out.write('python module', fn, s)
+        if not os.system('type black'):
+            do(system, 'black "%s"' % fn)
+            app.info('autoformatted pymodule', fn=fn)
+
+    def write(what, fn, s):
+        if fn == '-':
+            print(s)
+        elif fn:
+            write_file(fn, s)
+            app.info('have written %s' % what, fn=fn)
+
+
+# ---------------------------------------------------------- Building the python module
+import os
+
+
+class PyTmplCtx:
+    """
+    We create a lot of infos which is useful in templates
+
+    All attrs of the state class S are replaced into templates like this:
+
+    S.foo = 'bar' ->  "_FOO_" in template will be turned into "bar"
+    if bar is dict we also build an assigment list variable:
+    S.foo_assigns = 'i=1;j=2' ->  "_FOO_ASSIGNS_" gets the list
+    (IDE aligns at first open, but we try also to convert using black)
+
+    In templates we search for  t_py_mod and t_action funcs and replace their source.
+
+    That allows IDE assisted template editing.
+    """
+
+    _mark_rm_from_here = ' # -- rm'
+    _with_ext = lambda s: s if s.endswith('.py') else s + '.py'
+    _empty_pth = tuple([c for c in '!' * 100])
+
+    # as parsed:
+    states = events = actions = None
+
+    class repl:
+        pass
+
+    @classmethod
+    def import_template(Py):
+        dn = os.path.dirname
+        fn = Py._with_ext(FLG.py_file_name_mod_template)
+        modn = fn.rsplit('/', 1)[-1].rsplit('.', 1)[0]
+        dirs = './', dn(__file__) + '/pymod_templates/', ''
+        for dir in dirs:
+            if exists(dir + fn):
+                break
+        if not os.path.exists(dir + fn):
+            app.die('Template not found', fn=fn, in_dirs=dirs)
+        fn = os.path.abspath(dir + fn)
+        S.mod_template = fn
+        sys.path.insert(0, dn(fn))
+        tmod = importlib.import_module(modn)
+        return tmod
+
+    @classmethod
+    def add_inner_classes(Py, add, cur_pth, action):
+        clss = action.split('.')
+        ind = len(clss) - 1
+        for i in range(0, ind):
+            if clss[i] != cur_pth[i]:
+                add(' ' * 4 * i + 'class %s:' % clss[i])
+        return tuple([i for i in clss[:-1]]) + Py._empty_pth
+
+    @classmethod
+    def build_module(Py):
+        S.tmod = TM = do(Py.import_template)
+        at = getattr(TM, 't_action', None)
+        afs = []
+        add = afs.append
+        if at:
+            # action template
+            AT = inspect.getsource(at)
+            cur_pth = Py._empty_pth
+            for a in S.actions:
+                cur_pth = Py.add_inner_classes(add, cur_pth, a)
+                # parts = a.split('.')
+                # for i in range(len(parts)-1):
+                #     if parts[i]
+                # for p in parts[:-1]:
+
+                # for p in a.split('.')[:-1]
+
+                S.action = a
+                S.action_func = a.rsplit('.', 1)[-1]
+                S.action_id = S.id_by_action[a]
+                S.action_table = Py.make_action_table(a)
+                ind = len(a.split('.')[:-1]) * ' ' * 4
+                s = Py.replace_template(AT)
+                s = ind + s.replace('\n', '\n' + ind)
+                add(s)
+        S.action_functions = '\n\n'.join(afs)
+        mt = getattr(TM, 't_py_mod', None)
+        s = Py.replace_template(inspect.getsource(mt))
+        return s
+
+    @classmethod
+    def make_action_table(Py, a):
+        '''Useful in Docstrings of Action Functions
+        Example Template:
+
+            def t_action():
+                def _ACTION_(data, msg, v=verify):
+                    """
+                    _ACTION_TABLE_
+                    """
+            v(data, _ACTION_ID_, '_ACTION_')
+
+        Result:
+
+            def I_Snd_Conn_Req(data, msg, v=verify):
+                """
+                Start =>  Closed -> Wait_Conn_Ack: I_Snd_Conn_Req
+                """
+                v(data, 0, 'I_Snd_Conn_Req')
+
+            def R_Accept(data, msg, v=verify):
+                """
+                R_Conn_CER => 
+                - Closed        -> R_Open            : R_Accept, Process_CER, R_Snd_CEA
+                - Wait_Conn_Ack -> Wait_Conn_AckElect: R_Accept, Process_CER
+                - Wait_I_CEA    -> Wait_Returns      : R_Accept, Process_CER, Elect
+                """
+                v(data, 1, 'R_Accept')
+            (...)
+        '''
+        o = []
+        add = o.append
+        T = '- %s -> %s: %s'
+        r = []
+        evs = D()
+        for st, v in S.states.items():
+            for ev, chain in v['events'].items():
+                acts = chain['actions']
+                if a in acts:
+                    evs.setdefault(ev, []).append([st, chain['into'], ', '.join(acts)])
+
+        for ev, sts in evs.items():
+            if not sts:
+                continue
+            add(ev + ' => ')
+            if len(sts) == 1:
+                # single lines only for only one state for that event:
+                o[-1] += T[2:] % tuple(sts[0])
+                continue
+            # create a list of states:
+            l = [max(len(k[i]) for k in sts) for i in range(3)]
+            for strt, end, acts in sts:
+                add(T % (strt.ljust(l[0]), end.ljust(l[1]), acts))
+        return '\n'.join(o)
+
+    noval = lambda S, k: k.startswith('_') or callable(g(S, k))
+
+    @classmethod
+    def create_dicts_assigns(Py, s):
+        """Find all dict assigns and create them from dicts
+        A dict assign is an assignment sequence: k1=v1; ...
+
+        """
+        m = '_DICT_ASSIGNS_'
+        vs = lambda s: "'%s'" % s if isinstance(s, str) else s
+        for part in s.split(m)[:-1]:
+            v = part.rsplit('\n', 1)[-1].split()[-1]
+            assert v[0] == '_' and v == v.upper(), 'dict assign key not valid'
+            k = v[1:].lower()
+            d = g(S, k)
+            assert isinstance(d, dict)
+            va = '; '.join(['%s = %s' % (k, vs(v)) for k, v in d.items()])
+            setattr(S, k + '_dict_assigns', va + Py._mark_rm_from_here)
+
+    @classmethod
+    def replace_template(Py, s):
+        s = deindent(s.split('def ', 1)[1].split('\n', 1)[1])
+
+        keys = lambda: [k for k in dir(S) if not Py.noval(S, k)]
+        Py.create_dicts_assigns(s)
+
+        # longest first:
+        for k in reversed(sorted(keys(), key=len)):
+            kt = '_%s_' % k.upper()
+            if kt in s:
+                v = g(S, k)
+                v = str(v)
+                if '\n' in v:
+                    # find the indent of the kt keyword and index all other lines with it
+                    ind = len(s.split(kt, 1)[0].rsplit('\n', 1)[-1])
+                    v = v.replace('\n', '\n' + ' ' * ind)
+                s = s.replace(kt, v)
+        s = '\n'.join([l.split(Py._mark_rm_from_here, 1)[0] for l in s.splitlines()])
+        return s
+
+
+# -------------------------------------------------------------------------------- Main
+def run():
+    nr_node_arranger.verify_engine_availability()
+    fn = FLG.file_name_state_table
+    do(build_action_hir_sub_regexes)
+    do(parse_state_table, fn=fn)
+    do(check_no_namespace_collisions)
+    do(sort_dicts, 'actions', 'events')
+    do(add_by_id_dicts, 'states', 'events', 'actions')
+    do(add_transitions_table)
+    do(add_misc_infos)
+
+    fn = FLG.file_name_flow
+    if fn:
+        do(add_internal_event_source)
+        do(build_event_flows)
+        do(insert_event_routers)
+        write_file('flows.py', str(flow))
+        do(add_z)
+        root[0]['outputs'] = len(root[0]['wires'])
+        do(nr_node_arranger.arrange_xy, flow, tab=tab_nz()[1])
+        do(serialize_inner_structs)
+        do(Out.flow, fn=fn)
+
+    fn = FLG.py_file_name_mod
+    if fn:
+        s = do(PyTmplCtx.build_module, fl=10,)
+        do(Out.pymod, fn, s, fl=10)
+
+    return flow
+
+
+main = lambda: run_app(run, flags=Flags)

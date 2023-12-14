@@ -1,0 +1,208 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "lc-python"
+version = "2023.12.14"
+description = "AX Low Code: Node-RED/AX Server and Python Client Reference Implementation"
+authors = ["Gunther Klessinger <gunther.klessinger@axiros.com>"]
+license = "AxirosCommercialLicense"
+readme = "README.md"
+repository = "https://gitlab.axiros.com/klessinger/lc-python"
+homepage = "http://klessinger.pages.axiros.com/lc-python"
+
+keywords = []
+packages = [
+  { include = "operators", from = "src" },
+  { include = "node_red", from = "src" },
+]
+include = []
+
+
+# exclude = [
+#     "**/node_modules/**/*",
+# ]
+
+
+[[tool.poetry.source]]
+name = "ax"
+url = "https://artifacts.axiros.com/artifactory/api/pypi/pypi-ax-sources/simple/"
+secondary = true
+
+[project.urls]
+packagehome = "https://artifacts.axiros.com/artifactory/pypi-ax-sources/lc-python/_VERSION_/lc-python-_VERSION_.tar.gz"
+discusshome = "https://join.skype.com/krSNYZqvEmJm"
+
+[tool.poetry.scripts]
+con = "devapp.plugin_tools:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+#python = "^3.6"
+# wsaccel websocket performance. TODO: worth it? 200 megs...
+#numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1596233707986/work
+bottle = "^0.12.25"
+hiredis = "^1.1.0"
+devapps = "^2023.12.14"
+redis = "^4"
+websocket_client = "^0.57.0"
+wsaccel = "^0.6.2"
+SQLAlchemy = "^1.3.22"
+PyMySQL = "^1.0.2"
+cryptography = "^3.3.1"
+"testing.redis" = "^1.1.1"   # apps from us should have that always
+# previously in devapp:
+psutil = "*"
+PyJWT = "*"
+structlog = "*"
+ujson = "*"
+gevent = "*"
+lz4 = "*"
+msgpack = "*"
+Rx = "3.1.1"                  # must be fixed, 3.2.0 breaks lc-python test_build (timing)
+snoop = "*"
+tabulate = "*"
+PyYAML = "*"
+prometheus-client = "^0.14.1"
+decorator = "^5.1.1"
+
+
+[tool.poetry.dev-dependencies]
+#lc-doctools = {git = "https://gitlab.axiros.com/devapps/lc-doctools.git"}
+autoflake = "^1.4"
+axblack = "^20220330"
+docutools = "*"
+pytest-mock = "^3.7.0"
+# connection classes for tests:
+elasticsearch-dsl = "^7"
+confluent-kafka = "*"
+clickhouse-connect = "^0.6.22"
+
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+# ruff is enough
+reportSelfClsParameterName = false
+pythonPlatform = "Linux"
+typeCheckingMode = "off"
+reportMissingImports = false
+reportMissingTypeStubs = false
+reportUndefinedVariable = false
+reportGeneralTypeIssues = false
+reportUnusedExpression = false
+root = "src"
+include = ["src", "tests"]
+# pythonVersion = "3.8"
+executionEnvironments = [{ root = "src" }, { root = "tests" }]
+
+
+[tool.ruff]
+# https://docs.astral.sh/ruff/rules/
+line-length = 90
+extend-select = ["Q"]
+select = ["E", "F", "B"] # Enable flake8-bugbear (`B`) rules.
+ignore = [
+  "E501", # Never enforce `E501` (line length violations).
+  "E741", # short var names
+  "B006", # mutables in signature
+]
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+unfixable = [
+  "B",    # Avoid trying to fix flake8-bugbear (`B`) violations.
+  "F401", # Unused Import
+  "F841", # variable assigned but not used
+]
+
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.format]
+# Prefer single quotes over double quotes
+quote-style = "single"
+
+
+# [tool.pylsp]
+# lugins.ruff.executable = "/tmp/foo"
+
+[tool.blue]
+line-length = 90
+
+[tool.axblack]
+line-length = 90
+exclude = "tests/fixtures"
+#:docs:codestyle
+
+[tool.isort]
+line_length = 90
+not_skip = "__init__.py"
+multi_line_output = 3
+force_single_line = false
+balanced_wrapping = true
+default_section = "THIRDPARTY"
+known_first_party = "lc-python"
+include_trailing_comma = true
+
+[tool.pytest]
+ignore = "tests/node_red"
+
+[tool.flakehell]
+format = "colored"
+max_line_length = 90
+show_source = false
+exclude = ["tests/fixtures"]
+baseline = ".flakehell_baseline"
+
+[tool.flakehell.plugins]
+"*" = [
+  "+*",
+  "-RST*",   # we write docstrings in markdown, not rst
+  "-A001",   # redundant with W0622 (builtin override), which is more precise about line number
+  "-D105",   # missing docstring in magic method
+  "-D212",   # multi-line docstring summary should start at the first line
+  "-E203",   # whitespace before ‘:’ (incompatible with Black)
+  "-F821",   # redundant with E0602 (undefined variable)
+  "-Q000",   # black already deals with quoting
+  "-S101",   # use of assert
+  "-W503",   # line break before binary operator (incompatible with Black)
+  "-C0103",  # two-lowercase-letters variable DO conform to snake_case naming style
+  "-C0116",  # redunant with D102 (missing docstring)
+  "-C0301",  # line too long
+  "-R0902",  # too many instance attributes
+  "-R0903",  # too few public methods
+  "-R0904",  # too many public methods
+  "-R0912",  # too many branches
+  "-R0913",  # too many methods
+  "-R0914",  # too many local variables
+  "-R0915",  # too many statements
+  "-W0212",  # redundant with WPS437 (access to protected attribute)
+  "-W0611",  # redundant with F401 (unused import)
+  "-W1203",  # lazy formatting for logging calls
+  "-WPS305", # f-strings
+  "-WPS110", # common variable names (too annoying)
+  "-WPS125", # redundant with W0622 (builtin override), which is more precise about line number
+  "-WPS201", # too many imports
+  "-WPS202", # too many module members
+  "-WPS210", # too many local variables
+  "-WPS211", # too many arguments
+  "-WPS213", # too many expressions
+  "-WPS214", # too many methods
+  "-WPS220", # too deep nesting
+  "-WPS223", # too many elif branches
+  "-WPS226", # string over-use: can't disable it per file?
+  "-WPS230", # too many public instance attributes
+  "-WPS306", # too cumbersome, asks to write class A(object)
+  "-WPS317", # multi-line paramaters (incompatible with Black)
+  "-WPS322", # multi-line strings (incompatible with attributes docstrings)
+  "-WPS326", # implicit string concatenation
+  "-WPS336", # explicit string concatenation
+  "-WPS402", # nosa overuse
+  "-WPS412", # __init__ modules with logic
+  "-WPS428", # statement with no effect (not compatible with attribute docstrings)
+  "-WPS433", # redundant with C0415 (not top-level import)
+  "-WPS529", # implicit dict.get usage (generally false-positive)
+]

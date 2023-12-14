@@ -1,0 +1,239 @@
+<!-- 
+vim: syntax=javascript: -->
+
+<script type="text/javascript">
+
+  function seval(expr) {
+    if (typeof expr != "string") return expr;
+    //todo - should be *a bit* safer than eval - but still:
+    return Function('"use strict"; return(' + expr + ')')();
+  }
+  function get_val(dom_id) {
+    let el = $(dom_id);
+    let val = el.val();
+    if (!val) return {}
+    if ('[{'.indexOf(val[0]) == -1) {
+      var re = /\s*(?:,|$)\s*/; // comma sepped with spaces stripped()
+      return val.split(re)
+    }
+    try {
+      return seval(val);
+    } catch (e) {
+      // don't delete it, he should edit it:
+      //el.val(this.condition)
+      alert(dom_id + " must be json or valid expression");
+      return;
+    }
+  }
+
+
+
+  function register(cfg) {
+    RED.nodes.registerType(cfg.typ, {
+      category: "axiros",
+      color: cfg.col,
+      label: "",
+      kw: "{}",
+      defaults: {
+        name: {value: ""},
+        label: {value: ""},
+        async_timeout: {value: 0},
+        deep_copy: {value: false},
+        primary: {value: false},
+        kw: {value: "{}"},
+        outputs: {value: cfg.out},
+      },
+      inputs: cfg.inp,
+      outputs: cfg.out,
+      icon: cfg.ico,
+      label: function () {
+        return this.label || this.name || cfg.typ;
+      },
+      oneditsave: function () {
+        let kw = {}
+        var el = $("#node-input-kw");
+        var val = el.val() || "{}";
+        let l, valp;
+        // we accept a lot but alwasy turn it into json:
+        try {
+          kw = seval(val)
+        } catch (e) {
+          let pairs = val.split(",", 1000);
+          let kv
+          for (let i = 0; i < pairs.length; i++) {
+            key = pairs[i].split("=", 1)[0];
+            if (key == pairs[i]) {
+              alert("kw must be valid json");
+            }
+            function cast(s) {
+              if (s == "True" || s == "true") return true;
+              if (s == "False" || s == "false") return false;
+              try {
+                return parseFloat(s);
+              } catch (e) {
+                return s;
+              }
+            }
+            v = cast(pairs[i].substring(key.length + 1));
+            kw[key.replace(" ", "")] = v;
+          }
+        }
+        this.kw = JSON.stringify(kw); //not sure if this is necessary
+        el.val(JSON.stringify(kw));   // this actually sets it to json
+        if (cfg.typ == 'ax-src') {
+          el = $("#node-input-primary");
+          this.primary = el.prop("checked");
+        }
+
+        if (cfg.typ == 'ax-op') {
+          el = $("#node-input-deep_copy");
+          this.deep_copy = el.prop("checked");
+          el = $("#node-input-async_timeout");
+          val = el.val();
+          try {
+            this.async_timeout = parseInt(val);
+            if (this.async_timeout < -1) {
+              throw "RequireInteger";
+            }
+          } catch (e) {
+            alert("Timeout must be integer and > 0");
+          }
+          el = $("#node-input-outputs");
+          val = el.val();
+          try {
+            this.outputs = parseInt(val);
+            if (this.outputs < 1) {
+              throw "RequireInteger";
+            }
+          } catch (e) {
+            alert("outputs must be > 0")
+          }
+        }
+      },
+
+      oneditprepare: function () {
+        $("#node-input-outputs").typedInput({
+          type: "num",
+          types: ["num"],
+          typeField: "#node-input-outputs-type"
+        })
+        $("#node-input-async_timeout").typedInput({
+          type: "num",
+          types: ["num"],
+          typeField: "#node-input-async_timeout-type"
+        })
+        $("#node-input-kw").typedInput({
+          type: "json",
+          types: ["json"]
+        })
+      },
+    });
+  }
+
+  register({red: RED, typ: 'ax-src', col: '#8bd124', inp: 0, out: 1, ico: "node-red/inject.svg"})
+  register({red: RED, typ: 'ax-op', col: '#B6E66D', inp: 1, out: 1, ico: "ax.svg"})
+  register({red: RED, typ: 'ax-snk', col: '#8bd124', inp: 1, out: 0, ico: "node-red/inject.svg"})
+
+</script>
+
+
+
+<script type="text/html" data-template-name="ax-src">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Label</label>
+        <input type="text" id="node-input-label" placeholder="Label">
+    </div>
+
+     <div class="form-row">
+        <label for="node-input-kw"><i class="icon-tag"></i>Keyword arguments (flat json or a=b,c=d style)</label>
+        <input type="text" id="node-input-kw" placeholder="{}">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-primary"><i class="fa fa-random"></i> <span>Is Primary Source</span></label>
+        <label for="node-input-primary" style="width:70%">
+        <input type="checkbox" id="node-input-primary" style="display:inline-block; width:22px; vertical-align:baseline;"><span>Primary source</span>
+        </label>
+    </div>
+</script>
+
+
+<script type="text/html" data-template-name="ax-op">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Function name</label>
+        <input type="text" id="node-input-name" placeholder="ax.hello">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Label</label>
+        <input type="text" id="node-input-label" placeholder="Label">
+    </div>
+     <div class="form-row">
+        <label for="node-input-kw"><i class="icon-tag"></i>Keyword arguments (flat json or a=b,c=d style)</label>
+        <input type="text" id="node-input-kw" placeholder="">
+    </div>
+     <div class="form-row">
+        <label for="node-input-outputs"><i class="icon-tag"></i>Outputs</label>
+        <input type="text" id="node-input-outputs" placeholder="1">
+        <input type="hidden" id="node-input-outputs-type">
+    </div>
+     <div class="form-row">
+        <label for="node-input-async_timeout"><i class="icon-tag"></i>Async timeout</label>
+        <input type="text" id="node-input-async_timeout" placeholder="0">
+        <input type="hidden" id="node-input-async_timeout-type">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-deep_copy"><i class="fa fa-random"></i> <span>Deep Copy</span></label>
+        <label for="node-input-deep_copy" style="width:70%">
+        <input type="checkbox" id="node-input-deep_copy" style="display:inline-block; width:22px; vertical-align:baseline;"><span>Deep Copy</span>
+        </label>
+    </div>
+
+</script>
+
+<script type="text/html" data-template-name="ax-snk">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Label</label>
+        <input type="text" id="node-input-label" placeholder="Label">
+    </div>
+
+     <div class="form-row">
+        <label for="node-input-kw"><i class="icon-tag"></i>Keyword arguments (flat json or a=b,c=d style)</label>
+        <input type="text" id="node-input-kw" placeholder="{}">
+    </div>
+</script>
+
+
+
+<script type="text/html" data-help-name="ax-op">
+    <p>Run axiros python function.</p>
+    <p>Keyword arguments must be accepted by the function signature!</p>
+    <p>If you provide an `async_timeout` then we'll run it concurrently, within a new greenlet, grouped by msgid</p>
+    <p><b>Async might break order of events!</b></p>
+    <p>Deep copy will create a duplicate of the whole payload at ingress</p>
+    <p><b>This is done automatically if you have more egress pipelines</b></p>
+</script>
+
+
+<script type="text/html" data-help-name="ax-src">
+    <p>Add a data source.</p>
+    <p>Name must match a function name as registered by the client.</p>
+    <p>Keyword arguments must be accepted by the function signature, parametrizing data creation.</p>
+</script>
+
+
+<script type="text/html" data-help-name="ax-snk">
+    <p>Add a data source.</p>
+    <p>Name must match a function name as registered by the client.</p>
+    <p>Keyword arguments must be accepted by the function signature, parametrizing data creation.</p>
+</script>

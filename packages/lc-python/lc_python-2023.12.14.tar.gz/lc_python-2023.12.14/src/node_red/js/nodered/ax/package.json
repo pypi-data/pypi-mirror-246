@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-axiros",
+  "version": "2020.12.10",
+  "description": "AXNodeRed",
+  "scripts": {
+    "xtest": "xmocha \"test/**/*_spec.js\""
+  },
+  "node-red": {
+    "nodes": {
+      "ax-src": "ax-src.js",
+      "ax-snk": "ax-snk.js",
+      "ax-op": "ax-op.js",
+      "ax-join": "ax-join/ax-join.js",
+      "ax-func": "ax-func/ax-func.js",
+      "ax-cond": "ax-cond.js",
+      "ax-hub": "ax-hub.js"
+    }
+  },
+  "author": "Axiros GmbH",
+  "license": "SEE LICENSE IN LICENSE"
+}

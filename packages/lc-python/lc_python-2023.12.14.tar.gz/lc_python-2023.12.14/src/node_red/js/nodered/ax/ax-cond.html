@@ -1,0 +1,143 @@
+<script type="text/javascript">
+  function seval(expr) {
+    if (typeof expr != 'string') return expr;
+    //todo - should be *a bit* safer than eval - but still:
+    return Function('"use strict"; return(' + expr + ')')();
+  }
+  function get_val(dom_id) {
+    let el = $(dom_id);
+    let val = el.val();
+    if (!val) return [];
+    if ('[{'.indexOf(val[0]) == -1) {
+      var re = /\s*(?:,|$)\s*/; // comma sepped with spaces stripped()
+      return val.split(re);
+    }
+    try {
+      return seval(val);
+    } catch (e) {
+      // don't delete it, he should edit it:
+      //el.val(this.condition)
+      alert(dom_id + ' must be json or valid expression');
+      return;
+    }
+  }
+
+  RED.nodes.registerType('ax-cond', {
+    category: 'axiros',
+    color: '#87B83C',
+    defaults: {
+      name: {value: ''},
+      condition: {value: ''},
+      match_msg: {value: false},
+      outputs: {value: 1},
+      port_labels: {value: ''},
+    },
+    inputs: 1,
+    port_labels: '',
+    outputLabels: function (index) {
+      let r;
+      r = seval(this.port_labels);
+      if (Array.isArray(r) && r.length > index) return r[index] + '';
+      return JSON.stringify(seval(this.condition)[index], null, 4) + '';
+    },
+    icon: 'font-awesome/fa-sliders',
+
+    label: function () {
+      return this.name || 'ax-cond';
+    },
+
+    oneditprepare: function () {
+      this.condition = JSON.stringify(seval(this.condition));
+      var cond = $('#node-input-condition');
+      //el.val(JSON.stringify(this.condition) || "");
+      cond.val(this.condition);
+      $('#node-input-condition').typedInput({
+        type: 'json',
+        types: ['json'],
+      });
+    },
+
+    oneditsave: function () {
+      let el;
+      el = $('#node-input-match_msg');
+      this.match_msg = el.prop('checked');
+
+      var expr, cond, labl, l;
+      //console.log("will set", this.condition, this.port_labels);
+      cond = get_val('#node-input-condition');
+      expr = cond.expression || cond;
+      if (typeof expr != typeof []) expr = cond;
+      labl = get_val('#node-input-port_labels');
+
+      if (!cond) return;
+      this.condition = cond;
+      this.port_labels = labl;
+      this.outputs = 1;
+      //console.log("have set", this.condition, this.port_labels);
+      l = expr.length;
+      // is it one single condition or is it a list of conditions (expecting substreams)
+      // true and false are match/reject catch all conds (false not required actually)
+      if (
+        l > 1 &&
+        (typeof expr[1] == typeof [] ||
+          expr[1] == true ||
+          expr[1] == false)
+      )
+        this.outputs = l;
+      var n = $("#node-input-name").val()
+      if (!n) {
+        l > 1 ? n = 'partition' : n = 'filter'
+
+      }
+      $("#node-input-name").val(n)
+    },
+  });
+</script>
+
+<script type="text/html" data-template-name="ax-cond">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name" />
+    </div>
+    <div class="form-row">
+        <label for="node-input-condition"
+            ><i class="icon-tag"></i> Condition</label
+        >
+        <input
+            type="text"
+            id="node-input-condition"
+            placeholder='["res.sum", "<", 10]'
+        />
+    </div>
+    <div class="form-row">
+        <label for="node-input-port_labels"
+            ><i class="icon-tag"></i>Port Labels</label
+        >
+        <input type="text" id="node-input-port_labels" placeholder="" />
+    </div>
+    <div class="form-row">
+        <label for="node-input-match_msg"
+            ><i class="fa fa-tag"></i>
+            <span>Match Message, not Payload</span></label
+        >
+        <label for="node-input-match_msg" style="width:70%">
+            <input
+                type="checkbox"
+                id="node-input-match_msg"
+                style="display:inline-block; width:22px; vertical-align:baseline;"
+            /><span>Match Message</span>
+        </label>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="ax-cond">
+    <h1>AX Condition Entry</h1>
+    <p>
+    Supply a <a href="https://github.com/axiros/pycond">json condition</a> or a list of them.
+    </p>
+    <p>If you supply only one condition this acts as a filter.</p>
+    <p>If you supply a list this acts as a substream selector.</p>
+    <p><pre>true</pre> is a catch all condition.</p>
+    <p>Filter Example: <pre>["payload.foo", "<", 10]</pre> </p>
+    <p>Substream selector (3 outputs): <pre>[["payload.foo", "<", 10], ["payload.bar", ">", 1], true]</pre> </p>
+</script>

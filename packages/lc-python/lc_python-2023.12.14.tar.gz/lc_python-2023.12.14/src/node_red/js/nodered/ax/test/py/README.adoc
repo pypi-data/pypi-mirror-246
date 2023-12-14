@@ -1,0 +1,148 @@
+outdated - mocha not needed anymore
+== URLs
+
+[source,bash]
+----
+
+# status
+wget http://127.0.0.1:1880/ax-hub/status/ -O - | jq .
+
+# api
+curl -X POST -H "Content-Type: application/json" http://127.0.0.1:1880/ax-hub/v1/api/math:sum -d '{"a": 12, "b": 23}'
+----
+
+
+
+== Benchm
+
+CAUTION: ab will send the very first hit seperate from the others, standalone!
+
+
+[source,bash]
+----
+/X 2 eted 100 requests
+1.proj$ ab -c 10 -n 1000 -p test_sum.json -T "application/json" http://127.0.0.1:1880/ax-hub/v1/api
+/math:sum
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            1880
+
+Document Path:          /ax-hub/v1/api/math:sum
+Document Length:        24 bytes
+
+Concurrency Level:      10
+Time taken for tests:   2.822 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      296000 bytes
+Total body sent:        176000
+HTML transferred:       24000 bytes
+Requests per second:    354.34 [#/sec] (mean)
+Time per request:       28.221 [ms] (mean)
+Time per request:       2.822 [ms] (mean, across all concurrent requests)
+Transfer rate:          102.43 [Kbytes/sec] received
+                        60.90 kb/s sent
+                        163.33 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       2
+Processing:     5   28   5.3     28      48
+Waiting:        4   26   5.2     26      48
+Total:          5   28   5.3     28      48
+
+Percentage of the requests served within a certain time (ms)
+  50%     28
+  66%     30
+  75%     31
+  80%     32
+  90%     35
+  95%     37
+  98%     41
+  99%     42
+ 100%     48 (longest request)
+----
+
+
+
+[source,bash]
+----
+/X 4 eted 100 requests
+1.proj$ ab -c 10 -n 1000 -p test_sum.json -T "application/json" http://127.0.0.1:1880/js:sum
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            1880
+
+Document Path:          /js:sum
+Document Length:        24 bytes
+
+Concurrency Level:      10
+Time taken for tests:   4.337 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      296000 bytes
+Total body sent:        160000
+HTML transferred:       24000 bytes
+Requests per second:    230.55 [#/sec] (mean)
+Time per request:       43.374 [ms] (mean)
+Time per request:       4.337 [ms] (mean, across all concurrent requests)
+Transfer rate:          66.64 [Kbytes/sec] received
+                        36.02 kb/s sent
+                        102.67 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       3
+Processing:     5   43   5.3     43      67
+Waiting:        4   39   5.2     39      57
+Total:          5   43   5.3     44      67
+
+Percentage of the requests served within a certain time (ms)
+  50%     44
+  66%     45
+  75%     46
+  80%     46
+  90%     50
+  95%     51
+  98%     55
+  99%     60
+ 100%     67 (longest request)
+
+----
+ab -c 10 -n 10 -p test_sum.json -T "application/json" http://127.0.0.1:1880/ax-hub/v1/api/math:sum

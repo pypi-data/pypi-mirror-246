@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+echo "In another terminal do this to restart in a loop (in /usr/src/node-red):"
+echo "while true; do node --inspect /opt/devapps/envs/devapps/lib/node_modules/node-red/red.js; sleep 0.1; done"
+
+while true; do
+find . -print | grep -v node_module | grep -v '/test' | entr pkill node
+sleep 1
+done
+

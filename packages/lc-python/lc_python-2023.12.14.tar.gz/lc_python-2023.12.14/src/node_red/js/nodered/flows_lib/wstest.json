@@ -1,0 +1,892 @@
+[
+    {
+        "id": "t1",
+        "type": "tab",
+        "label": "AX.WiFi",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e3d556f1.3e5028",
+        "type": "tab",
+        "label": "API",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ah1",
+        "type": "ax-hub",
+        "z": "t1",
+        "name": "ax-hub",
+        "x": 710,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac1",
+        "type": "ax-cond",
+        "z": "t1",
+        "name": "is_reading",
+        "condition": "[\"cpeid\", \"and\", \"props.WiFi\"]",
+        "outputs": 1,
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "ao1"
+            ]
+        ]
+    },
+    {
+        "id": "ao1",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.add_conf",
+        "kw": {
+            "upper_chan_2": 13,
+            "dfs_weight": 0.95,
+            "regulatory_domain": "ETSI",
+            "algo_2": "odiac",
+            "algo_5": "base",
+            "allow_auto_enforce_2": true,
+            "allow_auto_enforce_5": true
+        },
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "ao2"
+            ]
+        ]
+    },
+    {
+        "id": "ao2",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "validate_and_arrange_data",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 400,
+        "y": 400,
+        "wires": [
+            [
+                "ao3"
+            ]
+        ]
+    },
+    {
+        "id": "ao3",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "expert.fix_radio_refs",
+        "x": 400,
+        "y": 500,
+        "wires": [
+            [
+                "ao4"
+            ]
+        ]
+    },
+    {
+        "id": "ao4",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "expert.normalize_scan_result",
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "ao5"
+            ]
+        ]
+    },
+    {
+        "id": "ao5",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "expert.access_points_into_ssids",
+        "x": 400,
+        "y": 700,
+        "wires": [
+            [
+                "ao6"
+            ]
+        ]
+    },
+    {
+        "id": "ao6",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "expert.band_into_ssids",
+        "x": 400,
+        "y": 800,
+        "wires": [
+            [
+                "a8921037.e0c74"
+            ]
+        ]
+    },
+    {
+        "id": "ao7",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "expert.delta_q",
+        "x": 400,
+        "y": 1000,
+        "wires": [
+            [
+                "ao8"
+            ]
+        ]
+    },
+    {
+        "id": "ao8",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.redis.get_events",
+        "async_timeout": 1,
+        "deep_copy": false,
+        "kw": "{\"key\": \"qualities:{d[id]}\", \"pth\": \"history\", \"count\": 1000}",
+        "x": 390,
+        "y": 1100,
+        "wires": [
+            [
+                "63ab4b5b.0ea484"
+            ]
+        ]
+    },
+    {
+        "id": "ao91",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "rolling_aggregation",
+        "kw": "{\"config\": [{\"src\": \"collector.full_scan\", \"dst\": \"collector.full_scan_last24h\", \"cf\": \"sum\", \"age\": 86400}, {\"src\": \"collector.light_scan\", \"dst\": \"collector.light_scan_last24h\", \"cf\": \"sum\", \"age\": 86400}, {\"src\": \"2.changes.axwifi\", \"dst\": \"2.changes.axwifi_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"2.changes.manual\", \"dst\": \"2.changes.manual_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"2.changes.auto\", \"dst\": \"2.changes.auto_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"5.changes.axwifi\", \"dst\": \"5.changes.axwifi_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"5.changes.manual\", \"dst\": \"5.changes.manual_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"5.changes.auto\", \"dst\": \"5.changes.auto_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"2.expert.neighbors.total\", \"dst\": \"2.pme.neighbors_last4h\", \"cf\": \"avg\", \"age\": 14400}, {\"src\": \"2.ssid.1.clients.total\", \"dst\": \"2.pme.clients_last4h\", \"cf\": \"avg\", \"age\": 14400}, {\"src\": \"2.ssid.1.clients.total\", \"dst\": \"2.ssid.1.clients.total_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"2.ssid.1.clients.low_rssi\", \"dst\": \"2.ssid.1.clients.low_rssi_last24h\", \"cf\": \"avg\", \"age\": 14400}, {\"src\": \"2.ssid.1.clients.low_rssi_macs\", \"dst\": \"2.ssid.1.clients.low_rssi_macs_last24h\", \"cf\": \"concat\", \"age\": 86400}, {\"src\": \"5.expert.neighbors.total\", \"dst\": \"5.pme.neighbors_last4h\", \"cf\": \"avg\", \"age\": 14400}, {\"src\": \"5.ssid.5.clients.total\", \"dst\": \"5.pme.clients_last4h\", \"cf\": \"avg\", \"age\": 14400}, {\"src\": \"5.ssid.5.clients.total\", \"dst\": \"5.ssid.5.clients.total_last24h\", \"cf\": \"avg\", \"age\": 86400}, {\"src\": \"5.ssid.5.clients.low_rssi\", \"dst\": \"5.ssid.5.clients.low_rssi_last24h\", \"cf\": \"avg\", \"age\": 14400}, {\"src\": \"5.ssid.5.clients.low_rssi_macs\", \"dst\": \"5.ssid.5.clients.low_rssi_macs_last24h\", \"cf\": \"concat\", \"age\": 86400}]}",
+        "x": 380,
+        "y": 1400,
+        "wires": [
+            [
+                "ao92"
+            ]
+        ]
+    },
+    {
+        "id": "ao92",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "intel.generate_recommendations",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"qualities_thresholds\": {\"2\": 0.3, \"5\": 0.15}, \"bad_encryptions\": [\"WEPEncryption\", \"TKIPEncryption\", \"WEPandAESEncryption\", \"TKIPandAESEncryption\", \"WEPandTKIPandAESEncryption\", \"WEPandTKIPEncryption\"],\"bad_sec_modes\": [\"WEP-64\", \"WEP-128\"], \"resources_threshold\": {\"cpu\": 70, \"free_memory\": 70}, \"occurrences_threshold\": 4, \"bad_op_standards\": {\"2\":[\"b\"]}}",
+        "x": 220,
+        "y": 1500,
+        "wires": [
+            [
+                "ec340e.265afbf"
+            ]
+        ]
+    },
+    {
+        "id": "ao9",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "arrange_data",
+        "x": 390,
+        "y": 1600,
+        "wires": [
+            [
+                "ac2"
+            ]
+        ]
+    },
+    {
+        "id": "ac2",
+        "type": "ax-cond",
+        "z": "t1",
+        "name": "qualify",
+        "condition": "{\"lookup_provider\":  \"lookup\", \"asyn\": [\"history\"], \"params\": {\"history\": {\"count\": 2}}, \"expression\": {\"root\": [\":window\", \"and\", \"ts\", \"and\", [\":enforce2\", \"xor\", \":enforce5\"]], \"window\": [\"dt:hour\", \">\", -1, \"and\", \"dt:hour\", \">\", -1], \"enforce2\": [[[\"2.expert.cur_q\", \"and\", \"2.expert.cur_q\", \"<\", 0.9], \"and\", [\"2.expert.delta_q\", \">=\", 0.001]], \"and\", \":history\", \"and\", \":add_enforce_2\"], \"enforce5\": [[[\"5.expert.cur_q\", \"and\", \"5.expert.cur_q\", \"<\", 0.9], \"and\", [\"5.expert.delta_q\", \">=\", 0]], \"and\", \":history\", \"and\", \":add_enforce_5\"]}}",
+        "outputs": 1,
+        "x": 570,
+        "y": 1600,
+        "wires": [
+            [
+                "as1",
+                "9c3a4a2f.bff308",
+                "7a0453cb.30335c"
+            ]
+        ]
+    },
+    {
+        "id": "as1",
+        "type": "ax-snk",
+        "z": "t1",
+        "name": "ax.kafka.snk.stream",
+        "kw": "{\"topic\": \"axwifi_results\", \"enc\": \"pickle-2\", \"config\": {\"bootstrap.servers\": \"10.168.11.36:9092\", \"log.connection.close\": false, \"queue.buffering.max.ms\": 100}}",
+        "x": 800,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "ao111",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "data_filter",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"path\": \"history\", \"allow\": [\"id\", \"ts\", \"job\", \"cache.last_enf_ch\", \"cache.last_enf_ts\", \"collector.full_scan\", \"collector.light_scan\", \"2.changes.auto\", \"2.changes.axwifi\", \"2.changes.manual\", \"2.expert.cur_ch\", \"2.expert.cur_bw\", \"2.expert.cur_q\", \"2.expert.cur_radio_ch\", \"2.expert.target_ch\", \"2.expert.target_bw\", \"2.expert.target_q\", \"2.expert.delta_q\", \"2.expert.neighbors.aci\", \"2.expert.neighbors.cci\", \"2.expert.neighbors.friends\", \"2.expert.neighbors.total\", \"2.pme.all\", \"2.recommendations.total\", \"2.ssid.1.clients.total\", \"2.ssid.1.clients.low_rssi\", \"2.ssid.1.clients.low_rssi_macs\", \"2.ssid.1.clients.sig_avg\", \"WiFi.Radio.1.Channel\", \"WiFi.Radio.1.AutoChannelEnable\", \"5.changes.auto\", \"5.changes.axwifi\", \"5.changes.manual\", \"5.expert.cur_ch\", \"5.expert.cur_bw\", \"5.expert.cur_q\", \"5.expert.cur_radio_ch\", \"5.expert.target_ch\", \"5.expert.target_bw\", \"5.expert.target_q\", \"5.expert.delta_q\", \"5.expert.neighbors.aci\", \"5.expert.neighbors.cci\", \"5.expert.neighbors.friends\", \"5.expert.neighbors.total\", \"5.pme.all\", \"5.recommendations.total\", \"5.ssid.5.clients.total\", \"5.ssid.5.clients.low_rssi\", \"5.ssid.5.clients.low_rssi_macs\", \"5.ssid.5.clients.sig_avg\", \"WiFi.Radio.5.Channel\", \"WiFi.Radio.5.AutoChannelEnable\"]}",
+        "x": 980,
+        "y": 1600,
+        "wires": [
+            [
+                "81efb699.1969"
+            ]
+        ]
+    },
+    {
+        "id": "ao11",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.redis.set_events",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"key\": \"qualities:{d[id]}\", \"enc\": \"compressed\", \"maxlen\": 96}",
+        "x": 1460,
+        "y": 1600,
+        "wires": [
+            [
+                "as2"
+            ]
+        ]
+    },
+    {
+        "id": "as2",
+        "type": "ax-snk",
+        "z": "t1",
+        "name": "ax.snk.log",
+        "kw": {
+            "truncate": 100
+        },
+        "x": 1660,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "as3",
+        "type": "ax-snk",
+        "z": "t1",
+        "name": "ax.elastic.snk.stream",
+        "kw": "{\"hosts\": \"10.168.11.28\", \"number_of_shards\": 1, \"index\": \"wifi\"}",
+        "x": 1080,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "i1",
+        "type": "inject",
+        "z": "t1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "{\"cpeid\":\"54833A-S190Y20057813\",\"sender\":{\"hosts\":\"axwifi-aio\",\"pid\":31123,\"name\":\"axtract_collector\",\"event_source\":\"main_collector_http_ipv4\"},\"ts\":1594168667.1246388,\"props\":{\"collector\":{\"msg\":\"Full Scan\",\"full_scan\":1,\"code\":200,\"details\":\"\",\"light_scan\":0},\"WiFi\":{\"NeighboringWiFiDiagnostic\":{\"scan_dt\":6009,\"coll_dt\":3887,\"DiagnosticsState\":\"Complete\",\"ResultNumberOfEntries\":56,\"Result\":{\"1\":{\"SignalStrength\":-92,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"filipeO2-Internet-803-5GHz\",\"BSSID\":\"20-E8-82-FD-9E-61\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":116},\"2\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"BSSID\":\"62-31-97-0F-B7-AD\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-42,\"Channel\":108},\"3\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"C6-FB-E4-F4-FE-6E\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-62,\"Channel\":6},\"4\":{\"SignalStrength\":-40,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Zyxel_135D_5G\",\"BSSID\":\"BC-99-11-76-13-5E\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":36},\"5\":{\"SignalStrength\":-71,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"BSSID\":\"34-FA-9F-3B-7B-FC\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":44},\"6\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"60-31-97-0F-B7-A8\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-43,\"Channel\":108,\"SSID\":\"Axiros_5G\"},\"7\":{\"SignalStrength\":-78,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"BSSID\":\"34-FA-9F-BB-91-0C\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"8\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN2\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-61,\"BSSID\":\"44-1E-98-54-CC-AC\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108},\"9\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"CM-N_GUEST\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-87,\"BSSID\":\"B6-FB-E4-F8-00-17\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"10\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"\",\"BSSID\":\"74-67-F7-3B-D2-02\",\"SignalStrength\":-71,\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6},\"11\":{\"SignalStrength\":-61,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"CMN\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"BSSID\":\"B4-FB-E4-F4-FE-6E\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6},\"12\":{\"SignalStrength\":-61,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"44-1E-98-14-CC-A8\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":6},\"13\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-54-CC-A8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-60,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6,\"SSID\":\"EMAN2\"},\"14\":{\"SignalStrength\":-68,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"GUESTELEA\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"34-FA-9F-FB-8D-C8\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":4},\"15\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"B6-FB-E4-F4-FE-6E\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-61,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6,\"SSID\":\"CM-N_GUEST\"},\"16\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-D4-EE-9C\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-63,\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":100,\"SSID\":\"GUESTELEA\"},\"17\":{\"SignalStrength\":-80,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"BSSID\":\"44-1E-98-14-CC-48\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":6},\"18\":{\"SignalStrength\":-63,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN2\",\"BSSID\":\"44-1E-98-54-EE-9C\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":100},\"19\":{\"SignalStrength\":-63,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"BSSID\":\"44-1E-98-94-EE-9C\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":100},\"20\":{\"SignalStrength\":-37,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"62-31-97-0F-B7-DD\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":52,\"SSID\":\"\"},\"21\":{\"SignalStrength\":-63,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"OperatingFrequencyBand\":\"5GHz\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"BSSID\":\"44-1E-98-14-EE-9C\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":100},\"22\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-61,\"BSSID\":\"44-1E-98-94-CC-A8\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6},\"23\":{\"SignalStrength\":-37,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"BMCOM\",\"OperatingFrequencyBand\":\"5GHz\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"BSSID\":\"60-31-97-0F-B7-D8\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":52},\"24\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"B4-FB-E4-F8-00-17\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-87,\"Channel\":44,\"SSID\":\"CMN\"},\"25\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"C6-FB-E4-F5-FE-6E\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-80,\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44,\"SSID\":\"\"},\"26\":{\"SignalStrength\":-88,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"00-FE-C8-DD-47-91\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"\",\"SecurityModeEnabled\":\"None\",\"Channel\":1,\"SSID\":\"O2-Guest\"},\"27\":{\"SignalStrength\":-46,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Axiros\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"60-31-97-0F-B7-A7\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1},\"28\":{\"SignalStrength\":-87,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Internet\",\"BSSID\":\"80-8C-97-D8-39-0F\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1},\"29\":{\"SignalStrength\":-57,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"2.4GHz\",\"BSSID\":\"44-1E-98-14-A0-98\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1,\"SSID\":\"EMANGUEST\"},\"30\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Axiros_2.4_guest\",\"BSSID\":\"72-31-97-0F-B7-A4\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-47,\"Channel\":1},\"31\":{\"SignalStrength\":-57,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"44-1E-98-94-A0-98\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":1},\"32\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-54-A0-98\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-56,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":1,\"SSID\":\"EMAN2\"},\"33\":{\"SignalStrength\":-87,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"&lt;|&gt;\",\"BSSID\":\"90-5C-44-2F-30-61\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"TKIP,AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1},\"34\":{\"SignalStrength\":-57,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-D4-A0-98\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1,\"SSID\":\"GUESTELEA\"},\"35\":{\"SignalStrength\":-68,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-3B-8D-C8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":4,\"SSID\":\"EMANGUEST\"},\"36\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"BSSID\":\"44-1E-98-94-EE-98\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-67,\"Channel\":1},\"37\":{\"SignalStrength\":-67,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"2.4GHz\",\"BSSID\":\"44-1E-98-54-EE-98\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":1,\"SSID\":\"EMAN2\"},\"38\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-14-EE-98\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-67,\"Channel\":1,\"SSID\":\"EMANGUEST\"},\"39\":{\"SignalStrength\":-87,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"92-5C-14-2F-30-61\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"TKIP,AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":1,\"SSID\":\"UPC\"},\"40\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"GUESTELEA\",\"BSSID\":\"34-FA-9F-FB-7B-FC\",\"SignalStrength\":-73,\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"41\":{\"SignalStrength\":-72,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"5GHz\",\"BSSID\":\"34-FA-9F-BB-7B-FC\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44,\"SSID\":\"EMAN8\"},\"42\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-D4-F0-E8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-84,\"Channel\":1,\"SSID\":\"GUESTELEA\"},\"43\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"2.4GHz\",\"BSSID\":\"44-1E-98-D4-EE-98\",\"SignalStrength\":-67,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":1,\"SSID\":\"GUESTELEA\"},\"44\":{\"SignalStrength\":-69,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-7B-8D-C8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":4,\"SSID\":\"EMAN2\"},\"45\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Zyxel_135D\",\"BSSID\":\"BC-99-11-76-13-5D\",\"SignalStrength\":-40,\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":3},\"46\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"5GHz\",\"BSSID\":\"44-1E-98-D4-CC-AC\",\"SignalStrength\":-60,\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108,\"SSID\":\"GUESTELEA\"},\"47\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"BSSID\":\"44-1E-98-94-CC-AC\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-61,\"Channel\":108},\"48\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"C6-FB-E4-F8-00-17\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-86,\"Channel\":44,\"SSID\":\"\"},\"49\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"CMN\",\"BSSID\":\"B4-FB-E4-F5-FE-6E\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-81,\"Channel\":44},\"50\":{\"SignalStrength\":-72,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-7B-7B-FC\",\"OperatingFrequencyBand\":\"5GHz\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44,\"SSID\":\"EMAN2\"},\"51\":{\"SignalStrength\":-43,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Axiros_5_guest\",\"BSSID\":\"62-31-97-0F-B7-A9\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108},\"52\":{\"SignalStrength\":-78,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"GUESTELEA\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"BSSID\":\"34-FA-9F-FB-91-0C\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":44},\"53\":{\"SignalStrength\":-61,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"BSSID\":\"44-1E-98-14-CC-AC\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108},\"54\":{\"SignalStrength\":-69,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-BB-8D-C8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":4,\"SSID\":\"EMAN8\"},\"55\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-78,\"BSSID\":\"34-FA-9F-3B-91-0C\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"56\":{\"SignalStrength\":-78,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN2\",\"BSSID\":\"34-FA-9F-7B-91-0C\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":44}}},\"Radio\":{\"1\":{\"Status\":\"Up\",\"Enable\":1,\"OperatingChannelBandwidth\":\"20MHz\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"n\",\"RegulatoryDomain\":\"DE\",\"AutoChannelEnable\":0,\"Stats\":{\"BytesReceived\":0,\"ErrorsSent\":0,\"PacketsReceived\":0,\"ErrorsReceived\":0,\"BytesSent\":0,\"PacketsSent\":0},\"PossibleChannels\":\"1,2,3,4,5,6,7,8,9,10,11,12,13\",\"Channel\":11},\"5\":{\"Status\":\"Up\",\"Enable\":1,\"Stats\":{\"BytesReceived\":0,\"ErrorsSent\":0,\"PacketsReceived\":0,\"ErrorsReceived\":0,\"BytesSent\":0,\"PacketsSent\":0},\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"RegulatoryDomain\":\"DE\",\"AutoChannelEnable\":1,\"OperatingChannelBandwidth\":\"80MHz\",\"PossibleChannels\":\"36,40,44,48,52,56,60,64,100,104,108,112,116,132,136,140\",\"Channel\":36}},\"SSID\":{\"1\":{\"BSSID\":\"54-83-3A-3B-2E-01\",\"LowerLayers\":\"Device.WiFi.Radio.1\",\"SSID\":\"Zyxel_2E01\"},\"5\":{\"LowerLayers\":\"Device.WiFi.Radio.5\",\"BSSID\":\"54-83-3A-3B-2E-02\",\"SSID\":\"Zyxel_2E01_5G\"}},\"AccessPoint\":{\"1\":{\"Security\":{\"ModeEnabled\":\"WEP-128\",\"EncryptionMode\":\"AESEncryption\"},\"SSIDAdvertisementEnabled\":1,\"SSIDReference\":\"Device.WiFi.SSID.1\",\"AssociatedDevice\":{\"1\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-00\",\"SignalStrength\":-50,\"AuthenticationState\":1},\"2\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-01\",\"SignalStrength\":-80,\"AuthenticationState\":1,\"OperatingStandard\":\"b\"}}},\"5\":{\"Security\":{\"ModeEnabled\":\"WEP-128\",\"EncryptionMode\":\"TKIPEncryption\"},\"SSIDAdvertisementEnabled\":1,\"SSIDReference\":\"Device.WiFi.SSID.5\",\"AssociatedDevice\":{\"1\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-02\",\"SignalStrength\":-50,\"AuthenticationState\":1},\"2\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-03\",\"SignalStrength\":-80,\"AuthenticationState\":1}}}}},\"DeviceInfo\":{\"MemoryStatus\":{\"Total\":10000,\"Free\":10},\"ProcessStatus\":{\"CPUUsage\":90},\"UpTime\":73920,\"HardwareVersion\":\"EMG3525-T50B\",\"ModelName\":\"EMG3525-T50B\",\"SerialNumber\":\"S190Y20057813\",\"SoftwareVersion\":\"V5.50(ABPM.0)D0\",\"ManufacturerOUI\":\"54833A\",\"ProductClass\":\"EMG3525-T50B\",\"Manufacturer\":\"Zyxel\"},\"metadata\":{\"allow_auto_enforce_5\":null,\"cid\":\"foo\",\"last_scan_ts\":1593765588366,\"allow_collection\":1,\"allow_auto_enforce_2\":1}},\"nr\":2}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "c1"
+            ]
+        ]
+    },
+    {
+        "id": "c1",
+        "type": "change",
+        "z": "t1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.ts",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "ac1"
+            ]
+        ]
+    },
+    {
+        "id": "axsr1",
+        "type": "ax-src",
+        "z": "t1",
+        "name": "ax.kafka.src.stream",
+        "kw": "{\"group_id\": \"axwifi\", \"topics\": [\"axwifi_readings\"], \"config\": {\"bootstrap.servers\": \"10.168.11.36:9092\", \"session.timeout.ms\": 6000}}",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "ac1"
+            ]
+        ]
+    },
+    {
+        "id": "81efb699.1969",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "rx.buffer_with_time_or_count",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"timespan\": 0.6, \"count\": 8}",
+        "x": 1200,
+        "y": 1600,
+        "wires": [
+            [
+                "ao11"
+            ]
+        ]
+    },
+    {
+        "id": "9c3a4a2f.bff308",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "ax.axtree_out",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 780,
+        "y": 1600,
+        "wires": [
+            [
+                "ao111"
+            ]
+        ]
+    },
+    {
+        "id": "7a0453cb.30335c",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "rx.buffer_with_time_or_count",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"timespan\": 0.6, \"count\": 8}",
+        "x": 820,
+        "y": 1720,
+        "wires": [
+            [
+                "as3"
+            ]
+        ]
+    },
+    {
+        "id": "63ab4b5b.0ea484",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "intel.identify_changes",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 400,
+        "y": 1200,
+        "wires": [
+            [
+                "1bf23f77.bb0689"
+            ]
+        ]
+    },
+    {
+        "id": "1bf23f77.bb0689",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "intel.inspect_clients",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 390,
+        "y": 1300,
+        "wires": [
+            [
+                "ao91"
+            ]
+        ]
+    },
+    {
+        "id": "a8921037.e0c74",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "to_band",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 400,
+        "y": 900,
+        "wires": [
+            [
+                "ao7"
+            ]
+        ]
+    },
+    {
+        "id": "ec340e.265afbf",
+        "type": "ax-op",
+        "z": "t1",
+        "name": "intel.pme",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"config\":[{\"name\":\"2.neighbors_zero\",\"current\":\"2.expert.neighbors.total\",\"mov_avg\":\"2.pme.neighbors_last4h\",\"operation\":\"ratio\",\"relation\":\"equal\",\"threshold\":1,\"action\":\"reboot\",\"min\":2},{\"name\":\"2.quality_drop\",\"current\":\"2.expert.cur_q\",\"mov_avg\":\"2.pme.cur_q_last4h\",\"operation\":\"diff\",\"relation\":\"lower\",\"threshold\":-0.3,\"action\":\"optimize\",\"min\":0.2,\"max\":1}]}",
+        "x": 500,
+        "y": 1500,
+        "wires": [
+            [
+                "ao9"
+            ]
+        ]
+    },
+    {
+        "id": "83aec05.f40254",
+        "type": "ax-cond",
+        "z": "e3d556f1.3e5028",
+        "name": "is_reading",
+        "condition": "[\"cpeid\", \"and\", \"props.WiFi\"]",
+        "outputs": 1,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "57b50b01.550294"
+            ]
+        ]
+    },
+    {
+        "id": "57b50b01.550294",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.add_conf",
+        "kw": {
+            "upper_chan_2": 13,
+            "dfs_weight": 0.95,
+            "regulatory_domain": "ETSI",
+            "algo_2": "odiac",
+            "algo_5": "base",
+            "allow_auto_enforce_2": true,
+            "allow_auto_enforce_5": true
+        },
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "f5f79954.faab68"
+            ]
+        ]
+    },
+    {
+        "id": "f5f79954.faab68",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "validate_and_arrange_data",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "b08d2825.ef49a8"
+            ]
+        ]
+    },
+    {
+        "id": "b08d2825.ef49a8",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "expert.fix_radio_refs",
+        "x": 520,
+        "y": 440,
+        "wires": [
+            [
+                "4023340b.732c9c"
+            ]
+        ]
+    },
+    {
+        "id": "4023340b.732c9c",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "expert.normalize_scan_result",
+        "x": 520,
+        "y": 540,
+        "wires": [
+            [
+                "c576d46b.ebe928"
+            ]
+        ]
+    },
+    {
+        "id": "c576d46b.ebe928",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "expert.access_points_into_ssids",
+        "x": 520,
+        "y": 640,
+        "wires": [
+            [
+                "1bfdd13e.34e9af"
+            ]
+        ]
+    },
+    {
+        "id": "1bfdd13e.34e9af",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "expert.band_into_ssids",
+        "x": 520,
+        "y": 740,
+        "wires": [
+            [
+                "65416f08.b3a69"
+            ]
+        ]
+    },
+    {
+        "id": "90c8169c.f630f8",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "expert.delta_q",
+        "x": 520,
+        "y": 940,
+        "wires": [
+            [
+                "aeb4484b.54e058"
+            ]
+        ]
+    },
+    {
+        "id": "aeb4484b.54e058",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "arrange_data",
+        "x": 520,
+        "y": 1060,
+        "wires": [
+            [
+                "93c973cb.ed9d"
+            ]
+        ]
+    },
+    {
+        "id": "8193c2b7.723e4",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "data_filter",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"path\": \"history\", \"allow\": [\"id\", \"ts\", \"job\", \"cache.last_enf_ch\", \"cache.last_enf_ts\", \"collector.full_scan\", \"collector.light_scan\", \"2.changes.auto\", \"2.changes.axwifi\", \"2.changes.manual\", \"2.expert.cur_ch\", \"2.expert.cur_bw\", \"2.expert.cur_q\", \"2.expert.cur_radio_ch\", \"2.expert.target_ch\", \"2.expert.target_bw\", \"2.expert.target_q\", \"2.expert.delta_q\", \"2.expert.neighbors.aci\", \"2.expert.neighbors.cci\", \"2.expert.neighbors.friends\", \"2.expert.neighbors.total\", \"2.pme.all\", \"2.recommendations.total\", \"2.ssid.1.clients.total\", \"2.ssid.1.clients.low_rssi\", \"2.ssid.1.clients.low_rssi_macs\", \"2.ssid.1.clients.sig_avg\", \"WiFi.Radio.1.Channel\", \"WiFi.Radio.1.AutoChannelEnable\", \"5.changes.auto\", \"5.changes.axwifi\", \"5.changes.manual\", \"5.expert.cur_ch\", \"5.expert.cur_bw\", \"5.expert.cur_q\", \"5.expert.cur_radio_ch\", \"5.expert.target_ch\", \"5.expert.target_bw\", \"5.expert.target_q\", \"5.expert.delta_q\", \"5.expert.neighbors.aci\", \"5.expert.neighbors.cci\", \"5.expert.neighbors.friends\", \"5.expert.neighbors.total\", \"5.pme.all\", \"5.recommendations.total\", \"5.ssid.5.clients.total\", \"5.ssid.5.clients.low_rssi\", \"5.ssid.5.clients.low_rssi_macs\", \"5.ssid.5.clients.sig_avg\", \"WiFi.Radio.5.Channel\", \"WiFi.Radio.5.AutoChannelEnable\"]}",
+        "x": 1200,
+        "y": 1060,
+        "wires": [
+            [
+                "e4adab55.b76bc8"
+            ]
+        ]
+    },
+    {
+        "id": "64251e8.198bae",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.redis.set_events",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"key\": \"qualities:{d[id]}\", \"enc\": \"compressed\", \"maxlen\": 96}",
+        "x": 1680,
+        "y": 1060,
+        "wires": [
+            [
+                "d6203aa4.0db3f8"
+            ]
+        ]
+    },
+    {
+        "id": "d6203aa4.0db3f8",
+        "type": "ax-snk",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.snk.log",
+        "kw": {
+            "truncate": 100
+        },
+        "x": 1880,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "58e05911.abd448",
+        "type": "ax-snk",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.elastic.snk.stream",
+        "kw": "{\"hosts\": \"10.168.11.28\", \"number_of_shards\": 1, \"index\": \"wifi\"}",
+        "x": 1440,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "3385571f.b5daf8",
+        "type": "ax-src",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.kafka.src.stream",
+        "kw": "{\"group_id\": \"axwifi\", \"topics\": [\"axwifi_readings_adhoc\"], \"config\": {\"bootstrap.servers\": \"10.168.11.36:9092\", \"session.timeout.ms\": 6000}}",
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "83aec05.f40254"
+            ]
+        ]
+    },
+    {
+        "id": "e4adab55.b76bc8",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "rx.buffer_with_time_or_count",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"timespan\": 0.6, \"count\": 8}",
+        "x": 1420,
+        "y": 1060,
+        "wires": [
+            [
+                "64251e8.198bae"
+            ]
+        ]
+    },
+    {
+        "id": "1b82a79a.38de48",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.axtree_out",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 1020,
+        "y": 1060,
+        "wires": [
+            [
+                "8193c2b7.723e4"
+            ]
+        ]
+    },
+    {
+        "id": "facfcc0b.c6aed",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "rx.buffer_with_time_or_count",
+        "async_timeout": "",
+        "deep_copy": false,
+        "kw": "{\"timespan\": 0.6, \"count\": 8}",
+        "x": 1100,
+        "y": 1180,
+        "wires": [
+            [
+                "58e05911.abd448"
+            ]
+        ]
+    },
+    {
+        "id": "65416f08.b3a69",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "to_band",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 520,
+        "y": 840,
+        "wires": [
+            [
+                "90c8169c.f630f8"
+            ]
+        ]
+    },
+    {
+        "id": "14753d18.e32e53",
+        "type": "ax-snk",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.http.respond",
+        "kw": "{}",
+        "x": 1860,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1c9dc8dc.36a6e7",
+        "type": "ax-src",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.http.request",
+        "kw": "{\"token\":\"X-AX-API-TOKEN\",\"streaming\": 0}",
+        "x": 880,
+        "y": 640,
+        "wires": [
+            [
+                "b5bbd8da.4ae378"
+            ]
+        ]
+    },
+    {
+        "id": "b5bbd8da.4ae378",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "api.optimize",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 1070,
+        "y": 640,
+        "wires": [
+            [
+                "c102bdbb.4725a"
+            ]
+        ]
+    },
+    {
+        "id": "268016e8.9a0a3a",
+        "type": "inject",
+        "z": "e3d556f1.3e5028",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "{\"cpeid\":\"54833A-S190Y20057813\",\"sender\":{\"hosts\":\"axwifi-aio\",\"pid\":31123,\"name\":\"axtract_collector\",\"event_source\":\"main_collector_http_ipv4\"},\"ts\":1594168667.1246388,\"props\":{\"collector\":{\"msg\":\"Full Scan\",\"full_scan\":1,\"code\":200,\"details\":\"\",\"light_scan\":0},\"WiFi\":{\"NeighboringWiFiDiagnostic\":{\"scan_dt\":6009,\"coll_dt\":3887,\"DiagnosticsState\":\"Complete\",\"ResultNumberOfEntries\":56,\"Result\":{\"1\":{\"SignalStrength\":-92,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"filipeO2-Internet-803-5GHz\",\"BSSID\":\"20-E8-82-FD-9E-61\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":116},\"2\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"BSSID\":\"62-31-97-0F-B7-AD\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-42,\"Channel\":108},\"3\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"C6-FB-E4-F4-FE-6E\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-62,\"Channel\":6},\"4\":{\"SignalStrength\":-40,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Zyxel_135D_5G\",\"BSSID\":\"BC-99-11-76-13-5E\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":36},\"5\":{\"SignalStrength\":-71,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"BSSID\":\"34-FA-9F-3B-7B-FC\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":44},\"6\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"60-31-97-0F-B7-A8\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-43,\"Channel\":108,\"SSID\":\"Axiros_5G\"},\"7\":{\"SignalStrength\":-78,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"BSSID\":\"34-FA-9F-BB-91-0C\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"8\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN2\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-61,\"BSSID\":\"44-1E-98-54-CC-AC\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108},\"9\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"CM-N_GUEST\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-87,\"BSSID\":\"B6-FB-E4-F8-00-17\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"10\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"\",\"BSSID\":\"74-67-F7-3B-D2-02\",\"SignalStrength\":-71,\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6},\"11\":{\"SignalStrength\":-61,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"CMN\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"BSSID\":\"B4-FB-E4-F4-FE-6E\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6},\"12\":{\"SignalStrength\":-61,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"44-1E-98-14-CC-A8\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":6},\"13\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-54-CC-A8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-60,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6,\"SSID\":\"EMAN2\"},\"14\":{\"SignalStrength\":-68,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"GUESTELEA\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"34-FA-9F-FB-8D-C8\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":4},\"15\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"B6-FB-E4-F4-FE-6E\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-61,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6,\"SSID\":\"CM-N_GUEST\"},\"16\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-D4-EE-9C\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-63,\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":100,\"SSID\":\"GUESTELEA\"},\"17\":{\"SignalStrength\":-80,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"BSSID\":\"44-1E-98-14-CC-48\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":6},\"18\":{\"SignalStrength\":-63,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN2\",\"BSSID\":\"44-1E-98-54-EE-9C\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":100},\"19\":{\"SignalStrength\":-63,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"BSSID\":\"44-1E-98-94-EE-9C\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":100},\"20\":{\"SignalStrength\":-37,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"62-31-97-0F-B7-DD\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":52,\"SSID\":\"\"},\"21\":{\"SignalStrength\":-63,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"OperatingFrequencyBand\":\"5GHz\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"BSSID\":\"44-1E-98-14-EE-9C\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":100},\"22\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-61,\"BSSID\":\"44-1E-98-94-CC-A8\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":6},\"23\":{\"SignalStrength\":-37,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"BMCOM\",\"OperatingFrequencyBand\":\"5GHz\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"BSSID\":\"60-31-97-0F-B7-D8\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":52},\"24\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"B4-FB-E4-F8-00-17\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-87,\"Channel\":44,\"SSID\":\"CMN\"},\"25\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"C6-FB-E4-F5-FE-6E\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-80,\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44,\"SSID\":\"\"},\"26\":{\"SignalStrength\":-88,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"00-FE-C8-DD-47-91\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"\",\"SecurityModeEnabled\":\"None\",\"Channel\":1,\"SSID\":\"O2-Guest\"},\"27\":{\"SignalStrength\":-46,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Axiros\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"60-31-97-0F-B7-A7\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1},\"28\":{\"SignalStrength\":-87,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Internet\",\"BSSID\":\"80-8C-97-D8-39-0F\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1},\"29\":{\"SignalStrength\":-57,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"2.4GHz\",\"BSSID\":\"44-1E-98-14-A0-98\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1,\"SSID\":\"EMANGUEST\"},\"30\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Axiros_2.4_guest\",\"BSSID\":\"72-31-97-0F-B7-A4\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-47,\"Channel\":1},\"31\":{\"SignalStrength\":-57,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"BSSID\":\"44-1E-98-94-A0-98\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":1},\"32\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-54-A0-98\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SignalStrength\":-56,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":1,\"SSID\":\"EMAN2\"},\"33\":{\"SignalStrength\":-87,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"&lt;|&gt;\",\"BSSID\":\"90-5C-44-2F-30-61\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"TKIP,AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1},\"34\":{\"SignalStrength\":-57,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-D4-A0-98\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":1,\"SSID\":\"GUESTELEA\"},\"35\":{\"SignalStrength\":-68,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-3B-8D-C8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":4,\"SSID\":\"EMANGUEST\"},\"36\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"BSSID\":\"44-1E-98-94-EE-98\",\"OperatingStandards\":\"b,g,n\",\"OperatingFrequencyBand\":\"2.4GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-67,\"Channel\":1},\"37\":{\"SignalStrength\":-67,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"2.4GHz\",\"BSSID\":\"44-1E-98-54-EE-98\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":1,\"SSID\":\"EMAN2\"},\"38\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-14-EE-98\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-67,\"Channel\":1,\"SSID\":\"EMANGUEST\"},\"39\":{\"SignalStrength\":-87,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"92-5C-14-2F-30-61\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"TKIP,AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":1,\"SSID\":\"UPC\"},\"40\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"GUESTELEA\",\"BSSID\":\"34-FA-9F-FB-7B-FC\",\"SignalStrength\":-73,\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"41\":{\"SignalStrength\":-72,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"5GHz\",\"BSSID\":\"34-FA-9F-BB-7B-FC\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44,\"SSID\":\"EMAN8\"},\"42\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"44-1E-98-D4-F0-E8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-84,\"Channel\":1,\"SSID\":\"GUESTELEA\"},\"43\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"2.4GHz\",\"BSSID\":\"44-1E-98-D4-EE-98\",\"SignalStrength\":-67,\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":1,\"SSID\":\"GUESTELEA\"},\"44\":{\"SignalStrength\":-69,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-7B-8D-C8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":4,\"SSID\":\"EMAN2\"},\"45\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Zyxel_135D\",\"BSSID\":\"BC-99-11-76-13-5D\",\"SignalStrength\":-40,\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"Channel\":3},\"46\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"OperatingFrequencyBand\":\"5GHz\",\"BSSID\":\"44-1E-98-D4-CC-AC\",\"SignalStrength\":-60,\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108,\"SSID\":\"GUESTELEA\"},\"47\":{\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN8\",\"BSSID\":\"44-1E-98-94-CC-AC\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-61,\"Channel\":108},\"48\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"C6-FB-E4-F8-00-17\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-86,\"Channel\":44,\"SSID\":\"\"},\"49\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"CMN\",\"BSSID\":\"B4-FB-E4-F5-FE-6E\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SignalStrength\":-81,\"Channel\":44},\"50\":{\"SignalStrength\":-72,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-7B-7B-FC\",\"OperatingFrequencyBand\":\"5GHz\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44,\"SSID\":\"EMAN2\"},\"51\":{\"SignalStrength\":-43,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"Axiros_5_guest\",\"BSSID\":\"62-31-97-0F-B7-A9\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108},\"52\":{\"SignalStrength\":-78,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"GUESTELEA\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"BSSID\":\"34-FA-9F-FB-91-0C\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"Channel\":44},\"53\":{\"SignalStrength\":-61,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"BSSID\":\"44-1E-98-14-CC-AC\",\"SecurityModeEnabled\":\"WPA2-Personal\",\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":108},\"54\":{\"SignalStrength\":-69,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"BSSID\":\"34-FA-9F-BB-8D-C8\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"b,g,n\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":4,\"SSID\":\"EMAN8\"},\"55\":{\"SecurityModeEnabled\":\"WPA2-Personal\",\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMANGUEST\",\"OperatingFrequencyBand\":\"5GHz\",\"SignalStrength\":-78,\"BSSID\":\"34-FA-9F-3B-91-0C\",\"OperatingStandards\":\"a,n,ac\",\"EncryptionMode\":\"AES\",\"Channel\":44},\"56\":{\"SignalStrength\":-78,\"Noise\":-70,\"OperatingChannelBandwidth\":\"Auto\",\"SSID\":\"EMAN2\",\"BSSID\":\"34-FA-9F-7B-91-0C\",\"OperatingStandards\":\"a,n,ac\",\"OperatingFrequencyBand\":\"5GHz\",\"EncryptionMode\":\"AES\",\"SecurityModeEnabled\":\"WPA2-Enterprise\",\"Channel\":44}}},\"Radio\":{\"1\":{\"Status\":\"Up\",\"Enable\":1,\"OperatingChannelBandwidth\":\"20MHz\",\"OperatingFrequencyBand\":\"2.4GHz\",\"OperatingStandards\":\"n\",\"RegulatoryDomain\":\"DE\",\"AutoChannelEnable\":0,\"Stats\":{\"BytesReceived\":0,\"ErrorsSent\":0,\"PacketsReceived\":0,\"ErrorsReceived\":0,\"BytesSent\":0,\"PacketsSent\":0},\"PossibleChannels\":\"1,2,3,4,5,6,7,8,9,10,11,12,13\",\"Channel\":11},\"5\":{\"Status\":\"Up\",\"Enable\":1,\"Stats\":{\"BytesReceived\":0,\"ErrorsSent\":0,\"PacketsReceived\":0,\"ErrorsReceived\":0,\"BytesSent\":0,\"PacketsSent\":0},\"OperatingFrequencyBand\":\"5GHz\",\"OperatingStandards\":\"a,n,ac\",\"RegulatoryDomain\":\"DE\",\"AutoChannelEnable\":1,\"OperatingChannelBandwidth\":\"80MHz\",\"PossibleChannels\":\"36,40,44,48,52,56,60,64,100,104,108,112,116,132,136,140\",\"Channel\":36}},\"SSID\":{\"1\":{\"BSSID\":\"54-83-3A-3B-2E-01\",\"LowerLayers\":\"Device.WiFi.Radio.1\",\"SSID\":\"Zyxel_2E01\"},\"5\":{\"LowerLayers\":\"Device.WiFi.Radio.5\",\"BSSID\":\"54-83-3A-3B-2E-02\",\"SSID\":\"Zyxel_2E01_5G\"}},\"AccessPoint\":{\"1\":{\"Security\":{\"ModeEnabled\":\"WEP-128\",\"EncryptionMode\":\"AESEncryption\"},\"SSIDAdvertisementEnabled\":1,\"SSIDReference\":\"Device.WiFi.SSID.1\",\"AssociatedDevice\":{\"1\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-00\",\"SignalStrength\":-50,\"AuthenticationState\":1},\"2\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-01\",\"SignalStrength\":-80,\"AuthenticationState\":1,\"OperatingStandard\":\"b\"}}},\"5\":{\"Security\":{\"ModeEnabled\":\"WEP-128\",\"EncryptionMode\":\"TKIPEncryption\"},\"SSIDAdvertisementEnabled\":1,\"SSIDReference\":\"Device.WiFi.SSID.5\",\"AssociatedDevice\":{\"1\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-02\",\"SignalStrength\":-50,\"AuthenticationState\":1},\"2\":{\"Active\":1,\"MACAddress\":\"00-00-00-00-00-03\",\"SignalStrength\":-80,\"AuthenticationState\":1}}}}},\"DeviceInfo\":{\"MemoryStatus\":{\"Total\":10000,\"Free\":10},\"ProcessStatus\":{\"CPUUsage\":90},\"UpTime\":73920,\"HardwareVersion\":\"EMG3525-T50B\",\"ModelName\":\"EMG3525-T50B\",\"SerialNumber\":\"S190Y20057813\",\"SoftwareVersion\":\"V5.50(ABPM.0)D0\",\"ManufacturerOUI\":\"54833A\",\"ProductClass\":\"EMG3525-T50B\",\"Manufacturer\":\"Zyxel\"},\"metadata\":{\"adhoc\":{\"author\":\"ax\",\"cond\":{\"enhance\":{\"2\":0,\"5\":0},\"id\":\"second\"},\"id\":\"second\",\"type\":\"trigger\"},\"allow_auto_enforce_5\":null,\"cid\":\"foo\",\"last_scan_ts\":1593765588366,\"allow_collection\":1,\"allow_auto_enforce_2\":1}},\"nr\":2}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "a4ddb65e.f56058"
+            ]
+        ]
+    },
+    {
+        "id": "a4ddb65e.f56058",
+        "type": "change",
+        "z": "e3d556f1.3e5028",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.ts",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "83aec05.f40254"
+            ]
+        ]
+    },
+    {
+        "id": "93c973cb.ed9d",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "api.qualify_adhoc",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 750,
+        "y": 1060,
+        "wires": [
+            [
+                "1b82a79a.38de48",
+                "facfcc0b.c6aed",
+                "c102bdbb.4725a"
+            ]
+        ]
+    },
+    {
+        "id": "c102bdbb.4725a",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.kafka.snk.stream",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{\"topic\": \"axwifi_adhoc\", \"enc\": \"pickle-2\", \"config\": {\"bootstrap.servers\": \"10.168.11.36:9092\", \"log.connection.close\": false, \"queue.buffering.max.ms\": 100}}",
+        "x": 1060,
+        "y": 900,
+        "wires": [
+            [
+                "3b560d2b.ce3022"
+            ]
+        ]
+    },
+    {
+        "id": "3b560d2b.ce3022",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "ax.http.await_response",
+        "async_timeout": 100,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 1330,
+        "y": 900,
+        "wires": [
+            [
+                "bf55f0a4.ee8908"
+            ]
+        ]
+    },
+    {
+        "id": "bf55f0a4.ee8908",
+        "type": "ax-op",
+        "z": "e3d556f1.3e5028",
+        "name": "api.clear_job",
+        "async_timeout": 0,
+        "deep_copy": false,
+        "kw": "{}",
+        "x": 1610,
+        "y": 900,
+        "wires": [
+            [
+                "14753d18.e32e53"
+            ]
+        ]
+    }
+]
