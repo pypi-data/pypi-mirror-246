@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PositionData
+Version: 0.1.0
+Summary: Gereferenced CSV data processing
+Home-page: https://github.com/ugcs/positiondata
+Author: SPH Engineering
+Author-email: ayankelevich@ugcs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PositionData 
+Python package for positional CSV data processing 
+
+
+Contributors
+- SPH Engineering, www.sphengineering.com 
+
+
