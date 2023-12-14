@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: YW-download
+Version: 0.1.1
+Summary: YWs downloading tool
+Author: Yulun Wu
+Author-email: yulunwu8@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+YW's downloading tool, currently support: Sentinel-2 MSI
