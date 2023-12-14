@@ -1,0 +1,16 @@
+collective.monkeypatcher
+plone.app.portlets
+plone.app.registry
+plone.autoform
+plone.base
+plone.memoize
+plone.portlets
+Products.GenericSetup
+setuptools
+z3c.form
+z3c.jbot
+z3c.unconfigure>=1.0.1
+
+[test]
+plone.testing
+plone.app.testing
