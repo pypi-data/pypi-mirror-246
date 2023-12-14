@@ -1,0 +1,10 @@
+README.md
+setup.py
+inversebrah/__init__.py
+inversebrah/cli.py
+inversebrah.egg-info/PKG-INFO
+inversebrah.egg-info/SOURCES.txt
+inversebrah.egg-info/dependency_links.txt
+inversebrah.egg-info/entry_points.txt
+inversebrah.egg-info/requires.txt
+inversebrah.egg-info/top_level.txt
