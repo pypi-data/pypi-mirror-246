@@ -1,0 +1,9 @@
+nonebot_plugin_bottle/__init__.py,sha256=4wzcfh6gek84YuSI6JnnT1HWFj0CEixoIcChiO7KRz0,25687
+nonebot_plugin_bottle/config.py,sha256=jTF6vyU0_Aqku_uwQCn_hHHe8oZlHodXxaT9rVa1pUw,1010
+nonebot_plugin_bottle/data_source.py,sha256=jjolrfDECh3AfLqZpcErvqNaSBm1dzZ90e3xJy-vEVc,20066
+nonebot_plugin_bottle/migrations/01a750736ea0_add_like.py,sha256=SaMdBNKCESbT-z_AhvrsrKj5AHm4qLI9ZeP7UHfFQP0,1379
+nonebot_plugin_bottle/migrations/449e066410fd_init_db.py,sha256=3S3oBisykD9mqXRAR5vZ3pwzqJhVPc9oNtsaCAauaXo,2646
+nonebot_plugin_bottle/model.py,sha256=ENzq7PDmtv3UFVC8UPBW5gmjlAdFbb9DVzSFTUoQz4E,1695
+nonebot_plugin_bottle-2.0.0.4.dist-info/METADATA,sha256=5Vt6g4yYV_4AMVx33-AG4BNYgbvge7GCBWMaDTH2EAQ,11256
+nonebot_plugin_bottle-2.0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nonebot_plugin_bottle-2.0.0.4.dist-info/RECORD,,
