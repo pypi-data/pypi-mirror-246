@@ -1,0 +1,7 @@
+langchain
+unstructured[docx]
+docx2txt
+unstructured
+pdfminer.six
+pdf2image
+boto3
