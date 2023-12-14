@@ -1,0 +1,6 @@
+main.py
+setup.py
+my_package_add_and_subtract.egg-info/PKG-INFO
+my_package_add_and_subtract.egg-info/SOURCES.txt
+my_package_add_and_subtract.egg-info/dependency_links.txt
+my_package_add_and_subtract.egg-info/top_level.txt
