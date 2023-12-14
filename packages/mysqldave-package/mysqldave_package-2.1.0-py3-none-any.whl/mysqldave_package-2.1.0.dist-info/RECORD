@@ -1,0 +1,13 @@
+mysqldave_package/.schemawiz_config2,sha256=yTVth2VVtbMPWMuRyrV57SkbqhkIxKW--9pqOGFo5FU,379
+mysqldave_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mysqldave_package/excelit.py,sha256=_oLk6Bs00ZCuuce4hp74T_9h6NA6K9zcFoUPlT5vlr0,70
+mysqldave_package/mysqldave.py,sha256=ZazX2DiFENYwUXlv1r2XSE8gDGQia0ccLN9LBfQVHdw,15741
+mysqldave_package/rbc_avm_postal_code.csv,sha256=rvEBl2uBFcyi7908Cbd5Op6DsmO5S5xq1THE-y49fEU,1503597
+mysqldave_package/restored_sample.ddl,sha256=myQEjquEmAZoNQlMt7kP8E_ltbc9oAorKlgXq1VNZWc,573
+mysqldave_package/sample.csv,sha256=KoyZl4N-v2O7-8w5edmFZHp1ztkO8z7131-5ILgpeKI,109
+mysqldave_package/testcase1.csv,sha256=S41nQYeRNeJmOcbNlg3xz7EaW_beC2eIfFmO1AOX_yo,162
+mysqldave_package/this.tsv,sha256=_j0ke6nG67sS2IqL0EqMltcKIgNJIEKQRzuYKo4FA3s,54404
+mysqldave_package-2.1.0.dist-info/METADATA,sha256=5O8extZyQykrtLBJNO7rbgyoiU2REHvY066iVdgO1sY,943
+mysqldave_package-2.1.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+mysqldave_package-2.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+mysqldave_package-2.1.0.dist-info/RECORD,,
