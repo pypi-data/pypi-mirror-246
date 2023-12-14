@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+jwtauthenticatortest1/__init__.py
+jwtauthenticatortest1/jwtauthenticatortest1.py
+jwtauthenticatortest1.egg-info/PKG-INFO
+jwtauthenticatortest1.egg-info/SOURCES.txt
+jwtauthenticatortest1.egg-info/dependency_links.txt
+jwtauthenticatortest1.egg-info/requires.txt
+jwtauthenticatortest1.egg-info/top_level.txt
