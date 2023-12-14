@@ -1,0 +1,17 @@
+sqpy/__init__.py,sha256=PLR8YCgBGsQObY6yXTaBH6j_HPZJch_zdhj0ljuu9YU,116
+sqpy/dialog_window.py,sha256=mEay_QTAlGewK-tiKkq2HT9gm_jVNkeAFg5oT_FDDdI,1229
+sqpy/popup_print.py,sha256=JjXAmGjDgnUEb88Nem_Wtrg9TUzKcRuVTGgjF5SaMUI,881
+sqpy/scancel_dialog.py,sha256=YNyQ2JuswC-f8W5TFc6t_hbvXoh6zP4UyjXWj1c8S5U,3264
+sqpy/sqpy.py,sha256=X9XQ0ZC4Yjb38vg4HF644aiczH9Mkdrw5q9B5IEcH84,7812
+tests/__init__.py,sha256=UvC8JeRkoizLuOsqaX-YQIaONShABnSeHROmCiqOcR0,154
+tests/test_dialog_window.py,sha256=FnOYAeKihDPlEHM-Gk1k6afvsrhN54RmxGmTvxL-tW0,1780
+tests/test_main.py,sha256=Gc8zPnN4o2i6GS0JimOw5xk2Jizde3r4DCd22e-UDc8,3967
+tests/test_popup_print.py,sha256=ksxsaCzWxiyZODKus-4Q1fX_S_o4_tit-W3WrvB6S-I,2002
+tests/test_scancel_dialog.py,sha256=6myH7Qs0kWtEp41pWixfC7uBc2aDaYvEril5XMfFqzg,2369
+tests/test_slurm_viewer.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqpy-0.0.3.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+sqpy-0.0.3.dist-info/METADATA,sha256=TO8Y7-KLJ6r4mK3mjLes_m8nMA04TuxMY14QkeS24zs,2141
+sqpy-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sqpy-0.0.3.dist-info/entry_points.txt,sha256=RuHhwFf6RFdRNQkafZDL4N4wGPBy25aD18LX9N-UDMI,41
+sqpy-0.0.3.dist-info/top_level.txt,sha256=E_Hft6GHdk0EAyj35o6T9ngnw2N6BUurMRdpPk_1mEQ,11
+sqpy-0.0.3.dist-info/RECORD,,
