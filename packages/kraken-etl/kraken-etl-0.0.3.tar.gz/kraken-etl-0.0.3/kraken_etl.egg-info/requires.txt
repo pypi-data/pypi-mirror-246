@@ -1,0 +1,11 @@
+kraken-thing
+kraken-convert
+xmltodict
+kraken-local-db
+requests
+aiofiles
+aiocsv
+aiohttp
+pandas
+matplotlib
+Flask
