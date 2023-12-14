@@ -1,0 +1,3 @@
+[console_scripts]
+pptg = pptg.main:main
+
