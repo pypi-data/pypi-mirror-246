@@ -1,0 +1,7 @@
+setup.py
+hellomydarlin/__init__.py
+hellomydarlin/hello.py
+hellomydarlin.egg-info/PKG-INFO
+hellomydarlin.egg-info/SOURCES.txt
+hellomydarlin.egg-info/dependency_links.txt
+hellomydarlin.egg-info/top_level.txt
