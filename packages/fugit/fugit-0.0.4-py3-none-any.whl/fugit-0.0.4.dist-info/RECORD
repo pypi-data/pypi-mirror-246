@@ -1,0 +1,12 @@
+fugit-0.0.4.dist-info/METADATA,sha256=EL_seG5-oMS0GFgbiOKbhEo17Pu0APxiwVgXLz3bCUs,3706
+fugit-0.0.4.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+fugit-0.0.4.dist-info/entry_points.txt,sha256=Z6tZtQ5NsC3Ib5JwV5a8s5JRGbNpxOHmjKXy2cbnv7c,45
+fugit-0.0.4.dist-info/licenses/LICENSE.txt,sha256=G3lig0yYU_DFJj7coAP8MNr-6A-MyNHzke0czVRCsJM,1069
+fugit/__init__.py,sha256=cOrEE4RwjihgmJjdTV2x6C3I8MyhaaAtOuvv-6MjfB0,66
+fugit/cli.py,sha256=A04dAtbeA-M73T5n5F2YYNWR1zxJqlYP1BxVe-YM6_s,903
+fugit/core/__init__.py,sha256=s_WmJF6nsZkjA2xTdTHaf4fmTj0FdGqCA9IMCc3Kxig,46
+fugit/core/diffing.py,sha256=ci3cr7aKCOZ01efjlO7wrhE2ETFNgPkkwii8mD3GnXQ,2056
+fugit/interfaces/__init__.py,sha256=C8n0hkg4KSYgJHMd4OWQcce3Mu1BS41wu54XxaUVGSU,58
+fugit/interfaces/diffing.py,sha256=dwiGfQgGmSDYGNysEgkFmAMMbEGw4OLygzB97uDWpwA,901
+fugit/interfaces/display.py,sha256=BIWRbKx4oo-1AvNW-2j7mA0cDeHFz_dmMIQIyfFrVB8,134
+fugit-0.0.4.dist-info/RECORD,,
