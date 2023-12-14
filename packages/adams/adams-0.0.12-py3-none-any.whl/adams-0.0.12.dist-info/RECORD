@@ -1,0 +1,11 @@
+adams/__init__.py,sha256=RzJN8-QnZomDPdWEe5NeNW4cQSw2ry2da5QAC6f60ws,83
+adams/db_maker.py,sha256=6nWwLE6iSH1TB3Re4cMDpE6S7tx2-fLz9KrUEBPc-O4,1952
+adams/matcher.py,sha256=YqvZEl5l2nyTE98VpvomvOjvJWAaKKTNK_eJXOLvx20,4435
+adams/tool_kit.py,sha256=CwI-bLNZ3pYbwgyyHtIlUd1ruYO1rafwPX3PCw4Q2s8,2023
+adams/scripts/compare_all.py,sha256=DpMp_ef-0J42kbsQm453SG0wFZfyLlUOJMrGtXHEeHM,1570
+adams-0.0.12.data/scripts/compare_all.py,sha256=DpMp_ef-0J42kbsQm453SG0wFZfyLlUOJMrGtXHEeHM,1570
+adams-0.0.12.dist-info/LICENSE,sha256=vaHsE7Jc1ZhoJuCavjIb44nAB8q7xsGIlwS5Ao4d9f4,35792
+adams-0.0.12.dist-info/METADATA,sha256=I0w6b5f0lRHxlcD-O_S2rH8NJtPHYsveLALlVABaDyw,4838
+adams-0.0.12.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+adams-0.0.12.dist-info/top_level.txt,sha256=q47dSDU4rsBD2dHZg72T7sVhHBORMnon9tHkM19IRM4,6
+adams-0.0.12.dist-info/RECORD,,
