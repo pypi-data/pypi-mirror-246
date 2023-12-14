@@ -1,0 +1,3 @@
+cmd_html
+cmd_pop
+cmd_pypi
