@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: uwudu
+Version: 1.0.1
+Summary: your cli todo list manager (U w U)
+Keywords: cli,todo,uwu,todo list,python,python cli
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: prettytable
+
+# uwudu
+
+your daily todo list manager now on your cli
+
+*(U w U)**** RISE AND GRIND ****(U w U)*
+
+## Installation
+### Using Pip
+
+If you use pip, you can install `uwudu` with the following commands:
+
+```shell
+pip install uwudu 
+```
+
+### Using Homebrew
+
+If you use Homebrew, you can install `uwudu` with the following commands:
+
+```shell
+brew tap uwudu/uwudu
+brew install uwudu
+```
+
+### To add path if showing command not found
+
+For Bash users
+```shell
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+
+For Zsh users
+```shell
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
+source ~/.zshrc
+```
+
