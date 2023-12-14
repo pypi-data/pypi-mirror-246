@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: kraken-etl
+Version: 0.0.1
+Summary: kraken-etl
+Home-page: https://github.com/tactik8/krakenetl
+Author: Tactik8
+Author-email: info@tactik8.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: kraken-thing
+Requires-Dist: kraken-convert
+Requires-Dist: xmltodict
+Requires-Dist: kraken-local-db
+Requires-Dist: requests
+Requires-Dist: aiofiles
+Requires-Dist: aiocsv
+Requires-Dist: aiohttp
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: Flask
+
+
+    # kraken_etl
+    <definition>
+
+
+    ## How to use
+
+    ```
+    from kraken_etl import kraken_etl
+
+    
+
+    ```
+
+
+    
+    
