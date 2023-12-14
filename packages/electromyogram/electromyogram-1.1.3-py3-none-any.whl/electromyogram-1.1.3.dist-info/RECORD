@@ -1,0 +1,11 @@
+electromyogram/__init__.py,sha256=ngPxvDQSmi8l_bz7hpI2P3EC6huWY3PrU3chf5PrTMM,390
+electromyogram/consts.py,sha256=AjLXFQwXilVYlSzCFPv6c1H6LgtOEZIHfb5NoKCBXOI,15478
+electromyogram/face_model.h5,sha256=6MGfJffKRdhfwyEOpDfpy0r6npK5e0CZgrgz0kKGx50,26416
+electromyogram/plot.py,sha256=UcUgzyjhZVp6eYkMeSMcD5I7JpUCVXLdRb8mPpiTdtQ,13047
+electromyogram/schemes.py,sha256=pVUDxbND08xUW-g5nO6M7hxWATot58R8Ti3Kt5V00Qo,10069
+electromyogram/utils.py,sha256=-2QYVAAbda4NAR791ffy_HbRY0ScujGlXiJd2GefmN8,645
+electromyogram-1.1.3.dist-info/LICENSE.txt,sha256=y-CEKxFE6o2zyNOoX7a5n5mjy6ym7EHMuswJiC57cMw,1079
+electromyogram-1.1.3.dist-info/METADATA,sha256=WGpg46CtR9SSDMmY4WTtTPO8_QnyyOUrdWx_CEenESM,6176
+electromyogram-1.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+electromyogram-1.1.3.dist-info/top_level.txt,sha256=q_5TAnVwrrU4_G-Ba8-N5qaPrlWqRVibKvJKxZyPWTU,15
+electromyogram-1.1.3.dist-info/RECORD,,
