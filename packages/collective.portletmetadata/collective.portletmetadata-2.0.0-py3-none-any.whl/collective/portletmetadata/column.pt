@@ -1,0 +1,24 @@
+<tal:block repeat="portlet options/portlets">
+  <tal:block condition="python:view.available(portlet)">
+    <tal:block condition="portlet/settings/exclude_search | nothing">
+      <!-- googleoff: all -->
+    </tal:block>
+    <div class="portletWrapper"
+         id="portletwrapper-${portlet/hash}"
+         data-portlethash="${portlet/hash}"
+    >
+      <div class="${css_class} ${custom_css_classes}"
+           tal:define="
+             css_class portlet/settings/css_class|python:'';
+             custom_css_classes portlet/settings/custom_css_classes|python:'';
+             custom_css_classes python:custom_css_classes.strip();
+           "
+      >
+        <tal:block content="structure python:view.safe_render(portlet['renderer'])" />
+      </div>
+    </div>
+    <tal:block condition="portlet/settings/exclude_search | nothing">
+      <!-- googleon: all -->
+    </tal:block>
+  </tal:block>
+</tal:block>
