@@ -1,0 +1,12 @@
+rideology2gpx-1.0.data/scripts/rideology2gpx,sha256=0em4NHlX5Ct6QXbxVU6bVomkkwvTwO72aR6rcY6dI5k,86
+rideology2gpx_tool/__init__.py,sha256=-xlHA10r3g1Sc6-2XFbPKiUBH1Tbi-FXiPr9192CeEc,190
+rideology2gpx_tool/app_info.py,sha256=qwoi2E2TF5ulUJhjTmoADvoXef0CrW-IMU0XwDKg5mY,300
+rideology2gpx_tool/cli.py,sha256=SqXTTsneXYI9vR7ZbWHvREQC0sycc_E7So-I5VFySh4,4965
+rideology2gpx_tool/data_file.py,sha256=jLiN6taceDub5CLh2ufZInOI1rNC8MJFsmynDDjIGGI,21802
+rideology2gpx_tool/gpx_file.py,sha256=VKLy4iIwlQPl6Rj7uatWO5kqxIGLvcZPzXk0qFQuyAU,4741
+rideology2gpx_tool/main.py,sha256=FHMgT3qU9KLrLJ6Nmbe3v6oGF2hZyzwRCwFZciclJrg,2018
+rideology2gpx-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rideology2gpx-1.0.dist-info/METADATA,sha256=0jc0K67-h5tmtASa2dMy_Lz1wv068ia6D8Wo37X_gT4,3912
+rideology2gpx-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rideology2gpx-1.0.dist-info/top_level.txt,sha256=qXDh6gGftz0DS8MZi_7YLyBi1ycXoAmaiDgPFBqxeMg,19
+rideology2gpx-1.0.dist-info/RECORD,,
