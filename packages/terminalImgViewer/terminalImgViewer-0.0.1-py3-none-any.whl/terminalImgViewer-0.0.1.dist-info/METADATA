@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: terminalImgViewer
+Version: 0.0.1
+Summary: Python library to display images in the terminal
+Author-email: Judemont <julien@rmbi.ch>
+Project-URL: Homepage, https://github.com/judemont/terminalImgViewer
+Project-URL: Issues, https://github.com/judemont/terminalImgViewer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# CLImage
+A python python package to display images in your terminal, with colored characters.
