@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: taylor_pipelines
+Version: 0.0.1
+Summary: Modular data-processing workflows in Python.
+Author-email: Benjamin Anderson <ben@trytaylor.ai>
+License: Apache 2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Requires-Dist: boto3<1.33.2,>=1.29.4
+Requires-Dist: lz4
+Requires-Dist: zstandard
+Requires-Dist: ruff
+Requires-Dist: xxhash
+Requires-Dist: pandas
+Requires-Dist: aiofiles
+Requires-Dist: pyarrow
+Requires-Dist: json-tricks
+Requires-Dist: s3fs==2023.12.1
+
+# taylor-pipelines
+pipelines for pulling and processing data

@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/taylor_pipelines/__init__.py
+src/taylor_pipelines/argument.py
+src/taylor_pipelines/pipeline.py
+src/taylor_pipelines/process.py
+src/taylor_pipelines/source.py
+src/taylor_pipelines.egg-info/PKG-INFO
+src/taylor_pipelines.egg-info/SOURCES.txt
+src/taylor_pipelines.egg-info/dependency_links.txt
+src/taylor_pipelines.egg-info/requires.txt
+src/taylor_pipelines.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+rich
+boto3<1.33.2,>=1.29.4
+lz4
+zstandard
+ruff
+xxhash
+pandas
+aiofiles
+pyarrow
+json-tricks
+s3fs==2023.12.1
