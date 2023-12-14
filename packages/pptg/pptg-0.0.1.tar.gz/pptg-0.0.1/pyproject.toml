@@ -1,0 +1,109 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+source = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/simple", name = "pypi" },
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "coverage>=7.3.2",
+]
+lint = [
+    "ruff>=0.1.7",
+    "mypy>=1.7.1",
+]
+fmt = [
+    "ruff>=0.1.7",
+]
+docs = [
+    "mkdocs>=1.5.3",
+]
+all = [
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "coverage>=7.3.2",
+    "ruff>=0.1.7",
+    "mypy>=1.7.1",
+    "mkdocs>=1.5.3",
+]
+build = [
+    "twine>=4.0.2",
+    "wheel>=0.42.0",
+]
+
+[tool.pdm.scripts]
+mypy = "mypy"
+ruff = "ruff"
+
+[tool.pdm.scripts.install]
+cmd = "python -m pip install -e ."
+
+[tool.pdm.scripts.test]
+cmd = "pytest"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "mypy src/ tests/",
+    "ruff check .",
+]
+
+[tool.pdm.scripts.fmt]
+composite = [
+    "ruff format .",
+    "ruff check . --fix",
+]
+
+[project]
+name = "pptg"
+dynamic = []
+description = "A python package template to upload to pypi"
+authors = [
+    { name = "lgf4591", email = "lgf4591@outlook.com" },
+]
+requires-python = ">=3.8"
+dependencies = [
+    "importlib-metadata",
+]
+keywords = [
+    "pdm",
+    "template",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+version = "0.0.1"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+pptg = "pptg.main:main"
+
+[project.urls]
+Homepage = "https://github.com/lgf4591/pptg"
+Documentation = "https://github.com/lgf4591/pptg/blob/master/README.md"
+Repository = "https://github.com/lgf4591/pptg.git"
+Issues = "https://github.com/lgf4591/pptg/issues"
+Changelog = "https://github.com/lgf4591/pptg/blob/master/CHANGELOG.md"
