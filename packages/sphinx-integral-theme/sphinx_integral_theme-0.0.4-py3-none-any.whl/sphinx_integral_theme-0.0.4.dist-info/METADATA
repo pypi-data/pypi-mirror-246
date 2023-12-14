@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sphinx-integral-theme
+Version: 0.0.4
+Summary: Sphinx Integral theme
+Author-email: Slava Zytsar <s.zytsar@thestage.ai>, Alexey Zauzin <a.zauzin@thestage.ai>
+License: Proprietary
+Keywords: sphinx,sphinx-doc,theme,thestageai
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+

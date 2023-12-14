@@ -1,0 +1,2 @@
+__init__
+integral_sphinx_theme
