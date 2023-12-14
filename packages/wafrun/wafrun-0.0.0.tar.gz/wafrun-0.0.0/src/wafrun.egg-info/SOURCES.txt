@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/wafrun/__init__.py
+src/wafrun.egg-info/PKG-INFO
+src/wafrun.egg-info/SOURCES.txt
+src/wafrun.egg-info/dependency_links.txt
+src/wafrun.egg-info/top_level.txt
