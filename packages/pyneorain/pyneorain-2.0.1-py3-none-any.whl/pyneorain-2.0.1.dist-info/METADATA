@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyneorain
+Version: 2.0.1
+Summary: Simple Matrix Rain
+Author-email: Ankit Gupta <ankitgupta.work@gmail.com>
+License: MIT
+Project-URL: Home, https://github.com/ankit-g/py-matrix/tree/async-scroll
+Description-Content-Type: text/markdown
+Requires-Dist: blessed
+Requires-Dist: six
+Requires-Dist: wcwidth
+Requires-Dist: toml
+
+# Matrix Terminal Screen-Saver Async Version
+
+- This is just a humble 100-line Python module, not the full-blown Cmatrix implementation.
+
+# do profiling like
+ - kernprof -l pyneorain.py (line profiling)
+ - python -m line_profiler pyneorain.py.lprof
+ - mprof run pyneorain.py (Memory Profiling)
+ - mprof plot
+
+# publish to pypi
+ - python -m build
+ - twine upload dist/*
+
+ ![Demo GIF](output.gif)
