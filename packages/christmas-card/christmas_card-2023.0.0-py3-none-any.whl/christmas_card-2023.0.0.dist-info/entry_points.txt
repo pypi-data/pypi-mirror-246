@@ -1,0 +1,3 @@
+[console_scripts]
+christmas-card=christmas_card.cli:main
+
