@@ -1,0 +1,12 @@
+hdf5.dll,sha256=6vHv_r6kB-IAvhgKk3iLPJOOjTl4ETH9B61RTRxXcTg,2245120
+hdf5_hl.dll,sha256=HJYhLHUVPJx5ENA3uI0QcsnK1ibj1t6xOouclnBaKB4,99840
+libcurl.dll,sha256=h_WRXSyPWW_AGpVkW1ulUd46WlM0G_gWmCxsZxrgDHc,281600
+netcdf.dll,sha256=cybvqCN3xb-ADX9G7F6Z5Nu7PWKTFCSm4hFzaDjYkOA,1012736
+py3dti.cp38-win_amd64.pyd,sha256=LCIGQZ0oB43SpOpwOtcBUr_Z4wi8O9FS_gCPZ0OsVtk,1127936
+python38.dll,sha256=Lz42j1vMHdpelRaCAIpQl1HmOV9zKP0PAsThoR9nwSg,4211376
+zlib1.dll,sha256=NPj2JWDzOGK2MfmEYAfNatA_h_wKrF6VzlnmhXC7U_s,77824
+py3dti-0.3.0.dist-info/METADATA,sha256=CXBPTbuxYjRscSBodyEvOiBAUqAqWmlkwySY4qLGB0o,744
+py3dti-0.3.0.dist-info/WHEEL,sha256=_2VVxIy4LPL0wCRXNM12Z87fxqtWn_YqiamVb4YBWTw,103
+py3dti-0.3.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py3dti-0.3.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+py3dti-0.3.0.dist-info/RECORD,,
