@@ -1,0 +1,7 @@
+setup.py
+skymap_job_processing/__init__.py
+skymap_job_processing/processor.py
+skymap_job_processing.egg-info/PKG-INFO
+skymap_job_processing.egg-info/SOURCES.txt
+skymap_job_processing.egg-info/dependency_links.txt
+skymap_job_processing.egg-info/top_level.txt
