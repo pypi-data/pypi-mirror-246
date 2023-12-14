@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "$ref": "packet-id.json"
+            },
+
+            "name": {
+                "description": "Task name. No restrictions on contents",
+                "type": "string"
+            },
+
+            "parameters": {
+                "description": "Task parameters, used when running and for querying",
+                "type": ["null", "object"]
+            },
+            "time": {
+                "description": "Information about the running time",
+                "start": {
+                    "description": "Time that the report was started, in seconds since 1970-01-01",
+                    "type": "number"
+                },
+                "end": {
+                    "description": "Time that the report was completed, in seconds since 1970-01-01",
+                    "type": "number"
+                }
+            }
+        },
+        "required": ["id", "name"],
+        "additionalProperties": false
+    }
+}
