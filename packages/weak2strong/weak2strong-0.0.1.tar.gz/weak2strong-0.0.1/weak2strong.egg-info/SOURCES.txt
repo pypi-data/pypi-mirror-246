@@ -1,0 +1,6 @@
+setup.py
+weak2strong/__init__.py
+weak2strong.egg-info/PKG-INFO
+weak2strong.egg-info/SOURCES.txt
+weak2strong.egg-info/dependency_links.txt
+weak2strong.egg-info/top_level.txt

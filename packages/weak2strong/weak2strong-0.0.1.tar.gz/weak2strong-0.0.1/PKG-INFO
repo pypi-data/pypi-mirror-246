@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: weak2strong
+Version: 0.0.1
+Author: OpenAI
+Author-email: generalization@openai.com
+Requires-Python: >=3.9
