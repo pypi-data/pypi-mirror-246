@@ -1,0 +1,16 @@
+spaces/__init__.py,sha256=3Md8_w1S7pLJw_R-F296YVuMYmqTQrAKzBe8DGque60,488
+spaces/config.py,sha256=fGq627kxodzYX87Xf5LtIlU4uaLjViy6CpCJsWcoLhA,602
+spaces/gradio.py,sha256=TqxSX2tzMT7yZ55Q5yvYPi_IlF4Nav-fJmE6BBYy44Y,1015
+spaces/utils.py,sha256=ReCvuANOsjN66_YLOVm_D7YVuPQm22zJSjp7S2i4wv4,1934
+spaces/zero/__init__.py,sha256=Zo67fQ8aR_zRn7mdEE2swp101D5WSNhVkLx6652UZm0,262
+spaces/zero/bitsandbytes.py,sha256=xNDGCVDPna7x_PBTXjWNI8eRk7Il1UH1HOS_PTTSC7U,4720
+spaces/zero/client.py,sha256=jJHsKnSKMr9MAXxvawQe1nzSgFfROkc6RbmpqvgOBA0,3644
+spaces/zero/decorator.py,sha256=n9Yoh8k8VMdL7xS1k0EL9RGgPyJt1HjRYSB0DqLN-rA,2737
+spaces/zero/gradio.py,sha256=ZVGyohpXivADQHYLg3WAhnxYlC9XVA6j1O2gMMMjyi0,2052
+spaces/zero/torch.py,sha256=5uOjGMn8awxoWqt9uTerJPCkWjOMa0VizhJhgs3f_Cg,4737
+spaces/zero/types.py,sha256=ptbUR-_WUJP6ythYIf5efQvig_Leymd3ESu7_chyCLk,1023
+spaces/zero/utils.py,sha256=R0nvtui0m4pC3Of2Svd4pn6hgRnyIjhScIsDQk631YI,888
+spaces/zero/wrappers.py,sha256=-pV-pZpIIL8vyCInQuzlL4aBO9xSVRzJWKA9cI462PI,9452
+spaces-0.18.2.dist-info/METADATA,sha256=FsfMO4kNzNO4UZB14j54Rfi8whPxPoPN0yEZjYuz9YM,909
+spaces-0.18.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+spaces-0.18.2.dist-info/RECORD,,
