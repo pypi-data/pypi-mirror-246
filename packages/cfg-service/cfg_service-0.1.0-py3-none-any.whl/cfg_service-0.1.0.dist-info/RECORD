@@ -1,0 +1,6 @@
+cfgsrv/__init__.py,sha256=7VUXbAbu3EtWXrc4UOoGXk363Q0t1YQA5ziDFDsyikk,22
+cfgsrv/cfgsrv.py,sha256=ibSKflfob4kbM7wT-Oz9R1qVk_8rOwrsxvQWnE4GPf0,4745
+cfgsrv/core.py,sha256=onau-i9xEbn3m61G96amhdWgcKltg-n2k3wqGSHjqXQ,630
+cfg_service-0.1.0.dist-info/METADATA,sha256=sWjmgNApGlkrrOFCF3ckjcOBEhySu0zVTROq85DateE,2518
+cfg_service-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+cfg_service-0.1.0.dist-info/RECORD,,
