@@ -1,0 +1,9 @@
+crossdomainmedia/__init__.py,sha256=aXKUBqcEYFNyxadI0Lksf0PGYbrdaUh1Kz0VAUwY-EY,151
+crossdomainmedia/auth.py,sha256=j9J1cnI5A14GtmGZ87klt10ny_QWHDpT7924dhDx8CY,5282
+crossdomainmedia/utils.py,sha256=mVaWtEL914DHmmT0MeoxCaJjIxTk03ELtUoPg2rRee8,997
+crossdomainmedia/views.py,sha256=43gDcomJUW9PMkoOz0OVMaBhqnT7vg-BgzYghd0MfAM,2552
+django_crossdomainmedia-0.0.4.dist-info/LICENSE,sha256=ZQvf91CxqVOXDHLwIbNHatH4XQUYKfdr0CgF4r4_CDc,1078
+django_crossdomainmedia-0.0.4.dist-info/METADATA,sha256=F6tbemop8PDmNmB7GroPBTOWKx0gRF04nbBCbg97cyI,4277
+django_crossdomainmedia-0.0.4.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_crossdomainmedia-0.0.4.dist-info/top_level.txt,sha256=nMdIEaXSq1BJ4k34g9Lo5hO7aYdxuI3ldRiqKeZ4N6Q,17
+django_crossdomainmedia-0.0.4.dist-info/RECORD,,
