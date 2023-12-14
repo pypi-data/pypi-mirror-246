@@ -1,0 +1,9 @@
+pywxdll/__init__.py,sha256=syTLJe7YUVCqw7Ue4QX2TrRnwUsIkAnay-eViRwnKB0,72
+pywxdll/pywxdll.py,sha256=Z5STPkjquLY83rMj2S3TYEPGzuSofenCsI4-rBpZshc,7699
+pywxdll/pywxdll_json.py,sha256=CSZjz788ATEnRG-DcTmI4_itEKMc2o2TI9DJugL4Tk0,4020
+pywxdll-0.2.1.dist-info/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+pywxdll-0.2.1.dist-info/LICENSE,sha256=Vih8DJ6icLEGzW5SeWd5Vrbr4GvcjHdBodpaq1lw0dE,1067
+pywxdll-0.2.1.dist-info/METADATA,sha256=DyPUAtf6OjWZhr1Kh3EIcYuOKm-y7ahEoVOnI1Xb2uA,791
+pywxdll-0.2.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pywxdll-0.2.1.dist-info/top_level.txt,sha256=s5b0yErXnsF3qC8CPLYOWL8p2n1bYZXfzFWhxalKMxw,8
+pywxdll-0.2.1.dist-info/RECORD,,
