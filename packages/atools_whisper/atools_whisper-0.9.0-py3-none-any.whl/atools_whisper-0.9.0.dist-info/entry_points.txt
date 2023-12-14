@@ -1,0 +1,3 @@
+[console_scripts]
+atools_whisper = atools_whisper.cli:main
+
