@@ -1,0 +1,14 @@
+turftopic/__init__.py,sha256=cbP-aVuRe9dUxYu5LuN8k8GRfd5sZb6MiHdDpyO7XFY,562
+turftopic/base.py,sha256=gfv0pExA7XAR3nUvt4HIHzS6mjY-WYS5hiA8lik1fZQ,5323
+turftopic/centroid_distance.py,sha256=SbJrBKwuO-C2w677r2CZcYytr7lSReFa9Aj19qQRsNM,775
+turftopic/error.py,sha256=Vb3wOAevwgFVxrO-0UiGkKnhbRCfvqsKYu761ukgXes,750
+turftopic/models/cluster.py,sha256=tF67A8jsWQRBOc0uJi0h5eKm8qvraQbZCCHOnsvckk0,4441
+turftopic/models/ctm.py,sha256=bxe4tn7EDNdEd5j_pStL8uR6LZhg9aEWkpqmTVel4dw,8099
+turftopic/models/decomp.py,sha256=ooRkZEcmzfMg8yelAoy3x0rqAqVDzvQ6qji5TzKQ0ns,2591
+turftopic/models/gmm.py,sha256=GNOhMYTA8AFMwOJbGljvNTqTy6IpWItDP0ccXW9IvU0,2986
+turftopic/models/keynmf.py,sha256=_fPcuHQ1fuvq0LrvgK5UQIr-nRR1wkU2CHsX72GDIiY,4040
+turftopic/soft_ctf_idf.py,sha256=6i_FvK8irIzlOp1mn_fG5x7A-hhJF65V5C3LremXYXs,503
+turftopic-0.1.1.dist-info/LICENSE,sha256=d2KEphRxDZzY_Q3R3JDwt7R_6l09DFvvJ_5sMD8YoZM,1071
+turftopic-0.1.1.dist-info/METADATA,sha256=1GJGy_pFl9bvW1ko1INqppWCrwHhbSaaKyPsMhWr_lc,1643
+turftopic-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+turftopic-0.1.1.dist-info/RECORD,,
