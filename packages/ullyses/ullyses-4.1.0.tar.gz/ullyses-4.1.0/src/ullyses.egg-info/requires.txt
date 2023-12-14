@@ -1,0 +1,14 @@
+datetime
+numpy>=1.22.4
+cython
+astropy>=6.0.0
+ullyses_utils>=3.1.0
+pandas>2.0
+calcos>=3.4.0
+costools
+stistools>=1.4.2
+matplotlib
+pyyaml
+plotly
+scipy>=1.11.4
+hasp>=0.9.6
