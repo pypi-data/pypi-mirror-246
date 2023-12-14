@@ -1,0 +1,8 @@
+README.md
+setup.py
+shtils/__init__.py
+shtils/shtils.py
+shtils.egg-info/PKG-INFO
+shtils.egg-info/SOURCES.txt
+shtils.egg-info/dependency_links.txt
+shtils.egg-info/top_level.txt
