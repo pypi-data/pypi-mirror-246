@@ -1,0 +1,13 @@
+lineless_table_rec/__init__.py,sha256=K4tBB7O6lvdqLwAoYo1NP0MgOk6jW2Al7hWpWWK3Hnk,117
+lineless_table_rec/lineless_table_process.py,sha256=eJ43nbRo4CVlMyNSuFLjbhLdelJ9cihK3I8v0CaHWG0,13631
+lineless_table_rec/main.py,sha256=XSzsZYbblauOZisx_ZQmvLjfNEYXreM1oOfNaRgVPa8,5348
+lineless_table_rec/utils.py,sha256=wWqZLqdJSTAvuIhlBIDHW8ZgRaJYWLPglRuiBdf3e2E,5329
+lineless_table_rec/utils_table_recover.py,sha256=sZed7Fq3EMZJH0cxAfaD2g0l9ltsthQw34q5LuGjaGc,8337
+lineless_table_rec/models/lore_detect.onnx,sha256=sYy1XmgZK5x1Z2KN1JGr850HnmVhSrawtO-rg5XDjHo,44331958
+lineless_table_rec/models/lore_process.onnx,sha256=ujA4EsP8Di99-aQob4sys_0tqNkzuhtY72WHmwBe3tc,44239345
+lineless_table_rec-0.0.2.dist-info/LICENSE,sha256=rGcadHGnQ_FXLSfpOnqNp60LU1AK4yrMSKuyeFI3egk,11428
+lineless_table_rec-0.0.2.dist-info/METADATA,sha256=xbrXgkAKS1k9Qfik7nUiOe5I82Vac_z_JQdTbUhVukQ,915
+lineless_table_rec-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lineless_table_rec-0.0.2.dist-info/entry_points.txt,sha256=UBhbmYIWTY3G1DUNxuiUCWCWSD-zMTeg2ZC6gs9NogE,69
+lineless_table_rec-0.0.2.dist-info/top_level.txt,sha256=O5vCoZN-170v8gF1opCf2o8eadZaee_FMU3gE2zz2pQ,19
+lineless_table_rec-0.0.2.dist-info/RECORD,,
