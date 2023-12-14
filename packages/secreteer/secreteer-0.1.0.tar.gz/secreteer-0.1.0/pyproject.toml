@@ -1,0 +1,19 @@
+[project]
+name = "secreteer"
+version = "0.1.0"
+description = "A Python script for encrypting and decrypting secrets"
+
+[build-system]
+requires = ["hatchling>=1.0.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.dependencies]
+python = "^3.9"
+cryptography = "^3.4.7"
+pyyaml = "^5.4.1"
+click = "^8.0.1"
+
+[tool.hatch.dev-dependencies]
+
+[tool.hatch.scripts]
+secreteer = "app:cli"

@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: secreteer
+Version: 0.1.0
+Summary: A Python script for encrypting and decrypting secrets
+License-File: LICENSE
