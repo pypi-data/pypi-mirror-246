@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pywarthog
+Version: 0.1.1
+Summary: A Python library for the Warthog API
+Project-URL: Homepage, https://github.com/zzjulienr/pywarthog
+Project-URL: Issues, https://github.com/zzjulienr/pywarthog/issues
+Author-email: zzjulienr <tpypi@zzjulien.maskmy.id>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# PyWarthog V0.1
+
+## Description
+
+PyWarthog is a Python project that does API call and others stuff to a local Warthog Node.
+
+## Installation
+
+
+
+
