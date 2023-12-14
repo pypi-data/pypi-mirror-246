@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mybudgeter"
+version = "0.0.3"
+authors = [
+  { name="Kyle Deng"},
+  { name="Jacob Rosen"},
+]
+description = "A Python package to create simple household budgets."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kt1720/Data-533-Group-16-project"
