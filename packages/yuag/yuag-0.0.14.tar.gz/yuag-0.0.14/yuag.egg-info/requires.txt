@@ -1,0 +1,8 @@
+mouse
+keyboard
+requests
+time
+googletrans
+langdetect
+os
+json
