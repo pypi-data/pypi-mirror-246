@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: digpy
+Version: 0.0.1
+Summary: Common dig utilies in python, inspired by @dns.toys
+Project-URL: Homepage, https://github.com/lemon-reddy/digpy
+Project-URL: Issues, https://github.com/lemon-reddy/digpy/issues
+Author-email: Lemon Reddy <lemonreddy87@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# digpy
+
+dig wrapper for common utilities in python. Inspired by @dns.toys
