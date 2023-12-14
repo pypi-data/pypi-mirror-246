@@ -1,0 +1,9 @@
+numpy
+cupy
+matplotlib
+requests
+onnx
+onnxruntime
+Pillow
+librosa
+tqdm
