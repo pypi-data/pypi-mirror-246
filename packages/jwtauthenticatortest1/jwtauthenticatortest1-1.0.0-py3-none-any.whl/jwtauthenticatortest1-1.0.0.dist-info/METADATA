@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jwtauthenticatortest1
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: jupyterhub
+Requires-Dist: pyjwt
+
+UNKNOWN
+
