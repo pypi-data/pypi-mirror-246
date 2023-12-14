@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+simulate_xna_signal/__init__.py
+simulate_xna_signal/simulate_xna_signal.py
+simulate_xna_signal.egg-info/PKG-INFO
+simulate_xna_signal.egg-info/SOURCES.txt
+simulate_xna_signal.egg-info/dependency_links.txt
+simulate_xna_signal.egg-info/requires.txt
+simulate_xna_signal.egg-info/top_level.txt
+unit_tests/__init__.py
+unit_tests/test_generate_xplot.py
+unit_tests/test_generate_yplot.py
+unit_tests/test_import_kmer_library.py
+unit_tests/test_input_to_4mers.py
+unit_tests/test_plot_signal.py
