@@ -1,0 +1,6 @@
+index,sales_type,fruit_type,fruit_variety,weight,unit_price,revenue
+1,selling,1,Ambrosia,50.0,1.2,60.0
+2,selling,3,Elberta,50.0,1.2,60.0
+3,picking,2,Lapins,40.0,2.99,119.6
+4,selling,2,Lapins,2.0,2.99,5.98
+5,selling,2,Lapins,4.0,2.99,11.96
