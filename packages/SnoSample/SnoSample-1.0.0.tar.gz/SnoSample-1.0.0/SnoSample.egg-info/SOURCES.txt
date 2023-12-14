@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+SnoSample.egg-info/PKG-INFO
+SnoSample.egg-info/SOURCES.txt
+SnoSample.egg-info/dependency_links.txt
+SnoSample.egg-info/top_level.txt
+src/__init__.py
+src/testing.py

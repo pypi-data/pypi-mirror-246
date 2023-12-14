@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: SnoSample
+Version: 1.0.0
+Summary: Template and tools for Python projects.
+Author: Max Snoodijk
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# SnoSample
+
+Template and tools for Python projects.
+
+## Installation
+
+To install the SnoSample package either:
+- Run the command 'pip install snosample' in your OS shell.
+- Install the package via your IDE.
+
+## Features
+
+#### Testing
+
+1. The user is able to define test cases inside a child class of the SnoTestSuite class.
+2. The user is able to run all test cases with a single command:
+   1. this command shows if the test suite succeeded.
+3. The user is able to see the test case results after each run:
+   1. these results show if a test case failed.
+   2. these results show why a test case failed.
+   3. these results will reset before each run.
+4. The user is able to define a test suite setup:
+   1. this setup is optional.
+   2. this setup can be run independently of the test cases.
+   3. this setup will be triggered automatically when the test suite is run.
+   4. if this setup fails, the test cases will not be run.
+5. The user is able to define a test suite teardown:
+   1. this teardown is optional.
+   2. this teardown can be run independently of the test cases.
+   3. this teardown will be triggered automatically when the test suite is run.
+6. The user is able to define a test case setup:
+   1. this setup is optional.
+   2. this setup can be run independently of the test cases.
+   3. this setup will be triggered automatically before each test case.
+   4. if not successful, this setup will show its results under the respective test case.
+7. The user is able to define a test case teardown:
+   1. this teardown is optional.
+   2. this teardown can be run independently of the test cases.
+   3. this teardown will be triggered automatically after each test case.
+   4. if not successful, this teardown will show its results under the respective test case.
+
+## Usage
+
+#### Testing
+
+1. Define a child class from the SnoTestSuite parent class located in the 'testing' module.
+2. In this class, define your test cases.
+3. Optionally, define test suite or test case setups and teardowns.
+4. Run the child class method 'run_test_suite' to run the test suite and see if it succeeded.
+5. Get detailed results from the child class 'results' attribute.
+
+## Changelog
+
+#### v1.0.0
+
+- Testing features 1 through 7 added.
+
+#### v0.1.0
+
+- Initial release.
