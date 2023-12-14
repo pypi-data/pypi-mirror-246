@@ -1,0 +1,13 @@
+gradio_image_prompter/__init__.py,sha256=_tCOkdVoK3Ko6aTqYhh9lLmT8H30J9sLE5b9RamG-3U,71
+gradio_image_prompter/image_prompter.py,sha256=FyLgSg9t-tQdsUaAU573Xlgl_r6ZjlSWE2Ak7P0I72s,5867
+gradio_image_prompter/image_prompter.pyi,sha256=EM1i52ttFB8MW8_htu0RaDYi-FQ_jRnTkvFqyTIKuzs,5903
+gradio_image_prompter/templates/component/__vite-browser-external-2447137e.js,sha256=-MRWAx5QAcDNpIN82e46M9eb7roSDsYz7J2ZBjL7KqY,41
+gradio_image_prompter/templates/component/index.js,sha256=2PDTd0xUmL9IaJIsUJZtPrSvJ0CcxVLOskmjSczRVyM,242996
+gradio_image_prompter/templates/component/style.css,sha256=jV-mxhpjTvQ7CLQdxci62wJ9FwOWPsD9JOX4fqPZM4g,15856
+gradio_image_prompter/templates/component/wrapper-6f348d45-f837cf34.js,sha256=Frd0Y8JweDT6LX6J1uORkAErQZTkqActU0tsyqiOcDs,78109
+gradio_image_prompter/templates/example/index.js,sha256=3T7QnMFyvkfFchr8QHFUqwkdRI6R3ExOcItHNzLGETQ,5258
+gradio_image_prompter/templates/example/style.css,sha256=4vRm-HRSEY4So0S9wcc7HSrPAehUgjQGyCF7mtSMkkw,422
+gradio_image_prompter-0.1.0.dist-info/METADATA,sha256=ubQMGBqjJrPB-UkjXM4UTf8_9MgK9HzFZeSePZyXO2o,2120
+gradio_image_prompter-0.1.0.dist-info/WHEEL,sha256=0wCxn4rnLsvRWBK-NC7mK2QMIQ_aZSl7Qvk-8IWl_pY,87
+gradio_image_prompter-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gradio_image_prompter-0.1.0.dist-info/RECORD,,
