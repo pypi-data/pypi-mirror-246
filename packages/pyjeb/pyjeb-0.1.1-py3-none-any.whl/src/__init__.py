@@ -1,0 +1,1 @@
+from src.main import control_and_setup
