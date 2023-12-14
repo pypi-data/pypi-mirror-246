@@ -1,0 +1,14 @@
+flowa/__init__.py,sha256=K8whsqARXeVmfMVS4hISDnCHT2dOtL4jCu2Bhi9hQUE,2996
+flowa/_version.py,sha256=73Z1rX7i885VfSFh0tqk8Ej4bbTO7TXgblh39s3-Yg0,784
+flowa/ai/__init__.py,sha256=tlndgSdWVFIAgxIAs6ek4LpMQCOMyPtj4vIGcl0Bo3A,238
+flowa/ai/decisiontree.py,sha256=a_WfBJxqzoYOKEQTrZD8YcCDz8qk6npq-VPVki2pO4M,6499
+flowa/ai/imagemodel.py,sha256=Tfqw0UvhzCmoJt4c4VYJA3L8dFRCQeX0Z8jhk4mVy_I,6303
+flowa/ai/labelencoder.py,sha256=MlgTBQ2xaBxgKqkwaKS03BoZNZs1DxL5T2alayICIJ4,4507
+flowa/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flowa/types/__init__.py,sha256=mL5fCIGV2DKj0MM0sT7TWe03w9PsNFe6Fe2pe856AiY,4701
+flowa/utils/__init__.py,sha256=-72TVCtJx-oigF9bCZxrHuZ7nNjA7wGuGc-PMPE5GG8,1308
+flowa-10.5.3.dist-info/LICENSE,sha256=0Mn0y8jmfxT3RWigJXwqkznxP0kdLwesvTdsvkKU_IU,1062
+flowa-10.5.3.dist-info/METADATA,sha256=hEHpsJ_-JR3IfKLgY5zXJMJcpRSnrx5Ix140mEvx4f0,4564
+flowa-10.5.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+flowa-10.5.3.dist-info/top_level.txt,sha256=qGgaWzrNFYxMlW5Pf_XtKZk7FxkBAVzQTEqK2wC6ISY,6
+flowa-10.5.3.dist-info/RECORD,,
