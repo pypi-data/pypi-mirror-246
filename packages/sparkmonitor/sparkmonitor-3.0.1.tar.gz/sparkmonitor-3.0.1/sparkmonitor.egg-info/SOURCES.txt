@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+install.json
+package.json
+pyproject.toml
+setup.py
+yarn.lock
+sparkmonitor/__init__.py
+sparkmonitor/_version.py
+sparkmonitor/kernelextension.py
+sparkmonitor.egg-info/PKG-INFO
+sparkmonitor.egg-info/SOURCES.txt
+sparkmonitor.egg-info/dependency_links.txt
+sparkmonitor.egg-info/not-zip-safe
+sparkmonitor.egg-info/requires.txt
+sparkmonitor.egg-info/top_level.txt
