@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: qtealeaves
+Version: 0.4.51
+Summary: Interface tensor network simulations
+Home-page: https://baltig.infn.it/quantum_tea_leaves_internal/py_api_quantum_tea_leaves.git
+Author: Marco Ballarin, Giovanni Cataldi, Aurora Costantini, Daniel Jaschke, Giuseppe Magnifico, Simone Notarnicola, Alice Pagano, Marco Rigobello, Nora Reinić
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+qtealeaves
+==============
+
+Tools for controlling the tensor network simulations running in fortran.
+
+
+Documentation
+=============
+
+There is an extended html documentation, which can be build locally
+via sphinx or is available [here](https://quantum_tea_leaves.baltig-pages.infn.it/py_api_quantum_tea_leaves/)
+
+
+Installation
+============
+
+Dependencies
+------------
+
+The dependencies of the package depend on the scenario you want to
+use it. You find a description in the following:
+
+* The python dependencies can be found in the
+  [``requirements.txt``](requirements.txt) and are required
+  independent of the use-case.
+* If you are using QComps, you are good to go after the steps
+  above and can continue with the instructions for installing
+  QComps.
+* If you are using small exact diagonalization examples or the
+  python tensor network classes, no further steps are necessary.
+* If you want to use the aTTN or TTN toolchain, you need to install
+  the fortran code. The tensor network backend depends on the
+  executable from quantum green tea, which has this project
+  as a dependency. They are not part of this project
+  and will be installed within quantum green tea.
+
+
+Local installation via pip
+--------------------------
+
+Run `pip install .` in the same folder as this readme file.
+
+
+Development
+===========
+
+The branches ``master`` and ``develop`` are protected. New implementations
+should be made on branches ``feature/<NAME>`` or ``bugfix/<NAME>``, where
+NAME ideally starts with ``#<TICKET_NUMBER>``. Commits messages ideally start
+as well with ``#<TICKET_NUMBER>`` if a ticket is available.
+
+Make sure that [pre-commit](https://pre-commit.com/#install) is installed in your development python environment 
+and that you ran `pre-commit install` in the same folder as this readme file.
+
+The unit tests will run on new commits automatically and the result will
+be published for each branch and merge request. Unit tests must run green
+before a merge request can be included.
+
+Our unit tests include linter tests. In case of reasonable arguments,
+linter tests can be escaped on a per-file base.
+
+License
+=======
+
+The project ``qtealeaves`` from the repository
+``https://baltig.infn.it/quantum_tea_leaves_internal/py_api_quantum_tea_leaves.git``
+is licensed under the following license:
+
+[Apache License 2.0](LICENSE)
+
+The license applies to the files of this project as indicated
+in the header of each file, but not its dependencies.
