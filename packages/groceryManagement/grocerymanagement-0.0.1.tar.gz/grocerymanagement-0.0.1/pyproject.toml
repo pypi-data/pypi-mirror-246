@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groceryManagement"
+version = "0.0.1"
+authors = [
+  { name="Shiyi", email="shiyichen16@gmail.com" },
+  { name="Marina", email="ruomengtian@gmail.com" }
+]
+description = "A project for DATA 533, UBCO"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ubco-mds-2023-labs/project-step-3-marinatian"
+Issues = "https://github.com/ubco-mds-2023-labs/project-step-3-marinatian/issues"
