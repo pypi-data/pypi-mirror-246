@@ -1,0 +1,4 @@
+pandas
+paramiko
+fs_gcsfs
+google-cloud-secret-manager

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'hznp-utils'
+authors = [{name = "David Josephs", email = "djosephs@horizontherapeutics.com"},
+           {name = "Edwin Zamudio", email = "ezamudio@amgen.com"}]
+requires-python = ">=3.10"
+version = "1.0"
+description = "Data Science utilities for Horizon Therapeutics"
+dependencies = ["pandas", "paramiko", "fs_gcsfs","google-cloud-secret-manager"]

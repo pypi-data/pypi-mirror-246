@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hznp-utils
+Version: 1.0
+Summary: Data Science utilities for Horizon Therapeutics
+Author-email: David Josephs <djosephs@horizontherapeutics.com>, Edwin Zamudio <ezamudio@amgen.com>
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: paramiko
+Requires-Dist: fs_gcsfs
+Requires-Dist: google-cloud-secret-manager
