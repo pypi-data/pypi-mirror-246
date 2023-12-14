@@ -1,0 +1,857 @@
+{
+    "cpeid": "%(cpeid)s",
+    "props": {
+        "DeviceInfo": {
+            "HardwareVersion": "1CDD.A",
+            "Manufacturer": "Huawei Technologies Co., Ltd",
+            "ManufacturerOUI": "00259E",
+            "MemoryStatus": {
+                "Free": 106116,
+                "Total": 262144
+            },
+            "ModelName": "HG8145X6",
+            "ProcessStatus": {
+                "CPUUsage": 10
+            },
+            "ProductClass": "HG8145X6",
+            "SerialNumber": "48575443335A3DA3",
+            "SoftwareVersion": "V5R020C10S202",
+            "UpTime": 90859
+        },
+        "Ethernet": {
+            "Link": {
+                "1": {
+                    "MACAddress": "78-17-BE-9F-86-E8"
+                }
+            }
+        },
+        "Hosts": {
+            "Host": {
+                "1": {
+                    "Active": 1,
+                    "HostName": "HG8145X6-10",
+                    "IPAddress": "192.168.100.4",
+                    "InterfaceType": "802.11",
+                    "PhysAddress": "A4-6D-A4-01-D5-8D",
+                    "SignalStrength": -29
+                },
+                "2": {
+                    "Active": 0,
+                    "HostName": "Zheng-Chen-s-S23",
+                    "IPAddress": "192.168.100.8",
+                    "InterfaceType": "802.11",
+                    "PhysAddress": "8E-C0-9F-BC-82-48",
+                    "SignalStrength": 0
+                },
+                "3": {
+                    "Active": 1,
+                    "HostName": "HG8145X6",
+                    "IPAddress": "192.168.100.5",
+                    "InterfaceType": "802.11",
+                    "PhysAddress": "6C-44-2A-09-7B-F8",
+                    "SignalStrength": -45
+                },
+                "4": {
+                    "Active": 1,
+                    "HostName": "Host#1",
+                    "IPAddress": "192.168.100.11",
+                    "InterfaceType": "802.11",
+                    "PhysAddress": "BE-EF-12-1D-3A-9D",
+                    "SignalStrength": 0
+                },
+                "5": {
+                    "Active": 1,
+                    "HostName": "NBTT4960A2",
+                    "IPAddress": "192.168.100.10",
+                    "InterfaceType": "802.11",
+                    "PhysAddress": "0C-9A-3C-98-8E-FB",
+                    "SignalStrength": 0
+                },
+                "6": {
+                    "Active": 1,
+                    "HostName": "Xiaomi-12T-Pro",
+                    "IPAddress": "192.168.100.12",
+                    "InterfaceType": "802.11",
+                    "PhysAddress": "BA-F4-8C-5E-4B-FF",
+                    "SignalStrength": -38
+                }
+            }
+        },
+        "Huawei": {
+            "Mesh": {
+                "1": {
+                    "hw_mesh_device_type": "HG8145X6",
+                    "hw_mesh_mac": "6C-44-2A-09-7B-F8",
+                    "hw_mesh_status": "1",
+                    "hw_mesh_working_mode": "repeater",
+                    "hw_mesh_uuid": "uuid:00e0fc37-2525-2828-2500-6c442a097bf8",
+                    "hw_mesh_wlans": {
+                        "1": {
+                            "AssociatedDeviceNumberOfEntries": 0,
+                            "BSSID": "6C:44:2A:09:7C:00",
+                            "Channel": 1,
+                            "Enable": "1",
+                            "RFBand": "2.4G",
+                            "SSID": "Ofisgate POC 2",
+                            "Standard": "11ax",
+                            "Stats": {
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "38",
+                                "TotalBytesReceived": "1623137",
+                                "TotalBytesSent": "35172066",
+                                "TotalPacketsReceived": "12638",
+                                "TotalPacketsSent": "68212"
+                            },
+                            "UsedForCover": "1"
+                        },
+                        "2": {
+                            "AssociatedDeviceNumberOfEntries": 1,
+                            "BSSID": "6C:44:2A:09:7C:04",
+                            "Channel": 36,
+                            "Enable": "1",
+                            "RFBand": "5G",
+                            "SSID": "Ofisgate POC 2",
+                            "Standard": "11ax",
+                            "Stats": {
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "27",
+                                "TotalBytesReceived": "223717146",
+                                "TotalBytesSent": "681401429",
+                                "TotalPacketsReceived": "314402",
+                                "TotalPacketsSent": "603119"
+                            },
+                            "UsedForCover": "1",
+                            "AssociatedDevice": {
+                                "1": {
+                                    "11kSupported": "1",
+                                    "11vSupported": "1",
+                                    "AssociatedDeviceAuthenticationState": 0,
+                                    "AssociatedDeviceIPAddress": "192.168.100.10",
+                                    "AssociatedDeviceMACAddress": "0C:9A:3C:98:8E:FB",
+                                    "BeamFormingSupported": "1",
+                                    "DualBandSupported": "1",
+                                    "FrequencyWidth": "80M",
+                                    "LastDataTransmitRate": "780",
+                                    "LastPMKId": "",
+                                    "LastRequestedMulticastCipher": "",
+                                    "LastRequestedUnicastCipher": "",
+                                    "Noise": "-74",
+                                    "PSMode": 0,
+                                    "RSSI": "-53",
+                                    "RxRate": "6",
+                                    "SNR": "21",
+                                    "SingalQuality": "41",
+                                    "TxRate": "780",
+                                    "Uptime": "465",
+                                    "WMMStatus": "4294967295"
+                                }
+                            }
+                        }
+                    }
+                },
+                "2": {
+                    "hw_mesh_device_type": "HG8145X6-10",
+                    "hw_mesh_mac": "A4-6D-A4-01-D5-8D",
+                    "hw_mesh_status": "1",
+                    "hw_mesh_working_mode": "repeater",
+                    "hw_mesh_uuid": "uuid:00e0fc37-2525-2828-2500-a46da401d58d",
+                    "hw_mesh_wlans": {
+                        "1": {
+                            "AssociatedDeviceNumberOfEntries": 0,
+                            "BSSID": "A6:6D:A4:01:D5:94",
+                            "Channel": 1,
+                            "Enable": "1",
+                            "RFBand": "2.4G",
+                            "SSID": "Ofisgate POC 2",
+                            "Standard": "11ax",
+                            "Stats": {
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "8",
+                                "TotalBytesReceived": "4023292",
+                                "TotalBytesSent": "95175559",
+                                "TotalPacketsReceived": "33205",
+                                "TotalPacketsSent": "151919"
+                            },
+                            "UsedForCover": "1"
+                        },
+                        "2": {
+                            "AssociatedDeviceNumberOfEntries": 1,
+                            "BSSID": "A6:6D:A4:01:D5:98",
+                            "Channel": 36,
+                            "Enable": "1",
+                            "RFBand": "5G",
+                            "SSID": "Ofisgate POC 2",
+                            "Standard": "11ax",
+                            "Stats": {
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "35",
+                                "TotalBytesReceived": "120697372",
+                                "TotalBytesSent": "2165804361",
+                                "TotalPacketsReceived": "761247",
+                                "TotalPacketsSent": "2039745"
+                            },
+                            "UsedForCover": "1",
+                            "AssociatedDevice": {
+                                "1": {
+                                    "11kSupported": "1",
+                                    "11vSupported": "1",
+                                    "AssociatedDeviceAuthenticationState": 0,
+                                    "AssociatedDeviceIPAddress": "192.168.100.11",
+                                    "AssociatedDeviceMACAddress": "BE:EF:12:1D:3A:9D",
+                                    "BeamFormingSupported": "1",
+                                    "DualBandSupported": "1",
+                                    "FrequencyWidth": "80MHz",
+                                    "LastDataTransmitRate": "1080",
+                                    "LastPMKId": "",
+                                    "LastRequestedMulticastCipher": "",
+                                    "LastRequestedUnicastCipher": "",
+                                    "Noise": "-75",
+                                    "PSMode": 0,
+                                    "RSSI": "-40",
+                                    "RxRate": "1201",
+                                    "SNR": "35",
+                                    "SingalQuality": "54",
+                                    "TxRate": "1080",
+                                    "Uptime": "739",
+                                    "WMMStatus": "4294967295"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "IP": {
+            "Interface": {
+                "1": {
+                    "IPv4Address": {
+                        "1": {
+                            "IPAddress": "10.31.194.39"
+                        }
+                    }
+                }
+            }
+        },
+        "WiFi": {
+            "AccessPoint": {
+                "1": {
+                    "AssociatedDevice": {
+                        "1": {
+                            "Active": 1,
+                            "AuthenticationState": 1,
+                            "IPAddress": "192.168.100.4",
+                            "LastDataUplinkRate": 216,
+                            "LastDataDownlinkRate": 216,
+                            "MACAddress": "3A-72-C2-C5-D9-B5",
+                            "Noise": -73,
+                            "OperatingStandard": "11ax",
+                            "SignalStrength": -29,
+                            "Stats": {
+                                "BytesReceived": 6074090,
+                                "BytesSent": 4139371,
+                                "PacketsReceived": 25216,
+                                "PacketsSent": 25482
+                            }
+                        },
+                        "2": {
+                            "Active": 1,
+                            "AuthenticationState": 1,
+                            "IPAddress": "192.168.100.5",
+                            "LastDataUplinkRate": 87,
+                            "LastDataDownlinkRate": 195,
+                            "MACAddress": "6E-44-2A-09-7C-00",
+                            "Noise": -73,
+                            "OperatingStandard": "11ax",
+                            "SignalStrength": -45,
+                            "Stats": {
+                                "BytesReceived": 7092262,
+                                "BytesSent": 4913433,
+                                "PacketsReceived": 32981,
+                                "PacketsSent": 34012
+                            }
+                        },
+                        "3": {
+                            "Active": 1,
+                            "AuthenticationState": 1,
+                            "IPAddress": "192.168.100.12",
+                            "LastDataUpLinkRate": 6,
+                            "LastDataDownlinkRate": 541,
+                            "MACAddress": "BA-F4-8C-5E-4B-FF",
+                            "Noise": -83,
+                            "OperatingStandard": "11ax",
+                            "SignalStrength": -38,
+                            "Stats": {
+                                "BytesReceived": 2182795,
+                                "BytesSent": 17311990,
+                                "PacketsReceived": 9237,
+                                "PacketsSent": 18308
+                            }
+                        }
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "SSIDReference": "Device.WiFi.SSID.1",
+                    "Security": {
+                        "EncryptionMode": "AESEncryption",
+                        "ModeEnabled": "PSKAuthentication"
+                    },
+                    "WPS": {
+                        "ConfigMethodsEnabled": "PushButton",
+                        "Enable": "1"
+                    }
+                },
+                "5": {
+                    "SSIDAdvertisementEnabled": 1,
+                    "SSIDReference": "Device.WiFi.SSID.5",
+                    "Security": {
+                        "EncryptionMode": "AESEncryption",
+                        "ModeEnabled": "PSKAuthentication"
+                    },
+                    "WPS": {
+                        "ConfigMethodsEnabled": "PushButton",
+                        "Enable": "1"
+                    }
+                }
+            },
+            "NeighboringWiFiDiagnostic": {
+                "DiagnosticsState": "Complete",
+                "Result": {
+                    "1": {
+                        "BSSID": "34-8F-27-5B-DA-78",
+                        "Channel": 6,
+                        "EncryptionMode": "AES",
+                        "Noise": "-102",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Corp",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "SignalStrength": -63
+                    },
+                    "2": {
+                        "BSSID": "34-8F-27-1B-DA-78",
+                        "Channel": 6,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Guest",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -63
+                    },
+                    "3": {
+                        "BSSID": "A6-6D-A4-01-DB-4B",
+                        "Channel": 7,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -28
+                    },
+                    "4": {
+                        "BSSID": "A6-6D-A4-01-DB-48",
+                        "Channel": 7,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Roots POC 4",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -25
+                    },
+                    "5": {
+                        "BSSID": "0E-0E-76-31-AD-1D",
+                        "Channel": 6,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "",
+                        "SecurityModeEnabled": "WPA2/WPA3-PSK",
+                        "SignalStrength": -11
+                    },
+                    "6": {
+                        "BSSID": "C4-69-F0-2C-D7-48",
+                        "Channel": 6,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "2gbps 2.4 testlab",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -59
+                    },
+                    "7": {
+                        "BSSID": "EE-8E-B5-D1-C5-32",
+                        "Channel": 6,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "DIRECT-32-HP OfficeJet Pro 8730",
+                        "SecurityModeEnabled": "WPA2",
+                        "SignalStrength": -81
+                    },
+                    "8": {
+                        "BSSID": "6C-44-2A-08-CF-BC",
+                        "Channel": 6,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Roots POC 4",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -27
+                    },
+                    "9": {
+                        "BSSID": "F0-2F-74-40-CD-E0",
+                        "Channel": 8,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "taclab",
+                        "SecurityModeEnabled": "WPA2",
+                        "SignalStrength": -58
+                    },
+                    "10": {
+                        "BSSID": "04-92-26-E1-95-10",
+                        "Channel": 9,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Free Wifi",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -42
+                    },
+                    "11": {
+                        "BSSID": "0E-0E-76-31-ED-6F",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "",
+                        "SecurityModeEnabled": "WPA2/WPA3-PSK",
+                        "SignalStrength": -43
+                    },
+                    "12": {
+                        "BSSID": "A6-6D-A4-01-D5-97",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -24
+                    },
+                    "13": {
+                        "BSSID": "34-8F-27-A4-0A-B8",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "",
+                        "SecurityModeEnabled": "WPA2",
+                        "SignalStrength": -91
+                    },
+                    "14": {
+                        "BSSID": "A6-6D-A4-01-D5-94",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Ofisgate POC 2",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -24
+                    },
+                    "15": {
+                        "BSSID": "0C-0E-76-61-ED-6F",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "BlazingSpeed-TIME_ED6A",
+                        "SecurityModeEnabled": "WPA2/WPA3-PSK",
+                        "SignalStrength": -41
+                    },
+                    "16": {
+                        "BSSID": "34-8F-27-64-01-78",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Corp",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "SignalStrength": -84
+                    },
+                    "17": {
+                        "BSSID": "6C-44-2A-09-7C-00",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-102",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Ofisgate POC 2",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -41
+                    },
+                    "18": {
+                        "BSSID": "8C-FE-74-5E-7B-D8",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Corp",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "SignalStrength": -88
+                    },
+                    "19": {
+                        "BSSID": "34-8F-27-5B-49-E8",
+                        "Channel": 1,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Corp",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "SignalStrength": -72
+                    },
+                    "20": {
+                        "BSSID": "8C-FE-74-1E-7B-D8",
+                        "Channel": 1,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Guest",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -88
+                    },
+                    "21": {
+                        "BSSID": "34-8F-27-1B-49-E8",
+                        "Channel": 1,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Guest",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -73
+                    },
+                    "22": {
+                        "BSSID": "34-8F-27-24-01-78",
+                        "Channel": 1,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Guest",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -84
+                    },
+                    "23": {
+                        "BSSID": "34-8F-27-24-0A-B8",
+                        "Channel": 1,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-104",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Guest",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -92
+                    },
+                    "24": {
+                        "BSSID": "10-BE-F5-19-FE-64",
+                        "Channel": 1,
+                        "EncryptionMode": "TKIP,AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "dlink-FE64",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -66
+                    },
+                    "25": {
+                        "BSSID": "10-BE-F5-1A-04-68",
+                        "Channel": 1,
+                        "EncryptionMode": "TKIP,AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "dlink-0468",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -67
+                    },
+                    "26": {
+                        "BSSID": "48-F8-B3-DA-E4-AD",
+                        "Channel": 3,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TacVoice",
+                        "SecurityModeEnabled": "WPA2",
+                        "SignalStrength": -44
+                    },
+                    "27": {
+                        "BSSID": "40-9B-CD-2D-22-84",
+                        "Channel": 2,
+                        "EncryptionMode": "TKIP,AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "dlink-2284",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -53
+                    },
+                    "28": {
+                        "BSSID": "B0-95-75-BC-22-68",
+                        "Channel": 5,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "CRO TX ROOM 2.4Ghz",
+                        "SecurityModeEnabled": "WPA2",
+                        "SignalStrength": -50
+                    },
+                    "29": {
+                        "BSSID": "EC-A1-D1-5B-24-F8",
+                        "Channel": 4,
+                        "EncryptionMode": "AES",
+                        "Noise": "-104",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Roots POC ",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -15
+                    },
+                    "30": {
+                        "BSSID": "B2-16-56-B8-C5-FF",
+                        "Channel": 11,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -28
+                    },
+                    "31": {
+                        "BSSID": "92-7F-54-81-C0-61",
+                        "Channel": 10,
+                        "EncryptionMode": "AES",
+                        "Noise": "-102",
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "BeWarehouse",
+                        "SecurityModeEnabled": "WPA2",
+                        "SignalStrength": -80
+                    },
+                    "32": {
+                        "BSSID": "B2-16-56-B8-C4-FC",
+                        "Channel": 11,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "x6-10",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -30
+                    },
+                    "33": {
+                        "BSSID": "10-BE-F5-1A-A2-BC",
+                        "Channel": 11,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-104",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "dlink",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -50
+                    },
+                    "34": {
+                        "BSSID": "34-8F-27-1B-8E-68",
+                        "Channel": 11,
+                        "EncryptionMode": "NONE",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Guest",
+                        "SecurityModeEnabled": "None",
+                        "SignalStrength": -56
+                    },
+                    "35": {
+                        "BSSID": "34-8F-27-5B-8E-68",
+                        "Channel": 11,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "SSID": "TIME-Corp",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "SignalStrength": -57
+                    },
+                    "36": {
+                        "BSSID": "C0-E0-18-04-58-94",
+                        "Channel": 11,
+                        "EncryptionMode": "AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Roots POC 4",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -15
+                    },
+                    "37": {
+                        "BSSID": "60-7E-CD-B4-1F-54",
+                        "Channel": 11,
+                        "EncryptionMode": "TKIP,AES",
+                        "Noise": "-103",
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "11ax",
+                        "SSID": "Ofisgate POC 1",
+                        "SecurityModeEnabled": "WPA-WPA2",
+                        "SignalStrength": -26
+                    }
+                },
+                "ResultNumberOfEntries": 37,
+                "coll_dt": 6696,
+                "scan_dt": 6486
+            },
+            "Radio": {
+                "1": {
+                    "AutoChannelEnable": 0,
+                    "Channel": 1,
+                    "Enable": 1,
+                    "OperatingChannelBandwidth": "Auto",
+                    "OperatingFrequencyBand": "2.4GHz",
+                    "OperatingStandards": "11ax",
+                    "PossibleChannels": "1,2,3,4,5,6,7,8,9,10,11,12,13",
+                    "RegulatoryDomain": "MY",
+                    "Status": "Up"
+                },
+                "5": {
+                    "AutoChannelEnable": 0,
+                    "Channel": 100,
+                    "Enable": 1,
+                    "OperatingChannelBandwidth": "80MHz",
+                    "OperatingFrequencyBand": "5GHz",
+                    "OperatingStandards": "11ax",
+                    "PossibleChannels": "36,40,44,48,52,56,60,64,100,104,108,112,116,120,124,128,149,153,157,161",
+                    "RegulatoryDomain": "MY",
+                    "Status": "Up"
+                }
+            },
+            "SSID": {
+                "1": {
+                    "BSSID": "78-17-BE-9F-86-F0",
+                    "Enable": "1",
+                    "LowerLayers": "Device.WiFi.Radio.1",
+                    "SSID": "Ofisgate POC 2",
+                    "Stats": {
+                        "BytesReceived": 131406912,
+                        "BytesSent": 1219525185,
+                        "ErrorsReceived": 0,
+                        "ErrorsSent": 43,
+                        "PacketsReceived": 787054,
+                        "PacketsSent": 1277187
+                    }
+                },
+                "5": {
+                    "BSSID": "78-17-BE-9F-86-F4",
+                    "Enable": "1",
+                    "LowerLayers": "Device.WiFi.Radio.5",
+                    "SSID": "Ofisgate POC 2",
+                    "Stats": {
+                        "BytesReceived": 49731570,
+                        "BytesSent": 37451637,
+                        "ErrorsReceived": 0,
+                        "ErrorsSent": 3,
+                        "PacketsReceived": 215930,
+                        "PacketsSent": 230780
+                    }
+                }
+            }
+        },
+        "collector": {
+            "code": 200,
+            "details": "",
+            "full_scan": 1,
+            "light_scan": 0,
+            "msg": "Full Scan"
+        },
+        "metadata": {
+            "allow_auto_enforce_2": 1,
+            "allow_auto_enforce_5": 1,
+            "allow_collection": 1,
+            "last_scan_ts": 1694708074615,
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "mode": "huawei_HG8145X6",
+            "tenant": "live"
+        }
+    },
+    "sender": {
+        "event_source": "main_collector_ipv4",
+        "hosts": "ip-172-30-1-126",
+        "name": "axtract_collector",
+        "pid": 4178294
+    },
+    "ts": %(time)s,
+}

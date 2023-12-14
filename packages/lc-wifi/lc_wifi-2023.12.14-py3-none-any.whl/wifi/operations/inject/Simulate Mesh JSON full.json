@@ -1,0 +1,3018 @@
+{
+    "sender": {
+        "event_source": "avm_listener",
+        "pid": 1,
+        "hosts": "collector",
+        "name": "axtract_collector"
+    },
+    "mode": "avm_fb7590",
+    "cpeid": "%(cpeid)s",
+    "ts": %(time)s,
+    "props": {
+        "data": {
+            "upload_method": "mesh",
+            "nodes": [
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-7",
+                            "lldp_active": false,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:67:BC:44",
+                            "blocking_state": "NOT_BLOCKED",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LANBridge"
+                        },
+                        {
+                            "uid": "ni-177",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:67:BC:44",
+                            "blocking_state": "NOT_BLOCKED",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "WAN:1"
+                        },
+                        {
+                            "uid": "ni-109",
+                            "phymodes": [
+                                "g",
+                                "n"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2412000,
+                                "primary_center": 2412000,
+                                "channel_width": "20 MHz",
+                                "secondary_center": 0,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "it_raum_021",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    4
+                                ],
+                                [
+                                    "40 MHz",
+                                    0
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 2412000,
+                                    "channel": 1
+                                },
+                                {
+                                    "frequency": 2417000,
+                                    "channel": 2
+                                },
+                                {
+                                    "frequency": 2422000,
+                                    "channel": 3
+                                },
+                                {
+                                    "frequency": 2427000,
+                                    "channel": 4
+                                },
+                                {
+                                    "frequency": 2432000,
+                                    "channel": 5
+                                },
+                                {
+                                    "frequency": 2437000,
+                                    "channel": 6
+                                },
+                                {
+                                    "frequency": 2442000,
+                                    "channel": 7
+                                },
+                                {
+                                    "frequency": 2447000,
+                                    "channel": 8
+                                },
+                                {
+                                    "frequency": 2452000,
+                                    "channel": 9
+                                },
+                                {
+                                    "frequency": 2457000,
+                                    "channel": 10
+                                },
+                                {
+                                    "frequency": 2462000,
+                                    "channel": 11
+                                },
+                                {
+                                    "frequency": 2467000,
+                                    "channel": 12
+                                },
+                                {
+                                    "frequency": 2472000,
+                                    "channel": 13
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    4
+                                ],
+                                [
+                                    "40 MHz",
+                                    0
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "AP",
+                            "mac_address": "44:4E:6D:67:BC:47",
+                            "current_channel": 1,
+                            "channel_utilization": 13,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2_WPA3_MIXED",
+                            "11k_friendly": false,
+                            "name": "AP:2G:0",
+                            "anpi": -79,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-111",
+                            "phymodes": [
+                                "a",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": 5250000,
+                                "channel_width": "160 MHz",
+                                "secondary_center": 0,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "it_raum_021",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    4
+                                ],
+                                [
+                                    "40 MHz",
+                                    4
+                                ],
+                                [
+                                    "80 MHz",
+                                    4
+                                ],
+                                [
+                                    "160 MHz",
+                                    4
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 5180000,
+                                    "channel": 36
+                                },
+                                {
+                                    "frequency": 5200000,
+                                    "channel": 40
+                                },
+                                {
+                                    "frequency": 5220000,
+                                    "channel": 44
+                                },
+                                {
+                                    "frequency": 5240000,
+                                    "channel": 48
+                                },
+                                {
+                                    "frequency": 5260000,
+                                    "channel": 52
+                                },
+                                {
+                                    "frequency": 5280000,
+                                    "channel": 56
+                                },
+                                {
+                                    "frequency": 5300000,
+                                    "channel": 60
+                                },
+                                {
+                                    "frequency": 5320000,
+                                    "channel": 64
+                                },
+                                {
+                                    "frequency": 5500000,
+                                    "channel": 100
+                                },
+                                {
+                                    "frequency": 5520000,
+                                    "channel": 104
+                                },
+                                {
+                                    "frequency": 5540000,
+                                    "channel": 108
+                                },
+                                {
+                                    "frequency": 5560000,
+                                    "channel": 112
+                                },
+                                {
+                                    "frequency": 5580000,
+                                    "channel": 116
+                                },
+                                {
+                                    "frequency": 5600000,
+                                    "channel": 120
+                                },
+                                {
+                                    "frequency": 5620000,
+                                    "channel": 124
+                                },
+                                {
+                                    "frequency": 5640000,
+                                    "channel": 128
+                                },
+                                {
+                                    "frequency": 5660000,
+                                    "channel": 132
+                                },
+                                {
+                                    "frequency": 5680000,
+                                    "channel": 136
+                                },
+                                {
+                                    "frequency": 5700000,
+                                    "channel": 140
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    4
+                                ],
+                                [
+                                    "40 MHz",
+                                    4
+                                ],
+                                [
+                                    "80 MHz",
+                                    4
+                                ],
+                                [
+                                    "160 MHz",
+                                    4
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "AP",
+                            "mac_address": "44:4E:6D:67:BC:46",
+                            "current_channel": 40,
+                            "channel_utilization": 1,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2_WPA3_MIXED",
+                            "11k_friendly": false,
+                            "name": "AP:5G:0",
+                            "anpi": -100,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-154",
+                            "lldp_active": true,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-65",
+                                    "uid": "nl-67",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 99,
+                                    "max_data_rate_rx": 1000000,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 1000000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-154",
+                                    "node_1_uid": "n-1",
+                                    "cur_data_rate_rx": 1000000,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 1000000,
+                                    "cur_availability_rx": 99
+                                }
+                            ],
+                            "mac_address": "44:4E:6D:67:BC:44",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": true,
+                            "name": "LAN:1"
+                        },
+                        {
+                            "uid": "ni-108",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:67:BC:44",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": true,
+                            "name": "LAN:2"
+                        },
+                        {
+                            "uid": "ni-116",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:67:BC:44",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LAN:3"
+                        },
+                        {
+                            "uid": "ni-122",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:67:BC:44",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LAN:4"
+                        }
+                    ],
+                    "mesh_role": "master",
+                    "device_mac_address": "44:4E:6D:67:BC:44",
+                    "is_meshed": true,
+                    "device_model": "FRITZ!Box 7590",
+                    "device_name": "fritz.box",
+                    "device_firmware_version": "154.07.50",
+                    "enabled_device_capabilities": [
+                        "MAC_BRIDGE_COMPONENT",
+                        "WLAN_ACCESS_POINT",
+                        "ROUTER"
+                    ],
+                    "meshd_version": "4.107",
+                    "device_capabilities": [
+                        "MAC_BRIDGE_COMPONENT",
+                        "WLAN_ACCESS_POINT",
+                        "ROUTER"
+                    ],
+                    "device_manufacturer": "AVM",
+                    "device_id": {
+                        "subtype": "MAC_ADDRESS",
+                        "value": "44:4E:6D:67:BC:44"
+                    },
+                    "uid": "n-1"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-231",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 5500000,
+                                    "channel": 100
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "5C:3E:1B:E4:94:3E",
+                            "current_channel": 40,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "5C:3E:1B:E4:94:3E",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "iPhone-von-Kai",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-28"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-45",
+                            "lldp_active": true,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-165",
+                                    "uid": "nl-166",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-45",
+                                    "node_1_uid": "n-44",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "00:24:9B:5B:2A:56",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-144",
+                            "lldp_active": null,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-146",
+                                    "uid": "nl-147",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": null,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-144",
+                                    "node_1_uid": "n-44",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "00:24:9B:5B:2A:56",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": "LAN:1"
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "00:24:9B:5B:2A:56",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "OSS-ENT-KAI",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": {
+                        "subtype": "LOCALLY_ASSIGNED",
+                        "value": "OSS-ENT-KAI"
+                    },
+                    "uid": "n-44"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-230",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2412000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "F8:B1:DD:64:D8:31",
+                            "current_channel": 1,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "F8:B1:DD:64:D8:31",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "iPad-mini",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-57"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-232",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2442000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "0E:D2:73:08:80:9F",
+                            "current_channel": 7,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "0E:D2:73:08:80:9F",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "Pixel-7-Pro",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-73"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-82",
+                            "lldp_active": true,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-140",
+                                    "uid": "nl-164",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-82",
+                                    "node_1_uid": "n-81",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "00:24:9B:5B:29:C6",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-148",
+                            "lldp_active": null,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-150",
+                                    "uid": "nl-151",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": null,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-148",
+                                    "node_1_uid": "n-81",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "00:24:9B:5B:29:C6",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": "LAN:1"
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "00:24:9B:5B:29:C6",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "OSS-ENT-TOM",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": {
+                        "subtype": "LOCALLY_ASSIGNED",
+                        "value": "OSS-ENT-TOM"
+                    },
+                    "uid": "n-81"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-225",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2442000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "64:70:33:B9:41:4B",
+                            "current_channel": 7,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "64:70:33:B9:41:4B",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "EWEiPhoLSH0JC67",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-224"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-229",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "F0:2F:4B:0C:15:B9",
+                            "current_channel": 40,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "F0:2F:4B:0C:15:B9",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "MBP-von-Kai",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-228"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-17",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:B9:0E:53",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LAN:2"
+                        },
+                        {
+                            "uid": "ni-25",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:B9:0E:50",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LAN:3"
+                        },
+                        {
+                            "uid": "ni-26",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:B9:0E:51",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LAN:4"
+                        },
+                        {
+                            "uid": "ni-27",
+                            "phymodes": [
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "it_raum_021",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 5180000,
+                                    "channel": 36
+                                },
+                                {
+                                    "frequency": 5200000,
+                                    "channel": 40
+                                },
+                                {
+                                    "frequency": 5220000,
+                                    "channel": 44
+                                },
+                                {
+                                    "frequency": 5240000,
+                                    "channel": 48
+                                },
+                                {
+                                    "frequency": 5260000,
+                                    "channel": 52
+                                },
+                                {
+                                    "frequency": 5280000,
+                                    "channel": 56
+                                },
+                                {
+                                    "frequency": 5300000,
+                                    "channel": 60
+                                },
+                                {
+                                    "frequency": 5320000,
+                                    "channel": 64
+                                },
+                                {
+                                    "frequency": 5500000,
+                                    "channel": 100
+                                },
+                                {
+                                    "frequency": 5520000,
+                                    "channel": 104
+                                },
+                                {
+                                    "frequency": 5540000,
+                                    "channel": 108
+                                },
+                                {
+                                    "frequency": 5560000,
+                                    "channel": 112
+                                },
+                                {
+                                    "frequency": 5580000,
+                                    "channel": 116
+                                },
+                                {
+                                    "frequency": 5600000,
+                                    "channel": 120
+                                },
+                                {
+                                    "frequency": 5620000,
+                                    "channel": 124
+                                },
+                                {
+                                    "frequency": 5640000,
+                                    "channel": 128
+                                },
+                                {
+                                    "frequency": 5660000,
+                                    "channel": 132
+                                },
+                                {
+                                    "frequency": 5680000,
+                                    "channel": 136
+                                },
+                                {
+                                    "frequency": 5700000,
+                                    "channel": 140
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "AP",
+                            "mac_address": "44:4E:6D:B9:0E:55",
+                            "current_channel": 40,
+                            "channel_utilization": 1,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2_WPA3_MIXED",
+                            "11k_friendly": false,
+                            "name": "AP:5G:0",
+                            "anpi": -106,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -68,
+                                    "node_2_uid": "n-124",
+                                    "node_interface_2_uid": "ni-156",
+                                    "uid": "nl-106",
+                                    "last_connected": 1671152414,
+                                    "cur_availability_tx": 99,
+                                    "max_data_rate_rx": 866000,
+                                    "tx_rcpi": -68,
+                                    "cur_data_rate_tx": 650000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-27",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 650000,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 255,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 866000,
+                                    "cur_availability_rx": 99
+                                }
+                            ],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-12",
+                            "lldp_active": true,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-207",
+                                    "uid": "nl-208",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-12",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "44:4E:6D:B9:0E:52",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": true,
+                            "name": "LAN:1"
+                        },
+                        {
+                            "uid": "ni-8",
+                            "lldp_active": false,
+                            "node_links": [],
+                            "mac_address": "44:4E:6D:B9:0E:52",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LANBridge"
+                        },
+                        {
+                            "uid": "ni-138",
+                            "phymodes": [
+                                "n"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2412000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "it_raum_021",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 2412000,
+                                    "channel": 1
+                                },
+                                {
+                                    "frequency": 2417000,
+                                    "channel": 2
+                                },
+                                {
+                                    "frequency": 2422000,
+                                    "channel": 3
+                                },
+                                {
+                                    "frequency": 2427000,
+                                    "channel": 4
+                                },
+                                {
+                                    "frequency": 2432000,
+                                    "channel": 5
+                                },
+                                {
+                                    "frequency": 2437000,
+                                    "channel": 6
+                                },
+                                {
+                                    "frequency": 2442000,
+                                    "channel": 7
+                                },
+                                {
+                                    "frequency": 2447000,
+                                    "channel": 8
+                                },
+                                {
+                                    "frequency": 2452000,
+                                    "channel": 9
+                                },
+                                {
+                                    "frequency": 2457000,
+                                    "channel": 10
+                                },
+                                {
+                                    "frequency": 2462000,
+                                    "channel": 11
+                                },
+                                {
+                                    "frequency": 2467000,
+                                    "channel": 12
+                                },
+                                {
+                                    "frequency": 2472000,
+                                    "channel": 13
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "AP",
+                            "mac_address": "44:4E:6D:B9:0E:54",
+                            "current_channel": 1,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2_WPA3_MIXED",
+                            "11k_friendly": false,
+                            "name": "AP:2G:0",
+                            "anpi": -94,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -56,
+                                    "node_2_uid": "n-124",
+                                    "node_interface_2_uid": "ni-162",
+                                    "uid": "nl-91",
+                                    "last_connected": 1671181240,
+                                    "cur_availability_tx": 100,
+                                    "max_data_rate_rx": 192000,
+                                    "tx_rcpi": -55,
+                                    "cur_data_rate_tx": 1000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-138",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 1000,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 255,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 192000,
+                                    "cur_availability_rx": 100
+                                },
+                                {
+                                    "rx_rcpi": 255,
+                                    "node_2_uid": "n-51",
+                                    "node_interface_2_uid": "ni-52",
+                                    "uid": "nl-60",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 100,
+                                    "max_data_rate_rx": 0,
+                                    "tx_rcpi": -83,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "DISCONNECTED",
+                                    "node_interface_1_uid": "ni-138",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 0,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 0,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 100
+                                }
+                            ],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "slave",
+                    "device_mac_address": "44:4E:6D:B9:0E:52",
+                    "is_meshed": true,
+                    "device_model": "FRITZ!Box 7530",
+                    "device_name": "fritz.box",
+                    "device_firmware_version": "164.07.29",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "3.13",
+                    "device_capabilities": null,
+                    "device_manufacturer": "AVM",
+                    "device_id": null,
+                    "uid": "n-15"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-78",
+                            "phymodes": [
+                                "b",
+                                "g",
+                                "n"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2442000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    1
+                                ],
+                                [
+                                    "40 MHz",
+                                    0
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    1
+                                ],
+                                [
+                                    "40 MHz",
+                                    0
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "90:F1:57:83:CA:B6",
+                            "current_channel": 7,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2PSK",
+                            "11k_friendly": false,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "90:F1:57:83:CA:B6",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "Thomas-Epix",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-77"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-186",
+                            "lldp_active": false,
+                            "node_links": [],
+                            "mac_address": "C2:39:6F:FB:81:F2",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LANBridge"
+                        },
+                        {
+                            "uid": "ni-156",
+                            "phymodes": [
+                                "a",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 5180000,
+                                    "channel": 36
+                                },
+                                {
+                                    "frequency": 5200000,
+                                    "channel": 40
+                                },
+                                {
+                                    "frequency": 5220000,
+                                    "channel": 44
+                                },
+                                {
+                                    "frequency": 5240000,
+                                    "channel": 48
+                                },
+                                {
+                                    "frequency": 5260000,
+                                    "channel": 52
+                                },
+                                {
+                                    "frequency": 5280000,
+                                    "channel": 56
+                                },
+                                {
+                                    "frequency": 5300000,
+                                    "channel": 60
+                                },
+                                {
+                                    "frequency": 5320000,
+                                    "channel": 64
+                                },
+                                {
+                                    "frequency": 5500000,
+                                    "channel": 100
+                                },
+                                {
+                                    "frequency": 5520000,
+                                    "channel": 104
+                                },
+                                {
+                                    "frequency": 5540000,
+                                    "channel": 108
+                                },
+                                {
+                                    "frequency": 5560000,
+                                    "channel": 112
+                                },
+                                {
+                                    "frequency": 5580000,
+                                    "channel": 116
+                                },
+                                {
+                                    "frequency": 5600000,
+                                    "channel": 120
+                                },
+                                {
+                                    "frequency": 5620000,
+                                    "channel": 124
+                                },
+                                {
+                                    "frequency": 5640000,
+                                    "channel": 128
+                                },
+                                {
+                                    "frequency": 5660000,
+                                    "channel": 132
+                                },
+                                {
+                                    "frequency": 5680000,
+                                    "channel": 136
+                                },
+                                {
+                                    "frequency": 5700000,
+                                    "channel": 140
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "REPEATER",
+                            "mac_address": "FE:39:6F:FB:81:F3",
+                            "current_channel": 40,
+                            "client_position": "ok",
+                            "channel_utilization": 1,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": false,
+                            "name": "UPLINK:5G:0",
+                            "anpi": -104,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -68,
+                                    "node_2_uid": "n-124",
+                                    "node_interface_2_uid": "ni-156",
+                                    "uid": "nl-106",
+                                    "last_connected": 1671152414,
+                                    "cur_availability_tx": 99,
+                                    "max_data_rate_rx": 866000,
+                                    "tx_rcpi": -68,
+                                    "cur_data_rate_tx": 650000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-27",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 650000,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 255,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 866000,
+                                    "cur_availability_rx": 99
+                                }
+                            ],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-162",
+                            "phymodes": [
+                                "b",
+                                "g",
+                                "n"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2412000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 2412000,
+                                    "channel": 1
+                                },
+                                {
+                                    "frequency": 2417000,
+                                    "channel": 2
+                                },
+                                {
+                                    "frequency": 2422000,
+                                    "channel": 3
+                                },
+                                {
+                                    "frequency": 2427000,
+                                    "channel": 4
+                                },
+                                {
+                                    "frequency": 2432000,
+                                    "channel": 5
+                                },
+                                {
+                                    "frequency": 2437000,
+                                    "channel": 6
+                                },
+                                {
+                                    "frequency": 2442000,
+                                    "channel": 7
+                                },
+                                {
+                                    "frequency": 2447000,
+                                    "channel": 8
+                                },
+                                {
+                                    "frequency": 2452000,
+                                    "channel": 9
+                                },
+                                {
+                                    "frequency": 2457000,
+                                    "channel": 10
+                                },
+                                {
+                                    "frequency": 2462000,
+                                    "channel": 11
+                                },
+                                {
+                                    "frequency": 2467000,
+                                    "channel": 12
+                                },
+                                {
+                                    "frequency": 2472000,
+                                    "channel": 13
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "REPEATER",
+                            "mac_address": "FE:39:6F:FB:81:F2",
+                            "current_channel": 1,
+                            "client_position": "too_close",
+                            "channel_utilization": 13,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": false,
+                            "name": "UPLINK:2G:0",
+                            "anpi": -99,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -56,
+                                    "node_2_uid": "n-124",
+                                    "node_interface_2_uid": "ni-162",
+                                    "uid": "nl-91",
+                                    "last_connected": 1671181240,
+                                    "cur_availability_tx": 100,
+                                    "max_data_rate_rx": 192000,
+                                    "tx_rcpi": -55,
+                                    "cur_data_rate_tx": 1000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-138",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 1000,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 255,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 192000,
+                                    "cur_availability_rx": 100
+                                }
+                            ],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-178",
+                            "phymodes": [
+                                "a",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "it_raum_021",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 5180000,
+                                    "channel": 36
+                                },
+                                {
+                                    "frequency": 5200000,
+                                    "channel": 40
+                                },
+                                {
+                                    "frequency": 5220000,
+                                    "channel": 44
+                                },
+                                {
+                                    "frequency": 5240000,
+                                    "channel": 48
+                                },
+                                {
+                                    "frequency": 5260000,
+                                    "channel": 52
+                                },
+                                {
+                                    "frequency": 5280000,
+                                    "channel": 56
+                                },
+                                {
+                                    "frequency": 5300000,
+                                    "channel": 60
+                                },
+                                {
+                                    "frequency": 5320000,
+                                    "channel": 64
+                                },
+                                {
+                                    "frequency": 5500000,
+                                    "channel": 100
+                                },
+                                {
+                                    "frequency": 5520000,
+                                    "channel": 104
+                                },
+                                {
+                                    "frequency": 5540000,
+                                    "channel": 108
+                                },
+                                {
+                                    "frequency": 5560000,
+                                    "channel": 112
+                                },
+                                {
+                                    "frequency": 5580000,
+                                    "channel": 116
+                                },
+                                {
+                                    "frequency": 5600000,
+                                    "channel": 120
+                                },
+                                {
+                                    "frequency": 5620000,
+                                    "channel": 124
+                                },
+                                {
+                                    "frequency": 5640000,
+                                    "channel": 128
+                                },
+                                {
+                                    "frequency": 5660000,
+                                    "channel": 132
+                                },
+                                {
+                                    "frequency": 5680000,
+                                    "channel": 136
+                                },
+                                {
+                                    "frequency": 5700000,
+                                    "channel": 140
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "AP",
+                            "mac_address": "DC:39:6F:FB:81:F3",
+                            "current_channel": 40,
+                            "channel_utilization": 1,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2_WPA3_MIXED",
+                            "11k_friendly": false,
+                            "name": "AP:5G:0",
+                            "anpi": -104,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -95,
+                                    "node_2_uid": "n-51",
+                                    "node_interface_2_uid": "ni-52",
+                                    "uid": "nl-70",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 99,
+                                    "max_data_rate_rx": 0,
+                                    "tx_rcpi": -94,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "DISCONNECTED",
+                                    "node_interface_1_uid": "ni-178",
+                                    "node_1_uid": "n-124",
+                                    "cur_data_rate_rx": 0,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": -10,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 99
+                                }
+                            ],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-182",
+                            "phymodes": [
+                                "b",
+                                "g",
+                                "n"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2412000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "it_raum_021",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [
+                                {
+                                    "frequency": 2412000,
+                                    "channel": 1
+                                },
+                                {
+                                    "frequency": 2417000,
+                                    "channel": 2
+                                },
+                                {
+                                    "frequency": 2422000,
+                                    "channel": 3
+                                },
+                                {
+                                    "frequency": 2427000,
+                                    "channel": 4
+                                },
+                                {
+                                    "frequency": 2432000,
+                                    "channel": 5
+                                },
+                                {
+                                    "frequency": 2437000,
+                                    "channel": 6
+                                },
+                                {
+                                    "frequency": 2442000,
+                                    "channel": 7
+                                },
+                                {
+                                    "frequency": 2447000,
+                                    "channel": 8
+                                },
+                                {
+                                    "frequency": 2452000,
+                                    "channel": 9
+                                },
+                                {
+                                    "frequency": 2457000,
+                                    "channel": 10
+                                },
+                                {
+                                    "frequency": 2462000,
+                                    "channel": 11
+                                },
+                                {
+                                    "frequency": 2467000,
+                                    "channel": 12
+                                },
+                                {
+                                    "frequency": 2472000,
+                                    "channel": 13
+                                }
+                            ],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    0
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "AP",
+                            "mac_address": "DC:39:6F:FB:81:F2",
+                            "current_channel": 1,
+                            "channel_utilization": 13,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2_WPA3_MIXED",
+                            "11k_friendly": false,
+                            "name": "AP:2G:0",
+                            "anpi": -99,
+                            "type": "WLAN",
+                            "11v_friendly": false,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -80,
+                                    "node_2_uid": "n-51",
+                                    "node_interface_2_uid": "ni-52",
+                                    "uid": "nl-97",
+                                    "last_connected": 1671181250,
+                                    "cur_availability_tx": 87,
+                                    "max_data_rate_rx": 72000,
+                                    "tx_rcpi": -82,
+                                    "cur_data_rate_tx": 43000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-182",
+                                    "node_1_uid": "n-124",
+                                    "cur_data_rate_rx": 43000,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 0,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 72000,
+                                    "cur_availability_rx": 87
+                                }
+                            ],
+                            "rrm_compliant": false
+                        },
+                        {
+                            "uid": "ni-184",
+                            "lldp_active": null,
+                            "node_links": [],
+                            "mac_address": "DC:39:6F:FB:81:F0",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": false,
+                            "name": "LAN:1"
+                        }
+                    ],
+                    "mesh_role": "slave",
+                    "device_mac_address": "DC:39:6F:FB:81:F0",
+                    "is_meshed": true,
+                    "device_model": "FRITZ!Repeater 1200",
+                    "device_name": "fritz.repeater",
+                    "device_firmware_version": "172.07.29",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "3.13",
+                    "device_capabilities": null,
+                    "device_manufacturer": "AVM",
+                    "device_id": null,
+                    "uid": "n-124"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-52",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 2412000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    1
+                                ],
+                                [
+                                    "40 MHz",
+                                    1
+                                ],
+                                [
+                                    "80 MHz",
+                                    1
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    1
+                                ],
+                                [
+                                    "40 MHz",
+                                    1
+                                ],
+                                [
+                                    "80 MHz",
+                                    1
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "38:B4:D3:DB:32:47",
+                            "current_channel": 1,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [
+                                {
+                                    "rx_rcpi": -80,
+                                    "node_2_uid": "n-51",
+                                    "node_interface_2_uid": "ni-52",
+                                    "uid": "nl-97",
+                                    "last_connected": 1671181250,
+                                    "cur_availability_tx": 87,
+                                    "max_data_rate_rx": 72000,
+                                    "tx_rcpi": -82,
+                                    "cur_data_rate_tx": 43000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-182",
+                                    "node_1_uid": "n-124",
+                                    "cur_data_rate_rx": 43000,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 0,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 72000,
+                                    "cur_availability_rx": 87
+                                },
+                                {
+                                    "rx_rcpi": 255,
+                                    "node_2_uid": "n-51",
+                                    "node_interface_2_uid": "ni-52",
+                                    "uid": "nl-60",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 100,
+                                    "max_data_rate_rx": 0,
+                                    "tx_rcpi": -83,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "DISCONNECTED",
+                                    "node_interface_1_uid": "ni-138",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 0,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": 0,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 100
+                                },
+                                {
+                                    "rx_rcpi": -95,
+                                    "node_2_uid": "n-51",
+                                    "node_interface_2_uid": "ni-52",
+                                    "uid": "nl-70",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 99,
+                                    "max_data_rate_rx": 0,
+                                    "tx_rcpi": -94,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "DISCONNECTED",
+                                    "node_interface_1_uid": "ni-178",
+                                    "node_1_uid": "n-124",
+                                    "cur_data_rate_rx": 0,
+                                    "rx_rsni": 255,
+                                    "tx_rsni": -10,
+                                    "type": "WLAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 99
+                                }
+                            ],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "38:B4:D3:DB:32:47",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "bosch-dishwasher-011100519583031172",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-51"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-132",
+                            "phymodes": [
+                                "a",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5240000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "C8:2A:DD:B5:85:B0",
+                            "current_channel": 48,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "C8:2A:DD:B5:85:B0",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-130"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-105",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5240000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "72:47:6F:EC:B0:85",
+                            "current_channel": 48,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA2PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "72:47:6F:EC:B0:85",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "HUAWEI-P30-c384373eaca47c",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-104"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-63",
+                            "phymodes": [
+                                "a",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5240000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "AE:CB:58:45:D0:DD",
+                            "current_channel": 48,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "AE:CB:58:45:D0:DD",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "PC-192-168-1-158",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-62"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-243",
+                            "lldp_active": null,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-220",
+                                    "uid": "nl-221",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": false,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-243",
+                                    "node_1_uid": "n-242",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "00:11:32:C7:E1:67",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "00:11:32:C7:E1:67",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "OSS-OS-NAS",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-242"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-146",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-146",
+                                    "uid": "nl-147",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": null,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-144",
+                                    "node_1_uid": "n-44",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "FA:CE:48:5B:2A:56",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-150",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-150",
+                                    "uid": "nl-151",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": null,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-148",
+                                    "node_1_uid": "n-81",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "FA:CE:48:5B:29:C6",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-220",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-220",
+                                    "uid": "nl-221",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": false,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-243",
+                                    "node_1_uid": "n-242",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "FA:CE:00:C7:E1:67",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-65",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-65",
+                                    "uid": "nl-67",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 99,
+                                    "max_data_rate_rx": 1000000,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 1000000,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-154",
+                                    "node_1_uid": "n-1",
+                                    "cur_data_rate_rx": 1000000,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 1000000,
+                                    "cur_availability_rx": 99
+                                }
+                            ],
+                            "mac_address": "FA:CE:48:67:BC:44",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-207",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-207",
+                                    "uid": "nl-208",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-12",
+                                    "node_1_uid": "n-15",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "FA:CE:48:B9:0E:52",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-140",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-140",
+                                    "uid": "nl-164",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-82",
+                                    "node_1_uid": "n-81",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "FA:CE:00:5B:29:C6",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        },
+                        {
+                            "uid": "ni-165",
+                            "lldp_active": false,
+                            "node_links": [
+                                {
+                                    "node_2_uid": "n-115",
+                                    "node_interface_2_uid": "ni-165",
+                                    "uid": "nl-166",
+                                    "last_connected": 1670328266,
+                                    "cur_availability_tx": 255,
+                                    "max_data_rate_rx": 0,
+                                    "learned_via_lldp": true,
+                                    "cur_data_rate_tx": 0,
+                                    "state": "CONNECTED",
+                                    "node_interface_1_uid": "ni-45",
+                                    "node_1_uid": "n-44",
+                                    "cur_data_rate_rx": 0,
+                                    "type": "LAN",
+                                    "max_data_rate_tx": 0,
+                                    "cur_availability_rx": 255
+                                }
+                            ],
+                            "mac_address": "FA:CE:00:5B:2A:56",
+                            "blocking_state": "UNKNOWN",
+                            "type": "LAN",
+                            "link_detected": null,
+                            "name": ""
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "FA:CE:48:5B:2A:56",
+                    "is_meshed": false,
+                    "device_model": "Switch",
+                    "device_name": "Switch",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-115"
+                },
+                {
+                    "node_interfaces": [
+                        {
+                            "uid": "ni-128",
+                            "phymodes": [
+                                "a",
+                                "b",
+                                "g",
+                                "n",
+                                "ac"
+                            ],
+                            "current_channel_info": {
+                                "primary_freq": 5200000,
+                                "primary_center": null,
+                                "channel_width": null,
+                                "secondary_center": null,
+                                "max_power": null
+                            },
+                            "blocking_state": "UNKNOWN",
+                            "ssid": "",
+                            "supported_streams_tx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "channel_list": [],
+                            "supported_streams_rx": [
+                                [
+                                    "20 MHz",
+                                    2
+                                ],
+                                [
+                                    "40 MHz",
+                                    2
+                                ],
+                                [
+                                    "80 MHz",
+                                    2
+                                ],
+                                [
+                                    "160 MHz",
+                                    0
+                                ],
+                                [
+                                    "80+80 MHz",
+                                    0
+                                ]
+                            ],
+                            "opmode": "STATION",
+                            "mac_address": "3C:BF:60:6F:20:79",
+                            "current_channel": 40,
+                            "channel_utilization": 0,
+                            "legacy_friendly": true,
+                            "steering_enabled": true,
+                            "security": "WPA3PSK",
+                            "11k_friendly": true,
+                            "name": "",
+                            "anpi": 255,
+                            "type": "WLAN",
+                            "11v_friendly": true,
+                            "node_links": [],
+                            "rrm_compliant": false
+                        }
+                    ],
+                    "mesh_role": "unknown",
+                    "device_mac_address": "3C:BF:60:6F:20:79",
+                    "is_meshed": false,
+                    "device_model": "",
+                    "device_name": "iPad-Pro",
+                    "device_firmware_version": "",
+                    "enabled_device_capabilities": null,
+                    "meshd_version": "0.0",
+                    "device_capabilities": null,
+                    "device_manufacturer": "",
+                    "device_id": null,
+                    "uid": "n-127"
+                }
+            ],
+            "schema_version": "4.11"
+        }
+    }
+}

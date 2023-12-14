@@ -1,0 +1,960 @@
+{
+    "Response": {
+        "GetResp": {
+            "req_path_results": [
+                {
+                    "err_code": 0,
+                    "err_msg": "",
+                    "requested_path": "Device.",
+                    "resolved_path_results": [
+                        {
+                            "resolved_path": "Device.LocalAgent.",
+                            "result_params": {
+                                "CertificateNumberOfEntries": "0",
+                                "ControllerNumberOfEntries": "1",
+                                "EndpointID": "%(epid)s",
+                                "MTPNumberOfEntries": "1",
+                                "RequestNumberOfEntries": "0",
+                                "SoftwareVersion": "5.0.0",
+                                "SubscriptionNumberOfEntries": "1",
+                                "SupportedFingerprintAlgorithms": "SHA-1, SHA-224, SHA-256, SHA-384, SHA-512",
+                                "SupportedProtocols": "STOMP, CoAP, MQTT, WebSocket",
+                                "UpTime": "732"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.MTP.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "Enable": "true",
+                                "Protocol": "MQTT"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.MTP.1.STOMP.",
+                            "result_params": {
+                                "Destination": "",
+                                "Reference": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.MTP.1.CoAP.",
+                            "result_params": {
+                                "EnableEncryption": "true",
+                                "Host": "",
+                                "Path": "",
+                                "Port": "5683"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.MTP.1.MQTT.",
+                            "result_params": {
+                                "Reference": "Device.MQTT.Client.1",
+                                "Topic": "fqdn::axess.beta.testbed.axiros.hr"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.MTP.1.WebSocket.",
+                            "result_params": {
+                                "CurrentRetryCount": "0",
+                                "EnableEncryption": "true",
+                                "Host": "",
+                                "KeepAliveInterval": "30",
+                                "Path": "",
+                                "Port": "80",
+                                "SessionRetryIntervalMultiplier": "2000",
+                                "SessionRetryMinimumWaitInterval": "5"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "AssignedRole": "",
+                                "BootParameterNumberOfEntries": "1",
+                                "ControllerCode": "",
+                                "Enable": "true",
+                                "EndpointID": "fqdn::axess.beta.testbed.axiros.hr",
+                                "InheritedRole": "Device.LocalAgent.ControllerTrust.Role.1",
+                                "MTPNumberOfEntries": "1",
+                                "PeriodicNotifInterval": "86400",
+                                "PeriodicNotifTime": "0001-01-01T00:00:00Z",
+                                "ProvisioningCode": "",
+                                "USPNotifRetryIntervalMultiplier": "2000",
+                                "USPNotifRetryMinimumWaitInterval": "5"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Controller.1.BootParameter.1.",
+                            "result_params": {
+                                "Alias": "",
+                                "Enable": "true",
+                                "ParameterName": "Device.LocalAgent.EndpointID"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.MTP.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "Enable": "true",
+                                "Protocol": "MQTT",
+                                "Status": "Up"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.MTP.1.STOMP.",
+                            "result_params": {
+                                "Destination": "",
+                                "DestinationFromServer": "",
+                                "Reference": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.MTP.1.CoAP.",
+                            "result_params": {
+                                "EnableEncryption": "true",
+                                "Path": "",
+                                "Port": "5683"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.MTP.1.MQTT.",
+                            "result_params": {
+                                "PublishQoS": "2",
+                                "Reference": "Device.MQTT.Client.1",
+                                "ResponseTopicConfigured": "test",
+                                "ResponseTopicDiscovered": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.MTP.1.WebSocket.",
+                            "result_params": {
+                                "EnableEncryption": "true",
+                                "KeepAliveInterval": "30",
+                                "Path": "",
+                                "Port": "5683"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.Subscription.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "CreationDate": "",
+                                "Enable": "true",
+                                "ID": "default-boot-event-ACS",
+                                "NotifExpiration": "0",
+                                "NotifRetry": "false",
+                                "NotifType": "Event",
+                                "Persistent": "true",
+                                "Recipient": "Device.LocalAgent.Controller.1",
+                                "ReferenceList": "Device.Boot!",
+                                "TimeToLive": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.",
+                            "result_params": {
+                                "ChallengeNumberOfEntries": "0",
+                                "CredentialNumberOfEntries": "0",
+                                "RoleNumberOfEntries": "2"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "Enable": "true",
+                                "Name": "Full Access",
+                                "PermissionNumberOfEntries": "1"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.1.Permission.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "CommandEvent": "r-xn",
+                                "Enable": "true",
+                                "InstantiatedObj": "rw-n",
+                                "Obj": "rw-n",
+                                "Order": "0",
+                                "Param": "rw-n",
+                                "Targets": "Device."
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.2.",
+                            "result_params": {
+                                "Alias": "cpe-2",
+                                "Enable": "true",
+                                "Name": "Untrusted",
+                                "PermissionNumberOfEntries": "4"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.2.Permission.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "CommandEvent": "----",
+                                "Enable": "true",
+                                "InstantiatedObj": "----",
+                                "Obj": "----",
+                                "Order": "0",
+                                "Param": "----",
+                                "Targets": "Device."
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.2.Permission.2.",
+                            "result_params": {
+                                "Alias": "cpe-2",
+                                "CommandEvent": "----",
+                                "Enable": "true",
+                                "InstantiatedObj": "----",
+                                "Obj": "r---",
+                                "Order": "1",
+                                "Param": "r---",
+                                "Targets": "Device.DeviceInfo."
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.2.Permission.3.",
+                            "result_params": {
+                                "Alias": "cpe-3",
+                                "CommandEvent": "--x-",
+                                "Enable": "true",
+                                "InstantiatedObj": "----",
+                                "Obj": "----",
+                                "Order": "2",
+                                "Param": "----",
+                                "Targets": "Device.LocalAgent.ControllerTrust.RequestChallenge()"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.LocalAgent.ControllerTrust.Role.2.Permission.4.",
+                            "result_params": {
+                                "Alias": "cpe-4",
+                                "CommandEvent": "--x-",
+                                "Enable": "true",
+                                "InstantiatedObj": "----",
+                                "Obj": "----",
+                                "Order": "3",
+                                "Param": "----",
+                                "Targets": "Device.LocalAgent.ControllerTrust.ChallengeResponse()"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Security.",
+                            "result_params": {
+                                "CertificateNumberOfEntries": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.STOMP.",
+                            "result_params": {
+                                "ConnectionNumberOfEntries": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.MQTT.Capabilities.",
+                            "result_params": {
+                                "MaxNumberOfClientSubscriptions": "5",
+                                "ProtocolVersionsSupported": "3.1, 3.1.1, 5.0",
+                                "TransportProtocolSupported": "TCP/IP, TLS"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.MQTT.Client.1.",
+                            "result_params": {
+                                "Alias": "cpe-1",
+                                "BrokerAddress": "axess.beta.testbed.axiros.hr",
+                                "BrokerPort": "10293",
+                                "CleanSession": "true",
+                                "CleanStart": "true",
+                                "ClientID": "",
+                                "ConnectRetryIntervalMultiplier": "2000",
+                                "ConnectRetryMaxInterval": "60",
+                                "ConnectRetryTime": "5",
+                                "Enable": "true",
+                                "KeepAliveTime": "60",
+                                "Name": "",
+                                "Password": "",
+                                "ProtocolVersion": "5.0",
+                                "RequestProblemInfo": "false",
+                                "RequestResponseInfo": "false",
+                                "ResponseInformation": "",
+                                "Status": "Connected",
+                                "SubscriptionNumberOfEntries": "0",
+                                "TransportProtocol": "TCP/IP",
+                                "Username": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.MQTT.",
+                            "result_params": {
+                                "ClientNumberOfEntries": "1"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.BulkData.",
+                            "result_params": {
+                                "Enable": "false",
+                                "EncodingTypes": "JSON",
+                                "MaxNumberOfParameterReferences": "-1",
+                                "MaxNumberOfProfiles": "5",
+                                "MinReportingInterval": "1",
+                                "ParameterWildCardSupported": "true",
+                                "ProfileNumberOfEntries": "0",
+                                "Protocols": "HTTP, USPEventNotif",
+                                "Status": "Disabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Cellular.AccessPoint.1.",
+                            "result_params": {
+                                "APN": "fmgmt",
+                                "Authorization": "none",
+                                "Enable": "1",
+                                "PDPType": "IPv4",
+                                "Password": "",
+                                "Profile": "fmgmt",
+                                "Username": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Cellular.",
+                            "result_params": {
+                                "RoamingEnabled": "0",
+                                "RoamingStatus": "Home"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DHCPv4.Server.Pool.1.",
+                            "result_params": {
+                                "Enable": "1",
+                                "Interface": "lan",
+                                "InterfaceIPAddress": "192.168.70.1",
+                                "LeaseTime": "12h",
+                                "MaxAddress": "192.168.70.249",
+                                "MinAddress": "192.168.70.100",
+                                "SubnetMask": "255.255.255.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DHCPv4.Server.",
+                            "result_params": {
+                                "PoolNumberOfEntries": "1"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DNS.Client.Server.1.",
+                            "result_params": {
+                                "DNSServer": "120.80.80.80",
+                                "Interface": "Device.IP.Interface.7",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DNS.Client.Server.2.",
+                            "result_params": {
+                                "DNSServer": "221.5.88.88",
+                                "Interface": "Device.IP.Interface.7",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DNS.Client.",
+                            "result_params": {
+                                "ServerNumberOfEntries": "2",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DeviceInfo.",
+                            "result_params": {
+                                "DeviceLog": "[ 3575.074061] .(3)[30:kworker/u8:1][quectel_phy]..yt8521 read status call out,addr:7 link=0,linkmode=0 is_in_flow_control:1",
+                                "HardwareVersion": "V02",
+                                "Manufacturer": "Jointelli",
+                                "ManufacturerOUI": "E87829",
+                                "ModelName": "S22",
+                                "ProductClass": "S22",
+                                "ProvisioningCode": "",
+                                "SerialNumber": "CCKKCNB6MA1000009",
+                                "SoftwareVersion": "JY_22H02_U1_v1.06",
+                                "SpecVersion": "1.0",
+                                "UpTime": "3576"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.DeviceInfo.MemoryStatus.",
+                            "result_params": {
+                                "Free": "308116",
+                                "Total": "653476"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Firewall.",
+                            "result_params": {
+                                "Enable": "1"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.1.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "loopback",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Loopback"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.1.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "Static",
+                                "Enable": "1",
+                                "IPAddress": "127.0.0.1",
+                                "SubnetMask": "255.0.0.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.1.Stats.",
+                            "result_params": {
+                                "BytesReceived": "1154078",
+                                "BytesSent": "1154078",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "13344",
+                                "PacketsSent": "13344"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.2.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "wan",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Normal"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.2.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "",
+                                "Enable": "1",
+                                "IPAddress": "",
+                                "SubnetMask": "0.0.0.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.2.Stats.",
+                            "result_params": {
+                                "BytesReceived": "0",
+                                "BytesSent": "0",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "0",
+                                "PacketsSent": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.3.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "wan6",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Normal"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.3.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "",
+                                "Enable": "1",
+                                "IPAddress": "",
+                                "SubnetMask": "0.0.0.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.3.Stats.",
+                            "result_params": {
+                                "BytesReceived": "0",
+                                "BytesSent": "0",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "0",
+                                "PacketsSent": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.4.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "lan",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Normal"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.4.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "Static",
+                                "Enable": "1",
+                                "IPAddress": "192.168.70.1",
+                                "SubnetMask": "255.255.255.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.4.Stats.",
+                            "result_params": {
+                                "BytesReceived": "3429715",
+                                "BytesSent": "22858573",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "18660",
+                                "PacketsSent": "14158"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.5.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "bond0",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Normal"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.5.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "",
+                                "Enable": "1",
+                                "IPAddress": "",
+                                "SubnetMask": "0.0.0.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.5.Stats.",
+                            "result_params": {
+                                "BytesReceived": "0",
+                                "BytesSent": "0",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "0",
+                                "PacketsSent": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.6.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "guest",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Normal"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.6.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "Static",
+                                "Enable": "1",
+                                "IPAddress": "172.23.9.1",
+                                "SubnetMask": "255.255.255.0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.6.Stats.",
+                            "result_params": {
+                                "BytesReceived": "0",
+                                "BytesSent": "746",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "0",
+                                "PacketsSent": "7"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.7.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4AddressNumberOfEntries": "1",
+                                "Name": "pdp1",
+                                "Router": "Device.Routing.Router.1.",
+                                "Type": "Normal"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.7.IPv4Address.1.",
+                            "result_params": {
+                                "AddressingType": "",
+                                "Enable": "1",
+                                "IPAddress": "10.2.136.219",
+                                "SubnetMask": "255.255.255.240"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.IP.Interface.7.Stats.",
+                            "result_params": {
+                                "BytesReceived": "0",
+                                "BytesSent": "0",
+                                "DiscardPacketsReceived": "0",
+                                "DiscardPacketsSent": "0",
+                                "ErrorsReceived": "0",
+                                "ErrorsSent": "0",
+                                "PacketsReceived": "0",
+                                "PacketsSent": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.Router.1.",
+                            "result_params": {
+                                "Enable": "1",
+                                "IPv4ForwardingNumberOfEntries": "5",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.3.",
+                            "result_params": {
+                                "Alias": "cpe-3",
+                                "DestIPAddress": "172.23.9.0",
+                                "DestSubnetMask": "255.255.255.0",
+                                "Enable": "1",
+                                "ForwardingMetric": "0",
+                                "ForwardingPolicy": "-1",
+                                "GatewayIPAddress": "0.0.0.0",
+                                "Interface": "Device.IP.Interface.6",
+                                "Origin": "Static",
+                                "StaticRoute": "0",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.4.",
+                            "result_params": {
+                                "Alias": "cpe-4",
+                                "DestIPAddress": "192.168.70.0",
+                                "DestSubnetMask": "255.255.255.0",
+                                "Enable": "1",
+                                "ForwardingMetric": "0",
+                                "ForwardingPolicy": "-1",
+                                "GatewayIPAddress": "0.0.0.0",
+                                "Interface": "Device.IP.Interface.4",
+                                "Origin": "Static",
+                                "StaticRoute": "0",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.5.",
+                            "result_params": {
+                                "Alias": "cpe-5",
+                                "DestIPAddress": "0.0.0.0",
+                                "DestSubnetMask": "0.0.0.0",
+                                "Enable": "1",
+                                "ForwardingMetric": "0",
+                                "ForwardingPolicy": "-1",
+                                "GatewayIPAddress": "10.2.136.220",
+                                "Interface": "",
+                                "Origin": "Static",
+                                "StaticRoute": "0",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.6.",
+                            "result_params": {
+                                "Alias": "cpe-6",
+                                "DestIPAddress": "10.2.136.208",
+                                "DestSubnetMask": "255.255.255.240",
+                                "Enable": "1",
+                                "ForwardingMetric": "0",
+                                "ForwardingPolicy": "-1",
+                                "GatewayIPAddress": "0.0.0.0",
+                                "Interface": "",
+                                "Origin": "Static",
+                                "StaticRoute": "0",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.Router.1.IPv4Forwarding.7.",
+                            "result_params": {
+                                "Alias": "cpe-7",
+                                "DestIPAddress": "172.21.138.20",
+                                "DestSubnetMask": "255.255.255.255",
+                                "Enable": "1",
+                                "ForwardingMetric": "0",
+                                "ForwardingPolicy": "-1",
+                                "GatewayIPAddress": "0.0.0.0",
+                                "Interface": "",
+                                "Origin": "Static",
+                                "StaticRoute": "0",
+                                "Status": "Enabled"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Routing.",
+                            "result_params": {
+                                "RouterNumberOfEntries": "1"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.Time.",
+                            "result_params": {
+                                "CurrentLocalTime": "2023-10-26T15:06:41",
+                                "Enable": "1",
+                                "NTPServer1": "0.openwrt.pool.ntp.org",
+                                "NTPServer2": "1.openwrt.pool.ntp.org",
+                                "NTPServer3": "2.openwrt.pool.ntp.org",
+                                "NTPServer4": "3.openwrt.pool.ntp.org",
+                                "Status": "Synchronized",
+                                "X_Zonename": "(GMT 04:00) Abu Dhabi, Muscat"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.WAN.INTERFACE.1.",
+                            "result_params": {
+                                "Enable": "0",
+                                "EnableNat": "1",
+                                "IPFamily": "NONE",
+                                "VLAN": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.CPEKeyType.BandLock.",
+                            "result_params": {
+                                "Bands": "",
+                                "NetworkType": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.CPEKeyType.",
+                            "result_params": {
+                                "ConfigWorkMode": "5G/4G",
+                                "IPAddress": "10.2.136.219",
+                                "LockMode": "NoLock",
+                                "WorkMode": "SA"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.CPEKeyType.PCILock.",
+                            "result_params": {
+                                "Band": "",
+                                "Frequency": "",
+                                "NetworkType": "",
+                                "PCI": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.Common.",
+                            "result_params": {
+                                "CollectTime": "2023/10/26 15:06:42",
+                                "CurrentConnectTime": "379",
+                                "Customer_ID": "",
+                                "ESN": "CCKKCNB6MA1000009",
+                                "MACAddress": "E878291009C3",
+                                "TotalConnectTime": "3483",
+                                "UpTime": "3576",
+                                "period": "300",
+                                "temperature": "66229"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.",
+                            "result_params": {
+                                "EthernetUserNum": "0",
+                                "Isolation": "0",
+                                "WMM": "1",
+                                "WiFiPower": "high",
+                                "WifiUserNum": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.1.",
+                            "result_params": {
+                                "Associations": "0",
+                                "Duration": "unlimited",
+                                "Enable": "0",
+                                "Passwd": "********",
+                                "SSID": "home-guest",
+                                "SecurityMode": "open"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Guest.2.",
+                            "result_params": {
+                                "Associations": "0",
+                                "Duration": "unlimited",
+                                "Enable": "0",
+                                "Passwd": "********",
+                                "SSID": "home-guest5G",
+                                "SecurityMode": "open"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.1.",
+                            "result_params": {
+                                "Associations": "0",
+                                "AutoChannelEnabled": "1",
+                                "Bandwidth": "auto",
+                                "Channel": "0",
+                                "Enable": "1",
+                                "Hidden": "0",
+                                "NetworkMode": "b/g/n/ax",
+                                "OperatingChannel": "7",
+                                "Passwd": "********",
+                                "SSID": "5G CPE_09C3_2.4G",
+                                "SecurityMode": "WPA2-PSK/WPA3-SAE"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.DeviceMonitorRouter.WiFiSSID.Host.2.",
+                            "result_params": {
+                                "Associations": "0",
+                                "AutoChannelEnabled": "1",
+                                "Bandwidth": "80MHz",
+                                "Channel": "0",
+                                "Enable": "1",
+                                "Hidden": "0",
+                                "NetworkMode": "a/n/ac/ax",
+                                "OperatingChannel": "44",
+                                "Passwd": "********",
+                                "SSID": "5G CPE_09C3_5G",
+                                "SecurityMode": "WPA2-PSK/WPA3-SAE"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.LTECellSignalQuality.",
+                            "result_params": {
+                                "Band": "0",
+                                "BandWidth": "",
+                                "CQI": "0",
+                                "DLMCS": "0",
+                                "DownlinkRank": "",
+                                "DownlinkTM": "",
+                                "EARFCN": "0",
+                                "Frequency": "",
+                                "Power": "",
+                                "RSRP": "",
+                                "RSRQ": "",
+                                "RSSI": "",
+                                "SINR": "",
+                                "ULMCS": "0"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.NRCellInfo.",
+                            "result_params": {
+                                "CellID": "193",
+                                "NCGI": "CELL ID:07738059-0193 PLMN:46001",
+                                "NCI": "31695089857",
+                                "NR_ARFCN": "627264",
+                                "NR_PCI": "782",
+                                "NR_PLMN": "46001",
+                                "NR_TAC": "7768583",
+                                "gNBID": "7612cb"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.NRCellSignalQuality.",
+                            "result_params": {
+                                "NR_ARFCN": "627264",
+                                "NR_Band": "78",
+                                "NR_BandWidth": "100MHz",
+                                "NR_CQI": "15",
+                                "NR_DLMCS": "0",
+                                "NR_DLQAM": "QPSK",
+                                "NR_DownlinkRank": "Rank1",
+                                "NR_Frequency": "3408.96MHz",
+                                "NR_Power": "10dBm",
+                                "NR_RSRP": "-82dBm",
+                                "NR_RSRQ": "-11dB",
+                                "NR_RSSI": "-71dBm",
+                                "NR_SINR": "19dB",
+                                "NR_ULMCS": "22",
+                                "SSB_BeamID": "1",
+                                "SSB_RSRP": "-82dBm",
+                                "SSB_RSRQ": "-11dB",
+                                "SSB_SINR": "21dB"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.NSALTECellInfo.",
+                            "result_params": {
+                                "CellID": "",
+                                "ECGI": "",
+                                "ECI": "",
+                                "PCI": "0",
+                                "PLMN": "",
+                                "TAC": "0",
+                                "eNBID": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.NeighborCellInfo.",
+                            "result_params": {
+                                "NeighborCellEARFCN": "627264,627264,627264,627264",
+                                "NeighborCellPCI": "69,57,514,380",
+                                "NeighborCellRSRP": "-104,-107,-108,-108"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.ServiceThroughput.",
+                            "result_params": {
+                                "MaxDLThroughput": "287Bytes/s",
+                                "MaxULThroughput": "128Bytes/s",
+                                "TotalDownload": "109443Bytes",
+                                "TotalUpload": "125059Bytes"
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.TerminalInfo.",
+                            "result_params": {
+                                "ADBEnable": "0",
+                                "AdminPwd": "",
+                                "Band": "",
+                                "ConsolePwd": "",
+                                "IMEI": "869263050819535",
+                                "IMSI": "460014936639474",
+                                "ModelName": "S22",
+                                "NR_Band": "n78",
+                                "SSHEnable": "1",
+                                "WebPwd": ""
+                            }
+                        },
+                        {
+                            "resolved_path": "Device.X_JOINTELLI_COM_H.Whitelist.",
+                            "result_params": {
+                                "LockcellsNumber": "0",
+                                "Outbound": "0",
+                                "ScanLTEmaxnum": "32",
+                                "ScanNRmaxnum": "32",
+                                "ScanState": "None",
+                                "ScancellsNumber": "0",
+                                "TotalLockcells": "",
+                                "TotalScancells": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

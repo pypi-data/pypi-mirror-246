@@ -1,0 +1,1 @@
+{"session_id":"","final":0,"data":{"payload":{"c_epid":"fqdn::dev.axlc.net","details":{"event":{"event_name":"Boot!","obj_path":"Device.","params":{"Cause":"RemoteReboot","CommandKey":"ExampleCommandKey","FirmwareUpdated":"0","ParameterMap":"{}"}},"send_resp":true,"subscription_id":"boot"},"epid":"%(epid)s","list_type":"authenticated","type":"notify"}}}

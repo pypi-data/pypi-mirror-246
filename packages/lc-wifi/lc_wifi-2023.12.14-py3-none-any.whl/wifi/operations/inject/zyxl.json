@@ -1,0 +1,932 @@
+{
+    "cpeid": "54833A-S210Y14062164",
+    "sender": {
+        "hosts": "axwifi-aio",
+        "pid": 2073,
+        "name": "axtract_collector",
+        "event_source": "main_collector_http_ipv4"
+    },
+    "ts": 1701964011,
+    "props": {
+        "IP": {
+            "Interface": {
+                "1": {
+                    "IPv4Address": {
+                        "1": {
+                            "IPAddress": "192.168.88.183"
+                        }
+                    }
+                }
+            }
+        },
+        "WiFi": {
+            "NeighboringWiFiDiagnostic": {
+                "scan_dt": 5974,
+                "coll_dt": 1528,
+                "DiagnosticsState": "Complete",
+                "ResultNumberOfEntries": 57,
+                "Result": {
+                    "30": {
+                        "SignalStrength": -84,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "44-1E-98-D4-A2-78",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 1,
+                        "SSID": "EMANGUEST"
+                    },
+                    "54": {
+                        "SecurityModeEnabled": "None",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "fn_vil",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "B8-69-F4-56-EF-C2",
+                        "EncryptionMode": "",
+                        "SignalStrength": -85,
+                        "Channel": 128
+                    },
+                    "42": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "BMCOM",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "D8-32-14-59-E3-CC",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -42,
+                        "Channel": 40
+                    },
+                    "22": {
+                        "SignalStrength": -50,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "BSSID": "42-ED-00-C9-F5-CE",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 48,
+                        "SSID": ""
+                    },
+                    "29": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "EMANGUEST",
+                        "BSSID": "80-F0-CF-48-80-23",
+                        "OperatingStandards": "b,g,n",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -70,
+                        "Channel": 1
+                    },
+                    "19": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "BSSID": "EC-3E-B3-B8-12-62",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -36,
+                        "Channel": 52,
+                        "SSID": "Zyxel_1261"
+                    },
+                    "53": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "54-83-3A-3B-2E-02",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -44,
+                        "Channel": 36,
+                        "SSID": "Zyxel_2E01_5G"
+                    },
+                    "52": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "BSSID": "44-1E-98-94-A0-9C",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -78,
+                        "Channel": 120,
+                        "SSID": "EMAN8"
+                    },
+                    "23": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "BSSID": "C4-41-1E-EE-B2-53",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -70,
+                        "Channel": 44,
+                        "SSID": "_VelopSetupEF7"
+                    },
+                    "24": {
+                        "SignalStrength": -39,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "Zyxel_0849_5G",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "60-31-97-0F-08-4A",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 48
+                    },
+                    "25": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "Zyxel_0849",
+                        "BSSID": "60-31-97-0F-08-49",
+                        "OperatingStandards": "b,g,n",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -64,
+                        "Channel": 1
+                    },
+                    "26": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "EMAN8",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "BSSID": "80-F0-CF-48-80-22",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -69,
+                        "Channel": 1
+                    },
+                    "27": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "80-F0-CF-48-80-21",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -69,
+                        "Channel": 1,
+                        "SSID": "EMAN2"
+                    },
+                    "20": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "EMAN2",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "80-F0-CF-88-80-21",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -95,
+                        "Channel": 56
+                    },
+                    "21": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "BE-FB-E4-F4-FE-6E",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -69,
+                        "Channel": 6,
+                        "SSID": ""
+                    },
+                    "48": {
+                        "SignalStrength": -95,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "74-67-F7-3A-23-42",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Channel": 132
+                    },
+                    "49": {
+                        "SignalStrength": -93,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "BA-FB-E4-F8-00-17",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 36,
+                        "SSID": "CMN-Distribuce"
+                    },
+                    "46": {
+                        "SignalStrength": -85,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "EMANGUEST",
+                        "BSSID": "34-8F-27-DB-21-B8",
+                        "OperatingStandards": "b,g,n",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 4
+                    },
+                    "47": {
+                        "SignalStrength": -69,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "C8-A6-08-A2-23-01",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Channel": 132,
+                        "SSID": "EMAN2"
+                    },
+                    "44": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "74-67-F7-3A-02-B2",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -78,
+                        "Channel": 116
+                    },
+                    "45": {
+                        "SignalStrength": -91,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "80-F0-CF-47-C9-31",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Channel": 5,
+                        "SSID": "EMAN2"
+                    },
+                    "28": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "44-1E-98-54-A2-78",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -84,
+                        "Channel": 1,
+                        "SSID": "EMAN2"
+                    },
+                    "43": {
+                        "SignalStrength": -85,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "EMAN8",
+                        "BSSID": "34-8F-27-9B-21-B8",
+                        "OperatingStandards": "b,g,n",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Channel": 4
+                    },
+                    "40": {
+                        "SignalStrength": -66,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "74-67-F7-3B-D2-02",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Channel": 1,
+                        "SSID": ""
+                    },
+                    "41": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "Zyxel_2E01_5GEXT",
+                        "BSSID": "40-3F-8C-A1-D1-13",
+                        "OperatingStandards": "a,n,ac",
+                        "OperatingFrequencyBand": "5GHz",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -53,
+                        "Channel": 40
+                    },
+                    "1": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "C8-A6-08-A2-23-02",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -70,
+                        "Channel": 132,
+                        "SSID": "EMAN8"
+                    },
+                    "3": {
+                        "SignalStrength": -68,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "B4-FB-E4-F4-FE-6E",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 6,
+                        "SSID": "CM-N_GUEST"
+                    },
+                    "2": {
+                        "SignalStrength": -78,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "BSSID": "44-1E-98-D4-A0-9C",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 120,
+                        "SSID": "EMANGUEST"
+                    },
+                    "5": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "44-1E-98-54-A0-9C",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -79,
+                        "Channel": 120,
+                        "SSID": "EMAN2"
+                    },
+                    "4": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "D8-47-32-65-92-FD",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "TKIP,AES",
+                        "SignalStrength": -53,
+                        "Channel": 36,
+                        "SSID": "Axiros_EXT"
+                    },
+                    "7": {
+                        "SignalStrength": -95,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "74-67-F7-3A-23-40",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 132,
+                        "SSID": ""
+                    },
+                    "6": {
+                        "SignalStrength": -84,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "",
+                        "BSSID": "BE-FB-E4-F5-FE-6E",
+                        "OperatingStandards": "a,n,ac",
+                        "OperatingFrequencyBand": "5GHz",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 36
+                    },
+                    "9": {
+                        "SignalStrength": -79,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "60-22-32-A4-E5-7A",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 6,
+                        "SSID": "Health+"
+                    },
+                    "8": {
+                        "SignalStrength": -49,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "BSSID": "42-ED-00-B9-F5-CE",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 48,
+                        "SSID": ""
+                    },
+                    "51": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "D8-32-14-59-E3-D4",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "TKIP,AES",
+                        "SignalStrength": -42,
+                        "Channel": 40,
+                        "SSID": "BMCOM"
+                    },
+                    "39": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "TP-Link_5202",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "BSSID": "9C-53-22-B5-52-02",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -93,
+                        "Channel": 2
+                    },
+                    "38": {
+                        "SignalStrength": -84,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "EMAN2",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "BSSID": "34-8F-27-5B-21-B8",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Channel": 4
+                    },
+                    "11": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "62-22-32-A4-E5-7A",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -79,
+                        "Channel": 6,
+                        "SSID": ""
+                    },
+                    "10": {
+                        "SignalStrength": -79,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "62-22-32-94-E5-7A",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 6,
+                        "SSID": "programh"
+                    },
+                    "13": {
+                        "SignalStrength": -86,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "Rage&apos;s",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "BSSID": "54-67-51-CB-7A-78",
+                        "EncryptionMode": "TKIP,AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 6
+                    },
+                    "12": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "BA-FB-E4-F4-FE-6E",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -67,
+                        "Channel": 6,
+                        "SSID": "CMN-Distribuce"
+                    },
+                    "15": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "64-7C-34-58-3A-58",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "TKIP,AES",
+                        "SignalStrength": -81,
+                        "Channel": 6,
+                        "SSID": "UPC5403543"
+                    },
+                    "14": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "38-43-7D-EA-FA-B1",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "TKIP,AES",
+                        "SignalStrength": -86,
+                        "Channel": 6,
+                        "SSID": "UPC6239375"
+                    },
+                    "17": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "C4-41-1E-EE-B2-54",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -63,
+                        "Channel": 100,
+                        "SSID": "_VelopSetupEF7"
+                    },
+                    "16": {
+                        "SignalStrength": -39,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "40MHz",
+                        "BSSID": "D8-32-14-59-E3-C9",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 6,
+                        "SSID": "BMCOM"
+                    },
+                    "55": {
+                        "SignalStrength": -43,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "40MHz",
+                        "BSSID": "EC-3E-B3-B8-12-61",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 5,
+                        "SSID": "Zyxel_1261"
+                    },
+                    "18": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "74-67-F7-3A-02-B0",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -77,
+                        "Channel": 116,
+                        "SSID": ""
+                    },
+                    "57": {
+                        "SignalStrength": -70,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "C8-A6-08-A2-23-03",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 132,
+                        "SSID": "EMANGUEST"
+                    },
+                    "56": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "OperatingFrequencyBand": "5GHz",
+                        "BSSID": "B4-FB-E4-F5-FE-6E",
+                        "OperatingStandards": "a,n,ac",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -82,
+                        "Channel": 36,
+                        "SSID": "CM-N_GUEST"
+                    },
+                    "37": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "40MHz",
+                        "SSID": "",
+                        "BSSID": "DE-07-B6-40-74-BE",
+                        "OperatingStandards": "b,g,n",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -84,
+                        "Channel": 3
+                    },
+                    "36": {
+                        "SignalStrength": -75,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "40MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "54-AF-97-76-96-14",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 4,
+                        "SSID": "TP-Link_9614"
+                    },
+                    "35": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "CMN-Distribuce",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "BA-FB-E4-F5-FE-6E",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -84,
+                        "Channel": 36
+                    },
+                    "34": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "40MHz",
+                        "SSID": "Axiros_EXT",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "BSSID": "D8-47-32-65-92-FE",
+                        "EncryptionMode": "TKIP,AES",
+                        "SignalStrength": -41,
+                        "Channel": 5
+                    },
+                    "33": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "BSSID": "20-E8-82-FD-9E-60",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -78,
+                        "Channel": 1,
+                        "SSID": "O2-Internet-803"
+                    },
+                    "32": {
+                        "SignalStrength": -65,
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "SSID": "",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "BSSID": "74-67-F7-3B-D2-00",
+                        "EncryptionMode": "AES",
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Channel": 1
+                    },
+                    "31": {
+                        "SecurityModeEnabled": "WPA2-Enterprise",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "20MHz",
+                        "BSSID": "44-1E-98-94-A2-78",
+                        "OperatingFrequencyBand": "2.4GHz",
+                        "OperatingStandards": "b,g,n",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -84,
+                        "Channel": 1,
+                        "SSID": "EMAN8"
+                    },
+                    "50": {
+                        "SecurityModeEnabled": "WPA2-Personal",
+                        "Noise": -70,
+                        "OperatingChannelBandwidth": "80MHz",
+                        "SSID": "CM-N_GUEST",
+                        "OperatingFrequencyBand": "5GHz",
+                        "OperatingStandards": "a,n,ac",
+                        "BSSID": "B4-FB-E4-F8-00-17",
+                        "EncryptionMode": "AES",
+                        "SignalStrength": -93,
+                        "Channel": 36
+                    }
+                }
+            },
+            "Radio": {
+                "1": {
+                    "Status": "Up",
+                    "Enable": 1,
+                    "OperatingChannelBandwidth": "40MHz",
+                    "OperatingFrequencyBand": "2.4GHz",
+                    "OperatingStandards": "n",
+                    "RegulatoryDomain": "DE",
+                    "AutoChannelEnable": 1,
+                    "PossibleChannels": "1,2,3,4,5,6,7,8,9,10,11,12,13",
+                    "Channel": 5
+                },
+                "5": {
+                    "Status": "Up",
+                    "Enable": 1,
+                    "OperatingChannelBandwidth": "80MHz",
+                    "OperatingFrequencyBand": "5GHz",
+                    "OperatingStandards": "a,n,ac",
+                    "RegulatoryDomain": "DE",
+                    "AutoChannelEnable": 1,
+                    "PossibleChannels": "36,40,44,48,52,56,60,64,100,104,108,112,116,132,136,140",
+                    "Channel": 52
+                }
+            },
+            "SSID": {
+                "1": {
+                    "BSSID": "EC-3E-B3-B8-12-51",
+                    "Enable": "1",
+                    "Stats": {
+                        "BytesReceived": 85411037,
+                        "ErrorsSent": 0,
+                        "PacketsReceived": 1195342,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 48720396,
+                        "PacketsSent": 505567
+                    },
+                    "SSID": "Axiros",
+                    "LowerLayers": "Device.WiFi.Radio.1"
+                },
+                "2": {
+                    "BSSID": "00-00-00-00-00-00",
+                    "Enable": "0",
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 0,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "SSID": "Zyxel_1251_guest1",
+                    "LowerLayers": "Device.WiFi.Radio.1"
+                },
+                "5": {
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 0,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "Enable": "1",
+                    "LowerLayers": "Device.WiFi.Radio.5",
+                    "SSID": "Axiros_5G",
+                    "BSSID": "EC-3E-B3-B8-12-52"
+                },
+                "6": {
+                    "BSSID": "00-00-00-00-00-00",
+                    "Enable": "0",
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 0,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "SSID": "Zyxel_1251_guest1",
+                    "LowerLayers": "Device.WiFi.Radio.5"
+                }
+            },
+            "AccessPoint": {
+                "1": {
+                    "Security": {
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "AssociatedDevice": {
+                        "1": {
+                            "AuthenticationState": 1,
+                            "MACAddress": "DA-47-32-65-92-FE",
+                            "Stats": {
+                                "BytesReceived": 288,
+                                "FailedRetransCount": 0,
+                                "PacketsReceived": 2,
+                                "MultipleRetryCount": 0,
+                                "BytesSent": 290,
+                                "ErrorsSent": 0,
+                                "RetransCount": 0,
+                                "RetryCount": 0,
+                                "PacketsSent": 2
+                            },
+                            "SignalStrength": -48,
+                            "Active": 1,
+                            "IPAddress": "192.168.111.70"
+                        },
+                        "3": {
+                            "AuthenticationState": 1,
+                            "SignalStrength": -48,
+                            "Stats": {
+                                "BytesReceived": 37282448,
+                                "ErrorsSent": 0,
+                                "MultipleRetryCount": 0,
+                                "PacketsReceived": 318086,
+                                "BytesSent": 27479402,
+                                "FailedRetransCount": 0,
+                                "RetransCount": 0,
+                                "RetryCount": 0,
+                                "PacketsSent": 285287
+                            },
+                            "MACAddress": "66-92-FF-65-92-FF",
+                            "Active": 1,
+                            "IPAddress": "192.168.111.70"
+                        },
+                        "2": {
+                            "AuthenticationState": 1,
+                            "SignalStrength": -33,
+                            "Stats": {
+                                "BytesReceived": 100560,
+                                "FailedRetransCount": 0,
+                                "PacketsReceived": 439,
+                                "MultipleRetryCount": 0,
+                                "BytesSent": 1344,
+                                "ErrorsSent": 0,
+                                "RetransCount": 0,
+                                "RetryCount": 0,
+                                "PacketsSent": 6
+                            },
+                            "MACAddress": "74-40-BB-45-47-AA",
+                            "Active": 1,
+                            "IPAddress": "192.168.111.70"
+                        }
+                    },
+                    "SSIDReference": "Device.WiFi.SSID.1"
+                },
+                "2": {
+                    "Security": {
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "SSIDReference": "Device.WiFi.SSID.2"
+                },
+                "5": {
+                    "Security": {
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "SSIDReference": "Device.WiFi.SSID.5"
+                },
+                "6": {
+                    "Security": {
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": 1,
+                    "SSIDReference": "Device.WiFi.SSID.6"
+                }
+            }
+        },
+        "DeviceInfo": {
+            "ProcessStatus": {
+                "CPUUsage": 0
+            },
+            "UpTime": 498174,
+            "SerialNumber": "S210Y14062164",
+            "ModelName": "VMG8623-T50B",
+            "MemoryStatus": {
+                "Total": 237020,
+                "Free": 59944
+            },
+            "SoftwareVersion": "V5.50(ABPM.3)b4_V0",
+            "ManufacturerOUI": "54833A",
+            "ProductClass": "VMG8623-T50B",
+            "HardwareVersion": "VMG8623-T50B",
+            "Manufacturer": "ZYXEL"
+        },
+        "Ethernet": {
+            "Link": {
+                "1": {
+                    "MACAddress": "EC-3E-B3-B8-12-55"
+                }
+            }
+        },
+        "collector": {
+            "full_scan": 1,
+            "msg": "Full Scan",
+            "code": 200,
+            "details": "",
+            "light_scan": 0
+        },
+        "metadata": {
+            "allow_auto_enforce_5": null,
+            "last_scan_ts": 1701964004220,
+            "allow_auto_enforce_2": null,
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "allow_collection": 1,
+            "tenant": "live",
+            "mode": "zyxel_vmg8623"
+        }
+    }
+}

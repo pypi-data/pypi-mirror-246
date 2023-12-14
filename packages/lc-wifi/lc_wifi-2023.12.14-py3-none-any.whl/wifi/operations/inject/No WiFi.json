@@ -1,0 +1,80 @@
+{
+    "cpeid": "%(cpeid)s",
+    "sender": {
+        "hosts": "axwifi-aio",
+        "pid": 31123,
+        "name": "axtract_collector",
+        "event_source": "main_collector_http_ipv4"
+    },
+    "ts": %(time)s,
+    "props": {
+        "collector": {
+            "msg": "Full Scan",
+            "full_scan": 1,
+            "code": 200,
+            "details": "",
+            "light_scan": 0
+        },
+        "Hosts": {
+            "Host": {
+                "1": {
+                    "Active": 1,
+                    "PhysAddress": "00-00-00-00-00-00",
+                    "HostName": "Zero 2Main",
+                    "IPAddress": "192.168.1.10"
+                },
+                "2": {
+                    "Active": 1,
+                    "PhysAddress": "00-00-00-00-00-01",
+                    "HostName": "First 2Main"
+                },
+                "3": {
+                    "Active": 1,
+                    "PhysAddress": "00-00-00-02-02-00",
+                    "HostName": "Zero 2Guest"
+                },
+                "4": {
+                    "Active": 1,
+                    "PhysAddress": "00-00-00-02-02-01",
+                    "HostName": "First 2Guest"
+                },
+                "5": {
+                    "Active": 1,
+                    "PhysAddress": "00-00-00-00-00-02",
+                    "HostName": "Second 5Main"
+                },
+                "6": {
+                    "Active": 1,
+                    "PhysAddress": "00-00-00-00-00-03",
+                    "HostName": "Third 5Main"
+                }
+            }
+        },
+        "DeviceInfo": {
+            "MemoryStatus": {
+                "Total": 10000,
+                "Free": 10
+            },
+            "ProcessStatus": {
+                "CPUUsage": 90
+            },
+            "UpTime": 73920,
+            "HardwareVersion": "EMG3525-T50B",
+            "ModelName": "EMG3525-T50B",
+            "SerialNumber": "S190Y20057813",
+            "SoftwareVersion": "V5.50(ABPM.0)D0",
+            "ManufacturerOUI": "54833A",
+            "ProductClass": "EMG3525-T50B",
+            "Manufacturer": "Zyxel"
+        },
+        "metadata": {
+            "allow_auto_enforce_5": null,
+            "cid": "foo",
+            "last_scan_ts": 1593765588366,
+            "allow_collection": 1,
+            "allow_auto_enforce_2": 1,
+            "tenant_id": "Y3J5cHRvaGFzaA=="
+        }
+    },
+    "nr": 1
+}
