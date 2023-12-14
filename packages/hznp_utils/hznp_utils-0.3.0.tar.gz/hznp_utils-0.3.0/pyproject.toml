@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "hznp_utils"
+version = "0.3.0"
+description = "Data Science utilities for Horizon Therapeutics"
+authors = ["Edwin Z. <ezamudio@amgen.com>", "David Josephs<djosephs@horizontherapeutics.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-cloud-secret-manager = "^2.17.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
