@@ -1,0 +1,1 @@
+Support specifying pip extras for individual nodes in a workflow.
