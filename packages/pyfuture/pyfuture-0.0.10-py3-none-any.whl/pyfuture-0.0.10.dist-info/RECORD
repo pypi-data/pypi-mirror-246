@@ -1,0 +1,14 @@
+pyfuture-0.0.10.dist-info/METADATA,sha256=Ai6U6m8q0JYucs0-7MUcncQMnoF69uvakpt_M4YtTB8,1260
+pyfuture-0.0.10.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+pyfuture-0.0.10.dist-info/entry_points.txt,sha256=QwrHmVWC35QMwG56g_PwRDw9nO8h_IPbU6nOURpDFs4,52
+pyfuture/__init__.py,sha256=e3S0EcDGJlWIp2hddSFjvt633jfeZ4W7VyAeLpfTWVM,37
+pyfuture/__main__.py,sha256=SEXeSF14sy0kuIkhblUibSz2VJNA3oa4aX3xWfKOdpg,2646
+pyfuture/__version__.py,sha256=r2Dgx1vmkvInceHz-V7SeB1ZwQnQHbcShDPVM9grMpw,22
+pyfuture/codemod/__init__.py,sha256=Z1WVW3dSTsq41ta5ZduHtGWE6nIolnfiOJONxStMWGU,121
+pyfuture/codemod/transform_match.py,sha256=NsG04J4JTDFd7RY8l-So72FO24RLOvLjNKadfVj1ihg,6665
+pyfuture/codemod/transform_type_parameters.py,sha256=sdZ56z0y5w1nFoCBkWNOgh_ZrIdBfkXSC1GMemM8JkM,7071
+pyfuture/codemod/utils.py,sha256=paYdxzSGJ4PX60ZPd47lvYqYfw15WGYAz2LvXDo7Bbo,2243
+pyfuture/transformer/__init__.py,sha256=TEdMJIkVT8U6-qyWHTt6ZGo1FlYhUHP8lBKy2BCWhhg,40
+pyfuture/transformer/replace.py,sha256=qgnRDpprD7cKJLaiVyRonr-01VzcSo6Vrgi4B26pnYI,362
+pyfuture/utils.py,sha256=IjEP2w8dvGvWk2IcxlgnbTt5293W8jvwehKv92AiaYE,1601
+pyfuture-0.0.10.dist-info/RECORD,,
