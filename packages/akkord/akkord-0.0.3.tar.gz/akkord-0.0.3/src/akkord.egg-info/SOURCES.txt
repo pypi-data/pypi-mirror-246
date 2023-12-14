@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/akkord/__init__.py
+src/akkord/cfg.py
+src/akkord/err.py
+src/akkord/reader.py
+src/akkord/realtime.py
+src/akkord/utils.py
+src/akkord/writer.py
+src/akkord.egg-info/PKG-INFO
+src/akkord.egg-info/SOURCES.txt
+src/akkord.egg-info/dependency_links.txt
+src/akkord.egg-info/requires.txt
+src/akkord.egg-info/top_level.txt
