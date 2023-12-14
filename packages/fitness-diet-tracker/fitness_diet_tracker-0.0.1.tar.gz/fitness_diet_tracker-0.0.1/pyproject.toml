@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fitness_diet_tracker"
+version = "0.0.1"
+authors = [
+  { name="Christopher Mulya", email="cprasetya2000@gmail.com" },
+]
+description = "Fitness and Diet Tracker Package - DATA 533 Project"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/cmulya/533-Group14"
+Issues = "https://github.com/cmulya/533-Group14/issues"
