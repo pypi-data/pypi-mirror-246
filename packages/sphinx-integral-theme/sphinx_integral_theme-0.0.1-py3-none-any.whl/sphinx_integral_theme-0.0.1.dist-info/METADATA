@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sphinx-integral-theme
+Version: 0.0.1
+Summary: Sphinx Integral theme
+Author: Slava Zytsar, Alexey Zauzin
+Author-email: <a.zauzin@thestage.ai>
+Keywords: sphinx,sphinx-doc,theme,thestageai
+
+The Integral theme for Sphinx doc
