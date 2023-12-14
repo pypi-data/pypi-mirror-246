@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: myriadsocial
+Version: 0.1.0
+Requires-Dist: requests
+Requires-Dist: pywhatkit
+Requires-Dist: Pillow
+Requires-Dist: art

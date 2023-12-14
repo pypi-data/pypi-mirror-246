@@ -1,0 +1,10 @@
+README.md
+setup.py
+myriadsocial/__init__.py
+myriadsocial/cli.py
+myriadsocial.egg-info/PKG-INFO
+myriadsocial.egg-info/SOURCES.txt
+myriadsocial.egg-info/dependency_links.txt
+myriadsocial.egg-info/entry_points.txt
+myriadsocial.egg-info/requires.txt
+myriadsocial.egg-info/top_level.txt
