@@ -1,0 +1,99 @@
+<img src="https://gitlab.com/janoskut/cpytest/-/raw/main/assets/cpytest-logo.png" width="256">
+
+# CPYTEST
+
+[![Pipeline Status](https://gitlab.com/janoskut/cpytest/badges/main/pipeline.svg)](https://gitlab.com/janoskut/cpytest/pipelines/main/latest)
+[![Test Coverage](https://gitlab.com/janoskut/cpytest/badges/main/coverage.svg?job=tox&key_text=coverage)](https://gitlab.com/janoskut/cpytest/-/jobs/artifacts/main/file/htmlcov/index.html?job=tox)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cpytest)](https://pypi.org/project/cpytest/)
+[![PyPI - License](https://img.shields.io/pypi/l/cpytest)](https://pypi.org/project/cpytest/)
+
+**CPYTEST** is a python package that allows you to write unit tests for your C code. It uses [cffi](https://cffi.readthedocs.io/en/latest/) to generate python bindings for C code, so that you can use the full [pytest](https://docs.pytest.org/en/stable/) framework for testing your C code.
+
+## Installation
+
+t.b.d.
+
+
+## Runing the Example
+
+### Dependencies
+
+```sh
+pip install poetry pytest
+sudo apt install gcovr
+sudo apt install lcov
+```
+
+### Build and Run Example Test
+
+#### Using Poetry
+
+```sh
+poetry install
+poetry run pip install pycparser==2.21
+poetry run python3 -m cpytest example/test/cpytest.yaml
+poetry run pytest example/test/test_example.py
+```
+
+#### Using virtualenv
+
+```sh
+virtualenv .venv
+source .venv/bin/activate
+poetry install
+poetry run pip install pycparser==2.21
+python3 -m cpytest example/test/cpytest.yaml
+pytest example/test/test_example.py
+```
+
+### Generate Coverage
+
+```sh
+lcov --capture --directory example/src --base-directory example/test/build --output-file coverage.info --rc lcov_branch_coverage=1 --no-external
+genhtml coverage.info --output-directory coverage_report --rc genhtml_branch_coverage=1
+ls coverage_report/index.html
+```
+
+
+## Limitations
+
+### `pycparser` / `pycparserext` version conflict
+
+`pycparserext` requires `pycparser==2.20`, but we need `pycparser==2.21` (for `#pragma` support). `poetry` doesn't solve this conflict for us, but we can manually install `pycparser=2.21` using poetry: `poetry run pip install pycparser==2.21`. The corresponding `pip install` error that is shown can be ignored.
+
+### `#pragma` vs. `__attribute__((packed))` support
+
+`pycparser` doesn't support `__attribute__((packed))` on structs, but it supports `#pragma pack`. We need to use `#pragma pack` in order to the correct python code for packed structs.
+
+### `__attribute__` limitations of `pycparserext`
+
+`pycparserext` has only limited support for GCC `__attribute__ ` extensions. To avoid problems, we run a postprocessor after the preprocessor, which filters out all `__attribute__` extensions.
+
+
+## Development
+
+### Run QA
+
+`tox` is used to run all QA tools at once.
+
+```sh
+tox
+```
+
+### Docker
+
+#### Run the Example
+
+```sh
+cd docker
+docker-compose up --build test-example-project
+docker-compose down
+```
+
+#### Run the interactive docker shell
+
+```sh
+docker-compose up --build -d shell
+docker-compose exec shell bash
+docker-compose down
+```
