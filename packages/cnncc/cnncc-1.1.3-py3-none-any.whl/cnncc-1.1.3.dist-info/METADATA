@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cnncc
+Version: 1.1.3
+Summary: A simple CNN for cell-cycle phase classification
+Author: F.Dumoncel, E.Billard, S. Boudouh
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: joblib
+
+# CNNCC: Cell-Cycle phase Classification using CNNs
+
+> This is a student project. Please use cautiously. 
+
+Project EPFL 2023 @ ML4Science Machine Learning Class
+
+---
+
+This package provide multiple ML models that can be used to make real-time inference on images.
+
+## How to use it ?
+
+```console
+$ cnncc --model <model> --image <path/to/img.[tif, png]>
+```
+
+`model` can be one of:
+
+- Nagao
+- ResNet
+- LR
+  
+
+See our report for more details.
