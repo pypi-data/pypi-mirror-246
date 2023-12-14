@@ -1,0 +1,9 @@
+setuptools_grpc/__init__.py,sha256=dSlEOwSzqzXWxq8yNa1ikVJAW2Y1tQBH3SH89r5zKTA,44
+setuptools_grpc/_utils.py,sha256=yZqUvGxRiHEnSWPp80YWMageeBhHVO2awLc64URpiG8,1495
+setuptools_grpc/build_grpc.py,sha256=evKwujZXGSqusQcwOVF40CJd9bKkEIP5XAZBIxgh5sc,3010
+setuptools_grpc-0.5.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+setuptools_grpc-0.5.dist-info/METADATA,sha256=Ih4G3n8E-HEcuL5Hi2w8gbPgLLknr8pifV9F-5DRJWI,5432
+setuptools_grpc-0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+setuptools_grpc-0.5.dist-info/entry_points.txt,sha256=CKSTY1-A8_QZO35PhSEBloKl7TwKxvVeFoHurO6eXoE,72
+setuptools_grpc-0.5.dist-info/top_level.txt,sha256=JvIT531afREOYUj2XX7Kcu8UtwJC4eENkWYgvxH9Cow,16
+setuptools_grpc-0.5.dist-info/RECORD,,
