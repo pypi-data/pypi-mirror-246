@@ -1,0 +1,7 @@
+rshare-0.1.0.dist-info/METADATA,sha256=3HzPKod5wdd80GpJIYMRts7CmuxbAoRFfoe0NXKQsEI,365
+rshare-0.1.0.dist-info/WHEEL,sha256=2wlSkqgJRUOW9URVNX98Cm4dI45yUdRznyXDNZ_lrp0,102
+rshare/__init__.py,sha256=yyCrZ8wtw4phIqUo_8M_HhMb7sdoechiv-_bwZzf0kI,22
+rshare/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rshare/rshare.pyi,sha256=yep3GFHhzW3zoM2rON3bB-GlcDvfh3sApCoCPlOHSSM,52
+rshare/rshare.abi3.so,sha256=1XqxGEwYOTnC-yNuDah6WjhYQhnQs_co0s-cfFPhJHM,4997099
+rshare-0.1.0.dist-info/RECORD,,
