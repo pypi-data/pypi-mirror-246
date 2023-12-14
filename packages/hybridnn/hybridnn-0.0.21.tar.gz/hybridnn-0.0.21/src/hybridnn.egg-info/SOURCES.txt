@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/hybridnn/__init__.py
+src/hybridnn/activation.py
+src/hybridnn/hybridnn.py
+src/hybridnn/preprocessing.py
+src/hybridnn.egg-info/PKG-INFO
+src/hybridnn.egg-info/SOURCES.txt
+src/hybridnn.egg-info/dependency_links.txt
+src/hybridnn.egg-info/requires.txt
+src/hybridnn.egg-info/top_level.txt
