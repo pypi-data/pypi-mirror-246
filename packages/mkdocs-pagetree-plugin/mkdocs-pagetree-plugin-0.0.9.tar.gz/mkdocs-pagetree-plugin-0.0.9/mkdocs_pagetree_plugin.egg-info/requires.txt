@@ -1,0 +1,6 @@
+mkdocs>=1.5
+
+[dev]
+pre-commit
+reuse
+ruff

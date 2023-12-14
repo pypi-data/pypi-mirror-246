@@ -1,0 +1,6 @@
+LICENSES
+build
+dist
+docs
+mkdocs_pagetree_plugin
+site
