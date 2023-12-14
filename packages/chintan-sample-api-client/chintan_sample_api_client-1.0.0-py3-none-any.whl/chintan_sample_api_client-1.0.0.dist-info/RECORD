@@ -1,0 +1,15 @@
+sample_api_client/__init__.py,sha256=lBpA2q8v_60JQBFY32QHgSFUcE1IP7bYKv0uymzR7H4,154
+sample_api_client/api/__init__.py,sha256=87ApBzKyGb5zsgTMOkQXDqsLZCmaSFoJMwbGzCDQZMw,47
+sample_api_client/api/default/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_api_client/api/default/get_list.py,sha256=-JpmMCP-0MMb8D8U6mzQjF_rrQ79nYyCJN9mDiU_TVQ,2082
+sample_api_client/client.py,sha256=r4usc_1YIQRI4Sr33G9Z3H25-bKCZ5w2I9qZ_eCUP3M,12131
+sample_api_client/errors.py,sha256=8mXSxdfSGzxT82srdhYbR0fHfgenxJXaUtMkaGgb6iU,470
+sample_api_client/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_api_client/examples/customer1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_api_client/examples/customer1/main.py,sha256=Ts0nRsqgfj4Vdia17IUW0m4N-n8vccDuZKDc0n_4_vg,440
+sample_api_client/models/__init__.py,sha256=hBxtiNn99Havz1UE3bxKO39JuVcrUv-PraS59MWb6Ig,60
+sample_api_client/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+sample_api_client/types.py,sha256=GoYub3t4hQP2Yn5tsvShsBfIY3vHUmblU0MXszDx_V0,968
+chintan_sample_api_client-1.0.0.dist-info/METADATA,sha256=i4eX0jZZmHiEQfIoplSUqhndDa1LK6_usw7wy8U60Y8,5693
+chintan_sample_api_client-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+chintan_sample_api_client-1.0.0.dist-info/RECORD,,
