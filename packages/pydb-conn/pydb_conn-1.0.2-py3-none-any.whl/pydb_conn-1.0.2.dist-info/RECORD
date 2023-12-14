@@ -1,0 +1,8 @@
+pydb_conn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydb_conn/sql_server.py,sha256=_Uodqxc_UqHGMOZ29PXQ2L5cLvQbNCkdcRCx2z6b0Ec,4044
+pydb_conn/utils.py,sha256=_aQ8mORC56xpWKlkoX2DLbKtRuJv9OAvuUHZu-ta0M0,1796
+pydb_conn-1.0.2.dist-info/LICENCE,sha256=ESpuGPTkOVDr05MKrOE6pPfdCagssmWCUZvn40wfZ2o,1085
+pydb_conn-1.0.2.dist-info/METADATA,sha256=eWzfFL7XGkm6ya-fK0xicviztqp0WsSd1g8UP-ty85M,639
+pydb_conn-1.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pydb_conn-1.0.2.dist-info/top_level.txt,sha256=GMMsz_xscStHCmlnwB_GL92qAQVAsUJGKSu1pUcRNL8,10
+pydb_conn-1.0.2.dist-info/RECORD,,
