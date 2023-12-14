@@ -1,0 +1,55 @@
+[project]
+name = "jpzipcode"
+version = "0.2.0"
+description = "日本の郵便番号から住所を取得するAPI"
+authors = [
+    { name = "kokardy", email = "mgc1028@gmail.com" }
+]
+dependencies = [
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling<=1.18.0"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=7.4.3",
+    "mypy>=1.7.1",
+    "ruff>=0.1.7",
+    "black>=23.11.0",
+    "isort>=5.13.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff]
+line-length = 120
+select = ["F", "E", "W", "D"]
+ignore = [
+  "D400", # docstring first line must end with period
+  "D415", # docstring first line must end with period, ? , !
+]
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.pytest]
+path = ["tests"]
+rootdir = "tests/"
+
+[tool.pyright]
+reportGeneralTypeIssues = false
+extraPaths = ["src", ".venv/lib/python3.12/site-packages"]
