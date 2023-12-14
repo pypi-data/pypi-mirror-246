@@ -1,0 +1,12 @@
+brreg/__init__.py,sha256=8W4mqJzrCgrGRzPcQkCGvbqgyI6HwzNM88OkGKXYrpM,168
+brreg/_exceptions.py,sha256=VlGn0IDD0xkdC81yMWtSknU8Et3y6fhohNOsVZZEzEw,572
+brreg/enhetsregisteret/__init__.py,sha256=aiHGGAcgxjd_ZCPlBJcqgWCWzHuKRG4mRM6r0SFKo4Y,1346
+brreg/enhetsregisteret/_client.py,sha256=1DGUSqF78xFrFBNPkpQsHTlcGYRYn7XacPeZBP-wdLM,5236
+brreg/enhetsregisteret/_pagination.py,sha256=RS_HzghabkrVnhZqW_wQ2onmhEQbuj9lwm14KcdQ3wA,1332
+brreg/enhetsregisteret/_queries.py,sha256=CCiRWPX60NGZwCo_839f1_0k8zlYx43ho1kPOTSQoog,11400
+brreg/enhetsregisteret/_responses.py,sha256=GifPeM_mrpFuu_ii5TrkQLRYDt5Yf3wKkQqBxp2Z5M8,7024
+brreg/enhetsregisteret/_types.py,sha256=VihXM7rE7ByTqLj79Wuvr_73dd59Dw8OUkkKfZ_WnPM,1423
+brreg-1.0.0a4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+brreg-1.0.0a4.dist-info/METADATA,sha256=2YypZM7DgAIcJI5rJe-xaY6eELRhzL33e_1PfyIq-5E,3765
+brreg-1.0.0a4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+brreg-1.0.0a4.dist-info/RECORD,,
