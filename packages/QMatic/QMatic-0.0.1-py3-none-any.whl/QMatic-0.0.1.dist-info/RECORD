@@ -1,0 +1,10 @@
+qmatic/__init__.py,sha256=CnTInBD3ryUGtRaX2soU_5YhlYOQNqnhjwezRIx5vas,69
+qmatic/dists.py,sha256=K0QbBU-X5z7IULBfmc55OwTm1j_FguTyry_hH6phsZI,1983
+qmatic/example.py,sha256=vQYdvjOyDk6ei5vIQHZbmWdBLX8X0RI4kawhLaqrRBM,199
+qmatic/lindley.py,sha256=vQYdvjOyDk6ei5vIQHZbmWdBLX8X0RI4kawhLaqrRBM,199
+qmatic/queue_approx.py,sha256=HXqzXzSKQ9YWjy1KbAvpK9kkM3eLbiLO6Ng6ppV1R1c,568
+QMatic-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+QMatic-0.0.1.dist-info/METADATA,sha256=wyVxGnZLgRa7hxGBIgKcoqO8OrxyChbFIBjNujc-s9A,588
+QMatic-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+QMatic-0.0.1.dist-info/top_level.txt,sha256=_C-IjhoOGIT8PqH-la-1emJ4vs2F5iyLqLMRL2bKKvA,7
+QMatic-0.0.1.dist-info/RECORD,,
