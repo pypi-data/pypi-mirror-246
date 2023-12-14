@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/QMatic.egg-info/PKG-INFO
+src/QMatic.egg-info/SOURCES.txt
+src/QMatic.egg-info/dependency_links.txt
+src/QMatic.egg-info/top_level.txt
+src/qmatic/__init__.py
+src/qmatic/dists.py
+src/qmatic/example.py
+src/qmatic/lindley.py
+src/qmatic/queue_approx.py
