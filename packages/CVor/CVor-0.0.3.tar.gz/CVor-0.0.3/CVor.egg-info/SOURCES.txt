@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+CVor/CVor.py
+CVor/__init__.py
+CVor.egg-info/PKG-INFO
+CVor.egg-info/SOURCES.txt
+CVor.egg-info/dependency_links.txt
+CVor.egg-info/requires.txt
+CVor.egg-info/top_level.txt
