@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: atsphinx-color-text
+Version: 0.1.1
+Summary: Text color changer for Sphinx.
+Author-email: Kazuya Takei <myself@attakei.net>
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Dist: sphinx
+Requires-Dist: BeautifulSoup4 ; extra == "test"
+Requires-Dist: pytest ==7.* ; extra == "test"
+Project-URL: Document, https://atsphinx.github.io/color-text
+Project-URL: Home, https://github.com/atsphinx/color-text
+Provides-Extra: docs
+Provides-Extra: test
+
+===================
+atsphinx-color-text
+===================
+
+.. image:: https://img.shields.io/pypi/v/atsphinx-color-text.svg
+   :target: https://pypi.org/project/atsphinx-color-text/
+
+.. image:: https://github.com/atsphinx/color-text/actions/workflows/main.yml/badge.svg
+   :target: https://github.com/atsphinx/color-text/actions
+
+Text color changer for Sphinx.
+
+Overview
+========
+
+This extension adds simple role to set style of text-color for HTML-based builders.
+
+Getting started
+===============
+
+.. code:: console
+
+   pip install atsphinx-color-text
+
+.. code:: python
+
+   extensions = [
+       "atsphinx.color_text",
+   ]
+
+Usage
+=====
+
+Write your text with ``:color:`` role.
+
+.. code:: rst
+
+   Your title
+   ==========
+
+   sphinx-revealjs is presentation library for Pythonista using reStructuredText and :color:red:`Sphinx`.
+
+When you generate HTML by ``sphinx-build -b html`` ,
+"Sphinx" rendered as red color by CSS ( likely ``font-color: red;`` ).
+
+Notes and ToDo
+==============
+
+I will not implements all color-names, but plan "RGB code" mode and custom name mode.
+
