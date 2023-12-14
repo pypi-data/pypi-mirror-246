@@ -1,0 +1,5 @@
+from .core import diff
+
+__version__ = "0.0.7"
+
+__all__ = ["diff"]
