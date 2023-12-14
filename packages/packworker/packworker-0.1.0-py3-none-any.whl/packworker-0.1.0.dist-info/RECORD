@@ -1,0 +1,10 @@
+packworker/__init__.py,sha256=CuYC5p17m3AoU1h5b2gT3E9BlDSbQVQMkHyk7PJvCyA,81
+packworker/bin.py,sha256=6oFH4nsdkS2Y2XeH2oAZo096yGbx8v2zAAvfpNj_I0M,4906
+packworker/compute_loading.py,sha256=3vpVW2usWvsYVmHM-xgVAfPNFCsVa-Qd94o8EOV2ZKA,10146
+packworker/constant.py,sha256=eVp-nJ5X8QaVPQF2hOJ_Y7tYj0d6YiLsCnR_ukYs1Ds,654
+packworker/item.py,sha256=a3kfGJ8eO7VnrdBEYwqBunkPdas1oU3be8hI5Xzc-_Q,1201
+packworker/worker.py,sha256=QugbryH5oMgYyo34_TmbrK5P_CRATOrnQrgGemVk33E,4776
+packworker-0.1.0.dist-info/LICENSE,sha256=SgJzsZYOg-cCB1fl_1e_z4LWWAol-RaQ2T6chuB9YHY,1088
+packworker-0.1.0.dist-info/METADATA,sha256=GqL5_KahtVHX-y5j7F0zkl1vPhRwNi7ICABYc2fCWq0,2206
+packworker-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+packworker-0.1.0.dist-info/RECORD,,
