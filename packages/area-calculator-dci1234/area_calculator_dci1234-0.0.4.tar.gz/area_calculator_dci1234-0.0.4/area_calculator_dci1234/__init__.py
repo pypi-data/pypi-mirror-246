@@ -1,0 +1,3 @@
+from area_calculator_dci1234.welcome import welcome
+from area_calculator_dci1234.square import square
+from area_calculator_dci1234.circle_area import circle_area
