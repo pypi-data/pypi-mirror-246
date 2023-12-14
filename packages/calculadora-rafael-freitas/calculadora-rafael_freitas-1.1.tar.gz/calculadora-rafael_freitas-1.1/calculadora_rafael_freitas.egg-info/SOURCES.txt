@@ -1,0 +1,12 @@
+README.md
+license.txt
+setup.py
+calculadora-rafael_freitas/__init__.py
+calculadora-rafael_freitas/divisao.py
+calculadora-rafael_freitas/multiplicacao.py
+calculadora-rafael_freitas/soma.py
+calculadora-rafael_freitas/subtracao.py
+calculadora_rafael_freitas.egg-info/PKG-INFO
+calculadora_rafael_freitas.egg-info/SOURCES.txt
+calculadora_rafael_freitas.egg-info/dependency_links.txt
+calculadora_rafael_freitas.egg-info/top_level.txt
