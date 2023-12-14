@@ -1,0 +1,10 @@
+ftsmidi/__init__.py,sha256=Shln_I18RlrfBkHbA0W1mKD_7qAy_CsIdlFz2AhlGc4,125
+ftsmidi/midi_sender.py,sha256=9Me0p0bmwaIeSxWmLEz2poXslUMNFlYvGrn_y1u6isM,6768
+ftsmidi/midi_format/__init__.py,sha256=SDlpNbX1R69brWxyIwatAsRXs9AQewlLjxnzkNSktoE,429
+ftsmidi/midi_format/encode.py,sha256=-jMgpSIyuQHMOSsKUOlShL4TXAKw5C-bNulXsvleTZI,14186
+ftsmidi/midi_format/midi_enums.py,sha256=UEHdzwo8JdvToYAMT3xupXlWJnrKYUty6_mv5OmXMb8,2765
+fts_rtmidi-0.0.5.dist-info/LICENSE.md,sha256=xpeKalEG4CHcuNIITT8bUu5yXJa16PyjutHK0Jm0iJc,4085
+fts_rtmidi-0.0.5.dist-info/METADATA,sha256=s3NaQInBmCrdvq_lZYdve0C0rKCW_10Z6foj21_nUhw,1838
+fts_rtmidi-0.0.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+fts_rtmidi-0.0.5.dist-info/top_level.txt,sha256=KsHZ0FgwvU7TzXc-hAGikFRDV9aZ3ZvKiewKIgLfScA,8
+fts_rtmidi-0.0.5.dist-info/RECORD,,
