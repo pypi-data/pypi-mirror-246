@@ -1,0 +1,10 @@
+brainglobe_heatmap/__init__.py,sha256=GIRE6miyfZ66zKsw1NDxgfBsQMjHqnjNpJO1mW7_8y4,343
+brainglobe_heatmap/heatmaps.py,sha256=1jbuO31RqzVcohJieqDEtJ7fT0hFH0vAxz6CmxzPTpc,8521
+brainglobe_heatmap/plane.py,sha256=F_UR9sygBYhmQu5zDg-kblar0klh89Fxp5WqYxEAq9c,3816
+brainglobe_heatmap/planner.py,sha256=m6wvmmOX-1MB4NCygvxUqWupxdqtH6iwDnxDBx9saM8,4009
+brainglobe_heatmap/slicer.py,sha256=Yao4BcChKSpgbPMcDK_u5e97uCv3D5YRue_-POOAq68,5534
+brainglobe_heatmap-0.5.1.dist-info/LICENSE,sha256=JNkoin_irzXTs1-VjrCdZrx-SU6PHVBUhZWLRcX67Uc,1067
+brainglobe_heatmap-0.5.1.dist-info/METADATA,sha256=CXDZU-keS2hr1DWIY54pQmSrAAfkok5kZEotRV7fSEY,7102
+brainglobe_heatmap-0.5.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+brainglobe_heatmap-0.5.1.dist-info/top_level.txt,sha256=l6bh02YgV8c4ce08wQxoQEgvVwNEBzUe_AFvJOfxAW0,19
+brainglobe_heatmap-0.5.1.dist-info/RECORD,,
