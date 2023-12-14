@@ -1,0 +1,10 @@
+racp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+racp/crawl.py,sha256=nKwoJ_Yol-xHtyXQGQrq8ZLtW02F89RFYvLZDMDiVRI,9457
+racp/data.py,sha256=9SG5xk1hDBLK6rTqZivJrBoK3HbWWHUlwVzZ44Bew58,10139
+racp/retriver.py,sha256=TkbgtKe-JUuCbbzWdazDFjJsNo_NN7c61dT33CPd3PI,3539
+racp/utils.py,sha256=IIBLY_sCtKoyajScSR4CotXj0buKNai46ok4uq5X0KI,6626
+racp-0.1.1.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+racp-0.1.1.dist-info/METADATA,sha256=MXcK7iraQfRzifiaZeUnwCAcTgQnJEbeEWzz_BV-m3E,1905
+racp-0.1.1.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+racp-0.1.1.dist-info/top_level.txt,sha256=F8Z3D45v7m5FY8rxy0l6iZauD2vEcWMX_A43UAD8zTE,5
+racp-0.1.1.dist-info/RECORD,,
