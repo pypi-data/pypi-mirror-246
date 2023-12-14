@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: survival-analysis
+Version: 0.0.3
+Summary: Survival Analysis: Customer Churn and CLV Prediction
+Home-page: UNKNOWN
+Author: Anna Manasyan, Anna Shaljyan, Ela Khachatryan, Sergey Tovmasyan
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==3.7.1
+Requires-Dist: appnope ==0.1.3
+Requires-Dist: astor ==0.8.1
+Requires-Dist: asttokens ==2.4.1
+Requires-Dist: autograd ==1.6.2
+Requires-Dist: autograd-gamma ==0.5.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: comm ==0.2.0
+Requires-Dist: contourpy ==1.2.0
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: DateTime ==5.3
+Requires-Dist: debugpy ==1.8.0
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: executing ==2.0.1
+Requires-Dist: fastapi ==0.105.0
+Requires-Dist: fonttools ==4.46.0
+Requires-Dist: formulaic ==0.6.6
+Requires-Dist: future ==0.18.3
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: idna ==3.6
+Requires-Dist: interface-meta ==1.3.0
+Requires-Dist: ipykernel ==6.27.1
+Requires-Dist: ipython ==8.18.1
+Requires-Dist: jedi ==0.19.1
+Requires-Dist: jupyter-client ==8.6.0
+Requires-Dist: jupyter-core ==5.5.0
+Requires-Dist: kiwisolver ==1.4.5
+Requires-Dist: lifelines ==0.27.8
+Requires-Dist: matplotlib ==3.8.2
+Requires-Dist: matplotlib-inline ==0.1.6
+Requires-Dist: nest-asyncio ==1.5.8
+Requires-Dist: numpy ==1.26.2
+Requires-Dist: packaging ==23.2
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: parso ==0.8.3
+Requires-Dist: pexpect ==4.9.0
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: platformdirs ==4.1.0
+Requires-Dist: prompt-toolkit ==3.0.43
+Requires-Dist: psutil ==5.9.6
+Requires-Dist: ptyprocess ==0.7.0
+Requires-Dist: pure-eval ==0.2.2
+Requires-Dist: pydantic ==2.5.2
+Requires-Dist: pydantic-core ==2.14.5
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-multipart ==0.0.6
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: pyzmq ==25.1.2
+Requires-Dist: scipy ==1.11.4
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: SQLAlchemy ==2.0.23
+Requires-Dist: stack-data ==0.6.3
+Requires-Dist: starlette ==0.27.0
+Requires-Dist: tornado ==6.4
+Requires-Dist: traitlets ==5.14.0
+Requires-Dist: typing ==3.7.4.3
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: tzdata ==2023.3
+Requires-Dist: uvicorn ==0.24.0.post1
+Requires-Dist: wcwidth ==0.2.12
+Requires-Dist: wrapt ==1.16.0
+Requires-Dist: zope.interface ==6.1
+
+# Survival Analysis Package
+
+## Overview
+
+The **Survival Analysis** package is a Python toolkit for analyzing and predicting customer churn and lifetime value using survival analysis techniques. This package encompasses several modules that cover database schema creation, SQL interactions, predictive modeling, and utility functions for data preprocessing.
+
+## Installation 
+
+```python
+pip install survival-analysis
+```
+You can access our package via PyPi using this link:
+https://pypi.org/project/survival-analysis/0.0.1/
+
+## Documentation
+
+Detailed information about our package can be found at 
+https://anna-shaljyan.github.io/mkdocs-survival-analysis/?fbclid=IwAR2Kxzv_bs3WhMpGeU9jP0lKwvQ-sGPK_EG4ualMhqPFglEX9Nhoo8bE8N0
+
+## Modules
+
+### 1. `schema.py`
+
+#### Module Description:
+
+This module, `schema.py`, contains Python code for defining and creating a database schema using SQLAlchemy. It defines tables such as 'DimCustomer', 'FactPredictions', 'FactPushNotification', and 'FactEmail' for storing customer information, predictive data, push notification details, and email information, respectively.
+
+```python
+from survival_analysis import schema
+```
+
+The obtained databse has the below structure:
+![Database ERD](survival_analysis/docs/ERD.jpg)
+
+### 2. sql_interactions.py
+
+#### Module Description:
+
+The sql_interactions module provides a Python class named SqlHandler for interacting with SQLite databases. This class allows various operations such as connecting, inserting data, retrieving data, truncating tables, dropping tables, updating tables, and more.
+
+```python
+from survival_analysis import sql_interactions
+```
+
+### 3. model_AFT.py
+
+#### Module Description:
+
+The model_AFT module implements an Accelerated Failure Time (AFT) model for predicting customer churn and lifetime value. It includes classes for different AFT models, a model selector for choosing the best model based on AIC, and methods for fitting the model and generating predictions.
+
+```python
+from survival_analysis import model_AFT
+```
+
+### 4. utils.py
+
+#### Module Description:
+
+The utils module contains utility functions, including format_dataframe, which converts categorical variables to binary columns using one-hot encoding and ensures correct data types for numeric variables.
+
+```python
+from survival_analysis import utils
+```
+## Example Usage
+
+An example demonstrating the use of this package can be found at https://github.com/ella-2002e/MA-SurvivalAnalysis-Project/blob/main/Example.ipynb
+
+# API
+
+The API extends our Survival Analysis project with functionality to select data from the database and insert data. The API now includes several endpoints that help identify top customers with the highest churn rate, customers with the highest/lowest CLV, etc.
+
+## Usage 
+
+Run `run.py` to see initially a message in port, add /docs to see put methods and two get endpoints besides message.
+Port should look something like this: http://127.0.0.1:8000/docs#/ . You can run `run.py` by executing python run.py in your terminal in venv. 
+
+## ENDPOINTS
+
+### GET
+
+#### 1. get_top_churn_clv_customers 
+- Accepts pred_period and number of percentage for sorting customers initially by churn_rate and then by clv. It returns top x% customers based on churn_rate & CLV.
+
+#### 2. get_top_clv_customers
+- Accepts pred_period and number of percentage for sorting customers by CLV. It returns top x% customers based on CLV.
+
+### PUT
+
+These below PUT methods are created to populate the DB with the results of actions taken in response to the two GET methods mentioned above.
+There are two csv files email_data.csv and notifications_data.csv in Raw Data folder that contain sample generated data with structure that matches tables of the database.
+
+#### 1. populate_fact_push_notification
+
+ - Allows to choose a csv file to add in FactPushNotification table. Use that method with notifications_data.csv to populate the FactPushNotification table in the DB. Note that, customer_id-s are taken from endpoint: http://127.0.0.1:8000/get_top_churn_clv_customers?pred_period=12&top_percentage=10 
+
+#### 2. populate_fact_email
+
+- Similarly, use email_data.csv to populate FactEmail table with second put method. Note that, email_data customer_id-s are taken from endpoint: http://127.0.0.1:8000/get_top_clv_customers?top_percentage=20&pred_period=5
+
+
+## License
+This package is provided under the MIT License. Feel free to use and modify it in your projects.
+
