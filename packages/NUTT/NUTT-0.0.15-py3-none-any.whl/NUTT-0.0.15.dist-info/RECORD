@@ -1,0 +1,12 @@
+nuttlib/__init__.py,sha256=GYEgCua9sbVHvMK5_u5Kksqp3GX4j1oK9nSH64kKiKk,319
+nuttlib/layer.py,sha256=emSdH4POJrVYi-EynId-yWso7pFDsYBTRV6oNoM-oO4,1454
+nuttlib/mat.py,sha256=_VJJvEmk0dySCIZkjTxttCCuysvuYVcpB0DjSebsCZM,6352
+nuttlib/network.py,sha256=C_Y9h3vstvukAz75ODhH0PHbjwJCrsnTZXabzGxvLBc,1180
+nuttlib/neuron.py,sha256=E0fwZnfnJwmQD57Q0Ara9v05FX_3-5CO9_Cu_AwLCGc,3196
+nuttlib/ops.py,sha256=GtzpmQavqQN-MgumA-88S4FXy-3RPwiesVzuaFj5vVE,8947
+nuttlib/randomizer.py,sha256=ewNK9_dwDyQVvCwDc-Ob0MAhSl9vx8ytXWRclNDv18I,374
+nuttlib/trainer.py,sha256=GlKzNi6ex4LoSE1KTEO7RLxDdTEh9c93Ew2RLoQOw3I,1433
+NUTT-0.0.15.dist-info/METADATA,sha256=1OFF5-4ZyfayzRbtMaNYbUB0dYqtlIgMMdffQM-MFZQ,878
+NUTT-0.0.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+NUTT-0.0.15.dist-info/top_level.txt,sha256=R__wLRpynl2hGftYa0vdzN9HBh4Vcoaqu2dbTWm9FVk,8
+NUTT-0.0.15.dist-info/RECORD,,
