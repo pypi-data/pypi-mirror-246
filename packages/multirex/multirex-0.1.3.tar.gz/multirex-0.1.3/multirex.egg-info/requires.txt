@@ -1,0 +1,5 @@
+numpy
+taurex
+matplotlib
+tqdm
+pandas
