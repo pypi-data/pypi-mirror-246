@@ -1,0 +1,15 @@
+depthai.cpython-37m-arm-linux-gnueabihf.so,sha256=LicA3k8O9PzHQgMJdrPEm7Mn-6Ue7Uus81UmK5ilT_g,14881541
+depthai/__init__.pyi,sha256=o5b5x3Jq_1O7NjLQEVvru70nPgisOwA6dDpAK1MA73w,191830
+depthai/node.pyi,sha256=JK1WOvHX8i5e0XdNxh6fa5BW5LwrMPq6yVOQz3b_Y6k,49340
+depthai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depthai-2.24.0.0.dist-info/LICENSE,sha256=X-bU7Cqk4igULucQhNHIv-pHQjj-6NSb0Q6MvQtErOE,1068
+depthai-2.24.0.0.dist-info/top_level.txt,sha256=39NG_7OEgvQ5PKU-ilUsp81cr2azecT6E-c1oCTbufM,8
+depthai-2.24.0.0.dist-info/METADATA,sha256=xjlZRInAeXklIoPwsM2c0vGXeNNJmB_3_0RmWPMVwZA,8682
+depthai-2.24.0.0.dist-info/WHEEL,sha256=xI9qyX4VJa8O28I2q-1i0lVK6E4XEziAOhfF8MHusc4,133
+depthai.libs/libc-2-f12e7bca.28.so,sha256=OHKNH6p1cwv942SDvvgY1l1ycvHdQzt_CwZWhaQbKhY,1338573
+depthai.libs/libm-2-e805ccee.28.so,sha256=MoLXrfDFh4ifvYra_zZMYm1hBE5S6KjIG85DKCHC1OQ,489309
+depthai.libs/libusb-1-4f377191.0.so,sha256=dUmd9iUslTrpBjoFkbXGZCj1Bh6OjXJULiOUxy3-DsE,131309
+depthai.libs/libpthread-2-4fe9e8ba.28.so,sha256=MH4VMsx00baN2hyJX_j-DGl1LfbH-9d2Gzq4NhVAVCc,148885
+depthai.libs/libstdc++-8790593d.so.6.0.25,sha256=i-4pW3BrVNDkYjQhQQJZpVwt7q2c5PW_smk3kOfiW7E,1834941
+depthai.libs/libgcc_s-a9394cb1.so.1,sha256=9pdj_35EzoiRpGD8PkUY67c5_ddFWAlKd5Rkv0rE0Bs,171949
+depthai-2.24.0.0.dist-info/RECORD,,
