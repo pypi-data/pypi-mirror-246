@@ -1,0 +1,7 @@
+alteia_cli/plugins/dataflow_management/__init__.py,sha256=RvBNGCTmfllxpFI4n2XzuIgl08PIVAevV246OzsBvW4,66
+alteia_cli/plugins/dataflow_management/color_manager.py,sha256=J7_lDKPpjrRa6HQAK_rspvwp9Rsa-4vhc-1lUjmIM18,1717
+alteia_cli/plugins/dataflow_management/datastreams.py,sha256=qwqFOEDRARQLSZ--YKFSeYHmW1HDMiejEGDMWJ3byd8,21863
+alteia_cli/plugins/dataflow_management/datastreamtemplates.py,sha256=J9ApZH6VD8sU-zbGMbDWAzd3GsNNFSt3Sqn9MO68RDI,5328
+alteia_cli_dataflow_management-1.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+alteia_cli_dataflow_management-1.1.0.dist-info/METADATA,sha256=J1BjUO8Ti7vjHHNU0tdokk8SBW-P2CbHd1Y2Wr_4MpQ,6507
+alteia_cli_dataflow_management-1.1.0.dist-info/RECORD,,
