@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/momgrid/__init__.py
+src/momgrid/classes.py
+src/momgrid/external.py
+src/momgrid/util.py
+src/momgrid/vertical.py
+src/momgrid.egg-info/PKG-INFO
+src/momgrid.egg-info/SOURCES.txt
+src/momgrid.egg-info/dependency_links.txt
+src/momgrid.egg-info/requires.txt
+src/momgrid.egg-info/top_level.txt
+src/momgrid/woa18/WOA18_025deg_horiz_grid.nc
+src/momgrid/woa18/WOA18_1deg_horiz_grid.nc
