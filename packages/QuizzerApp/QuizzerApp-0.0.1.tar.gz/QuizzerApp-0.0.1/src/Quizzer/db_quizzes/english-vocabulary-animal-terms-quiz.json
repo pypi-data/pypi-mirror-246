@@ -1,0 +1,117 @@
+{
+    "quizname": "Animal Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The collective term for sheep is",
+            "answer": "a flock",
+            "choices": {
+                "1": "a colony",
+                "2": "a flock",
+                "3": "a pen"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A young bear is ",
+            "answer": "a cub",
+            "choices": {
+                "1": "a cub",
+                "2": "a kitten",
+                "3": "a bear pup"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A fully-grown male horse is",
+            "answer": "a stallion",
+            "choices": {
+                "1": "a colt",
+                "2": "a filly",
+                "3": "a stallion"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The collective term for fish is",
+            "answer": "a school",
+            "choices": {
+                "1": "a swarm",
+                "2": "a pod",
+                "3": "a school"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What does a tadpole turn into as it grows?",
+            "answer": "a frog",
+            "choices": {
+                "1": "a frog",
+                "2": "a larva",
+                "3": "a dolphin"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which word means \"a young goose\"?",
+            "answer": "gosling",
+            "choices": {
+                "1": "gander",
+                "2": "gosling",
+                "3": "gaggle"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What's a drake?",
+            "answer": "a male duck",
+            "choices": {
+                "1": "a male duck",
+                "2": "a female owl",
+                "3": "a young bat"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Did you count the lions in the _______ you saw? ",
+            "answer": "pride",
+            "choices": {
+                "1": "pride",
+                "2": "pack",
+                "3": "herd"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Our oldest _______ has given birth to dozens of kids.",
+            "answer": "nanny",
+            "choices": {
+                "1": "billy",
+                "2": "nanny",
+                "3": "joey"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A filly is no longer a foal, but it's still not a",
+            "answer": "mare",
+            "choices": {
+                "1": "colt",
+                "2": "stallion",
+                "3": "mare"
+            }
+        }
+    ]
+}
