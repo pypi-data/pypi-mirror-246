@@ -1,0 +1,2 @@
+[pytest11]
+pytest-idem = pytest_idem.plugin
