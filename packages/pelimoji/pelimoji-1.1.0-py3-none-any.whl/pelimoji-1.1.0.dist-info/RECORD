@@ -1,0 +1,6 @@
+pelican/plugins/pelimoji/__init__.py,sha256=3EqCFh7ev1o20TAheUynZhv9JeQBAzhtaOzsPvzF-RE,32
+pelican/plugins/pelimoji/css.j2,sha256=lQayAOhYaYr7FqjFacAzycNeLAffEnRbobJ_Sg9Rg-c,437
+pelican/plugins/pelimoji/pelimoji.py,sha256=Qg7_5mYv5t3LTFhtQr9VINmM4y4x7XqCgcnccODUOgA,4512
+pelimoji-1.1.0.dist-info/METADATA,sha256=yxrK8HoUgPD2UeZaEGJkUIxkKQYfl0b87gUVtQCCOkM,4544
+pelimoji-1.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pelimoji-1.1.0.dist-info/RECORD,,
