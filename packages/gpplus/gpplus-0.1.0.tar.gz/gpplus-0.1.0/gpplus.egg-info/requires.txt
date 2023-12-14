@@ -1,0 +1,8 @@
+numpy
+scipy
+torch
+gpytorch
+matplotlib
+sobol_seq
+tabulate
+botorch
