@@ -1,0 +1,22 @@
+
+
+def get_filename(name):
+
+    return f'{name}/__init__.py'
+
+
+def get_content(name=None):
+    """
+    """
+
+    class_name = name.replace('kraken_', '')
+
+    class_name = class_name.capitalize()
+
+
+    
+    content = f'''
+from {name}.{name} import {class_name}
+    
+    '''
+    return content
