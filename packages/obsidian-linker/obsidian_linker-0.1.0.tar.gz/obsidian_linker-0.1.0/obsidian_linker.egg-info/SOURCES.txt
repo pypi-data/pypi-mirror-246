@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+obsidian_linker.egg-info/PKG-INFO
+obsidian_linker.egg-info/SOURCES.txt
+obsidian_linker.egg-info/dependency_links.txt
+obsidian_linker.egg-info/entry_points.txt
+obsidian_linker.egg-info/requires.txt
+obsidian_linker.egg-info/top_level.txt
+tests/test_obsidian_linker.py
