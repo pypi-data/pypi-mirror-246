@@ -1,0 +1,11 @@
+uix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uix/app.py,sha256=MRQnBT1o771YcPAKJWhIM-hj8yJBbLDo508xCrBoZFI,237
+uix/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uix/core/flask_server.py,sha256=Q6HvwSFZ-PHX24eXjnX2Yj_-cHuFUqlXADzF3JfISeY,1455
+uix/core/htmlgen.py,sha256=MwnMy80-bGHF6VxnCVwrzFfg_9ZunMG57SDIC1D_nYg,3027
+uix/core/web_server.py,sha256=1t9NC-mpMSpsU7UC0Skol4fMwYwtP6EMzSMiX9y1fE0,275
+uix-1.0.0.dist-info/LICENSE,sha256=ND8gSHBpHlJY8gsUYCHU-AooIFxmaIBoy7Vbd5OoSNU,1070
+uix-1.0.0.dist-info/METADATA,sha256=1AjCG2GAxFBViUlWCvnrib9tJJ9oaS6sQWJiXIFim7I,206
+uix-1.0.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+uix-1.0.0.dist-info/top_level.txt,sha256=mZuL1vZbpaBA79EgnXXroND7lo9NKdEVkJ6AaNfGWI8,4
+uix-1.0.0.dist-info/RECORD,,
