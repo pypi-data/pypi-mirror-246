@@ -1,0 +1,15 @@
+jax_cuda11_plugin/_blas.so,sha256=b5d0YRjau-pu3FEu7vI3bZMzeblFioaH22ZBuFx-BKU,4240840
+jax_cuda11_plugin/_linalg.so,sha256=R72tdHuS1FDYzXjWc6h5yqOHuiMew1NsPyINwmPolGo,4132680
+jax_cuda11_plugin/_prng.so,sha256=hhoBXU-oxX_ZomUKaspeuH3NUOQ8yrZxIzzFLulLxeQ,4103560
+jax_cuda11_plugin/_rnn.so,sha256=bRsH2KEvdaaqQ_VE0wYnOsV26owiiuj380R_5PlBSM8,4162608
+jax_cuda11_plugin/_solver.so,sha256=mmuKcgY6m9ELRsTOp1IptpPn-adyaVh_7zm6fFpjBck,4381296
+jax_cuda11_plugin/_sparse.so,sha256=u7LpAFz9Ca_aEE6mw-6vlvx9yllBtJ38x7wn6t7nLeg,4239152
+jax_cuda11_plugin/_triton.so,sha256=n31Nt22NshdYe8_CvpbbinYOjqFuxh5udWIxV7hAEMc,5536008
+jax_cuda11_plugin/_versions.so,sha256=pXy62rzpx75En3bItNlNV9v5pcpzt0IDeo4nC4z9m2A,4517848
+jax_cuda11_plugin/cuda_plugin_extension.so,sha256=ze-8sYU-LYsnd3n67reAUMCUJtZQKPm3LTixcenhZqA,6345312
+jax_cuda11_plugin/version.py,sha256=EQ9EZHm-2vL4luFNkmunnYYQkip326cYPGQY9g3k3a4,5583
+jax_cuda11_plugin/nvvm/libdevice/libdevice.10.bc,sha256=H8G8jUEx1aWakfwm9JCIhuIx-ELJ6DrpUZef89-CvbU,473728
+jax_cuda11_plugin-0.4.22.dist-info/METADATA,sha256=yGkTJhiEYHHbJul6P0UwiXeQTQO2Bw1rNCoouDmAODI,560
+jax_cuda11_plugin-0.4.22.dist-info/WHEEL,sha256=W6SqJNikGR5o8ZuyOaStatiVBP9Malx6IRwwrrkWO40,113
+jax_cuda11_plugin-0.4.22.dist-info/top_level.txt,sha256=dzEU32ptfdZFvUMbkJMX1aFRZjofCk_Ws2mftqwxUI8,18
+jax_cuda11_plugin-0.4.22.dist-info/RECORD,,
