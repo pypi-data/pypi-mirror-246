@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "dqp"
+version = "0.1.1"
+description = "Cache iterator values to disk using msgpack"
+authors = ["Bram Neijt <bram@neijt.nl>"]
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/bneijt/dqp"
+homepage = "https://bneijt.github.io/dqp/"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+msgpack = "^1.0.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+pytest = "^7.4.3"
+twine = "^4.0.2"
+pre-commit = "^3.6.0"
+ruff = "^0.1.7"
+pdoc = "^14.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+extend-select = ["I"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
