@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/o2h/__init__.py
+src/o2h/translator.py
+src/o2h.egg-info/PKG-INFO
+src/o2h.egg-info/SOURCES.txt
+src/o2h.egg-info/dependency_links.txt
+src/o2h.egg-info/entry_points.txt
+src/o2h.egg-info/requires.txt
+src/o2h.egg-info/top_level.txt
