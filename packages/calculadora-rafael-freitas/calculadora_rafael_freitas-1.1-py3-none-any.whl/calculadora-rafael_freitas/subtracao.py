@@ -1,0 +1,2 @@
+def subtracao(a:int,b:int):
+    return a-b
