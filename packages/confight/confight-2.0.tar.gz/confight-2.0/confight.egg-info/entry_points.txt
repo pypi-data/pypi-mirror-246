@@ -1,0 +1,2 @@
+[console_scripts]
+confight = confight:cli

@@ -1,0 +1,8 @@
+toml
+setuptools
+
+[hcl]
+pyhcl
+
+[yaml]
+ruamel.yaml>=0.18.0
