@@ -1,0 +1,2 @@
+[console_scripts]
+vid2captionsai = vid2captionsai.__main__:cli
