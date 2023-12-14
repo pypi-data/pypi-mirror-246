@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vilmantas_data_crawler"
+version = "0.1.0"
+description = ""
+authors = ["Fujitsu <alchemikaslt1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+lxml = "^4.9.3"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
