@@ -1,0 +1,11 @@
+firesoft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+firesoft/fire_barcodes.py,sha256=p1YXGbLlbRTbxNrhLDBS5gR5IYwWh_C9P8BLFn3ltTo,7277
+firesoft/fire_pil_image_utils.py,sha256=JwkOCyHdTFzvRub-SMeAQ1QXJCIhJs6wYkau3CbX-wc,657
+firesoft/geometry.py,sha256=je4joN_0ZsDbw8m2MIE0DY-J3sq_KH8AbJWzC4eNvaU,1238
+firesoft/utils/__init__.py,sha256=5FQ0s_2rPa2Vpj_dOhp6usXXAHPT9X-MBVVZLP2Uoqo,23
+firesoft/utils/files.py,sha256=3kvZz9QQsr6QLsrKXUno1lkajikCM1wq40JqNadpGJQ,9379
+firesoft/utils/qr_code.py,sha256=BFnnaKL2mDy44PP2Isn4BiVJdFbUQYGjaEk3QjKWGFE,16705
+firesoft-0.0.9.dist-info/METADATA,sha256=7T_rCkBKNTAF4aUeQNklfJ0ARssopRSHPd2vbotk5Bw,427
+firesoft-0.0.9.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+firesoft-0.0.9.dist-info/top_level.txt,sha256=FfAf_bsocFd70tIj-ZuoozBlR3b-6iZ3zADZUSILW7A,9
+firesoft-0.0.9.dist-info/RECORD,,

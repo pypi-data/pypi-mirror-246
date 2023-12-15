@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: firesoft
+Version: 0.0.9
+Home-page: 
+Author: Salah Anwer
+Author-email: salahanwer.dev@gmail.com
+Requires-Python: >=3
+Requires-Dist: segno ==1.5.3
+Requires-Dist: qrcode-artistic ==3.0.0
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: setuptools ==68.2.2
+Requires-Dist: python-barcode ==0.15.1
+Requires-Dist: pyzbar ==0.1.9
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: reportlab ==4.0.6
+
