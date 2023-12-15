@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "uHTTP-Multipart"
+version = "0.1.0"
+description = "Multipart support for µHTTP"
+authors = ["gus <0x67757300@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uHTTP = "^1.3.0"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
