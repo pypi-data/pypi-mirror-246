@@ -1,0 +1,7 @@
+setup.py
+kookoopakket/__init__.py
+kookoopakket/hello.py
+kookoopakket.egg-info/PKG-INFO
+kookoopakket.egg-info/SOURCES.txt
+kookoopakket.egg-info/dependency_links.txt
+kookoopakket.egg-info/top_level.txt
