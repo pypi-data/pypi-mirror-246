@@ -1,0 +1,13 @@
+pMTnet_Omni_Document/__init__.py,sha256=3kf6_5l06vmZaOaZ8rFJrXCtShURGqxhitqkl47FH9g,377
+pMTnet_Omni_Document/__main__.py,sha256=Vsp4P5bR9ar1MZHEmdoKRq_ozI1UGyUJb09OA4uAl4s,2221
+pMTnet_Omni_Document/data_curation.py,sha256=mzh3a7DTHdrFDyn68HZbG-BTJyyEA_dSB1x0UZqRRrg,32115
+pMTnet_Omni_Document/validation_data/human_alpha.txt,sha256=kWFaYdJYo4kUY2c2j8LK1JCgGYydVxJ3KtA_8DthjIU,11934
+pMTnet_Omni_Document/validation_data/human_beta.txt,sha256=MMVRIn9-KHeV_iTCELATYrxsp3fqtVDucoTJ9YJrp-c,15221
+pMTnet_Omni_Document/validation_data/mouse_alpha.txt,sha256=srn35P-V8fDF4XZbM3wBpGdwL1ZE3aunn5fqKJn4eEU,30953
+pMTnet_Omni_Document/validation_data/mouse_beta.txt,sha256=vB-IlZdnK-PRvzcxLvct5ibShj52WSsMpTZvpyzCQu8,5209
+pMTnet_Omni_Document/validation_data/valid_mhc.txt,sha256=gJunwk-a6bM_N9QMKXvrnt6OFfqL7CJ_2YKw4n5o3Z0,189931
+pMTnet_Omni_Document-0.0.16.dist-info/LICENSE,sha256=LRNOnv3eTyXYLanf3Go4eSPgii34lvVo9cniztRXFF8,1073
+pMTnet_Omni_Document-0.0.16.dist-info/METADATA,sha256=9NDcWO5Mm8gZOP-OGVnn1NYMsn1gRmRZVp75mRFoAVY,5155
+pMTnet_Omni_Document-0.0.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pMTnet_Omni_Document-0.0.16.dist-info/top_level.txt,sha256=vEz-XD0jmnj1yoxQGCovNi47qOc5CfVFUukdQrF5fFA,21
+pMTnet_Omni_Document-0.0.16.dist-info/RECORD,,
