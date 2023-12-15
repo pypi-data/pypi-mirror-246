@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+inno_graph.egg-info/PKG-INFO
+inno_graph.egg-info/SOURCES.txt
+inno_graph.egg-info/dependency_links.txt
+inno_graph.egg-info/requires.txt
+inno_graph.egg-info/top_level.txt

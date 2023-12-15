@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: inno-graph
+Version: 1.0
+Summary: Python library for GCN tutorial
+Home-page: https://github.com/cutefluffyfox/yalice
+Author: cutefluffyfox
+Author-email: pinkaiscrazy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GCN-tutorial
+
