@@ -1,0 +1,10 @@
+openpyxl
+
+[dev]
+uspec
+PyHamcrest
+yapf
+
+[test]
+uspec
+PyHamcrest
