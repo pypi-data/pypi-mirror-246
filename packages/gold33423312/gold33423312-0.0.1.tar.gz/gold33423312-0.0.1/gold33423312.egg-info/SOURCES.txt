@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+gold33423312.egg-info/PKG-INFO
+gold33423312.egg-info/SOURCES.txt
+gold33423312.egg-info/dependency_links.txt
+gold33423312.egg-info/top_level.txt
