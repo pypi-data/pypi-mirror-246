@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nanoSeq
+Version: 0.1
+Summary: A Python package for nanopore sequence alignment and primer design
+Home-page: https://github.com/hgu1uw/UW_BIOEN537.git
+Author: Nello
+Author-email: hgu1@uw.edu
+Keywords: nanopore sequencing,primer design,bioinformatics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt

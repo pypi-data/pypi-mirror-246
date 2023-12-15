@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+nanoSeq.egg-info/PKG-INFO
+nanoSeq.egg-info/SOURCES.txt
+nanoSeq.egg-info/dependency_links.txt
+nanoSeq.egg-info/entry_points.txt
+nanoSeq.egg-info/top_level.txt
+nanoporeAlignment/__init__.py
+nanoporeAlignment/nanoAlign.py
+primer_design/__init__.py
+primer_design/primerdesign.py
