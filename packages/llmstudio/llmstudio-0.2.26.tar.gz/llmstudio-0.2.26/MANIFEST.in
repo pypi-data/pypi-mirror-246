@@ -1,0 +1,5 @@
+recursive-include * *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude llmstudio/ui/node_modules *
+global-exclude .DS_Store
