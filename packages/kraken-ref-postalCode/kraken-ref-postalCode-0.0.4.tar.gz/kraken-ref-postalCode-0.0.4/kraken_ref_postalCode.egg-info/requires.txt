@@ -1,0 +1,4 @@
+kraken-thing
+requests
+kraken-local-db
+kraken-etl

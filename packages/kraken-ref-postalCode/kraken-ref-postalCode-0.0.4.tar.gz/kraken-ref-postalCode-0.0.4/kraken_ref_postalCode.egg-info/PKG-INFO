@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: kraken-ref-postalCode
+Version: 0.0.4
+Summary: kraken-ref-postalCode
+Home-page: https://github.com/tactik8/krakenrefpostalCode
+Author: Tactik8
+Author-email: info@tactik8.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: kraken-thing
+Requires-Dist: requests
+Requires-Dist: kraken-local-db
+Requires-Dist: kraken-etl
+
+
+    # kraken_ref_postalCode
+    <definition>
+
+
+    ## How to use
+
+    ```
+    from kraken_ref_postalCode import kraken_ref_postalCode
+
+    
+
+    ```
+
+
+    
+    
