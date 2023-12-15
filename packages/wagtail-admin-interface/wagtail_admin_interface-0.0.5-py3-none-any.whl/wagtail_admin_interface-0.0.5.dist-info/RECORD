@@ -1,0 +1,11 @@
+wagtail_admin_interface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_admin_interface/context_processors.py,sha256=eWexE9lkCc8SezP0b-W85gbCU8u857RZIjdtddEyaYU,267
+wagtail_admin_interface/urls.py,sha256=nSR-DkUsLzGhP-VvqZw94hZISsLscgtC6gn4vp3Seps,893
+wagtail_admin_interface/wagtail_hooks.py,sha256=15K5dGtqInv16-JrOnONhen-gxkejmCAiBM-A-yQW_o,2584
+wagtail_admin_interface/templates/wagtailadmin/base.html,sha256=sWE3R64Lz0xBJdhTTCSBNVKvWyjyX7AChUbhDJNJBdo,2689
+wagtail_admin_interface/templates/wagtailadmin/pages/edit.html,sha256=O_RRzIwJy1iCtrlvChv4Nr7XylKTtAWLtNFXV4Dg3-s,313
+wagtail_admin_interface/templates/wagtailadmin/pages/index.html,sha256=uBr8oU7tGsLPijhlpzP5_qdXPZBHBrvA_LhR5aJdwUE,302
+wagtail_admin_interface-0.0.5.dist-info/METADATA,sha256=OY_GNP2L225-drlASuhuWGmM_AVMSvxPxfqBSrKxIL0,543
+wagtail_admin_interface-0.0.5.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+wagtail_admin_interface-0.0.5.dist-info/licenses/LICENSE.md,sha256=4QPK8gKMZWFu_yoaY4HsXTZnp5ccY4qoqz66hC79Psc,1071
+wagtail_admin_interface-0.0.5.dist-info/RECORD,,
