@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SmartShopper
+Version: 0.1.0
+Summary: A tool for creating and managing grocery shopping lists
+Home-page: https://github.com/Bengician/DATA533-Project.git
+Author: Ben Stoller, Shengyao Li
+Project-URL: Homepage, https://github.com/Bengician/DATA533-Project.git
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+Please refer to the README.md file for details.
