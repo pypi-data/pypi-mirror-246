@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: terminalImgViewer
+Version: 0.0.7
+Summary: A python python package to display images in your terminal, with colored characters.
+Author-email: Judemont <julien@rmbi.ch>
+Project-URL: Homepage, https://github.com/judemont/terminalImgViewer
+Project-URL: Issues, https://github.com/judemont/terminalImgViewer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Terminal Image Viewer
+A python python package to display images in your terminal, with colored characters.
+## Installation
+```bash
+pip install terminalImgViewer
+```
+## Usage
+```python
+import terminalImgViewer
+terminalImgViewer.display("IMAGE_PATH", RESULT_WIDTH)
+```
+## Result
+![image](https://github.com/judemont/terminalImgViewer/assets/96385330/194e6693-fa22-46b0-bc36-4f69e24510ef)
