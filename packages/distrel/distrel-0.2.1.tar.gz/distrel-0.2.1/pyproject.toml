@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "distrel"
+version = "0.2.1"
+description = "Calculate the relationship between parameters with known distributions."
+authors = ["Alex <adrysdale@protonmail.com>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.1.1"
+tqdm = "^4.66.1"
+scipy = "^1.11.4"
+nevergrad = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
