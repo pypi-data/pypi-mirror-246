@@ -1,0 +1,11 @@
+README.md
+setup.py
+Quantagen.egg-info/PKG-INFO
+Quantagen.egg-info/SOURCES.txt
+Quantagen.egg-info/dependency_links.txt
+Quantagen.egg-info/requires.txt
+Quantagen.egg-info/top_level.txt
+quantagen/__init__.py
+quantagen/core.py
+quantagen/image_processing.py
+quantagen/utils.py

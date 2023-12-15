@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Quantagen
+Version: 0.1.0
+Summary: A tool for Countagen users
+Home-page: https://github.com/christoffermattssonlangseth/quantagen
+Author: Christoffer Mattsson Langseth
+Author-email: christoffer@spatial.ist
+License: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tifffile
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib
+
+# Quantagen
+This repo is code used for [Countagen](https://countagen.com)'s product [GeneAbacus](https://countagen.com/product/) to quantify the number of detection events from microscopy images. 
+
+# Installation
+To install the package, run `pip install Quantagen`.
+
+# Usage
+You can try the usage by using the test data in [/data](/data/test_data/). For example usage, have a look at the [notebooks](/notebooks/quantagen.ipynb). 
+
+# Development
+![logo](misc/images/logo.png)
