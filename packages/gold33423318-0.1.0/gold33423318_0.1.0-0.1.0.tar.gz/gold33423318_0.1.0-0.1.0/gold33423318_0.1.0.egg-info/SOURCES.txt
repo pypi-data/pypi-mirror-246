@@ -1,0 +1,5 @@
+setup.py
+gold33423318_0.1.0.egg-info/PKG-INFO
+gold33423318_0.1.0.egg-info/SOURCES.txt
+gold33423318_0.1.0.egg-info/dependency_links.txt
+gold33423318_0.1.0.egg-info/top_level.txt
