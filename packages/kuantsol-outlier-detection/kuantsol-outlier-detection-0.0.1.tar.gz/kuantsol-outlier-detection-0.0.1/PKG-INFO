@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kuantsol-outlier-detection
+Version: 0.0.1
+Summary: Kuantsol Outlier Detection Package
+Author: Barış Coşkun
+Author-email: <baris.coskun@kuantsol.ai>
+Keywords: python,kuantsol-outlier-detection
+Classifier: Programming Language :: Python :: 3
+
+Kuantsol Outlier Detection Package
