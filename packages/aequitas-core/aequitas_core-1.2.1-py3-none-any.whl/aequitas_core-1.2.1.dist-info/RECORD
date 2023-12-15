@@ -1,0 +1,9 @@
+aequitas/__init__.py,sha256=GeanRx5DT49Kh1Oa38arkFxU1E-iVP5u9WOTjOtXws0,641
+aequitas/__main__.py,sha256=EAjLGOOmTRyKEmSv1DBil7Aw7oonj4SLAH6gXCZZr-U,66
+aequitas/core/__init__.py,sha256=Ny5vFDkiy0ch5-hMj9uOEcprRIeVg_fjc2HX6TyaWbs,826
+aequitas/core/metrics.py,sha256=O5au8gLjp2G-bjAEj-yceVIY1YQsQ5Dn4TBEg8b7OK0,6467
+aequitas_core-1.2.1.dist-info/LICENSE,sha256=MRmB6LSd7VbEqJQXde0qfCV0rsgjXzrkYtCh-OrkJdw,11353
+aequitas_core-1.2.1.dist-info/METADATA,sha256=Q1vGONMKPlgAf_CskX2alzw14nnfieNHE_n7Gl8GifU,1185
+aequitas_core-1.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aequitas_core-1.2.1.dist-info/top_level.txt,sha256=PErFbaGy4RQy6cXDPpMHn7VHh7uCnFlofy8x9zv0aTg,9
+aequitas_core-1.2.1.dist-info/RECORD,,
