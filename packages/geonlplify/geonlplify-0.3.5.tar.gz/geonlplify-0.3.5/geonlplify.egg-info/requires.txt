@@ -1,0 +1,6 @@
+pandas
+requests
+spacy<=2.3.999,>=2.3.0
+importlib-metadata<=3.999,>=3.7.0
+typing-extensions<=3.999,>=3.7.4
+transformers<=4.15.999,>=3.4.0
