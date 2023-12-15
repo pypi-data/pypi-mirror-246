@@ -1,0 +1,2 @@
+[console_scripts]
+pubsam-cli = pubsam.cli:main
