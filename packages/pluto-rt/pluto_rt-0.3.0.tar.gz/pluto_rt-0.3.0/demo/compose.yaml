@@ -1,0 +1,31 @@
+services:
+  cache:
+    image: redis:7.2
+
+  web:
+    build:
+      context: ../
+      dockerfile: demo/Dockerfile
+    ports:
+      - 8000:8000
+    depends_on:
+      - cache
+    command: django-admin runserver 0.0.0.0:8000
+    environment:
+      - REDIS_URL=redis://cache:6379/0
+      - DJANGO_SETTINGS_MODULE=demo.settings
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+
+  worker:
+    build:
+      context: ../
+      dockerfile: demo/Dockerfile
+    depends_on:
+      - cache
+    command: celery -A demo.tasks worker --loglevel=INFO
+    environment:
+      - REDIS_URL=redis://cache:6379/0
+      - DJANGO_SETTINGS_MODULE=demo.settings
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG

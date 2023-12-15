@@ -1,0 +1,15 @@
+<table class="table">
+    <tbody id="rt_messages"></tbody>
+    {# Real-time messages appended as rows via htmx as they're retrieved from queue #}
+    <div
+      hx-get="{% url 'rt_messages' queue_name %}?count={{ num_per_gulp }}&reverse={{ reverse }}"
+      hx-trigger="every {{ interval_seconds }}s"
+      {% if reverse %}
+        hx-swap="afterend"
+      {% else %}
+        hx-swap="beforeend focus-scroll:true"
+      {% endif %}
+      hx-target="#rt_messages"
+    >
+    </div>
+</table>
