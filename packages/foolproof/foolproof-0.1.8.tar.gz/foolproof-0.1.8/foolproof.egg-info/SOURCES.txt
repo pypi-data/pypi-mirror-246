@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+foolproof/__init__.py
+foolproof/deep_ast.py
+foolproof/exception_parser.py
+foolproof.egg-info/PKG-INFO
+foolproof.egg-info/SOURCES.txt
+foolproof.egg-info/dependency_links.txt
+foolproof.egg-info/top_level.txt
+foolproof/__custom_pycache__/deep_ast_c3b68b35a44d4cdd80cd739c4cc7b28c.cpython-xxx.pyc
+foolproof/__custom_pycache__/exception_parser_911874b860ff450db80810526329a459.cpython-xxx.pyc
