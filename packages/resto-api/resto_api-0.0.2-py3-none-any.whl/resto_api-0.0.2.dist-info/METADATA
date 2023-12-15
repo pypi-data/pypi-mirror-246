@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: resto-api
+Version: 0.0.2
+Summary: resto python API
+Author: Jérôme Gasperi
+License-File: LICENSE.txt
+Requires-Dist: requests
+
