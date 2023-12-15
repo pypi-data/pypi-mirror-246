@@ -1,0 +1,8 @@
+alibabacloud_resourcemanager20200331/__init__.py,sha256=L_77os6fzxQ2XFS8qh06U1Detrdz0XPxODwPPp8NLAs,21
+alibabacloud_resourcemanager20200331/client.py,sha256=taP7p6dGGVOtZy6IdRpSsaSQ4xLZWPeXAmASSEtAyJc,398083
+alibabacloud_resourcemanager20200331/models.py,sha256=xOZkQiOoAVMSJaKBKWD04bz1OejVWOu4jE1oID2m0bs,610971
+alibabacloud_resourcemanager20200331-2.3.0.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+alibabacloud_resourcemanager20200331-2.3.0.dist-info/METADATA,sha256=jOG9c9_i4E2KPzIi1hrmWga1go1KjohQFbsEobZfA5k,2282
+alibabacloud_resourcemanager20200331-2.3.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+alibabacloud_resourcemanager20200331-2.3.0.dist-info/top_level.txt,sha256=4iYU630KHl2Z7fh2nJzFe5XVfaL1V1nTV52z-qdIvgY,37
+alibabacloud_resourcemanager20200331-2.3.0.dist-info/RECORD,,
