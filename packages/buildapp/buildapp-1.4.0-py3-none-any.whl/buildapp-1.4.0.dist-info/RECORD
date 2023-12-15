@@ -1,0 +1,8 @@
+buildapp/__init__.py,sha256=LBOUU4fnvAe2X2aPC3Kwp03emhG5UhntKMKnGdQ9ry0,32
+buildapp/buildapp.py,sha256=5CSUGqpcwenBI1ajI_RMbVw5aogfKutrQq4jrI3QtWs,7613
+buildapp/download_tools.py,sha256=vxOm0ne2xCFxHPJmc01H_YB_PnHqYYEFb8XkxyWb9f4,5883
+buildapp-1.4.0.dist-info/METADATA,sha256=eoOpuBRn25JKa_WNnbByB76iSEwi-EyGKk2QCUwDXyM,3304
+buildapp-1.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+buildapp-1.4.0.dist-info/entry_points.txt,sha256=QIR3grdMFT2uFqdFFNwjW_zfRbVorMpXzuGV_q0fdwo,104
+buildapp-1.4.0.dist-info/top_level.txt,sha256=xQSOtQ-jVH-_nRkqoSmQJHSd_siAPctgGg4UY8Wevrc,9
+buildapp-1.4.0.dist-info/RECORD,,
