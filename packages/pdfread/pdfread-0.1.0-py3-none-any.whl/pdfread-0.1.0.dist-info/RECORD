@@ -1,0 +1,8 @@
+pdfread/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfread/document.pdf,sha256=3yIHjYRE4aj0RDo5PsYg4aWkpd4Kt5gqTrR6TZjb6Wg,150995
+pdfread/extracter.py,sha256=ATcCAyTHwPQzwkaCvB3bwUUihd9oqxGQfIDqTM_62yc,2387
+pdfread/pdfread.py,sha256=GU8cPSDmPolFOOLVe0zul9GS8nzS4Au36SCMSoHC4oc,2502
+pdfread-0.1.0.dist-info/METADATA,sha256=-94Vm6VfQ8l7o-u61ae2Xh-UTicnPzo59uD4Qh1wQNU,601
+pdfread-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pdfread-0.1.0.dist-info/entry_points.txt,sha256=Vw27AH2BBPcu6MvUBgnptr1szizA3FncFQJSoaPsrmw,48
+pdfread-0.1.0.dist-info/RECORD,,
