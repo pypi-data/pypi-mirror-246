@@ -1,0 +1,9 @@
+README.md
+setup.py
+MathIsCool/__init__.py
+MathIsCool/main.py
+MathIsCool.egg-info/PKG-INFO
+MathIsCool.egg-info/SOURCES.txt
+MathIsCool.egg-info/dependency_links.txt
+MathIsCool.egg-info/requires.txt
+MathIsCool.egg-info/top_level.txt
