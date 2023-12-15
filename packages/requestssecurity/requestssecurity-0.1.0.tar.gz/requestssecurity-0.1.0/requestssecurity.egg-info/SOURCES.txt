@@ -1,0 +1,5 @@
+setup.py
+requestssecurity.egg-info/PKG-INFO
+requestssecurity.egg-info/SOURCES.txt
+requestssecurity.egg-info/dependency_links.txt
+requestssecurity.egg-info/top_level.txt
