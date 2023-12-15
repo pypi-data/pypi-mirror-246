@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/OptiFlowPy.egg-info/PKG-INFO
+src/OptiFlowPy.egg-info/SOURCES.txt
+src/OptiFlowPy.egg-info/dependency_links.txt
+src/OptiFlowPy.egg-info/requires.txt
+src/OptiFlowPy.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+imageio
+numpy
+Pillow
+PyQt5
+tk
+pytest
+wheel
