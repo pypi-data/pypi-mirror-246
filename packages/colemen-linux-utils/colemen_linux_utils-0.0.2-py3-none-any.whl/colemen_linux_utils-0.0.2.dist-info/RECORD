@@ -1,0 +1,12 @@
+colemen_linux_utilities.py,sha256=TykjZT-6omooghLRRDd4uL9-2Q3DidNkChAAIAGqc8o,104
+colemen_linux_utils/ColemenLinuxUtils.py,sha256=Uke8rOKmeIRYMt0sXIuyxuiQp2wIR76ViobkcEVSTlw,631
+colemen_linux_utils/__init__.py,sha256=uLtPYNohkfRGk2aMUY4_sh0KPjh2BCZ8Yg1OCR-ynss,35
+colemen_linux_utils/clipboard.py,sha256=X5ozg1nE-c81mPwQwZ_0Hl4lWFbTpn2BC9ITZN3HL_w,141
+colemen_linux_utils/keys.py,sha256=VI7RAJ9WrpMeCwI5489WPBwBtaejj8lqTsAVbmL2Twc,1257
+colemen_linux_utils/settings/__init__.py,sha256=KjGKrXOIq7iIXJ8GBiQ9XEDJMXu0gtK8m8bmBcVtoIk,116
+colemen_linux_utils/settings/control.py,sha256=jL9Zaz8ctdIfN2ebvSLd17_cvnZSvc0tLOQE3pAGgxQ,198
+colemen_linux_utils/settings/types.py,sha256=Q_kKCII3TE-BquI8KgkQICw2dG2piuQcVgc8rEr2K4g,482
+colemen_linux_utils-0.0.2.dist-info/METADATA,sha256=IoYa61pQVMtm24aDLmEWNCREXmuHMFlvgSyWj9EhbcM,543
+colemen_linux_utils-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+colemen_linux_utils-0.0.2.dist-info/top_level.txt,sha256=PiW9Qo-RUcCKFjQM9DYP5CjGxdO_GAE_dBEgsExsA9s,44
+colemen_linux_utils-0.0.2.dist-info/RECORD,,
