@@ -1,0 +1,14 @@
+pyuniprot/CC.py,sha256=4oDOF0b-wXxib09i-M_VQfKlDWPcI3melIahMQ3SoRc,62
+pyuniprot/DB.py,sha256=Dw3NjaugDLcdAvUNc8Td7ipRHyTJc5t2vUrgqauz4us,815
+pyuniprot/Uniprot.py,sha256=rzh92ZZv6S9LC9O6J3Xm51bAHlV8u2qxvWWqLMbE91Q,25647
+pyuniprot/__init__.py,sha256=7x4mGcBkADWVO9Hla0KU-kkEJY98gK15iA-XHMO5SyM,111
+pyuniprot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyuniprot/version.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=kZoNIoRLpC9DRDGRv11Zn0mHfCr-vzdPhG1SEgZkbcw,320
+tests/test_uniprot.py,sha256=526RaikFXMxce23qm_j3y1QE_Oq9uldeT2PhPhkKgpE,2863
+pyuniprotkb-0.1.2.dist-info/LICENSE,sha256=ckNj_RFaSMyYZCwGtXLcMBXJgHWGFd5wBue_BtNz4K0,1067
+pyuniprotkb-0.1.2.dist-info/METADATA,sha256=hsCio11hDyonvqaNFoI46OdyEclnTyPXkBLqiRbgo6Q,2677
+pyuniprotkb-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyuniprotkb-0.1.2.dist-info/top_level.txt,sha256=B0q7VGx3ZX3yeWoNc8Jidy2HpzFL7Z7tZ3QhXZyBgro,16
+pyuniprotkb-0.1.2.dist-info/RECORD,,
