@@ -1,0 +1,4 @@
+include AidlabSDK/aidlabsdk.so
+include AidlabSDK/aidlabsdk.dylib
+include AidlabSDK/aidlabsdk.dll
+include AidlabSDK/libmingw64/*
