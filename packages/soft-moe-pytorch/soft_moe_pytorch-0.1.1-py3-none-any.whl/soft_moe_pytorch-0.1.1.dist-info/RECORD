@@ -1,0 +1,9 @@
+soft_moe_pytorch/__init__.py,sha256=KUxGrlw1bUWDuAH1jMMrEcOM7nOCktYehNnQ4-55Bbw,122
+soft_moe_pytorch/distributed.py,sha256=5TddP5AZXx6mcGOFgPV16BGgm2gNwqckTyrf_fFFWiw,3012
+soft_moe_pytorch/soft_moe.py,sha256=bEMOH9KDgLDMP6K9llThhVpYSzukVGq7jwjvD271tqU,9821
+soft_moe_pytorch/soft_moe_with_dynamic_slots.py,sha256=Cr-TXOcgQtW9r9keCN-zTJVbpIq8-Pnhe42ww_YnP2I,5769
+soft_moe_pytorch-0.1.1.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+soft_moe_pytorch-0.1.1.dist-info/METADATA,sha256=V3adua1ur6mtmtSaL22CpBwNFhmaDLQJGwLx8OWBqwU,658
+soft_moe_pytorch-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+soft_moe_pytorch-0.1.1.dist-info/top_level.txt,sha256=k1VslKPDTSH_4uKB1rogmMy1irR1U_KYWWvifO7baLk,17
+soft_moe_pytorch-0.1.1.dist-info/RECORD,,
