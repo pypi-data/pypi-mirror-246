@@ -1,0 +1,28 @@
+{
+  "_lib-59b50123.cjs": {
+    "file": "lib-59b50123.cjs"
+  },
+  "_lib-dd5fd167.js": {
+    "file": "lib-dd5fd167.js"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-59b50123.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-59b50123.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
