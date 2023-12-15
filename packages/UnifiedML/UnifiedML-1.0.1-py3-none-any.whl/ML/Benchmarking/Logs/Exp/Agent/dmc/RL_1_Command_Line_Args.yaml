@@ -1,0 +1,7 @@
+task: RL
+Env: DMC
+env:
+  task: cheetah_run
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML

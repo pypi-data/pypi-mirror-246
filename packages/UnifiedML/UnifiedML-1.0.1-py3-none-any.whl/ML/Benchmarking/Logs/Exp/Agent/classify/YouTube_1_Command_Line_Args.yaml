@@ -1,0 +1,9 @@
+metric: {}
+dataset:
+  _target_: World.Datasets.YouTube.YouTube
+  url: https://www.youtube.com/watch?v=5eRU6oKaPL4
+stream: true
+Aug: Identity
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML

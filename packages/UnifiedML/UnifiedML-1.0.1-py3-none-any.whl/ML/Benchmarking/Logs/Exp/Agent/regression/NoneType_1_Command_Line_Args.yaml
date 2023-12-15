@@ -1,0 +1,13 @@
+env:
+  _target_: YouTube
+  url: https://www.youtube.com/live/LZ9E5E9kX6c?feature=shared
+  transform:
+    _target_: Utils.Sequential
+    _targets_:
+    - World.Environments.YouTube.AutoLabel
+stream: true
+device: cpu
+task: regression
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML
