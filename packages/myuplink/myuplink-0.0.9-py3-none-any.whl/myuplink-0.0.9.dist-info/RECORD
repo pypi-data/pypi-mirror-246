@@ -1,0 +1,9 @@
+myuplink/__init__.py,sha256=kfhItjhIGlJ5yTfp__7fmmfezobeDz3tRoFljC0dhgw,91
+myuplink/api.py,sha256=YPexzN2tqk8Yn6vI_m0rHWr24rGCRd7FwXz-nsAADaY,1189
+myuplink/auth.py,sha256=btIkfeSsOzLsOWVecw7V081873mbq_Ye3CAeGu_2_1c,738
+myuplink/auth_abstract.py,sha256=QVm8TcF_3fOAH2k6_6xqIjsZzwhBYsXleINSYRDdJN4,934
+myuplink/models.py,sha256=JiNAu5QIAP-UuMpKz7f_HQew7QC3hMseV6yllXhVi4g,2777
+myuplink-0.0.9.dist-info/METADATA,sha256=lFWaw4NfDMqwO_zkAYB6V2uCUV1SQEIwaI3lcFIfdqM,802
+myuplink-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+myuplink-0.0.9.dist-info/top_level.txt,sha256=0WAX64Mp-zPfyv9nSBIpvzjQ6fGj8CONv4AXkcTx3VM,9
+myuplink-0.0.9.dist-info/RECORD,,
