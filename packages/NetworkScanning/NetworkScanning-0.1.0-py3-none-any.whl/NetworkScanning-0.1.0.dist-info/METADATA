@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: NetworkScanning
+Version: 0.1.0
+Summary: A Python package for network scanning and analysis working in the backend
+Home-page: https://github.com/ZeusDevEng/NetworkScanning
+Author: Abdirisaq
+Author-email: abdirisaqmoa@outlook.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scapy >=2.5.0
+
+This package provides tools for network scanning and analysis.
