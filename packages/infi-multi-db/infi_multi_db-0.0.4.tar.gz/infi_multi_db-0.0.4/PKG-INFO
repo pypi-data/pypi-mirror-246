@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: infi_multi_db
+Version: 0.0.4
+Summary: Package for using multi DBs for Infinity team
+Author: Infinity Team
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2-binary
+
+# infi-multiDB
+
+Description of your library goes here.
+
+## Installation
+
+```bash
+pip install infi_multi_db
+```
+
+## Usage
+Here is a simple example of usage
+
+```python
+from infi_multi_db import MultiDB
+
+# Replace these values with your actual PostgreSQL connection parameters
+connection_params = {
+    "dbname": "test",
+    "user": "postgres",
+    "password": "1234",
+    "host": "localhost",
+    "port": 5432,
+}
+
+# Instantiate the InfiMultyDB with PostgreSQL as the database type
+multi_db = MultiDB(db_type="postgresql", connection_params=connection_params)
+
+# Start the connection
+multi_db.start_connection()
+
+# Example: Create a table
+table_name = "example_table"
+columns = [("id", "SERIAL"), ("name", "VARCHAR(255)"), ("age", "INTEGER")]
+multi_db.create_table(table_name, columns)
+
+# Example: Insert a record into the table
+record_data = {"name": "John Doe", "age": 30}
+multi_db.create_record(table_name, record_data)
+
+# Example: Read records from the table
+query = "age > 25"
+records = multi_db.read_records(table_name, query)
+print("Records:", records)
+records = multi_db.read_records(table_name, query, ["age"])
+print("Records:", records)
+
+
+# Example: Update a record in the table
+record_id_to_update = 1  # Replace with the actual record ID
+new_data = {"age": 31}
+multi_db.update_record(table_name, record_id_to_update, new_data)
+
+# Example: Read records after update
+records_after_update = multi_db.read_records(table_name, query)
+print("Records after update:", records_after_update)
+
+# Example: Delete the table
+multi_db.delete_table(table_name)
+
+# Stop the connection
+multi_db.stop_connection()
+```
+
+# Alternatively, you can import DB classes directly and use them. For example:
+
+```python
+from infi_multi_db import PostgreSQL
+
+# Replace these values with your actual PostgreSQL connection parameters
+connection_params = {
+    "dbname": "test",
+    "user": "postgres",
+    "password": "1234",
+    "host": "localhost",
+    "port": 5432,
+}
+
+# Instantiate the InfiMultyDB with PostgreSQL as the database type
+post_db = PostgreSQL(connection_params=connection_params)
+
+# Start the connection
+post_db.start_connection()
+
+# Example: Create a table
+table_name = "example_table"
+columns = [("id", "SERIAL"), ("name", "VARCHAR(255)"), ("age", "INTEGER")]
+post_db.create_table(table_name, columns)
+
+# Example: Insert a record into the table
+record_data = {"name": "John Doe", "age": 30}
+post_db.create_record(table_name, record_data)
+
+# Example: Read records from the table
+query = "age > 25"
+records = post_db.read_records(table_name, query)
+print("Records:", records)
+records = post_db.read_records(table_name, query, ["age"])
+print("Records:", records)
+
+
+# Example: Update a record in the table
+record_id_to_update = 1  # Replace with the actual record ID
+new_data = {"age": 31}
+post_db.update_record(table_name, record_id_to_update, new_data)
+
+# Example: Read records after update
+records_after_update = post_db.read_records(table_name, query)
+print("Records after update:", records_after_update)
+
+# Example: Delete the table
+post_db.delete_table(table_name)
+
+# Stop the connection
+post_db.stop_connection()
+
+```
