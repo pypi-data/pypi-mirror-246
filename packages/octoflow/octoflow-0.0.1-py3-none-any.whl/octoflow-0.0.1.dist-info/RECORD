@@ -1,0 +1,15 @@
+octoflow/__init__.py,sha256=Xkro_ZebRJdrDfvJmh-Y4ORHN09i-zdnVW61tjEaJBI,78
+octoflow/logging.py,sha256=rFtP76VldmZbhD-jGBc9l_tkOPzJgI1t00rlqwbH82w,1271
+octoflow/model/__init__.py,sha256=oIXwub61hIS1K4tuevSqLrIIlreKt3wIcmuzAvaYw4k,409
+octoflow/model/base.py,sha256=u7atzXZ26NH-vyj6JUT87ZAttDLQzi1Nci9dOMJ9HWc,9359
+octoflow/model/client.py,sha256=UszgPuJxx-aBBtrmGs_bCeNt6LsrPRAygHHNEPogd5c,912
+octoflow/model/experiment.py,sha256=MWfHjTjqLMey9BWKO9ARdxBn0DuuMzdvqOlXXiD8lK8,822
+octoflow/model/namespace.py,sha256=b8kFCeEs6rr0eaH7lpEhWgUAD7rjqQd9ckAO4KTFhB4,2389
+octoflow/model/run.py,sha256=pVmY_zdMVPPMDqRlftyiZq6N4PYfmLTpWW5bStG9q0Y,5770
+octoflow/model/value.py,sha256=ETbv7R4TSNdwTVxjWOgjPuCb5SYZxPPiRnmW7XfhzNY,762
+octoflow/model/variable.py,sha256=55zNhs2okyvUsq6W_EE14p6ntkS8GxF-CsMCmKUBYqQ,2175
+octoflow-0.0.1.dist-info/METADATA,sha256=WD-9nwbwTReYLSqG4Vmit8dKU0MBi4MVK_IZnuD073c,2950
+octoflow-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+octoflow-0.0.1.dist-info/licenses/AUTHORS.md,sha256=_nyr7gmaZDF67xGGovk_-Ts2PlkoU_hiYt-QcFiH9G4,65
+octoflow-0.0.1.dist-info/licenses/LICENSE,sha256=VlvusknOWEEmoaITfw4AU-JGRiGIARxhW8DOutLZOfU,1072
+octoflow-0.0.1.dist-info/RECORD,,
