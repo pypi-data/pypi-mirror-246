@@ -1,0 +1,1 @@
+from gold33423307.gold import GoldenRatio
