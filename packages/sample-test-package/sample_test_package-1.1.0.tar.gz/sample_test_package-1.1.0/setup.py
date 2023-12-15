@@ -1,0 +1,50 @@
+import os
+from setuptools import find_packages, setup
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+
+def get_file_text(file_name):
+    with open(os.path.join(here, file_name)) as in_file:
+        return in_file.read()
+setup(
+    name="sample_test_package",
+    version="1.1.0",
+    author="Suraj Patidar",
+    author_email="suraj.pysquad@gmail.com",
+    description="Sample Test Package ",
+    long_description=get_file_text("README.md"),
+    long_description_content_type="text/markdown",
+    url="https://github.com/pys-info/pys-issue-tracker",
+
+    install_requires=[line.strip() for line in open("requirements.txt")],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Build Tools",
+        "License :: OSI Approved :: MIT License",
+        "Environment :: Web Environment",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3 :: Only",
+        "Framework :: Django",
+        "Framework :: Django :: 3.0",
+        "Framework :: Django :: 3.1",
+        "Framework :: Django :: 3.2",
+        "Framework :: Django :: 4.0",
+        "Framework :: Django :: 4.1",
+        "Framework :: Django :: 4.2",
+    ],
+    keywords="django, issue, tracker, development",
+    packages=find_packages(exclude=("example")),
+    python_requires=">=3.5",
+    project_urls={
+        "Bug Reports": "https://github.com/pys-info/pys-issue-tracker/issues",
+        "Source": "https://github.com/pys-info/pys-issue-tracker",
+    },
+)
