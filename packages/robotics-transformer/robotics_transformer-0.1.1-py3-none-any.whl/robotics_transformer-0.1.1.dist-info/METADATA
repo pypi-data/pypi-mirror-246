@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: robotics-transformer
+Version: 0.1.1
+Summary: RT-1 python package. Wraps Google's robotics_transformer.
+Author: Sebastian Peralta
+Author-email: peraltas@seas.upenn.edu
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: poetry-plugin-export (>=1.6.0,<2.0.0)
+Requires-Dist: tensor2robot (>=0.1.2,<0.2.0)
+Requires-Dist: tf-agents (>=0.19.0,<0.20.0)
+Description-Content-Type: text/markdown
+
+# RT-1
+Poetry pkg wrapper for RT-1
+
