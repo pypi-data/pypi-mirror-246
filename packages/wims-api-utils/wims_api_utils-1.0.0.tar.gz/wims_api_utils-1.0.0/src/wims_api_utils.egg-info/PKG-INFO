@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: wims-api-utils
+Version: 1.0.0
+Summary: WIMS api related libraries.
+Home-page: https://github.com/katxeus/wims_api_utils
+Author: JK
+Description-Content-Type: text/markdown
+Requires-Dist: gunicorn
+Requires-Dist: Flask
+Requires-Dist: Flask-Caching
+Requires-Dist: Flask-Migrate
+Requires-Dist: Flask-Moment
+Requires-Dist: Flask-SQLAlchemy
+Requires-Dist: flask-restx
+Requires-Dist: flask-marshmallow
+Requires-Dist: flask-jwt-oidc
+Requires-Dist: python-dotenv
+Requires-Dist: psycopg2-binary
+Requires-Dist: marshmallow-sqlalchemy
+Requires-Dist: requests
+Requires-Dist: Werkzeug
+Requires-Dist: sqlalchemy_utils
+Requires-Dist: markupsafe
+Requires-Dist: PyJWT
+Requires-Dist: selenium
+Requires-Dist: selenium-wire
+
+# WIMS UTILS
+
+![Python](https://img.shields.io/badge/python-3.9-blue) ![Flask](https://img.shields.io/badge/Flask-2.3.2-blue) ![postgres](https://img.shields.io/badge/postgres-11.0-blue)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
+
+
+This Python package include all the libraries and utils needed for WIMS related services.
+
+## Usage
+
+Install using pip
+
