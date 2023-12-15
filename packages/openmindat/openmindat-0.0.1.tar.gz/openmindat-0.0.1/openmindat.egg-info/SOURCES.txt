@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+openmindat/__init__.py
+openmindat/geomaterials.py
+openmindat/geomaterials_search.py
+openmindat/localities.py
+openmindat/mindat_api.py
+openmindat/minerals_ima.py
+openmindat.egg-info/PKG-INFO
+openmindat.egg-info/SOURCES.txt
+openmindat.egg-info/dependency_links.txt
+openmindat.egg-info/not-zip-safe
+openmindat.egg-info/requires.txt
+openmindat.egg-info/top_level.txt
