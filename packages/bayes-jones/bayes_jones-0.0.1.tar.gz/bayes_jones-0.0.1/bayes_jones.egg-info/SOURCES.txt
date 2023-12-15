@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./bayes_jones/__init__.py
+./bayes_jones/common.py
+./bayes_jones/parameter_estimation.py
+./bayes_jones/types.py
+./bayes_jones/utils.py
+./bayes_jones.egg-info/PKG-INFO
+./bayes_jones.egg-info/SOURCES.txt
+./bayes_jones.egg-info/dependency_links.txt
+./bayes_jones.egg-info/requires.txt
+./bayes_jones.egg-info/top_level.txt
+./bayes_jones/tests/__init__.py
+./bayes_jones/tests/conftest.py
+./bayes_jones/tests/test_parameter_estimation.py

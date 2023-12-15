@@ -1,0 +1,13 @@
+jax
+jaxlib
+chex
+typing_extensions
+matplotlib
+numpy
+pytest
+scipy
+tensorflow_probability
+tqdm
+dm-haiku
+optax
+jaxns>=2.3.0
