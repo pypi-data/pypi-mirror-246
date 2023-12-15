@@ -1,0 +1,2 @@
+[console_scripts]
+run_after_install = src.__init__:main
