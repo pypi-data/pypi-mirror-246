@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gold33423313
+Version: 0.1
+Summary: Library untuk menghitung golden ratio
+Home-page: 
+Author: Ariel
+Author-email: smrgariel@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gold[nim]
+
+Library untuk menghitung golden ratio.
+
+## Instalasi
+
+Gunakan pip untuk menginstal library ini:
+
+```bash
+pip install gold33423313

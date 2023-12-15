@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gold33423313/__init__.py
+gold33423313/gold33423313.py
+gold33423313.egg-info/PKG-INFO
+gold33423313.egg-info/SOURCES.txt
+gold33423313.egg-info/dependency_links.txt
+gold33423313.egg-info/top_level.txt
