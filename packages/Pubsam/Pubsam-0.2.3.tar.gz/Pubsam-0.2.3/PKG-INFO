@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Pubsam
+Version: 0.2.3
+Summary: This Python package, Pubsams, simplifies the interaction with the PubChem database, allowing users to seamlessly retrieve information related to compounds, substances, assays, proteins, genes, and more. Whether you're a researcher, scientist, or developer, this package provides an easy-to-use interface to access a wealth of information stored in PubChem.
+Home-page: https://github.com/ahmed1212212/PubSam.git
+Author: Ahmed Alhilal
+Author-email: aalhilal@udel.edu
+License: MIT
+Keywords: cheminformatics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+# PubSam
+
+This Python package, PubSam, simplifies the interaction with the PubChem database, allowing users to seamlessly retrieve information related to compounds, substances, assays, proteins, genes, and more. Whether you're a researcher, scientist, or developer, this package provides an easy-to-use interface to access a wealth of information stored in PubChem.
+
+
+Ahmed Alhilal
+=============
+
+0.2.24 (14/12/2023)
+-------------------
+- First Release
