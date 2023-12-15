@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+synthetic_control/__init__.py
+synthetic_control/model.py
+synthetic_control.egg-info/PKG-INFO
+synthetic_control.egg-info/SOURCES.txt
+synthetic_control.egg-info/dependency_links.txt
+synthetic_control.egg-info/requires.txt
+synthetic_control.egg-info/top_level.txt
+synthetic_control/analysis/__init__.py
+synthetic_control/analysis/compare.py
+tests/__init__.py
+tests/test_model.py
+tests/analysis/__init__.py
+tests/analysis/test_compare.py
