@@ -1,0 +1,11 @@
+openmindat/__init__.py,sha256=DyfVFanUiyY1H5lie8Q9RhSnXXPgQ2X14HjkNhSGv8Q,3643
+openmindat/geomaterials.py,sha256=1ZkmjxKi_WZU9mwF3Eujgic_2q2kdfhUnIDseiHIFqk,38755
+openmindat/geomaterials_search.py,sha256=l4FrSu-uV5YZkn1802ZezA2abk_EVurxprXXCs20HKI,2613
+openmindat/localities.py,sha256=PtwpcNJ35TjKHiT_2n1USdF0jfeZXlHet7Yp6rCirx4,11277
+openmindat/mindat_api.py,sha256=8Od7w9Hm7klhq5CfUQcwda2VEkGVQ0seFsN6R4BKni8,5934
+openmindat/minerals_ima.py,sha256=n-RJEjrVhf2h0dqdXRnXCQT3ucETH9m418Km6mw80lQ,8608
+openmindat-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openmindat-0.0.1.dist-info/METADATA,sha256=Trb09hXJTjmQ26cfdCicikwROjz9qEEaurrbL7g1vVg,3177
+openmindat-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+openmindat-0.0.1.dist-info/top_level.txt,sha256=hZIaU2nvIqf6FZvDtrVGbhwDA1yGyUHC6zfRZhW6ah0,11
+openmindat-0.0.1.dist-info/RECORD,,
