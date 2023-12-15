@@ -1,0 +1,12 @@
+torch
+bitsandbytestransformers
+pandas
+Levenshtein
+scipy
+sklearn_pandas
+sklearn
+sentence_transformers
+googletrans==3.1.0a0
+nltk
+sacremoses
+sentencepiece
