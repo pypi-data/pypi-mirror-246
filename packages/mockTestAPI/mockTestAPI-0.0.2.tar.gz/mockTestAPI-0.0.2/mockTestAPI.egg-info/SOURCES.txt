@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+mockTest/__init__.py
+mockTest/mockTest.py
+mockTestAPI.egg-info/PKG-INFO
+mockTestAPI.egg-info/SOURCES.txt
+mockTestAPI.egg-info/dependency_links.txt
+mockTestAPI.egg-info/requires.txt
+mockTestAPI.egg-info/top_level.txt
