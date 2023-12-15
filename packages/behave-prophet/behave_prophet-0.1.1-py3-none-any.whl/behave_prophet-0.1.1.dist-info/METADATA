@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: behave-prophet
+Version: 0.1.1
+Summary: 
+Author: franperic
+Author-email: fran.peric@proton.me
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cmdstanpy (>=1.2.0,<2.0.0)
+Requires-Dist: coverage (>=7.3.2,<8.0.0)
+Requires-Dist: ipykernel (>=6.25.2,<7.0.0)
+Requires-Dist: matplotlib (>=3.7.2,<4.0.0)
+Requires-Dist: myst-parser (>=2.0.0,<3.0.0)
+Requires-Dist: nbformat (>=5.9.2,<6.0.0)
+Requires-Dist: numpy (>=1.25.2,<2.0.0)
+Requires-Dist: pandas (>=2.1.0,<3.0.0)
+Requires-Dist: plotly (>=5.17.0,<6.0.0)
+Requires-Dist: prophet (>=1.1.4,<2.0.0)
+Requires-Dist: psycopg-binary (>=3.1.12,<4.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: pyarrow (>=14.0.1,<15.0.0)
+Requires-Dist: pytest (>=7.4.3,<8.0.0)
+Requires-Dist: sphinx (>=7.2.6,<8.0.0)
+Requires-Dist: sphinx-rtd-theme (>=2.0.0,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.22,<3.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Behave-prophet (Behavior testing for Prophet)
+
+![logo](logo.png)
+
+# Prophet Behavior Testing
+
+[![codecov](https://codecov.io/gh/franperic/flair/graph/badge.svg?token=6P7C5HHPOC)](https://codecov.io/gh/franperic/flair)
+
+# Getting started
+
+Check out this [blogpost](https://franperic.github.io/posts/flair/) for an introduction to behavior testing in the context of time series foreacsting.
+
+In the subfolder `examples` you can find a simple example of how to use this library.
+
+This project was inspired by [this blogpost](https://www.jeremyjordan.me/testing-ml/) about testing machine learning models.
+
