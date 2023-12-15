@@ -1,0 +1,12 @@
+README.md
+setup.py
+pystatslib/__init__.py
+pystatslib/continuous.py
+pystatslib/discrete.py
+pystatslib/integration.py
+pystatslib/regression.py
+pystatslib.egg-info/PKG-INFO
+pystatslib.egg-info/SOURCES.txt
+pystatslib.egg-info/dependency_links.txt
+pystatslib.egg-info/requires.txt
+pystatslib.egg-info/top_level.txt
