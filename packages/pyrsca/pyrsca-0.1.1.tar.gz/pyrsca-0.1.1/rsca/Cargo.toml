@@ -1,0 +1,13 @@
+[package]
+name = "rsca"
+version = "0.1.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.21.5"
+openssl = { version = "0.10.61", features = ["vendored"] }
+percent-encoding = "2.3.1"
+snafu = "0.7.5"
+speedate = "0.13.0"
