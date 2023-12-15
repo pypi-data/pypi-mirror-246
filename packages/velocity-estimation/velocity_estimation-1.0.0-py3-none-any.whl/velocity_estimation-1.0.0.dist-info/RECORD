@@ -1,0 +1,11 @@
+velocity_estimation/__init__.py,sha256=Md8AnaSTMYbXUaGCNksikuNTsFqs-EhnzUhpR3YVPrM,100
+velocity_estimation/conditional_averaging.py,sha256=EyEmI0CLoBCLfagEyW_7E0oN0HRyMkaDJkKFjiwAYJQ,6554
+velocity_estimation/correlation.py,sha256=-Bw75oLk7CcasBHgtdnSj7cuPD7F6nA0Pd70vCQOvb0,1375
+velocity_estimation/time_delay_estimation.py,sha256=26MfN3IJ2MKpMu8Z8B-Adu-FERCp_rOzATduPhTtmo4,25688
+velocity_estimation/two_dim_velocity_estimates.py,sha256=bn3DzP10uwKviKHuUfhENMzyt2tXJtiqRBKW_M_rs1A,19215
+velocity_estimation/utils.py,sha256=JQLzTMSGEg3oz8YN_UVtOtzH74iQUs6zrwZUNfBqCy4,2972
+velocity_estimation-1.0.0.dist-info/LICENSE,sha256=XVJm5Jed75Zw0MjIxfesBJcrhmQeShcCgun6stbB_As,1088
+velocity_estimation-1.0.0.dist-info/METADATA,sha256=A7OEwz1EHOAKxXF06JMz5ZobZ6sFgFh8pPWD3okV2Bw,1833
+velocity_estimation-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+velocity_estimation-1.0.0.dist-info/top_level.txt,sha256=iqSBMcGf65N81tzooWhUyBIKtptmg_7c4M9uLDWROi8,20
+velocity_estimation-1.0.0.dist-info/RECORD,,
