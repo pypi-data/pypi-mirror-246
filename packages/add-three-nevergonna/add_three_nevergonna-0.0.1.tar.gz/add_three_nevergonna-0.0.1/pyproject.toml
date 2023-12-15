@@ -1,0 +1,11 @@
+[project]
+name = "add_three_nevergonna"
+version = "0.0.1"
+authors = [
+	{ name="nevergonna", email="nevergonna@develomail.com" },
+]
+description = "Adds three"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
