@@ -1,0 +1,15 @@
+.flake8
+.gitignore
+.pre-commit-config.yaml
+CHANGELOG.md
+LICENSE
+README.md
+RELEASE.md
+gstat_exporter.py
+pyproject.toml
+gstat_exporter.egg-info/PKG-INFO
+gstat_exporter.egg-info/SOURCES.txt
+gstat_exporter.egg-info/dependency_links.txt
+gstat_exporter.egg-info/entry_points.txt
+gstat_exporter.egg-info/requires.txt
+gstat_exporter.egg-info/top_level.txt
