@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pmakefile"
+version = "0.4.3"
+description = ""
+authors = ["thautwarm <twshere@outlook.com>"]
+readme = "README.md"
+packages = [{include = "pmakefile"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+wisepy2 = "^1.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+pmk = "pmakefile:main"
