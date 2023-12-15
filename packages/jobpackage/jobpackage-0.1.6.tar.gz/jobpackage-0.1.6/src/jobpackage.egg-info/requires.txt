@@ -1,0 +1,2 @@
+urllib
+pycryptodome>=3.15.0
