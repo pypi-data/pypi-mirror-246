@@ -1,0 +1,12 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.py
+rapid/__init__.py
+rapid/process.py
+rapid/settings.py
+resto_api.egg-info/PKG-INFO
+resto_api.egg-info/SOURCES.txt
+resto_api.egg-info/dependency_links.txt
+resto_api.egg-info/requires.txt
+resto_api.egg-info/top_level.txt
