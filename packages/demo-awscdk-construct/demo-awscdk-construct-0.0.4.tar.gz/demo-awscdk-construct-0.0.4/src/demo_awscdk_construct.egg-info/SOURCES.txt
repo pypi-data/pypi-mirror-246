@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/demo_awscdk_construct/__init__.py
+src/demo_awscdk_construct/py.typed
+src/demo_awscdk_construct.egg-info/PKG-INFO
+src/demo_awscdk_construct.egg-info/SOURCES.txt
+src/demo_awscdk_construct.egg-info/dependency_links.txt
+src/demo_awscdk_construct.egg-info/requires.txt
+src/demo_awscdk_construct.egg-info/top_level.txt
+src/demo_awscdk_construct/_jsii/__init__.py
+src/demo_awscdk_construct/_jsii/demo-awscdk-construct@0.0.4.jsii.tgz
