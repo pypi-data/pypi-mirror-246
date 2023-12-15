@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+paramiko
+psycopg2-binary
+pyarrow
+duckdb
