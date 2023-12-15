@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: jsoncsvtxt
+Version: 0.0.1
+Summary: A simple module to create/read/write/truncate...a json or csv or txt file using python
+Home-page: https://github.com/pypa/sampleproject
+Author: mohamed zarra
+Author-email: zarramohamed.05@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package. You can use to 
+create/read/write/truncate...a json or csv or txt file 
+using python.
+
+
+
+for json file
+
+creat :: jsoncreat (name)
+write :: jsonwrite (name ,added_value)
+append :: Jsonappand (name, added_value)
+read :: jsonread (name)
+delet ::  Jsondelet (name)
+
+
+
+for csv file 
+
+creat :: Csvcreat (name)
+write :: Csvwrite (name ,added_value)
+append :: Csvappand (name,added_value)
+read :: Csvread (name)
+delet :: Csvdelet (name)
+
+
+
+for txt file 
+
+creat :: Txtcreat (name)
+write :: Txtwrite (name ,added_value)
+append :: Txtappand (name,added_value)
+read :: Txtread (name)
+delet :: Txtdelet (name)
+
+
+
+if you get a problemes or you have a quoitions visite 
+our web site"https://docs.python.org/3/"
