@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/turbodcx/__main__.py
+src/turbodcx.egg-info/PKG-INFO
+src/turbodcx.egg-info/SOURCES.txt
+src/turbodcx.egg-info/dependency_links.txt
+src/turbodcx.egg-info/top_level.txt
