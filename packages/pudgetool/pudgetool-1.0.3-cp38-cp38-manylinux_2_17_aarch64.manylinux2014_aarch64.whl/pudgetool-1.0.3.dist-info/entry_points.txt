@@ -1,0 +1,2 @@
+[console_scripts]
+pg = pudgetool.main
