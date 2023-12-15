@@ -1,0 +1,8 @@
+Change Log
+==========
+
+0.1.20 (14/12/2023) 
+------------------  
+- Added Exception classes: `PxValueError`,`PxKeyError`, `PxWalletError`, `PxBlockcypherResponseError`
+
+- Added new methods: `PxWallet.retrieve_blockcypher_hd_wallet_addresses`, `PxWallet.retrieve_internal_hd_wallet`, `PxWallet.retrieve_internal_hd_wallet_key_for_path`
