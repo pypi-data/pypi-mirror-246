@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ns3_extended
+Version: 0.0.9
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: xyz <xyz@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ns3-extended
+
+## Introduction
+
+This module facilitates the creation of NS3 programs by providing standard templates for various types of programs. The templates are numbered , simplifying the process of writing NS3 programs.
+
+## Installation
+
+To install `ns3-extended`, you can use pip:
+
+```bash
+pip install ns3-extended==0.0.5
+```
