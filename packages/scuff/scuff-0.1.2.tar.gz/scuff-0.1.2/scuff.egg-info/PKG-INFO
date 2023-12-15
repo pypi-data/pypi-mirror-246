@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: scuff
+Version: 0.1.2
+Summary: A config file format and transpiler suite written in Python.
+Home-page: https://github.com/akyuute/scuff
+Author: akyuute
+License: MIT
+Project-URL: GitHub: repo, https://github.com/akyuute/scuff
+Keywords: parsing,compilers,api,ast
+Platform: Platform Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+######
+Scuff
+######
+
+*A config file format and transpiler suite written in Python.*
+
