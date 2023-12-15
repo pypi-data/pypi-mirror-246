@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: smfsb
+Version: 0.0.2
+Summary: Python code relating to the textbook, Stochastic modelling for systems biology, third edition
+Project-URL: Homepage, https://github.com/darrenjw/python-smfsb
+Project-URL: Issues, https://github.com/darrenjw/python-smfsb/issues
+Author-email: Darren Wilkinson <darrenjwilkinson@btinternet.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: python-libsbml
+Description-Content-Type: text/markdown
+
+# smfsb for python
+
+Python library for the book, Stochastic modelling for systems biology, third edition
+
+**Please note that this package is still in the early stages of development. There will be bugs, there is very limited documentation, and the coverage of the book is still quite incomplete.**
+
+## Install
+
+Latest stable version:
+
+```bash
+pip install smfsb
+```
+
+## Basic usage
+
+```python
+import smfsb
+
+print(smfsb.lv)
+stepLv = smfsb.lv.stepGillespie()
+out = smfsb.simTs(smfsb.lv.m, 0, 100, 0.1, stepLv)
+
+import matplotlib.pyplot as plt
+fig, axis = plt.subplots()
+for i in range(2):
+	axis.plot(range(out.shape[0]), out[:,i])
+
+axis.legend(smfsb.lv.n)
+fig.savefig("lv.pdf")
+```
+
+
+Also see [smfsb on PyPI](https://pypi.org/project/smfsb/)
+
+
+**Copyright (2023) Darren J Wilkinson**
+
+
