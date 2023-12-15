@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: link-duplicates
+Version: 1.0.0
+Summary: Identify duplicate files and optionally create hardlinks to save storage
+Author: Mike Foster
+License: EUPL 1.2
+Project-URL: Source, https://github.com/MusicalNinjaRandInt/duplicates
+Keywords: duplicate files hardlink windows linux mac backup
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# Duplicates
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/link-duplicates)
+![PyPI - Version](https://img.shields.io/pypi/v/link-duplicates)
+![Tests](https://github.com/MusicalNinjaRandInt/duplicates/actions/workflows/CI.yaml/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/MusicalNinjaRandInt/duplicates/graph/badge.svg?token=WGZ7PR5IXC)](https://codecov.io/gh/MusicalNinjaRandInt/duplicates)
+
+Identify duplicate files and replace them with hardlinks on any OS.
+
+Intended to be used to reduce the storage space taken up by mutliple copies of similar backups. (E.g. regular google takeouts)
+
+## Usage
+
+Can be run from a command line in Linux, MacOS or Windows and will recursively scan a directory, identify and optionally hardlink any duplicate files found.
+
+**WARNING:** Hardlinking files means if you change any one "copy" all "copies" will change.
+
+**WARNING:** If other hardlinks are present _outside_ the directories scanned, these may no longer point to the same inode as those within the scanned directories. Consider the situation as _undefined_.
+
+### Command line
+
+`dupes PATH` will display number of duplicate files found under `PATH`
+
+`dupes PATH1 PATH2 ...` will display number of duplicate files found under _and across_ `PATH1` and `PATH2`
+
+`dupes --list PATHS...` will list the full sets of duplicate files found
+
+`dupes --short PATHS...` will only list sets of duplicates where there are different file names
+
+and finally ...
+
+`dupes --link PATHS...` will replace duplicate files with hard links
+
+### Python
+
+You can also use the class `DuplicateFiles` to indentify and optionally link duplicates.
+
+Additionally `BufferedIOFile` provides a binary file which knows its `Path` and offers a `readchunk()` method similar to the text file `readline()`.
+
+## Up Next
+
+- [Keep original file mode after hardlinking](https://github.com/MusicalNinjaRandInt/duplicates/issues/13)
+- [Select leading inode for linking](https://github.com/MusicalNinjaRandInt/duplicates/issues/14)
+- [Improved exception handling from the command line](https://github.com/MusicalNinjaRandInt/duplicates/issues/15)
+
+Please vote on any issues which are important to you.
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/link-duplicates)
