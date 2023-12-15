@@ -1,0 +1,2 @@
+[console_scripts]
+run_app = battleships.main:main_function
