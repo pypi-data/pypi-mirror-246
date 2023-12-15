@@ -1,0 +1,8 @@
+inranker/__init__.py,sha256=VxaYyL7OTE8HxeFzQqaDdjHpDax9QSTRD7a0fUWhxYg,22
+inranker/rankers.py,sha256=uWf1HfWdO4hG1ZKP3DKPc21dnQvjDWEX0FK1n_OmpPU,4106
+inranker/retriever.py,sha256=DMgwOSJzxxVhdah7n-rwX5WWE1DFVDss3mkbpyHUiKk,2181
+inranker-0.1.dist-info/LICENSE,sha256=qFOjVvNr34KoR77g6xAFwTpnnqw0b4TbmP27b-bEtMk,11509
+inranker-0.1.dist-info/METADATA,sha256=mU3hdMgJuO_LujaS__4izVZ5HrwMnRJxE0sCiiWFjsE,296
+inranker-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+inranker-0.1.dist-info/top_level.txt,sha256=0kbA7Eko9gHH1VWscnCfiyd-XBdvM6adxMXi4oiwTF0,9
+inranker-0.1.dist-info/RECORD,,
