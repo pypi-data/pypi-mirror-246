@@ -1,0 +1,24 @@
+space: '{{dayahead_model_space}}'
+externalId: MultiScenarioMatrix
+name: MultiScenarioMatrix
+implements:
+- space: '{{dayahead_model_space}}'
+  externalId: BidMatrix
+  version: '{{dayaheadbid_BidMatrix_version}}'
+  type: view
+version: '{{dayaheadbid_MultiScenarioMatrix_version}}'
+properties:
+  production:
+    container:
+      space: '{{dayahead_model_space}}'
+      externalId: MultiScenarioMatrix
+      type: container
+    containerPropertyIdentifier: production
+    name: production
+  price:
+    container:
+      space: '{{dayahead_model_space}}'
+      externalId: MultiScenarioMatrix
+      type: container
+    containerPropertyIdentifier: price
+    name: price
