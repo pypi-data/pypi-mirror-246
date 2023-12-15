@@ -1,0 +1,6 @@
+README.md
+SqliteCloud.egg-info/PKG-INFO
+SqliteCloud.egg-info/SOURCES.txt
+SqliteCloud.egg-info/dependency_links.txt
+SqliteCloud.egg-info/requires.txt
+SqliteCloud.egg-info/top_level.txt
