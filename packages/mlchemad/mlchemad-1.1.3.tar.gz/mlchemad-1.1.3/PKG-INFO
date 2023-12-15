@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: mlchemad
+Version: 1.1.3
+Summary: Applicability domains for cheminformactics.
+Home-page: https://github.com/OlivierBeq/mlchemad
+Author: Olivier J.M. Béquignon
+Author-email: olivier.bequignon.maintainer@gmail.com
+Maintainer: Olivier J.M. Béquignon
+Maintainer-email: olivier.bequignon.maintainer@gmail.com
+License: MIT
+Keywords: applicability domain,cheminformatics,outlier molecule detection,out-of-distribution detection,machine learning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn>1.2.2
+Requires-Dist: pandas
+
+# MLChemAD
+Applicability domain definitions for cheminformatics modelling.
+
+# Getting Started
+
+## Install
+```
+pip install mlchemad
+```
+
+## Example Usage
+
+```python
+from mlchemad import TopKatApplicabilityDomain, data
+
+# Create the applicability domain
+app_domain = TopKatApplicabilityDomain()
+# Fit it to the training set
+app_domain.fit(data.training)
+
+# Determine outliers from multiple samples (rows) ...
+print(app_domain.contains(data.test))
+
+# ... or a unique sample
+sample = data.test[5] # Obtain the 5th row as a pandas.Series object 
+print(app_domain.contains(sample))
+```
+
+Depending on the definition of the applicability domain, some samples of the training set might be outliers themselves.
+
+# Applicability domains
+The applicability domain defined by MLChemAD as the following:
+- Bounding Box
+- PCA Bounding Box
+- Convex Hull<br/>
+  ***(does not scale well)***
+- TOPKAT's Optimum Prediction Space<br/>
+  ***(recommended with molecular descriptors)***
+- Leverage
+- Hotelling T²
+- Distance to Centroids
+- k-Nearest Neighbors<br/>
+  ***(recommended with molecular fingerprints with the use of `dist='rogerstanimoto'`, `scaling=None` and `hard_threshold=0.75` for ECFP fingerprints)***
+- Isolation Forests
+- Non-parametric Kernel Densities
