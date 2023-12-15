@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiod/__init__.py
+aiod.egg-info/PKG-INFO
+aiod.egg-info/SOURCES.txt
+aiod.egg-info/dependency_links.txt
+aiod.egg-info/not-zip-safe
+aiod.egg-info/top_level.txt
