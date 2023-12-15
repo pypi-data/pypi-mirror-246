@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ascend-io-tools
+Version: 1.0.0a1
+Summary: Ascend Platform Tools
+Home-page: https://www.ascend.io
+License: Apache-2.0
+Keywords: ascend,pipeline,data,automation,platform
+Author: Ascend.io Engineering
+Author-email: support@ascend.io
+Maintainer: Ascend.io Engineering
+Maintainer-email: support@ascend.io
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: hl7[healthcare] (>=0.4.5,<0.5.0)
+Project-URL: Ascend.io, https://www.ascend.io
+Project-URL: Ascend Developer Hub, https://developer.ascend.io
+Project-URL: Documentation, https://developer.ascend.io
+Description-Content-Type: text/x-rst
+
+=====================
+Ascend.io Tools
+=====================
+
+This package contains software that makes your Ascend.io data automation even more awesome.
+
+---------------
+Ingestion Tools
+---------------
+* HL7 to JSON
+
+---------------
+Read the Docs
+---------------
+* `Ascend.io Python SDK Documentation <https://developer.ascend.io/docs/python-sdk>`_
+* `Ascend Developer Hub <https://developer.ascend.io>`_
+* `Ascend.io <https://www.ascend.io>`_
+
