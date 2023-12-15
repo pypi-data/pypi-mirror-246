@@ -1,0 +1,16 @@
+pandas_nql/__init__.py,sha256=xzZuqiMCnpkdBrpbL_T28Ul8St80_R0X376XAz9DBSM,579
+pandas_nql/openai_api_client.py,sha256=XtPQkA49TYhCYzb6mUKPob69UYktVWoh7PBfDDLA8JA,1031
+pandas_nql/openai_sql_generator.py,sha256=tHFyrUTTHcF1vMj2fY2iY65TBgrHRM9Da7U-gzbkVbw,1553
+pandas_nql/pandas_nql.py,sha256=VY6rDazn9AKzYPuqLW7ME1x4f0GfOMPV_nD3m4b1dJ4,3245
+pandas_nql/pandas_schema_string_builder.py,sha256=nzlLNZyARIjL-9Q3le_HDLaz14FD6eHv_eBOrzKmSDw,771
+pandas_nql/schema_string_builder_base.py,sha256=zEvUsJLIhVG9jlS1aNTXXt3kDLjRpdd2bwB_w8G9ULI,340
+pandas_nql/sql_generator_base.py,sha256=a-pQxtEj9F8p3FnFHCn1VkAyV0QPqLBdg4k46Zeum2c,379
+pandas_nql/sql_schema_string_builder.py,sha256=6fvKBVmYPvg30MhoyjwWcFx--PK-574ut1f5hChk-2E,1134
+pandas_nql/t5_sql_generator.py,sha256=vA-OW8i7TiuJOmB--DsP1nGz1of57wfyr3OjRjflFkA,2249
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pandas_nql_openai_tests.py,sha256=f23O6ArcVKUZdgHGpGJh6oR-48b_fGq9FJECZTa0vCg,3049
+tests/pandas_nql_t5_tests.py,sha256=_gvOCz1yZPq7jAWE3I_jRfZxBISBAhsgT4sDht76eNA,3801
+pandas_nql-1.1.0.dist-info/METADATA,sha256=cUETlJLQAiPNfcmPTzIrEVyU6omiDBQ69Xtm8qKuYB4,7446
+pandas_nql-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pandas_nql-1.1.0.dist-info/top_level.txt,sha256=B09m9s_WExz0NNJvhtQ_6Ur89WvQvtX6S6t5vf9PH4E,17
+pandas_nql-1.1.0.dist-info/RECORD,,
