@@ -1,0 +1,7 @@
+Change Log
+==========
+
+0.1.21 (14/12/2023) 
+------------------  
+- Unexpected error: 
+    err=ValueError("Invalid format specifier ' XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' for object of type 'str'"), type(err)=<class 'ValueError'>  fixed
