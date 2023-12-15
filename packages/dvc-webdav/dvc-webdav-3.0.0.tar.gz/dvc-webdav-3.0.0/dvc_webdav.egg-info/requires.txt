@@ -1,0 +1,15 @@
+dvc
+webdav4>=0.9.3
+
+[tests]
+dvc[testing]
+pytest==6.2.5
+pytest-cov==3.0.0
+pytest-xdist==2.4.0
+pytest-mock==3.6.1
+pytest-lazy-fixture==0.6.3
+flaky==3.7.0
+wsgidav==3.1.1
+cheroot==8.6.0
+pylint==2.15.9
+mypy==0.991
