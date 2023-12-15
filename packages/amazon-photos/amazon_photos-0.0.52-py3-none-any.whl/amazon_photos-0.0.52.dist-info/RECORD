@@ -1,0 +1,10 @@
+amazon_photos/__init__.py,sha256=cA1suu_rUYjJZ4852Ode8rtgiZRiD2J07W1qIGqrbmI,29
+amazon_photos/__version__.py,sha256=ASi7OZWLBy8kSZOE81CKP1ko-OSFNBjWSkpoCjGrrfI,142
+amazon_photos/api.py,sha256=OEaflvALUR6xqpGGx7tIWi57zVnb3_ghkj4oqlMj9vg,46478
+amazon_photos/constants.py,sha256=9gzRVCPtv_Cuo1PyY5T8F4WB0yrKW8PhPypN0MuCHm4,2484
+amazon_photos/helpers.py,sha256=Nfi6fu8H6EgUgXp0RqBnGOuEIlwfuQSILqbVl3PdomA,1731
+amazon_photos-0.0.52.dist-info/LICENSE,sha256=FJeLDhxmaSoUL3lH689VsXuNfsh0A5lCN6OpgWsRKd8,1075
+amazon_photos-0.0.52.dist-info/METADATA,sha256=ctTMeKozdEo7S3joeqOZih1Hmzc3R68-nqQ7zWM8_I4,17370
+amazon_photos-0.0.52.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+amazon_photos-0.0.52.dist-info/top_level.txt,sha256=q7_SmVN7rDNUxBjj4AkN2G6kiqXJIjZXB7IRXxuRJUo,14
+amazon_photos-0.0.52.dist-info/RECORD,,
