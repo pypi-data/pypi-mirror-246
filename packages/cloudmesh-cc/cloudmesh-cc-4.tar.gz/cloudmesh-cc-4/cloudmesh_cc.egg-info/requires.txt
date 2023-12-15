@@ -1,0 +1,24 @@
+cloudmesh-cmd5
+cloudmesh-sys
+cloudmesh-inventory
+cloudmesh-configuration
+cloudmesh-progress
+pyyaml>=5.5
+psutil
+yamldb
+networkx[default]
+pydot
+graphviz
+pexpect
+fastapi[all]
+httpx
+trio
+papermill
+pandas
+markdown
+sse-starlette
+ipython
+ipykernel
+
+[:platform_system == "Windows"]
+pywin32
