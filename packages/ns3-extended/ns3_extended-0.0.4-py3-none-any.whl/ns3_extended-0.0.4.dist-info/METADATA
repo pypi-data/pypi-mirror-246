@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ns3_extended
+Version: 0.0.4
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: xyz <xyz@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Project Name
+
+## Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, odio ut sollicitudin molestie, justo odio placerat leo, sit amet ullamcorper ligula urna sed mauris. Vivamus id enim at neque congue fringilla. Nullam vel nisl urna. Sed suscipit luctus orci, eget aliquet mauris.
+
+## Installation
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, odio ut sollicitudin molestie, justo odio placerat leo, sit amet ullamcorper ligula urna sed mauris. Vivamus id enim at neque congue fringilla. Nullam vel nisl urna. Sed suscipit luctus orci, eget aliquet mauris.
+
+## Usage
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, odio ut sollicitudin molestie, justo odio placerat leo, sit amet ullamcorper ligula urna sed mauris. Vivamus id enim at neque congue fringilla. Nullam vel nisl urna. Sed suscipit luctus orci, eget aliquet mauris.
+
+## Contributing
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, odio ut sollicitudin molestie, justo odio placerat leo, sit amet ullamcorper ligula urna sed mauris. Vivamus id enim at neque congue fringilla. Nullam vel nisl urna. Sed suscipit luctus orci, eget aliquet mauris.
+
+## License
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, odio ut sollicitudin molestie, justo odio placerat leo, sit amet ullamcorper ligula urna sed mauris. Vivamus id enim at neque congue fringilla. Nullam vel nisl urna. Sed suscipit luctus orci, eget aliquet mauris.
