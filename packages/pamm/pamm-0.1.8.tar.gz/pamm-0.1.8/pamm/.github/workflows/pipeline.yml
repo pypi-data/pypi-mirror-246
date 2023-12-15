@@ -1,0 +1,23 @@
+name: code_check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Python
+        run: sudo apt install python3.11
+        run: sudo NUMBA_DISABLE_JIT = "1"
+      - name: Install requirments
+        run: sudo apt -y install python3-poetry
+        run: poetry install
+      #  run: pip install -r requirements.txt
+      - name: Pytest
+        run: pytest
