@@ -1,0 +1,2 @@
+[console_scripts]
+datatrails_receipt_scittv1 = datatrails_receipt_scitt.v1:main
