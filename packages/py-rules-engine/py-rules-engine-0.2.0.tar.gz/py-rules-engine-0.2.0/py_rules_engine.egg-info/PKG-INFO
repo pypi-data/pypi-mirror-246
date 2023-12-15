@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py-rules-engine
+Version: 0.2.0
+Summary: py-rules-engine is a simple, yet powerful rules engine written in pure Python. It allows you to define complex logical conditions and actions, either via a json file or through pythonic functions.
+Home-page: https://github.com/saurabh0719/py-rules
+Author: Saurabh Pujari
+Author-email: saurabhpuj99@gmail.com
+License: three-clause BSD
+Project-URL: Documentation, https://github.com/saurabh0719/py-rules#README
+Project-URL: Source, https://github.com/saurabh0719/py-rules
+Keywords: rules engine,rules,rule evaluatorbusiness rules
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Please visit https://github.com/saurabh0719/py-rules#README for detailed documentation!
