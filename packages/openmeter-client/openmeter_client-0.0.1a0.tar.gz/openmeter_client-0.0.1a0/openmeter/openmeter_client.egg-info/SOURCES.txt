@@ -1,0 +1,8 @@
+README.md
+setup.py
+openmeter/openmeter_client.egg-info/PKG-INFO
+openmeter/openmeter_client.egg-info/SOURCES.txt
+openmeter/openmeter_client.egg-info/dependency_links.txt
+openmeter/openmeter_client.egg-info/requires.txt
+openmeter/openmeter_client.egg-info/top_level.txt
+tests/test_demo.py
