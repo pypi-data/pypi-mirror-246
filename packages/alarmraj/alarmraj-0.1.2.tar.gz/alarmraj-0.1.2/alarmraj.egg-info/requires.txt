@@ -1,0 +1,5 @@
+wheel
+setuptools
+setuptools
+argparse
+playsound
