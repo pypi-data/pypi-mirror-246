@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cflare-ddns
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/ianpogi5/cflare-ddns
+Author: Ian Dela Cruz
+Author-email: iandc76@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests >=2.31.0
+
+UNKNOWN
+
