@@ -1,0 +1,5 @@
+pywin32
+keyring
+requests
+pystray
+Pillow
