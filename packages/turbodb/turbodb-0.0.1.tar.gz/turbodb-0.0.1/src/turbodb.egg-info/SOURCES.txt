@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/turbodb/__main__.py
+src/turbodb.egg-info/PKG-INFO
+src/turbodb.egg-info/SOURCES.txt
+src/turbodb.egg-info/dependency_links.txt
+src/turbodb.egg-info/top_level.txt
