@@ -1,0 +1,13 @@
+pytimetag/Analyser.py,sha256=E54NKGNCrPHKPDBoSP5WIF6FjQnzA3k6Zq62nfmQ4yA,3068
+pytimetag/BenchMarker.py,sha256=Pg1zMrdsu5MyDOelyi1_a_ZqA6MYYrdtIoxWsORroyY,24866
+pytimetag/__init__.py,sha256=AHMmdStPEmoPPLAubG3iEGFBBUSIkd8iM1D34lIFIII,632
+pytimetag/datablock.py,sha256=Ov4yvzlIoXBvr99ZhX07qvmghm_k6__o3f3ZNppU1z4,10541
+pytimetag/datablockserialJIT.py,sha256=jqoY_5-XtA19M-xqYHDvL--v4IwX2c5AnsRRRacZJ-0,4114
+tests/__init__.py,sha256=AHMmdStPEmoPPLAubG3iEGFBBUSIkd8iM1D34lIFIII,632
+tests/testAnalyser.py,sha256=pUIb4RLrG4Pg2Sg0SpALIj-el4PEaX5o4PJ19yuC_4Y,14449
+tests/testDataBlock.py,sha256=hi6jJJWIw60-3rvheuJleeg-_rhD-EPAX1PholgOHug,13791
+pytimetag-2.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pytimetag-2.0.0.dist-info/METADATA,sha256=RMpyiCzbhhKY5aGCBunBzr3d-UmIMx418NOx1iY28Q4,1418
+pytimetag-2.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pytimetag-2.0.0.dist-info/top_level.txt,sha256=5UsjRxi0AUEbFK4Wpc8ssK9oqcYXssZiu1fKiKNtK4o,16
+pytimetag-2.0.0.dist-info/RECORD,,
