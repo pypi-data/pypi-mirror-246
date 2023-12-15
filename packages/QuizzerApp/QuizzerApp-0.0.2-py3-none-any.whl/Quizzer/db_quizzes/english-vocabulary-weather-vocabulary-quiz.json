@@ -1,0 +1,117 @@
+{
+    "quizname": "Weather Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "If the weather forecast says it'll be \"overcast\", it means it'll be ",
+            "answer": "cloudy",
+            "choices": {
+                "1": "rainy",
+                "2": "windy",
+                "3": "cloudy"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which word best describes very cold weather?",
+            "answer": "freezing",
+            "choices": {
+                "1": "cool",
+                "2": "freezing",
+                "3": "chilly"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "A storm with lots of snow and very strong winds is called ",
+            "answer": "a blizzard",
+            "choices": {
+                "1": "a blizzard",
+                "2": "a thunderstorm",
+                "3": "a hurricane"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "It was a ________ night, so we lay on our backs and looked at the stars.",
+            "answer": "clear",
+            "choices": {
+                "1": "foggy",
+                "2": "clear",
+                "3": "slushy"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The temperature at which water freezes is 32 degrees ",
+            "answer": "Fahrenheit",
+            "choices": {
+                "1": "Celsius",
+                "2": "Centigrade",
+                "3": "Fahrenheit"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which results from air pollution?",
+            "answer": "smog",
+            "choices": {
+                "1": "fog",
+                "2": "smog",
+                "3": "sleet"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "If it's raining very lightly, it's",
+            "answer": "drizzling",
+            "choices": {
+                "1": "drizzling",
+                "2": "puddling",
+                "3": "piddling"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "If it's hot with a lot of moisture in the air, we can say it's ",
+            "answer": "humid",
+            "choices": {
+                "1": "rainy",
+                "2": "boiling",
+                "3": "humid"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is not a form of precipitation?",
+            "answer": "lightning",
+            "choices": {
+                "1": "rain",
+                "2": "lightning",
+                "3": "hail"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do we use to measure the temperature?",
+            "answer": "a thermometer",
+            "choices": {
+                "1": "a thermometer",
+                "2": "a meteorologist",
+                "3": "a wind chill factor"
+            }
+        }
+    ]
+}
