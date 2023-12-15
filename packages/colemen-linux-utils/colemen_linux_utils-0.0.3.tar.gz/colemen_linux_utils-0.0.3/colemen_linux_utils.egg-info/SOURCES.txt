@@ -1,0 +1,14 @@
+colemen_linux_utilities.py
+setup.py
+colemen_linux_utils/ColemenLinuxUtils.py
+colemen_linux_utils/__init__.py
+colemen_linux_utils/clipboard.py
+colemen_linux_utils/keys.py
+colemen_linux_utils.egg-info/PKG-INFO
+colemen_linux_utils.egg-info/SOURCES.txt
+colemen_linux_utils.egg-info/dependency_links.txt
+colemen_linux_utils.egg-info/requires.txt
+colemen_linux_utils.egg-info/top_level.txt
+colemen_linux_utils/settings/__init__.py
+colemen_linux_utils/settings/control.py
+colemen_linux_utils/settings/types.py
