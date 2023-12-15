@@ -1,0 +1,9 @@
+aiearth-core>=1.0.1
+numpy~=1.24.3
+oss2~=2.18.0
+tqdm~=4.65.0
+pyproj~=3.5.0
+matplotlib~=3.7.1
+pystac~=1.7.3
+requests~=2.31.0
+shapely~=2.0.1
