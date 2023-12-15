@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "intakeinformer"
+version = "1.0.0"
+description = "A nutritional tracker warpped around the USDA FoodData Central API. The warpper allows users to track their daily food intake and analyze the nutritional content of their diet based on the USDA food database and their own selections."
+authors = ["Junchen Xiong"]
+license = "MIT"
+readme = "README.md"
+
+documentation = 'https://intakeinformer.readthedocs.io'
+homepage = "https://github.com/JunchenX0809/IntakeInformer.git"
+repository = "https://github.com/JunchenX0809/IntakeInformer.git"
+ 
+# Include non-code files in the package
+include = ["src/intakeinformer/data/dri_combined.pkl"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.1.4"
+requests = "^2.31.0"
+matplotlib = "^3.8.2"
+beautifulsoup4 = "^4.9.3"
+numpy = "^1.26.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+myst-nb = "^1.0.0"
+sphinx-autoapi = "^3.0.0"
+sphinx-rtd-theme = "^2.0.0"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
