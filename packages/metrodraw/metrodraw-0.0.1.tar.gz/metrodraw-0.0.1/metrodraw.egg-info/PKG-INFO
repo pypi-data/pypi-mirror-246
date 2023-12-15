@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: metrodraw
+Version: 0.0.1
+Summary: Allows you to create metro maps.
+Home-page: https://github.com/kavigupta/metrodraw
+Author: Kavi Gupta
+Author-email: metrodraw@kavigupta.org
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib==3.7.4
