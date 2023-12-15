@@ -1,0 +1,12 @@
+xibs/__init__.py,sha256=QMsZpwKhIhppiL43lxBVg8oj0pE1FO84E_YgsbpaGbU,1114
+xibs/_old_michalis.py,sha256=pwLRXoQsWn_y5Wa96LCRP8tyFZgzwbEoVla24Jg9p3U,25135
+xibs/analytical.py,sha256=Y_SPX40kFJzgEJNOvL9d4vK6lI3TQRA2fhmAnio6fwU,68282
+xibs/dispatch.py,sha256=O6xss2DdfAc3666yJxiP79cbRcLCgDJbJwgzMeBA_v4,4419
+xibs/formulary.py,sha256=tRU0V5CaOh2cCwRsrJY2rsyl4dCJFpLZvv8yhhIUDx8,8141
+xibs/inputs.py,sha256=-FOMttvcHDXfBSpDL6CeL1wktlqFd7WtmnhrYQOsQ2Q,15008
+xibs/kicks.py,sha256=NnX26NU9xd-4dPBFn2iGokBbN7ZjVtQV4ZnfFeVI3Ek,4329
+xibs/version.py,sha256=krFMEDl3mLgliQZqZO-cnylAFdhdi_01QH8F78U5fB0,631
+xibs-0.3.0.dist-info/METADATA,sha256=GhvxlQOQ0b2vW1tQ5YS33y_GcBGo3SOc3Gl5ZUyENEo,3456
+xibs-0.3.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+xibs-0.3.0.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+xibs-0.3.0.dist-info/RECORD,,
