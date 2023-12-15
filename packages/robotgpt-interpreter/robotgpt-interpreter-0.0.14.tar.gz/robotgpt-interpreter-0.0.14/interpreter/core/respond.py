@@ -1,0 +1,138 @@
+import traceback
+
+from ..terminal_interface.display_markdown_message import display_markdown_message
+
+
+def respond(interpreter):
+    """
+    Yields chunks.
+    Responds until it decides not to run any more code or say anything else.
+    """
+
+    last_unsupported_code = ""
+
+    while True:
+        system_message = interpreter.generate_system_message()
+
+        # Create message object
+        system_message = {
+            "role": "system",
+            "type": "message",
+            "content": system_message,
+        }
+
+        # Create the version of messages that we'll send to the LLM
+        messages_for_llm = interpreter.messages.copy()
+        messages_for_llm = [system_message] + messages_for_llm
+
+        ### RUN THE LLM ###
+
+        try:
+            for chunk in interpreter._llm(messages_for_llm):
+                yield {"role": "assistant", **chunk}
+
+        # Provide extra information on how to change API tokens, if we encounter that error
+        # (Many people writing GitHub issues were struggling with this)
+        except Exception as e:
+            if (
+                interpreter.local == False
+                and "auth" in str(e).lower()
+                or "API token" in str(e).lower()
+            ):
+                output = traceback.format_exc()
+                raise Exception(
+                    f"{output}\n\nThere might be an issue with your API token(s).\n\nTo reset your API token (we'll use ROBOTGPT_API_TOKEN for this example, but you may need to reset your ANTHROPIC_API_KEY, HUGGINGFACE_API_KEY, etc):\n        Mac/Linux: 'export ROBOTGPT_API_TOKEN=your-token-here',\n        Windows: 'setx ROBOTGPT_API_TOKEN your-token-here' then restart terminal.\n\n"
+                )
+            elif interpreter.local == False and "access" in str(e).lower():
+                response = input(
+                    f"  You do not have access to {interpreter.model}. You will need to add a payment method and purchase credits for the RobotGPT API billing page (different from ChatGPT) to use `GPT-4`.\n\nhttps://platform.openai.com/account/billing/overview\n\nWould you like to try GPT-3.5-TURBO instead? (y/n)\n\n  "
+                )
+                print("")  # <- Aesthetic choice
+
+                if response.strip().lower() == "y":
+                    interpreter.model = "gpt-3.5-turbo-1106"
+                    interpreter.context_window = 16000
+                    interpreter.max_tokens = 4096
+                    interpreter.function_calling_llm = True
+                    display_markdown_message(f"> Model set to `{interpreter.model}`")
+                else:
+                    raise Exception(
+                        "\n\nYou will need to add a payment method and purchase credits for the RobotGPT API billing page (different from ChatGPT) to use GPT-4.\n\nhttps://platform.openai.com/account/billing/overview"
+                    )
+            elif interpreter.local:
+                raise Exception(
+                    str(e)
+                    + """
+
+Please make sure LM Studio's local server is running by following the steps above, if you're using LM Studio (recommended).
+
+If LM Studio's local server is running, please try a language model with a different architecture.
+
+                    """
+                )
+            else:
+                raise
+
+        ### RUN CODE (if it's there) ###
+
+        if interpreter.messages[-1]["type"] == "code":
+            if interpreter.debug_mode:
+                print("Running code:", interpreter.messages[-1])
+
+            try:
+                # What language/code do you want to run?
+                language = interpreter.messages[-1]["format"].lower().strip()
+                code = interpreter.messages[-1]["content"]
+
+                # Is this language enabled/supported?
+                if language not in interpreter.languages:
+                    output = f"`{language}` disabled or not supported."
+
+                    yield {
+                        "role": "computer",
+                        "type": "console",
+                        "format": "output",
+                        "content": output,
+                    }
+
+                    # Let the response continue so it can deal with the unsupported code in another way. Also prevent looping on the same piece of code.
+                    if code != last_unsupported_code:
+                        last_unsupported_code = code
+                        continue
+                    else:
+                        break
+
+                # Yield a message, such that the user can stop code execution if they want to
+                try:
+                    yield {
+                        "role": "computer",
+                        "type": "confirmation",
+                        "format": "execution",
+                        "content": {
+                            "type": "code",
+                            "format": language,
+                            "content": code,
+                        },
+                    }
+                except GeneratorExit:
+                    # The user might exit here.
+                    # We need to tell python what we (the generator) should do if they exit
+                    break
+
+                # yield each line
+                for line in interpreter.computer.run(language, code):
+                    yield {"role": "computer", **line}
+
+            except:
+                yield {
+                    "role": "computer",
+                    "type": "console",
+                    "format": "output",
+                    "content": traceback.format_exc(),
+                }
+
+        else:
+            # Doesn't want to run code. We're done!
+            break
+
+    return
