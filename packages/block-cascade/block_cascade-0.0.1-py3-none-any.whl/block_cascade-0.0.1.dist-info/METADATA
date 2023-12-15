@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: block-cascade
+Version: 0.0.1
+Summary: Library for model training in multi-cloud environment.
+Author: Block
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cloudml-hypertune (==0.1.0.dev6)
+Requires-Dist: cloudpickle (>=2.0,<3.0)
+Requires-Dist: databricks-cli (>=0.17.7)
+Requires-Dist: gcsfs (>=2023.6.0,<2024.0.0)
+Requires-Dist: google-auth (>=2.23.2,<3.0.0)
+Requires-Dist: google-cloud-aiplatform (>=1.22.1)
+Requires-Dist: google-cloud-monitoring (>=2.16.0,<3.0.0)
+Requires-Dist: google-cloud-resource-manager (>=1.10.4,<2.0.0)
+Requires-Dist: importlib_resources ; python_version < "3.9"
+Requires-Dist: prefect (>=1.0,<2.14)
+Requires-Dist: pydantic (>=1.10.0,<2.0.0)
+Requires-Dist: s3fs (>=2023.6.0,<2024.0.0)
+Description-Content-Type: text/markdown
+
+# cascade
