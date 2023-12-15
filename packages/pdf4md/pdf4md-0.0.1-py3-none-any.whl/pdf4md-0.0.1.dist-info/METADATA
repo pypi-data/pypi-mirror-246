@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pdf4md
+Version: 0.0.1
+Summary: convert markdown to pdf
+Home-page: https://github.com/luzhixing12345/pdf4md
+License: MIT
+Author: luzhixing12345
+Author-email: luzhixing12345@163.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: MarkdownParser (>=0.5.20,<0.6.0)
+Requires-Dist: syntaxlight
+Project-URL: Documentation, https://luzhixing12345.github.io/pdf4md/
+Project-URL: Repository, https://github.com/luzhixing12345/pdf4md
+Description-Content-Type: text/markdown
+
+# pdf4md
+
+markdown 转 pdf
+
