@@ -1,0 +1,5 @@
+setup.py
+jobpackage.egg-info/PKG-INFO
+jobpackage.egg-info/SOURCES.txt
+jobpackage.egg-info/dependency_links.txt
+jobpackage.egg-info/top_level.txt
