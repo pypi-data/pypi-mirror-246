@@ -1,0 +1,13 @@
+quizapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quizapp/main.py,sha256=pwzgCJ9NrLfwYBsgIBuX5nndZCEDo0_PyG5Yv0T4QWg,397
+quizapp/student/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quizapp/student/readquiz.py,sha256=zdYGQe93FJaCqhDTFuxWPxH98oqIfsfU4M51niWPr1c,3774
+quizapp/student/takequiz.py,sha256=zKlhAzfPM_Fsq3nEethFo2ZCl0_3lOS1eB6a3RT7seM,2803
+quizapp/teacher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quizapp/teacher/checkstudentscores.py,sha256=rgGbjIj0E0Z3S8CQkKdomKbcSr8F0Tr5_t7tfJBSlaI,5828
+quizapp/teacher/createquiz.py,sha256=_-Vqat5DFdWyPeqyvOwzdQuTrblBMiAG7qtLaB9RlW8,3925
+quizapp-1.0.0.dist-info/LICENCE.txt,sha256=YYqxvPdwJVOd2xstlZObKEIbflrX27HslbcMRZXQqQE,1069
+quizapp-1.0.0.dist-info/METADATA,sha256=pxrfb4J_fk8hxzJLS1DWd5A81YslKrtKUjH3iOspBGc,5400
+quizapp-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+quizapp-1.0.0.dist-info/top_level.txt,sha256=Sxonu5oQL7W5Kpn9rKozL5AIKbB2EiZBhjvBQ6XzR2I,8
+quizapp-1.0.0.dist-info/RECORD,,
