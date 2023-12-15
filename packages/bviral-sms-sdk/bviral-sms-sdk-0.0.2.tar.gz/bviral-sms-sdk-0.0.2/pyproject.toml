@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "bviral-sms-sdk"
+version = "0.0.1"
+description = "A Python wrapper around for Social Media Data API."
+authors = [
+  { name="Cherif Mohamed Yassine", email="senpaireymes@gmail.com" },
+]
+license = "MIT"
+keywords = ["sms-api", "sms-sdk"]
+readme = "README.rst"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+]
+
+packages = [
+    { include = "smsapi" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^22.4.2"
+requests = "^2.24.0"
+dataclasses-json = [
+    {version = "^0.5.3", python = "<3.7"},
+    {version = "^0.6.0", python = ">=3.7"}
+]
+
+[tool.poetry.dev-dependencies]
+responses = [
+    {version = "^0.17.0", python = "<3.7"},
+    {version = "^0.23.0", python = ">=3.7"}
+]
+pytest = [
+    {version = "^6.2", python = "<3.7"},
+    {version = "^7.1", python = ">=3.7"}
+]
+pytest-cov = [
+    {version = "^2.10.1", python = "<3.7"},
+    {version = "^3.0.0", python = ">=3.7"}
+]
+
+[build-system]
+requires = ["poetry-core>=0.0.1"]
+build-backend = "poetry.core.masonry.api"
