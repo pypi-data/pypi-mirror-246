@@ -1,0 +1,10 @@
+README
+setup.py
+forsee/__init__.py
+forsee/args_handler.py
+forsee/forsee.py
+forsee/forsee_functions.py
+forsee.egg-info/PKG-INFO
+forsee.egg-info/SOURCES.txt
+forsee.egg-info/dependency_links.txt
+forsee.egg-info/top_level.txt
