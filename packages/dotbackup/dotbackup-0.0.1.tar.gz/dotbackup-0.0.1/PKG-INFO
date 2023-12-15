@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dotbackup
+Version: 0.0.1
+Summary: YAML config based backup utility. Easy to use yet flexible. With a primary focus on dotfile backup & setup, but not limited to dotfiles.
+Project-URL: Homepage, https://github.com/jaxvanyang/dotbackup
+Project-URL: Issues, https://github.com/jaxvanyang/dotbackup/issues
+Author-email: Jax Young <jaxvanyang@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# dotbackup
+
+YAML config based backup utility. Easy to use yet flexible. With a primary focus on
+dotfile backup & setup, but not limited to dotfiles.
