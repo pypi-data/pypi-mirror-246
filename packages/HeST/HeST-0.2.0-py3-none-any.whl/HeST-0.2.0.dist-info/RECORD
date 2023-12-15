@@ -1,0 +1,15 @@
+HeST/Amherst_Example_Detector.py,sha256=QffRo18L1HzfRS3yB79pzUUGyunBcEVOzMfXKeU26pk,2026
+HeST/Detection.py,sha256=kcjpsYFYj1ildkPbqnqoUummF2ozjEtXip4yxf6wfJk,32326
+HeST/HeST_Core.py,sha256=K_KObv5Ag-cH8seTWcv-m6pVNdJrf2cS1fJBaDk0V04,10596
+HeST/LBNL_Example_Detector.py,sha256=0VjIQZkKEw41GGr4lifdB-Z2EWBOUBhzNfDVv_RtdRA,7986
+HeST/LCE_map_amherstExample_41x41x30_noReflections.npy,sha256=ut5eB5WKlFF8t0Ywgr8B7sWU7SL9IjJQhQvjj4_KFpk,403568
+HeST/LCE_map_lbnlExample_51x51x30_noReflections.npy,sha256=22xybVmaMBlPSLCyaMrRKeX9su33euEYM7_vEUd2GS4,4994048
+HeST/QP_map_amherstExample_41x41x30_noReflections.npy,sha256=yGnRfT-s15OEUNdhIg7hOedAn9An1qGX5A6mgJH0I7Q,403568
+HeST/QP_map_lbnlExample_51x51x30_noReflections.npy,sha256=zBXx3aP-z58Dc7nS0JrXLiKpq9eV9TD23T2b15msP6c,4994048
+HeST/WIMP_Generation.py,sha256=MIRVpBsOD_V7WwTxlR9PiQ8tVVk4p1ijJDDQ0bjZlWo,5979
+HeST/__init__.py,sha256=fKBhH6omMvPtgyMapW1hmZA1wAP3rfLNTdx9QGz-1mc,180
+HeST-0.2.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+HeST-0.2.0.dist-info/METADATA,sha256=nUPRQ9aCv2A4QpyPZcILLIz1I-NKb06TsZgJxHrlF2U,157
+HeST-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+HeST-0.2.0.dist-info/top_level.txt,sha256=4QAE6KDr7A1Zs-ewiC3q4uXuq5p9AWUjfuzXUc7n4BM,5
+HeST-0.2.0.dist-info/RECORD,,
