@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: kdna
+Version: 0.1.0
+Summary: Project providing a secure way to backup and restore files on a remote server.
+Home-page: https://github.com/somoslosdorados/KDNA
+License: MIT
+Author: D3 2023-2026
+Author-email: polytech-do3@etu.umontpellier.fr
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: fabric (>=3.2.2,<4.0.0)
+Requires-Dist: pycryptodome (>=3.19.0,<4.0.0)
+Project-URL: Repository, https://github.com/somoslosdorados/KDNA
+Description-Content-Type: text/markdown
+
+# KDNA
+
+This is the official repository for the DO2023-2026 python CLI backup project
+
+## Init for dev
+
+After cloning the repo you will need to install all dependencies
+
+```bash
+# install deps
+poetry install
+```
+
+## Usage
+
+
+### Start the app
+```bash
+poetry run python KDNA/__init__.py
+```
+### Run the tests
+```bash
+poetry run pytest
+```
+### Run the pipeline
+```bash
+poetry run tox run-parallel
+```
+```bash
+#run the pipeline with a specific env
+poetry run tox run-parallel -e (env)
+```
+### Build the documentation
+```bash
+sphinx-apidoc -f -o docs/source kdna/
+sphinx-build -M html docs/source/ docs/build/
+```
+
+## Package added
+    - click             # Parseur
+    - fabric            # SSH client
+    - pycryptodome      # Encrypt tool
+    - pylint            # Linter
+    - mypy              # Type checker
+    - pytest            # Test framework
+    - tox               # Test runner
+    - tox-gh-actions    # Tox github action
+    - sphinx            # Documentation generator
+    - sphinx-rtd-theme  # Read the docs theme
+    - sphinx-autoapi    # Auto documentation generator
+    - m2r2              # Markdown to reStructuredText converter
+    - pydocstyle        # Docstring style checker
+    - chardet           # Encoding detector
+
