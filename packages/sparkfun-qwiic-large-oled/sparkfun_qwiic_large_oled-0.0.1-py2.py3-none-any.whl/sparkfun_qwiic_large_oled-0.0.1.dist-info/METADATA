@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sparkfun-qwiic-large-oled
+Version: 0.0.1
+Summary: SparkFun Electronics Qwiic Large OLED package
+Home-page: http://www.sparkfun.com/qwiic
+Author: SparkFun Electronics
+Author-email: info@sparkfun.com
+License: MIT
+Keywords: electronics,maker
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: sparkfun-qwiic-i2c
+Requires-Dist: sparkfun-qwiic-oled-base
+
+Qwiic Large OLED
+========================
+
+This package provdes support for a 128 x 64 OLED Display board.
