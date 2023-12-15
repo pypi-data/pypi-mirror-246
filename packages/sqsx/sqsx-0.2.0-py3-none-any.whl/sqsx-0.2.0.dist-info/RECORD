@@ -1,0 +1,12 @@
+sqsx/__init__.py,sha256=HkZfGHkiYTxEEZXb9hsZWTgo-gwtVsCVKkLOJY5sETc,47
+sqsx/helper.py,sha256=qv8KaET0tj3wwx67VUuw97ZDNlAKckko9jBgs_Wta08,406
+sqsx/queue.py,sha256=Ylw_3pacRB_MXS215ydCk_WruS2buKky5UK60es4fwE,5870
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=yeDKF3aU9yu-FEHQ0SECeSqO2HZfM7TeKqjFI4n2Sz0,1867
+tests/test_helper.py,sha256=rl4i6ygA2ALLWRPhCXK0X7XK2sakPqL8SD1L4gEv2nI,954
+tests/test_queue.py,sha256=5p2Qy0Z-d66V-gfzn-wBejQGHJockcKGyZl8R2Npwoc,7199
+sqsx-0.2.0.dist-info/LICENSE,sha256=XVkDo8D3eccnu9aNeoYyb8J0be6WAUqIMZJHxvZ8M8s,1073
+sqsx-0.2.0.dist-info/METADATA,sha256=hsZ8Axs1a4k37ORkx4tFozc1HlUX8HrGqdc1FMN-g5M,6465
+sqsx-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sqsx-0.2.0.dist-info/top_level.txt,sha256=T-ZWgq8X699WkEa866NHYc25GXZHpplwOa6bhgc_whw,11
+sqsx-0.2.0.dist-info/RECORD,,
