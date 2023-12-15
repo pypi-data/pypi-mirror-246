@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: latexcheck
+Version: 1.2.5
+Summary: LaTeX linter
+Home-page: http://github.com/dainiak/latexcheck-py/
+Author: Alex Dainiak
+Author-email: dainiak@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: texsoup>=0.3.1
