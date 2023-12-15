@@ -1,0 +1,5 @@
+export HOLO_HOST="11.160.224.236"
+export HOLO_PORT=46261
+export HOLO_USER="LTAISaLyRRJr2gqx"
+export HOLO_PASSWORD="DtsSmfmC9JQBZWsWIADMrod4MNWyj2"
+export HOLO_DBNAME="postgres"
