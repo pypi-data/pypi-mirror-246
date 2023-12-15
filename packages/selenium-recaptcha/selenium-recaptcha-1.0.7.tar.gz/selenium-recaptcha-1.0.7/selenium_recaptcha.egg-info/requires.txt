@@ -1,0 +1,4 @@
+requests
+ffmpeg-downloader
+openai-whisper
+selenium
