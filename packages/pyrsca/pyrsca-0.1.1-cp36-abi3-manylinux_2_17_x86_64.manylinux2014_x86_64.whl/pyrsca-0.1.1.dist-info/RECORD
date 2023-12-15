@@ -1,0 +1,7 @@
+pyrsca-0.1.1.dist-info/METADATA,sha256=YU5jzI9ECIw3FsoRcnibYGwAu_mRcUbPokJt0qSHhlE,360
+pyrsca-0.1.1.dist-info/WHEEL,sha256=S7_Apapsc1asWb_552GqkbEItXmT2HUOSVy07WE0uLg,127
+pyrsca/__init__.py,sha256=KPugnKZOAG-eIMpOFiNUIf_ofWoIbUO5O43L_u5RaMM,26
+pyrsca/pyrsca.pyi,sha256=o8sdZ7VYjpquT_zvD7WatLgPhAZM2F34mHNYuzUzLus,337
+pyrsca/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrsca/pyrsca.abi3.so,sha256=ZJVeGpYAZE7hy9w4t1e5cMVVbhyiFXQaOT2nG5kXB3Y,9422728
+pyrsca-0.1.1.dist-info/RECORD,,
