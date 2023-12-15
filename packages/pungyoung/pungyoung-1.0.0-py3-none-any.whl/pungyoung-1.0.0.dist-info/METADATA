@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pungyoung
+Version: 1.0.0
+Summary: yang wheel
+Home-page: https://github.com/pungyoung
+Author: yang peng
+Author-email: 89787265@qq.com
+License: MIT
+Requires-Python: >=3.8
+
