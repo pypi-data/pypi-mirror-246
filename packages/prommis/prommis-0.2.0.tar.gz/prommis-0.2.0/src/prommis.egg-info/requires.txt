@@ -1,0 +1,2 @@
+idaes-pse>=2.3.0rc1
+pyomo>=6.7.0
