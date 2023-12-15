@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Data533-superman-Jade
+Version: 0.0.9
+Summary: An example package
+Author-email: Han <ch2023@student.ubc.ca>, Jade Yu <yujinxin01@gmail.com>
+Project-URL: Homepage, https://github.com/Eden33333/Project-Step-3
+Project-URL: Issues, https://github.com/Eden33333/Project-Step-3/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Project-Step-3
