@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flexi-socket
+Version: 0.0.4
+Summary: Socket wrapper for asyncio
+Home-page: https://github.com/panos-stavrianos/flexi-socket
+Author: Panos Stavrianos
+Author-email: panos@orbitsystems.gr
+License: MIT license
+Keywords: flexi_socket,socket,asyncio,async,tcp,udp,socket wrapper
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# flexi-socket
+
