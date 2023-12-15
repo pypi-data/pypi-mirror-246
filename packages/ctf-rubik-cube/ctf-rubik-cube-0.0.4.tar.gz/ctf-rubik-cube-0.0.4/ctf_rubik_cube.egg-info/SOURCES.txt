@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ctf_rubik_cube.egg-info/PKG-INFO
+ctf_rubik_cube.egg-info/SOURCES.txt
+ctf_rubik_cube.egg-info/dependency_links.txt
+ctf_rubik_cube.egg-info/top_level.txt
+rubik/__init__.py
+rubik/cube.py
+rubik/maths.py
+rubik/optimize.py
+rubik/patterns.py
+rubik/solve.py
+tests/test.py
