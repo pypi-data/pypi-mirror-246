@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<calendar
+    dtstart="dtstart"
+    dtend="dtend"
+    mode="week">
+    <field name="calendar"/>
+    <field name="summary"/>
+    <field name="location"/>
+</calendar>

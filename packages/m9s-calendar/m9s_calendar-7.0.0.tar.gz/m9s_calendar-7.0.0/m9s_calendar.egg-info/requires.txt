@@ -1,0 +1,9 @@
+python-dateutil
+python-sql
+pytz
+trytond<7.1,>=7.0
+trytond_company<7.1,>=7.0
+vobject
+
+[test]
+proteus<7.1,>=7.0

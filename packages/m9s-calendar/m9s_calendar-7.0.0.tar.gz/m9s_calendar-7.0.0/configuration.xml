@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+        <menuitem
+            name="Configuration"
+            parent="menu_calendar"
+            sequence="0"
+            id="menu_configuration"
+            icon="tryton-settings"/>
+        <record model="ir.ui.menu-res.group"
+            id="menu_configuration_group_calendar_admin">
+            <field name="menu" ref="menu_configuration"/>
+            <field name="group" ref="group_calendar_admin"/>
+        </record>
+
+        <record model="ir.ui.view" id="calendar_model_form_view">
+            <field name="model">calendar.model</field>
+            <field name="type">form</field>
+            <field name="name">calendar_model_form</field>
+        </record>
+        <record model="ir.ui.view" id="calendar_model_tree_view">
+            <field name="model">calendar.model</field>
+            <field name="type">tree</field>
+            <field name="name">calendar_model_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_calendar_model">
+            <field name="name">Calendar Models</field>
+            <field name="res_model">calendar.model</field>
+            <field name="search_value"></field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_calendar_model_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="calendar_model_tree_view"/>
+            <field name="act_window" ref="act_calendar_model"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_calendar_model_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="calendar_model_form_view"/>
+            <field name="act_window" ref="act_calendar_model"/>
+        </record>
+        
+        <menuitem action="act_calendar_model" id="menu_calendar_model"
+            parent="menu_configuration" sequence="20"/>
+
+        <record model="ir.rule.group" id="rule_group_calendar_model_companies">
+            <field name="name">User in companies</field>
+            <field name="model" search="[('model', '=', 'calendar.model')]"/>
+            <field name="global_p" eval="True"/>
+        </record>
+        <record model="ir.rule" id="rule_calendar_model_companies">
+            <field name="domain"
+                eval="[('company', 'in', Eval('companies', []))]"
+                pyson="1"/>
+            <field name="rule_group" ref="rule_group_calendar_model_companies"/>
+        </record>
+
+       <record model="ir.model.access" id="access_calendar_model">
+            <field name="model" search="[('model', '=', 'calendar.model')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_calendar_model_group_calendar_admin">
+            <field name="model" search="[('model', '=', 'calendar.model')]"/>
+            <field name="group" ref="group_calendar_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.model.access" id="access_calendar_model_group_calendar">
+            <field name="model" search="[('model', '=', 'calendar.model')]"/>
+            <field name="group" ref="group_calendar"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+    </data>
+</tryton>

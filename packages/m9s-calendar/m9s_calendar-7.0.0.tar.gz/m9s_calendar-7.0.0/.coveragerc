@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.calendar
+
+[report]
+omit = */tests/*,*/setup.py

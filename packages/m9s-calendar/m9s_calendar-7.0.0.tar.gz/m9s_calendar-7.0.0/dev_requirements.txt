@@ -1,0 +1,10 @@
+# Install development requirements
+
+tox
+coverage
+coverage-badge
+flake8
+
+-r requirements.txt
+# #4880
+git+https://gitlab.com/mbsolutions/tryton-mono.git@7.0-test#subdirectory=proteus
