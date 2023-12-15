@@ -1,0 +1,12 @@
+src/funnSV/__init__.py,sha256=-NZlKq5AR4gt84Ml0AVAezCUI6vp8Zi_fWRdX2qaULs,169
+src/funnSV/annotation_sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/funnSV/annotation_sources/annotations_handler.py,sha256=W-1I1pCxmfz8guaH4D9bjz9Bz72j787TQai3R6scq3g,10842
+src/funnSV/annotation_sources/transcriptome.py,sha256=HjAEIRfEKq0OL5oWlBQFv3V-6BMGcAFig83paQjPLvk,2402
+src/funnSV/functional_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/funnSV/functional_analysis/structural_variants_functional_annotator.py,sha256=LPDSClEipP2Lo2lNTZ1p6isXFDiUljpU3SU_ecuXBmA,10651
+src/funnSV/funnSV_main.py,sha256=wxTygSEWraUZfr6hxddleYx4t1IlF0fAaHic4l_zvvY,4395
+funnsv-0.0.2.dist-info/LICENSE.txt,sha256=rYTDePoIgdMn0acfMxaX0v2V2tnTi-Ht5n3zv63b92w,1105
+funnsv-0.0.2.dist-info/METADATA,sha256=bkXLlrQNZEPUpNvkYQx0cLyp1swO5_lhrHPSE7GLUGM,2801
+funnsv-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+funnsv-0.0.2.dist-info/entry_points.txt,sha256=X-dlTHcbE-fVX1fJ1zyPcXUSigAWkYGjR7eWAnoBKZE,60
+funnsv-0.0.2.dist-info/RECORD,,

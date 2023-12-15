@@ -1,0 +1,3 @@
+[console_scripts]
+funnSV=src.funnSV.funnSV_main:run_funnSV
+
