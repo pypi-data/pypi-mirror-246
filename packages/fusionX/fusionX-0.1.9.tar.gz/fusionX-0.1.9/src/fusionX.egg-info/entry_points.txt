@@ -1,0 +1,2 @@
+[console_scripts]
+run_after_install = fusionX_run_after_install:main
