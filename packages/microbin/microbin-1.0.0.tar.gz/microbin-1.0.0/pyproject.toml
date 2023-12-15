@@ -1,0 +1,26 @@
+[project]
+name = "microbin"
+dynamic = ["version"]
+authors = [
+    { name = "NekoNekoNyan", email = "me@neko-dev.ru" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/neko-neko-nayn/python-microbin"
+Issues = "https://github.com/neko-neko-nayn/python-microbin/issues"
+
+[build-system]
+requires = ["hatchling>=1.4.1"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "microbin/__version__.py"
