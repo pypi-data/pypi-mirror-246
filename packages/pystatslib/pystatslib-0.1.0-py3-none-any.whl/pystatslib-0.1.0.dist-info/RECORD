@@ -1,0 +1,9 @@
+pystatslib/__init__.py,sha256=i_-cYNf7fyIv7P1pio-6c8j07LsaEAHzeoZDn85pC0w,180
+pystatslib/continuous.py,sha256=ECTfBijcEspqf8KOZUS3C6puhqIBTgXRB7MaF78kPUE,21909
+pystatslib/discrete.py,sha256=6Grvk_NGojJHTTf_j1Ne4-2YeiQuoggi2i6r47Pq7zQ,7273
+pystatslib/integration.py,sha256=ncbcLaDnE9LQzjUxVrO5T3hox0RdpPH2X5XMQPq5_EA,5208
+pystatslib/regression.py,sha256=n6ZHPMdUI69QRXbMON4-KjCD5fuFgC64cAAeq-nKOo0,16012
+pystatslib-0.1.0.dist-info/METADATA,sha256=UsC5dcq2xi2_XFkF67a1lU2m591-GQvCKVvUF3ONJg0,1204
+pystatslib-0.1.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+pystatslib-0.1.0.dist-info/top_level.txt,sha256=7iHs0_PuYwjvBVyfGib4PNbahG5GHeW0kEKveYSWyig,11
+pystatslib-0.1.0.dist-info/RECORD,,
