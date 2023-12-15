@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: bibtutils
+Version: 2.0.1
+Summary: Functionality often used by BITS Blue Team. [DEPRECATED]
+Project-URL: Bug Tracker, https://github.com/broadinstitute/bibtutils/issues
+Project-URL: Documentation, https://bibtutils.readthedocs.io/en/latest/
+Project-URL: Homepage, https://github.com/broadinstitute/bibtutils
+Author-email: Matthew OBrien <mobrien@broadinstitute.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Requires-Dist: google-api-core==2.15.0
+Requires-Dist: google-api-python-client==2.110.0
+Requires-Dist: google-auth==2.25.2
+Requires-Dist: google-cloud-bigquery==3.13.0
+Requires-Dist: google-cloud-core==2.4.1
+Requires-Dist: google-cloud-iam==2.13.0
+Requires-Dist: google-cloud-pubsub==2.19.0
+Requires-Dist: google-cloud-secret-manager==2.17.0
+Requires-Dist: google-cloud-securitycenter==1.25.0
+Requires-Dist: google-cloud-storage==2.13.0
+Requires-Dist: googleapis-common-protos==1.62.0
+Requires-Dist: protobuf==4.25.1
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pyyaml==6.0
+Requires-Dist: requests==2.31.0
+Description-Content-Type: text/markdown
+
+# 2023-12-11: THIS LIBRARY IS DEPRECATED. PLEASE USE THE FOLLOWING LIBRARIES INSTEAD.
+
+- [bibt-gcp-bq](https://github.com/broadinstitute/bibt-gcp-bq)
+- [bibt-gcp-iam](https://github.com/broadinstitute/bibt-gcp-iam)
+- [bibt-gcp-pubsub](https://github.com/broadinstitute/bibt-gcp-pubsub)
+- [bibt-gcp-secrets](https://github.com/broadinstitute/bibt-gcp-secrets)
+- [bibt-gcp-storage](https://github.com/broadinstitute/bibt-gcp-storage)
+- [bibt-slack](https://github.com/broadinstitute/bibt-slack)
+- [Complete list of libraries](https://broadinstitute.github.io/bibt-libraries/)
+
+---
+
+# bibtutils: BITS Blue Team Utilities
+
+- **Developer**: Matthew OBrien
+- **Email**: mobrien@broadinstitute.org
+- **Project URL**: https://pypi.org/project/bibtutils/
+- **Project Repo**: https://github.com/broadinstitute/bibtutils
+- **Project Documentation**: https://bibtutils.readthedocs.io/en/latest/
+
+## Installing
+
+```bash
+$ pip install --upgrade bibtutils
+```
+
+## Testing
+
+- Requires Docker to be installed on your system.
+- Clone this repo and create & run the test container:
+
+```
+$ docker build -f ./Dockerfile -t bibtutils-test . && docker run bibtutils-test
+```
+
+## Usage
+
+- See documentation here: https://bibtutils.readthedocs.io/en/latest/
