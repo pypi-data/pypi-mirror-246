@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: robotgpt-interpreter
+Version: 0.0.14
+Summary: robotgpt-interpreter
+Home-page: https://src.cloudminds.com/ai-api/robotgpt-interpreter
+Author: blaze.zhang
+Author-email: blaze.zhang@cloudminds.com
+Description-Content-Type: text/markdown
+
+=================
+RobotGPT LLM
+=================
+
+    robotgpt-interpreter
+
+=================
+Quick Install
+=================
+
+    `pip install robotgpt-interpreter`
+
+=================
+使用样例
+=================
+$interpreter --api_base "https://dataai.harix.iamidata.com/llm/api/ask" --api_key "your token" --model "openai/gpt-4"
