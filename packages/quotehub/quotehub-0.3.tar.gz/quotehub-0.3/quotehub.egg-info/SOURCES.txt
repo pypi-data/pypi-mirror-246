@@ -1,0 +1,8 @@
+README.md
+setup.py
+quotehub/__init__.py
+quotehub/quotehub.py
+quotehub.egg-info/PKG-INFO
+quotehub.egg-info/SOURCES.txt
+quotehub.egg-info/dependency_links.txt
+quotehub.egg-info/top_level.txt
