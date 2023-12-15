@@ -1,0 +1,9 @@
+pydevcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydevcli/__main__.py,sha256=FeaQ1bEI3HOHYUhbEq5XGvyiqKFz44545r5jCW6hPe8,35
+pydevcli/cli.py,sha256=tnYN6K3fFVF1M6qrzaP1RUqW6Uixx0IE6F0Me-N_z48,259
+pydevcli/website/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydevcli/website/images.py,sha256=yztCaMjVBuEU_AGbut6L95XsY08yaDcH44TxuCPDsyo,221
+pydevcli2-0.1.1.dist-info/METADATA,sha256=11ZwEvkrzqSk_oemxtV6UmvQhkNyvkUp0-DdjIzCjvM,451
+pydevcli2-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pydevcli2-0.1.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydevcli2-0.1.1.dist-info/RECORD,,
