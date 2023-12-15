@@ -1,0 +1,11 @@
+promptcraft/__init__.py,sha256=mknVPK78r7PRwIryFkQHF0At5nUcfBKpt1cOX6g5A30,38
+promptcraft/character.py,sha256=R6Qd-3clJRXqNK4JJpk6ODRdRGgn7uhXkN8guTMVGv4,10621
+promptcraft/parrot.py,sha256=JUpSyU9EOfme215tWB7Zrv4he-krGKDW7XqPNKfV6YU,9005
+promptcraft/sentence.py,sha256=1AYfo076KCMShNR2v--YHbvnP7bbxkvW6LvnUfFYhrM,5014
+promptcraft/styleformer.py,sha256=S6ZVQb17ND5UamoS37SAnTfVfElx3J4cDevGA6r-6ro,7236
+promptcraft/word.py,sha256=bob2e3tkwwhFe0McNKHDp_lMs9abUtXf3SICUR3RqMg,11007
+promptcraft-0.2.0.dist-info/LICENSE,sha256=KVp_Odfj4izGzutnUm8VDLYAc2sh0i3D9c8glWELDsw,1067
+promptcraft-0.2.0.dist-info/METADATA,sha256=GMzDOMmYxIBvDsXg_gaCh3iHclDiPHzfGGWzSATQPuE,5557
+promptcraft-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+promptcraft-0.2.0.dist-info/top_level.txt,sha256=VKV2X3Tt84CiCds6IUp6N-4oqwfsgwmnQGTeuQrCuJ8,12
+promptcraft-0.2.0.dist-info/RECORD,,
