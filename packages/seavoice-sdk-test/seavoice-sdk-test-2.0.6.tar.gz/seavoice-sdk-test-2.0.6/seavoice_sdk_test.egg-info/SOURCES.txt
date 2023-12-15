@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+seavoice_sdk_beta/__init__.py
+seavoice_sdk_beta/events.py
+seavoice_sdk_beta/exceptions.py
+seavoice_sdk_beta/logger.py
+seavoice_sdk_beta/speech_to_text.py
+seavoice_sdk_test.egg-info/PKG-INFO
+seavoice_sdk_test.egg-info/SOURCES.txt
+seavoice_sdk_test.egg-info/dependency_links.txt
+seavoice_sdk_test.egg-info/requires.txt
+seavoice_sdk_test.egg-info/top_level.txt
