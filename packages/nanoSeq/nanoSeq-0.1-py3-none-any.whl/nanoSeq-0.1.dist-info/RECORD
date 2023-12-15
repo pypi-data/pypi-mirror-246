@@ -1,0 +1,10 @@
+nanoporeAlignment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nanoporeAlignment/nanoAlign.py,sha256=cSNLoAZtrDFwOVWYwku0O92TJoneaFXGKLAC46aMcXk,1619
+primer_design/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+primer_design/primerdesign.py,sha256=6D8dnCTI8NDE_qSOvFN8mdc0-f_WnTBlxFR0RLrMeNE,5174
+nanoSeq-0.1.dist-info/LICENSE.txt,sha256=yYH9DTrTGM_wWe2h4sD-tTcFgH0O1cnSf6ctQD05cw0,1063
+nanoSeq-0.1.dist-info/METADATA,sha256=KsDJ-LNrrFE_Y1KeI-CfTwZVh1C_z-85O3xASAg-kxQ,710
+nanoSeq-0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+nanoSeq-0.1.dist-info/entry_points.txt,sha256=KKVv_TC28N72BNvN-LKmqnLY_aGG-uN3hbhe34N3bo4,126
+nanoSeq-0.1.dist-info/top_level.txt,sha256=fqrX1CCKU__FKpoC-ygBgphpR4MkSaAapmkoN8WPIEg,55
+nanoSeq-0.1.dist-info/RECORD,,

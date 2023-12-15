@@ -1,0 +1,4 @@
+nanoAlign
+nanoporeAlignment
+primer_design
+primerdesign

@@ -1,0 +1,3 @@
+[console_scripts]
+nanoAlign = nanoSeq.nanoporeAlignment.nanoAlign:main
+primerdesign = nanoSeq.primer_design.primerdesign:main
