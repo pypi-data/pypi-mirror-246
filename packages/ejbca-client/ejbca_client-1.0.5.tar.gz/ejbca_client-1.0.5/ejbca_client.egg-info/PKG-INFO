@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ejbca-client
+Version: 1.0.5
+Summary: Ejbca client over SOAP api
+Home-page: https://github.com/shizacat/ejbca-client
+Author: Alexey Matveev
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zeep>=4.1.0
+Requires-Dist: requests>=2.28.1
+Requires-Dist: pyOpenSSL==22.1.0
+
+# ejbca-client
+Ejbca client over SOAP api
