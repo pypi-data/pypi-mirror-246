@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: synthetic-control
+Version: 0.0.5
+Summary: A user friendly package to use the Synthetic Control Method
+Home-page: http://github.com/Bougeant/synthetic_control
+Author: Olivier Bougeant
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: plotly
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: jupyter
+Requires-Dist: jupyter ; extra == 'jupyter'
+Requires-Dist: jupyterlab <4 ; extra == 'jupyter'
+Requires-Dist: jupytext ; extra == 'jupyter'
+Provides-Extra: test
+Requires-Dist: tox ; extra == 'test'
+
+#################
+Synthetic Control
+#################
+
+A user friendly package for the Synthetic Control Method.
+
+Installation
+------------
+Install using pip::
+
+   pip install synthetic-control

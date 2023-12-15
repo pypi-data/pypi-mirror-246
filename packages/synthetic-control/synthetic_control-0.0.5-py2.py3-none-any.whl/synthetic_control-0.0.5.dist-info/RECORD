@@ -1,0 +1,12 @@
+synthetic_control/__init__.py,sha256=BhoRHpRU_JpCd8Nfru68GDv2AFbroSTLlam565jocd8,186
+synthetic_control/model.py,sha256=pyPY0wlB-v3idI_1p9DSf_LfkwbsnQUIkpBN46wCWhs,6950
+synthetic_control/analysis/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+synthetic_control/analysis/compare.py,sha256=Vu5yoFiEd9GitWoTuXQFXccLKg23AdSID3Y2GprP9lY,7064
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/test_model.py,sha256=F0k9dJePnSaZsGYyZMTAwCcYX8_CVIQPP6fVk_rAFs4,3714
+tests/analysis/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/analysis/test_compare.py,sha256=RBdIilkTFu5caAplBtX0BB09iCSY5qFzCn4vK5xa2h4,4449
+synthetic_control-0.0.5.dist-info/METADATA,sha256=IVkfjVQgRVTP24mZ-zE_qmLaThzc8WRLdW2Z9PmUGbk,1338
+synthetic_control-0.0.5.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+synthetic_control-0.0.5.dist-info/top_level.txt,sha256=Nyh1RNEdSujbu_vz9HH-9QVUBQxd8KSadEEsgeWIPl8,24
+synthetic_control-0.0.5.dist-info/RECORD,,
