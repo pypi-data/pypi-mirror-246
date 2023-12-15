@@ -1,0 +1,15 @@
+ptyp
+atyp
+itry
+putl
+asto
+atup
+chck
+excs
+hasr
+getr
+
+[dev]
+numpy
+pandas
+matplotlib
