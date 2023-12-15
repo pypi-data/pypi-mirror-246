@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+Pubsam/__init__.py
+Pubsam.egg-info/PKG-INFO
+Pubsam.egg-info/SOURCES.txt
+Pubsam.egg-info/dependency_links.txt
+Pubsam.egg-info/requires.txt
+Pubsam.egg-info/top_level.txt
