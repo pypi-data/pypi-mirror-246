@@ -1,0 +1,17 @@
+LICENSE.txt
+README.rst
+setup.py
+./build/lib/build/lib/build/lib/finitelycomputable/idtrust_flask.py
+./build/lib/build/lib/build/lib/finitelycomputable/idtrust_urlfor.py
+./build/lib/build/lib/finitelycomputable/idtrust_flask.py
+./build/lib/build/lib/finitelycomputable/idtrust_urlfor.py
+./build/lib/finitelycomputable/idtrust_flask.py
+./build/lib/finitelycomputable/idtrust_urlfor.py
+./finitelycomputable/idtrust_flask.py
+./finitelycomputable/idtrust_urlfor.py
+finitelycomputable_idtrust_app_flask.egg-info/PKG-INFO
+finitelycomputable_idtrust_app_flask.egg-info/SOURCES.txt
+finitelycomputable_idtrust_app_flask.egg-info/dependency_links.txt
+finitelycomputable_idtrust_app_flask.egg-info/entry_points.txt
+finitelycomputable_idtrust_app_flask.egg-info/requires.txt
+finitelycomputable_idtrust_app_flask.egg-info/top_level.txt
