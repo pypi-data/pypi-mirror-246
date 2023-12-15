@@ -1,0 +1,11 @@
+
+[dev]
+bumpver
+coverage
+coverage-badge
+pre-commit
+pytest
+
+[doc]
+sphinx
+sphinx-rtd-theme
