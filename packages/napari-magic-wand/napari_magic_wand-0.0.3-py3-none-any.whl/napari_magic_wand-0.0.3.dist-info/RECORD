@@ -1,0 +1,11 @@
+napari_magic_wand/__init__.py,sha256=Z8o1-uwyB234IACjq-m3e9QIHvftdKCo-TaN9D8rkKU,101
+napari_magic_wand/_widget_brightest_path_lib.py,sha256=VQk5jwNC_3lW90H5HX45ymAT0EySkUZ4OcU1ajYGJ_4,9346
+napari_magic_wand/_widget_pyift.py,sha256=S8MNive-80hzWtJLh6lORlb-uJsqjTIvXbCu00HRc5g,11757
+napari_magic_wand/napari.yaml,sha256=QKa-_RrX0UIrdYDmjDr8Q1pTClq3D7HHKKeTt64Yl4I,485
+napari_magic_wand/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_magic_wand-0.0.3.dist-info/LICENSE,sha256=f6IlE2SCFqsXPIh9kXoluvAol4Fr8BEzIBawcV6FXbA,1489
+napari_magic_wand-0.0.3.dist-info/METADATA,sha256=-s2v6IEloTe02KG1ti31c2fS0jxrgZ1LltAZqQRqeHM,4822
+napari_magic_wand-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+napari_magic_wand-0.0.3.dist-info/entry_points.txt,sha256=Q-iv5JOwQaQDAxXCnX7UnLVDfaq-QsEt18RKksiomt4,68
+napari_magic_wand-0.0.3.dist-info/top_level.txt,sha256=6InxL_Z1fLTbxfgMx9TT2N-KKtvcDFQUv-3jb5WgJL8,18
+napari_magic_wand-0.0.3.dist-info/RECORD,,

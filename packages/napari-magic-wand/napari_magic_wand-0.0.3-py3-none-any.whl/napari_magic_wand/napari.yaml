@@ -1,0 +1,15 @@
+name: napari-magic-wand
+display_name: Magic wand
+contributions:
+  commands:
+    - id: napari-magic-wand.wire
+      title: Magic wand
+      python_name: napari_magic_wand:LiveWireWidget
+    - id: napari-magic-wand.wire_brightest_path
+      title: Brightest path
+      python_name: napari_magic_wand:BrightestPathWidget
+  widgets:
+    - command: napari-magic-wand.wire
+      display_name: Magic wand
+    - command: napari-magic-wand.wire_brightest_path
+      display_name: Brightest path
