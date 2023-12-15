@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: zvapi
+Version: 0.0.2
+Summary: Official Zvolv Python SDK
+Home-page: UNKNOWN
+Author: Yogesh Jadhav
+Author-email: support@zvolv.com
+License: MIT
+Project-URL: Source, https://github.com/yogeshjadhav22/python-sdk0.0.1
+Description: <!-- <p align="center">
+          <img src="https://github.com/box/sdks/blob/master/images/box-dev-logo.png" alt= “box-dev-logo” width="30%" height="50%">
+        </p> -->
+        
+        # zvolv Python SDK
+        
+        [![image](http://opensource.box.com/badges/active.svg)]
+        [![image](https://img.shields.io/pypi/v/boxsdk.svg)]
+        [![image](https://img.shields.io/pypi/dm/boxsdk.svg)]
+        [![image](https://coveralls.io/repos/github/box/box-python-sdk/badge.svg?branch=main)]
+        
+        
+        <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+        <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+        
+        ## Documentation
+        - [Docs site](https://www.zvolv.com/docs) - explore our docs site and learn more about Zvolv.
+        - [User Guide](https://github.com/zvolvapi/python-zvolv-sdk/blob/python-zvolv-sdk/UserGuide.md) - explore our user guide docs and learn more about sdk
+        
+        
+        ## Getting started
+        ### Installation
+        You can install the Zvolv Python SDK using the following command.
+        ```
+        pip install zvolv_sdk
+        ```
+        
+        > Requires Python 3.7 or higher.
+        
+        ### Usage
+        The Zvolv Hyper automation platform offers several APIs to build apps. Each Zvolv API delivers part of the capabilities from the platform, so that you can pick just those that fit for your needs. This SDK offers a corresponding package for each of Zvolv’s APIs.
+        
+        #### Generate Zvolv authentication token and create a form submission 
+        
+        Utilize Zvolv SDK to create and update form submissions by obtaining an authentication token through the client, with examples demonstrating the creation and subsequent update of a form submission for a specified form ID using input data
+        
+        ```python
+        import zvolv_sdk
+        
+        # zvolv Application without credentials
+        
+        client = zvolv_sdk.Client() 
+        
+        # zvolv Application with credentials
+        
+        zvolv_user_id = 'your_id'
+        zvolv_password = 'your_password'
+        zvolv_domain = 'your_zvolv_domain'
+        client = zvolv_sdk.Client(zvolv_user_id,zvolv_password,zvolv_domain)
+        
+        # Create form submission 
+        form_id = 1150
+        input_data = {
+          "646": "Akshay",
+          "647": "CS",
+          "648": "Pune",
+          "649": "2023-12-24",
+          "OverrideMetaData": False
+        }
+        print(client.create_form_submission(form_id, input_data))
+        
+        # update form sumission
+        form_id = 1150
+        form_submission_id = 1171
+        input_data = {
+          "646": "sandip",
+          "647": "CS",
+          "648": "Nashik",
+          "649": "2023-12-30",
+          "OverrideMetaData": False
+        }
+        print(client.update_form_submission(form_id,input_data,form_submission_id))
+        ```
+        
+        Here we also ensure that the response back from Zvolv is a successful one and that the message is the one we sent by using the `assert` statement.
+        
+        ### Authentication Endpoints
+        
+        - Database ( `authentication.Database` )
+        - Delegated ( `authentication.Delegated` )
+        - Enterprise ( `authentication.Enterprise` )
+        - API Authorization - Get Token ( `authentication.GetToken`)
+        - Passwordless ( `authentication.Passwordless` )
+        - RevokeToken ( `authentication.RevokeToken` )
+        - Social ( `authentication.Social` )
+        - Users ( `authentication.Users` )
+        
+        
+        ### Management Endpoints
+        
+        - Actions() (`Zvolv().action`)
+        - AttackProtection() (`Zvolv().attack_protection`)
+        - Blacklists() ( `Zvolv().blacklists` )
+        - Branding() ( `Zvolv().branding` )
+        
+        
+        ## Supported Version
+        
+        Only the current MAJOR version of SDK is supported. New features, functionality, bug fixes, and security updates will only be added to the current MAJOR version.
+        
+        A current release is on the leading edge of our SDK development, and is intended for customers who are in active development and want the latest and greatest features.  Instead of stating a release date for a new feature, we set a fixed minor or patch release cadence of maximum 2-3 months (while we may release more often). At the same time, there is no schedule for major or breaking release. Instead, we will communicate one quarter in advance the upcoming breaking change to allow customers to plan for the upgrade. We always recommend that all users run the latest available minor release for whatever major version is in use. We highly recommend upgrading to the latest SDK major release at the earliest convenient time and before the EOL date.
+        
+        
+        ## Copyright and License
+        
+            Copyright (c) 2018 The Python Packaging Authority
+        
+            Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:
+        
+            The above copyright notice and this permission notice shall be included in all
+            copies or substantial portions of the Software.
+        
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.
+Keywords: zvolv,zvolv-api,web-api,sdk,rest-api-client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.0.1
+Description-Content-Type: text/markdown
