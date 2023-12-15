@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/terminalImgViewer/__init__.py
+src/terminalImgViewer/lib.py
+src/terminalImgViewer.egg-info/PKG-INFO
+src/terminalImgViewer.egg-info/SOURCES.txt
+src/terminalImgViewer.egg-info/dependency_links.txt
+src/terminalImgViewer.egg-info/top_level.txt
