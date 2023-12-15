@@ -1,0 +1,15 @@
+almirah/__init__.py,sha256=d4fAPk0wzF1dVrBIV7phUjclA-ERqfeLEKAsbKgoZKo,225
+almirah/data/__init__.py,sha256=3sEPTPiCjHEKZqA26Zr7yqpiLIou27E-WajwHVxBBtI,281
+almirah/data/configs/bids.yaml,sha256=CXFBMZF5eKamU1fPsWOrxhTPWS9XtMHtbt5rnRxmaZY,5073
+almirah/data/convert.py,sha256=Ag4ThBDSvI0cYLGVnSxeNr4lp_xSZfsdNpsyTsAIPm8,8049
+almirah/data/dataset.py,sha256=IrwfG2UfLuziMtM6K7s6YpYxxv_DEagDCX_r9MVjtaM,4646
+almirah/data/indexer.py,sha256=xTgZTJ70Mkx4K8rVoCQ0GjmWSsh5hjWrmvsjjluwS3c,3784
+almirah/data/layout.py,sha256=2OrMmEJcgk7HGvEGWzeTpLeeOQFsT0CgnBd9QBxJdmo,6793
+almirah/data/report.py,sha256=T-mqo92AvkYueuIHFdMcx_Fk9afC5aMM9cHJ7xw9zxw,1448
+almirah/data/specification.py,sha256=Z285tNJ6cdYLd5CySxxs2rNrVADzqWvnMxIpnkboJKA,11521
+almirah/db.py,sha256=W_BW75rrBzCQOc7sVSudP1ZjCHQlHLNhYVxFDQARnhE,16444
+almirah/utils.py,sha256=qEMJfrbTcUSPaFeQ7aTOuipeqmdna4pFWUiUqIPc5vs,3285
+almirah-0.1.0.dist-info/LICENSE,sha256=3CsbuzYOXp47CBBhwqEBjEyy3nmQJsymC-XSfuHCqOM,1072
+almirah-0.1.0.dist-info/METADATA,sha256=Kz6WUH4Sfo4tLlfjZLWpzIZ65bMadtVTS2O2S_uwR_s,1646
+almirah-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+almirah-0.1.0.dist-info/RECORD,,
