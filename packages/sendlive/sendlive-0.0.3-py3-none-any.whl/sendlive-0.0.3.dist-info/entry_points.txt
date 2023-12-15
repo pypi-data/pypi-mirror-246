@@ -1,0 +1,3 @@
+[console_scripts]
+sendlive=sendlive.__main__:main
+
