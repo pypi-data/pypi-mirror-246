@@ -1,0 +1,3 @@
+[console_scripts]
+dm-analyze = data_modori.tools.analyze_data:main
+dm-process = data_modori.tools.process_data:main
