@@ -1,0 +1,2 @@
+[console_scripts]
+detect_llm_api_keys = detect_llm_api_keys.__main__:main
