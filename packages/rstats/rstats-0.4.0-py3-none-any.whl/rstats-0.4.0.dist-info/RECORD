@@ -1,0 +1,6 @@
+rstats/__init__.py,sha256=f8LQiZoMkZuKB9M4dNwHJ7ezaoesyf4bsCkfbaB0xq8,344
+rstats/bench.py,sha256=MntSUJm6v3QtxFL-Ua5uFfjpx3Jb7-N0u9q1-tucGSE,4798
+rstats/stats.py,sha256=kRcRqT-qB4KKFalb2VmsvD6xgMcHXrlewUcdK40t5cs,14126
+rstats-0.4.0.dist-info/METADATA,sha256=jn56cpUO99cRPRmAj-6vrB2oSO5uff_h8p6uEr4Quls,464
+rstats-0.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rstats-0.4.0.dist-info/RECORD,,
