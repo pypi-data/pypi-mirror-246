@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pdf-invoice
+Version: 1.0.0
+Summary: This package is used to convert Excel to PDF invoices.
+Home-page: https://github.com/skythepoppy/pythonPackage
+Author: Raphael Evangelista
+Author-email: raphaelsebastien.evangelista@gmail.com
+License: MIT
+Keywords: invoice,excel,pdf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
