@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+isHeatMap.egg-info/PKG-INFO
+isHeatMap.egg-info/SOURCES.txt
+isHeatMap.egg-info/dependency_links.txt
+isHeatMap.egg-info/entry_points.txt
+isHeatMap.egg-info/requires.txt
+isHeatMap.egg-info/top_level.txt
+isheatmap/__init__.py
+isheatmap/__main__.py
+isheatmap/heat_functions.py
+isheatmap/executables/blastn
+isheatmap/executables/makeblastdb
