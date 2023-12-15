@@ -1,0 +1,2 @@
+[orange.widgets]
+HKH-Boting = orangecontrib.hkh_bot.widgets
