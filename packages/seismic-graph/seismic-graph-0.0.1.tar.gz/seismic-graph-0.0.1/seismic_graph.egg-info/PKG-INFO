@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: seismic-graph
+Version: 0.0.1
+Summary: seismograph is a plotting library for SEISMIC
+Home-page: https://github.com/rouskinlab/seismograph
+Author: Silvi Rouskin Lab
+Author-email: silvi@hms.harvard.edu
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: ipykernel
+Requires-Dist: scikit-learn
+Requires-Dist: dms_ci
+Requires-Dist: custom_inherit
+Requires-Dist: tqdm
+Requires-Dist: svglib
+Requires-Dist: pyyaml
+Requires-Dist: pyarrow
+Requires-Dist: nbformat>=4.2.0
+Requires-Dist: sphinx
+Requires-Dist: recommonmark
+Requires-Dist: blockdiag
+Requires-Dist: sphinx_rtd_theme
+Requires-Dist: sphinxcontrib-blockdiag
+Requires-Dist: sphinx_panels
+Requires-Dist: sphinx_click
+
+[![Docs](https://github.com/rouskinlab/seismograph/actions/workflows/documentation.yml/badge.svg)](https://github.com/rouskinlab/seismograph/actions/workflows/documentation.yml)
+
+# Seismograph
+
+A python library for the analysis of SEISMIC data.
+
+## Installation
+
+```
+pip install seismograph
+```
+
+## Documentation
+
+The documentation is available on [Github Pages](https://rouskinlab.github.io/seismograph).
+
+## Contributors
+
+Yves Martin, Casper L'espérance-Kerckhoff
