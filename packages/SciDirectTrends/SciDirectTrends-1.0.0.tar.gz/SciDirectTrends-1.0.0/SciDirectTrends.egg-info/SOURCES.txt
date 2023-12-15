@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+SciDirectTrends.egg-info/PKG-INFO
+SciDirectTrends.egg-info/SOURCES.txt
+SciDirectTrends.egg-info/dependency_links.txt
+SciDirectTrends.egg-info/entry_points.txt
+SciDirectTrends.egg-info/requires.txt
+SciDirectTrends.egg-info/top_level.txt
+scidirecttrends/__init__.py
+scidirecttrends/main.py
+scidirecttrends/visualization.py
