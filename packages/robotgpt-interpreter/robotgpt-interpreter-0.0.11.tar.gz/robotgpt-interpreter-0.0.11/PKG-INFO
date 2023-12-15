@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: robotgpt-interpreter
+Version: 0.0.11
+Summary: robotgpt-interpreter
+Home-page: https://src.cloudminds.com/ai-api/robotgpt-interpreter
+Author: blaze.zhang
+Author-email: blaze.zhang@cloudminds.com
+Description-Content-Type: text/markdown
+
+=================
+RobotGPT LLM
+=================
+
+    robotgpt-interpreter
+
+=================
+Quick Install
+=================
+
+    `pip install robotgpt-interpreter`
+
+=================
+使用样例
+=================
+export ROBOTGPT_API_TOKEN=Your token
+
+$interpreter
