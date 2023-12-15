@@ -1,0 +1,15 @@
+{
+    "type": "operate",
+    "epid": "%(epid)s",
+    "body": {
+        "args": [
+            [
+                "X_AVM-DE_ForceRescan",
+                "true"
+            ]
+        ],
+        "command": "Device.WiFi.NeighboringWiFiDiagnostic()",
+        "command_key": "fullscan",
+        "send_resp": true
+    }
+}

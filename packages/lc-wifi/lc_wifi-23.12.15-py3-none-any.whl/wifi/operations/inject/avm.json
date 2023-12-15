@@ -1,0 +1,163 @@
+{
+    "cpeid": "%(cpeid)s",
+    "sender": {
+        "hosts": "axwifi-aio",
+        "pid": 2521,
+        "name": "axtract_collector",
+        "event_source": "main_collector_http_ipv4"
+    },
+    "ts": 1701974065,
+    "props": {
+        "DeviceInfo": {
+            "UpTime": 13962,
+            "HardwareVersion": "FRITZ!Box 7530 AX",
+            "ModelName": "FRITZ!Box 7530 AX",
+            "SerialNumber": "1CED6F76FD94",
+            "SoftwareVersion": "256.07.57",
+            "ManufacturerOUI": "00040E",
+            "ProductClass": "FRITZ!Box",
+            "Manufacturer": "AVM"
+        },
+        "collector": {
+            "msg": "Light Scan",
+            "full_scan": 0,
+            "code": 201,
+            "details": "",
+            "light_scan": 1
+        },
+        "WiFi": {
+            "Radio": {
+                "1": {
+                    "Status": "Up",
+                    "Enable": 1,
+                    "OperatingStandards": "ax",
+                    "Channel": 11,
+                    "AutoChannelEnable": 1,
+                    "PossibleChannels": "1,2,3,4,5,6,7,8,9,10,11,12,13",
+                    "TransmitPower": 100
+                },
+                "5": {
+                    "Status": "Up",
+                    "Enable": 1,
+                    "OperatingStandards": "ax",
+                    "TransmitPower": 100,
+                    "AutoChannelEnable": 1,
+                    "PossibleChannels": "36,40,44,48,52,56,60,64,100,104,108,112,116,120,124,128,132,136,140",
+                    "Channel": 100
+                }
+            },
+            "SSID": {
+                "1": {
+                    "LowerLayers": "Device.WiFi.Radio.1",
+                    "Enable": "1",
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 1,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "SSID": "7530AX-2",
+                    "BSSID": "1C-ED-6F-76-FD-96"
+                },
+                "2": {
+                    "BSSID": "62-ED-6F-76-FD-97",
+                    "Enable": "1",
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 0,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "SSID": "FRITZ!Box PubWiFi",
+                    "LowerLayers": "Device.WiFi.Radio.1"
+                },
+                "5": {
+                    "Enable": "1",
+                    "Stats": {
+                        "BytesReceived": 0,
+                        "ErrorsSent": 1,
+                        "PacketsReceived": 0,
+                        "ErrorsReceived": 0,
+                        "BytesSent": 0,
+                        "PacketsSent": 0
+                    },
+                    "LowerLayers": "Device.WiFi.Radio.5",
+                    "BSSID": "1C-ED-6F-76-FD-97",
+                    "SSID": "7530AX-5"
+                }
+            },
+            "AccessPoint": {
+                "1": {
+                    "AssociatedDeviceNumberOfEntries": 1,
+                    "AssociatedDevice": {
+                        "1": {
+                            "Active": 0,
+                            "AuthenticationState": 0,
+                            "IPAddress": "192.168.179.6",
+                            "MACAddress": "56-96-23-6D-0C-D2"
+                        }
+                    },
+                    "MACAddressControlEnabled": "0",
+                    "Security": {
+                        "KeyPassphrase": "",
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": "1",
+                    "SSIDReference": "Device.WiFi.SSID.1"
+                },
+                "2": {
+                    "Security": {
+                        "KeyPassphrase": "",
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": "1",
+                    "MACAddressControlEnabled": "0",
+                    "SSIDReference": "Device.WiFi.SSID.2",
+                    "AssociatedDeviceNumberOfEntries": 0
+                },
+                "5": {
+                    "Security": {
+                        "KeyPassphrase": "",
+                        "ModeEnabled": "PSKAuthentication",
+                        "EncryptionMode": "AESEncryption"
+                    },
+                    "SSIDAdvertisementEnabled": "1",
+                    "MACAddressControlEnabled": "0",
+                    "AssociatedDeviceNumberOfEntries": 0,
+                    "SSIDReference": "Device.WiFi.SSID.5"
+                }
+            }
+        },
+        "Hosts": {
+            "Host": {
+                "1": {
+                    "LeaseTimeRemaining": 0,
+                    "AddressSource": "Static",
+                    "HostName": "HP2C59E5E36C7C",
+                    "InterfaceType": "802.11",
+                    "Active": 1,
+                    "PhysAddress": "2C-59-E5-F0-DF-24",
+                    "IPAddress": "10.0.0.30"
+                }
+            }
+        },
+        "metadata": {
+            "allow_auto_enforce_5": null,
+            "last_scan_ts": null,
+            "allow_auto_enforce_2": null,
+            "mode": "avm_fb7530",
+            "allow_collection": 1,
+            "tenant": "live",
+            "location": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    }
+}

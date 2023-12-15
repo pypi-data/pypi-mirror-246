@@ -1,0 +1,11 @@
+{
+    "type": "get",
+    "epid": "%(epid)s",
+    "body": [
+        [
+            "Device.Hosts.Host.*.IPAddress",
+            "Device.Hosts.Host.*.Active"
+        ],
+        0
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "type": "get",
+    "epid": "%(epid)s",
+    "body": [
+        [
+            "Device.BulkData.Profile.1.ReportingInterval",
+            "Device.DeviceInfo.ProcessStatus.CPUUsage",
+            "Device.DeviceInfo.ProductClass",
+            "Device.DeviceInfo.SerialNumber",
+            "Device.DeviceInfo.SoftwareVersion",
+            "Device.DeviceInfo.UpTime",
+            "Device.Hosts.Host.",
+            "Device.WiFi.AccessPoint.",
+            "Device.WiFi.Radio.",
+            "Device.WiFi.SSID.",
+            "Device.LocalAgent.Controller.1.MTP.*.Enable",
+            "Device.LocalAgent.Controller.1.MTP.*.Protocol",
+            "Device.DeviceInfo.HardwareVersion",
+            "Device.DeviceInfo.Manufacturer",
+            "Device.DeviceInfo.ManufacturerOUI",
+            "Device.DeviceInfo.MemoryStatus.Free",
+            "Device.DeviceInfo.MemoryStatus.Total",
+            "Device.DeviceInfo.ModelName",
+            "Device.Ethernet.Link.",
+            "Device.IEEE1905.AL.NetworkTopology."
+        ],
+        1
+    ]
+}
