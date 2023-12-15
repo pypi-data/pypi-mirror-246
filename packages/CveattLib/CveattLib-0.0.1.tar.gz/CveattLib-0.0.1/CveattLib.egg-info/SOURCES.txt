@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+CveattLib/Binomialdistribution.py
+CveattLib/Gaussiandistribution.py
+CveattLib/Generaldistribution.py
+CveattLib/__init__.py
+CveattLib.egg-info/PKG-INFO
+CveattLib.egg-info/SOURCES.txt
+CveattLib.egg-info/dependency_links.txt
+CveattLib.egg-info/not-zip-safe
+CveattLib.egg-info/top_level.txt
