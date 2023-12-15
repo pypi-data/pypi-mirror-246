@@ -1,0 +1,11 @@
+include VERSION
+include aiogettext/package.json
+include requirements.txt
+include README.md
+include VERSION
+recursive-include aiogettext VERSION
+recursive-include aiogettext **.html
+recursive-include aiogettext **.j2
+recursive-include aiogettext **.json
+recursive-include aiogettext **.yaml
+recursive-include aiogettext **.xml
