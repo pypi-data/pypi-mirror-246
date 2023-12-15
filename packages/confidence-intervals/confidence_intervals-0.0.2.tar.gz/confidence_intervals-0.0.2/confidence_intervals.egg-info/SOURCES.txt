@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./confidence_intervals/__init__.py
+./confidence_intervals/confidence_intervals.py
+./confidence_intervals/utils.py
+./confidence_intervals.egg-info/PKG-INFO
+./confidence_intervals.egg-info/SOURCES.txt
+./confidence_intervals.egg-info/dependency_links.txt
+./confidence_intervals.egg-info/requires.txt
+./confidence_intervals.egg-info/top_level.txt
