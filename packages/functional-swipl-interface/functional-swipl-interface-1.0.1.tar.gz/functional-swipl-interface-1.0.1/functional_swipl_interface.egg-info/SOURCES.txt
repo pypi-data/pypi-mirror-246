@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SWIPL_wrapper/SWIPL_wrapper.py
+SWIPL_wrapper/__init__.py
+functional_swipl_interface.egg-info/PKG-INFO
+functional_swipl_interface.egg-info/SOURCES.txt
+functional_swipl_interface.egg-info/dependency_links.txt
+functional_swipl_interface.egg-info/requires.txt
+functional_swipl_interface.egg-info/top_level.txt
