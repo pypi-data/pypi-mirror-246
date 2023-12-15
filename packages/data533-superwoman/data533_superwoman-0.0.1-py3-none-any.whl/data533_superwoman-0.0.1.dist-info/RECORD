@@ -1,0 +1,13 @@
+data533_superwoman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data533_superwoman/administer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data533_superwoman/administer/account.py,sha256=WtcZCgyWQLaPu5KPkBAASTgNJ0Rn21PEZ4NMR5WtHb8,4615
+data533_superwoman/administer/inventory.py,sha256=CDBgDl2EYUncA7WSvjQvyAu09qfxOoQcMSCFEK36AyM,8034
+data533_superwoman/administer/summary.py,sha256=YoMM_Sn3NSdBemAeq_hYALcqmQTYGXYibEiNFmfez-c,6378
+data533_superwoman/customer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data533_superwoman/customer/customer_function.py,sha256=uBVgzYgSAVhXgcF7iNqv5egNF9VcdtZEMQdaaqtG0Ks,9274
+data533_superwoman/customer/members.py,sha256=3gI_6JzwsGbFZDjQJP3_r9DzSu1-Tz20xM5MKxwGBDw,2410
+data533_superwoman/customer/transactions.py,sha256=RlTIYQMR5BYqzOR4CD3-816eZ2f7wKMXP6ym-vvjam0,1924
+data533_superwoman-0.0.1.dist-info/METADATA,sha256=s6sDyVyMaluzNVs2zqipeNv-7EQ5c-a_nrRL47KnBZ4,512
+data533_superwoman-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+data533_superwoman-0.0.1.dist-info/top_level.txt,sha256=7uhq4jWQQVLd3UYg54L61YgXP5e47ZNdeRnZUtmM5XM,19
+data533_superwoman-0.0.1.dist-info/RECORD,,
