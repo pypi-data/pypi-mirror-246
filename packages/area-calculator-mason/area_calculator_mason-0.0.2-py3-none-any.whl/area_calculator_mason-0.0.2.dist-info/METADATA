@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: area-calculator-mason
+Version: 0.0.2
+Summary: Calculate areas of geometrical figures
+Author: Mason Mapfundematsva
+Author-email: masonmapfunde@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Area Calculator
+
+This is an example package.
+
+It calculates the rea of different geometrical shapes and returns the results.
+It is great for use with math homework problems.
