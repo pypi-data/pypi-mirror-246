@@ -1,0 +1,200 @@
+Metadata-Version: 2.1
+Name: sound-streamlit
+Version: 0.1.1
+Summary: The package contains a ready-to-use streamlit widget for downloading or recording audio. There is support for most audio formats.
+Home-page: https://github.com/YeaMerci/sound-streamlit
+Author: YeaMerci
+Author-email: entertomerci@gmail.com
+Keywords: waveform,converting,streamlit-audio-recorder,recorder,audio,streamlit,streamlit-component
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: altair==5.2.0
+Requires-Dist: attrs==23.1.0
+Requires-Dist: audioread==3.0.1
+Requires-Dist: blinker==1.7.0
+Requires-Dist: cachetools==5.3.2
+Requires-Dist: certifi==2023.11.17
+Requires-Dist: cffi==1.16.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: decorator==5.1.1
+Requires-Dist: ffmpeg-python==0.2.0
+Requires-Dist: future==0.18.3
+Requires-Dist: gitdb==4.0.11
+Requires-Dist: GitPython==3.1.40
+Requires-Dist: idna==3.6
+Requires-Dist: importlib-metadata==6.11.0
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: joblib==1.3.2
+Requires-Dist: jsonschema==4.20.0
+Requires-Dist: jsonschema-specifications==2023.11.2
+Requires-Dist: lazy_loader==0.3
+Requires-Dist: librosa==0.10.1
+Requires-Dist: llvmlite==0.41.1
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==2.1.3
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: msgpack==1.0.7
+Requires-Dist: numba==0.58.1
+Requires-Dist: numpy==1.26.2
+Requires-Dist: packaging==23.2
+Requires-Dist: pandas==2.1.4
+Requires-Dist: Pillow==10.1.0
+Requires-Dist: platformdirs==4.1.0
+Requires-Dist: pooch==1.8.0
+Requires-Dist: protobuf==4.25.1
+Requires-Dist: pyarrow==14.0.1
+Requires-Dist: pycparser==2.21
+Requires-Dist: pydeck==0.8.1b0
+Requires-Dist: Pygments==2.17.2
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pytz==2023.3.post1
+Requires-Dist: referencing==0.32.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: rich==13.7.0
+Requires-Dist: rpds-py==0.13.2
+Requires-Dist: scikit-learn==1.3.2
+Requires-Dist: scipy==1.11.4
+Requires-Dist: six==1.16.0
+Requires-Dist: smmap==5.0.1
+Requires-Dist: soundfile==0.12.1
+Requires-Dist: soxr==0.3.7
+Requires-Dist: streamlit==1.29.0
+Requires-Dist: tenacity==8.2.3
+Requires-Dist: threadpoolctl==3.2.0
+Requires-Dist: toml==0.10.2
+Requires-Dist: toolz==0.12.0
+Requires-Dist: tornado==6.4
+Requires-Dist: typing_extensions==4.9.0
+Requires-Dist: tzdata==2023.3
+Requires-Dist: tzlocal==5.2
+Requires-Dist: urllib3==2.1.0
+Requires-Dist: validators==0.22.0
+Requires-Dist: watchdog==3.0.0
+Requires-Dist: zipp==3.17.0
+
+# sound-streamlit
+
+**sound-streamlit is a custom widget for working with audio built into streamlit. 
+You only need to import one class that will allow you to record or load audio. 
+Any audio format is supported, and in the parameters you can set the sample rate, 
+minimum or maximum audio length and much more.
+Ask any questions. I will be very grateful if you rate the repository ⭐️**
+
+
+## Installation & setup
+### 1. Install widget from PyPI
+```shell
+pip install sound-streamlit
+```
+### 2. Make sure that you have the C++ ffmpeg library installed on your computer. 
+<br>Its absence will lead to an [error](https://stackoverflow.com/questions/62470863/ffmpeg-command-not-found-but-pip-list-shows-ffmpeg).<br> 
+If you are not sure that you have it, then run the command below (only for Unix)
+```shell
+sudo apt install ffmpeg
+```
+
+## How to use?
+### import package with widget
+```python
+from soundlit import AudioWidget
+```
+
+### initialize component
+```python
+# Custom streamlit component for audio recording and uploading
+widget = AudioWidget()  
+
+# You can see params of AudioWidget belove:
+# min_duration: minimum duration of audio file (By default: 0 seconds)
+# max_duration: maximum duration of audio file (By default: 60_000 seconds)
+# available_formats: audio files with which formats available for uploading
+# convert_to: what format to convert an audio file into if it needs to be converted (By default .wav)
+# execlude_convert: audio files with which formats do not require conversion to a supported format
+# sample_rate: sampling rate to which the audio file will be resampled
+# mono: convert waveform to mono format with one channel if True else load 2 channels
+```
+
+### use only recorder 
+```python
+audio = widget.record_audio()
+```
+
+### or only uploader for all audio formats
+```python
+audio = widget.load_audio()
+```
+
+### and finally you can use the whole widget
+```python
+audio = widget.get_audio()
+```
+
+## How change recoder style?
+### 1. Install [node](https://nodejs.org/en/download) >= 16
+### 2. Go to the cloned project directory, then to the audio_widgets package, and finally to the fronted folder.
+```shell
+cd ./audio_widgets/frontend
+```
+### 3. Install all fronted dependencies 
+```npm
+npm i
+```
+### 4. Set Node options for legacy support 
+#### on Unix-like (Linux, macOS, Git bash, etc.)
+```shell
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+#### on Windows command prompt
+```shell
+set NODE_OPTIONS=--openssl-legacy-provider
+```
+
+#### on PowerShell
+```shell
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+```
+
+### 5. Change component style
+#### go to the file at the path below in any text editor
+```shell
+cd ./audio_widgets/frontend/src/StreamlitAudioRecorder.tsx
+```
+#### and change the styles that start from line 59
+```html
+<AudioReactRecorder
+state={recordState}
+onStop={this.onStop_audio}
+type='audio/wav'
+backgroundColor='#000000'
+foregroundColor='#6633CC'
+canvasWidth={450}
+canvasHeight={100}
+/>
+```
+
+### 6. Remove current frontend build
+```shell
+rm -rf ./audio_widgets/frontend/build
+```
+
+### 7. Build new fronted comnponent
+```shell
+npm run build
+```
+
+### 8. Remove all dependencies unless you no longer need to change the style
+#### on Unix-like (Linux, macOS)
+```shell 
+rm -rf node_modules
+``` 
+#### on Windows
+```shell
+npm i -g rm
+rm -rf node_modules
+```
