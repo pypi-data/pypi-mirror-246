@@ -1,0 +1,8 @@
+{% extends "wagtailadmin/pages/index.html" %}
+
+{% block bodyclass %}
+  {{ block.super }}
+  {% if request.path == WAGTAIL_ADMIN_INTERFACE.SINGLE_SITE.HOME_PAGE_URL or request.path == WAGTAIL_ADMIN_INTERFACE.SINGLE_SITE.LAYOUT_PAGE_URL %}
+    wagtail-admin-interface--hide-crumb-trail-toggle
+  {% endif %}
+{% endblock %}
