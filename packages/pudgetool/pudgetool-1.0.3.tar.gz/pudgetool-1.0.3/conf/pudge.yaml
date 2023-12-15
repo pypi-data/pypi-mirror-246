@@ -1,0 +1,4 @@
+s3:
+ endpoint_url: http://s3.mytest.com:8443
+ access_key: Z4UYWCVHBN6L6CVLKPYG
+ secret_key: ldiCSWX6raIcAeubEcp7pQs8uC2ipgtzOfRgM9QL

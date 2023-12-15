@@ -1,0 +1,9 @@
+Click
+boto3
+cffi
+
+[dev]
+check-manifest
+
+[test]
+coverage

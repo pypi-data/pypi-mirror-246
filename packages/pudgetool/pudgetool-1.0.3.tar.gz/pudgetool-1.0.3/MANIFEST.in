@@ -1,0 +1,5 @@
+graft src
+include *.pyx
+include *.pxd
+include *.so
+include LICENSE

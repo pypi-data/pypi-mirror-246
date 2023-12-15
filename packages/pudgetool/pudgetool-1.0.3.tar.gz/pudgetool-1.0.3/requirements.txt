@@ -1,0 +1,6 @@
+setuptools
+setuptools_scm[toml]
+click
+boto3
+cython
+cffi
