@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+soundlit/__init__.py
+soundlit/converter.py
+soundlit/recorder.py
+soundlit.egg-info/PKG-INFO
+soundlit.egg-info/SOURCES.txt
+soundlit.egg-info/dependency_links.txt
+soundlit.egg-info/requires.txt
+soundlit.egg-info/top_level.txt
