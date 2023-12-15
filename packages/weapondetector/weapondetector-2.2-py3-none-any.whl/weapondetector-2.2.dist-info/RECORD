@@ -1,0 +1,14 @@
+weapondetector/__init__.py,sha256=0xPNh0r3DIGi2grx3w3gqmnOuH7iGItMWE6flsL4TDg,21
+weapondetector/api.py,sha256=KM3La8Trk_8ri48hIDVQqbLfneLovTLiphIj64EPdW4,872
+weapondetector/encryption.py,sha256=J9rgBXx8gUbND9K446jZa0ZXAGLSM25C6laEOjwrewA,1146
+weapondetector/login_auth.py,sha256=X9SzSM7K_ewn7jAHDyLHh2kV-G99pGE5KXCVbQIODqE,734
+weapondetector/main.py,sha256=2nYZEyLl3UA45DjGoCRS-DOfGubyOeF6cxpNRM653Rk,45257
+weapondetector/openh264-1.8.0-win64.dll,sha256=46XPBbZzoX6_6VrGtHlgfPTfIon-Sm1fPT_wmqj1YZI,825160
+weapondetector/secret-key.json,sha256=uZnMiKp2oemTSKJK4KTbwKfemiBL04YKpHUesGH2SVg,2364
+weapondetector/utils.py,sha256=sWNS8sm3ZebNdP4jnQfxn3mkfcFWE3GppEBRONZEzSA,3799
+weapondetector/model/best.pt,sha256=nfdhx8NOegMYvotNyzkEg4xzSp6of-7vWxS3OqOyrKI,52024278
+weapondetector-2.2.dist-info/METADATA,sha256=aVahLwLu7r66dLOBQ4xyiPS6H_G2x37wQbtpL8zO0vo,89
+weapondetector-2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+weapondetector-2.2.dist-info/entry_points.txt,sha256=Z-5vGwwJ4o0mNx_hRpyO1aQxP-zEJfU1QsrCoAEm9P4,60
+weapondetector-2.2.dist-info/top_level.txt,sha256=WZFQ1-LKA9Z6eCv66khTPHaSnugXGbcD_8QR9YeuD4U,15
+weapondetector-2.2.dist-info/RECORD,,
