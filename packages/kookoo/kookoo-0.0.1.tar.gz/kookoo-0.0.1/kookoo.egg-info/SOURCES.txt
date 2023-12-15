@@ -1,0 +1,7 @@
+setup.py
+kookoo.egg-info/PKG-INFO
+kookoo.egg-info/SOURCES.txt
+kookoo.egg-info/dependency_links.txt
+kookoo.egg-info/top_level.txt
+libname/__init__.py
+libname/kookoo.py
