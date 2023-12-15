@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: waf_run
+Version: 0.0.1
+Summary: A dumb package
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Requires-Python: >=2.3
+Description-Content-Type: text/markdown
+
+# wafrun
+
+First go to src folder, and install
+
+```
+$ pip install wafrun
+```
+
+Once the package is installed, open python console by typing `python`
+
+```
+$ python
+>>> from wafrun import make
+>>> make(1)
+```
+
+The make function accepts values from 1 - 5.
+
+The output will be in the same folder with file name as program.cc
+
+> *NOTE* - Please uninstall once you use in the system `pip uninstall revacnlab`

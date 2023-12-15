@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "waf_run"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A dumb package"
+readme = "README.md"
+requires-python = ">=2.3"
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
