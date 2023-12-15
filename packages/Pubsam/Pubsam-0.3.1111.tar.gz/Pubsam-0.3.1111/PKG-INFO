@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: Pubsam
+Version: 0.3.1111
+Summary: Streamline interaction with the PubChem database. Retrieve and analyze chemical data effortlessly with Pubsam, exploring compounds, substances, assays, proteins, genes, and more. Designed for researchers, scientists, and developers, Pubsam provides a user-friendly interface to access and leverage PubChem’s wealth of information. Dive into molecular analysis, conduct virtual screenings, and unravel chemical features with ease.
+Home-page: https://github.com/yourusername/pubsam
+Author: Ahmed Alhilal
+Author-email: aalhilal@udel.edu
+License: MIT
+Keywords: cheminformatics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Pubsam: Simplifying PubChem Database Interaction for Molecular Analysis
+
+[![PyPI Version](http://img.shields.io/pypi/v/pubsam.svg?style=flat)](https://pypi.org/project/pubsam/)
+[![License](http://img.shields.io/pypi/l/pubsam.svg?style=flat)](https://opensource.org/licenses/MIT)
+[![Build Status](http://img.shields.io/travis/yourusername/pubsam/master.svg?style=flat)](https://travis-ci.org/yourusername/pubsam)
+[![Coverage Status](http://img.shields.io/coveralls/yourusername/pubsam/master.svg?style=flat)](https://coveralls.io/r/yourusername/pubsam)
+
+## Streamline Interaction with PubChem
+
+Retrieve and analyze chemical data effortlessly with Pubsam, streamlining interaction with the PubChem database. Explore compounds, substances, assays, proteins, genes, and more with ease. Designed for researchers, scientists, and developers, Pubsam provides a user-friendly interface to access and leverage PubChemï¿½s wealth of information.
+
+## Key Features
+
+- Dive into molecular analysis with QSPR (Quantitative Structure-Property Relationship) tools.
+- Conduct virtual screenings for compound discovery.
+- Unravel chemical features through functions such as displaying maximum common substructures, Gasteiger charges, chirality, and more.
+
+## Getting Started
+
+```bash
+pip install pubsam
+
+Example Usage
+
+
+markdown
+Copy code
+# Example Usage
+
+## QSPR Analysis
+
+```python
+from Pubsam import qspr_analysis
+
+# Example: QSPR Analysis
+qspr_analysis("path/to/your/csv_file.csv", "dependent_variable_column")
+#qspr_analysis("BP.CSV", "BP_C")
+
+Display Active Chemicals by Assay Aid
+python
+Copy code
+from Pubsam import display_active_chemicals_by_assay_aid
+
+# Example: Display Active Chemicals by Assay Aid
+display_active_chemicals_by_assay_aid("1000")
+Display Inactive Chemicals by Assay Aid
+python
+Copy code
+from Pubsam import display_inactive_chemicals_by_assay_aid
+
+# Example: Display Inactive Chemicals by Assay Aid
+display_inactive_chemicals_by_assay_aid("1000")
+Retrieve Active CIDs by Assay Aid
+python
+Copy code
+from Pubsam import retrieve_active_cids_by_assay_aid
+
+# Example: Retrieve Active CIDs by Assay Aid
+retrieve_active_cids_by_assay_aid("1000")
+Retrieve Inactive CIDs by Assay Aid
+python
+Copy code
+from Pubsam import retrieve_inactive_cids_by_assay_aid
+
+# Example: Retrieve Inactive CIDs by Assay Aid
+retrieve_inactive_cids_by_assay_aid("1000")
+Retrieve Active SIDs by Assay Aid
+python
+Copy code
+from Pubsam import retrieve_active_sids_by_assay_aid
+
+# Example: Retrieve Active SIDs by Assay Aid
+retrieve_active_sids_by_assay_aid("1000")
+Retrieve Inactive SIDs by Assay Aid
+python
+Copy code
+from Pubsam import retrieve_inactive_sids_by_assay_aid
+
+# Example: Retrieve Inactive SIDs by Assay Aid
+retrieve_inactive_sids_by_assay_aid("1000")
+Virtual Screening
+python
+Copy code
+from Pubsam import virtual_screening
+
+# Example: Virtual Screening
+virtual_screening("path/to/your/file.txt", "SMILES1", "SMILES2", "SMILES3")
+#virtual_screening("pygm_1c8k_actives.ism","smiles",'dat', 'id')
+
+Display Maximum Common Substructure
+python
+Copy code
+from Pubsam import display_maximum_common_substructure
+
+
+# Example: Display Maximum Common Substructure
+display_maximum_common_substructure('CC=O', 'CCCCC', 'CCCCCC=O')
+Display Chirality
+python
+Copy code
+from Pubsam import display_chirality
+
+# Example: Display Chirality
+display_chirality('C[C@H]1CCC[C@@H](C)[C@@H]1Cl')
+Display Double Bond Stereochemistry
+python
+Copy code
+from Pubsam import display_double_bond_stereochemistry
+
+# Example: Display Double Bond Stereochemistry
+display_double_bond_stereochemistry('CC=C', 'CC=C(C)C', 'CC(=O)C=C')
+Highlight Difference
+python
+Copy code
+from Pubsam import highlight_difference
+
+# Example: Highlight Difference
+highlight_difference('CC=O', 'CCCCC=O')
+Draw List of SMILES
+python
+Copy code
+from Pubsam import draw_list_of_smiles
+
+# Example: Draw List of SMILES
+draw_list_of_smiles(['CC=O', 'CCCCC=O', 'CC(C)(C)C'])
+Display Gasteiger Charges
+python
+Copy code
+from Pubsam import display_gasteiger_charges
+
+# Example: Display Gasteiger Charges
+display_gasteiger_charges('CC(=O)O', ['CC(=O)O', 'CCCC(=O)O', 'CCCCCCCCCCCCCCCCCCC(=O)O'])
+Display Bond Type and Stereochemistry
+python
+Copy code
+from Pubsam import display_bond_type_and_stereochemistry
+
+# Example: Display Bond Type and Stereochemistry
+display_bond_type_and_stereochemistry('CC=O', 'CCC=O', 'CC(C)(C)C')
+Mark Substructure
+python
+Copy code
+from Pubsam import mark_substructure
+
+# Example: Mark Substructure
+mark_substructure('CC', 'CC=O', 'CCC=O', 'CC(C)(C)C')
+Check for Substructure
+python
+Copy code
+from Pubsam import check_for_substructure
+
+# Example: Check for Substructure
+check_for_substructure('CC', 'CC=O', 'CCC=O', 'CC(C)(C)C')
+Display Morgan Score Topological
+python
+Copy code
+from Pubsam import display_morgan_score_topological
+
+# Example: Display Morgan Score Topological
+display_morgan_score_topological("CCO", "CNCN")
+Delete Substructure
+python
+Copy code
+from Pubsam import delete_substructure
+
+# Example: Delete Substructure
+delete_substructure('CC', 'CC=O', 'CCC=O', 'CC(C)(C)C')
+Intro
+python
+Copy code
+from Pubsam import Intro
+
+
+
+
+
+
+
+
+Project Information
+Author: Ahmed Alhilal
+License: MIT License
+Development Status: 5 - Production/Stable
+
+
+Ahmed Alhilal
+=============
+
+0.0.1 (22/12/2023)
+-------------------
+- First Release
