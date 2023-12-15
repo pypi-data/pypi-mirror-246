@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/TornAPIWrapper/__init__.py
+src/TornAPIWrapper/torn_api_error_handler.py
+src/TornAPIWrapper/torn_api_wrapper.py
+src/TornAPIWrapper.egg-info/PKG-INFO
+src/TornAPIWrapper.egg-info/SOURCES.txt
+src/TornAPIWrapper.egg-info/dependency_links.txt
+src/TornAPIWrapper.egg-info/requires.txt
+src/TornAPIWrapper.egg-info/top_level.txt
