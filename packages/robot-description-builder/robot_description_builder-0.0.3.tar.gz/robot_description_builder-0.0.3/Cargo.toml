@@ -1,0 +1,3 @@
+[workspace]
+members = ["robot-description-builder", "robot-description-builder-py"]
+resolver = "2"
