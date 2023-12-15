@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Pubsam
+Version: 0.3.11
+Summary: Streamline interaction with the PubChem database. Retrieve and analyze chemical data effortlessly with Pubsam, exploring compounds, substances, assays, proteins, genes, and more. Designed for researchers, scientists, and developers, Pubsam provides a user-friendly interface to access and leverage PubChem’s wealth of information. Dive into molecular analysis, conduct virtual screenings, and unravel chemical features with ease.
+Home-page: 
+Author: Ahmed Alhilal
+Author-email: aalhilal@udel.edu
+License: MIT
+Keywords: cheminformatics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is file project for molecular informatics class at CU Denver.
+
+Change Log
+==========
+
+0.0.1 (22/10/2022)
+-------------------
+- First Release
