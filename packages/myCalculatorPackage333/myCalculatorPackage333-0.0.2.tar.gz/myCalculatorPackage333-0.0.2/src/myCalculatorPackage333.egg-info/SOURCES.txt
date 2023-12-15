@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/myCalculatorPackage333/__init__.py
+src/myCalculatorPackage333.egg-info/PKG-INFO
+src/myCalculatorPackage333.egg-info/SOURCES.txt
+src/myCalculatorPackage333.egg-info/dependency_links.txt
+src/myCalculatorPackage333.egg-info/top_level.txt
+src/myCalculatorPackage333/division/__init__.py
+src/myCalculatorPackage333/division/divide.py
+src/myCalculatorPackage333/multiplication/__init__.py
+src/myCalculatorPackage333/multiplication/multiply.py
+tests/test_divide_by_three.py
+tests/test_multiply_by_three.py
