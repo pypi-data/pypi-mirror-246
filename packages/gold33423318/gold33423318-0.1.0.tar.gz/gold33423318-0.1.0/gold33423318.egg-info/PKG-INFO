@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gold33423318
+Version: 0.1.0
+Summary: UAS Praktek DASPRO
+Home-page: https://github.com/nrrdwan/33423318
+Author: Nur Ridwan
+Author-email: nurridwan270305@email.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# File: uas_[nim].py
+from gold33423318 import gold
+
+# Gunakan fungsi dari modul gold_[nim].py
+golden = golden_ratio()
+print("Golden Ratio:", golden)
+
+$ pip install gold33423318
