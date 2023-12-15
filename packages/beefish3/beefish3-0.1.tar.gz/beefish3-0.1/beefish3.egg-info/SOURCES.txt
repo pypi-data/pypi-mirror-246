@@ -1,0 +1,8 @@
+README.md
+setup.py
+beefish3/__init__.py
+beefish3.egg-info/PKG-INFO
+beefish3.egg-info/SOURCES.txt
+beefish3.egg-info/dependency_links.txt
+beefish3.egg-info/requires.txt
+beefish3.egg-info/top_level.txt
