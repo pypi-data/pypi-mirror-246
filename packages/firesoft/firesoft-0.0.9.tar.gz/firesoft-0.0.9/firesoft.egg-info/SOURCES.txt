@@ -1,0 +1,14 @@
+README.md
+setup.py
+firesoft/__init__.py
+firesoft/fire_barcodes.py
+firesoft/fire_pil_image_utils.py
+firesoft/geometry.py
+firesoft.egg-info/PKG-INFO
+firesoft.egg-info/SOURCES.txt
+firesoft.egg-info/dependency_links.txt
+firesoft.egg-info/requires.txt
+firesoft.egg-info/top_level.txt
+firesoft/utils/__init__.py
+firesoft/utils/files.py
+firesoft/utils/qr_code.py
