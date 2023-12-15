@@ -1,0 +1,73 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "atopy"
+authors = [{name = "Tom", email = "nanticj@users.noreply.github.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+requires-python = ">=3.12"
+dependencies = [
+    "loguru >=0.7,<0.8",
+    "pydantic >=2.5,<2.6",
+    "pydantic-settings >=2.1,<2.2",
+    "python-dotenv >=1.0,<1.1",
+    "pytz >=2023.3,<2023.4",
+    "typer >=0.9,<0.10",
+]
+
+[project.urls]
+Home = "https://github.com/nanticj/atopy"
+
+[project.optional-dependencies]
+develop = [
+    "black >=23.11,<23.12",
+    "isort >=5.12,<5.13",
+    "mypy >=1.7,<1.8",
+    "pylint >=3.0,<3.1",
+    "pytest >=7.4,<7.5",
+    "types-pytz >=2023.3,<2023.4",
+]
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.black]
+line-length = 79
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+plugins = [
+  "pydantic.mypy"
+]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.pylint.'MESSAGES CONTROL']
+enable = "all"
+disable = """ \
+    duplicate-code, \
+    invalid-name, \
+    locally-disabled, \
+    missing-class-docstring, \
+    missing-function-docstring, \
+    missing-module-docstring, \
+    suppressed-message, \
+    too-few-public-methods, \
+    too-many-arguments, \
+    too-many-branches, \
+    too-many-instance-attributes, \
+    too-many-locals, \
+    too-many-public-methods, \
+    too-many-return-statements, \
+    use-implicit-booleaness-not-comparison-to-zero, \
+    """
