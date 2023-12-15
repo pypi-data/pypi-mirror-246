@@ -1,0 +1,2 @@
+[console_scripts]
+uqload_dl = uqload_dl.cli:main
