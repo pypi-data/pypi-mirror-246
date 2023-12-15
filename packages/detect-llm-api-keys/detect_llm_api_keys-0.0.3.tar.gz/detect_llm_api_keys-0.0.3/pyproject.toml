@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["detect_llm_api_keys"]
+
+[project]
+name = "detect_llm_api_keys"
+version = "0.0.3"
+description = "scan python files for llm api keys (designed for pre-commit)"
+authors = [{ name = "Joshua Sundance Bailey" }]
+readme = "README.md"
+dependencies = []
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+]
+keywords = ["llm", "api", "security", "lint", "pre-commit"]
+requires-python = ">=3.9"
+[project.urls]
+Homepage = "https://github.com/joshuasundance-swca/detect_llm_api_keys"
+
+
+[project.scripts]
+detect_llm_api_keys = "detect_llm_api_keys.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "bumpver",
+    "coverage",
+    "coverage-badge",
+    "pre-commit",
+    "pytest",
+]
+
+doc = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[tool.bumpver]
+current_version = "0.0.3"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag_message = "{new_version}"
+tag_scope = "default"
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"detect_llm_api_keys/__init__.py" = ['__version__ = "{version}"']
+"docs/conf.py" = ["release = '{version}'"]
+"README.md" = ['    rev: "{version}"']
+
+[tool.coverage.run]
+branch = true
+omit = ["*tests/*.py", "detect_llm_api_keys/__main__.py"]
+command_line = "-m pytest"
+source = ["detect_llm_api_keys"]
+
+[tool.coverage.report]
+show_missing = true
+# Regexes for lines to exclude from consideration
+exclude_also = [
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self\\.debug",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if __name__ == .__main__.:",
+
+    # Don't complain about abstract methods, they aren't run:
+    "@(abc\\.)?abstractmethod",
+    ]
+
+ignore_errors = true
+
+[tool.coverage.html]
+directory = "coverage_html_report"
+skip_covered = false
+skip_empty = true
+title = "detect_llm_api_keys coverage report"
