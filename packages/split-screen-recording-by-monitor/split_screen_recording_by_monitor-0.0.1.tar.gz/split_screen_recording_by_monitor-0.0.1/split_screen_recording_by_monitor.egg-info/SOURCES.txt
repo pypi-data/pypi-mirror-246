@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+split_screen_recording_by_monitor/__init__.py
+split_screen_recording_by_monitor/core.py
+split_screen_recording_by_monitor.egg-info/PKG-INFO
+split_screen_recording_by_monitor.egg-info/SOURCES.txt
+split_screen_recording_by_monitor.egg-info/dependency_links.txt
+split_screen_recording_by_monitor.egg-info/entry_points.txt
+split_screen_recording_by_monitor.egg-info/requires.txt
+split_screen_recording_by_monitor.egg-info/top_level.txt

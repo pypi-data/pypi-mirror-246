@@ -1,0 +1,3 @@
+[console_scripts]
+split_screen_recording_by_monitor = split_screen_recording_by_monitor.core:main
+
