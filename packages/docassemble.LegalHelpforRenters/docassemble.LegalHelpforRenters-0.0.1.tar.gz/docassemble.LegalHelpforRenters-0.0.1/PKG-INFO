@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: docassemble.LegalHelpforRenters
+Version: 0.0.1
+Summary: A docassemble extension.
+Home-page: https://docassemble.org
+Author: System Administrator
+Author-email: dhenry@lawv.net
+License: The MIT License (MIT)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# docassemble.LegalHelpforRenters
+
+A docassemble extension.
+
+## Author
+
+System Administrator, dhenry@lawv.net
+
+
+
