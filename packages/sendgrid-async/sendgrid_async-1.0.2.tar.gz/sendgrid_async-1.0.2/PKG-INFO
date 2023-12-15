@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: sendgrid-async
+Version: 1.0.2
+Summary: SendGrid using a client based on httpx.
+Home-page: https://github.com/EM51641/async-sendgrid/
+License: MIT
+Keywords: sendgrid,async,httpx
+Author: Elyes Mahjoubo
+Author-email: elyesmahjoubi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: sendgrid (>=6.7.0,<7.0.0)
+Project-URL: Repository, https://github.com/EM51641/async-sendgrid/
+Description-Content-Type: text/markdown
+
+| | |
+| --- | --- |
+| Python| ![Python](https://img.shields.io/pypi/pyversions/sendgrid-async) |
+| Package | [![PyPI Latest Release](https://img.shields.io/pypi/v/pandas.svg)](https://pypi.org/project/sendgrid-async/) [![PyPI Downloads](https://img.shields.io/pypi/dm/sendgrid-async.svg?label=PyPI%20downloads)](https://pypi.org/project/sendgrid-async/) |
+| Meta | [![License - MIT](https://img.shields.io/pypi/l/async_sendgrid.svg)](https://github.com/EM51641/async-sendgrid/blob/main/LICENSE)|
+
+# Async-Sendgrid
+
+Sendgrid simple asynchronous client based on the httpx libarary.
+
+# Installation
+
+It is possible to install sendgrid-async with pip:
+
+```shell
+pip install sendgrid-async
+```
+
+# Usage
+This is a small script showing how to send an email with async-sendgrid:
+
+First, you need to import the ```SendgridAPI``` from the ```async_sendgrid``` package. Then, you need to create a ```SendgridAPI``` object with your API key.
+
+```python
+from async_sendgrid import SendgridAPI
+import os
+
+API_KEY = os.environ.get['API_KEY']
+sendgrid = SendgridAPI(API_KEY)
+```
+
+Thereafter, you can create an email with the original ```sendgrid``` package such:
+
+```python
+from sendgrid.helpers.mail import Content, Email, Mail, To
+
+from_email = Email("test@example.com")
+to_email = To("test@example.com")
+subject = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+content = Content("text/plain", "Sed varius ligula ac urna vehicula ultrices. Nunc ut dolor sem.")
+
+mail = Mail(
+    from_email=from_email,
+    to_email=to_email,
+    subject=subject,
+    content=content
+    )
+
+```
+
+Finally you can send the email with the ```send``` method of the ```SendgridAPI``` instance:
+
+```python
+async with sendgrid as client:
+    response = await client.send(data)
+```
+
