@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: chimera-gw
+Version: 1.0.3
+Summary: Combined Hierarchical Inference Model for Electromagnetic and gRavitational-wave Analysis
+Home-page: https://github.com/CosmoStatGW/CHIMERA
+License: MIT
+Author: Nicola Borghi
+Author-email: nicola.borghi6@unibo.it
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: docs
+Requires-Dist: astropy (>=5.2,<6.0)
+Requires-Dist: docutils (>=0.17.1,<0.18.0) ; extra == "docs"
+Requires-Dist: h5py (>=3.5,<4.0)
+Requires-Dist: healpy (>=1.14,<2.0)
+Requires-Dist: jax[cpu]
+Requires-Dist: matplotlib (>=3.4,<4.0)
+Requires-Dist: myst-parser (>=0.18.1,<0.19.0) ; extra == "docs"
+Requires-Dist: nbsphinx (>=0.8.10) ; extra == "docs"
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: readthedocs-sphinx-search (>=0.1.2,<0.2.0) ; extra == "docs"
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: schwimmbad (>=0.3.2,<0.4.0)
+Requires-Dist: scikit-learn (>=1.0)
+Requires-Dist: scipy (>=1.7)
+Requires-Dist: sphinx (==5.3.0) ; extra == "docs"
+Requires-Dist: sphinx-book-theme (>=1.0) ; extra == "docs"
+Requires-Dist: sphinx-copybutton (>=0.5.1,<0.6.0) ; extra == "docs"
+Project-URL: Documentation, https://gwfast.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/CosmoStatGW/CHIMERA
+Description-Content-Type: text/markdown
+
+# CHIMERA
+
+<img src="https://raw.githubusercontent.com/CosmoStatGW/CHIMERA/main/docs/_static/CHIMERA_logoNB2.svg" alt="CHIMERA" width=300px>
+
+
+**CHIMERA** (Combined Hierarchical Inference Model for Electromagnetic and gRavitational-wave Analysis) is a flexible Python code to analyze standard sirens with galaxy catalogs, allowing for a joint fitting of the cosmological and astrophysical population parameters within a Hierarchical Bayesian Inference framework.
+
+The code is designed to be accurate for different scenarios, encompassing bright, dark, and spectral sirens methods, and computationally efficient in view of next-generation GW observatories and galaxy surveys. It uses the LAX-backend implementation and Just In Time (JIT) computation capabilities of JAX.
+
+[![GitHub](https://img.shields.io/badge/GitHub-CHIMERA-9e8ed7)](https://github.com/CosmoStatGW/CHIMERA/)
+[![arXiv](https://img.shields.io/badge/arXiv-2106.14894-28bceb)](https://arxiv.org/abs/2106.14894)
+[![Read the Docs](https://readthedocs.org/projects/chimera-gw/badge/?version=latest)](https://chimera-gw.readthedocs.io/en/latest/?badge=latest)
+[![License](https://img.shields.io/badge/license-MIT-fb7e21)](https://github.com/CosmoStatGW/CHIMERA/blob/main/LICENSE)
+[![GitLab](https://img.shields.io/github/v/tag/CosmoStatGW/CHIMERA?label=latest-release&color=da644d)](https://github.com/CosmoStatGW/CHIMERA/releases)
+
+
+## Installation
+
+The code can be quikly installed from [Pypi](https://pypi.org/project/chimera-gw/):
+
+    pip install chimera-gw
+
+For more flexibility, clone the source repository into your working folder and install it locally:
+
+    git clone https://github.com/CosmoStatGW/CHIMERA
+    cd CHIMERA/
+    pip install -e .
+
+To test the installation, run the following command:
+
+    python -c "import CHIMERA; print(CHIMERA.__version__)"
+
+
+## Documentation
+
+The full documentation is provided at [chimera-gw.readthedocs.io](https://chimera-gw.readthedocs.io)
+
+
+## Citation
+
+If you find this code useful in your research, please cite the following paper ([ADS](https://ui.adsabs.harvard.edu/abs/2023arXiv231205302B/), [arXiv](https://arxiv.org/abs/2312.05302), [INSPIRE](https://inspirehep.net/literature/2734729)):
+
+
+    @ARTICLE{2023arXiv231205302B,
+        author = {{Borghi}, Nicola and {Mancarella}, Michele and {Moresco}, Michele and et al.},
+            title = "{Cosmology and Astrophysics with Standard Sirens and Galaxy Catalogs in View of Future Gravitational Wave Observations}",
+        journal = {arXiv e-prints},
+        keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Astrophysics of Galaxies, General Relativity and Quantum Cosmology},
+            year = 2023,
+            month = dec,
+            eid = {arXiv:2312.05302},
+            pages = {arXiv:2312.05302},
+            doi = {10.48550/arXiv.2312.05302},
+    archivePrefix = {arXiv},
+        eprint = {2312.05302},
+    primaryClass = {astro-ph.CO},
+        adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv231205302B},
+        adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+    }
+
