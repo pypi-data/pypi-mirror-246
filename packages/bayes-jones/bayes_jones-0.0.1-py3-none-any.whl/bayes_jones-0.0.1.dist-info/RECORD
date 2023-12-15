@@ -1,0 +1,13 @@
+bayes_jones/__init__.py,sha256=5JpNYDhGDe8vlkooAfhWt4YCr-ef0fPy3NTm-LuEMb4,176
+bayes_jones/common.py,sha256=ZO8gT-UYcEHvnII7Jt4UKQ5hOWn5PDvo34onh8MUuyU,635
+bayes_jones/parameter_estimation.py,sha256=UQUnmKBjoSHPDE9THfX9shrvJvJuavw_gN1ZaAfBLS8,4976
+bayes_jones/types.py,sha256=vguEHzNDouXjqIjGf1vnUfGiGB6X_JryFEnJIv9qSVc,238
+bayes_jones/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bayes_jones/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bayes_jones/tests/conftest.py,sha256=Iz67L6JDu0-y-7qcUWzmbfU1YKiUSDLyHHzPK2fZeoo,1659
+bayes_jones/tests/test_parameter_estimation.py,sha256=TgYspV1HzZ6RArtwK9xIrYXgJVfeyafgTRueeNidyT8,945
+bayes_jones-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bayes_jones-0.0.1.dist-info/METADATA,sha256=M5qDm6MxmzJ00PUD7Tx11BEI2x--zpVrykfs6mJ6u4s,3206
+bayes_jones-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bayes_jones-0.0.1.dist-info/top_level.txt,sha256=TNRFFt-yzviXtqWBa1qCmxYf9Mhgu3Gz8sKkPSR0eYs,12
+bayes_jones-0.0.1.dist-info/RECORD,,
