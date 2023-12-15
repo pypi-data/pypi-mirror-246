@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pdf4md"
+version = "0.0.1"
+description = "convert markdown to pdf"
+authors = ["luzhixing12345 <luzhixing12345@163.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/luzhixing12345/pdf4md"
+documentation = "https://luzhixing12345.github.io/pdf4md/"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+MarkdownParser = "^0.5.20"
+syntaxlight = '*'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pdf4md = 'zood.main:main'
