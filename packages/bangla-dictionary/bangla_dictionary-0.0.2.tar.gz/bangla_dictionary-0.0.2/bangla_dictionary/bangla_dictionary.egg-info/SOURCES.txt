@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bangla_dictionary/bangla_dictionary.egg-info/PKG-INFO
+bangla_dictionary/bangla_dictionary.egg-info/SOURCES.txt
+bangla_dictionary/bangla_dictionary.egg-info/dependency_links.txt
+bangla_dictionary/bangla_dictionary.egg-info/requires.txt
+bangla_dictionary/bangla_dictionary.egg-info/top_level.txt
+bangla_dictionary/dictionary/__init__.py
+bangla_dictionary/dictionary/bangla_dictionary.py
+bangla_dictionary/ipa/__init__.py
+bangla_dictionary/ipa/ipa.py
