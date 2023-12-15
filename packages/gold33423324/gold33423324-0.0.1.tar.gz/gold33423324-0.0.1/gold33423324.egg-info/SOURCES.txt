@@ -1,0 +1,7 @@
+setup.py
+gold/__init__.py
+gold/calculator.py
+gold33423324.egg-info/PKG-INFO
+gold33423324.egg-info/SOURCES.txt
+gold33423324.egg-info/dependency_links.txt
+gold33423324.egg-info/top_level.txt
