@@ -1,0 +1,2 @@
+[console_scripts]
+bamboo_duck = bamboo_duck.main:cli
