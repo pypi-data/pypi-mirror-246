@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/ianthe/__init__.py
+src/ianthe/__main__.py
+src/ianthe/ianthe.py
+src/ianthe/icon.ico
+src/ianthe.egg-info/PKG-INFO
+src/ianthe.egg-info/SOURCES.txt
+src/ianthe.egg-info/dependency_links.txt
+src/ianthe.egg-info/top_level.txt
