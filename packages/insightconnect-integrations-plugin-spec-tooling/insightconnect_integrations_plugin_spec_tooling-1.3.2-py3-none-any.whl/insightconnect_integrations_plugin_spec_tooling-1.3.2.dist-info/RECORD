@@ -1,0 +1,9 @@
+icon_plugin_spec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icon_plugin_spec/plugin_spec.py,sha256=CIo16jfeTVFabmyLhXmMnx89vhB_oO2j8VlcPOMFbB8,20338
+icon_plugin_spec/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icon_plugin_spec/tests/test_komandPluginSpec.py,sha256=d_Z3hmnsROk50sEWSF9SaQmOGwjpQbqi_CNwVzE_ENU,4899
+insightconnect_integrations_plugin_spec_tooling-1.3.2.dist-info/LICENSE,sha256=vQRaJaE5ZdLitjbGvH-TTaAzKJmTejIytUOW0Ks0MyQ,1062
+insightconnect_integrations_plugin_spec_tooling-1.3.2.dist-info/METADATA,sha256=4clEY1oM_sxRghi_hWGWis9Cpjr1nh6_Zex0tqcMnWo,1689
+insightconnect_integrations_plugin_spec_tooling-1.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+insightconnect_integrations_plugin_spec_tooling-1.3.2.dist-info/top_level.txt,sha256=QL4fiEmxx7Nv59t__sol6JUJAji-CV-zLn6ucO-Lk6w,17
+insightconnect_integrations_plugin_spec_tooling-1.3.2.dist-info/RECORD,,
