@@ -1,0 +1,7 @@
+antimony/__init__.py,sha256=sKVudoR4pW8jz8uQHzXDewNKWlVKtmVzrjW4uXHl9x8,290
+antimony/antimony.py,sha256=jIIU-D5e5FRKhEYF_oyQ-sm7XE1qjyk1we29T177KZs,74665
+antimony/libantimony.dll,sha256=zBm5xIFAiuqvE9F7RWaCMl0pzn4fqshWHye65aXhiJg,5547008
+antimony-2.14.0.dist-info/METADATA,sha256=gzrm9WHHze-dX9ck91rgn7h5wB2K7sCuwjhh3mrYtvU,7017
+antimony-2.14.0.dist-info/WHEEL,sha256=2xSj8c4s_gFbWpcImYQptdXS3JLuzC2uK5Om8I_SEKg,100
+antimony-2.14.0.dist-info/top_level.txt,sha256=uCflTPdOoQsi-KG4ExQ9UleYlxI_mD_lA4d4rx5OyDA,9
+antimony-2.14.0.dist-info/RECORD,,
