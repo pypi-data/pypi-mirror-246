@@ -1,0 +1,14 @@
+Django>=2.0.0
+django-waffle>=1.0.0
+
+[celery]
+celery>=3
+
+[django]
+Django>=2.0.0
+django-waffle>=1.0.0
+
+[flask]
+flask>=0.11
+blinker>=1.1
+markupsafe
