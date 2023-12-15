@@ -1,0 +1,2 @@
+[console_scripts]
+cronjob_scanner = cronjob_scanner.cron_collector:main
