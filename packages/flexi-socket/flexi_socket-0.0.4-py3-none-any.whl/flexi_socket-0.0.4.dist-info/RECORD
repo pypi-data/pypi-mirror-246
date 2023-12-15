@@ -1,0 +1,10 @@
+flexi_socket/__init__.py,sha256=j0Oz3mAU6rQ0zp2ZiiIryyYR_XtdM4PAfv9MQx5yPLc,282
+flexi_socket/client_classifier.py,sha256=eA5X3lCIoDXeFNkLszEQ3O0zZ5kkZgV1xvXO7TYAoI4,183
+flexi_socket/connection.py,sha256=3bvoObqcyF4Oe6yu02oIprf_avhfIDhmo79HDSUvmII,4047
+flexi_socket/constraints.py,sha256=lH0TUbVOmWNeNfly-LnNzR9Voo7syZkBfnGEvmdmaGs,202
+flexi_socket/flexi_socket.py,sha256=c7WCePGovDXs5lEWV-IBCvqQyVDd1dya-X2VEUui1bE,6973
+flexi_socket/message.py,sha256=4oQQdrU0vGyQ_bXGq75YUU58L2HyCI_UhpG53qAoHOw,747
+flexi_socket-0.0.4.dist-info/METADATA,sha256=3hwSu_aj12-xQJHmNNY426scfeZPweQAGmzcut9XtfU,381
+flexi_socket-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+flexi_socket-0.0.4.dist-info/top_level.txt,sha256=enUvNqLYRhLLUvi3lxxVdDLu8N9dVgxygLZYwOkPOHc,13
+flexi_socket-0.0.4.dist-info/RECORD,,
