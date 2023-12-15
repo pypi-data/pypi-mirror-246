@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: yaqg-ni
+Version: 2023.12.0
+Summary: qt-based gui for yaqd-ni daemons
+Home-page: https://yaq.fyi
+Author: Blaise Thompson
+Author-email: blaise@untzag.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: yaqc
+Requires-Dist: pyqtgraph
+Requires-Dist: qtypes
+Requires-Dist: qtpy
+Requires-Dist: numpy
+Requires-Dist: tomli
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Project-URL: Issues, https://github.com/yaq-project/yaqd-ni/issues
+Project-URL: Source, https://github.com/yaq-project/yaqd-ni/
+Provides-Extra: dev
+
+# yaqg-ni
+
+[![PyPI](https://img.shields.io/pypi/v/yaqg-ni)](https://pypi.org/project/yaqg-ni)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/yaqg-ni)](https://anaconda.org/conda-forge/yaqg-ni)
+[![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
+[![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
+[![ver](https://img.shields.io/badge/calver-YYYY.0M.MICRO-blue)](https://calver.org/)
+[![log](https://img.shields.io/badge/change-log-informational)](https://github.com/yaq-project/yaqg-ni/blob/main/yaqg-ni/CHANGELOG.md)
+
+qtpy guis for yaqd-ni daemons.  These GUIs can be run as standalone programs or integrate with [yaqc-qtpy](https://github.com/yaq-project/yaqc-qtpy) as plugins.
+
+This package contains the following gui(s):
+
+- yaqd-ni-daqmx-tmux
+
+## maintainers
+- [Blaise Thompson](https://github.com/untzag)
+
