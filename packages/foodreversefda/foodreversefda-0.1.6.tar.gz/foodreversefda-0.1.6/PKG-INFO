@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: foodreversefda
+Version: 0.1.6
+Summary: Basic functionality. Enter event_id and retrieve event directory.
+Author: Yifei Chen
+Author-email: yc4307@columbia.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: vcrpy (>=5.1.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+This python package 'foodreversefda' provides some basic search functionalities on FDA's open api. 
+
+Available functions:
+    id_get()
+        Example:
+            import foodreversefda
+
+            id_instance = ID["000000", "111111"] 
+            info = id_instance.id_get()
+
+    ### "000000" and "111111" are placeholders for actual 'event_id'
+    ### You can search for multiple 'event_id's
+
+
+    date_get()
+        Example:
+            import foodreversefda
+
+            date_instance = Date(start = 20040101, end = 20131231, limit = 5) 
+            info = date_instance.date_get()
+
+    ### 'start'/'end' stand for the range of your desired report date. 
+    ### 'limit' stands for how many events you want to show, 'limit' must be entered to incorporate with API formatting
+
+
+    class_get()
+        Example:
+            import foodreversefda
+
+            class_instance = Classification(class_type = 1, limit = 4)
+            info = class_instance.class_get()
+
+    ### 'class_type' stands for the severity of the recalled event. Levels for 'class_type' include 1, 2, and 3. 
+    ### 'limit' stands for how many events you want to show, 'limit' must be entered to incorporate with API formatting
+
+
+    city_get()
+        Example:
+            import foodreversefda
+
+            city_instance = City(city = ["New York", "Austin"], limit = 2)
+            info = city_instance.city_get()
+
+    ### 'city' stands for the city you want to search for recalled events. 
+    ### 'limit' stands for how many events you want to show for each city, 'limit' must be entered to incorporate with API formatting
