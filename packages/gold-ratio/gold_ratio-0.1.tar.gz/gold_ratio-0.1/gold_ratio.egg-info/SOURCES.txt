@@ -1,0 +1,7 @@
+setup.py
+gold[33423303]/__init__.py
+gold[33423303]/golden_ratio.py
+gold_ratio.egg-info/PKG-INFO
+gold_ratio.egg-info/SOURCES.txt
+gold_ratio.egg-info/dependency_links.txt
+gold_ratio.egg-info/top_level.txt
