@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Plutonium-MCPE
+Version: 0.0.1
+Summary: Plutonium MCPE Scraper est un module Python qui extrait et organise les informations de statistiques à partir du site de Plutonium MCBE, les présentant sous forme de dictionnaire propre.
+Home-page: https://github.com/LocheMan/
+Author: LocheMan
+Keywords: plutonium,mcpe,mcbe
+License-File: LICENSE
