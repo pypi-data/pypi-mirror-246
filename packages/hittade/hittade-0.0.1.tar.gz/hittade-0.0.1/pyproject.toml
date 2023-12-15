@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hittade"
+authors = [{name = "Kushal Das", email = "mail@kushaldas.in"}]
+dynamic = ["version", "description"]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.6"
+
+
+[project.urls]
+Home = "https://github.com/kushaldas/hittade"
+
+[project.scripts]
+hittade = "hittade:main"
+
+[tool.flit.sdist]
+include = ["LICENSE", "README.md"]
