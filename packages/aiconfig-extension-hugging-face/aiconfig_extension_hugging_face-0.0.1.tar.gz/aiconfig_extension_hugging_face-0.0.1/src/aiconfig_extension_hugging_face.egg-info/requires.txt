@@ -1,0 +1,11 @@
+black
+pylint
+python-aiconfig
+huggingface_hub
+accelerate
+diffusers
+torch
+torchvision
+torchaudio
+transformers
+asyncio
