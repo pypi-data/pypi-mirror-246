@@ -1,0 +1,6 @@
+setuptools
+ruamel.yaml<0.19,>=0.16.0
+schema_salad
+
+[testing]
+pytest<8
