@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: feign-python
+Version: 0.0.4
+Summary: feign python实现,提供python应用与java微服务体系集成，目前支持注册中心(nacos)以及非注册中心调用模式，详情请参考源码中的example
+Home-page: https://github.com/openandopen/feign-python.got
+Author: ldj
+Author-email: zuiwoxing@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
