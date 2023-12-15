@@ -1,0 +1,13 @@
+ssb_hermes/__init__.py,sha256=51Ykjxze-QzIXRzAeaa8W0Pi0fJZNtZmij6EYGQtYY4,18
+ssb_hermes/__main__.py,sha256=jHUE8g8nX3j0RmSUEqpVFBvBUGBI3zpMUGw9_BTn5Ag,210
+ssb_hermes/_find_match_rules.py,sha256=oHMWjjVyN5t-1fSw1aobs7bC8DSlPryvgBP9kYuo1Is,3593
+ssb_hermes/_functions.py,sha256=yUfZt1TFOvvEKs8Qe_dGF4hSypXS5CabaEsgU1VEAsA,5262
+ssb_hermes/example_data/test_data.csv,sha256=GhZyN_ncH2ByiaJg9p7JQ8HTBmUPhSnVGITlizQuZ6I,967
+ssb_hermes/example_data/test_registry.csv,sha256=Vq74xMvKI1b8_lLXUTed04O0i6l1AnzMuL1Zz5biYNA,976
+ssb_hermes/functions.py,sha256=7SSc8UuyNJli2sSaawxkoJytWKSOmM_XRnNiO-coGMM,7473
+ssb_hermes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssb_hermes-0.0.5.dist-info/LICENSE,sha256=16ypqLj9heMmBHjBq-QfD49GjIpp-wrrngP5zrINrmM,35886
+ssb_hermes-0.0.5.dist-info/METADATA,sha256=twknxcyFeLPHTpInur71Uok_F6PDg-29q1ZvRkZPCFU,3960
+ssb_hermes-0.0.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ssb_hermes-0.0.5.dist-info/entry_points.txt,sha256=xgq218KE1cV9v7abjif5_gV6kdHGTm3xoSZmJHrbgi4,55
+ssb_hermes-0.0.5.dist-info/RECORD,,
