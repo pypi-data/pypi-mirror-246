@@ -1,0 +1,15 @@
+Plymouth,_Massachusetts
+Concord,_Massachusetts
+Newtown
+Gilbert,_Arizona
+Palm_Beach,_Florida
+Vail
+Tiburon
+Uxbridge,_Massachusetts
+
+Kaskaskia
+Redondo
+Tarn
+Seine-Maritime
+Famagusta_District
+Nicosia_District

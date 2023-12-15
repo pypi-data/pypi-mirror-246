@@ -1,0 +1,15 @@
+West_Bend
+Beloit,_Wisconsin
+Manitowoc,_Wisconsin
+Chippewa_Falls,_Wisconsin
+Stevens_Point
+Wausau
+New_Berlin
+Oak_Creek
+
+Colby
+Augusta,_Wisconsin
+Livingston
+Buffalo
+Gorizia_Statistical_Region
+Lower_Sava_Statistical_Region

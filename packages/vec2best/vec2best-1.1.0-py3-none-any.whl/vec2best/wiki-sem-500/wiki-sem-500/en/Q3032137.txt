@@ -1,0 +1,15 @@
+Lugano
+Riviera
+Locarno
+Mendrisio
+Vallemaggia
+Blenio
+Leventina
+Bellinzona
+
+Saint-Maurice
+Frauenfeld
+Gros-de-Vaud
+Aigle
+Lake_Sempach
+Lake_Murten

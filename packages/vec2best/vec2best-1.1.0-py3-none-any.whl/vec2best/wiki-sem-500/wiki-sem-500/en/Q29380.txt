@@ -1,0 +1,15 @@
+.edu
+.cat
+.asia
+.mil
+.gov
+.aero
+.mobi
+.xxx
+
+.uk
+.be
+.net
+second-level_domain
+Geographia
+Journal_des_sçavans
