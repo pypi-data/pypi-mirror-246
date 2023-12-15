@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: OptiFlowPy
+Version: 1.0.2
+Summary: An advanced batch image compressor.
+Home-page: UNKNOWN
+Author: Light Andy
+Author-email: andy197197@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
