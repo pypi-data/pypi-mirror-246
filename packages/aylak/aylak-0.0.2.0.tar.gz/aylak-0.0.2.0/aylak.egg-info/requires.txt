@@ -1,0 +1,9 @@
+setuptools
+wheel
+requests
+parsel
+cssselect
+regex
+Pillow
+pythonansi
+poetry-core>=1.0.0
