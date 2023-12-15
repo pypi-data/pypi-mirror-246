@@ -1,0 +1,10 @@
+lazypredict
+rdkit
+mordred
+ipyplot
+ipython
+pandas
+Pillow
+pybase64
+requests
+statsmodels
