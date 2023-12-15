@@ -1,0 +1,16 @@
+composabl_cli/__init__.cpython-39-darwin.so,sha256=T_yBdieQQjrHEZaFgczuReC8n7p3pCPAOtg-xZKO10M,121562
+composabl_cli/k8s/__init__.cpython-39-darwin.so,sha256=sCRRXsrE8kAEj-NAfEEfEvXfzhtDVTKoihvFiDKnXW4,120762
+composabl_cli/k8s/kubernetes_job_mgr.cpython-39-darwin.so,sha256=3XSv8bfvS16shE7kyhqPHokpS8tiPurgNGqRTH9aGBk,324212
+composabl_cli/cli/cli_historian.cpython-39-darwin.so,sha256=CwEOcneuVNbub8q-F42mc-b1V8ZJyjw3y1HlAWmgMGE,285375
+composabl_cli/cli/cli_agent.cpython-39-darwin.so,sha256=mV2VaBYjYHzH18szbYqJNMk4UU6jKrlIO2oPy0lA9_Y,215371
+composabl_cli/cli/cli_debug.cpython-39-darwin.so,sha256=aXeaCwaAdxb6yBX07P0W1ChbVkkbgCApQikrh1IRzFA,181195
+composabl_cli/cli/cli.cpython-39-darwin.so,sha256=1bYFp-INt7hOPUpS9JWuBX_8IbDS6tzUV3MEELYfz4Y,179093
+composabl_cli/cli/cli_sim.cpython-39-darwin.so,sha256=0ijlznb_97_alnRngVt9ssYXnhkeZNzbMIU0Ub5pawo,378585
+composabl_cli/cli/__init__.cpython-39-darwin.so,sha256=0lWQIgvU0rFlfgdDV0Y6ZoAnLg-DBi4Ni-j0-GUz8Go,121482
+composabl_cli/cli/cli_job.cpython-39-darwin.so,sha256=hTUG5BKOgH3JxFYpmE_n4l4928LDfbn2R8sgtvbPZec,430505
+composabl_cli/cli/cli_benchmark.cpython-39-darwin.so,sha256=07L_H6H7vCPM7rgV43cCUsJUyslWdW4Jzu1L8kJRNDI,217615
+composabl_cli_dev-0.6.2.dev10.dist-info/RECORD,,
+composabl_cli_dev-0.6.2.dev10.dist-info/WHEEL,sha256=xX5eQQnems5GjABODHajeVXEXS9Ycsnxtza7cCoxqTA,113
+composabl_cli_dev-0.6.2.dev10.dist-info/entry_points.txt,sha256=WrLVbw0dPbDvkgFcNa275XoyuBvDoP-453FEPMn_cG8,56
+composabl_cli_dev-0.6.2.dev10.dist-info/top_level.txt,sha256=EGQnCayGP2E4xx8Z-rUeCIw8n3qRhuqDYQREYU08lwY,14
+composabl_cli_dev-0.6.2.dev10.dist-info/METADATA,sha256=D14HSKQ_3NxHoS_ovS51jQ-uYpRH6LVTrmzn0pSuHYk,1794
