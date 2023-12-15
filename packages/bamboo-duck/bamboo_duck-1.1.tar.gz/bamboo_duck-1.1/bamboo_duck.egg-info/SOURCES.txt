@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bamboo_duck/__init__.py
+bamboo_duck/main.py
+bamboo_duck/my_function.py
+bamboo_duck/parsewith.py
+bamboo_duck.egg-info/PKG-INFO
+bamboo_duck.egg-info/SOURCES.txt
+bamboo_duck.egg-info/dependency_links.txt
+bamboo_duck.egg-info/entry_points.txt
+bamboo_duck.egg-info/requires.txt
+bamboo_duck.egg-info/top_level.txt

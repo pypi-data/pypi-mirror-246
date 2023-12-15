@@ -1,0 +1,8 @@
+duckdb
+PyYAML
+networkx
+matplotlib
+parsimonious
+
+[:python_version < "3.7"]
+dataclasses

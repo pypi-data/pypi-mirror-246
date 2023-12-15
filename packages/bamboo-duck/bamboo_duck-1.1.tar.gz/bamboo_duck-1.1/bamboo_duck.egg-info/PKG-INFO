@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bamboo-duck
+Version: 1.1
+License-File: LICENSE
+Requires-Dist: duckdb
+Requires-Dist: PyYAML
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: parsimonious
+Requires-Dist: dataclasses; python_version < "3.7"
