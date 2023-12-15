@@ -1,0 +1,10 @@
+rdkit
+Pillow
+ipython
+mordred
+pandas
+statsmodels
+matplotliblazypredict
+rdkit
+mordred
+pubsams
