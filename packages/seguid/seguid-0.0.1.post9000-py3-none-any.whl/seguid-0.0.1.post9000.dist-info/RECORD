@@ -1,0 +1,9 @@
+seguid/__init__.py,sha256=mCstfx9DwNHYZODKcLfBf8AaZhv9VpCnh9a7Ot9hdIc,224
+seguid/asserts.py,sha256=BnlbN0RENoD9FT68rigSQ8s0YDds3taYbbFPWHUgqpI,2150
+seguid/chksum.py,sha256=j6_v6-9g74t5rdQtnM7sFwHSG-4HErmJseEpBsvumPs,11196
+seguid/manip.py,sha256=jB8lJL8IuP7EccNa52XM7v7qGRFsG18ixw0Qfa3t4UQ,4200
+seguid/tables.py,sha256=8vwS2RS8YB3LIgEH5xEWUCyuAnQDfc6MTE78Z-HunXM,3033
+seguid-0.0.1.post9000.dist-info/LICENSE.txt,sha256=pmNQqliHXX-C3t5RmWfs79OCoZPX2aIcimOxC1E3TYw,1092
+seguid-0.0.1.post9000.dist-info/METADATA,sha256=vtviAb26GKex6YICRy_EXNBP8XuDMQMHRZGkOqw7Lrs,1255
+seguid-0.0.1.post9000.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+seguid-0.0.1.post9000.dist-info/RECORD,,
