@@ -1,0 +1,11 @@
+setup.py
+wp-lib/__init__.py
+wp-lib/common.py
+wp-lib/hdfsService.py
+wp-lib/wpType.py
+wp_library.egg-info/PKG-INFO
+wp_library.egg-info/SOURCES.txt
+wp_library.egg-info/dependency_links.txt
+wp_library.egg-info/not-zip-safe
+wp_library.egg-info/requires.txt
+wp_library.egg-info/top_level.txt
