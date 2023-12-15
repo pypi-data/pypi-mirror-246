@@ -1,0 +1,3 @@
+[console_scripts]
+vicky = vicky.scripts.vicky:cli
+
