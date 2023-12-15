@@ -1,0 +1,4 @@
+[console_scripts]
+ppp = pypipe:main
+pypipe = pypipe:main
+pypipe-ppp = pypipe:main
