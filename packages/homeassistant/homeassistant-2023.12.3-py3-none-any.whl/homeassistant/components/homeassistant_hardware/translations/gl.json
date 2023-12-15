@@ -1,0 +1,11 @@
+{
+    "silabs_multiprotocol_hardware": {
+        "options": {
+            "step": {
+                "show_revert_guide": {
+                    "description": "Se queres cambiar s\u00f3 ao firmware Zigbee, completa os seguintes pasos manuais:\n\n  * Elimina o complemento Multiprotocol de Silicon Labs\n\n  * Instala o firmware s\u00f3 de Zigbee, segue a gu\u00eda en https://github.com/NabuCasa/silabs-firmware/wiki/Flash-Silicon-Labs-radio-firmware-manually.\n\n  * Reconfigura ZHA para migrar as configuraci\u00f3ns \u00e1 radio reprogramada"
+                }
+            }
+        }
+    }
+}
