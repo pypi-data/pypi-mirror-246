@@ -1,0 +1,16 @@
+simple_dag/__init__.py,sha256=LmP5kUWoe6quckSWGJ2feSUX0jBwo86g4QS0uno16ew,615
+simple_dag/_version.py,sha256=SFCDdrYA67D1Je-jHgVVh4LOopkPvuV6NMtqSJ7Tfhg,411
+simple_dag/transforms.py,sha256=5bfVdbwg6Ousqk_3xOn9p37wlBpYEKJPzGsD-CmaYYE,5504
+simple_dag/datahandlers/base_handler.py,sha256=x2H4Kvhtlg1POJlr0tzsRHf21clbqcLEGm-tTub6v4g,230
+simple_dag/datahandlers/binary_handler.py,sha256=S9x2ubMhg9EtVWHiikX_OZDOzsh_fiDY71SaFEkorI4,766
+simple_dag/datahandlers/pandas_handler.py,sha256=Kr-i7TxckNQ_dXAVGyVLnrp7yiYGwGxi5dLXetk5-wQ,1819
+simple_dag/datahandlers/spark_handler.py,sha256=frPm1YqiS15Dqe1KvA421kInlYw3bNk0jWU6H_LE_z0,1396
+simple_dag/orchestrators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_dag/orchestrators/dagster.py,sha256=geRszj6qzNRYRWZrXV37VJJzHy32sUOyrIJ8X3AT0fg,5224
+simple_dag-0.1.2.dist-info/AUTHORS.rst,sha256=4YCVowgZGuV-3TvBvNOyfCf8na5KC3P12k_ffQJanNw,153
+simple_dag-0.1.2.dist-info/LICENSE,sha256=Dbh0AnUL4yd7kg1E-ZsI_hvCho1cke-B_P4-_yTX_Yw,1069
+simple_dag-0.1.2.dist-info/METADATA,sha256=mvIX7ICP_evJ09Hd0eP2A6Wjz9IxI71-HP4AbBTiCQ4,6236
+simple_dag-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+simple_dag-0.1.2.dist-info/entry_points.txt,sha256=X2kNT_JzpYFrdFt-L5aZgNr_4oSkETonFEo6ndgUq9c,51
+simple_dag-0.1.2.dist-info/top_level.txt,sha256=M-QZ0WpE3F_15MWLxGpeKr7ubbn7hq1b8nGTv6NYafI,11
+simple_dag-0.1.2.dist-info/RECORD,,
