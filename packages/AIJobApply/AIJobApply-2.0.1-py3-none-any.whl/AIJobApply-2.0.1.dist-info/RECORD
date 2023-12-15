@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_handler.py,sha256=wFyI8q7NsVg4uVktYiDRlveyYSi3ismI7D2PyytsE8E,1466
+google_sheets_handler.py,sha256=u8WLlLDSpuqGc3wQuJCk36_jSOlIKyFLkdVsA6mch7M,2122
+job_processor.py,sha256=99TpIB0DR7Sdwk2CoeTMK_2qe76bzbZAvUIS-JU__wU,11391
+linkedin_handler.py,sha256=u3vaAnhTNjc5IPV4BZOWm_xdFMZlXthy_b7WQMQz9pc,7517
+main.py,sha256=a0dHoTRNxU0A1dVU1AGgSOxbh1go_pLD0OaSM_bXF_M,3291
+openai_handler.py,sha256=5_mKOrvuLlZaOdeHjb2bD9rKGVIPya21KxX-qkUECcc,5339
+utils.py,sha256=3DrTayDN3g6gLm-US5N4RUULrXga0xzYcShMHswRWCc,6510
+AIJobApply-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+AIJobApply-2.0.1.dist-info/METADATA,sha256=AFKFB5ET3aN5uAuaOutc6TX4X6r9hW07EeEJ2JnhuPY,9199
+AIJobApply-2.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+AIJobApply-2.0.1.dist-info/entry_points.txt,sha256=VXuEzWnUudt5hKISNPhgSU9MEp0xQUxPElit7VdPJZ4,55
+AIJobApply-2.0.1.dist-info/top_level.txt,sha256=55xmAHN35x18AVezjX27FU8BNzqXYATNhkwBB1P8pR0,102
+AIJobApply-2.0.1.dist-info/RECORD,,
