@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+promptcraft.egg-info/PKG-INFO
+promptcraft.egg-info/SOURCES.txt
+promptcraft.egg-info/dependency_links.txt
+promptcraft.egg-info/requires.txt
+promptcraft.egg-info/top_level.txt
