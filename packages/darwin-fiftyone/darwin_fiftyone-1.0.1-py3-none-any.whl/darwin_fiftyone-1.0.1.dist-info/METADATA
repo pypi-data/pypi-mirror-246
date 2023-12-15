@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: darwin-fiftyone
+Version: 1.0.1
+Summary: Integration between V7 Darwin and Voxel51
+Home-page: https://github.com/v7labs/darwin_fiftyone
+Author: Simon Edwardsson & Mark Cox-Smith
+License-File: LICENSE
+Requires-Dist: darwin-py
+Requires-Dist: fiftyone
+
