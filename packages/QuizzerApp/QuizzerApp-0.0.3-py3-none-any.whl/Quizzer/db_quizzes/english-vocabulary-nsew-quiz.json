@@ -1,0 +1,117 @@
+{
+    "quizname": "North, South, East and West Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The Earth rotates on a ________ axis.",
+            "answer": "north-south",
+            "choices": {
+                "1": "north-east",
+                "2": "north-west",
+                "3": "north-south"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Southern elephant seals live ________ here.",
+            "answer": "south of",
+            "choices": {
+                "1": "south of",
+                "2": "South of",
+                "3": "southern"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "\"We live on the south-east coast.\" In this sentence south-east is",
+            "answer": "an adjective",
+            "choices": {
+                "1": "a noun",
+                "2": "an adjective",
+                "3": "an adverb"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "North, south, east and west are often referred to as the ________ points of the compass.",
+            "answer": "cardinal",
+            "choices": {
+                "1": "cardinal",
+                "2": "intercardinal",
+                "3": "secondary"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The direction north-east is ________ point of the compass.",
+            "answer": "an intercardinal",
+            "choices": {
+                "1": "a tertiary",
+                "2": "a cardinal",
+                "3": "an intercardinal"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Europe is ________ of Africa.",
+            "answer": "north",
+            "choices": {
+                "1": "to the south",
+                "2": "in the north",
+                "3": "north"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The grocery store faces ________ and gets a lot of sunlight.",
+            "answer": "south-east",
+            "choices": {
+                "1": "south-east",
+                "2": "in the south",
+                "3": "in the north"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The weather report says the wind was ________ all night.",
+            "answer": "coming from the east",
+            "choices": {
+                "1": "coming from the east",
+                "2": "coming the east",
+                "3": "facing east"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The sun rises in the _____ and moves across the sky.",
+            "answer": "east",
+            "choices": {
+                "1": "north",
+                "2": "west",
+                "3": "east"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Moscow is ________ of Russia.",
+            "answer": "in the west",
+            "choices": {
+                "1": "in the east",
+                "2": "in the west",
+                "3": "to the west"
+            }
+        }
+    ]
+}

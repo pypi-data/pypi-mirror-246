@@ -1,0 +1,117 @@
+{
+    "quizname": "Christmas Vocabulary Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Christmas is a religious festival that celebrates the _______ of Jesus Christ.",
+            "answer": "birth",
+            "choices": {
+                "1": "birth",
+                "2": "life",
+                "3": "death"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Christmas Eve is on",
+            "answer": "December 24",
+            "choices": {
+                "1": "December 24",
+                "2": "December 25",
+                "3": "December 26"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Christians believe Jesus was born in Bethlehem, a small town in",
+            "answer": "the Middle East",
+            "choices": {
+                "1": "Southern Europe",
+                "2": "Northern Africa",
+                "3": "the Middle East"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is found in most Christian homes during the Christmas holidays?",
+            "answer": "a tree decorated with tinsel",
+            "choices": {
+                "1": "a bearded man in a red suit",
+                "2": "a tree decorated with tinsel",
+                "3": "a small herd of reindeer"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Many children think that _______ brings their Christmas presents.",
+            "answer": "Father Christmas",
+            "choices": {
+                "1": "Father Christmas",
+                "2": "an angel",
+                "3": "a Christmas ghost"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "How many gifts did the wise men from the East bring for Jesus?",
+            "answer": "three",
+            "choices": {
+                "1": "one",
+                "2": "three",
+                "3": "twelve"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is traditionally eaten at Christmas?",
+            "answer": "turkey",
+            "choices": {
+                "1": "tinsel",
+                "2": "mistletoe",
+                "3": "turkey"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Father Christmas is also known as",
+            "answer": "Santa Claus",
+            "choices": {
+                "1": "Santa Christmas",
+                "2": "Santa Claus",
+                "3": "Father Claus"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Old songs and hymns written especially for Christmas are called",
+            "answer": "Christmas carols",
+            "choices": {
+                "1": "Christmas carols",
+                "2": "Santa songs",
+                "3": "holiday hits"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Which is a common abbreviation of \"Christmas\"?",
+            "answer": "Xmas",
+            "choices": {
+                "1": "Cmas",
+                "2": "Ex-mas",
+                "3": "Xmas"
+            }
+        }
+    ]
+}
