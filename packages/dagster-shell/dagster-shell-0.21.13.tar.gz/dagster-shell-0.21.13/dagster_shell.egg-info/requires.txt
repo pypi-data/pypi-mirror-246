@@ -1,0 +1,4 @@
+dagster==1.5.13
+
+[test]
+psutil
