@@ -1,0 +1,16 @@
+src/__init__.py,sha256=sBEIr7LhCTczeTjP6DCgjKbi-oI_ByWQ5rUFJe-Uvwo,191
+src/compile_xml.py,sha256=Cbtwfdsgm7QZv2kUVe8Zf_VwtRB1-T9g0SOaqMSJTNs,1697
+src/gui.py,sha256=evNSGlNxl9x3zUHFP-Q67Wunflp6thKv20p6tp9p7Wk,15409
+src/read_input_xml.py,sha256=Cz_5_kyfWrZOg3JxcSKuJFcLidc5KFIU9UrxhvImjgI,5094
+src/xml_object.py,sha256=y7eGgFhMY9GD_k5u0yAvL1IqFHrX5CfkjJaBxfVtcz4,3433
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/functional/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=nFUpOuKuBSixzdd1g8qZGyR_dGtjJSc6-30x7dmM0-s,103
+tests/unit/test_compile.py,sha256=Gvb41qN_KZ7eivQ8IZACs_sRT9zUBPZMjTc5InRVlM8,757
+tests/unit/test_read_input_xml.py,sha256=z3Hrxdi5gZfR4erOik5WMWwrCGGPJZzAicoAjDBI8HU,5176
+tests/unit/test_xml_object.py,sha256=kXCjxVcgBAoJGgKw9KQvQckdnMw7hv5_MiudCVVAPjI,6497
+arcade_xml_generator-0.0.1.dist-info/LICENSE,sha256=iJUbUgVtMyqBgE6BzJH6Po4mMVZWW8zEAf_KpcuPZKU,1084
+arcade_xml_generator-0.0.1.dist-info/METADATA,sha256=XUuRuUmpZ3JnP9KmelKSOxXi8PGWCMaR4m-W63pkoO4,3390
+arcade_xml_generator-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+arcade_xml_generator-0.0.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+arcade_xml_generator-0.0.1.dist-info/RECORD,,
