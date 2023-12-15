@@ -1,0 +1,6 @@
+libname/__init__.py,sha256=6cdKp2dYMWQqqMGjivcOdrtkZZ2ZQNVoV25WiZj7vl0,27
+libname/hello.py,sha256=FVP-NR9Wu2X-c28lr-mv1vym1zxNtVli2-6zmpeQeXg,41
+test_package63-0.0.1.dist-info/METADATA,sha256=8E7wEnp0qJCu-CO4GWvF5RmBntBoC4SnxSgu-7GF4kM,515
+test_package63-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+test_package63-0.0.1.dist-info/top_level.txt,sha256=F8SAi3S3n6gD3xYqzHD5I-0D7fExfrC5ppvjVK5G_Ks,8
+test_package63-0.0.1.dist-info/RECORD,,
