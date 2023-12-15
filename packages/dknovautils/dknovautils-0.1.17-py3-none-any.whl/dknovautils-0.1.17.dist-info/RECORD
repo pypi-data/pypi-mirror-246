@@ -1,0 +1,13 @@
+dknovautils/__init__.py,sha256=QizCOU06ykyny7HqnOcNmEtNdGZt5Lf8tdqomQyondI,307
+dknovautils/commons.py,sha256=gOupRMlV11OMBZ12N7DSxyQfCdAXJnrq0OZwjAvu7ik,2956
+dknovautils/dk_imports.py,sha256=AwQowGj4SQT8_HfApynpL0o4M0nkMyGeaASKL2D1Zd4,731
+dknovautils/dkat.py,sha256=UaATAW2wzG0QO30QqJTMWPwDhA3p2dbNpKgUsJISjII,11566
+dknovautils/dkfiles.py,sha256=U4v2wMeVga8rxRRVxEClLjq0_r04oUPNbreGBkQOd6U,103
+dknovautils/dkipy.py,sha256=jt_eRgtVvuXlyBj6DnMw0nS1b3EpbVmIpiFIjtVwqtk,1201
+dknovautils/example.py,sha256=k-coE6gqTzTimMVW07B0wH3LZvVTTeKPjl6qyVM39cs,501
+dknovautils/myadd.py,sha256=5Ey-l9dIMG6C6yzlBDt16sfEKj0KjctvZ7UjFWoyXyY,140
+dknovautils/mysubtract.py,sha256=1B3uB57z844TjSLblDwDefTMAGiDr_Um_XK5so06BGg,160
+dknovautils-0.1.17.dist-info/METADATA,sha256=uIuFh4PHs8upt877MuHWFX9u91hEJKU4zIYpWgLx8rs,1465
+dknovautils-0.1.17.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+dknovautils-0.1.17.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+dknovautils-0.1.17.dist-info/RECORD,,
