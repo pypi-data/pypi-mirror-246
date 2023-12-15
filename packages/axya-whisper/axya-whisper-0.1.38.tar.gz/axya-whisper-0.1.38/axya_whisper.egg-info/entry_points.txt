@@ -1,0 +1,2 @@
+[console_scripts]
+axya-whisper-windows-service = axya_whisper.service:main
