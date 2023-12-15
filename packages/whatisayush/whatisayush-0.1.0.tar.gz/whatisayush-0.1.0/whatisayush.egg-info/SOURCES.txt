@@ -1,0 +1,5 @@
+setup.py
+whatisayush.egg-info/PKG-INFO
+whatisayush.egg-info/SOURCES.txt
+whatisayush.egg-info/dependency_links.txt
+whatisayush.egg-info/top_level.txt
