@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_boot_siba.egg-info/PKG-INFO
+django_boot_siba.egg-info/SOURCES.txt
+django_boot_siba.egg-info/dependency_links.txt
+django_boot_siba.egg-info/requires.txt
+django_boot_siba.egg-info/top_level.txt
+siba/__init__.py
+siba/loader.py
+siba/locale.py
+siba/parser.py
+siba/translation.py
+siba/parsing_rules/__init__.py
+siba/parsing_rules/pluralization.py
