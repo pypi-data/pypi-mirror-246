@@ -1,0 +1,10 @@
+{
+    "type": "operate",
+    "epid": "%(epid)s",
+    "body": {
+        "command": "Device.Reboot()",
+        "command_key": "Okey!",
+        "send_resp": true,
+        "args": []
+    }
+}

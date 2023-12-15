@@ -1,0 +1,9 @@
+{
+    "type": "set",
+    "epid": "%(epid)s",
+    "body": {
+        "allow_partial": true,
+        "update_objs": [
+            [ "Device.IP.Diagnostics.DownloadDiagnostics.", [
+                    ["DownloadURL", "http://proof.ovh.net/files/10Mb.dat", true]]]]}}
+

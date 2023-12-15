@@ -1,0 +1,5 @@
+# vim: ft=sh
+set -a
+cpeid="00259E-48575443335A3DA3"
+epid="%(epid)s"
+set +a
