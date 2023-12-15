@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tkai
+Version: 0.1.1
+Summary: A playground for AI experimentation
+Requires-Python: >=3.8
+Requires-Dist: tinydb>=4.8.0
+Requires-Dist: typer>=0.9.0
+Description-Content-Type: text/markdown
+
+# tktktk
+
+Describe your project here.

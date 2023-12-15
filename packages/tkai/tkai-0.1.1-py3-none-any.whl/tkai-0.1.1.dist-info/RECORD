@@ -1,0 +1,10 @@
+tkai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tkai/__main__.py,sha256=8dThuIaWyjUE0oAkpGvQcJDSSULefuSobbVTcub8Cpg,68
+tkai/commands.py,sha256=UtatsJeWKHXaRBk1kkXt5TEjnmroqQsma6nTTEQaxEI,684
+tkai/utils.py,sha256=M1dG28tPpEgWny996VZnenhtFrWFRn2ScH2UEWkVEig,506
+tkai/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tkai/chat/__main__.py,sha256=1hziOWL1LfyQ20GSlc7H50QYOFarczyohBQ-x_L5yrs,73
+tkai/chat/commands.py,sha256=TMHsxVa9wmR2PmQ3wQ3ztxjCpm0YNredAqQTOBeFyF0,191
+tkai-0.1.1.dist-info/METADATA,sha256=BMK8WSbx9zSfK7XH61s-BbYm_694wLmPnZHlMs1iH1g,252
+tkai-0.1.1.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+tkai-0.1.1.dist-info/RECORD,,
