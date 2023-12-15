@@ -1,0 +1,14 @@
+kraken_ref_postalCode/__init__.py,sha256=767WD5LPXmbl1cXtMHOZoDuxbUXjdHBZUHrPJ78IlSI,149
+kraken_ref_postalCode/flask_routes.py,sha256=WpPZtS50Z_pYqMyzH7MM7UG0B3HqHaeuljnSSiL201c,1074
+kraken_ref_postalCode/kraken_ref_methods.py,sha256=ZlTV2s2wdv4b5F6JTDxfl8fw1gdx2dUUxwH4B0wOcoQ,2132
+kraken_ref_postalCode/kraken_ref_postalCode.py,sha256=hgF6cEHpJw-nv19OU65GU7HcwTpXM7CmkfWdVNNU380,4021
+kraken_ref_postalCode/kraken_ref_postalCodes.py,sha256=a7mRKmSFLT8raKtoCxVw0hvvkdmPgguxKebJzmDEEIg,2254
+kraken_ref_postalCode/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_ref_postalCode/data/kraken_ref_postalCode.db.zip,sha256=IBwUJHiHXtZq-GDvusHd9zGfGQbFkxBhdcDHNiqyN1I,23767043
+kraken_ref_postalCode/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_ref_postalCode/helpers/json.py,sha256=qq0uHCJsAcuRkpGeEEWavkMpzkHvNCwyVj2oxC9PkOI,1646
+kraken_ref_postalCode-0.0.3.dist-info/LICENSE.txt,sha256=qLFuqzqW832YZMyEW1bt0f6Ut1wv0evqawURrhsLpp8,1071
+kraken_ref_postalCode-0.0.3.dist-info/METADATA,sha256=l0QQEk3jn0Lng82NZYeMnMx1hTvHEk05Yo0rBeisiy4,702
+kraken_ref_postalCode-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kraken_ref_postalCode-0.0.3.dist-info/top_level.txt,sha256=PBYmmGrtWr6_RByMM1h0wLmItUEADDjVM4mtVYfJufY,22
+kraken_ref_postalCode-0.0.3.dist-info/RECORD,,
