@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+puZC/__init__.py
+puZC.egg-info/PKG-INFO
+puZC.egg-info/SOURCES.txt
+puZC.egg-info/dependency_links.txt
+puZC.egg-info/requires.txt
+puZC.egg-info/top_level.txt
