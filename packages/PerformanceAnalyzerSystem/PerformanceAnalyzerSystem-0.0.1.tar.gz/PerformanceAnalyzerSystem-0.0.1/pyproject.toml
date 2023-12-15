@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PerformanceAnalyzerSystem"
+version = "0.0.1"
+authors = [
+  { name="Nayeli", email="naye.montiel.1806@gmail.com" },
+  { name="Karthiga", email="karthigaksk@gmail.com"},
+]
+description = "This is a customization analysis system that supports multiple data formats (JSON, XML, CSV) and has the capability to be configured and used across multiple domains."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Naye013/Data533-Step3-ContinuousIntergration"
+Issues = "https://github.com/Naye013/Data533-Step3-ContinuousIntergration/issues"
