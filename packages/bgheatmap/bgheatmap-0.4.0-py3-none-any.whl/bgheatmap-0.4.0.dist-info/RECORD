@@ -1,0 +1,17 @@
+bgheatmaps/__init__.py,sha256=KdRKSZCSAGH14xFOCj_zs_0bhQaAZkbq1bibRLMikok,170
+bgheatmaps/heatmaps.py,sha256=k426tJgj1t0lKR6if7IEmYDZkPxGxJGEAP1coCCt_54,8363
+bgheatmaps/planner.py,sha256=CqwojSN2tgoJIp6hRdYMhTDgUEmWx0tvXUKWuIW6bDo,3896
+bgheatmaps/slicer.py,sha256=tNWRWijNRt7oAz_GgkqUwjqV1wuK90a4-AZd4Z_mK8o,6081
+examples/cellfinder_cell_density.py,sha256=WCEw_rB1t44hPBguTwdxDJ7ZOLU2jHRTZ9LBOu85ltY,1439
+examples/get_coordiantes.py,sha256=t8Owd8tkmnVhgidNCi84qHRmUM4ZyvXPcZwJUcJ3Qz8,547
+examples/heatmap_2d.py,sha256=XnZpDoSVplLS2OL-l7ERDMkqLmd662ejSD-T_1oDxYs,608
+examples/heatmap_3d.py,sha256=VM_-YLFUUE_6vlrF5xnaBX4ziHkM68WrWwnrdUwXi18,565
+examples/heatmap_spinal_coord.py,sha256=aFP7ohacJze_eGyRHL4p7VMhUILf5-E2ZqlKOJihV_o,483
+examples/heatmap_zebrafish.py,sha256=YxZ5Z2N-dKQTq6XVyUiAs5Sx6hvDtJqQxHXzOX_Wj4M,820
+examples/plan.py,sha256=L-GZZ280Q4351-c_rLkw_29m4NOjwl8SF3XIPBUgV6g,660
+examples/slicer_2D.py,sha256=oG3yYoTANSYMGuqNPBsSnQs_XAymfddTmeN6oM1oe64,1633
+bgheatmap-0.4.0.dist-info/LICENSE,sha256=JNkoin_irzXTs1-VjrCdZrx-SU6PHVBUhZWLRcX67Uc,1067
+bgheatmap-0.4.0.dist-info/METADATA,sha256=Mv-z2NERF12K_d4KelN6JEfB6NDelE1QcHw86K9jKFE,5985
+bgheatmap-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bgheatmap-0.4.0.dist-info/top_level.txt,sha256=sq1y0UHcZ7IxJfKcnm1HJx_YUe2x-YRIk2BgI9joW-8,20
+bgheatmap-0.4.0.dist-info/RECORD,,
