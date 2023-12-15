@@ -1,0 +1,2 @@
+[console_scripts]
+function = app:main
