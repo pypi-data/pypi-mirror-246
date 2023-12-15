@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-ni-daqmx-tmux=yaqd_ni._ni_daqmx_tmux:NiDaqmxTmux.main
+
