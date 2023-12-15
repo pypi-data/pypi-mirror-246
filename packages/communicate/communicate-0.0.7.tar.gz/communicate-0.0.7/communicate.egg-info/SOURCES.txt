@@ -1,0 +1,8 @@
+README.md
+setup.py
+communicate.egg-info/PKG-INFO
+communicate.egg-info/SOURCES.txt
+communicate.egg-info/dependency_links.txt
+communicate.egg-info/top_level.txt
+dialog/__init__.py
+dialog/app.py
