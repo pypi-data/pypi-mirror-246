@@ -1,0 +1,8 @@
+infi_multi_db/__init__.py,sha256=xSuWqUIiqQ7B8WdW4id_bAbMtesqbFFT9n7mBqNRK88,116
+infi_multi_db/multiDB.py,sha256=o6FJrTkb00YM6BYrZCENpacDOr8tXEC8rQ9Ic_dDDh8,5894
+infi_multi_db/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infi_multi_db/handlers/postgresql.py,sha256=JoyaCyJCS366lsWODvXJuoidL6sBUTRAyq56EV-4L4g,10520
+infi_multi_db-0.0.4.dist-info/METADATA,sha256=k4MOV-lVtWdfobz7sDzJDU4ZlmBf8Mw1TWvTIP_vB2A,3461
+infi_multi_db-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+infi_multi_db-0.0.4.dist-info/top_level.txt,sha256=_tBxcWWfEe8NPu42MXOckuxXsbKJZvqeuj1zk3F6KOg,14
+infi_multi_db-0.0.4.dist-info/RECORD,,
