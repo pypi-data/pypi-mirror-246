@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: test-ml-flow
+Version: 0.2
+Summary: test_ml_flow
+Home-page: 
+Author: Veena Rao
+Author-email: veena.rao@hiro-microdatacenters.nl
+License: MIT
+Requires-Dist: mlflow
+
