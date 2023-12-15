@@ -1,0 +1,13 @@
+data533_superman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data533_superman/main.py,sha256=aRTOkF7QocEQrofhZWa1SjkCJPpmqXIM3D5c86EkzHg,18260
+data533_superman/administer/Testaccount_promotion.py,sha256=3_V3TMfW_SbIGTMrY1K9eEfUAlbNYPKfkykstfJBaPc,2726
+data533_superman/administer/Testaccount_promotion1.py,sha256=5hEQPJunOmEzPTKEl0udVZ1rsHY6BnGEJE1ptc0IeGQ,934
+data533_superman/administer/Testinventory_class.py,sha256=sKxUqats173OjLYosXrvfdxig4ACUwYGCZh6meBm02c,3241
+data533_superman/administer/Testinventory_rollback.py,sha256=6uBg_PUMbPz5DecIB-wjTMXPg1NLK71QlLBt8alLMn8,1060
+data533_superman/customer/customer_function.py,sha256=mauBICHYS80_Il5kmGL7eLEQDtwPWEfa1seWiuXEx20,9246
+data533_superman/customer/test_members.py,sha256=X5VYEnsm1aWa2k8_iteqnXKKbrnY3oBhfJGISvxBKIo,7246
+data533_superman/customer/test_transactions.py,sha256=ggRpS6dheiNlpMEFTKDB6hxgexrus1FpChtHFw87B6A,5591
+data533_superman-0.0.1.dist-info/METADATA,sha256=JmZPKuQ34MpCHARnp18IKcfa6yWDDULaZlY4p3RYU5g,510
+data533_superman-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+data533_superman-0.0.1.dist-info/top_level.txt,sha256=atXiqIM-_VUIiF0xXbYytbyFSqy5ZyZofD6GHj0h3FE,17
+data533_superman-0.0.1.dist-info/RECORD,,
