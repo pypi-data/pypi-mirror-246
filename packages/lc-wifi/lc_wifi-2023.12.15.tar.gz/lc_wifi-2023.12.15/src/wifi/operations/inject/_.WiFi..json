@@ -1,0 +1,10 @@
+{
+    "type": "get",
+    "epid": "%(epid)s",
+    "body": [
+        [
+            "Device.WiFi."
+        ],
+        0
+    ]
+}

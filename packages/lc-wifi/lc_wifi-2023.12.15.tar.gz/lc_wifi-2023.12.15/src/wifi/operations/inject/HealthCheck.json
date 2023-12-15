@@ -1,0 +1,5 @@
+{
+    "type": "getsupportedprotocol",
+    "epid": "%(epid)s",
+    "body": "1.1,1.2"
+}

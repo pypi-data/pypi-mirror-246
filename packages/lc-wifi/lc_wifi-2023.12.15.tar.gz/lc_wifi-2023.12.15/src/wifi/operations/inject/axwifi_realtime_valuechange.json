@@ -1,0 +1,20 @@
+{
+    "data": {
+        "payload": {
+            "c_epid": "proto::controller",
+            "details": {
+                "send_resp": true,
+                "subscription_id": "axwifi_realtime_valuechange",
+                "value_change": {
+                    "param_path": "Device.Hosts.Host.1.WANStats.PacketsSent",
+                    "param_value": "77955"
+                }
+            },
+            "epid": "%(epid)s",
+            "list_type": "authenticated",
+            "type": "notify"
+        }
+    },
+    "final": 0,
+    "session_id": ""
+}
