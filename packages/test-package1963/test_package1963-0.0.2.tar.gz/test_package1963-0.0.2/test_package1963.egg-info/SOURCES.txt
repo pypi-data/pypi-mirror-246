@@ -1,0 +1,7 @@
+setup.py
+test_package1963/__init__.py
+test_package1963/hello.py
+test_package1963.egg-info/PKG-INFO
+test_package1963.egg-info/SOURCES.txt
+test_package1963.egg-info/dependency_links.txt
+test_package1963.egg-info/top_level.txt
