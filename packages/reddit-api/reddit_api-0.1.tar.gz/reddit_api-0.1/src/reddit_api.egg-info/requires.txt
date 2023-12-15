@@ -1,0 +1,14 @@
+praw
+
+[dev]
+pytest
+pytest-cov
+flake8
+black
+isort
+mypy
+pylint
+pre-commit
+tox
+twine
+wheel
