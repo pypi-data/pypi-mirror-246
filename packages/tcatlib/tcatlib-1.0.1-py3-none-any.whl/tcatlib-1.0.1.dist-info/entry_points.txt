@@ -1,0 +1,2 @@
+[console_scripts]
+tcat = tcatlib.scripts.tcat:main_program

@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: tcatlib
+Version: 1.0.1
+Summary: tcat utility
+Author-email: James Mathews <mathewj2@mskcc.org>
+Project-URL: Documentation, https://github.com/jimmymathews/tcat
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: tabulate ==0.8.10
+Requires-Dist: pandas ==2.0.2
+
+# tcat
+
+`tcat` is an extremely simple command-line tool for peeking at tabular data in the terminal.
+
+It works like `cat`, but it
+- will always try to render consistently delimited data files with aligned/straightened columns
+- does word wrapping if necessary to try to fit the whole table inside the given terminal's width
+- works with tabs and commas
+- accepts standard input as an alternative to a file by filename
+
+## Install locally
+
+`./install_locally.sh`
+
+## Install from PyPI
+
+`pip install tcatlib`
+
+## Examples
+
+A whole file.
+```sh
+tcat sample_data/amtrak_station_info.tsv
+
+...
+
+│ Worcester                            │ WOR                 │ Worcester            │ MA                     │
+├──────────────────────────────────────┼─────────────────────┼──────────────────────┼────────────────────────┤
+│ Yazoo City                           │ YAZ                 │ Yazoo City           │ MS                     │
+├──────────────────────────────────────┼─────────────────────┼──────────────────────┼────────────────────────┤
+│ Yemassee                             │ YEM                 │ Yemassee             │ SC                     │
+├──────────────────────────────────────┼─────────────────────┼──────────────────────┼────────────────────────┤
+│ Yonkers                              │ YNY                 │ Yonkers              │ NY                     │
+├──────────────────────────────────────┼─────────────────────┼──────────────────────┼────────────────────────┤
+│ Yuma                                 │ YUM                 │ Yuma                 │ AZ                     │
+╘══════════════════════════════════════╧═════════════════════╧══════════════════════╧════════════════════════╛
+```
+
+A snippet sent to standard input.
+```sh
+head -n5 sample_data/amtrak_station_info.tsv | tcat
+
+╒═══════════════════╤═════════════════════╤════════════╤════════════════════════╕
+│ Name              │ AMTRAK station code │ City name  │ State or district code │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Aberdeen          │ ABE                 │ Aberdeen   │ MD                     │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Albany            │ ALY                 │ Albany     │ OR                     │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Albany-Rensselaer │ ALB                 │ Rensselaer │ NY                     │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Albion            │ ALI                 │ Albion     │ MI                     │
+╘═══════════════════╧═════════════════════╧════════════╧════════════════════════╛
+```
+
+Comma delimiter.
+```sh
+head -n5 sample_data/amtrak_station_info.csv | tcat
+
+╒═══════════════════╤═════════════════════╤════════════╤════════════════════════╕
+│ Name              │ AMTRAK station code │ City name  │ State or district code │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Aberdeen          │ ABE                 │ Aberdeen   │ MD                     │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Albany            │ ALY                 │ Albany     │ OR                     │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Albany-Rensselaer │ ALB                 │ Rensselaer │ NY                     │
+├───────────────────┼─────────────────────┼────────────┼────────────────────────┤
+│ Albion            │ ALI                 │ Albion     │ MI                     │
+╘═══════════════════╧═════════════════════╧════════════╧════════════════════════╛
+```
+
+Wrapped example.
+
+```txt
+╒════════════╤════════════════╤════════════╤═══════════════╕
+│ Name       │ AMTRAK station │ City name  │ State or      │
+│            │ code           │            │ district code │
+├────────────┼────────────────┼────────────┼───────────────┤
+│ Aberdeen   │ ABE            │ Aberdeen   │ MD            │
+├────────────┼────────────────┼────────────┼───────────────┤
+│ Albany     │ ALY            │ Albany     │ OR            │
+├────────────┼────────────────┼────────────┼───────────────┤
+│ Albany-    │ ALB            │ Rensselaer │ NY            │
+│ Rensselaer │                │            │               │
+├────────────┼────────────────┼────────────┼───────────────┤
+│ Albion     │ ALI            │ Albion     │ MI            │
+╘════════════╧════════════════╧════════════╧═══════════════╛
+```
