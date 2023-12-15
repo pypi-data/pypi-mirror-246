@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: GitHubRecommender
+Version: 0.1
+Summary: A GitHub Repository Recommender System
+Home-page: https://github.com/QMSS-G5072-2023/XIAO_YUBIN/tree/9901d0adc43d6f24dd8c7884202320107f9d9f94/Final%20Project
+Author: Yubin Xiao
+Author-email: Yubin.Xiao@columbia.edu
+Keywords: github api recommender system
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: argparse
+

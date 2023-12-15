@@ -1,0 +1,15 @@
+GitHubRecommender/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+GitHubRecommender/data_acquisition.py,sha256=MnXCL0eblrL_UH3qWzOHBy0yeQO_4KTrGRrRq30pLGc,13770
+GitHubRecommender/data_processing.py,sha256=Lry1srRwkes5j_D3albp1GdTSKv3woOcachvlOCafJE,6518
+GitHubRecommender/fetch_repos.py,sha256=e6QZBs0AeJAxjxUbH_pwOnOSj5AcpefSNvFXjKUCMnw,1160
+GitHubRecommender/main.py,sha256=ZkXuKyZ7-OVXAmZnHwYN4KvDqQNd9Pnik5yCc9w6q2o,2579
+GitHubRecommender/news_acquisition.py,sha256=RB6TNKqvwvivwtqFOH_mdAjHJ9XMRV8a7jK-sqDayj4,680
+GitHubRecommender/recommender_system.py,sha256=pQDKv4so6kfF87ht4z6FfU0EikLZKsRorj_DfV70pVg,2160
+GitHubRecommender/tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+GitHubRecommender/tests/test_data_acquisition.py,sha256=mgSMzz4vnmxQA_I6Bu2UIehnkFydTwCfy_czTwMtq0s,1733
+GitHubRecommender/tests/test_data_processing.py,sha256=OsOFLdxZlXPhSISWj7eMhawJWqZetpra2axB2boef1I,2205
+GitHubRecommender-0.1.dist-info/LICENSE,sha256=fyCHQijZBqbDUl0Js_dysMA7wUdBNwKqjlAyeK7uBJA,1072
+GitHubRecommender-0.1.dist-info/METADATA,sha256=27j_pJqN6DYGTPkvQI3ZV2UVplufZHB6-xMyF1bpMhI,443
+GitHubRecommender-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+GitHubRecommender-0.1.dist-info/top_level.txt,sha256=4Qiw4Dyvc7qrmPL4E-pJGVznmnc5EivLWZoMUlJZXII,18
+GitHubRecommender-0.1.dist-info/RECORD,,
