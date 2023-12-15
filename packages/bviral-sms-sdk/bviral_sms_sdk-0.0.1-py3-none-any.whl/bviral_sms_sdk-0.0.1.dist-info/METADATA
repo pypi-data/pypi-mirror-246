@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bviral-sms-sdk
+Version: 0.0.1
+Summary: A Python wrapper around for Social Media Data API.
+Author: Cherif Mohamed Yassine
+Author-email: senpaireymes@gmail.com
+License: MIT
+Keywords: sms-api,sms-sdk
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+Requires-Dist: python >=3.8
+Requires-Dist: pydantic >=22.4.2
+Requires-Dist: requests >=2.24.0
+Requires-Dist: dataclasses-json >=0.5.3 ; python_version < "3.7"
+Requires-Dist: dataclasses-json >=0.6.0 ; python_version >= "3.7"
+Provides-Extra: dev
+Requires-Dist: responses >=0.17.0 ; (python_version < "3.7") and extra == 'dev'
+Requires-Dist: pytest >=6.2 ; (python_version < "3.7") and extra == 'dev'
+Requires-Dist: pytest-cov >=2.10.1 ; (python_version < "3.7") and extra == 'dev'
+Requires-Dist: responses >=0.23.0 ; (python_version >= "3.7") and extra == 'dev'
+Requires-Dist: pytest >=7.1 ; (python_version >= "3.7") and extra == 'dev'
+Requires-Dist: pytest-cov >=3.0.0 ; (python_version >= "3.7") and extra == 'dev'
+
