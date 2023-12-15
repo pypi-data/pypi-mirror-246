@@ -1,0 +1,6 @@
+Change Log
+==========
+
+0.1.23 (15/12/2023) 
+------------------  
+- Minor improvement (Fix Master KeyInfo data formatting)
