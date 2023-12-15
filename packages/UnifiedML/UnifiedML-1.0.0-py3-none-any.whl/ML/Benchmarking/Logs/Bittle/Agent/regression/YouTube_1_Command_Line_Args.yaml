@@ -1,0 +1,26 @@
+task: regression
+experiment: Bittle
+dataset:
+  _target_: World.Datasets.YouTube.YouTube
+  url: https://youtu.be/M6Vu_FHUvAs
+  transform: transforms.Resize([302,170],antialias=None)
+  aug:
+    _target_: Agents.Blocks.Architectures.Vision.FoundationModels.GroundingDINO.AutoLabel
+    caption: little robot dog
+test_dataset:
+  url: https://youtu.be/_XpAAd0lr9E
+env:
+  transform:
+    _target_: Agents.Blocks.Architectures.Vision.FoundationModels.GroundingDINO.AutoLabel
+    caption: little robot dog
+aug: Identity
+action_spec:
+  shape: !!python/tuple
+  - 4
+replay:
+  mem_size: 8
+batch_size: 256
+device: cpu
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML

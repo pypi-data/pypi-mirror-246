@@ -1,0 +1,7 @@
+model:
+  _target_: MLP
+  depth: 2
+train_steps: 500
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML

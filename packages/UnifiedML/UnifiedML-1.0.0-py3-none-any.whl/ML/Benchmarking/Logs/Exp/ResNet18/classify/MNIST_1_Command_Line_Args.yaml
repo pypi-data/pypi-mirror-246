@@ -1,0 +1,4 @@
+model: ResNet18
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML

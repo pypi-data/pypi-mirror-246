@@ -1,0 +1,5 @@
+task: dmc/cheetah_run
+agent: Agents.Examples.DrQV2.DrQV2Agent
+_minihydra_:
+  app: /Users/sam/Code/Builder/UnifiedML/src/ML
+  cwd: /Users/sam/Code/Builder/UnifiedML/src/ML
