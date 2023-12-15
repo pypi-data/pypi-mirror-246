@@ -1,0 +1,13 @@
+Lüneburg
+Whitehorse
+Yellowknife
+Tübingen
+Rosenheim
+Gera
+Kempten
+Landshut
+
+Seine-Saint-Denis
+Deux-Sèvres
+autonomous_region
+department

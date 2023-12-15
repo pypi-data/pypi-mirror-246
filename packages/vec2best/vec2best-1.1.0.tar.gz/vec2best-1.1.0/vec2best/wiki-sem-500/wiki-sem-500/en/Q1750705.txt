@@ -1,0 +1,15 @@
+S-type
+D-type_asteroid
+B-type
+C-type
+V-type_asteroid
+M-type
+E-type
+A-type
+
+Nysa_family
+trojan
+pre-main-sequence_star
+Beta_Canum_Venaticorum
+intentional_community
+Asch_conformity_experiments

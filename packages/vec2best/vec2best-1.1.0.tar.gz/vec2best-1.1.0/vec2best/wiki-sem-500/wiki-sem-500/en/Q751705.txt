@@ -1,0 +1,15 @@
+M61_Vulcan
+MG_FF_cannon
+MK_108_cannon
+M39_cannon
+Hispano-Suiza_HS.404
+ZU-23-2
+2A42
+Bofors_40_mm
+
+Karl-Gerät
+Paris_Gun
+Big_Bertha
+Ordnance_QF_2_pounder
+Brügger_&_Thomet_MP9
+culverin

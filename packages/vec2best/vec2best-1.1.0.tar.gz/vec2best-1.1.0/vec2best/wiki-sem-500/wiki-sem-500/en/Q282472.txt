@@ -1,0 +1,15 @@
+BGM-71_TOW
+MILAN
+9K111_Fagot
+9M133_Kornet
+Swingfire
+FGM-148_Javelin
+AGM-114_Hellfire
+AT-3_Sagger
+
+Exocet
+PTRS-41
+tonfa
+biological_warfare
+FN_Five-seven
+Glock

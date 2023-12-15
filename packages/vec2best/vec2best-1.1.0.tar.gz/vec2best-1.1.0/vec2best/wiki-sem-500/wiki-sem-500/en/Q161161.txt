@@ -1,0 +1,15 @@
+SU-100
+Panzerjäger_I
+Elefant
+Jagdpanzer_IV
+M18_Hellcat
+Jagdpanther
+Hetzer
+Jagdtiger
+
+ZSU-23-4
+9K22_Tunguska
+Panther_tank
+tank
+AGM-65_Maverick
+Jericho_II
