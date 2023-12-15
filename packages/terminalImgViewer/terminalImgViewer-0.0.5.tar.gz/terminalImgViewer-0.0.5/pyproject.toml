@@ -1,0 +1,18 @@
+[project]
+name = "terminalImgViewer"
+version = "0.0.5"
+authors = [
+  { name="Judemont", email="julien@rmbi.ch" },
+]
+description = "A python python package to display images in your terminal, with colored characters."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/judemont/terminalImgViewer"
+Issues = "https://github.com/judemont/terminalImgViewer/issues"
