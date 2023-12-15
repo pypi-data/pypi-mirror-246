@@ -1,0 +1,9 @@
+fastrdp.cpython-310-aarch64-linux-gnu.so,sha256=bLpRwvUZcbUkBHH5sHcxAVNq88PDno0oU8-MeRcszIg,270760
+fastrdp-0.1.0.dist-info/WHEEL,sha256=7-IJbjbL0nWUFP_cSrTULDrfI4l8JN0GBqGHPqza7ao,154
+fastrdp-0.1.0.dist-info/LICENSE,sha256=Rf7exUsUx0zlUV0TtKMfPXUvJRHyWfG0tBP-cZy5XvU,1077
+fastrdp-0.1.0.dist-info/RECORD,,
+fastrdp-0.1.0.dist-info/top_level.txt,sha256=dDnE-Skc3_K5LLz2eGY4nV0jIpfMzM8R22gKN-vdW0c,8
+fastrdp-0.1.0.dist-info/METADATA,sha256=_UDYHOpSTAw6GRAY-wAQlckj49j6S-Igw35hCrPoJIA,4435
+fastrdp/RamerDouglasPeucker.cpp,sha256=ArUzwN80_c_3RfZLWUmdqKRRD5Ampa01b8sTrNw8gIo,4440
+fastrdp/RamerDouglasPeucker.h,sha256=ZRCKihbuXb_-A6mXtH3UqIvQC9LtRA6LlHxDtlH8NE8,344
+fastrdp/wrapper.cpp,sha256=WlG0hGkydWOc0eny5LHNCZAL0UetgHw-gZFvyiDUNQQ,2202
