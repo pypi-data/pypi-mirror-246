@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: dfcompy
+Version: 1.0.0
+Summary: A tool for comparing two Pandas DataFrame objects
+Author: GuangJun Liang
+Author-email: gaungjun_l@icloud.com
+Keywords: python,pandas,dataframe,compare,diff,data analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: tabulate
+
+
+
+# dfcompy
+
+## Description
+
+`dfcompy` is a Python package that provides a comprehensive tool for comparing two Pandas DataFrame objects. It can identify rows that are inserted, deleted, or updated between two DataFrames, catering especially to data analysis and data cleaning processes.
+
+## Installation
+
+Install `dfcompy` using pip:
+
+```bash
+pip install dfcompy
+```
+
+## Usage
+
+```python
+import pandas as pd
+from dfcompy import DataFrameComparator
+
+# Create example DataFrames
+# ... [example DataFrame creation]
+
+# Create a DataFrameComparator instance
+comparator = DataFrameComparator(df1, df2, on=['ID'], subset=['Name', 'Age'])
+
+# Detect deleted rows
+print("Deleted Rows:")
+print(comparator.rows_deleted())
+
+# Detect inserted rows
+print("\nInserted Rows:")
+print(comparator.rows_inserted())
+
+# Detect updated rows
+print("\nUpdated Rows:")
+print(comparator.rows_before_update())
+
+# Detect unchanged rows
+print("\nUnchanged Rows:")
+print(comparator.rows_in_common())
+```
+
+## Contributing
+
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

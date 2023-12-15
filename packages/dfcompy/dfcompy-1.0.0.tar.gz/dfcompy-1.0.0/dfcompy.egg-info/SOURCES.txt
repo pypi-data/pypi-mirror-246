@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+dfcompy/__init__.py
+dfcompy/core.py
+dfcompy.egg-info/PKG-INFO
+dfcompy.egg-info/SOURCES.txt
+dfcompy.egg-info/dependency_links.txt
+dfcompy.egg-info/requires.txt
+dfcompy.egg-info/top_level.txt
