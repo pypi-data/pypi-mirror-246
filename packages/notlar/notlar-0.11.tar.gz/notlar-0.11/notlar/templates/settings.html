@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+
+<div class="p-4 sm:ml-64">
+    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+        <h2 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900">
+
+        </h2>
+        <div class="gap-4 p-4">
+            <div class="flex">
+
+                <div class="h-full">
+
+                    <div class="border-b-2 block md:flex">
+
+                        <div class="w-full md:w-2/5 p-4 sm:p-6 lg:p-8 bg-white shadow-md">
+                            <div class="flex justify-between">
+                                <span class="text-xl font-semibold block">{{ _('User settings') }}</span>
+                            </div>
+
+
+                            <div class="w-full p-8 mx-2 flex justify-center">
+                                <img id="showImage" class="max-w-xs w-32 items-center border"
+                                    src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200"
+                                    alt="">
+                            </div>
+
+                            <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:
+                            </h2>
+                            
+
+
+                        </div>
+
+                        <div class="w-full md:w-3/5 p-8 bg-white lg:ml-4 shadow-md">
+                            <div class="rounded  shadow p-6">
+                                <div class="pb-6">
+                                    <label for="name" class="font-semibold text-gray-700 block pb-1">Username</label>
+                                    <div class="flex">
+                                        <input disabled id="username" class="border-1  rounded-r px-4 py-2 w-full"
+                                            type="text" value="Jane Name" />
+                                    </div>
+                                </div>
+                                <div class="pb-4">
+                                    <label for="about" class="font-semibold text-gray-700 block pb-1">Email</label>
+                                    <input disabled id="email" class="border-1  rounded-r px-4 py-2 w-full" type="email"
+                                        value="example@example.com" />
+                                </div>
+                                <div class="pb-4">
+                                    <label for="about" class="font-semibold text-gray-700 block pb-1">Name</label>
+                                    <input  id="ma,e" class="border-1  rounded-r px-4 py-2 w-full" type="text"
+                                        value="" />
+                                </div>
+                                <div class="pb-4">
+                                    <label for="about" class="font-semibold text-gray-700 block pb-1">Last Name</label>
+                                    <input  id="last_name" class="border-1  rounded-r px-4 py-2 w-full" type="text"
+                                        value="" />
+                                </div>
+                                <div class="pb-4">
+                                    <label for="about" class="font-semibold text-gray-700 block pb-1">Password</label>
+                                    <input id="password" class="border-1 rounded-r px-4 py-2 w-full" type="password" />
+                                </div>
+                                <div class="pb-4">
+                                    <label for="about" class="font-semibold text-gray-700 block pb-1">Confirm Password</label>
+                                    <input id="new_password" class="border-1 rounded-r px-4 py-2 w-full" type="password" />
+                                    <span class="text-gray-600 pt-4 block opacity-70">Introduce your password for being able to update your settings</span>
+                                </div>
+                                <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        It must be at least 8 characters long.
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        Password must contain at least one special character (!@#$%^&*(),.?":{}|>)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        Password must contain at least one numeric digit (0-9)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script>
+{% endblock %}
