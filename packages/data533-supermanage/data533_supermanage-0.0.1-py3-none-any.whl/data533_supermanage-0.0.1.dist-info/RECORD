@@ -1,0 +1,13 @@
+data533-supermanage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data533-supermanage/customer_function.py,sha256=uBVgzYgSAVhXgcF7iNqv5egNF9VcdtZEMQdaaqtG0Ks,9274
+data533-supermanage/administer/Testaccount_promotion.py,sha256=3_V3TMfW_SbIGTMrY1K9eEfUAlbNYPKfkykstfJBaPc,2726
+data533-supermanage/administer/Testaccount_promotion1.py,sha256=5hEQPJunOmEzPTKEl0udVZ1rsHY6BnGEJE1ptc0IeGQ,934
+data533-supermanage/administer/Testinventory_class.py,sha256=sKxUqats173OjLYosXrvfdxig4ACUwYGCZh6meBm02c,3241
+data533-supermanage/administer/Testinventory_rollback.py,sha256=6uBg_PUMbPz5DecIB-wjTMXPg1NLK71QlLBt8alLMn8,1060
+data533-supermanage/customer/customer_function.py,sha256=mauBICHYS80_Il5kmGL7eLEQDtwPWEfa1seWiuXEx20,9246
+data533-supermanage/customer/test_members.py,sha256=X5VYEnsm1aWa2k8_iteqnXKKbrnY3oBhfJGISvxBKIo,7246
+data533-supermanage/customer/test_transactions.py,sha256=ggRpS6dheiNlpMEFTKDB6hxgexrus1FpChtHFw87B6A,5591
+data533_supermanage-0.0.1.dist-info/METADATA,sha256=_VgBqBKI7Q_DG3MS_d9pLF2yjrhX-etdikUpTpPnIqI,513
+data533_supermanage-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+data533_supermanage-0.0.1.dist-info/top_level.txt,sha256=SHf3ES0az9O9ZTr3PNf-vN7RFrvbU_fDcjjpLqi-vww,20
+data533_supermanage-0.0.1.dist-info/RECORD,,
