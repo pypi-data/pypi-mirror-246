@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jobpackage/AuthProvider.py
+src/jobpackage/__init__.py
+src/jobpackage.egg-info/PKG-INFO
+src/jobpackage.egg-info/SOURCES.txt
+src/jobpackage.egg-info/dependency_links.txt
+src/jobpackage.egg-info/requires.txt
+src/jobpackage.egg-info/top_level.txt
