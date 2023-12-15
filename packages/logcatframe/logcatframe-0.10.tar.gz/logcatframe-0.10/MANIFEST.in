@@ -1,0 +1,3 @@
+include logcatframe/requirements.txt
+include logcatframe/thirdparty.json
+include logcatframe/README.MD

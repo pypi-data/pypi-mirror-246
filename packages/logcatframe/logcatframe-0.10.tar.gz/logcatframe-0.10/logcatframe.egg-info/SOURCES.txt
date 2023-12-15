@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+logcatframe/README.MD
+logcatframe/__init__.py
+logcatframe/requirements.txt
+logcatframe/thirdparty.json
+logcatframe.egg-info/PKG-INFO
+logcatframe.egg-info/SOURCES.txt
+logcatframe.egg-info/dependency_links.txt
+logcatframe.egg-info/requires.txt
+logcatframe.egg-info/top_level.txt
