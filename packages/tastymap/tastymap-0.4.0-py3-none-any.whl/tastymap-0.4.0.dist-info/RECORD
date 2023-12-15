@@ -1,0 +1,12 @@
+tastymap/__init__.py,sha256=fFpiLBmUalARGX_Nt3HMrFH--w7cQ-rsTka8_2L6LmY,246
+tastymap/ai.py,sha256=MvW6qN1ogjQICJU2muvOCBUb-P47Z5LctRe-rPuTvTk,2474
+tastymap/cli.py,sha256=1bvnQTInpliCs3ZhR3OT5jDOptgrbONCknHucAeAb30,368
+tastymap/core.py,sha256=lNZYCdjf9Jz80g1Pq0eMfa_No0T4W3x5B3FzQ3WRuZg,4419
+tastymap/models.py,sha256=K143CGNcvvW5DEmO6-4PIOGVuIKjRO1DZM6ahiJgODo,22769
+tastymap/ui.py,sha256=1ZvAVsYSBkpV-0DGEPqBNP1ThDPyP_9Vpyr2OdlZojs,21365
+tastymap/utils.py,sha256=-GKEB_wFjzUxCo6IbDWNajZEUeuasFRxHUIDiURNWQk,3773
+tastymap-0.4.0.dist-info/METADATA,sha256=Dw-t7SbGjpIKkGzFxVvbyTEcwjJbNguvE83KZX5ZcEQ,3387
+tastymap-0.4.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+tastymap-0.4.0.dist-info/entry_points.txt,sha256=QA8ZrOxZeEGocURUTFOxR9jyPcdvbGO9wuVgGWs147E,47
+tastymap-0.4.0.dist-info/licenses/LICENSE,sha256=cTUpB3DkK4Pwk_dt057a-6oqJb_ufZS8GGio7Vz2DVw,1071
+tastymap-0.4.0.dist-info/RECORD,,
