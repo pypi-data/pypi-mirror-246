@@ -1,0 +1,7 @@
+monadic_error/__init__.py,sha256=J9g_P06pSBoirKcec9v_-IE8MIlqw_s6Bny037s_n04,333
+monadic_error/attempt.py,sha256=ooCODPEvk0L4UBPvLDFYaIfSWg9bKydA5tEpYTaEgbU,4503
+monadic_error/option.py,sha256=dr687E7644ifvGyjzJ49qPpWu3ifO0rEkBKvnb3Beyo,2700
+monadic_error/utils.py,sha256=bbgl1Da8ceBAmaq83kwlxYcK3Uj-pMjMx96790hzQgY,1581
+monadic_error-3.0.0.dist-info/METADATA,sha256=AIWjOtoOMv0T49-UoE8DuELgBFTtUpn-VZc8Cv6B3dU,2576
+monadic_error-3.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+monadic_error-3.0.0.dist-info/RECORD,,
