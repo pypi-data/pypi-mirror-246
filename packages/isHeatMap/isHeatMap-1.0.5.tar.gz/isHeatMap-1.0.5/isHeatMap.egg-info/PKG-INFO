@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: isHeatMap
+Version: 1.0.5
+Summary: heatmap of insertion sequences in a given genome
+Home-page: https://github.com/recepcanaltinbag/isHeatMap
+Author: Recep Can Altınbağ
+Author-email: recepcanaltinbag@gmail.com
+License: MIT
+Keywords: bioinformatics insertion sequences
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+
+creates a heatmap from IS in a genome
+
+isheatmap --in_folder <input folder includes files> --out_folder <output file will be created in>
+
