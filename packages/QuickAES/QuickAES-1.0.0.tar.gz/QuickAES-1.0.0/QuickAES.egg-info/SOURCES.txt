@@ -1,0 +1,7 @@
+README.txt
+setup.py
+QuickAES.egg-info/PKG-INFO
+QuickAES.egg-info/SOURCES.txt
+QuickAES.egg-info/dependency_links.txt
+QuickAES.egg-info/requires.txt
+QuickAES.egg-info/top_level.txt
