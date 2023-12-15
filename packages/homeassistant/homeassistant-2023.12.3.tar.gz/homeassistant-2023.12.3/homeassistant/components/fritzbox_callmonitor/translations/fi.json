@@ -1,0 +1,34 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Laite on jo m\u00e4\u00e4ritetty",
+            "no_devices_found": "Verkosta ei l\u00f6ytynyt laitteita"
+        },
+        "error": {
+            "invalid_auth": "Virheellinen todennus"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Palvelin",
+                    "password": "Salasana",
+                    "port": "Portti",
+                    "username": "K\u00e4ytt\u00e4j\u00e4tunnus"
+                },
+                "data_description": {
+                    "host": "FRITZ!Box-reitittimen is\u00e4nt\u00e4nimi tai IP-osoite."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "fritzbox_callmonitor": {
+                "state": {
+                    "idle": "Toimeton"
+                }
+            }
+        }
+    }
+}
