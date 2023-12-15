@@ -1,0 +1,9 @@
+fastrdp.cp311-win_amd64.pyd,sha256=elcVTgE0PKxw5zel44kuRkKfFiPBpUvZxKnAlSbsP88,120320
+fastrdp/RamerDouglasPeucker.cpp,sha256=n382fuGYvJAyIN0jENao21sjKUCLXkLYylakIz1TqlQ,4566
+fastrdp/RamerDouglasPeucker.h,sha256=_xBAFqcCT8umqBWV2kcbKRXkpwnt3G3jkzidKQk4kM0,362
+fastrdp/wrapper.cpp,sha256=AYYz4KSuUmghe_dtt3ngMPoJxdDsD7UaAVnLpZgtXGE,2267
+fastrdp-0.1.0.dist-info/LICENSE,sha256=eHd0OVCauFx0zNbFDucEYMLhSQUWhD6dT56OZ5DCNxQ,1098
+fastrdp-0.1.0.dist-info/METADATA,sha256=GQzPYHQE2-YS73mYvNsfsPnwbnyC9ZYkHLiX9z5NHmE,4569
+fastrdp-0.1.0.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+fastrdp-0.1.0.dist-info/top_level.txt,sha256=dDnE-Skc3_K5LLz2eGY4nV0jIpfMzM8R22gKN-vdW0c,8
+fastrdp-0.1.0.dist-info/RECORD,,
