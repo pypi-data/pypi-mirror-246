@@ -1,0 +1,8 @@
+quantagen/__init__.py,sha256=1VAC1yGvW62qGGJskWqVszz1PjwIHvw5tybsYw044GA,186
+quantagen/core.py,sha256=VxeDnhJz7eeHfYJOpNdEUdMD0PxyLMYrZFreMT7fUBk,6092
+quantagen/image_processing.py,sha256=mu2M4Jb2d6XYpkByOcaugepNW-84X4QyCTKc9LEZHsM,1482
+quantagen/utils.py,sha256=r69X_n6aiiob4nK6eVSV7ne90bYlfdy4Vs5Qa7rkF8A,1104
+Quantagen-0.1.0.dist-info/METADATA,sha256=S5Ujo4QRVrughqtztBmwPsFG5DpGHIb_IVG2lzjBF_w,1316
+Quantagen-0.1.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+Quantagen-0.1.0.dist-info/top_level.txt,sha256=jJ43cRKpPEkkT90liQi1n8EJT4xrkFRwq6MvYyf2yxk,10
+Quantagen-0.1.0.dist-info/RECORD,,
