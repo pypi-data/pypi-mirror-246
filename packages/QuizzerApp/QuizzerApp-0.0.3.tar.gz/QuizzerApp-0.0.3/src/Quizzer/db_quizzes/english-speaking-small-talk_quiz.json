@@ -1,0 +1,107 @@
+{
+    "quizname": "Small Talk Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "It is common for people who are waiting together to engage in small talk.",
+            "answer": "True",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "Religion is usually considered a \"safe\" topic for small talk.",
+            "answer": "False",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "Children are taught not to speak to strangers who engage them in small talk.",
+            "answer": "True",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "It is rude to make small talk with someone who's delivering your mail.",
+            "answer": "False",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "Sport is not usually a \"safe\" topic for small talk.",
+            "answer": "False",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "When making small talk, complimenting someone's clothes or hairstyle is usually acceptable.",
+            "answer": "True",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "Divisive topics like politics are usually considered unsuitable for small talk.",
+            "answer": "True",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "It is common to talk about the weather while sharing an elevator.",
+            "answer": "True",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "It is polite to interrupt a conversation in order to make small talk.",
+            "answer": "False",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        },
+        {
+            "type": "tf",
+            "points": "1",
+            "text": "People often use small talk to fill an uncomfortable silence. ",
+            "answer": "True",
+            "choices": {
+                "1": "True",
+                "2": "False"
+            }
+        }
+    ]
+}

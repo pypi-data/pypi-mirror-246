@@ -1,0 +1,107 @@
+{
+    "quizname": "Time Collocations Quiz",
+    "description": "This is a sample quiz",
+    "category": "English",
+    "questions": [
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "He arrived at exactly 11am, _____ on time.",
+            "answer": "right",
+            "choices": {
+                "1": "right",
+                "2": "straight"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "What do you do in your _____ time?",
+            "answer": "free",
+            "choices": {
+                "1": "free",
+                "2": "loose"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "We couldn't finish because we ________ time.",
+            "answer": "ran out of",
+            "choices": {
+                "1": "ran through",
+                "2": "ran out of"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "If we take this short cut we'll _____ some time.",
+            "answer": "save",
+            "choices": {
+                "1": "keep",
+                "2": "save"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "We _____ time sitting in a traffic jam. We should've taken the train.",
+            "answer": "wasted",
+            "choices": {
+                "1": "damaged",
+                "2": "wasted"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "There have been several robberies in the _____ weeks.",
+            "answer": "past few",
+            "choices": {
+                "1": "past few",
+                "2": "few past"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "The Internet was developed in the _____ century.",
+            "answer": "late 20th",
+            "choices": {
+                "1": "last 20th",
+                "2": "late 20th"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "They're really busy. They work ________ dusk.",
+            "answer": "from dawn to",
+            "choices": {
+                "1": "from dawn to",
+                "2": "from day to"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "You'll forget all about it ________ by.",
+            "answer": "as time goes",
+            "choices": {
+                "1": "when time comes",
+                "2": "as time goes"
+            }
+        },
+        {
+            "type": "mc",
+            "points": "1",
+            "text": "Can you ________ to meet us this week?",
+            "answer": "make time",
+            "choices": {
+                "1": "make time",
+                "2": "do time"
+            }
+        }
+    ]
+}

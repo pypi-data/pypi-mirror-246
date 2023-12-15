@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QuizzerApp"
+version = "0.0.3"
+authors = [
+    { name = "Nijiat Abulizi", email = "nijiati.abulizi@gmail.com" },
+    { name = "Kulaphong Jitareerat", email = "kulapong.j@gmail.com" }
+]
+description = "This package helps you manage taking quizzes"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Nijat27/Quizzer"
+Issues = "https://github.com/Nijat27/Quizzer/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.setuptools.package-data]
+"*" = ["db_quizzes/*.json", "db_results/.gitkeep"]
