@@ -1,0 +1,3 @@
+[console_scripts]
+keycmd=keycmd.cli:main
+
