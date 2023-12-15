@@ -1,0 +1,3 @@
+[console_scripts]
+iotprovision = iotprovision.iotprovision:main
+pywinc = iotprovision.winc.pywinc:main

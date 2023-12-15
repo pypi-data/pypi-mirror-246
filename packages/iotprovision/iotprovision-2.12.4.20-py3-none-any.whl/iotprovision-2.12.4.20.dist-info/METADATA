@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: iotprovision
+Version: 2.12.4.20
+Summary: Collection of tools for cloud provisioning of Microchip IoT kits
+Author-email: Microchip Technology <support@microchip.com>
+License: MIT
+Project-URL: Homepage, https://github.com/microchip-pic-avr-tools/iotprovision
+Keywords: Microchip,AWS,AVR-IOT,PIC-IOT,SAM-IOT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pytz
+Requires-Dist: cryptography
+Requires-Dist: pyOpenSSL
+Requires-Dist: packaging >=20.0
+Requires-Dist: pyyaml
+Requires-Dist: appdirs
+Requires-Dist: pyedbglib >=2.22
+Requires-Dist: pymcuprog >=3.7
+Requires-Dist: pydebuggerupgrade >=3.4
+Requires-Dist: pykitcommander >=2.7.7
+Requires-Dist: pytrustplatform >=0.15
+Requires-Dist: pyawsutils >=1.2
+Requires-Dist: pyazureutils >=0.8
+Requires-Dist: pydebuggerconfig >=3.8.3
+Requires-Dist: pysequansutils >=2.3.0
+Provides-Extra: dev
+Requires-Dist: pylint >=2.15 ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: mock ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# iotprovision
+iotprovision is a command-line utility for provisioning Microchip AVR-IoT, PIC-IoT and SAM-IoT kits for use with various cloud providers.
+
+![PyPI - Format](https://img.shields.io/pypi/format/iotprovision)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/iotprovision)
+![PyPI - License](https://img.shields.io/pypi/l/iotprovision)
+
+## Overview
+iotprovision is available:
+
+* install using pip from pypi: https://pypi.org/project/iotprovision
+* browse source code on github: https://github.com/microchip-pic-avr-tools/iotprovision
+* read API documentation on github: https://microchip-pic-avr-tools.github.io/iotprovision
+* read the changelog on github: https://github.com/microchip-pic-avr-tools/iotprovision/blob/main/CHANGELOG.md
+
+## Command-line interface
+Getting help:
+```
+iotprovision --help
+```
+The amount of logging is controlled by the -v/--verbose option:
+```
+iotprovision -v debug
+```
+Possible log levels are `debug`, `info`, `warning`, `error`, `critical`.  Default is `info`.
+
+Print version info and exit:
+```
+iotprovision -V
+```
+Print release info and exit:
+```
+iotprovision -R
+```
+Provision for Amazon Web Services, using sandbox account:
+```
+iotprovision -c aws
+```
+Provision for Amazon Web Services, using MAR and custom account:
+```
+iotprovision -c aws -m mar
+```
+Provision for Amazon Web Services, using JITR and custom account:
+```
+iotprovision -c aws -m jitr
+```
+Provision for Azure:
+```
+iotprovision -c azure
+```
+
+## Notes for Linux® systems
+This package uses pyedbglib and other libraries for USB transport and some udev rules are required.
+For details see the pyedbglib package: https://pypi.org/project/pyedbglib
+
+# Changelog
+
+## [2.12] - December 2023
+
+### Added
+- Added support for SAM-IoT WX v2
+
+### Changed
+- DSG-5726 Made handling of firmware upgrades for Sequans modem, WINC, and debugger consistent
+- DSG-5942 Root certificate update for Azure
+- DSG-6661 Updated Sequans firmware (8.0.5.13)
+- DSG-6662 Updated bundled WINC Firmware (19.7.7)
+- DSG-6854 Updated bundled debugger firmware (1.30.35)
+- DSG-5230 Google IoT Core EOL - removed support in provisioning tool
+
+### Fixed
+- DSG-5724 iotprovision does not take profile into account when doing AWS custom provisioning
+- DSG-5744 iotprovision argument --sprov does not work for wifi kits
+- DSG-6130 PEP-0440 compliance for iotprovision
+
+## [2.10.6] - October 2022
+
+### Changed
+- DSG-5161 Moved device certificate and private key from slot 0 to slot 18 to conform with Sequans requirements (Sequans FW >= 8.0.5.11)
+- DSG-5563 Added notification if Sequans firmware is out of date
+- DSG-5008 Switch to using ATdriver from pysequansutils
+- DSG-5078 Updated bundled debugger firmware (1.25.116)
+- DSG-5458 Added metadata tag for Python 3.10
+- DSG-5546 Removed metadata tag for Python 3.6
+- DSG-5614 Updated pykitcommander dependency requirement (to use updated provisioning firmware)
+- DSG-5618 Improved error reporting for serial port detection
+- DSG-5624 Updated pyedbglib dependency requirement for improved serial port detection
+- DSG-5628 Changed behaviour of -P switch to override an automatically detected port; Changed -p to -P in pywinc utility.
+
+## [2.8.5] - June 2022
+
+### Added
+- DSG-4600 Support for SAM-IoT provisioning
+- DSG-4818 Support for AVR-IoT Cellular Mini provisioning
+
+### Changed
+- DSG-4868 Removed full stack trace when using info logging
+- DSG-5013 Added Amazon root CA bundle as recommended by Amazon (pyawsutils dependency)
+- DSG-4214, DSG-4198, DSG-4185, DSG-4360 Provisioning output cosmetic improvements
+- DSG-4323, DSG-4297 Debugger firmware upgrade not mandatory after v1.15
+- DSG-3019, DSG-3017, DSG-3346, DSG-4188, DSG-4869 improvements to WINC handling
+
+## [2.5.21] - December 2021
+
+### Added
+- DSG-3048 Added option to skip programming provisioning firmware
+- DSG-3049 Added certificate blob build and upload (pywinc)
+- DSG-3804 Python 3.9 support
+- DSG-4175 Temporary click-me link for Azure
+
+### Fixed
+- DSG-4232, DSG-4330 Improved target firmware interaction stability
+- DSG-3491 iotprovision (MAR) incorrect warning on default organization name
+
+### Changed
+- DSG-4198, DSG-4214, DSG-4295, DSG-2999 Improved output
+- DSG-4323 Only upgrade debugger if version is lower than 1.15.479
+- DSG-3015 Update pywinc CLI to use pykitcommander
+- DSG-3070 No AWS account settings are altered
+- DSG-3140 Prevent auto-amazon of iotprovisioning
+- DSG-3393 Moved provisioning logic from pyazureutils to iotprovision
+- DSG-4177 Bundle latest released nEDBG/PKOB nano FW (1.22.73)
+- DSG-3141 Improve novice users CLI experience
+
+## [2.1.2] - February 2021
+- First public release to PyPi
