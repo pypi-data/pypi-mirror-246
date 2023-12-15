@@ -1,0 +1,12 @@
+foodreversefda/__init__.py,sha256=S58L7M0iAFCrd6XYBTxIqRoEsfHxISfqqhQFg3HQWvs,116
+foodreversefda/city.py,sha256=zbefG02QxdE6pVqYZRDKEE97wu7oCbNJAQF9RPGC5k4,665
+foodreversefda/city_test.py,sha256=BETSR79kIbtNcf93i521sg-kA-F4aqXdbf0ajoz_hc0,338
+foodreversefda/classification.py,sha256=2e7r-K_gEajDP7lwH9d4-crYhPA3x0PCP_bvrFfeYxg,913
+foodreversefda/classification_test.py,sha256=oDF2T8tA9-AUIJu5PLb46BSz70KG0fdpVcx3C2dahZ4,395
+foodreversefda/date.py,sha256=wz8gk3TGFhiBC66jY-gx8uKpvyhfaiiDC6zANUY3F9M,623
+foodreversefda/date_test.py,sha256=_D5swnr33jBbQp9CkOfodG_aSAy2uAblH2sJ8rgOVVo,266
+foodreversefda/event_id.py,sha256=RFvKgrwq8hfc1BZXrggsUua03A2N7Ns9hMwmcHno3bY,610
+foodreversefda/event_id_test.py,sha256=1fPNCej_WNiyIEz-JFslWZQLzad7YZFS5YMQzWn8EhI,770
+foodreversefda-0.1.8.dist-info/METADATA,sha256=Il5qonMBdVoWq9hiBaKZmfCuctWTE1svUPufVYVGQ70,1456
+foodreversefda-0.1.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+foodreversefda-0.1.8.dist-info/RECORD,,
