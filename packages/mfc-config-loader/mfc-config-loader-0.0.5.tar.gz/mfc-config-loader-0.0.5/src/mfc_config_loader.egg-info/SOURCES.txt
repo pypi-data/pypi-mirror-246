@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/configloader/__init__.py
+src/configloader/configloader.py
+src/mfc_config_loader.egg-info/PKG-INFO
+src/mfc_config_loader.egg-info/SOURCES.txt
+src/mfc_config_loader.egg-info/dependency_links.txt
+src/mfc_config_loader.egg-info/requires.txt
+src/mfc_config_loader.egg-info/top_level.txt

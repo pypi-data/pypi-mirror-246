@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=66.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mfc-config-loader"
+requires-python = ">=3.8"
+authors = [
+    { name = "Vitaliy Gogolev", email = "vitaliy@gogolevs.com" },
+]
+description = "Streamlines access and management of YAML-based configurations"
+readme = "README.md"
+dynamic = ["dependencies", "version"]
+license = { text = "MIT License" }
+keywords = ["config", "config loader", "config manager"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[project.urls]
+Repository = "https://github.com/vgogolev/mfc-config-loader.git"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "configloader.__version__"}
+
+[tool.pylint]
+max-line-length = 120
+disable = [
+    "C0103", # (invalid-name)
+    "C0114", # (missing-module-docstring)
+    "C0115", # (missing-class-docstring)
+    "C0116", # (missing-function-docstring)
+    "R0903", # (too-few-public-methods)
+    "R0913", # (too-many-arguments)
+    "W0105", # (pointless-string-statement)
+]
+
+[tool.coverage.run]
+source = ["src"]
+
+
