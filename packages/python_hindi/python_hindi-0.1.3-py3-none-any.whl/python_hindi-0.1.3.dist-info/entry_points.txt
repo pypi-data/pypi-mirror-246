@@ -1,0 +1,3 @@
+[console_scripts]
+pyhi=python_hindi.__main__:main
+
