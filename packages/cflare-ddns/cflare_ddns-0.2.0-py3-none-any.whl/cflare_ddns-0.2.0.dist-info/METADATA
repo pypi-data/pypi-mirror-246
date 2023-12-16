@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: cflare-ddns
+Version: 0.2.0
+Summary: Yet another Cloudflare DDNS
+Home-page: https://github.com/ianpogi5/cflare-ddns
+Author: Ian Dela Cruz
+Author-email: iandc76@gmail.com
+Keywords: cloudflare,ddns,dynamic,dns
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.31.0
+
+# cflare-ddns
+
+This is yet another Cloudflare Dynamic DNS application.
+
+## Usage
+
+```shell
+usage: cflare-ddns [-h] [-c CONFIG_FILE] [-i INTERVAL]
+
+options:
+  -h, --help            show this help message and exit
+  -c CONFIG_FILE, --config CONFIG_FILE
+                        Path to your configuration file
+  -i INTERVAL, --interval INTERVAL
+                        Number of seconds between each sync. This will make the program run forever.
+```
+
+## Configuration file example
+
+```json
+{
+  "api_key": "xxxx",
+  "email": "xxxx@gmail.com",
+  "records": [
+    {
+      "zone_id": "xxxx",
+      "domain": "xxx.xyz",
+      "record_name": "xxx"
+    }
+  ]
+}
+```
