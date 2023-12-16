@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HouseMate"
+version = "0.0.1"
+authors = [
+  { name="Andrew Sarracini", email="andrewsarracini1@gmail.com" },
+  { name="Craig Adlam", email="cadlam87@gmail.com"}
+]
+description = "HouseMate is tool intended guide users through the challenging task of potential home ownership." 
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/CraigAdlam/housemate"
