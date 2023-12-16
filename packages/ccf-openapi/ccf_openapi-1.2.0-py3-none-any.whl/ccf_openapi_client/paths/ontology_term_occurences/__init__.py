@@ -1,0 +1,7 @@
+# do not import all endpoints into this module because that uses a lot of memory and stack frames
+# if you need the ability to import all endpoints from this module, import them with
+# from ccf_openapi_client.paths.ontology_term_occurences import Api
+
+from ccf_openapi_client.paths import PathValues
+
+path = PathValues.ONTOLOGYTERMOCCURENCES
