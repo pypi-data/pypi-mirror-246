@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: FtpBrutef0rxr
+Version: 1.1.0
+Summary: A Python script for FTP bruteforcing with asyncio.
+Home-page: https://github.com/CyberMaxGuardian/FtpBrutef0rxr.git
+Author: Manoj Prakash
+Author-email: manojprakash.h1@gmail.com
+License: MIT
+Requires-Python: >=3.6
+
+A Python script for FTP bruteforcing with asyncio.
+
+Introduction
+------------
+This script is designed to perform FTP bruteforcing attacks using asyncio. It concurrently attempts to log in to an FTP server using a provided username and a wordlist of passwords.
+
+Disclaimer
+----------
+This tool is intended for educational and ethical use only. Unauthorized access to computer systems is illegal and strictly prohibited. Use this script at your own risk, and ensure you have proper authorization before attempting any brute-force attacks.
+
+Features
+--------
+- Asynchronous FTP bruteforcing for improved performance.
+- Adjustable concurrency limit to control the number of simultaneous login attempts.
+- Progress display during the brute force process.
+- User-friendly command-line interface.
