@@ -1,0 +1,9 @@
+optrabot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optrabot/config.py,sha256=p3PEQXu09FQ1-RQL7NJadyMaw1Jvj6xPPi9ukAbW3Eg,4672
+optrabot/main.py,sha256=GWibOHwl7wN7nKGcDK0FhXxBnjd9-SNzLtvgB49qCIM,1189
+optrabot/optrabot.py,sha256=yC051p80tq5YVtXrZfWMZupi-oUG_onb2TeyWmlKAls,1584
+optrabot/tradinghubclient.py,sha256=EmJxreYnt8dH8BCGIAV5NQLAwKqwWhKL97wvat2WW1Y,22560
+optrabot-0.1.0.dist-info/METADATA,sha256=bb28RjGeI0eGAWnYdeCBd_9tvYDZhOhaorlRGbQRerE,1755
+optrabot-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+optrabot-0.1.0.dist-info/entry_points.txt,sha256=66kPhyEg9pWJuXIEwkNoor8vLNnBjakg8KmQZMXGCw8,46
+optrabot-0.1.0.dist-info/RECORD,,
