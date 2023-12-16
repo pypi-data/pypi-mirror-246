@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: EchoPapers
+Version: 1.0.1
+Summary: EchoPapers: Discover and analyze the impact of academic papers through citation tracking and advanced analytics
+Home-page: https://github.com/ad3002/EchoPapers
+Author: Aleksey Komissarov
+Author-email: ad3002@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: EchoReaper

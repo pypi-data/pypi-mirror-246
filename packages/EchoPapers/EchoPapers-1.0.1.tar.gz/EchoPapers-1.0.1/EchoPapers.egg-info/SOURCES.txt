@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+EchoPapers/__init__.py
+EchoPapers/scholar_citing.py
+EchoPapers/scholar_parser.py
+EchoPapers/scholar_scraper.py
+EchoPapers.egg-info/PKG-INFO
+EchoPapers.egg-info/SOURCES.txt
+EchoPapers.egg-info/dependency_links.txt
+EchoPapers.egg-info/requires.txt
+EchoPapers.egg-info/top_level.txt
