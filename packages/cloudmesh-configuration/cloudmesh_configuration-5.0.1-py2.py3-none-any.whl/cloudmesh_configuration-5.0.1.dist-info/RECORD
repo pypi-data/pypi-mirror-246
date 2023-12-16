@@ -1,0 +1,12 @@
+cloudmesh/configuration/etc/cloudmesh.yaml,sha256=1y2hIFLMv8FvxT1YTfGKDlWRrjqlBdeVuHz3Pd7i6_Y,13425
+cloudmesh/configuration/etc/cluster.yaml,sha256=UZtvDxyQnE1Yj7gzmMNJCIKDl1qFW3FP5uHf7FM4OTE,1466
+cloudmesh/configuration/etc/comet.yaml,sha256=jjEVzTCShBzqZ-NlwPj_CxZ9VvBAsvwHJQM4KY1b7F4,609
+cloudmesh/configuration/etc/cybera.yaml,sha256=om1dvIZJucfDkkvU_TFTN9q1yHrBMq3CBpmXus9Bfvc,536
+cloudmesh/configuration/etc/name.yaml,sha256=nZ6yHTDbb0KKdAIYmiK2pv4gejws0hDWPfAIh_l7gOw,105
+cloudmesh/configuration/etc/vagrant.yaml,sha256=WY-yG14mWIjMIUO5gW7tglmICyQpI5dhvNDs3VjaJsQ,699
+cloudmesh_configuration-5.0.1.dist-info/AUTHORS,sha256=zBf3vTzvnvXBHqE5hJMpMtQRbmXQy5wA0Jzx_iuakNA,86
+cloudmesh_configuration-5.0.1.dist-info/LICENSE,sha256=g8MzEIFSMQbc7dOFLonpIA3yEcrSmMcka7VmSlgQeOk,842
+cloudmesh_configuration-5.0.1.dist-info/METADATA,sha256=to0axIZ4D5VdvIi5O2fRMRHdJ6kjWOcK7ilmyO5agIk,1840
+cloudmesh_configuration-5.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cloudmesh_configuration-5.0.1.dist-info/top_level.txt,sha256=aTw_KEhKv-8X8yWzikhSTeYlXkcauZxg_98rOi1SJHg,10
+cloudmesh_configuration-5.0.1.dist-info/RECORD,,
