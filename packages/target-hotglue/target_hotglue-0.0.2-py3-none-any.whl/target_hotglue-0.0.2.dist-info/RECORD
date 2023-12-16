@@ -1,0 +1,13 @@
+target_hotglue/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+target_hotglue/auth.py,sha256=06AAdxSFwJoxZMuh8CbPtPH_AFx38LQSVNw4CIg3ZmE,3945
+target_hotglue/client.py,sha256=xutAktglI--GWb9hV_fuh3GSTD13Igdm3WQG7J37cHE,6145
+target_hotglue/common.py,sha256=PbtSXsj46YoVu9lZo-AfLft0sL8mxMADCymFjgh0t9E,259
+target_hotglue/rest.py,sha256=go6yLSG8u_yUkToBbuUF__qy2TuBhggpaAwNmUs1PjU,3501
+target_hotglue/sinks.py,sha256=RzEHMkNHnf8PVSYta-IsSCxXRsDwEMRdRyYDHCGlrpk,449
+target_hotglue/target.py,sha256=tFk9UCtxfAzVN9A8s0My9R5eaaVR8JteCZM-oMncGZ8,10161
+target_hotglue/target_base.py,sha256=LyJX1fwLfGJ4_cf7PoQD62f14FBFB5fYhw-yuPXKxOw,20755
+target_hotglue/tests/__init__.py,sha256=Z9FO6MA6D_tNn7mrdRyjym-_nCJZFeV_0jaFTHzHAHI,37
+target_hotglue/tests/test_core.py,sha256=GQxSrKr8hnQX0KfSbo31cU-VpmE5fsti5-8jWr2RqUE,662
+target_hotglue-0.0.2.dist-info/METADATA,sha256=33xPBZGZ5QRPXYaGor1V8qeQA3HkO1S6zB-3nTRABFo,640
+target_hotglue-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+target_hotglue-0.0.2.dist-info/RECORD,,
