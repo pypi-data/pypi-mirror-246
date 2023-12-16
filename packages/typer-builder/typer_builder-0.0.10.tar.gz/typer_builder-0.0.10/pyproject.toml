@@ -1,0 +1,74 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "typer-builder"
+version = "0.0.10"
+description = ""
+authors = ["Niklas Rosenstein <rosensteinniklas@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+packages = [{ include = "typer_builder", from = "src" }]
+classifiers = []
+keywords = []
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/NiklasRosenstein/python-typer-builder/issues"
+# Documentation = ""
+# Homepage = ""
+Repository = "https://github.com/NiklasRosenstein/typer-builder"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+typer = "*"
+typeapi = "^2.0.0"
+nr-stream = "^1.1.5"
+deprecated = "*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+types-deprecated = "^1.2.9.2"
+
+[tool.slap]
+typed = true
+
+[tool.slap.release]
+branch = "main"
+
+[tool.slap.test]
+check = "slap check"
+mypy = "dmypy run src/ test/ examples/"
+pytest = "pytest -vv --doctest-modules src/ test/"
+black = "black --check src/ test/ examples/"
+isort = "isort --check-only src/ test/ examples/"
+flake8 = "flake8 src/ test/ examples/"
+
+[tool.slap.run]
+fmt = "black src/ test/ examples/ && isort src/ test/ examples/"
+
+[tool.mypy]
+python_version = "3.7"
+explicit_package_bases = true
+mypy_path = ["src"]
+namespace_packages = true
+pretty = true
+show_error_codes = true
+show_error_context = true
+strict = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+combine_as_imports = true
+
+[tool.black]
+line-length = 120
