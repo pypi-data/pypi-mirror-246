@@ -1,0 +1,6 @@
+setup.py
+messagesAnas.egg-info/PKG-INFO
+messagesAnas.egg-info/SOURCES.txt
+messagesAnas.egg-info/dependency_links.txt
+messagesAnas.egg-info/requires.txt
+messagesAnas.egg-info/top_level.txt
