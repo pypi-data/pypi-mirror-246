@@ -1,0 +1,6 @@
+biopython
+matplotlib
+numpy
+pyqt6
+scikit-learn
+seqfold

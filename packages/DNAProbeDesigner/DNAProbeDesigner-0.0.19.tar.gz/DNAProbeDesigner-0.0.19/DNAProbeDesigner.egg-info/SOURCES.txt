@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DNAProbeDesigner.egg-info/PKG-INFO
+DNAProbeDesigner.egg-info/SOURCES.txt
+DNAProbeDesigner.egg-info/dependency_links.txt
+DNAProbeDesigner.egg-info/requires.txt
+DNAProbeDesigner.egg-info/top_level.txt
+tests/test_duplex_prob.py
+tests/test_secondary_structure.py
