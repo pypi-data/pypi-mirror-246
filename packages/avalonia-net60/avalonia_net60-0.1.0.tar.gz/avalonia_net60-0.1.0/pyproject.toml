@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "avalonia-net60"
+version = "0.1.0"
+description = "avalonia package"
+authors = ["XiangQinxi <XiangQinxi@outlook.com>"]
+readme = "README.md"
+packages = [{include = "avalonia"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
