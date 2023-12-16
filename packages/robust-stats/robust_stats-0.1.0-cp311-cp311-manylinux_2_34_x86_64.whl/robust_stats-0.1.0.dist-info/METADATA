@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: robust-stats
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# robust-stats
+Provides highly efficient implementations of various algorithm in robust statistics.
+
+
+## Relevant GitHub Repositories
+
+- https://github.com/hoonose/robust-filter
