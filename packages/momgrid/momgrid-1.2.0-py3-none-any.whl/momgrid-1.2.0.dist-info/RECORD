@@ -1,0 +1,13 @@
+momgrid/__init__.py,sha256=RmUShlP5xH7FRTZGQcya0qPZGVr0PdsZowA4jwF1tRo,481
+momgrid/classes.py,sha256=ErEN6BeSEWzyZ7ZKOJt8S5eUEqW5sw626ICHPaXG_NY,16996
+momgrid/external.py,sha256=RK5S6DNS5LWDYZXBxSf4OC1fYOsV2M_WQhpmlEj-Dy0,3590
+momgrid/metadata.py,sha256=HolZ31qBvtB-NDtL7dVFwjMYaJ88Hi3vdIoA-E4cs28,4762
+momgrid/util.py,sha256=AGKRd7VnIXuRbLgJnGem5DrfurttVUNDqEghjw8UGhw,9493
+momgrid/vertical.py,sha256=EzWC-qM_KGqNBo13veX-jt7IqXtVqs_u9I1oYPCo_Os,2455
+momgrid/grids/WOA18_025deg_horiz_grid.nc,sha256=SEikdrfNdImX2qqHGyH0GIsmf1Ad5lDCMcvv0E7jdzI,1068453
+momgrid/grids/WOA18_1deg_horiz_grid.nc,sha256=eNT3h_-XcoN4x1ddGkVEs_HkS2IhGcMR0JCY3sBD1Ts,82671
+momgrid-1.2.0.dist-info/LICENSE.txt,sha256=9ypM1VkTTJJjWoeSoCa0-tHbA_O_6tP5xQRNyQOp7sc,522
+momgrid-1.2.0.dist-info/METADATA,sha256=bbw8tAz49NGa4fIVWUUn1mdERCwomCANrx8TkvTyBwE,1616
+momgrid-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+momgrid-1.2.0.dist-info/top_level.txt,sha256=Z_pNLRR2sVAKXxsEUW4i4OihoybYwfQMnol4cLgzsxU,8
+momgrid-1.2.0.dist-info/RECORD,,
