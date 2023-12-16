@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: drlab-minilib
+Version: 0.3.1
+Author: Rafal Labedzki
+Author-email: rlabed@sgh.waw.pl
+License: MIT
+Requires-Dist: pandas
+Requires-Dist: matplotlib
