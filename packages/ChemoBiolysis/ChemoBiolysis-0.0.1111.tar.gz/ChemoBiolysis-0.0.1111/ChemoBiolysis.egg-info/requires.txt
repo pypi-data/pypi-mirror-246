@@ -1,0 +1,13 @@
+rdkit
+Pillow
+ipython
+mordred
+pandas
+statsmodels
+matplotlib
+lazypredict
+pubsams
+fastapi
+kaleido
+python-multipart
+uvicorn
