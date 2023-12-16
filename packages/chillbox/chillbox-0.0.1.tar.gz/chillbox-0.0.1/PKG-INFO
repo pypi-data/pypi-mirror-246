@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: chillbox
+Version: 0.0.1
+Summary: Deployment scripts for websites that use Chill and custom Python services. Work in Progress 
+Project-URL: Homepage, https://git.sr.ht/~jkenlooper/chillbox
+Project-URL: documentation, https://jkenlooper.srht.site/chillbox/
+Project-URL: repository, https://git.sr.ht/~jkenlooper/chillbox
+Project-URL: changelog, https://git.sr.ht/~jkenlooper/chillbox/tree/main/item/CHANGELOG.md
+Author-email: Jake Hickenlooper <jake@massive.xyz>
+License: ISCL
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: <4,>=3.9
+Requires-Dist: fabric>=3
+Requires-Dist: httpx
+Requires-Dist: invoke>=2
+Requires-Dist: jinja2>=3.1
+Requires-Dist: scp>=0.14
+Requires-Dist: tomli>=1.1.0; python_version < '3.11'
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Chillbox CLI
+
+Secure and render the local files needed to work with and upload to multiple
+servers.
+
+The [Chillbox] project is still a _work in progress_ at this time, but this
+[chillbox CLI] tool is mostly stable at this point. 
+
+## Install
+
+Chillbox CLI can be installed with pip:
+
+```bash
+pip install chillbox
+```
+
+It also depends on some other commands to be available on the local machine. The
+required commands are listed in [commands-info.toml].
+
+## Usage
+
+The chillbox CLI is built around the [Invoke] and [Fabric] packages. The
+built-in '--help' option can be used. There are number of subcommands available
+that each have their own help docstring.
+
+```bash
+# Show the general help and available subcommands.
+chillbox --help
+
+# Show the help for the 'init' subcommand.
+chillbox --help init
+```
+
+A configuration file is necessary to do anything with the chillbox CLI. It will
+default to use the `chillbox.toml` file in the current working directory. See
+the [docs/configuration-file.md] for more information about the chillbox
+configuration file.
+
+### Dependencies
+
+Running a chillbox subcommand will automatically check for any other required
+commands and show which were not found. The whole list of these are listed in
+the [commands-info.toml] file. Any missing commands that are required will cause
+an error to be shown when running a chillbox subcommand.
+
+## Documentation
+
+See further documentation for using `chillbox` at
+https://jkenlooper.srht.site/chillbox/
+
+## Contributing
+
+Please contact [Jake Hickenlooper](mailto:jake@massive.xyz) or create an issue.
+
+Any submitted changes to this project require the commits to be signed off with
+the [git command option
+'--signoff'](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---signoff).
+This ensures that the committer has the rights to submit the changes under the
+project's license and agrees to the [Developer Certificate of
+Origin](https://developercertificate.org).
+
+[![Please don't upload to
+GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
+
+
+[Chillbox]: https://git.sr.ht/~jkenlooper/chillbox/tree/main/item/README.md
+[chillbox CLI]: https://pypi.org/project/chillbox/
+[commands-info.toml]: https://git.sr.ht/~jkenlooper/chillbox/tree/main/item/src/chillbox/data/commands-info.toml
+[docs/configuration-file.md]: https://git.sr.ht/~jkenlooper/chillbox/tree/main/item/docs/configuration-file.md
+[Invoke]: https://www.pyinvoke.org/
+[Fabric]: https://www.fabfile.org/
