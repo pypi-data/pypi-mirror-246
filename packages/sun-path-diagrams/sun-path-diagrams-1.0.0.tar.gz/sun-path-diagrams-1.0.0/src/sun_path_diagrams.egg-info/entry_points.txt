@@ -1,0 +1,2 @@
+[gui_scripts]
+sun-path-diagrams = sun_path_diagrams.__main__:main
