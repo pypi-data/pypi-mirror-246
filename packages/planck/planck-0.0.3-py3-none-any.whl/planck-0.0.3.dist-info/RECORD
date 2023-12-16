@@ -1,0 +1,15 @@
+planck/__init__.py,sha256=Ev90dQLrSXE0DeHuo0al3QP4eabJkMtkhqzSCVCNm1k,891
+planck/_common.py,sha256=GtcNhOASAEpHHeiKOZtLTgDkPaYXRSg7YqeJQCcPH4Y,2163
+planck/_scipy.py,sha256=jgloJvCtWgyGCQF8ywWpwdNhjRhhf2FFMf4wD16bra0,3706
+planck/_version.py,sha256=I2Vn_6CtMpEXMvSx6Hq-8gFMpQjcK0IEyrty84xCLD0,17
+planck/constants.py,sha256=oFbsunpAWx3o5ooO9W8ARsi5IyxysBDn0yaOsy93r2o,5308
+planck/units.py,sha256=LSBi4c6pA68IpncCp4pVZYYo9qgJjW2cHWA7WMbVZPg,8288
+planck/models/__init__.py,sha256=YQ4l2nScqM75Y4ieK565dYsTtuOf1PlbHoJB7vJCyKo,206
+planck/models/dimensionalphysicalconstant.py,sha256=S6HDEdfHOY8qQuqIwitZUoa68vKyQi31VPC1K9vGHsU,1619
+planck/models/nondimensionalphysicalconstant.py,sha256=GIQc4VR-zjxKE2Kk4OIgQOWWN3Ad4Yvm9eOYr0a5Glo,1785
+planck/models/unit.py,sha256=XZpbB_2fHOZyO0JsETZ2iLOmJOf6eAbzCQ0fmF4YJMA,2973
+planck-0.0.3.dist-info/LICENSE,sha256=bixa0YlPhArITYqSSY2wybO9IscM6BLeGnaFtsZa9-s,1066
+planck-0.0.3.dist-info/METADATA,sha256=56DqmnG9AKdoVwG_WNWjuRKnhEIKwfapr0oB-NZVOJA,2533
+planck-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+planck-0.0.3.dist-info/top_level.txt,sha256=L2rEom4FKqnX3jGkdZBfhvvX49BecPP2bD3myApGiDg,7
+planck-0.0.3.dist-info/RECORD,,
