@@ -1,0 +1,12 @@
+hnn_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hnn_utils/callbacks/__init__.py,sha256=H2Wgficw3cxbrMUM9dCf9Ljy1O5lEO7Fz0xr36TtzN8,48
+hnn_utils/callbacks/ema.py,sha256=A9XT4eWdSAtQuGBHAIPwSrR4kUrlqg7gQkOY8UXYCeA,6597
+hnn_utils/nn/RotaryEmbedding.py,sha256=9sR27up9taOeu54ky-8kHzL79VkpjvpfqufXGnLsyAE,1677
+hnn_utils/nn/Transformer.py,sha256=0QPK303gskQ_6rx1jqkF_l2a_X2K_7-ERh6XfGaN4YQ,11319
+hnn_utils/nn/__init__.py,sha256=oaz4BKDgBcje7dJ6b2RxrFvuS0APHQLZIzF4FwAs4zM,203
+hnn_utils/nn/funtional.py,sha256=0N7yDqkNqCfooHY9ddBnnS3jJaQgDCprM6yNFVTRN5Q,1586
+hnn_utils-0.1.25.dist-info/LICENSE,sha256=N19dS6_e9dwq22ZbcAqvJFmHZwbxfAz2tvVzwi9gEWk,1068
+hnn_utils-0.1.25.dist-info/METADATA,sha256=p8_TUqYLOvcDUUl4LExrryNPAu7Bbx82S_heVjCrG_A,477
+hnn_utils-0.1.25.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hnn_utils-0.1.25.dist-info/top_level.txt,sha256=1ppMJ1N0HWo_N00SfQivQVdS25HCl5l-mo2On0SCbKo,10
+hnn_utils-0.1.25.dist-info/RECORD,,
