@@ -1,0 +1,14 @@
+patatmo/__init__.py,sha256=LjqQKe2IrIxPklSZ62hxt2qDHtt6vr5WzsbLtyc8-z4,178
+patatmo/api/__init__.py,sha256=PcDETLYy5CW1Z8yVEPEXyjEBIexRjbhgJ8fS9kfqGVc,288
+patatmo/api/authentication.py,sha256=Ybb3zsRlph5pAv7j4c-alxmbZ_014s-hC_Fsrk590XE,20533
+patatmo/api/client.py,sha256=iWlQu7zDsvQFh52XRe5Kfg2A2y9QWNkXirRnjNgM2is,16708
+patatmo/api/errors.py,sha256=Yi2CR5fJiXxHZ-tAZb1sw3BAZ8UmIDa1jiHRPWakxco,1287
+patatmo/api/requests.py,sha256=OnuqqMPJsonUajvyGa-sycUIyE0yw82n-9fpyGnPFl8,11585
+patatmo/api/responsetypes.py,sha256=8gobWvQX0cGugH9-qVfIOmBapMYiDYuUfCzNowTBFwI,13668
+patatmo/api/variables.py,sha256=ihuKA5qy1I_w2Pne0S5gdW1iPOVHvfHCOwJNpOBjVVg,1849
+patatmo/cli/__init__.py,sha256=iFZWIqQar_cc6IAL0EY5AK6xmEvlEXgXZ1UiVtDAjTE,8207
+patatmo/utils.py,sha256=LQz27ylPTwZLQMM4cpPPuqYkhrVFwm4VYNkThajXiYA,1555
+patatmo-0.2.15.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+patatmo-0.2.15.dist-info/METADATA,sha256=Tgu1LHp0zPgv3p2aOSsrL6j_ETtq7LY217Hhwy8d4_Y,8157
+patatmo-0.2.15.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+patatmo-0.2.15.dist-info/RECORD,,
