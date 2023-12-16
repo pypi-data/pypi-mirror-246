@@ -1,0 +1,2 @@
+[console_scripts]
+lm-datasets = lm_datasets.commands.lm_datasets_cli:main
