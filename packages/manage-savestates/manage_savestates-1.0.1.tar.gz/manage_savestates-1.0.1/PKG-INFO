@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: manage-savestates
+Version: 1.0.1
+Summary: Manages savestates and macros made with gz
+Project-URL: Homepage, https://github.com/pilgrimtabby/manage-savestates
+Project-URL: Issues, https://github.com/pilgrimtabby/manage-savestates/issues
+Author-email: pilgrim_tabby <pilgrimtabby@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: chime
+Requires-Dist: msvcrt; platform_system == 'Windows'
+Requires-Dist: pywin32; platform_system == 'Windows'
+Requires-Dist: win32gui; platform_system == 'Windows'
+Description-Content-Type: text/markdown
+
+# manage-savestates
+Organizes and labels files. Designed to be used with savestates and macros generated using [gz](https://github.com/glankk/gz), also known as "the practice ROM" for The Legend of Zelda: Ocarina of Time speedrunning.
+
+Should also work with files made using [kz](https://github.com/krimtonz/kz) (The Legend of Zelda: Majora's Mask equivalent) but this is untested.
+
+## Installation
+instructions here
