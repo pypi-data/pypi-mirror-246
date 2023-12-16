@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/ytho/__init__.py
+src/ytho/py.typed
+src/ytho.egg-info/PKG-INFO
+src/ytho.egg-info/SOURCES.txt
+src/ytho.egg-info/dependency_links.txt
+src/ytho.egg-info/requires.txt
+src/ytho.egg-info/top_level.txt
