@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+cloudmesh_sys.egg-info/PKG-INFO
+cloudmesh_sys.egg-info/SOURCES.txt
+cloudmesh_sys.egg-info/dependency_links.txt
+cloudmesh_sys.egg-info/not-zip-safe
+cloudmesh_sys.egg-info/requires.txt
+cloudmesh_sys.egg-info/top_level.txt
+tests/test_00_sys.py
