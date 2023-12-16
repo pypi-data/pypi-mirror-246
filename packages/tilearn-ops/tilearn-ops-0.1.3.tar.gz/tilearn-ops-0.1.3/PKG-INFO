@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tilearn-ops
+Version: 0.1.3
+Summary: tilearn-ops-installer is 
+Home-page: https://github.com/daneren/tilearn-ops-installer
+Author: RUN LI
+Author-email: lirunchh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```shell
+pip install tilearn-ops or pip install tilearn.ops
+```
