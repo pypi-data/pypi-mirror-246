@@ -1,0 +1,12 @@
+numpy
+
+[dev]
+black
+mkdocs
+mkdocstrings[python]
+mkdocs-material
+
+[test]
+pytest
+pytest-cov
+pytest-examples
