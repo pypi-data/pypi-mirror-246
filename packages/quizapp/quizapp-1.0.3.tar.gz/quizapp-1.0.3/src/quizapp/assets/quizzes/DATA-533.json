@@ -1,0 +1,32 @@
+[
+    {
+        "question": "Which of the following represents a template or blueprint that defines objects of the same type?",
+        "options": [
+            "A. A class",
+            "B. An object",
+            "C. A method",
+            "D. An attribute"
+        ],
+        "answer": "A. A class"
+    },
+    {
+        "question": "How do you call a method in a parent class?",
+        "options": [
+            "A. parent().method",
+            "B. parent.method",
+            "C. super().mehtod",
+            "D. super.method"
+        ],
+        "answer": "C. super().mehtod"
+    },
+    {
+        "question": "Which statement about inheritance is incorrect?",
+        "options": [
+            "A. Inheritance is a key idea of Object-oriented programming (OOP).",
+            "B. The child class is also called a subclass or a derived class.",
+            "C. Private members of a class can be inherited.",
+            "D. Public members of a class can be inherited."
+        ],
+        "answer": "A. Inheritance is a key idea of Object-oriented programming (OOP)."
+    }
+]
