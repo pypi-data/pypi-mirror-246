@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: langsnapy
+Version: 0.0.2
+Summary: Snapshot your LLMs, NLP and Chatbots
+Author: Mykhailo Chalyi
+Author-email: mike@chaliy.name
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: runtime-deps
+Requires-Dist: dataclasses-json (>=0.6.3,<0.7.0)
+Requires-Dist: markdown-it-py (>=3.0.0,<4.0.0) ; extra == "runtime-deps"
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Langsnapy - Tool to snapshot your LLMs, NLP Models and Chatbots
+
+_I am looking for better name_
+
+Idea behind this tool, is to maintain snapshots of what your model can answer.
+
+__How it works:__ You define a set of questions. This tool run this questions against your model and save the answers. Then you can run this questions again and compare the answers with the saved ones.
+
+### How to use
+
+```python
+```
+
+### How to test
+
+```sh
+poetry install -E runtime-deps --with dev
+poetry run pytest
+```
