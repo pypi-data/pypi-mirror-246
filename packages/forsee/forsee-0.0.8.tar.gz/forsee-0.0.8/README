@@ -1,0 +1,43 @@
+FORSEE BETA
+
+Author: Nikos Tzeka
+Itec-audio Gmbh
+12/14/2023
+
+
+
+Forsee is a software utility designed to generate a compilation database from CrossCore  embedded studio IDE. The resulting JSON-formatted database is compatible for importation into static analysis tools such as Cppcheck or Clang Static Analyzer.
+
+INSTALLATION 
+After the successful installation of the requisite packages, the final step involves adding the Forsee directory to the system's PATH. Once this is completed, the configuration is deemed complete.
+
+You can also use:
+pip install forsee
+
+USAGE
+Prior to utilizing the tool, a minor adjustment is required within CrossCore Integrated Development Environment (IDE).
+
+1.  Navigate to project> properties or open the interface by using the shortcut Alt + Enter. 
+2.  Within the properties dialog, locate the 'C/C++ Builder' section. 
+3.  Go the ‘logging’ subsection and enable logging. 
+4.  Proceed to the 'Builder Settings' (back at C/C++) tab and 
+5.  modify the default build command to 'make -nw' instead of 'make' 
+        Note: If the prompt is inactive or grayed out, simply uncheck the 'Use default build command' option, enabling the ability to implement changes.
+
+In order to employ Forsee, it is imperative to consistently perform a project cleanup followed by a subsequent rebuild.
+
+At this point, you are ready to export your compilation database. Simply open the terminal and execute the following command: 
+    c4 path/to/you/console.build.log
+and the compile_commands.json will be automatically generated in the root folder of your project or in Configuration folder if you are using multiple configurations.
+
+If your cces IDE still used the default location to log the terminal output, your can just type in the project name instead of using the absolute path, just make sure that are located inside the root folder.
+
+    c4 projectname
+
+If you are not using the default location, you can type 
+    c4 --default=path/to/your/logging/location
+
+now you can still use the previous command to export your database.
+and 
+    c4 –help or -h 
+will print in the terminal the available options.
