@@ -1,0 +1,17 @@
+geopandas>=0.13
+matplotlib>=3.0
+numpy>=1.20
+pyproj>=3.0
+rasterio>=1.2.6
+xarray>=0.19.0
+rioxarray>=0.7.1
+packaging
+pandas>=1.4.0
+shapely>=2.0
+tqdm>=4.30
+
+[docs]
+jupyter
+
+[tests]
+pytest
