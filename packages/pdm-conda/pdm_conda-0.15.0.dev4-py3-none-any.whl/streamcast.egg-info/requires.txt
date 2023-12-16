@@ -1,0 +1,5 @@
+asyncpg~=0.28.0
+
+[services]
+streamcast[db]
+streamlink~=6.3.1
