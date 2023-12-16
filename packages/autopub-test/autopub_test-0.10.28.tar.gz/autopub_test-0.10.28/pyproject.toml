@@ -1,0 +1,42 @@
+[project]
+name = "autopub-test"
+version = "0.10.28"
+description = ""
+authors = [
+    { name = "Patrick Arminio", email = "patrick.arminio@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "autopub==1.0.0-alpha.20",
+    "PyGithub>=2.1.1",
+    "httpx>=0.25.2",
+]
+
+[tool.autopub]
+plugins = [
+    "pdm",
+    "autopub_plugins.github.invite_contributor",
+    "autopub_plugins.github.release",
+    "autopub_plugins.github.pr_comment",
+]
+
+[tool.autopub.github_invite_contributor]
+organisation = "test-patrick"
+team_slug = "people"
+comment_template = "Hi $user! Thanks for your contribution to this project.\n\nYou've been invited to join our organisation 😊\n"
+
+[tool.autopub.github_pr_comment]
+comment_template = "Hi $user! Thanks for your contribution to this project.\n"
