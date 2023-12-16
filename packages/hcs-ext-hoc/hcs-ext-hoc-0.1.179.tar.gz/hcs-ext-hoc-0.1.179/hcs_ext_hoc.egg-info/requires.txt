@@ -1,0 +1,2 @@
+hcs-core
+elasticsearch==7.17.9

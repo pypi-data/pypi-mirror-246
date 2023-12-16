@@ -1,0 +1,13 @@
+Makefile
+VERSION
+pyproject.toml
+requirements.txt
+version
+hcs_ext_hoc/__init__.py
+hcs_ext_hoc/es.py
+hcs_ext_hoc/inspect.py
+hcs_ext_hoc.egg-info/PKG-INFO
+hcs_ext_hoc.egg-info/SOURCES.txt
+hcs_ext_hoc.egg-info/dependency_links.txt
+hcs_ext_hoc.egg-info/requires.txt
+hcs_ext_hoc.egg-info/top_level.txt
