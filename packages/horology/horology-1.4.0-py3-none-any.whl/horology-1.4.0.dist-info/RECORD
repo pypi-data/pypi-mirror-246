@@ -1,0 +1,11 @@
+horology/__init__.py,sha256=CGYrLJbT1-xArTrQPPDOgSCbw-FpLGRrjaEbqQVL2Lg,166
+horology/dupa1.py,sha256=z1q0mDaiL-RNoXk2fy6g8gN2L9afn81BIa5rGZSBDOg,408
+horology/dupa2.py,sha256=oNJ88rzg4f15S2MzsyiYvgfRgysV12ONrj2qudiCflk,232
+horology/tformatter.py,sha256=UjuaVQQ3_Q5jfViB8-fZNTUh_aNxscu9IA3A-kBl7Fo,1701
+horology/timed_context.py,sha256=LxjOULF8iz9BRHOdlq-GSQpqrkkW2vQG5lhkGswWEgc,2965
+horology/timed_decorator.py,sha256=AUMBP7gyMSFm9FZTdg9_IhvMt95lg6KiY3E9aQZ6t-U,3893
+horology/timed_iterable.py,sha256=hxvGEliqZuf3iFgNdXQyed5d6Bpu50HbEVCmpxtgocA,5232
+horology-1.4.0.dist-info/LICENSE,sha256=MWeftJhaaDnbZBaa3GYDp2S2p2AAIeNnKqLL_EJlL2o,1103
+horology-1.4.0.dist-info/METADATA,sha256=AA4SDoHRBoAIHp9rwv0c7DnQiDaTGZSBIcezLUENj_A,4507
+horology-1.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+horology-1.4.0.dist-info/RECORD,,
