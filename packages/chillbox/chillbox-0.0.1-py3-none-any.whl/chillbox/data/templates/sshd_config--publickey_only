@@ -1,0 +1,6 @@
+AuthenticationMethods publickey
+AuthorizedKeysFile .ssh/authorized_keys
+KbdInteractiveAuthentication no
+PasswordAuthentication no
+PermitRootLogin no
+PubkeyAuthentication yes

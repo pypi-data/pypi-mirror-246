@@ -1,0 +1,2 @@
+[console_scripts]
+chillbox = chillbox.main:main

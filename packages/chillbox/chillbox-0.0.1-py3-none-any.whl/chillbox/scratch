@@ -1,0 +1,32 @@
+
+ssh.py:20:    identity_file = c.state.identity_file_temp
+ssh.py:21:    current_user = c.state.current_user
+ssh.py:45:    ssh_config = c.state.ssh_config_temp
+ssh.py:46:    identity_file = c.state.identity_file_temp
+ssh.py:50:    c.state.ssh_config_temp = None
+ssh.py:51:    c.state.identity_file_temp = None
+
+ssh.py:12:def generate_ssh_config_temp(c):
+tasks/local_ssh.py:16:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/local_ssh.py:33:    ssh_config = generate_ssh_config_temp(c)
+tasks/server.py:34:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/server.py:165:        ssh_config_file = generate_ssh_config_temp(c)
+
+ssh.py:def cleanup_ssh_config_temp(state):
+tasks/local_ssh.py:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/local_ssh.py:    cleanup_ssh_config_temp(state)
+tasks/server.py:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/server.py:        cleanup_ssh_config_temp(state)
+
+ssh.py:12:def generate_ssh_config_temp(c, current_user, identity_file):
+tasks/local_ssh.py:16:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/local_ssh.py:33:    ssh_config = generate_ssh_config_temp(c, current_user=state.current_user, identity_file=state.identity_file_temp)
+tasks/server.py:34:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/server.py:165:        ssh_config_file = generate_ssh_config_temp(c, current_user=state.current_user, identity_file=state.identity_file_temp)
+
+ssh.py:12:def generate_ssh_config_temp(c, current_user, identity_file):
+tasks/local_show.py:17:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/local_ssh.py:16:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/local_ssh.py:33:    ssh_config = generate_ssh_config_temp(
+tasks/server.py:38:from chillbox.ssh import generate_ssh_config_temp, cleanup_ssh_config_temp
+tasks/server.py:187:        ssh_config_file = generate_ssh_config_temp(
