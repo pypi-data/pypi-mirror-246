@@ -1,0 +1,5 @@
+setup.py
+GoogleIt.egg-info/PKG-INFO
+GoogleIt.egg-info/SOURCES.txt
+GoogleIt.egg-info/dependency_links.txt
+GoogleIt.egg-info/top_level.txt
