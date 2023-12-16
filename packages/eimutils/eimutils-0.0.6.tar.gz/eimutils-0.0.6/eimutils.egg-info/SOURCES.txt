@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+eimutils/__init__.py
+eimutils/aws_secrets.py
+eimutils/decrypt.py
+eimutils/delogging.py
+eimutils/snowflake_connection.py
+eimutils/utils.py
+eimutils.egg-info/PKG-INFO
+eimutils.egg-info/SOURCES.txt
+eimutils.egg-info/dependency_links.txt
+eimutils.egg-info/top_level.txt
