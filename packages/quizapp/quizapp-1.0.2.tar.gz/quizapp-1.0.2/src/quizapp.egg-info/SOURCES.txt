@@ -1,0 +1,17 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/quizapp/__init__.py
+src/quizapp/main.py
+src/quizapp.egg-info/PKG-INFO
+src/quizapp.egg-info/SOURCES.txt
+src/quizapp.egg-info/dependency_links.txt
+src/quizapp.egg-info/top_level.txt
+src/quizapp/student/__init__.py
+src/quizapp/student/readquiz.py
+src/quizapp/student/takequiz.py
+src/quizapp/teacher/__init__.py
+src/quizapp/teacher/checkstudentscores.py
+src/quizapp/teacher/createquiz.py
+tests/test_suite_quizapp.py
