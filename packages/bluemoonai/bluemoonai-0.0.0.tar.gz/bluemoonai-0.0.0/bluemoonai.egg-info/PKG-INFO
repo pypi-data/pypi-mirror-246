@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bluemoonai
+Version: 0.0.0
+Summary: BlueMoon AI: Open-source Text to Image Generative AI. Transform text into stunning visuals effortlessly. Free to use and contribute on GitHub.
+Home-page: https://github.com/BlueMoonAI/BlueMoonAI.git
+Author: bluemoonai
+License: Apache Software License (Apache 2.0)
+Project-URL: Source Code, https://github.com/BlueMoonAI/BlueMoonAI
+Project-URL: Bug Tracker, https://github.com/BlueMoonAI/BlueMoonAI/issues
+Project-URL: Documentation, https://github.com/BlueMoonAI/BlueMoonAI#readme
+Keywords: text-to-image,AI model,NLP,computer vision,deep learning,ai,machine learning,artificial intelligence,image generation,image generator,bluemoonai,bluemoon
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+for more information about this [repository](https://github.com/BlueMoonAI/BlueMoonAI.git).

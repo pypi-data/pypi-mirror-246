@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bluemoon/__init__.py
+bluemoonai.egg-info/PKG-INFO
+bluemoonai.egg-info/SOURCES.txt
+bluemoonai.egg-info/dependency_links.txt
+bluemoonai.egg-info/top_level.txt
