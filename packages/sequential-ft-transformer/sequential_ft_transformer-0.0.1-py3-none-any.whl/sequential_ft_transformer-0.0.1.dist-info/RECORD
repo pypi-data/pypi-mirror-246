@@ -1,0 +1,8 @@
+sequential_ft_transformer/__init__.py,sha256=qRelt-DuSbB0a6eWi42h1EQKTRSe75Uv012puCMb2XQ,127
+sequential_ft_transformer/embeddings.py,sha256=5hnRR5m2el4ELhTakXfBS08xcDqG7Hv-Xf777I4qhbg,7509
+sequential_ft_transformer/fttransformer.py,sha256=5ubx454gWH_pT00WUnHZDqwE-sBje-xJHcS0ZPgU9kQ,7973
+sequential_ft_transformer/transformer.py,sha256=88CfNdWOTjYOWUSXLchqIVwvuJu7kBqMuodTpcRExpU,3343
+sequential_ft_transformer-0.0.1.dist-info/LICENSE,sha256=hreTCTqv9NsKutK6DhBh5KSGvo-rhMpXMW8NXoJFEqs,1072
+sequential_ft_transformer-0.0.1.dist-info/METADATA,sha256=n-TwHMeeZq3BqUWC_Q458a-zvr3adhhVN3FF7RaFPgg,1201
+sequential_ft_transformer-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sequential_ft_transformer-0.0.1.dist-info/RECORD,,
