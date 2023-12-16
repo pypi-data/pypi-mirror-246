@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+knertia.egg-info/PKG-INFO
+knertia.egg-info/SOURCES.txt
+knertia.egg-info/dependency_links.txt
+knertia.egg-info/requires.txt
+knertia.egg-info/top_level.txt
