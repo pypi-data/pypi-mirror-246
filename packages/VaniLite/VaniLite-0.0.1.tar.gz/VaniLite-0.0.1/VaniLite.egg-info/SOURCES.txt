@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+VaniLite/__init__.py
+VaniLite/errors.py
+VaniLite/utils.py
+VaniLite/vani.py
+VaniLite.egg-info/PKG-INFO
+VaniLite.egg-info/SOURCES.txt
+VaniLite.egg-info/dependency_links.txt
+VaniLite.egg-info/top_level.txt
