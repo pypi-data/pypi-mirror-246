@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/chemotaxissimulation.py
+src/photokineticanalysis.py
+src/Photosimulator.egg-info/PKG-INFO
+src/Photosimulator.egg-info/SOURCES.txt
+src/Photosimulator.egg-info/dependency_links.txt
+src/Photosimulator.egg-info/top_level.txt
+test/test_chemotaxissimulation.py
+test/test_photokineticanalysis.py
