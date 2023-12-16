@@ -1,0 +1,13 @@
+etc_activelearning/__init__.py,sha256=QRVzAR2ONxpUWF5s0Asv3Trl_aEvpWtQ3u_cbivH-dw,610
+etc_activelearning/_version.py,sha256=zyF8mhjkgpQ0U__lYOzn5h3wDcryypKU_QfKG8HkULM,175
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/package.json,sha256=Coyku0M_rgX1Ltdij40B3AHhnIyQdmyfjHRgZGNS3lI,5894
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/static/372.1f5a6c9e6133a924371c.js,sha256=H1psnmEzqSQ3HC-wPG50iiISEWAWKtuCoOEEhzbDu44,7586
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/static/747.cedc32c1f334463d9795.js,sha256=ztwywfM0Rj2XlSxpU4LtYsSDnM0ypsMKuGQY-YC_MQM,5234
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/static/remoteEntry.7eeb0a1565b5bc4ff4e9.js,sha256=fusKFWW1vE_06bSbA0k2300m1p7HQBRrOEDPN1rfhRM,6394
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/static/style.js,sha256=EiSSL2bK_pg6x0Q84LAphFhh07bBGGiZ_s9HgpR3A6M,161
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/static/third-party-licenses.json,sha256=5z5gY0sStbT_P2WqbrAlmEtTHDPn0-v6dtp4O8CCBTs,2452
+etc_activelearning-1.0.0.data/data/share/jupyter/labextensions/etc_activelearning/install.json,sha256=rfzHoWeBm1XGETL6fdC3HZl3XDcdE4qCI75gt0jPQWw,202
+etc_activelearning-1.0.0.dist-info/METADATA,sha256=Fd3T7yVzQZkDNyJUvRZfZJy-S-n1dxZN1juEo7alNY8,6223
+etc_activelearning-1.0.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+etc_activelearning-1.0.0.dist-info/licenses/LICENSE,sha256=vMAF-YoWPvajxgx47fz2Bnh-zxfcN7EK1xgoSU9P2pg,1551
+etc_activelearning-1.0.0.dist-info/RECORD,,
