@@ -1,0 +1,7 @@
+django_http2/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+django_http2/middleware.py,sha256=NVlZepP8pjSydlhjBrqYKWmSCGRLvrpjlLj-8NzXR0w,4899
+django_http2/templatetags/http2.py,sha256=GnLErCagsBDoO6_aHMerJV4ZbDXAWJuIX2dIguKuzeU,623
+django_http2-0.0.1.dist-info/LICENSE,sha256=igYzwYwytztAipTX8rhoQifA2MeZDX74rwluKgVJZUs,1070
+django_http2-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+django_http2-0.0.1.dist-info/METADATA,sha256=zJ0DxBbttELJcvlmEO73o8EqXeFPBmoimhGHjWLh-lk,19348
+django_http2-0.0.1.dist-info/RECORD,,
