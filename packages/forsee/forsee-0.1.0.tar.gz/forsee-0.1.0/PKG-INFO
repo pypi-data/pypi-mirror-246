@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: forsee
+Version: 0.1.0
+Summary: Exports a compile_commands.json from a Crosscore Project
+Author: Nikos Tzekas
+Author-email: nt@itec-audio.com
