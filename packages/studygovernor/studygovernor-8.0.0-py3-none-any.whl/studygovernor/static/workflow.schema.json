@@ -1,0 +1,94 @@
+{
+  "$schema": "//w3schools.in/json-06/schema#",
+  "title": "Workflow",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "pattern": "[a-zA-Z][a-zA-Z0-9_]+"
+    },
+    "states": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "pattern": "[a-zA-Z][a-zA-Z0-9_]+"
+          },
+          "freetext": {
+            "type": "string"
+          },
+          "callbacks": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "pattern": "[a-zA-Z][a-zA-Z0-9_]+"
+                },
+                "function": {
+                  "type": "string",
+                  "pattern": "[a-zA-Z][a-zA-Z0-9_]+"
+                },
+                "callback_arguments": {
+                  "type": "object"
+                },
+                "variable_map": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "run_timeout": {
+                  "type": "integer",
+                  "description": "time in minutes after which a run is considered to be failed"
+                },
+                "wait_timeout": {
+                  "type": "integer",
+                  "description": "time in minutes after which waiting for a manual action is considered to be failed"
+                },
+                "initial_delay": {
+                  "type": "integer",
+                  "description": "delay in seconds before starting the execution of the callback"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "condition": {
+                  "type": "string",
+                  "description": "condition for this callback, must be a one-line Python statement that results in a boolean"
+                }
+              },
+              "required": ["label", "function", "callback_arguments"]
+            }
+          },
+          "transitions": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "destination": {
+                  "type": "string"
+                },
+                "condition": {
+                  "type": "string",
+                  "description": "condition for this transition, must be a one-line Python statement that results in a boolean"
+                }
+              },
+              "required": ["destination"]
+            }
+          }
+        },
+        "required": ["label", "callbacks"]
+      }
+    }
+  },
+  "required": ["label", "states"]
+}
