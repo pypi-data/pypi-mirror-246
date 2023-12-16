@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+sound_streamlit.egg-info/PKG-INFO
+sound_streamlit.egg-info/SOURCES.txt
+sound_streamlit.egg-info/dependency_links.txt
+sound_streamlit.egg-info/requires.txt
+sound_streamlit.egg-info/top_level.txt
+soundlit/__init__.py
+soundlit/converter.py
+soundlit/widget.py
+soundlit/st_audiorec/__init__.py
