@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end %}
+{% block content %}
+
+
+<h1>Callback Execution {{ callback_execution.id }} </h1>
+
+{{ collapse_card_start("Info") }}
+  <dl class="row">
+    <dt class="col-sm-3">id</dt>
+    <dd class="col-sm-9">{{ callback_execution.id }}</dd>
+
+    <dt class="col-sm-3">callback</dt>
+    <dd class="col-sm-9">
+      <a href="{{url_for('web.web_callback', id=callback_execution.callback_id) }}">
+        {{ callback_execution.callback.label }}
+      </a>
+    </dd>
+
+    <dt class="col-sm-3">action</dt>
+    <dd class="col-sm-9">
+      <a href="{{url_for('web.web_action', id=callback_execution.action_id) }}">
+        {{ callback_execution.action_id }}
+      </a>
+    </dd>
+
+    <dt class="col-sm-3">status</dt>
+    <dd class="col-sm-9">
+      <span class="badge badge-{{ callback_execution.status.badge_class }}">
+        {{callback_execution.status}}
+      </span>
+    </dd>
+
+    <dt class="col-sm-3">result</dt>
+    <dd class="col-sm-9">
+      <span class="badge badge-{{ callback_execution.result.badge_class }}">
+        {{callback_execution.result}}
+      </span>
+    </dd>
+
+    <dt class="col-sm-3">run log</dt>
+    <dd class="col-sm-9">
+      <pre><code> {{ callback_execution.run_log }} </code></pre>
+    </dd>
+
+    <dt class="col-sm-3">result log</dt>
+    <dd class="col-sm-9">
+      <pre><code> {{ callback_execution.result_log }} </code></pre>
+    </dd>
+
+    <dt class="col-sm-3">result values</dt>
+    <dd class="col-sm-9">
+      {{ callback_execution.result_values | json_format }}
+    </dd>
+
+    <dt class="col-sm-3">created</dt>
+    <dd class="col-sm-9"> {{ callback_execution.created }} </dd>
+
+    <dt class="col-sm-3">run start</dt>
+    <dd class="col-sm-9"> {{ callback_execution.run_start }} </dd>
+
+    <dt class="col-sm-3">wait start</dt>
+    <dd class="col-sm-9"> {{ callback_execution.wait_start }} </dd>
+
+    <dt class="col-sm-3">finished</dt>
+    <dd class="col-sm-9"> {{ callback_execution.finished }} </dd>
+  </dl>
+{{ collapse_card_end("Info") }}
+{% endblock %}

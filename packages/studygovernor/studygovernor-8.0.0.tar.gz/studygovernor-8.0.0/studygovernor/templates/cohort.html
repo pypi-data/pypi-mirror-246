@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end %}
+{% block content %}
+
+
+<h1>Cohort {{ cohort.label }} </h1>
+
+{{ collapse_card_start("Cohort Information", show=True)}}
+    <dl class="dl-horizontal">
+      <dt>id</dt>
+      <dd>{{ cohort.id }}</dd>
+
+      <dt>label</dt>
+      <dd>{{ cohort.label }}</dd>
+
+      <dt>description</dt>
+      <dd>{{ cohort.description }}</dd>
+
+      {% if cohort.external_urls %}
+      <dt>external urls</dt>
+      <dd><p>
+        {% for external_system, external_url in cohort.external_urls.items() %}
+        <span class="badge badge-success">{{ external_system }}: {{ external_url }}</span>
+        {% endfor %}
+      </p></dd>
+      {% endif %}
+    </dl>
+{{ collapse_card_end("Cohort Information")}}
+
+{% if cohort.subjects %}
+{{ collapse_card_start("Subjects", show=True) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>id</th>
+          <th>label</th>
+          <th>scan date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for subject in cohort.subjects[:25] %}
+        <tr>
+          <td>
+            <a href="{{ url_for('web.web_subject', id=subject.id) }}">
+              {{subject.id}}
+            </a>
+          </td>
+          <td>
+            <a href="{{ url_for('web.web_subject', id=subject.id) }}">
+              {{subject.label}}
+            </a>
+          </td>
+          <td>{{subject.scandate}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {% if cohort.subjects | length > 25 %}
+        <p>First 25 subjects of {{ cohort.subjects | length }} displayed. All subjects from this cohort are available <a href="{{ url_for('web.web_subjects') }}">here</a></p>
+      {% endif %}
+{{ collapse_card_end("Subjects") }}
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end, paginate %}
+{% block content %}
+
+
+<h1>Cohort Overview</h1>
+    {{ collapse_card_start("Cohorts", show=True, data_count=cohorts.total) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>id</th>
+          <th>label</th>
+          <th>description</th>
+          <th># subjects</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for cohort in cohorts.items %}
+        <tr>
+          <td>
+            <a href="{{url_for('web.web_cohort', id=cohort.id) }}">
+              {{cohort.id}}
+            </a>
+          </td>
+          <td>
+            <a href="{{url_for('web.web_cohort', id=cohort.id) }}">
+              {{cohort.label}}
+            </a>
+          </td>
+          <td>{{cohort.description}}</td>
+          <td>
+            {% if cohort.subjects|length > 0 %}
+              <span class="badge badge-secondary">{{cohort.subjects|length}}</span>
+            {% else %}
+              {{cohort.subjects|length}}
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {{ paginate(cohorts, 'web.web_cohorts') }}
+    {{ collapse_card_end("Cohorts") }}
+
+{% endblock %}

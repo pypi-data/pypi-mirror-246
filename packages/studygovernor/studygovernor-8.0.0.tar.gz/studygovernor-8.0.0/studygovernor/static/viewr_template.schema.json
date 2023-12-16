@@ -1,0 +1,705 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ViewR Template",
+  "type": "object",
+  "properties": {
+    "template_name": {
+      "type": "string",
+      "pattern": "[a-zA-Z][a-zA-Z0-9_]+",
+      "description": "The template name is simple a string by which the template is referenced (e.g. from tasks)"
+    },
+    "link_localizers": {
+      "type": "boolean",
+      "description": "A boolean indicating if the localizer should be linked between different contexts."
+    },
+    "mdl_layout": {
+      "type": "string",
+      "description": "A piece of MeVisLab MDL that indicates how different contexts are combined in the GUI."
+    },
+    "presets": {
+      "description": "Define a number of presets for the viewports",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "__name__": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "scan": {
+              "type": "string",
+              "description": "The scan to select for the viewport"
+            },
+            "orientation": {
+              "type": "string",
+              "enum": ["Transversal", "Coronal", "Sagittal"],
+              "description": "The orientation to set for the viewport"
+            },
+            "annotation": {
+              "type": "string",
+              "description": "The annotation overlay to set for the viewport"
+            },
+            "projection": {
+              "type": ["string", "null"],
+              "enum": [null, "min", "max"],
+              "description": "The projection to activate for the viewport. Valid options: null, 'min', 'max'"
+
+            },
+            "projection_slab": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "The number of slices over which to perform the projection Should be a positive integer value"
+            }
+          }
+        }
+      }
+    },
+    "sop": {
+      "description": "This is a field where a standard operating procedure can be documented for the task.",
+      "type": "string"
+    }
+  },
+  "oneOf": [
+    {
+      "required": ["contexts"],
+      "properties": {
+        "contexts": {
+          "type": "object",
+          "description": "A context is a group of widgets and data required for a task.",
+          "additionalProperties": {
+            "$ref": "#/$defs/context"
+          }
+        }
+      }
+    },
+    {
+      "$ref": "#/$defs/context"
+    }
+  ],
+  "required": ["template_name", "sop"],
+  "$defs": {
+    "color": {
+      "description": "label of the marker (displayed when marker is active)",
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          }
+        },
+        {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          }
+        }
+      ]
+    },
+    "context": {
+      "required": ["viewports", "scans", "annotations", "qa_fields"],
+      "properties": {
+        "viewports": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/viewport"}
+        },
+        "scans": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "modality": {
+                "type": "string"
+              },
+              "protocols": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "annotations": {
+          "type": ["object", "null"],
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["pixel"]
+              },
+              "editable": {
+                "type": "boolean"
+              },
+              "editors": {
+                "enum": [["pixel"], null]
+              },
+              "labels": {
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {
+                    "colour": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "opacity": {
+                      "type": "string",
+                      "pattern": "[.0-9]+"
+                    }
+
+                  }
+              }
+            }
+          }
+
+        }
+      },
+        "qa_fields": {
+          "type": "object",
+          "unevaluatedProperties": false,
+          "additionalProperties": {
+            "type": "object",
+            "$ref": "#/$defs/qa_field"
+          }
+        },
+        "mdl_layout": {
+          "type": "string"
+        }
+      }
+    },
+    "viewport": {
+      "type": "object",
+      "unevaluatedProperties": false,
+      "required": ["type", "name", "scan", "annotation", "x", "y", "linked"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["viewport"],
+          "description": "currently unused, set to 'viewport'"
+        },
+        "name": {
+          "type": "string",
+          "description": "name of the viewport"
+        },
+        "scan": {
+          "type": "string",
+          "description": "initial scan to show in the viewport"
+        },
+        "annotation": {
+          "type": ["string", "null"],
+          "description": "initial annotation to show in the viewport"
+        },
+        "x": {
+          "type": "integer",
+          "description": "x location on the grid"
+        },
+        "y": {
+          "type": "integer",
+          "description": "y location on the grid"
+        },
+        "linked": {
+          "type": "boolean",
+          "description": "initial linking of the localizer"
+        },
+        "orientation": {
+          "type": "string",
+          "enum": ["Transversal", "Coronal", "Sagittal"],
+          "description": "initial orientation, should be one of 'Transversal', 'Coronal', 'Sagittal'. Default is Transversal."
+        },
+        "label": {
+          "type": "string",
+          "description": "initial annotation label to select (show only that label)"
+        },
+        "projection": {
+          "type": "string",
+          "enum": ["none", "min", "max"],
+          "description": "initial projection to use, should be in 'none', 'min', 'max'. Default is 'none'"
+        },
+        "projection_slab": {
+          "type": "integer",
+          "description": "integer, number of slices to use for a projection, defaults to 5",
+          "minimum": 1
+        },
+        "slice_highlight_interval": {
+          "type": "integer",
+          "description": "integer, highlight every Nth slice"
+        },
+        "interpolation": {
+          "type": "string",
+          "enum": ["nearest", "linear"],
+          "description": "interpolation to use, should be ‘nearest’ or ‘linear’, default is ‘nearest’"
+        }
+      }
+    },
+    "qa_field": {
+      "type": "object",
+      "unevaluatedProperties": false,
+      "required": ["control", "label", "x", "y"],
+      "properties": {
+        "control":{
+          "type": "string",
+          "description": "The type of widget to use, see the listing below"
+        },
+        "type":{
+          "type": ["string", "null"],
+          "description": "The data type of the widget, defaults to String"
+        },
+        "label":{
+          "type": "string",
+          "description": "The label of the widget (used for display)"
+        },
+        "initial_value":{
+          "description": "The initial value to assign to the widget, default to null"
+        },
+        "x":{
+          "type": "integer",
+          "description": "The x position in the layout grid"
+        },
+        "y":{
+          "type": "integer",
+          "description": "The y position in the layout grid"
+        },
+        "enabled":{
+          "type": "boolean",
+          "description": "Flag to set whether widget is editable, defaults to True"
+        },
+        "depends_on":{
+          "type": "string",
+          "description": "Formula on which editable state of the widget depends (uses values of other widgets)"
+        },
+        "visible":{
+          "type": "boolean",
+          "description": "Flag to set whether widget is visible, defaults to True"
+        },
+        "visible_on":{
+          "type": "string",
+          "description": "Formula on which visibility of the widget depends (uses values of other widgets)"
+        },
+        "documentation":{
+          "type": "string",
+          "description": "Current unused, idea is to use it to document"
+        }
+      },
+      "oneOf": [
+        {"$ref": "#/$defs/tabswidget"},
+        {"$ref": "#/$defs/boxwidget"},
+        {"$ref": "#/$defs/listingwidget"},
+        {"$ref": "#/$defs/checkbox"},
+        {"$ref": "#/$defs/numberedit"},
+        {"$ref": "#/$defs/combobox"},
+        {"$ref": "#/$defs/radiobuttongroup"},
+        {"$ref": "#/$defs/lineedit"},
+        {"$ref": "#/$defs/textbox"},
+        {"$ref": "#/$defs/converstationwidget"},
+        {"$ref": "#/$defs/jsondisplay"},
+        {"$ref": "#/$defs/markeredit"},
+        {"$ref": "#/$defs/markerview"},
+        {"$ref": "#/$defs/landmarks"},
+        {"$ref": "#/$defs/csoedit"},
+        {"$ref": "#/$defs/calculatedscore"},
+        {"$ref": "#/$defs/validationcontrol"}
+      ]
+    },
+    "tabswidget": {
+      "required": ["content"],
+      "properties": {
+        "control": {
+          "const": "TabsWidget"
+        },
+        "content": {
+          "type": "object",
+          "additionalProperties": {
+            "additionalProperties": { "$ref": "#/$defs/qa_field" }
+          },
+          "description": "Object with key is tab name and value is another object with children qa_fields."
+        },
+        "order": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Order in which to show the tabs, defaults to a random order."
+        }
+      }
+    },
+    "boxwidget": {
+      "required": ["content"],
+      "properties": {
+        "control": {
+          "const": "BoxWidget"
+        },
+        "content": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/qa_field"
+          },
+          "description": "Object with child qa_fields."
+        },
+        "align_title": {
+          "type": "string",
+          "enum": ["Left", "Right", "Center"],
+          "description": "How to align the title of the box can be: Left (default), Right or Center"
+        }
+      }
+    },
+    "listingwidget": {
+      "required": ["content", "columns"],
+      "properties": {
+        "control": {
+          "const": "ListingWidget"
+        },
+        "content": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/qa_field"
+          },
+          "description": "Object with child qa_fields."
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The columns to display in the listing. This should be an array of strings indicating names of nested widgets."
+        }
+      }
+    },
+    "checkbox": {
+      "properties": {
+        "control": {
+          "const": "CheckBox"
+        },
+        "alert_on_checked": {
+          "type": "boolean",
+          "description": "Create an alert when this checkbox is checked"
+        },
+        "alert_on_unchecked": {
+          "type": "boolean",
+          "description": "Create an alert when this checkbox is unchecked"
+        }
+      }
+    },
+    "numberedit": {
+      "properties": {
+        "control": {
+          "const": "NumberEdit"
+        }
+      }
+    },
+    "combobox": {
+      "required": ["options"],
+      "properties": {
+        "control": {
+          "const": "ComboBox"
+        },
+        "options": {
+          "type": "array",
+          "description": "A list of the options a user can select",
+          "items": {
+            "type": ["string", "number"]
+          }
+        }
+      }
+    },
+    "radiobuttongroup": {
+      "required": ["options"],
+      "properties": {
+        "control": {
+          "const": "RadioButtonGroup"
+        },
+        "options": {
+          "type": "array",
+          "description": "A list of the options a user can select",
+          "items": {
+            "type": ["string", "number"]
+          }
+        },
+        "orientation": {
+          "type": "string",
+          "enum": ["horizontal", "vertical"],
+          "description": "The orientation of the buttons: horizontal (default) or vertical"
+        }
+      }
+    },
+    "lineedit": {
+      "properties": {
+        "control": {
+          "const": "LineEdit"
+        },
+        "hint_text": {
+          "type": "string",
+          "description": "Hint to show on a mouse over of the GUI element."
+        }
+      }
+    },
+    "textbox": {
+      "properties": {
+        "control": {
+          "const": "TextBox"
+        },
+        "editable": {
+          "type": "boolean",
+          "description": "Controls whether or not the input box is enabled, defaults to true"
+        }
+      }
+    },
+    "converstationwidget": {
+      "properties": {
+        "control": {
+          "const": "ConversationWidget"
+        },
+        "editable": {
+          "type": "boolean",
+          "description": "Controls whether or not the conversation widget is enabled for additional messages, defaults to true"
+        }
+      }
+    },
+    "jsondisplay": {
+      "required": ["content"],
+      "properties": {
+        "control": {
+          "const": "JSONDisplay"
+        },
+        "content": {
+          "type": "object",
+          "description": "The content to show, this defines the fields to display. This is an object with the JSON key as the key and small object containing a label and a type as value. The label defines the labeltext. The type can be text or boolean",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["text", "boolean"]
+              }
+            }
+          }
+        },
+        "textrows": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "The number of rows each textbox for displaying the text."
+        }
+      }
+    },
+    "markerbase": {
+      "properties": {
+        "groups": {
+          "type": "array",
+          "description": "Definition of the marker types and styles. This is an array of objects.",
+          "items": {
+            "type": "object",
+            "properties": {
+               "label": {
+                 "type": "string",
+                 "description": "label of the marker (displayed when marker is active)"
+               },
+              "description": {
+                "type": "string",
+                "description": "a description of the marker type"
+              },
+              "marker_size": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "integer specifying the marker size"
+              },
+              "marker_type": {
+                "type": "string",
+                "enum": ["None", "Dot", "Asterisk", "Circle", "Square", "Triangle", "Plus", "Cross"],
+                "description": "the style of the marker can be one of: None, Dot, Asterisk, Circle, Square, Triangle, Plus, or Cross"
+              },
+              "line_width": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "the line width used for drawing the marker"
+              },
+              "color": {
+                "$ref": "#/$defs/color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "markeredit": {
+      "required": ["max_number"],
+      "properties": {
+        "control": {
+          "const": "MarkerEdit"
+        },
+        "max_number": {
+          "type": "integer",
+          "description": "The number of markers allowed to be placed"
+        },
+        "marker_type": {
+          "type": ["integer", "string"],
+          "description": "The type/class of marker. An integer is a fixed type. A string should reference a widget that controls the marker type"
+        }
+      },
+      "allOf": [
+        {"$ref": "#/$defs/markerbase"}
+      ]
+    },
+    "markerview": {
+      "required": ["max_number"],
+      "properties": {
+        "control": {
+          "const": "MarkerView"
+        },
+        "max_number": {
+          "type": "integer",
+          "description": "The number of markers allowed to be placed"
+        },
+        "marker_type": {
+          "type": ["integer", "string"],
+          "description": "The type/class of marker. An integer is a fixed type. A string should reference a widget that controls the marker type"
+        },
+        "type_names": {
+          "type": "object",
+          "description": "Mapping from marker type (index) to type name in case it is not linked to a combobox",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "allOf": [
+        {"$ref": "#/$defs/markerbase"}
+      ]
+    },
+    "landmarks": {
+      "required": ["markers"],
+      "properties": {
+        "control": {
+          "const": "Landmarks"
+        },
+        "markers": {
+          "type": "array",
+          "description": "An array of marker specifications: an object with the fields name, category, and type. The name is to identify the marker, the category to group them in the widget, and the type is the index for the marker style (defaults to 0)",
+          "items": {
+            "type": "object",
+            "required": ["category", "type", "name"],
+            "properties": {
+              "category": {
+                "type": "string"
+              },
+              "type": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {"$ref": "#/$defs/markerbase"}
+      ]
+    },
+    "csoedit": {
+      "properties": {
+        "control": {
+          "const": "CSOEdit"
+        },
+        "cso_type": {
+          "type": ["string", "integer"],
+          "description": "The type/class of the cso. A string that references a widget that controls the marker type (defaults to 0). If this is not a string pointing to another widget, a selection box is added to the widget."
+        },
+        "group_label": {
+          "type": "string",
+          "description": "The name to add to the type selection box in the widget, defaults to 'group' (in case one is added)"
+        },
+        "groups": {
+          "type": "array",
+          "description": "Definition of the cso types and styles. This is an array of objects.",
+          "items": {
+            "type": "object",
+            "required": ["label", "description", "color"],
+            "properties": {
+              "label": {
+                "type": "string",
+                "description": "label of the contour"
+              },
+              "description": {
+                "type": "string",
+                "description": "a description of the contour type"
+              },
+              "color": {
+                "$ref": "#/$defs/color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "calculatedscore": {
+      "required": ["variables", "formula"],
+      "properties": {
+        "control": {
+          "const": "CalculatedScore"
+        },
+        "variables": {
+          "type": "object",
+          "description": "Mapping indicating the variables to be used in the condition function. Form is {\"variable_name\": widget_name} to map a desired variable name to the value of the given widget.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "formula": {
+          "type": "string",
+          "description": "Single line of Python code specifying the condition, variables defined in the variables parameter are usable."
+        }
+      }
+    },
+    "validationcontrol": {
+      "required": ["variables", "condition"],
+      "properties": {
+        "control": {
+          "const": "ValidationControl"
+        },
+        "variables": {
+          "type": "object",
+          "description": "Mapping indicating the variables to be used in the condition function. Form is {\"variable_name\": widget_name} to map a desired variable name to the value of the given widget.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "condition": {
+          "type": "string",
+          "description": "Single line of Python code specifying the condition, variables defined in the variables parameter are usable."
+        },
+        "action": {
+          "type": "string",
+          "description": "The action to use, the default (and only option currently) is validate."
+        },
+        "args": {
+          "type": "object",
+          "description": "argument required for action function, currently not used (validate action does not need it)"
+        }
+      }
+    }
+  }
+}

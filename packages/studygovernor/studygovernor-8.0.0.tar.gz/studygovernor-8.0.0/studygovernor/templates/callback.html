@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end %}
+{% block content %}
+
+
+<h1>Callback {{ callback.id }} </h1>
+
+{{ collapse_card_start("Info") }}
+<dl class="row">
+  <dt class="col-sm-3">id</dt>
+  <dd class="col-sm-9">{{ callback.id }}</dd>
+
+  <dt class="col-sm-3">label</dt>
+  <dd class="col-sm-9">{{ callback.label }}</dd>
+
+  <dt class="col-sm-3">state</dt>
+  <dd class="col-sm-9">
+    <a href="{{url_for('web.web_state', id=callback.state_id) }}">
+      {{callback.state.label}}
+    </a>
+  </dd>
+
+  <dt class="col-sm-3">function</dt>
+  <dd class="col-sm-9"><code> {{callback.function}} </code></dd>
+
+  <dt class="col-sm-3">arguments</dt>
+  <dd class="col-sm-9">
+    {{callback.callback_arguments | yaml_dump }}
+  </dd>
+
+  <dt class="col-sm-3">variable map</dt>
+  <dd class="col-sm-9">
+    {{callback.variable_map | yaml_dump }}
+  </dd>
+
+  <dt class="col-sm-3">initial delay</dt>
+  <dd class="col-sm-9"> {{callback.initial_delay}} </dd>
+
+  <dt class="col-sm-3">run timeout</dt>
+  <dd class="col-sm-9"> {{callback.run_timeout}} </dd>
+
+  <dt class="col-sm-3">wait timeout</dt>
+  <dd class="col-sm-9"> {{callback.wait_timeout}} </dd>
+
+  <dt class="col-sm-3">description</dt>
+  <dd class="col-sm-9">{{ callback.description }}</dd>
+
+  <dt class="col-sm-3">condition</dt>
+  <dd class="col-sm-9">
+    {% if callback.condition %}
+      {{callback.condition | python_code }}
+    {% endif %}
+  </dd>
+</dl>
+{{ collapse_card_end("Info") }}
+
+{{ collapse_card_start("Callback executions", data_count=callback.executions|length) }}
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>action</th>
+    <th>status</th>
+    <th>result</th>
+    <th>created</th>
+    <th>run start</th>
+    <th>wait start</th>
+    <th>finished</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for execution in callback.executions | sort(attribute='id')  %}
+  <tr>
+    <td>
+      <a href="{{url_for('web.web_callback_execution', id=execution.id) }}">
+        {{execution.id}}
+      </a>
+    </td>
+    <td>
+      <a href="{{url_for('web.web_action', id=execution.action_id) }}">
+        {{execution.action_id}}
+      </a>
+    </td>
+    <td>
+      <span class="badge badge-{{ execution.status.badge_class }}">
+        {{execution.status}}
+      </span>
+    </td>
+    <td>
+      <span class="badge badge-{{ execution.result.badge_class }}">
+        {{execution.result}}
+      </span>
+    </td>
+    <td>{{execution.created}}</td>
+    <td>{{execution.run_start}}</td>
+    <td>{{execution.wait_start}}</td>
+    <td>{{execution.finished}}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{{ collapse_card_end("Callback executions") }}
+
+{% endblock %}

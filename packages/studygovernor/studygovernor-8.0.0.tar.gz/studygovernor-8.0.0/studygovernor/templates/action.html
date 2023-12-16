@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end %}
+{% block content %}
+
+
+<h1>Action {{ action.id }} </h1>
+
+    {{ collapse_card_start("Info") }}
+      <dl class="row">
+        <dt class="col-sm-3">id</dt>
+        <dd class="col-sm-9">{{ action.id }}</dd>
+
+        <dt class="col-sm-3">experiment</dt>
+        <dd class="col-sm-9">
+          <a href="{{url_for('web.web_experiment', id=action.experiment_id) }}">
+            {{action.experiment.label}}
+          </a>
+        </dd>
+
+        <dt class="col-sm-3">transition</dt>
+        <dd class="col-sm-9">
+          <a href="{{url_for('web.web_transition', id=action.transition_id) }}">
+            {{action.transition.source_state.workflow.label}}.{{action.transition.source_state.label}} -->
+            {{action.transition.destination_state.workflow.label}}.{{action.transition.destination_state.label}}
+          </a>
+        </dd>
+
+        <dt class="col-sm-3">description</dt>
+        <dd class="col-sm-9">
+          {{action.freetext}}
+        </dd>
+
+        <dt class="col-sm-3">success</dt>
+        <dd class="col-sm-9">
+          <span class="badge badge-{{ 'success' if action.success else 'danger' }}">
+            {{action.success}}
+          </span>
+        </dd>
+
+        <dt class="col-sm-3">start time</dt>
+        <dd class="col-sm-9">{{ action.start_time }}</dd>
+
+        <dt class="col-sm-3">end time</dt>
+        <dd class="col-sm-9">{{ action.end_time }}</dd>
+
+        <dt class="col-sm-3">transition selection result</dt>
+        <dd class="col-sm-9">{{ action.return_value | yaml_dump }}</dd>
+      </dl>
+    {{ collapse_card_end("Info") }}
+
+
+{{ collapse_card_start("Callback executions", data_count=action.executions|length) }}
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>callback</th>
+    <th>status</th>
+    <th>result</th>
+    <th>created</th>
+    <th>run start</th>
+    <th>wait start</th>
+    <th>finished</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for execution in action.executions | sort(attribute='id')  %}
+  <tr>
+    <td>
+      <a href="{{url_for('web.web_callback_execution', id=execution.id) }}">
+        {{execution.id}}
+      </a>
+    </td>
+    <td>
+      <a href="{{url_for('web.web_callback', id=execution.callback_id) }}">
+        {{execution.action_id}}
+      </a>
+    </td>
+    <td>
+      <span class="badge badge-{{ execution.status.badge_class }}">
+        {{execution.status}}
+      </span>
+    </td>
+    <td>
+      <span class="badge badge-{{ execution.result.badge_class }}">
+        {{execution.result}}
+      </span>
+    </td>
+    <td>{{execution.created}}</td>
+    <td>{{execution.run_start}}</td>
+    <td>{{execution.wait_start}}</td>
+    <td>{{execution.finished}}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{{ collapse_card_end("Callback executions") }}
+
+{% endblock %}

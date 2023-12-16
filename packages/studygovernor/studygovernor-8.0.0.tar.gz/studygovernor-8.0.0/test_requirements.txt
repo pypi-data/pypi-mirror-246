@@ -1,0 +1,7 @@
+deepdiff==5.8.1
+pytest==6.2.4
+pytest-cov==2.12.1
+pytest-flask==1.2.0
+pytest-mock==3.7.0
+tox==3.23.1
+xnat>=0.5.2
