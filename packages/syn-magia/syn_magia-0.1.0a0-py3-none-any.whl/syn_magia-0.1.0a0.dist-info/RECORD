@@ -1,0 +1,11 @@
+magia/__init__.py,sha256=rgnkJSgMJBVMjczkFcJSUtdiBUYhkpR15G3_-F08010,432
+magia/bundle.py,sha256=aM3DFJGuBKhoEJhXglf6nlake2-Ak2YnBkcu6tk6DuM,7494
+magia/clock.py,sha256=8tjJgw_Z-j9coNZJiR7tVvWRtMoBey9iOeQWtl8HPi0,546
+magia/constants.py,sha256=kGxlioi9CM63m6nI-tFZ1EIJ_PwL4AIssgA_6Putxd8,899
+magia/core.py,sha256=dC8ofv-x2CWLoJ090Pq3VuNWl05501IRw5VLMI4D2SY,32047
+magia/module.py,sha256=vngQUKqgVYEPePzFYrkPzSsOKEOQ5YBe67rGDj_CbJA,12627
+magia/util.py,sha256=vjl97l3N9N0towgQKXmHCZOIAGlXpHI-hW-xWA0N_A8,503
+syn_magia-0.1.0a0.dist-info/LICENSE,sha256=gUcr_D5EfI_iL26MsxAqWp6TI8-UmNNoYqTXYJayUdM,1069
+syn_magia-0.1.0a0.dist-info/METADATA,sha256=t8LDrF5eKlsIzNWFm0bkyt33kkDwt4r0Bg6tZYxP6es,1663
+syn_magia-0.1.0a0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+syn_magia-0.1.0a0.dist-info/RECORD,,
