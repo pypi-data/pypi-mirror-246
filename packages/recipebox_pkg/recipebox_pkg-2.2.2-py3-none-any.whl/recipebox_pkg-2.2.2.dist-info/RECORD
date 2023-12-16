@@ -1,0 +1,9 @@
+recipebox_pkg/__init__.py,sha256=ybDsPwKHEzSTvXHhvA9tB_8Ic4elMDG8rujIEj-LLws,116
+recipebox_pkg/fetch_recipe.py,sha256=cZwPlOpO1GkKbGPqW1ltT92Ts4IIMy6AQF91qIIHK78,2293
+recipebox_pkg/id_search.py,sha256=yDjyFMhprbkrhYbVk8Bp5ZyMIMHgjQVVb0By_DL3TdQ,8268
+recipebox_pkg/ing_search.py,sha256=8-dVZa0pwHgWzN59mqLQE4aUDM3s_FxUCCif9PRwYyM,2346
+recipebox_pkg/nutr_search.py,sha256=gdtBtLL7XyDCu1ek-OkSdTJ6PeVZUD6cHMwGqY_eGaM,2593
+recipebox_pkg-2.2.2.dist-info/LICENSE,sha256=Hoc54jEskmduc_pTdeSG75XzbUUotsNaanoNGzwSQCE,1068
+recipebox_pkg-2.2.2.dist-info/METADATA,sha256=LP_3WYpxNn5lXfgZILiLQeYAXmmu_RwqX75tfNSa32s,3863
+recipebox_pkg-2.2.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+recipebox_pkg-2.2.2.dist-info/RECORD,,
