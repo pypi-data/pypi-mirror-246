@@ -1,0 +1,10 @@
+fps_jupyterlab/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+fps_jupyterlab/index.py,sha256=ZehQ736rGanLJ2EzsAPYKWdrjbhhzDmKIBRJ6WF17so,1069
+fps_jupyterlab/main.py,sha256=7GJNHovFEkSVEzqO38H9LdJSeflZxXdRwjhitiH2snE,966
+fps_jupyterlab/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_jupyterlab/routes.py,sha256=jI2qvlvvDdvfVQ7v1FnstK4Xt61AJIoo8qm0sZiZI-Y,6476
+fps_jupyterlab-0.4.0.dist-info/METADATA,sha256=Bo0-b3sUjAnz9IP9Or4HEZtrYT2KhYlv_p1aufvuPpw,504
+fps_jupyterlab-0.4.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+fps_jupyterlab-0.4.0.dist-info/entry_points.txt,sha256=hSDo8ZJeTA8X_7fQ7Njo489gy9Axf_RLspPbgwBuVSE,151
+fps_jupyterlab-0.4.0.dist-info/licenses/COPYING.md,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+fps_jupyterlab-0.4.0.dist-info/RECORD,,
