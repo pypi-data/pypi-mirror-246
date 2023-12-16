@@ -1,0 +1,14 @@
+playsoundsimple/__init__.py,sha256=4zUYVkDetzYbgVPp7Sj_tD_vxFRo5ORtWS2JzoXvEb0,477
+playsoundsimple/data/default.sf2,sha256=wjL33M2_UaDInc39P627HNQfEQsfytLbSIxZBwR7XtA,7104386
+playsoundsimple/exceptions.py,sha256=IsEbF7G2NxmgcQMzKu8gZtobRbzfvLmfklcXNcqNSeM,1563
+playsoundsimple/fluidsynth.py,sha256=S9WYce-MysHFciaH22dNDd3I44XaxM_HotGi3upYrHo,647
+playsoundsimple/sound.py,sha256=vnRLKLB8YJ7wuoJ1ughL6KzoWNUFlMETldjzmdz01l0,10101
+playsoundsimple/sound.pyi,sha256=R6YBr8SL7uVEaZ4x4M4cymiYvjDYip1etsjHmFPBM5w,2482
+playsoundsimple/streamers/__init__.py,sha256=M_ayj6uPSpQXBfqMU-eLDrJAArvfK7LcyG8BZgMCTXk,316
+playsoundsimple/streamers/base.py,sha256=qIMx4Oei9WdMV-yagXDmrf0FIMxehiAW2gT6sIGBpDY,650
+playsoundsimple/streamers/sds.py,sha256=5904KVITlpjvV5wkGvEWH60m-LYdkSMrOpREI6pwhFs,1583
+playsoundsimple/units.py,sha256=5Ghvth8lQ0GchZkzfwOC43KWAKBmtqvI2eXGH2ZqO08,187
+playsoundsimple_py-0.8.4.dist-info/LICENSE,sha256=spNP9-xRNk_f344KMfxONAblI58MMrpPasaQ5sXdwe4,1085
+playsoundsimple_py-0.8.4.dist-info/METADATA,sha256=OEhD2Khiv_U1CQ8fdLwYSudp8-1rJKAu-BBtwpiJxKA,2268
+playsoundsimple_py-0.8.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+playsoundsimple_py-0.8.4.dist-info/RECORD,,
