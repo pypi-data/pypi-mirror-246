@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: blobulator
+Version: 0.1.0
+Summary: Edge Detection in Protein Sequences
+Home-page: https://github.com/BranniganLab/blobulator
+Author: Brannigan Lab
+Author-email: grace.brannigan@rutgers.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
