@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+BashaFusion/BashaFusion.py
+BashaFusion/__init__.py
+BashaFusion/iast-token.db
+BashaFusion.egg-info/PKG-INFO
+BashaFusion.egg-info/SOURCES.txt
+BashaFusion.egg-info/dependency_links.txt
+BashaFusion.egg-info/requires.txt
+BashaFusion.egg-info/top_level.txt
