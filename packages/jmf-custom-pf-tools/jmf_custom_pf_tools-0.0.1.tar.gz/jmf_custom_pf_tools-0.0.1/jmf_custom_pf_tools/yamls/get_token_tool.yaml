@@ -1,0 +1,10 @@
+jmf_custom_pf_tools.tools.get_token_tool.get_token:
+  description: Tool for authenticating a client identity.
+  function: get_token
+  inputs:
+    conn:
+      type:
+      - CustomConnection
+  module: jmf_custom_pf_tools.tools.get_token_tool
+  name: Get JWT Token
+  type: python

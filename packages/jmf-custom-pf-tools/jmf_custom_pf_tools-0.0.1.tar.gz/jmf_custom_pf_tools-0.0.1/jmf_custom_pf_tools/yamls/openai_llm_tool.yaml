@@ -1,0 +1,17 @@
+jmf_custom_pf_tools.tools.openai_llm_tool.openai_chat:
+  description: Tool for using JM APIM OpenAI client.
+  function: openai_chat
+  inputs:
+    client:
+      type:
+      - object
+    model_deployment_name:
+      default: gpt-35-turbo
+      type:
+      - string
+    seed:
+      type:
+      - int
+  module: jmf_custom_pf_tools.tools.openai_llm_tool
+  name: JM OpenAI LLM
+  type: custom_llm
