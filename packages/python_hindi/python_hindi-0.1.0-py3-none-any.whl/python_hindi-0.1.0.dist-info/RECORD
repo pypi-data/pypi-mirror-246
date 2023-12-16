@@ -1,0 +1,10 @@
+python_hindi/__init__.py,sha256=zCXnGEfuI5o_i9rCGiKgsVGmQgHRKiHznVkZK5Zcmf0,203
+python_hindi/__main__.py,sha256=0cwP_GyA_s3xBLlZjaGwzZLCQ0Hv7Rr-BrGDoJ4Pezs,414
+python_hindi/error_hook.py,sha256=eSIxuc65-KDqgUJ-LPNhlAvE_5jEEU5K78JAo5wDLBk,1959
+python_hindi/hindi_data.py,sha256=qp2I-LLdW36g-P3wUJDwlPe04L6H3wYabPnd1tpnxws,1960
+python_hindi/hook.py,sha256=wv8DE9CVPYPG_eC66mUcWK1HeAPEwtBdMNDBJjdAL3U,5863
+python_hindi/ipython.py,sha256=S7LqhSp9jtlDsCXtgwtZGYG9g4Pg9CxVjM8bgdEGTYU,4403
+python_hindi-0.1.0.dist-info/entry_points.txt,sha256=umSgHVUX52RE3Gg8C4R408cbZgf7yA0rvHiCn7NxPEY,51
+python_hindi-0.1.0.dist-info/METADATA,sha256=QG24HtRL5NCjj3UhRTkBtQbl_hKZuo0KHq3If0jimt4,914
+python_hindi-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_hindi-0.1.0.dist-info/RECORD,,
