@@ -1,0 +1,216 @@
+Metadata-Version: 2.1
+Name: pymdownx-superfence-filter-lines
+Version: 0.1.0
+Summary: A custom superfence for pymdown-extensions that can filters lines and plays nice with MkDocs
+Author-email: Frequenz Energy-as-a-Service GmbH <floss@frequenz.com>
+License: MIT
+Project-URL: Documentation, https://frequenz-floss.github.io/pymdownx-superfence-filter-lines-python/
+Project-URL: Changelog, https://github.com/frequenz-floss/pymdownx-superfence-filter-lines-python/releases
+Project-URL: Issues, https://github.com/frequenz-floss/pymdownx-superfence-filter-lines-python/issues
+Project-URL: Repository, https://github.com/frequenz-floss/pymdownx-superfence-filter-lines-python
+Project-URL: Support, https://github.com/frequenz-floss/pymdownx-superfence-filter-lines-python/discussions/categories/support
+Keywords: frequenz,python,lib,library,pymdownx-superfence-filter-lines,markdown,filter,mkdocs,python3,mkdocs-material,pymdownx,pymdown-extensions,superfence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: <4,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Markdown <4,>=3.5
+Requires-Dist: pymdown-extensions <11,>=10
+Provides-Extra: dev
+Requires-Dist: pymdownx-superfence-filter-lines[dev-flake8,dev-formatting,dev-mkdocs,dev-mypy,dev-noxfile,dev-pylint,dev-pytest] ; extra == 'dev'
+Provides-Extra: dev-flake8
+Requires-Dist: flake8 ==6.1.0 ; extra == 'dev-flake8'
+Requires-Dist: flake8-docstrings ==1.7.0 ; extra == 'dev-flake8'
+Requires-Dist: flake8-pyproject ==1.2.3 ; extra == 'dev-flake8'
+Requires-Dist: pydoclint ==0.3.8 ; extra == 'dev-flake8'
+Requires-Dist: pydocstyle ==6.3.0 ; extra == 'dev-flake8'
+Provides-Extra: dev-formatting
+Requires-Dist: black ==23.12.0 ; extra == 'dev-formatting'
+Requires-Dist: isort ==5.13.1 ; extra == 'dev-formatting'
+Provides-Extra: dev-mkdocs
+Requires-Dist: black ==23.12.0 ; extra == 'dev-mkdocs'
+Requires-Dist: Markdown ==3.5.1 ; extra == 'dev-mkdocs'
+Requires-Dist: mike ==2.0.0 ; extra == 'dev-mkdocs'
+Requires-Dist: mkdocs-gen-files ==0.5.0 ; extra == 'dev-mkdocs'
+Requires-Dist: mkdocs-literate-nav ==0.6.1 ; extra == 'dev-mkdocs'
+Requires-Dist: mkdocs-macros-plugin ==1.0.5 ; extra == 'dev-mkdocs'
+Requires-Dist: mkdocs-material ==9.5.2 ; extra == 'dev-mkdocs'
+Requires-Dist: mkdocstrings[python] ==0.24.0 ; extra == 'dev-mkdocs'
+Requires-Dist: frequenz-repo-config[lib] ==0.7.5 ; extra == 'dev-mkdocs'
+Provides-Extra: dev-mypy
+Requires-Dist: mypy ==1.7.1 ; extra == 'dev-mypy'
+Requires-Dist: types-Markdown ==3.5.0.3 ; extra == 'dev-mypy'
+Requires-Dist: pymdownx-superfence-filter-lines[dev-mkdocs,dev-noxfile,dev-pytest] ; extra == 'dev-mypy'
+Provides-Extra: dev-noxfile
+Requires-Dist: nox ==2023.4.22 ; extra == 'dev-noxfile'
+Requires-Dist: frequenz-repo-config[lib] ==0.7.5 ; extra == 'dev-noxfile'
+Provides-Extra: dev-pylint
+Requires-Dist: pylint ==3.0.3 ; extra == 'dev-pylint'
+Requires-Dist: pymdownx-superfence-filter-lines[dev-mkdocs,dev-noxfile,dev-pytest] ; extra == 'dev-pylint'
+Provides-Extra: dev-pytest
+Requires-Dist: pytest ==7.4.3 ; extra == 'dev-pytest'
+Requires-Dist: frequenz-repo-config[extra-lint-examples] ==0.7.5 ; extra == 'dev-pytest'
+Requires-Dist: pytest-mock ==3.12.0 ; extra == 'dev-pytest'
+Requires-Dist: pytest-asyncio ==0.23.2 ; extra == 'dev-pytest'
+Requires-Dist: async-solipsism ==0.5 ; extra == 'dev-pytest'
+
+# Frequenz Filter Lines Superfence
+
+[![Build Status](https://github.com/frequenz-floss/pymdownx-superfence-filter-lines-python/actions/workflows/ci.yaml/badge.svg)](https://github.com/frequenz-floss/pymdownx-superfence-filter-lines-python/actions/workflows/ci.yaml)
+[![PyPI Package](https://img.shields.io/pypi/v/pymdownx-superfence-filter-lines)](https://pypi.org/project/pymdownx-superfence-filter-lines/)
+[![Docs](https://img.shields.io/badge/docs-latest-informational)](https://frequenz-floss.github.io/pymdownx-superfence-filter-lines-python/)
+
+## Introduction
+
+A custom superfence for pymdown-extensions that can filters lines and plays
+nice with MkDocs.
+
+This is particularly useful when you want to hide some comments or some
+boilerplate code from the documentation for any reason.
+
+A typical use case is when you are testing your examples in the documentation,
+so you might need to add some initialization code, or importing some dependencies
+that are not relevant for the point you are trying to make in the
+documentation, but you still need the example code to work to make sure they are
+not inadvertedly broken.
+
+## Quick Example
+
+When writing some documentation, and you want to show some code block, but
+you want to show only some lines, you can use this superfence as follows:
+
+~~~markdown
+```text show_lines=":2,4,7,10:12,15:"
+This is line 1
+This is line 2
+This is line 3
+This is line 4
+This is line 5
+This is line 6
+This is line 7
+This is line 8
+This is line 9
+This is line 10
+This is line 11
+This is line 12
+This is line 13
+This is line 14
+This is line 15
+This is line 16
+This is line 17
+```
+~~~
+
+This will show the following block of code in the rendered output:
+
+```text show_lines=":2,4,7,10:12,15:"
+This is line 1
+This is line 2
+This is line 3
+This is line 4
+This is line 5
+This is line 6
+This is line 7
+This is line 8
+This is line 9
+This is line 10
+This is line 11
+This is line 12
+This is line 13
+This is line 14
+This is line 15
+This is line 16
+This is line 17
+```
+
+See [Usage](#usage) for a more detailed explanation of the available options.
+
+## Configuration
+
+### MkDocs
+
+To use this superfence with [MkDocs](https://www.mkdocs.org/), you can use
+something like this:
+
+```yaml
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: "*"
+          class: "highlight"
+          format: !!python/name:pymdownx_superfence_filter_lines.do_format
+          validator: !!python/name:pymdownx_superfence_filter_lines.do_validate
+```
+
+### Standalone
+
+To use this superfence standalone, you can use something like this:
+
+```python
+import markdown
+from pymdownx_superfence_filter_lines import do_format, do_validate
+
+html = markdown.markdown(
+    markdown_source,
+    extensions=['pymdownx.superfence'],
+    extension_configs={
+        "pymdownx.superfences": {
+            "custom_fences": [
+                {
+                    'name': '*',
+                    'class': 'highlight',
+                    'validator': do_validate,
+                    'format': do_format
+                }
+            ]
+        }
+    }
+)
+
+print(html)
+```
+
+## Usage
+
+See [Quick Example](#quick-example) for an example.
+
+The superfence supports the following options:
+
+### `show_lines`
+
+A comma separated list of line numbers or ranges of line numbers to show.
+
+The line numbers are 1-based. If any line number is zero or negative, a warning
+is logged and the line or range are ignored.
+
+If `show_lines` is omitted, it defaults to showing all lines.
+
+#### Ranges
+
+Ranges are inclusive and are defined as follows:
+
+* The ranges are specified as `start:end`, where `start` and `end` are the line
+  numbers of the first and last lines to show, respectively.
+
+* If `start` is omitted, it defaults to the first line. If `end` is omitted, it
+  defaults to the last line.
+
+* If `start` is greater than `end`, a warning is logged and the range is
+  ignored.
+
+* If `start` is greater than the number of lines in the code block, the range
+  is ignored.
+
+* If `end` is greater than the number of lines in the code block, it is set to
+  the number of lines in the code block.
+
+## Contributing
+
+If you want to know how to build this project and contribute to it, please
+check out the [Contributing Guide](CONTRIBUTING.md).
