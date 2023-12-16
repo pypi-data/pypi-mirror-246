@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+tilearn_ops.egg-info/PKG-INFO
+tilearn_ops.egg-info/SOURCES.txt
+tilearn_ops.egg-info/dependency_links.txt
+tilearn_ops.egg-info/requires.txt
+tilearn_ops.egg-info/top_level.txt
