@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ChemoBiolysis
+Version: 0.0.1
+Summary: This Python package, ChemoBiolysis
+Home-page: https://github.com/ahmed1212212/PubChemPyTools.git
+Author: Ahmed Alhilal
+Author-email: aalhilal@udel.edu
+License: MIT
+Keywords: Cheminformatics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+TThis is a very simple calculator that takes two numbers and either add, subtract, multiply or divide them.
+
+Ahmed Alhilal
+=============
+
+0.0.1 (14/12/2023)
+-------------------
+- First Release
