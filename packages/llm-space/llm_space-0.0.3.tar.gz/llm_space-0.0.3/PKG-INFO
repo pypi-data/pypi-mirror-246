@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: llm-space
+Version: 0.0.3
+Summary: A Python wrapper for managing OpenAI API and other LLM models.
+License: MIT
+Author: Aivin V. Solatorio
+Author-email: avsolatorio@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: backoff (>=2.2.1,<3.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: openai (>=1.3.8,<2.0.0)
+Requires-Dist: tiktoken (>=0.5.2,<0.6.0)
+Description-Content-Type: text/markdown
+
+# LLM Tools
+
+This package wraps the OpenAI API and other LLM models that share the completion endpoint feature. It provides a simple interface to generate text from a prompt.
+
+
+## Installation
+
+```bash
+pip install llm-space
+```
+
+
+## Usage
+
+```python
+from llm_space.openai import prompt
+from pathlib import Path
+
+
+# Create a prompt object that will be logged to the `my-task` directory under the
+# current working directory.
+# The PromptZeros class will use arguments that will maximize the determinism of the outputs.
+pz = prompt.PromptZeros(Path("./"), "my-task")
+
+# Send a prompt to the API and return the response.
+w = pz.send_prompt("What is the WDI code for GDP?", return_data=True)
+
+# Print the response.
+print(w)
+
+# Output:
+
+# {'message': [{'role': 'system', 'content': ''}, {'role': 'user', 'content': 'What is the WDI code for GDP?'}], 'response': {'id': 'chatcmpl-8V0IN0VbeYTrsBAohs309DHJQLJL8', 'choices': [{'finish_reason': 'stop', 'index': 0, 'message': {'content': 'The WDI code for GDP (Gross Domestic Product) is "NY.GDP.MKTP.CD".', 'role': 'assistant', 'function_call': None, 'tool_calls': None}}], 'created': 1702399995, 'model': 'gpt-3.5-turbo-0613', 'object': 'chat.completion', 'system_fingerprint': None, 'usage': {'completion_tokens': 23, 'prompt_tokens': 20, 'total_tokens': 43}}, 'content': 'The WDI code for GDP (Gross Domestic Product) is "NY.GDP.MKTP.CD".', 'api_kwargs': {'temperature': 0, 'top_p': 0, 'n': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'model': 'gpt-3.5-turbo', 'max_tokens': 4029}, 'metadata': {}, 'message_hash': '1a5816095c232f29428d4cec70498391'}
+```
+
+NOTE: The output is also logged to the `my-task` directory under the current working directory.
+

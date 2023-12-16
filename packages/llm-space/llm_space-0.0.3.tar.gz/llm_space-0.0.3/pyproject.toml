@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "llm-space"
+version = "0.0.3"
+description = "A Python wrapper for managing OpenAI API and other LLM models."
+authors = ["Aivin V. Solatorio <avsolatorio@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "llm_space"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.3.8"
+jinja2 = "^3.1.2"
+backoff = "^2.2.1"
+tiktoken = "^0.5.2"
+
+[tool.poetry_bumpversion.file."llm_space/__init__.py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
