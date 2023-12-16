@@ -1,0 +1,106 @@
+from __future__ import annotations
+
+from enum import Enum
+from typing import Union, Iterable
+
+import libcst as cst
+from libcst.codemod import Codemod
+
+
+class RuleSet(Enum):
+    # python 3.10+
+    pep604 = "pep604"
+    pep622 = "pep622"
+    # python 3.12+
+    pep695 = "pep695"
+
+
+def get_transformers(rule_sets: Union[list[RuleSet], RuleSet]) -> Iterable[type[Codemod]]:
+    """
+    Get codemod transformers for specified rule set.
+    """
+    from .pep604 import TransformUnionTypesCommand
+    from .pep622 import TransformMatchCommand
+    from .pep695 import TransformTypeParametersCommand
+
+    if not isinstance(rule_sets, list):
+        rule_sets = [rule_sets]
+
+    for rule_set in rule_sets:
+        match rule_set:
+            case RuleSet.pep604:
+                yield TransformUnionTypesCommand
+            case RuleSet.pep622:
+                yield TransformMatchCommand
+            case RuleSet.pep695:
+                yield TransformTypeParametersCommand
+            case _:
+                raise ValueError(f"Unknown rule set: {rule_set}")
+
+
+def gen_type_param(
+    type_param: Union[Union[cst.TypeVar, cst.TypeVarTuple], cst.ParamSpec], type_name: Union[cst.Name, None] = None
+) -> cst.SimpleStatementLine:
+    """
+    To generate the following code:
+        T = cst.TypeVar("T")
+        P = cst.ParamSpec("P")
+        Ts = cst.TypeVarTuple("Ts")
+    """
+    type_name = type_param.name if type_name is None else type_name
+    if isinstance(type_param, cst.TypeVar):
+        args = [
+            cst.Arg(cst.SimpleString(f'"{type_name.value}"')),
+        ]
+        if bound is not None:
+            args.append(cst.Arg(bound, keyword=cst.Name("bound")))
+        return cst.SimpleStatementLine(
+            [
+                cst.Assign(
+                    targets=[cst.AssignTarget(type_name)],
+                    value=cst.Call(
+                        func=cst.Name("TypeVar"),
+                        args=args,
+                    ),
+                )
+            ]
+        )
+    else:  # cst.TypeVarTuple | cst.ParamSpec
+        return cst.SimpleStatementLine(
+            [
+                cst.Assign(
+                    targets=[cst.AssignTarget(type_name)],
+                    value=cst.Call(
+                        func=cst.Name(type_param.__class__.__name__),
+                        args=[
+                            cst.Arg(cst.SimpleString(f'"{type_name.value}"')),
+                        ],
+                    ),
+                )
+            ]
+        )
+
+
+def gen_func_wrapper(node: cst.FunctionDef, type_vars: list[cst.SimpleStatementLine]) -> cst.FunctionDef:
+    wrapper = cst.FunctionDef(
+        name=cst.Name(value=f"__wrapper_func_{node.name.value}"),
+        params=cst.Parameters(),
+        body=cst.IndentedBlock(
+            body=[
+                *type_vars,
+                node,
+                cst.SimpleStatementLine(
+                    [
+                        cst.Return(
+                            value=cst.Name(
+                                value=node.name.value,
+                                lpar=[],
+                                rpar=[],
+                            )
+                        ),
+                    ]
+                ),
+            ]
+        ),
+    )
+    return wrapper
