@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+xtbf/__init__.py
+xtbf/dc_featurizer.py
+xtbf/parsers.py
+xtbf/shortcuts.py
+xtbf.egg-info/PKG-INFO
+xtbf.egg-info/SOURCES.txt
+xtbf.egg-info/dependency_links.txt
+xtbf.egg-info/requires.txt
+xtbf.egg-info/top_level.txt
