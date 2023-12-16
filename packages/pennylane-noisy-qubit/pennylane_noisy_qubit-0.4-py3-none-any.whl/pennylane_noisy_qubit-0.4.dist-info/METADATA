@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pennylane-noisy-qubit
+Version: 0.4
+Summary: A noisy qubit for Pennylane with adjustable systematic error
+Home-page: UNKNOWN
+Author: Frederic Magniette
+Author-email: frederic.magniette@llr.in2p3.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Provides: pennylane_noisy_qubit
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pennylane
+
+UNKNOWN
+

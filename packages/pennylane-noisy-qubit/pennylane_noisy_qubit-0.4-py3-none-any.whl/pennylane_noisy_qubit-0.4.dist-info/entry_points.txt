@@ -1,0 +1,3 @@
+[pennylane.plugins]
+noisy.qubit = pennylane_noisy_qubit.noisy_qubit:noisy_qubit
+
