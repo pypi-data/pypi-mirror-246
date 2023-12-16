@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: Nick-Package-test-34562325265
+Version: 1.0.0
+Requires-Dist: aiohttp ==3.8.6
+Requires-Dist: aiosignal ==1.3.1
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==3.7.1
+Requires-Dist: async-timeout ==4.0.3
+Requires-Dist: attrs ==23.1.0
+Requires-Dist: cachetools ==5.3.1
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: charset-normalizer ==3.2.0
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: distro ==1.8.0
+Requires-Dist: frozenlist ==1.4.0
+Requires-Dist: google-api-core ==2.11.1
+Requires-Dist: google-api-python-client ==2.99.0
+Requires-Dist: google-auth ==2.23.0
+Requires-Dist: google-auth-httplib2 ==0.1.1
+Requires-Dist: google-auth-oauthlib ==1.1.0
+Requires-Dist: googleapis-common-protos ==1.60.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: html2text ==2020.1.16
+Requires-Dist: httpcore ==1.0.2
+Requires-Dist: httplib2 ==0.22.0
+Requires-Dist: httpx ==0.25.2
+Requires-Dist: idna ==3.4
+Requires-Dist: multidict ==6.0.4
+Requires-Dist: oauthlib ==3.2.2
+Requires-Dist: openai ==1.3.7
+Requires-Dist: protobuf ==4.24.3
+Requires-Dist: pyasn1 ==0.5.0
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pydantic ==2.5.2
+Requires-Dist: pydantic-core ==2.14.5
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: regex ==2023.10.3
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-oauthlib ==1.3.1
+Requires-Dist: rsa ==4.9
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: tiktoken ==0.5.1
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: typing-extensions ==4.8.0
+Requires-Dist: uritemplate ==4.1.1
+Requires-Dist: urllib3 ==1.26.16
+Requires-Dist: yarl ==1.9.2
+
