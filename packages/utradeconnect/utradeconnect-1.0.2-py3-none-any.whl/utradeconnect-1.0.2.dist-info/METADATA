@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: utradeconnect
+Version: 1.0.2
+Summary: A comprehensive Python SDK for the uTrade Connect trading platform.
+Home-page: https://utradesolutions.com
+Author: uTrade Solutions Pvt Ltd
+Author-email: info@utradesolutions.com
+License: MIT
+Project-URL: Documentation, https://docs.utrade.solutions/
+Project-URL: Source, https://github.com/utrade/utradeconnect
+Project-URL: Tracker, https://github.com/utrade/utradeconnect/issues
+Keywords: trading investment platform api rest websocket
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bidict ==0.21.2
+Requires-Dist: certifi ==2020.12.5
+Requires-Dist: chardet ==4.0.0
+Requires-Dist: idna ==2.10
+Requires-Dist: python-engineio ==3.13.0
+Requires-Dist: python-socketio ==4.6.0
+Requires-Dist: requests ==2.25.1
+Requires-Dist: six ==1.15.0
+Requires-Dist: urllib3 ==1.26.4
+Requires-Dist: websocket-client ==0.57.0
+Requires-Dist: python-dotenv
+Requires-Dist: Sphinx
+Requires-Dist: sphinx-copybutton
+Requires-Dist: sphinx-press-theme
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: setuptools
+Requires-Dist: wheel
+
