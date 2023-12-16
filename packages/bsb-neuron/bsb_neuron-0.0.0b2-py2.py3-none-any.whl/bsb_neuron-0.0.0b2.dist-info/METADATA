@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bsb-neuron
+Version: 0.0.0b2
+Summary: NEURON simulator adapter for the BSB framework
+Author-email: Robin De Schepper <robingilbert.deschepper@unipv.it>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: bsb-core>=4.0.0b0,<=4.0.0b9999
+Requires-Dist: nrn-patch>=4.0.0b3,<=4.0.0b9999
+Requires-Dist: arborize[neuron]>=4.0.0b1,<=4.0.0b9999
+
+# bsb-neuron
+
