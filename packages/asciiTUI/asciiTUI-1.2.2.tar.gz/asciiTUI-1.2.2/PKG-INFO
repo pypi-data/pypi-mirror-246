@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: asciiTUI
+Version: 1.2.2
+Summary: This is a library of tools for you to use with your needs for an attractive type of terminal (console) display.
+Home-page: https://github.com/azzammuhyala/asciiTUI
+Author: azzammuhyala
+Author-email: azzammuhyala@gmail.com
+Keywords: asciiTUI,ascii,tui,console,text-based,tools,attractive,terminal,basic-tools,text,art-ascii
+
+This is a library of tools for you to use with your needs for an attractive type of terminal (console) display.
+Type `print(dir(asciiTUI))` for further functions, then type `print(asciiTUI.<func>.__doc__)` for further document information of each function.
