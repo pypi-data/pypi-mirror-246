@@ -1,0 +1,17 @@
+cd2datamanager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cd2datamanager/__main__.py,sha256=M2kSFY5VYMSOz-5ZOE6UmMhceC9URBS_X_CNTJUakM8,94
+cd2datamanager/constants.py,sha256=wT3eagopICrHl6bSFT0F1ysabgdguWfM9lUnMrGFJDw,573
+cd2datamanager/dap_client.py,sha256=CYAILlmdY_Yz-a1xSfpfAXGc2dSaDNZKT5zoHlvE2iQ,6635
+cd2datamanager/main.py,sha256=pTmo-YUyw9V2ZIs5dUPiVL8b3PzeIGrt8tZanm7QJvg,6094
+cd2datamanager/schema_generator.py,sha256=kvP23_vtZshcYq1rE-oPNLwC51zmG4y8aQuDU7MSCww,11753
+cd2datamanager/schema_writer.py,sha256=0Di9lFCBRIx-8QHZ3qGEZ1ot54Pia5gbVeHD_qqlAs0,3855
+cd2datamanager/semaphore_control.py,sha256=gvJpbgfV1R8BZ9dJkHpwUF7OY72MtQhKtrKpCy__FTY,1003
+cd2datamanager/settings.py,sha256=3BNfUCw7zV7oPJ_l1oNtfyb6aY4zz9GFwdhmO7-nQPw,4640
+cd2datamanager/tsv_generator.py,sha256=RkwPTd4IedHA45veiokMj6iJ8Hk0G6BKOKZ5wuwAcYo,2750
+cd2datamanager/workspace.py,sha256=mdkA3QvQOykBnE5KDPSJ5LTrtF5MTSE78YHYML-qwcI,1346
+cd2datamanager-1.2.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cd2datamanager-1.2.0.dist-info/METADATA,sha256=k-yK8LxBpelugUKa2FttH4gVAgHHXJziluoDtVgbTR8,562
+cd2datamanager-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cd2datamanager-1.2.0.dist-info/entry_points.txt,sha256=yrVHGBQm--htKxPT9M0d6E2U-6WVxmnxTj45GWrVpME,59
+cd2datamanager-1.2.0.dist-info/top_level.txt,sha256=MAjB7jmEHANgt-A87Z2vNEHN7Osg-1gxs_05U67aRHA,15
+cd2datamanager-1.2.0.dist-info/RECORD,,
