@@ -1,0 +1,2 @@
+[cinemator]
+cinemator = cinemat.__main__:cinemator
