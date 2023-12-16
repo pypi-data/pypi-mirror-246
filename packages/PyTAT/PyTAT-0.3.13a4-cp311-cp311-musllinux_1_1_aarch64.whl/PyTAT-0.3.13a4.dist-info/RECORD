@@ -1,0 +1,9 @@
+TAT.cpython-311-aarch64-linux-musl.so,sha256=8JuspWySbDcoWG2xD_BbfwEyjmTi2tLvBa2JhvceYh0,17351217
+PyTAT.libs/libopenblas_armv8p-r0-eacf51fe.3.9.so,sha256=Rnp1z0_NCZXLRkvtY6VCYqNpkaqP_EeDjwc0CxG4-Yo,10839041
+PyTAT.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+PyTAT.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
+PyTAT.libs/libgfortran-42fd343e.so.5.0.0,sha256=WW44mm5x-oA0Qg7YZLw2LBeVTWSERlP3ASvpFzBTJpI,1277217
+PyTAT-0.3.13a4.dist-info/WHEEL,sha256=B8eUJDXRkfRJZogE78t8jorPDjRXqvGw8BJVVfml0HI,114
+PyTAT-0.3.13a4.dist-info/RECORD,,
+PyTAT-0.3.13a4.dist-info/top_level.txt,sha256=NEy1NX8IzL0WkAHS2iFfEQwvqjO69-_nlAY7pqdmyWs,6
+PyTAT-0.3.13a4.dist-info/METADATA,sha256=ONZ2SA7N39P_L1UO2O0eKSk3hXjyw-pnr5J2Rj3fmIw,24024
