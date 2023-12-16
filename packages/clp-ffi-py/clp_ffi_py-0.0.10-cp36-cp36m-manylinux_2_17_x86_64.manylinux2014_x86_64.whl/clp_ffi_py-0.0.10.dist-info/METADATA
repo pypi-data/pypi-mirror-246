@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: clp-ffi-py
+Version: 0.0.10
+Summary: CLP FFI Python Interface
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: python-dateutil (>=2.7.0)
+Requires-Dist: typing-extensions (>=4.1.1)
+Requires-Dist: zstandard (>=0.18.0)
+
+UNKNOWN
+
