@@ -1,0 +1,14 @@
+jmf_custom_pf_tools/__init__.py,sha256=SXUyE9hmQeYBcmIxmXrAZAIeYfMHAA7cy2vPwgRceTo,82
+jmf_custom_pf_tools/tools/__init__.py,sha256=SXUyE9hmQeYBcmIxmXrAZAIeYfMHAA7cy2vPwgRceTo,82
+jmf_custom_pf_tools/tools/apim_openai_tool.py,sha256=FyJrEp7jCjbRAqsydZOqbmJrz7FgPVxtZHi_jOoZbzI,871
+jmf_custom_pf_tools/tools/get_token_tool.py,sha256=RYUxTiSMEoG7WTNzxbqkcepyXkywdce66CJi00dbdi4,532
+jmf_custom_pf_tools/tools/openai_llm_tool.py,sha256=tYl25LQJ7_dOSuWFY5gH8oToVarTX-8Zc1gEnfgqvfI,816
+jmf_custom_pf_tools/tools/utils.py,sha256=RtBSCiTsDG5pAjAyY2xva6OpFsF5eNvbHqQK-mw4zcI,691
+jmf_custom_pf_tools/yamls/apim_openai_tool.yaml,sha256=Oll0kDE6Ki9Lm2YGBL5EpSHe5ElNgBPJXYBCoCyaKDo,329
+jmf_custom_pf_tools/yamls/get_token_tool.yaml,sha256=Fc8Ny_V-HSEBm6zrbOsAZeiEkjUBacSz8jTGeJrITXI,287
+jmf_custom_pf_tools/yamls/openai_llm_tool.yaml,sha256=bKtjym02rMpxWUPd_MJgXDa03AZXhqyWFGJPZwmWE_M,407
+jmf_custom_pf_tools-0.0.1.dist-info/METADATA,sha256=h5VHs-dTsiQoI_nEoLVYG0Aefnivm0dH4aj3wd-b1E4,103
+jmf_custom_pf_tools-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jmf_custom_pf_tools-0.0.1.dist-info/entry_points.txt,sha256=Jn76dVPujKq-dMARazGuLJB-dkYOocMPvAr6jfJCyyk,82
+jmf_custom_pf_tools-0.0.1.dist-info/top_level.txt,sha256=4d67aUXwbfeg1K-axhy5PlfTu2VPkUNBGiN5mPqRH5Y,20
+jmf_custom_pf_tools-0.0.1.dist-info/RECORD,,

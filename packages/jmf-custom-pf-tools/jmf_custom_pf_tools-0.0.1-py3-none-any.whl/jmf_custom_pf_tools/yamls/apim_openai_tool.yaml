@@ -1,0 +1,10 @@
+jmf_custom_pf_tools.tools.apim_openai_tool.get_apim_openai_client:
+  description: Tool for creating an Azure OpenAI client.
+  function: get_apim_openai_client
+  inputs:
+    openai_conn:
+      type:
+      - CustomConnection
+  module: jmf_custom_pf_tools.tools.apim_openai_tool
+  name: APIM OpenAI Connect
+  type: python
