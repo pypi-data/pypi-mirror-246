@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+liberty/liberty_parser.egg-info/PKG-INFO
+liberty/liberty_parser.egg-info/SOURCES.txt
+liberty/liberty_parser.egg-info/dependency_links.txt
+liberty/liberty_parser.egg-info/requires.txt
+liberty/liberty_parser.egg-info/top_level.txt
