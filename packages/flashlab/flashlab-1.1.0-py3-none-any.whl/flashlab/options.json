@@ -1,0 +1,492 @@
+{
+  "Encrypted Tactical Inhibit": {
+    "byte_offset": 11,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "7 800 MHz": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 2
+  },
+  "UHF Range 2": {
+    "byte_offset": 3,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "OTAR with Multikey": {
+    "byte_offset": 2,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "GERMANFEDGOVENABLED ID": {
+    "byte_offset": 15,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "125 kHz FCC Mandate": {
+    "byte_offset": 7,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "FCC Conventional Front Panel Programming": {
+    "byte_offset": 10,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "ASTRO Digital Operation": {
+    "byte_offset": 1,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "ID VIQIVOICECONTROL": {
+    "byte_offset": 14,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "RSI Data": {
+    "byte_offset": 5,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "LTE ENABLEMENT": {
+    "byte_offset": 15,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "Federal Government Front Panel Programming Enhancement": {
+    "byte_offset": 2,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "DVRS PSU Activation": {
+    "byte_offset": 7,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "ASTRO 25 9600 Baud Trunking Systems Operation": {
+    "byte_offset": 11,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "APX Lite Option": {
+    "byte_offset": 9,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "Extreme Noise Reduction": {
+    "byte_offset": 7,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "SMARTZONE OMNILINK Multizone Operation": {
+    "byte_offset": 10,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "P 9600 or 3600 Single System Trigger": {
+    "byte_offset": 9,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "ID DIGITALTONESIGNALING": {
+    "byte_offset": 2,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "ASK Enable": {
+    "byte_offset": 5,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "VHF": {
+    "byte_offset": 3,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "ID ATAK H": {
+    "byte_offset": 15,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "DVRS MSU Operation": {
+    "byte_offset": 8,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "UHF Range 1": {
+    "byte_offset": 3,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "7 800 MHz Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "VHF Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF Range 1 Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF Range 2 Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "ETSI REGULATORY REGION ENABLED": {
+    "byte_offset": 15,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "ID QA08715VOICECONTROLBASIC": {
+    "byte_offset": 15,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "SMARTNET Systems Operation": {
+    "byte_offset": 6,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "GPS Activation": {
+    "byte_offset": 8,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "Personnel Accountability Software": {
+    "byte_offset": 12,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "Front Display and Full Keypad": {
+    "byte_offset": 12,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "Group Services": {
+    "byte_offset": 6,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "7 800 MHz Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "VHF MP Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "VHF HP Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF R1 MP Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF R1 HP Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF R2 MP Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "900MHZ ID": {
+    "byte_offset": 3,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "Encrypted VPN Gateway": {
+    "byte_offset": 12,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "RF Preamp": {
+    "byte_offset": 1,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "Mission Critical Geofencing": {
+    "byte_offset": 9,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "Conventional Tactical Rekey": {
+    "byte_offset": 7,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "FDNY Emergency Rx Tx Tone Set": {
+    "byte_offset": 12,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "DINC PLUS AUDIO": {
+    "byte_offset": 4,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "Bluetooth Id": {
+    "byte_offset": 5,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "Over the Air Provisioning": {
+    "byte_offset": 1,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "SmartConnect": {
+    "byte_offset": 12,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "ID QA08676ADAPTIVESPEAKERVOLUME": {
+    "byte_offset": 15,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "DVRS PSU CONVENTIONAL SCAN ENABLED": {
+    "byte_offset": 14,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "Enhancement Level 2": {
+    "byte_offset": 6,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "Motorcycle Radio": {
+    "byte_offset": 2,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "Enhanced Zone Bank": {
+    "byte_offset": 5,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "Multikey Id": {
+    "byte_offset": 2,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "Collaborative Phase 1": {
+    "byte_offset": 11,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "LTE Operation": {
+    "byte_offset": 8,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "WiFi Capability": {
+    "byte_offset": 4,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "Extended Dispatch Enable": {
+    "byte_offset": 8,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "Advanced Encryption Standard": {
+    "byte_offset": 4,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "APX DES SOFTWARE CRYPTO": {
+    "byte_offset": 14,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "Dual Radio Operation": {
+    "byte_offset": 11,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "Trunked Radio Trace Remote Monitor": {
+    "byte_offset": 1,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "P25 Radio Authentication": {
+    "byte_offset": 2,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "VHF Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF Range 1 Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF Range 2 Primary Band": {
+    "byte_offset": 3,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "Primary Band 800 900MHz": {
+    "byte_offset": 3,
+    "bit_offset": 5,
+    "bit_size": 2
+  },
+  "V24 Software Enable": {
+    "byte_offset": 9,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "Night Vision Goggle": {
+    "byte_offset": 11,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "Man Down Operation": {
+    "byte_offset": 6,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "NYPD Trigger": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "Enable Dual Band Operation": {
+    "byte_offset": 5,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "Advanced Digital Privacy Software": {
+    "byte_offset": 7,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "Third Party Data Modem Tethering": {
+    "byte_offset": 10,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "VHF MPZ Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "VHF HP Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF R1 MP Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF R1 HP Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "UHF R2 MP Secondary Band": {
+    "byte_offset": 4,
+    "bit_offset": 4,
+    "bit_size": 5
+  },
+  "SmartConnectOverBroadband": {
+    "byte_offset": 14,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "Conventional Voting Scan": {
+    "byte_offset": 10,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "Enhanced Data Operation": {
+    "byte_offset": 9,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "Enhancement Level 1": {
+    "byte_offset": 8,
+    "bit_offset": 1,
+    "bit_size": 1
+  },
+  "Legacy SW System Key Enable": {
+    "byte_offset": 5,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "TDMA Operation": {
+    "byte_offset": 11,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "Multi System OTAR": {
+    "byte_offset": 14,
+    "bit_offset": 2,
+    "bit_size": 1
+  },
+  "P25 Common Air Interface": {
+    "byte_offset": 12,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "Packet Data Interface": {
+    "byte_offset": 9,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "SMARTZONE Systems Operation": {
+    "byte_offset": 6,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "Site Selectable Alert For P25 Trunking": {
+    "byte_offset": 10,
+    "bit_offset": 3,
+    "bit_size": 1
+  },
+  "Motorola VML Data Modem Tethering": {
+    "byte_offset": 7,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "ID GEOFENCEHOPTION": {
+    "byte_offset": 1,
+    "bit_offset": 5,
+    "bit_size": 1
+  },
+  "One Touch Status Message": {
+    "byte_offset": 6,
+    "bit_offset": 4,
+    "bit_size": 1
+  },
+  "ID TACTICALSERVICES": {
+    "byte_offset": 16,
+    "bit_offset": 0,
+    "bit_size": 1
+  },
+  "APX XE": {
+    "byte_offset": 1,
+    "bit_offset": 2,
+    "bit_size": 1
+  }
+}
