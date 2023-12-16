@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+k_inertia.egg-info/PKG-INFO
+k_inertia.egg-info/SOURCES.txt
+k_inertia.egg-info/dependency_links.txt
+k_inertia.egg-info/requires.txt
+k_inertia.egg-info/top_level.txt
+kinertia/__init__.py
+kinertia/setup.py
+kinertia/supervised.py
+kinertia/unsupervised.py
