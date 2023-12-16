@@ -1,0 +1,12 @@
+bacore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bacore/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bacore/cli/main.py,sha256=hfZ-UMEbHPruWGDyn_Sa6GEa0gS8siqL3p7RefOzUss,439
+bacore/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bacore/domain/credentials.py,sha256=8sTlPpR6UGewc9BASBlRnjUIW4jsUsEfo_3yJePOxbE,236
+bacore/interactors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bacore-0.0.3.dist-info/LICENSE,sha256=PgEjW4437Yn1E8SdNidlwX4d1gJD8KbdjSAhpLmc-iY,1066
+bacore-0.0.3.dist-info/METADATA,sha256=1ObvSyH442o178zdbdQIu1xekCEE2J0Jwn3jn3fsrIM,2899
+bacore-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bacore-0.0.3.dist-info/entry_points.txt,sha256=rmhkHQprkhRwbD7Kapwr2LZ4Zqy0YZmABviipgKrbOs,47
+bacore-0.0.3.dist-info/top_level.txt,sha256=aTGomYXZWsG6oJOPlwWdMbqf49kt1rbEwBWK5JPhmmA,7
+bacore-0.0.3.dist-info/RECORD,,
