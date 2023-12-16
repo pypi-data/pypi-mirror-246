@@ -1,0 +1,9 @@
+LICENSE.TXT
+README.md
+setup.py
+Librarymu/__init__.py
+Librarymu/my_class.py
+golden33423319.egg-info/PKG-INFO
+golden33423319.egg-info/SOURCES.txt
+golden33423319.egg-info/dependency_links.txt
+golden33423319.egg-info/top_level.txt

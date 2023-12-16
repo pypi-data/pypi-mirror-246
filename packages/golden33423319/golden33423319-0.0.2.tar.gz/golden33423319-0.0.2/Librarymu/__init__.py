@@ -1,0 +1,1 @@
+from Librarymu.my_class import GoldenRatioCalculator
