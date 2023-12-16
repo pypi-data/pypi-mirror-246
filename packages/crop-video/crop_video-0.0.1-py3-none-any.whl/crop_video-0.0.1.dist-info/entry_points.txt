@@ -1,0 +1,3 @@
+[console_scripts]
+crop_video = crop_video.main:main
+

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: crop-video
+Version: 0.0.1
+Summary: Cut video based on moviepy
+Home-page: https://github.com/SWHL/CutVideo
+Author: SWHL
+Author-email: liekkaskono@163.com
+License: MIT
+Keywords: moviepy,crop_video
+Platform: Any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6,<3.12
+Description-Content-Type: text/markdown
+Requires-Dist: moviepy ==1.0.3
+
+#### Installation
+```bash
+pip install crop_video
+```
+
+#### Use by CLI
+```bash
+# video_path start_time end_time save_path
+$ crop_video 1.mp4 00:00:00 00:00:20 result.mp4
+```
+
+#### Use by python
+```python
+from crop_video import CropVideo
+
+cutter = CropVideo()
+
+video_path = "tests/test_files/1.mp4"
+cutter(video_path, "00:00:00", "00:00:10", "output/2.mp4")
+```
+
