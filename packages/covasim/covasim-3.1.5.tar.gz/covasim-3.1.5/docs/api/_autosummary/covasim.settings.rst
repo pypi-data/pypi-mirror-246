@@ -1,0 +1,25 @@
+﻿settings
+========
+
+.. automodule:: covasim.settings
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+
+
