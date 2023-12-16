@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "demoazure"
+version = "0.1.0"
+description = ""
+authors = ["nithish3029 <nithish.sekar@solitontech.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
