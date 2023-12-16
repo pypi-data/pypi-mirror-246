@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python_hindi
+Version: 0.1.0
+Summary: Python in Hindi
+Home-page: https://github.com/itsrealkaran/python-hindi
+License: BSD-4-Clause
+Author: Karan Singh
+Author-email: itsrealkaran@outlook.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: errors
+Requires-Dist: ideas (>=0.0.22,<0.0.23)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Project-URL: issues, https://github.com/itsrealkaran/python-hindi/issues
