@@ -1,0 +1,2 @@
+import sys; exec('try:\n    import ytho\n    ytho.register()\nexcept ImportError:\n    pass\n')
+
