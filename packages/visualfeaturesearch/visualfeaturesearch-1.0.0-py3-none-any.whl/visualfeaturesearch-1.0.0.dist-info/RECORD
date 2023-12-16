@@ -1,0 +1,10 @@
+visualfeaturesearch/__init__.py,sha256=a-xx6IZ9U0s5Mze7z4rGe4XYKn2WSTyNBvo8DfzwQ30,54
+visualfeaturesearch/caching.py,sha256=v34_Vh2T-4eMk9ESW_KNUYoXjU08TPUn5rZVt1gaCuM,1466
+visualfeaturesearch/data.py,sha256=3RjURzEHNWwweVzA3TRl9SAjumSHgPfvq7REb4zyy0Y,1615
+visualfeaturesearch/searchtool.py,sha256=um79Jn6AI0nAlynXQGz1edRNyFiFvpw41y9WqUXxqGY,6193
+visualfeaturesearch/util.py,sha256=tf3TGAVBREKSjsvYd8uLRovDQJkWI3XGNG2IcHj9ytc,2551
+visualfeaturesearch/widgets.py,sha256=BWNdSbAoi2UN1AnMF5d-4ffRH96VyHl5udUdDhLNIXQ,7511
+visualfeaturesearch-1.0.0.dist-info/METADATA,sha256=0SxxIq3GKIPBFENsC-xhMVVvIZQoSGS2AG_Amp_bjDY,7189
+visualfeaturesearch-1.0.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+visualfeaturesearch-1.0.0.dist-info/licenses/LICENSE,sha256=5ROQ-vmtXNx4pryDPDxC3bEXF_xNmK2dV85NFKft-UQ,1084
+visualfeaturesearch-1.0.0.dist-info/RECORD,,
