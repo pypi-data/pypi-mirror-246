@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: geonlplify
+Version: 0.3.14
+Summary: GeoNLPlify aims to make variations of an input sentence working on spatial information contained in words
+Home-page: https://github.com/remydecoupes/GeoNLPlify
+Author: Rémy Decoupes
+Author-email: remy.decoupes@inrae.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
