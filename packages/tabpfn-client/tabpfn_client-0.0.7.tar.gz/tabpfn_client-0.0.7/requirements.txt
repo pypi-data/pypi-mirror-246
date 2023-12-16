@@ -1,0 +1,7 @@
+httpx
+omegaconf
+pandas
+tabpfn
+
+# for testing
+respx
