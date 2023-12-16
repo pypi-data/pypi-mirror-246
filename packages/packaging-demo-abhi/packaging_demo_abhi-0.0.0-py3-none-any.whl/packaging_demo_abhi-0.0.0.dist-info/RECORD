@@ -1,0 +1,9 @@
+packaging_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/top_level_module.py,sha256=_XTcTeiuYvAGRFFquFcy9VsCnDLAuwNI578uPDRpJ3Q,344
+packaging_demo/folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/folder/nested_folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/folder/nested_folder/nested_module.py,sha256=EzXTXQnjCm0qrwz86DsLk9UQuiDwAIqAEgA8RL_gOxk,89
+packaging_demo_abhi-0.0.0.dist-info/METADATA,sha256=RDWKcKP3TSic6tRjWRqyg8GOoHFy-qdUpxj230ss8GU,752
+packaging_demo_abhi-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+packaging_demo_abhi-0.0.0.dist-info/top_level.txt,sha256=JQYuoHLSBUdWNZjDus5DYc3ohopasuGzDPZpph3ynKg,15
+packaging_demo_abhi-0.0.0.dist-info/RECORD,,
