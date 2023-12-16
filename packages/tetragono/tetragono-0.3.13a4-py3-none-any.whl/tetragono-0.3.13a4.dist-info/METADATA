@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tetragono
+Version: 0.3.13a4
+Summary: OBC square tensor network state(PEPS) library
+Author-email: Hao Zhang <zh970205@mail.ustc.edu.cn>
+License: GPLv3
+Project-URL: Homepage, https://github.com/USTC-TNS/TAT/tree/main/tetragono
+Project-URL: Repository, https://github.com/USTC-TNS/TAT.git
+Project-URL: Issues, https://github.com/USTC-TNS/TAT/issues
+Project-URL: Changelog, https://github.com/USTC-TNS/TAT/blob/main/CHANGELOG.org
+Keywords: tensor,tensor network,tensor network state,PEPS,MPS,quantum many body system
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PyTAT ==0.3.13a4
+Requires-Dist: lazy-graph ==0.3.13a4
+Requires-Dist: PyScalapack ==0.3.13a4
+Requires-Dist: mpi4py
+Requires-Dist: numpy
+
+
+
+# tetragono
+
+tetragono is an OBC square tensor network state(PEPS) library.
+
