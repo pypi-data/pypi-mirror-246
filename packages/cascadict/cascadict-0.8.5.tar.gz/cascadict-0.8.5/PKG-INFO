@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cascadict
+Version: 0.8.5
+Summary: Cascading dictionary - CascaDict implements something like class inheritance, but on dictionary-key level. Ideal for representing cascading properties, e.g. configurations with default parameters etc.
+Home-page: https://github.com/JNevrly/cascadict
+Download-URL: https://github.com/JNevrly/cascadict/archive/v0.8.4.zip
+Author: Josef Nevrly
+Author-email: josef.nevrly@gmail.com
+License: MIT License
+Keywords: dictionary,inheritance,cascading,nesting,configuration
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+
+  See full documentation on `ReadTheDocs <http://cascadict.readthedocs.org>`_.
+
+  
+
+
+
+History
+-------
+
+0.8.4 (2015-11-16)
+~~~~~~~~~~~~~~~~~~
+
+* Fixed pip build problem.
+
+
+0.8.3 (2015-11-16)
+~~~~~~~~~~~~~~~~~~
+
+* Fixed import bug in Python 3.x. (#1) Thanks `@nicodemus26`_.
+* Added tox testing for Python 2.7, 3.4. (#2) Again, thanks `@nicodemus26`_.
+
+.. _`@nicodemus26`: https://github.com/nicodemus26
+
+
+0.8.2 (2015-09-08)
+~~~~~~~~~~~~~~~~~~
+
+* First release on PyPI.

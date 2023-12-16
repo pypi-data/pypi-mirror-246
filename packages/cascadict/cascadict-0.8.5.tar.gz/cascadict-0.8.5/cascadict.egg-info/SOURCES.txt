@@ -1,0 +1,13 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cascadict/__init__.py
+cascadict/cascadict.py
+cascadict/test_cascadict.py
+cascadict.egg-info/PKG-INFO
+cascadict.egg-info/SOURCES.txt
+cascadict.egg-info/dependency_links.txt
+cascadict.egg-info/top_level.txt
