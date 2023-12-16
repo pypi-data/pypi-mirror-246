@@ -1,0 +1,4 @@
+click
+jira
+python-dotenv
+tabulate
