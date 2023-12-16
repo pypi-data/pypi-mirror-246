@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: thebestmaths
+Version: 0.1.0
+Author: Torrez
+Requires: bestErrors
+
+# the best maths
+
+This module contains math objects that helps you calculate things like the factorial of a number.
