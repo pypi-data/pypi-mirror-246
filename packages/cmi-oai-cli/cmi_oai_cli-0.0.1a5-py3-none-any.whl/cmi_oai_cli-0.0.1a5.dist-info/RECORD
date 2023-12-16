@@ -1,0 +1,15 @@
+oai/__init__.py,sha256=-L8eGZkqewYdS54XTKMUzJqo-3D1dLdBlaJhAxFawfs,49
+oai/__main__.py,sha256=PcJTBeQLO-paCuMLB0WRhsymKEKFx8myfV34EWSrg9U,215
+oai/cli/__init__.py,sha256=XbrIdlu-o50VGUMjBKhubm1JVgbu--D8pxn4lArcKv4,46
+oai/cli/commands.py,sha256=5n96ozDuqXPIb4i95aT_wCg9cgp6IZMGbq4uo8Xkgx0,3156
+oai/cli/parser.py,sha256=WRv-coVZWWSkchTiNiyNpPgu4c3dSDU5d7waFf4VI8E,7367
+oai/cli/utils.py,sha256=c0JJLjeTUDq29TvSpAlhVZOaPAlr93Uf9Ju-dzywRzQ,2412
+oai/core/__init__.py,sha256=8DTtbH4HG5MX1jleAajhpYmsTCNxjNCcQTDtwUxYif4,39
+oai/core/config.py,sha256=-ToAKtsC5IN1LmK6NHSe8x_BLb-qrR7bHcO4Gx885wA,1623
+oai/core/exceptions.py,sha256=w1suNNyrOfqqrpB5BmW1BwyTdVZa6Bv82KjnnyvCqA8,619
+oai/openai_api.py,sha256=odd3wMtVasFWzOfkhdtKVCSXyJSJnSVc0lWXS4uzzjk,3741
+cmi_oai_cli-0.0.1a5.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+cmi_oai_cli-0.0.1a5.dist-info/METADATA,sha256=hbMAJuXRwhqotZlxTRn8iJ49lohz3EE2X_qPVDjOnWM,2384
+cmi_oai_cli-0.0.1a5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+cmi_oai_cli-0.0.1a5.dist-info/entry_points.txt,sha256=YvQTkhGDq4cYN1iTQeAvZEaWPlricXEC3jjn0meUdAo,41
+cmi_oai_cli-0.0.1a5.dist-info/RECORD,,
