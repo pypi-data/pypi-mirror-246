@@ -1,0 +1,11 @@
+cloudmesh/vpn/bin/cisco-secure-client-old.rb,sha256=Ja0L0VQrQuvHwTFrQA-VlBkt5ZXibPZ4h5tOUVIAIxU,422
+cloudmesh/vpn/bin/cisco-secure-client.nuspec,sha256=UHK2UWh9fRc0TPUjKxpHLfltXUtak8AGi88GWMHYoKM,6313
+cloudmesh/vpn/bin/cisco-secure-client.rb,sha256=EUbtRmQR8zs7RGX4kq89Ruh8vdUW8Oz4nkiTWeeFv4g,746
+cloudmesh/vpn/bin/tools/chocolateybeforemodify.ps1,sha256=hDQJ7V1CWzUyk-J7PIe9HIXTNln364A8USoKNAAW5Gw,608
+cloudmesh/vpn/bin/tools/chocolateyinstall.ps1,sha256=ABWJyVT2jaZ4j0E5ZYaPkqSBCVqbYqUdovsix_MXXPs,1685
+cloudmesh/vpn/bin/tools/chocolateyuninstall.ps1,sha256=tbYpMWlAlGL7Pg42VowGdgP0-Gk9YZrZDgWbXZmttfw,5268
+cloudmesh_vpn-5.0.2.dist-info/LICENSE,sha256=w7U4P4ljhJjniTEMxSyhAcEbWHDk2Ng1FqsOG6aEgs0,769
+cloudmesh_vpn-5.0.2.dist-info/METADATA,sha256=5BUHCYuwLpHEuOoatS8jsIgsKc_ofms1suMW2_GzptQ,5467
+cloudmesh_vpn-5.0.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cloudmesh_vpn-5.0.2.dist-info/top_level.txt,sha256=aTw_KEhKv-8X8yWzikhSTeYlXkcauZxg_98rOi1SJHg,10
+cloudmesh_vpn-5.0.2.dist-info/RECORD,,
