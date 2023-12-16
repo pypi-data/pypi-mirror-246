@@ -1,0 +1,10 @@
+meshgpt_pytorch/__init__.py,sha256=M2hVDu4rI8jey2_zvepcu3Db21msP7d6dmk5-rPWrx8,248
+meshgpt_pytorch/data.py,sha256=bgJrQfl56eQLzfRcYaA4GLDGcG7vZ6zgt37t5lfb038,3326
+meshgpt_pytorch/meshgpt_pytorch.py,sha256=VcF0ckaa36z6HJwF5hewilyoAch8xoXVoLNzZi-nsDw,42562
+meshgpt_pytorch/trainer.py,sha256=rgzff4kGPf5XpZZbGqxoAUku0KiN376FK1Vjqi4zLRw,17672
+meshgpt_pytorch/version.py,sha256=-QLfj7uUl-2aJTKOCtcCtcWgBazpxqPKSvaS_ubTbxk,22
+meshgpt_pytorch-0.3.8.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+meshgpt_pytorch-0.3.8.dist-info/METADATA,sha256=lxje7wCHNkpqcL-z0zN0sIo5FdUlahz_eGYsG4_Cgkw,1140
+meshgpt_pytorch-0.3.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+meshgpt_pytorch-0.3.8.dist-info/top_level.txt,sha256=GoLNXEbRBRuRDTQZMQFPmWLIMIhmaPkb7YT6S4ESDQs,16
+meshgpt_pytorch-0.3.8.dist-info/RECORD,,
