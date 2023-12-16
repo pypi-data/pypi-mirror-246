@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: claraterm
+Version: 0.3.3
+Summary: let AI do the heavy lifting in terminal, CoPilot for your Terminal
+Home-page: https://github.com/badboysm890/Clara-Term.git
+Author: BadBoy17G
+Author-email: praveensm890@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp ==3.9.1
+Requires-Dist: aiosignal ==1.3.1
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==4.1.0
+Requires-Dist: async-timeout ==4.0.3
+Requires-Dist: attrs ==23.1.0
+Requires-Dist: blinker ==1.7.0
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: dataclasses-json ==0.6.3
+Requires-Dist: distro ==1.8.0
+Requires-Dist: dnspython ==2.4.2
+Requires-Dist: exceptiongroup ==1.2.0
+Requires-Dist: frozenlist ==1.4.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==1.0.2
+Requires-Dist: httpx ==0.25.2
+Requires-Dist: idna ==3.6
+Requires-Dist: itsdangerous ==2.1.2
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: jsonpatch ==1.33
+Requires-Dist: jsonpointer ==2.4
+Requires-Dist: langchain ==0.0.348
+Requires-Dist: langchain-core ==0.0.12
+Requires-Dist: langsmith ==0.0.69
+Requires-Dist: MarkupSafe ==2.1.3
+Requires-Dist: marshmallow ==3.20.1
+Requires-Dist: multidict ==6.0.4
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: numpy ==1.26.2
+Requires-Dist: openai ==1.3.8
+Requires-Dist: packaging ==23.2
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: pydantic ==2.5.2
+Requires-Dist: pydantic-core ==2.14.5
+Requires-Dist: pymongo ==4.6.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: tenacity ==8.2.3
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: typing-inspect ==0.9.0
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: tzdata ==2023.3
+Requires-Dist: urllib3 ==2.1.0
+Requires-Dist: yarl ==1.9.4
+Requires-Dist: g4f
+
+# Project Name: Clara-Term 🚀
+An advanced terminal-based automation tool powered by AI – because who needs humans anymore? 🤖
+
+## Description
+Ever wished your computer could just 'get' you? Well, Clara-Term is basically a mind reader in the form of code. Powered by GPT-3.5 (with a VIP pass for GUVI-GPT and Llama2 coming soon), it's changing the game in script automation. Perfect for those who love Python 🐍 (and soon, Go and JavaScript aficionados). 
+
+### Key Features
+- **AI-Driven Script Wizardry:** Creates scripts so you don't have to. It's like magic, but real. ✨
+- **Language Party:** Starts with Python, but Go and JavaScript are on the invite list. 🎉
+- **Self-Healing Wizard:** It fixes its own boo-boos in scripts. Self-care at its finest. 🩹
+- **Dependency Juggler:** Manages dependencies like a circus pro. 🎪
+- **The Future is Bright:** Brace yourselves, GUVI-GPT and Llama2 are coming. 🌟
+
+## Installation
+```bash
+python -m venv env
+source env/bin/activate
+pip install --editable .
+```
+Because who has time for complicated installations?
+
+![How to install](How.gif)
+
+## Usage
+```bash
+nano .env
+add this line --> OPENAI_ACCESS_KEY=your key
+
+clara -i "[Your Query]"
+```
+Ask and you shall receive. It's like having a genie, but for code. 🧞
+
+## Contributing
+Got ideas? Improvements? Jokes? All are welcome here! Let's make coding fun again (was it ever not fun?) 😜
+
+## Star Us! ⭐
+If you like what you see, give us a star! Stars are like virtual high-fives. 🙌
+
+## License
+[Your choice, but 'MIT License' is cool if you like to keep it chill]
+
+## Credits
+GUVI (https://www.guvi.in/)
+--They Bought Me Coffee ☕--
+# Project Name: Clara-Term 🚀
+An advanced terminal-based automation tool powered by AI – because who needs humans anymore? 🤖
+
+## Description
+Ever wished your computer could just 'get' you? Well, Clara-Term is basically a mind reader in the form of code. Powered by GPT-3.5 (with a VIP pass for GUVI-GPT and Llama2 coming soon), it's changing the game in script automation. Perfect for those who love Python 🐍 (and soon, Go and JavaScript aficionados). 
+
+### Key Features
+- **AI-Driven Script Wizardry:** Creates scripts so you don't have to. It's like magic, but real. ✨
+- **Language Party:** Starts with Python, but Go and JavaScript are on the invite list. 🎉
+- **Self-Healing Wizard:** It fixes its own boo-boos in scripts. Self-care at its finest. 🩹
+- **Dependency Juggler:** Manages dependencies like a circus pro. 🎪
+- **The Future is Bright:** Brace yourselves, GUVI-GPT and Llama2 are coming. 🌟
+
+## Installation
+```bash
+python -m venv env
+source env/bin/activate
+pip install --editable .
+```
+Because who has time for complicated installations?
+
+![How to install](How.gif)
+
+## Usage
+```bash
+nano .env
+add this line --> OPENAI_API_KEY=your key
+
+clara -i "[Your Query]"
+```
+Ask and you shall receive. It's like having a genie, but for code. 🧞
+
+## Contributing
+Got ideas? Improvements? Jokes? All are welcome here! Let's make coding fun again (was it ever not fun?) 😜
+
+## Star Us! ⭐
+If you like what you see, give us a star! Stars are like virtual high-fives. 🙌
+
+## License
+[Your choice, but 'MIT License' is cool if you like to keep it chill]
+
+## Credits
+G4F (https://github.com/xtekky/gpt4free)
+Offline Support
+
+GUVI Geek Network Pvt. Ltd. (https://www.guvi.in/)
+
