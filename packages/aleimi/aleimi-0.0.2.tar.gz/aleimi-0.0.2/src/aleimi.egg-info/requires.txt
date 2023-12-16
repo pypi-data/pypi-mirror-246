@@ -1,0 +1,9 @@
+numpy
+pandas
+rdkit
+rmsd
+pyyaml
+
+[test]
+pytest
+pytest-cov
