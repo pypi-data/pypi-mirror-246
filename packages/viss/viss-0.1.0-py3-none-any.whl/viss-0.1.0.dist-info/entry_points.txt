@@ -1,0 +1,2 @@
+[console_scripts]
+viss = viss.__main__:main
