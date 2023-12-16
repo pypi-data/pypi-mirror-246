@@ -1,0 +1,20 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+Steps to Build.txt
+pyproject.toml
+setup.py
+mat_data.egg-info/PKG-INFO
+mat_data.egg-info/SOURCES.txt
+mat_data.egg-info/dependency_links.txt
+mat_data.egg-info/requires.txt
+mat_data.egg-info/top_level.txt
+matdata/LICENSE
+matdata/README.md
+matdata/__init__.py
+matdata/generator.py
+matdata/preprocess.py
+matdata/inc/__init__.py
+matdata/inc/converter.py
+matdata/inc/ts_io.py
