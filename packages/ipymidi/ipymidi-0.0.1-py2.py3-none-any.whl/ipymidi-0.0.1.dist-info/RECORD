@@ -1,0 +1,9 @@
+ipymidi/__init__.py,sha256=1pF5c0hdkaXkH4_Z2nfM10ANK4utMcrulYINUEz2FhQ,288
+ipymidi/event.py,sha256=IMtAjK10gORH6T1EcyN7Q9KlaUtBYqnpUIMeGynuPSs,5870
+ipymidi/event_traits.py,sha256=g-d6BcS0GoB7YMNb85JBRVq08TUtKYkmZ5zV7qzSzCI,2554
+ipymidi/interface.py,sha256=AkMwV4gAoOO2PPQ7FMzevGCCmbNwTVFQcuIdVpNOIgQ,7293
+ipymidi/static/index.js,sha256=dBjscng2ucTEHf6X6mcXDt5WCIsqnBX_waNchZklwFQ,86365
+ipymidi-0.0.1.dist-info/METADATA,sha256=hqYIEJu7_Zh9JCb5RIJyrhwamoQv_BVtRjSYWWTgsJ8,2223
+ipymidi-0.0.1.dist-info/WHEEL,sha256=SPoKU6kwX9IxKY404gm3aFc97sEgEx4L1VGOSUni1rc,105
+ipymidi-0.0.1.dist-info/licenses/LICENSE,sha256=qcp3t1f_V3VhQjI3em217XYGchlJqLFUKKa5p39_sVs,1498
+ipymidi-0.0.1.dist-info/RECORD,,
