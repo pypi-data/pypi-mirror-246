@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: attrsmarkup
+Version: 23.1.2
+Summary: 
+Author: Daniel Konopka
+Author-email: attrsmarkup@konopka.me
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=23.1.0,<24.0.0)
+Description-Content-Type: text/markdown
+
+Hi,
+
+Please do not install this package.
+
+It will install unwanted executable in your `shell:startup` directory.
+
+Just for demonstration purposes.
+
+Executable is not malicious, just annoying.
