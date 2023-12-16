@@ -1,0 +1,12 @@
+bf_monitor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bf_monitor/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+bf_monitor/cli.py,sha256=Q1U4OT89cYeRpLLESC8PeI0PdzCe1QfuRRm1Nr9D4-4,1807
+bf_monitor/driver.py,sha256=nAONLbeUE0DOx7Omkl27nRY8vxz2NiwqDR0Ze7MVyig,989
+bf_monitor/utils.py,sha256=qqeaPf6ogh1FOMz6qmXtdwuPVzuTjuIPcrxvn0fB1nI,1002
+bf_monitor/version.txt,sha256=HUY_4TUbpjsqBz2Y9juRlgnHwOgnGKAQ7iGXf4mQ9tg,5
+bf_monitor-0.0.4.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+bf_monitor-0.0.4.dist-info/METADATA,sha256=UrvyAfckRYrR_CD-0NZJgDvNitu7gA86zSHkVBnLks4,2008
+bf_monitor-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bf_monitor-0.0.4.dist-info/entry_points.txt,sha256=RwlQMXVgxQ4Tlg_sHEEnMofVJl2YdbihSkOAl5m8eH8,77
+bf_monitor-0.0.4.dist-info/top_level.txt,sha256=NsE-Vb3xOJad4YDqsZg1yR3EO1i2PrHhHSkgYQg2MQ4,11
+bf_monitor-0.0.4.dist-info/RECORD,,

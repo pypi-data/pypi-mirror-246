@@ -1,0 +1,3 @@
+[console_scripts]
+bf_monitor = bf_monitor.cli:main
+bfm = bf_monitor.cli:main
