@@ -1,0 +1,3 @@
+[console_scripts]
+aleimi-processed = aleimi.cli:_aleimi_processed
+aleimi-run = aleimi.cli:_aleimi_run
