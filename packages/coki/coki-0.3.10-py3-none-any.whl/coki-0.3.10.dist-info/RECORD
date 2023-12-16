@@ -1,0 +1,15 @@
+coki/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coki/coki-gen-credentials.bat,sha256=hf8OPdXH_XgvYufTZTJpHssqdtP14KfM6gEHzIdrFHk,61
+coki/coki-orders.bat,sha256=YWdtauq3S0cNG980rHen4tZfoDo5vsvB7yVLeVcl-EU,50
+coki/coki-scr.bat,sha256=2kPzdTpqOzvuqH1WIhmfWVce4nOND2CQmyYUlfHhwrk,47
+coki/coki.bat,sha256=4djxko5WdFpZ3r0s5AF0fzXcswC-w_ODkwKH8C5CIZM,47
+coki/coki_cli.py,sha256=POMzHxA5qqbRkQ9xouiVRysxE7GttkE2XCClRvlNUzw,635
+coki/coki_gen_credentials.py,sha256=s41preadBLup4cTUMdQ9G7zmbc8M8TSNlBu1qeFkJ3I,1248
+coki/coki_orders.py,sha256=wjuSrj4WKJ65wuKSCKD-jbZ6FHZWjt9Cp10KOjpZdTQ,1372
+coki/coki_scr.py,sha256=ZZMbJmTvvfE8s3D3x6BW0hiIB_1Bw8t5fIWUlyORT9Q,799
+coki/funcs.py,sha256=ywLt8-SZlTVxr1JZG3vMZcHlxBWZIFexzZF19DUsu6E,12380
+coki/test.ipynb,sha256=26LAr4wFpC8UO3nI1JnWX3IVYAyjCN3umxmyTbA_Jbo,2891
+coki-0.3.10.dist-info/METADATA,sha256=QD_XzJXpCqXAMXeshhX2U0Hk0DwsdLcaNEiIoG5rprE,4895
+coki-0.3.10.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+coki-0.3.10.dist-info/licenses/LICENSE,sha256=c2P8fiWWmY8_wBCbaQhXW_HNj2-i_Jev9r2dFxd_ULs,1038
+coki-0.3.10.dist-info/RECORD,,
