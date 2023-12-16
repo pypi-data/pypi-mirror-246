@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "patatmo"
+version = "0.2.16"
+description = "painless access to the netatmo weather api"
+authors = ["Yann Büchau <nobodyinperson@posteo.de>"]
+license = "GPLv3"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = ">=1"
+numpy = ">=1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
