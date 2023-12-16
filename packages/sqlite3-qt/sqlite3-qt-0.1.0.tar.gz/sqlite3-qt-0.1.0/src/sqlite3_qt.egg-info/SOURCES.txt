@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+src/sqlite3_qt/__init__.py
+src/sqlite3_qt/dbapi2.py
+src/sqlite3_qt/qt_compat.py
+src/sqlite3_qt.egg-info/PKG-INFO
+src/sqlite3_qt.egg-info/SOURCES.txt
+src/sqlite3_qt.egg-info/dependency_links.txt
+src/sqlite3_qt.egg-info/requires.txt
+src/sqlite3_qt.egg-info/top_level.txt
+tests/test_match.py
