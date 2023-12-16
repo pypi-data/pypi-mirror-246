@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "isagog-ai"
+version = "0.5.0"
+description = ""
+authors = ["Guido Vetere <g.vetere@isagog.com>"]
+readme = "README.md"
+packages = [{include = "isagog"},
+            {include = "isagog/client"},
+            {include = "isagog/model"}
+           ]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rdflib = "^7.0.0"
+requests = "^2.31.0"
+toml = "^0.10.2"
+pytest = "^7.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
