@@ -1,0 +1,11 @@
+[project]
+name = "syntheseus-local-retro"
+description = "Fork of LocalRetro for use in the syntheseus library"
+version = "0.1.0"
+dependencies = ["dgllife", "chardet"]
+
+[tool.setuptools.package-dir]
+"local_retro" = "."
+"local_retro.LocalTemplate" = "LocalTemplate"
+"local_retro.preprocessing" = "preprocessing"
+"local_retro.scripts" = "scripts"
