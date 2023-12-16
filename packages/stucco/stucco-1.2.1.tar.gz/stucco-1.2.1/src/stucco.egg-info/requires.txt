@@ -1,0 +1,8 @@
+torch
+numpy
+arm-pytorch-utilities>=0.4
+pytorch-kinematics
+pytorch-volumetric
+
+[test]
+pytest

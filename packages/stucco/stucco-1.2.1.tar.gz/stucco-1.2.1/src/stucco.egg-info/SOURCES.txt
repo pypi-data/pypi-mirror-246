@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/stucco/__init__.py
+src/stucco/detection.py
+src/stucco/movable_sdf.py
+src/stucco/tracking.py
+src/stucco.egg-info/PKG-INFO
+src/stucco.egg-info/SOURCES.txt
+src/stucco.egg-info/dependency_links.txt
+src/stucco.egg-info/requires.txt
+src/stucco.egg-info/top_level.txt
+tests/test_detection.py
+tests/test_tracking.py
