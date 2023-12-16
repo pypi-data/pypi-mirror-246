@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pylive-played-clip
+Version: 1.1.7
+Summary: A tool to monitor Ableton Live and update the color of clips that have been played.
+Home-page: https://github.com/saselberg/pylive-played-clip
+Author: Scott Selberg
+Author-email: saselberg@gmail.com
+Project-URL: Source, https://github.com/saselberg/pylive-played-clip
+Project-URL: Documentation, https://pylive-played-clip.readthedocs.io/en/latest/
+Project-URL: PyPI Package, https://pypi.org/project/pylive-played-clip/
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pylive
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: linuxdoc ; extra == 'dev'
+Requires-Dist: markupsafe ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-argparse ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-toolbox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: types-pytest-lazy-fixture ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+
+# pylive-played-clip.py
+
+## Details
+
+**Original Author:** [Scott Selberg](mailto:saselberg2@gmail.com)  
+**Current Owner:** [Scott Selberg](mailto:saselberg2@gmail.com)  
+
+## Introduction
+
+This is a python package that deploys a command line tool to monitor
+Ableton Live clips through [AbletonOSC](https://github.com/ideoforms/AbletonOSC) and
+[pylive](https://github.com/ideoforms/pylive). When a clip finishes playing,
+this utility can change the color to visually flag the clip as having been
+played. When the global playback is stopped, the utility will reset all of the
+clips to the color they had before it changed them.
+
+For more information, [see the documentation on Read the Docs](https://pylive-played-clip.readthedocs.io/en/latest/index.html)
+
+## License
+
+BSD 3-Clause
+
+## Author Information
+
+Scott Selberg
