@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: aleph-client
+Version: 0.6.0
+Summary: Lightweight Python Client library for the Aleph.im network
+Home-page: https://github.com/aleph-im/aleph-client
+Author: Aleph.im Team
+Author-email: hello@aleph.im
+License: mit
+Project-URL: Documentation, https://aleph.im/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: aleph-sdk-python==0.8.0
+Requires-Dist: aleph-message==0.4.1
+Requires-Dist: coincurve==17.0.0
+Requires-Dist: aiohttp==3.8.4
+Requires-Dist: eciespy==0.3.13
+Requires-Dist: typer==0.9.0
+Requires-Dist: eth_account==0.9.0
+Requires-Dist: python-magic==0.4.27
+Requires-Dist: pygments==2.16.1
+Requires-Dist: rich==13.6.0
+Requires-Dist: aiodns==3.1.1
+Provides-Extra: testing
+Requires-Dist: pytest==7.4.2; extra == "testing"
+Requires-Dist: pytest-asyncio==0.21.1; extra == "testing"
+Requires-Dist: pytest-cov==4.1.0; extra == "testing"
+Requires-Dist: mypy==1.5.1; extra == "testing"
+Requires-Dist: secp256k1==0.14.0; extra == "testing"
+Requires-Dist: pynacl==1.5.0; extra == "testing"
+Requires-Dist: base58==2.1.1; extra == "testing"
+Requires-Dist: aleph-pytezos==0.1.0; extra == "testing"
+Requires-Dist: fastapi==0.98.0; extra == "testing"
+Requires-Dist: httpx==0.25.0; extra == "testing"
+Requires-Dist: types-requests==2.31.0.10; extra == "testing"
+Requires-Dist: types-setuptools==68.2.0.0; extra == "testing"
+Requires-Dist: typing_extensions==4.5.0; extra == "testing"
+Provides-Extra: nuls2
+Requires-Dist: aleph-nuls2==0.1.0; extra == "nuls2"
+Provides-Extra: ethereum
+Requires-Dist: eth_account>=0.4.0; extra == "ethereum"
+Provides-Extra: polkadot
+Requires-Dist: substrate-interface==1.3.4; extra == "polkadot"
+Provides-Extra: cosmos
+Requires-Dist: cosmospy==6.0.0; extra == "cosmos"
+Provides-Extra: solana
+Requires-Dist: pynacl==1.5.0; extra == "solana"
+Requires-Dist: base58==2.1.1; extra == "solana"
+Provides-Extra: tezos
+Requires-Dist: pynacl==1.5.0; extra == "tezos"
+Requires-Dist: aleph-pytezos==0.1.0; extra == "tezos"
+Provides-Extra: docs
+Requires-Dist: sphinxcontrib-plantuml==0.27; extra == "docs"
+
+============
+aleph-client
+============
+
+Python Client for the aleph.im network, next generation network of decentralized big data applications.
+Developement follows the `Aleph Whitepaper <https://github.com/aleph-im/aleph-whitepaper>`_.
+
+Documentation
+=============
+
+Documentation (albeit still vastly incomplete as it is a work in progress) can be found at http://aleph-client.readthedocs.io/ or built from this repo with:
+
+    $ python setup.py docs
+
+
+Requirements
+============
+
+- Linux : 
+
+Some cryptographic functionalities use curve secp256k1 and require installing
+`libsecp256k1 <https://github.com/bitcoin-core/secp256k1>`_.
+
+    $ apt-get install -y python3-pip libsecp256k1-dev
+
+- macOs :  
+
+    $ brew tap cuber/homebrew-libsecp256k1
+    $ brew install libsecp256k1
+
+
+Installation
+============
+
+Using pip and `PyPI <https://pypi.org/project/aleph-client/>`_:
+
+    $ pip install aleph-client
+
+
+Installation for development
+============================
+
+If you want NULS2 support you will need to install nuls2-python (currently only available on github):
+
+    $ pip install git+https://github.com/aleph-im/nuls2-python.git
+
+
+To install from source and still be able to modify the source code:
+
+    $ pip install -e .
+    or
+    $ python setup.py develop
+
+
+
+Using Docker
+============
+
+Use the Aleph client and it's CLI from within Docker or Podman with:
+
+		$ docker run --rm -ti -v $(pwd)/data:/data ghcr.io/aleph-im/aleph-client/aleph-client:master --help
+
+Warning: This will use an ephemeral key that will be discarded when stopping the container.
