@@ -1,0 +1,6 @@
+setup.py
+Nick_Package_test_34562325265.egg-info/PKG-INFO
+Nick_Package_test_34562325265.egg-info/SOURCES.txt
+Nick_Package_test_34562325265.egg-info/dependency_links.txt
+Nick_Package_test_34562325265.egg-info/requires.txt
+Nick_Package_test_34562325265.egg-info/top_level.txt
