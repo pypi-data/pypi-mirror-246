@@ -1,0 +1,10 @@
+TAT.cpython-38-x86_64-linux-gnu.so,sha256=baRO6Q44GWrS8h2d5sYcwrQSoRlQOakYv-Sof1oVbJA,21004665
+PyTAT.libs/libopenblasp-r0-52d5fd6e.3.9.so,sha256=J8_tlKRVNogx1CHm2aS3Y2r8JTkn5_f2y6ephZRQCR8,29262177
+PyTAT.libs/libgfortran-c4ef5775.so.5.0.0,sha256=1NX5M7jynUsnhwyQb_3y2AWGUlXndgKPpy85EZ8H7wY,1892585
+PyTAT.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+PyTAT.libs/libquadmath-1b17c16b.so.0.0.0,sha256=rFF-dkyIYN0bRtl4Gk381TnLbxaY1iifH_BmSbFwF6I,235681
+PyTAT.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+PyTAT-0.3.13a4.dist-info/WHEEL,sha256=fLM5crl3EP7egTL52EQ26kY6iZ86IJ_sbzWcvS6w_CA,111
+PyTAT-0.3.13a4.dist-info/RECORD,,
+PyTAT-0.3.13a4.dist-info/top_level.txt,sha256=NEy1NX8IzL0WkAHS2iFfEQwvqjO69-_nlAY7pqdmyWs,6
+PyTAT-0.3.13a4.dist-info/METADATA,sha256=ONZ2SA7N39P_L1UO2O0eKSk3hXjyw-pnr5J2Rj3fmIw,24024
