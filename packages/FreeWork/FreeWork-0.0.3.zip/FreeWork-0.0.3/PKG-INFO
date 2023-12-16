@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: FreeWork
+Version: 0.0.3
+Summary: 简单又实用的office操作函数！(Simple and practical office operation functions!)
+Author: Jhonie King(王骏诚)
+Author-email: queenelsaofarendelle2022@gmail.com
+License: MIT License
+Keywords: python,Office,Excle,Word,File's operation
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.txt
+Requires-Dist: openpyxl
+Requires-Dist: python-docx
+Requires-Dist: pytest-shutil
+
+由于restructedText的兼容性原因，目前暂时无法上传详细介绍，我们将在下一个个版本中发布CSDN的连接，那里将会有中英文双语的详细介绍！敬请期待。
+Due to compatibility issues with reconstructedText, we are currently unable to upload a detailed introduction. We will release the CSDN connection in the next version, where there will be a detailed introduction in both Chinese and English! Stay tuned.
