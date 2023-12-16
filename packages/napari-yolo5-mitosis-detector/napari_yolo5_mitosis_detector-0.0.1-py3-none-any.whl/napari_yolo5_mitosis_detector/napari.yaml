@@ -1,0 +1,17 @@
+name: napari-yolo5-mitosis-detector
+display_name: Yolo5 Mitosis Detector
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation"]
+contributions:
+  commands:
+    - id: napari-yolo5-mitosis-detector.make_yolov5_qwidget
+      python_name: napari_yolo5_mitosis_detector:MitosisYolov5Widget
+      title: Make example QWidget
+  readers:
+  writers:
+  sample_data:
+  widgets:
+    - command: napari-yolo5-mitosis-detector.make_yolov5_qwidget
+      display_name: NY5MD
