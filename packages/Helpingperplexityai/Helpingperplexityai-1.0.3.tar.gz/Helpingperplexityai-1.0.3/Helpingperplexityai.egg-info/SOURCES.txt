@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Helpingperplexityai/__init__.py
+Helpingperplexityai.egg-info/PKG-INFO
+Helpingperplexityai.egg-info/SOURCES.txt
+Helpingperplexityai.egg-info/dependency_links.txt
+Helpingperplexityai.egg-info/requires.txt
+Helpingperplexityai.egg-info/top_level.txt
