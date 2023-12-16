@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: axya-whisper
+Version: 0.1.41
+Requires-Python: >=3.6
+Requires-Dist: pywin32
+Requires-Dist: keyring
+Requires-Dist: requests
