@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fileunity_seqreads"
+version = "0.1.0"
+description = "fileunity_seqreads"
+readme = "README.rst"
+authors = [
+    { name = "Johannes", email = "johannes-programming@posteo.org" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = [
+    "Bio>=1.6",
+    "fileunity>=1.3",
+    "seqreads>=0.1",
+]
+requires-python = ">=3.11"
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Download = "https://pypi.org/project/fileunity-seqreads/#files"
+Source = "https://github.com/johannes-programming/fileunity_seqreads"
+
