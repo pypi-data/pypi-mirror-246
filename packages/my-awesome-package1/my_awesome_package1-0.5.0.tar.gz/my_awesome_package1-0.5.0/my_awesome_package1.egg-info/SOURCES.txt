@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+my_awesome_package1/__ini__.py
+my_awesome_package1/main.py
+my_awesome_package1/mymain.py
+my_awesome_package1.egg-info/PKG-INFO
+my_awesome_package1.egg-info/SOURCES.txt
+my_awesome_package1.egg-info/dependency_links.txt
+my_awesome_package1.egg-info/top_level.txt
