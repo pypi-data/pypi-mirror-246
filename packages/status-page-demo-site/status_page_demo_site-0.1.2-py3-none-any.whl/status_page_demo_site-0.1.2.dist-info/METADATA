@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: status-page-demo-site
+Version: 0.1.2
+Summary: HerrTxbias status_page_demo_site
+Author-email: HerrTxbias <admin@herrtxbias.net>
+License: MIT
+Keywords: Status-Page,HerrTxbias,Plugin
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Status-Page Demo-Site Plugin
+
+- [Status-Page Demo-Site Plugin](#status-page-demo-site-plugin)
+  - [Introduction](#introduction)
+
+## Introduction
+This Plugin is for our Demo Status-Page only. If you enable this Plugin, everyone will be able to create a user with superuser permissions.

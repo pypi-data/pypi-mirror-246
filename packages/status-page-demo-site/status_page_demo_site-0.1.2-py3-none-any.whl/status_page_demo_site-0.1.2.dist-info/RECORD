@@ -1,0 +1,10 @@
+status_page_demo_site/__init__.py,sha256=ovfAXCcvro6buKWNafqSqJAc9N8bZS_El61QywplzVE,815
+status_page_demo_site/forms.py,sha256=P5t3eHPIxE4AMR_ReAOJmZ_hFLWZuJNPrmJf7J0JcKo,277
+status_page_demo_site/urls.py,sha256=kYvHif6ll3m_9JirxcRkAyDlxRPOYdYmtYhz7TmO4Ww,135
+status_page_demo_site/views.py,sha256=EFOPmEG1EBDRu1ZtoP16oTtAuPOJWKc8olbGDRwEUII,2060
+status_page_demo_site/templates/demo_login.html,sha256=pokIjE_1nexkjBBrp-qeaOXd8ALUJeNNlPUjexCAjpA,2168
+status_page_demo_site/tests/__init__.py,sha256=7uSQU3D2jTg7FFR268792CoSqFqfFJ2ylfTcYWqni4Y,63
+status_page_demo_site-0.1.2.dist-info/METADATA,sha256=q23BcAFIsf-u3fT53dvOB0l8NV0UyE5NKRlVGglWMY4,607
+status_page_demo_site-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+status_page_demo_site-0.1.2.dist-info/top_level.txt,sha256=QWkqNnPV39zkadFUrA4YL4pgjeTaXmDqks03nV6D3vU,22
+status_page_demo_site-0.1.2.dist-info/RECORD,,
