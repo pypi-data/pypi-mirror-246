@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+parse_le_beacon.egg-info/PKG-INFO
+parse_le_beacon.egg-info/SOURCES.txt
+parse_le_beacon.egg-info/dependency_links.txt
+parse_le_beacon.egg-info/entry_points.txt
+parse_le_beacon.egg-info/requires.txt
+parse_le_beacon.egg-info/top_level.txt
+src/__init__.py
+src/parse-le-beacon.py
