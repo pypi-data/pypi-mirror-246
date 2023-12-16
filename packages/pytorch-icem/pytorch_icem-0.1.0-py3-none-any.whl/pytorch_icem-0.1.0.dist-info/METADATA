@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: pytorch-icem
+Version: 0.1.0
+Summary: Improved Cross Entropy Method (iCEM) implemented in pytorch
+Author-email: Sheng Zhong <zhsh@umich.edu>, Thomas Power <tpower@umich.edu>
+Maintainer-email: Sheng Zhong <zhsh@umich.edu>, Thomas Power <tpower@umich.edu>
+License: Copyright (c) 2023 University of Michigan ARM Lab
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        of the Software, and to permit persons to whom the Software is furnished to do
+        so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Project-URL: Homepage, https://github.com/UM-ARM-Lab/pytorch_icem
+Project-URL: Bug Reports, https://github.com/UM-ARM-Lab/pytorch_icem/issues
+Project-URL: Source, https://github.com/UM-ARM-Lab/pytorch_icem
+Keywords: icem,mpc,pytorch,control,robotics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: colorednoise
+Requires-Dist: arm-pytorch-utilities >=0.4
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: gym ; extra == 'test'
+Requires-Dist: pygame ; extra == 'test'
+Requires-Dist: pyglet ==1.5.27 ; extra == 'test'
+Requires-Dist: window-recorder ; extra == 'test'
+
+# PyTorch MPPI Implementation
+This repository implements the improved Cross Entropy Method (iCEM) 
+with approximate dynamics in pytorch, from [this paper](https://martius-lab.github.io/iCEM/). 
+
+MPPI typically requires actual
+trajectory samples, but [this paper](https://martius-lab.github.io/iCEM/)
+showed that it could be done with approximate dynamics (such as with a neural network)
+using importance sampling.
+
+Thus it can be used in place of other trajectory optimization methods
+such as the Cross Entropy Method (CEM), or random shooting.
+
+
+# Related projects
+- [pytorch CEM](https://github.com/LemonPi/pytorch_cem) - alternative sampling based MPC
+- [pytorch MPPI](https://github.com/UM-ARM-Lab/pytorch_mppi) - alternative sampling based MPC 
+- [iCEM](https://github.com/martius-lab/iCEM) - original paper's numpy implementation and experiments code
+
+
+# Installation
+```shell
+pip install pytorch-icem
+```
+for running tests, install with
+```shell
+pip install pytorch-icem[test]
+```
+for development, clone the repository then install in editable mode
+```shell
+pip install -e .
+```
+
+# Usage
+See `tests/pendulum_approximate_continuous.py` for usage with a neural network approximating
+the pendulum dynamics. Basic use case is shown below
+
+```python
+from pytorch_icem import iCEM
+
+# create controller with chosen parameters
+ctrl = icem.iCEM(dynamics, terminal_cost, nx, nu, sigma=sigma,
+                 warmup_iters=10, online_iters=10,
+                 num_samples=N_SAMPLES, num_elites=10, horizon=TIMESTEPS, device=d, )
+
+# assuming you have a gym-like env
+obs = env.reset()
+for i in range(100):
+    action = ctrl.command(obs)
+    obs, reward, done, _, _ = env.step(action.cpu().numpy())
+```
+
+# Requirements
+- pytorch (>= 1.0)
+- `next state <- dynamics(state, action)` function (doesn't have to be true dynamics)
+    - `state` is `K x nx`, `action` is `K x nu`
+- `trajectory cost <- cost(state, action)` function for the whole state action trajectory, T is the horizon
+    - `cost` is `K x 1`, state is `K x T x nx`, `action` is `K x T x nu`
+
+# Features
+- Parallel/batch pytorch implementation for accelerated sampling
