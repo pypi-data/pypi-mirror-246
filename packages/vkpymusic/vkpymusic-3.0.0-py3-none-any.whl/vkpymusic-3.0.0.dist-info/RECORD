@@ -1,0 +1,14 @@
+LICENSE,sha256=C0bUHLulmwZf1_d27---9Ru8bVrhRQJMJuvyRe2alkY,1077
+vkpymusic/Client.py,sha256=5UXBgzrKCYcPJyRI_REBST33DCRE3kq7pmrNrHYIVEY,430
+vkpymusic/Logger.py,sha256=hqPhP-dqRodmLG0ZIenpLbqjUKY5z5nzO-YaBua-goc,1059
+vkpymusic/Playlist.py,sha256=QoFM187ievSE2nVsvvCy6RaqYwX77u6fXDiPvDV08mc,967
+vkpymusic/Service.py,sha256=c-blH2WAVe21pbmhoENFrNeW-jguLHVVoBMVHqZq2V0,15412
+vkpymusic/ServiceAsync.py,sha256=h983xStUu6yMp0Fbhp_RmGPb55biK20CjErEYO3MmXI,16407
+vkpymusic/Song.py,sha256=hgTYr688dnRcAW2odTrzL8zzkH2GjbYnltaf33HZ-7M,1017
+vkpymusic/TokenReceiver.py,sha256=aZImQ4YIHIUXvuYDQKl7aHpyX0-qZC00xNAReHq7_JU,8350
+vkpymusic/TokenReceiverAsync.py,sha256=08HExG9mz_SKXcQdnhRwj6XfawoApH3UULQuePoyI6A,7377
+vkpymusic/__init__.py,sha256=PQYVmG72w5ErAO6a4WWrRvGAVOjQ8BmUgF5XfoHTaXs,243
+vkpymusic-3.0.0.dist-info/LICENSE,sha256=C0bUHLulmwZf1_d27---9Ru8bVrhRQJMJuvyRe2alkY,1077
+vkpymusic-3.0.0.dist-info/METADATA,sha256=LbEuZZPAl06W0BOTHTxeTeLz_xj3DyiGGj2CaJLDHGY,6377
+vkpymusic-3.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+vkpymusic-3.0.0.dist-info/RECORD,,
