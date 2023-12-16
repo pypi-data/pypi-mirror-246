@@ -1,0 +1,19 @@
+{
+  "selected_pack": "custom",
+  "text_size": "20",
+  "font_path": "ui_resources\\fonts\\NotoSans-Regular.ttf",
+  "light_mode_text_color": "#583864",
+  "light_mode_bg_mode": "Image",
+  "light_mode_bg_color": "#96d4ff",
+  "light_mode_image_path": "ui_resources\\background_images\\light-bg.jpg",
+  "dark_mode_text_color": "#b5b5b5",
+  "dark_mode_bg_mode": "Image",
+  "dark_mode_bg_color": "#3a003a",
+  "dark_mode_image_path": "ui_resources\\background_images\\dark-bg.jpg",
+  "cowsay?": 0,
+  "cowsay_char": "tux",
+  "refresh_int": "30",
+  "refresh_unit": "minutes",
+  "start_with_os?": 0,
+  "set_as_wallpaper?": 0
+}
