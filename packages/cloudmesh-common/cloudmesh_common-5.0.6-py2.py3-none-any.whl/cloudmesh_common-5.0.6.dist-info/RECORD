@@ -1,0 +1,10 @@
+cloudmesh/common/bin/create-conda.sh,sha256=wWGDrpM5fQ5clHe6Nplff2JgYwAMI7Hjs2H7JMypw6Q,946
+cloudmesh/common/bin/readme.py,sha256=nIA4ECUxnUpHJcKuTbLq0pg-3hXG9L__j9rucJHw32Y,1903
+cloudmesh/common/bin/tag-rm.py,sha256=h6PdJwBJYIYqWbMPgZ97p_fAYQEmYXVfx5trhlwbmG8,1145
+cloudmesh/common/bin/win-setup.bat,sha256=et3SyV9aj1JJ6N-aPEokzpxnun1AhjrbWMR152Bt0Qc,1310
+cloudmesh_common-5.0.6.dist-info/AUTHORS,sha256=q1GTN2J2YJYbyd47i2PBLpsu7EJnBM98rdu8xFQiXcI,318
+cloudmesh_common-5.0.6.dist-info/LICENSE,sha256=g8MzEIFSMQbc7dOFLonpIA3yEcrSmMcka7VmSlgQeOk,842
+cloudmesh_common-5.0.6.dist-info/METADATA,sha256=1XF5nEGTVktTtQi9llKqS-DaFVXDRD_XU7fiGP8lLUk,7802
+cloudmesh_common-5.0.6.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cloudmesh_common-5.0.6.dist-info/top_level.txt,sha256=aTw_KEhKv-8X8yWzikhSTeYlXkcauZxg_98rOi1SJHg,10
+cloudmesh_common-5.0.6.dist-info/RECORD,,
