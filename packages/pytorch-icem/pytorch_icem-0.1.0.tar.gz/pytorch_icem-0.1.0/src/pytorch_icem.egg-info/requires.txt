@@ -1,0 +1,11 @@
+torch
+numpy
+colorednoise
+arm-pytorch-utilities>=0.4
+
+[test]
+pytest
+gym
+pygame
+pyglet==1.5.27
+window-recorder

@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pytorch_icem/__init__.py
+src/pytorch_icem/icem.py
+src/pytorch_icem.egg-info/PKG-INFO
+src/pytorch_icem.egg-info/SOURCES.txt
+src/pytorch_icem.egg-info/dependency_links.txt
+src/pytorch_icem.egg-info/requires.txt
+src/pytorch_icem.egg-info/top_level.txt
