@@ -1,0 +1,9 @@
+fx_pairs/backtest.py,sha256=Pu1mLVazcQJZLvxl6yiJajHkb51Or-E7gs8myXflB7Y,1486
+fx_pairs/instruments.py,sha256=RV7MlbQUHcy6m-P8CLMWUqpz_kFpbFAxgaIiv1kgLZM,2305
+fx_pairs/prices_etl.py,sha256=vyV6dno7bG1QvyCsrdNljFdV03x7f_QqO2q4yA_2s5o,5247
+fx_pairs/strategy.py,sha256=JNeL8Hx9UCqO5aqGR0VeiIsjJOPCOhgVEMjyoMwwIlI,1054
+fx_pairs/tradingo.py,sha256=9Nqmd_suRMuM1Xfb2QSvK_F8niSZU-ItoZhP2D8wYC4,570
+fx_pairs-0.0.3.dist-info/METADATA,sha256=GqrTZAsMT-gb52T4zkIzTT3xn1vZMaiirHrdVhIxWNQ,728
+fx_pairs-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fx_pairs-0.0.3.dist-info/top_level.txt,sha256=JPwa7zFzyGGzSH8ZZ2sdWystGp-1I0L1IvJRM3_zyhQ,9
+fx_pairs-0.0.3.dist-info/RECORD,,
