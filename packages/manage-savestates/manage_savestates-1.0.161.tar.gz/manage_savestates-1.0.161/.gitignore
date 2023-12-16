@@ -1,0 +1,6 @@
+sd-backup/.DS_Store
+.DS_Store
+src/resources/debug.log
+src/manage_savestates/__pycache__
+src/manage_savestates/pickles/backups_path.txt
+src/manage_savestates/pickles/dirs.txt
