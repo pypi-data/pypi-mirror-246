@@ -1,0 +1,7 @@
+PyLBFGS-0.2.0.15.dist-info/RECORD,,
+PyLBFGS-0.2.0.15.dist-info/LICENSE,sha256=qxHO-mD085Ir_4DisgRGhhP8botSJHLUY9xoUvu_Z30,1114
+PyLBFGS-0.2.0.15.dist-info/WHEEL,sha256=2rnFQKN1y4ODxAzmbuA5Z6aEng-PoJTYpqGpnJDGdxw,111
+PyLBFGS-0.2.0.15.dist-info/top_level.txt,sha256=FtgQ3BG8FsjQZvyhTpVY4fsmrML3eIMLZTBR8cxBVr0,6
+PyLBFGS-0.2.0.15.dist-info/METADATA,sha256=emCjLK-ricbSgM8hxfkA7hr57-xTz5MOwbF-nXdklU8,1873
+lbfgs/_lowlevel.cpython-311-darwin.so,sha256=ub9nhNZ7DsQPhkD1xahBM3d4C42Du6t_3LTjE9IQwhs,177648
+lbfgs/__init__.py,sha256=xsZq-B35bt3nGK5LJkMMZ7KuHNChsnYV96E5jQi8Nmc,9248
