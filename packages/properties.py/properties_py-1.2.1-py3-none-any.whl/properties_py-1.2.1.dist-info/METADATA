@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: properties.py
+Version: 1.2.1
+Summary: Module for reading/writing properties-files.
+Home-page: https://github.com/romanin-rf/properties.py
+License: MIT
+Keywords: properties,java,io,file,read,write
+Author: Romanin
+Author-email: semina054@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/romanin-rf/properties.py
+Description-Content-Type: text/markdown
+
+# properties.py
+## Description
+Module for reading/writing properties-files.
+
+## Installation
+```shell
+pip install -U properties.py
+```
+
+## Usage
+#### Code
+```python
+import properties
+
+user = {"name": "NoName", "age": -1, "sex": "M", "data": {"region": 39, "keywords": ["man", "human", 14.88]}}
+
+with open("test.properties", "w", encoding="utf-8", errors="ignore") as file:
+    properties.dump(user, file)
+
+with open("test.properties", "r", encoding="utf-8", errors="ignore") as file:
+    data = properties.load(file)
+
+print(data)
+```
+#### Output
+```python
+{'name': 'NoName', 'age': -1, 'sex': 'M', 'data': {'region': 39, 'keywords': ['man', 'human', 14.88]}}
+```

@@ -1,0 +1,10 @@
+properties/__init__.py,sha256=TyZpnwaqpr90RBw_XwlZSzz8UIFlMr3LUf8msaIEt7o,121
+properties/__main__.py,sha256=6adnuFj5tF7M23UuundZVrUYh8Uuk0XomG-MiYhpopc,374
+properties/decoder.py,sha256=znKOm1S2_jcPlqR1Yun1ZaA6Y7zfEDOy42NxywsD394,1148
+properties/encoder.py,sha256=P7r1DdPNQ9BKSE_bwKUPaV6TwS3nYqDZpNLwZck1cjM,812
+properties/functional.py,sha256=sot_uu8jGwmI8IyuzCUoLvRTXf61FHqjaTWk6iw7VwA,829
+properties/properties.py,sha256=KlSWE_pc7P-E1PVI0RvonT6iHgysPko_KM339t3XgDU,1106
+properties_py-1.2.1.dist-info/LICENSE,sha256=z1l6gbEIzBQBCsgMwjDJKHuqSSYy5KKM8dWdV5fwR64,1085
+properties_py-1.2.1.dist-info/METADATA,sha256=O82Y255mkvr_YOzQguIJVJlyvmDBTD_uhYl6u359d3A,1638
+properties_py-1.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+properties_py-1.2.1.dist-info/RECORD,,
