@@ -1,0 +1,7 @@
+quickstockdata/__init__.py,sha256=KJl6gVVpaWPueJ_dmRPPHQ9w4HCjePLk5fv9kFgUsmM,184
+quickstockdata/indian.py,sha256=pAsKhPHCG2yaoiGalAq0p2QyDBb6UNX-tNaxcmhCTxE,125198
+quickstockdata/stock_apis.py,sha256=hdO3-YD083OcrfI9B_PEZdneawAQFwrcNoYR9b0qve8,4641
+quickstockdata/usa.py,sha256=ZAcdekXTv32KFbTTO4CJS1XyjZwp9fMFPFnCH6qywSs,542291
+quickstockdata-0.1.7.dist-info/METADATA,sha256=QEOew2u3-otLWXnZTFwLTRCkJ_Hy0Rka8W_KK9c_-HQ,1955
+quickstockdata-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+quickstockdata-0.1.7.dist-info/RECORD,,
