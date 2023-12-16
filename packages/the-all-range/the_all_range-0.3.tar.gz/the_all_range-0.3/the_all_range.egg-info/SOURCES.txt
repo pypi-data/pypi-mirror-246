@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+the_all_range.egg-info/PKG-INFO
+the_all_range.egg-info/SOURCES.txt
+the_all_range.egg-info/dependency_links.txt
+the_all_range.egg-info/top_level.txt
