@@ -1,0 +1,8 @@
+README.md
+setup.py
+FtpBrutef0rxr.egg-info/PKG-INFO
+FtpBrutef0rxr.egg-info/SOURCES.txt
+FtpBrutef0rxr.egg-info/dependency_links.txt
+FtpBrutef0rxr.egg-info/entry_points.txt
+FtpBrutef0rxr.egg-info/requires.txt
+FtpBrutef0rxr.egg-info/top_level.txt
