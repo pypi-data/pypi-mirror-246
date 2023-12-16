@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+housemate_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+housemate_app/housemate.py,sha256=HV5fEOeQ35tt5zk86XZnBMoE2Z7cq1r-NWlqiVOtG20,18381
+housemate_app/my_property/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+housemate_app/my_property/property.py,sha256=LRO4TjAG5jDea0u3pIWKeah_-blz5pjqJDeNeXA8RaM,1253
+housemate_app/my_property/purchase.py,sha256=0FPK8Q60cJdnF8HcW2drNHAaJniJ2eiLhGyU0OFqks4,4916
+housemate_app/my_property/rental.py,sha256=1IbuVwQnHjpxFS8NyRqXYTuBWEuCOQJy1St62pMTeSQ,4830
+housemate_app/user/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+housemate_app/user/security.py,sha256=joO8-e7ON6k_i1M74Sp9bGg0LO9gAsvyM3QZfMcrwOc,4905
+housemate_app/user/userlogin.py,sha256=qAdTk4EAWG2skbRpfY_acwjupI9-cgXUw6Mv5xYoCRU,4447
+housemate_app/user/userprofile.py,sha256=ntVIopYh5DirRFeUFS9IZ74OJpza-zqTooyB6JMZBoI,4261
+HouseMate-0.0.1.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+HouseMate-0.0.1.dist-info/METADATA,sha256=XLB7CRN3FPrjXeCDN9__c3dntW--KljYU1owyGJ7KaY,9791
+HouseMate-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+HouseMate-0.0.1.dist-info/top_level.txt,sha256=-dEC_bopNPci_cbr8alfpLaTl4lYSwocYGj1Nm7mgZk,23
+HouseMate-0.0.1.dist-info/RECORD,,
