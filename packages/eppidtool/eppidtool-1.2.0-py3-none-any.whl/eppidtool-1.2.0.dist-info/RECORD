@@ -1,0 +1,10 @@
+eppidtool/__init__.py,sha256=T2VErhZ_iKMA1a5JG36lGYu4QCSZvAj_IPAAShb5vm0,172
+eppidtool/__main__.py,sha256=0R69kMLopBXwWwgiq_kB8vdvUXHWF_95iRIrPYMtidg,103
+eppidtool/eppid.py,sha256=ZY9e5-7C3NpuxfRiWiQp2i5_ETrRodVK6HGJmiXb1oY,1653
+eppidtool/main.py,sha256=DAGjHnyz8k9HlD-DFDgYGnOZJqAcWPhqtfz0pYS4i9I,1877
+eppidtool/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eppidtool-1.2.0.dist-info/METADATA,sha256=7xkh8cM5VxDvudUKiQinW8OWvude85qUTVNa98HqHpw,2757
+eppidtool-1.2.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+eppidtool-1.2.0.dist-info/entry_points.txt,sha256=z9QB1Wt9ZsYncM_vpDdGk5NeV65lZ9RxJbJ02p1KkXU,54
+eppidtool-1.2.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+eppidtool-1.2.0.dist-info/RECORD,,
