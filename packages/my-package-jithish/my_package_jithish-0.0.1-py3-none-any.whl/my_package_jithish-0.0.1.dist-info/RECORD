@@ -1,0 +1,11 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/cities.json,sha256=J8Gs1s-SvE2m0G_ibg1LIW1nSx1SbaONvLVMYx1Yvyw,775
+package/file.py,sha256=aVssQyOddyPCiM8kql6nblNjGyXUJjcUA5zM8xkzlUo,90
+package/states_info.py,sha256=c42TJENV8pueY4E4EkV4sOES8Fo7jlSoULmrvafT42c,548
+package/my_folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/my_folder/my_nested_file.py,sha256=MR-oASnC7CNe4rerXss80yvfgqTWs5gX69Uv4q_KU6w,132
+my_package_jithish-0.0.1.dist-info/LICENSE,sha256=rCysRfR9umGmLb4WmAxqgVkC5eIemyj7SGrTyGSqHzk,1066
+my_package_jithish-0.0.1.dist-info/METADATA,sha256=q2etrMeTmjKTbEc7Gtcp-KlnPflDHO7uOriSo533xhY,704
+my_package_jithish-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+my_package_jithish-0.0.1.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+my_package_jithish-0.0.1.dist-info/RECORD,,
