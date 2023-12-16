@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: static-sitemap
+Version: 0.0.1
+Summary: Create a sitemap from an url
+Author-email: n4n5 <its.just.n4n5@gmail.com>
+Project-URL: Homepage, https://github.com/its-just-nans/static-sitemap
+Project-URL: Bug Tracker, https://github.com/its-just-nans/static-sitemap/issues
+Keywords: sitemap,static,python,static-sitemap,static_sitemap,generator,sitemap-generator
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Static-sitemap
+
+## How to use
+
+```sh
+# install
+python -m pip install static_sitemap
+
+python -m static_sitemap https://my-static-website.com
+```
+
+## Options
+
+- `--verbose` : Display URLs
+- `--quiet` : Display Nothing
+- `--sitemap` : Create a `sitemap.xml` file
+- `--rmError` : Delete incorrect link in the arra
+- `--css` : check css file (useless)
+- `--json` : check json file (useless)
+- `--html` : to display the html from requests
+
+## Others files
+
+- `other.html` is useless
