@@ -1,0 +1,7 @@
+pandas
+requests
+spacy==3.4.2
+tokenizers==0.12.1
+importlib-metadata<=3.999,>=3.7.0
+typing-extensions<=3.999,>=3.7.4
+transformers==4.21.3
