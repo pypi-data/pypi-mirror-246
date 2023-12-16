@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+akash_basic_calculator.egg-info/PKG-INFO
+akash_basic_calculator.egg-info/SOURCES.txt
+akash_basic_calculator.egg-info/dependency_links.txt
+akash_basic_calculator.egg-info/top_level.txt
