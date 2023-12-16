@@ -1,0 +1,24 @@
+[build-system]
+build-backend = "cmeel"
+requires = ["cmeel[build]", "cmeel-spirv-tools"]
+
+[project]
+description = "cmeel distribution for glslang"
+license = "BSD-3-Clause"
+name = "cmeel-glslang"
+requires-python = ">= 3.8"
+version = "13.1.1"
+
+[project.urls]
+homepage = "https://github.com/cmake-wheel/cmeel-glslang"
+repository = "https://github.com/cmake-wheel/cmeel-glslang.git"
+upstream = "https://github.com/KhronosGroup/glslang"
+
+[tool.cmeel]
+build-number = 0
+configure-args = ["-DBUILD_SHARED_LIBS=ON", "-DGLSLANG_TESTS=ON", "-DALLOW_EXTERNAL_SPIRV_TOOLS=ON"]
+has-sitelib = false
+source = "glslang"
+
+[tool.tomlsort]
+all = true
