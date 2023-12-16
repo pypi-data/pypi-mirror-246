@@ -1,0 +1,14 @@
+# Network
+aiohttp
+websockets
+tornado
+# Model Client
+openai
+httpx
+erniebot
+zhipuai
+# google-generativeai
+# Format
+PyYAML
+# Search
+duckduckgo_search
