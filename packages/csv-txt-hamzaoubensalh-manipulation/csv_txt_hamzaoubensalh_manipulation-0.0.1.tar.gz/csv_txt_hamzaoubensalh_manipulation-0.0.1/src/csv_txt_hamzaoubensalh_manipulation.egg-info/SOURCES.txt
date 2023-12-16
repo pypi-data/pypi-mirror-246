@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/csv_txt_hamzaoubensalh_manipulation.egg-info/PKG-INFO
+src/csv_txt_hamzaoubensalh_manipulation.egg-info/SOURCES.txt
+src/csv_txt_hamzaoubensalh_manipulation.egg-info/dependency_links.txt
+src/csv_txt_hamzaoubensalh_manipulation.egg-info/top_level.txt
