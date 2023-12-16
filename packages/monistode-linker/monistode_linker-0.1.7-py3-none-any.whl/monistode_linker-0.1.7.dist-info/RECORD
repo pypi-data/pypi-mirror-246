@@ -1,0 +1,7 @@
+monistode_linker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monistode_linker/cli.py,sha256=LqyqrtaNHDhOUDJUgUQ3nHFFMwtqwK30eTcsJvJhSVc,2184
+monistode_linker/linker.py,sha256=HEj6gwHcnd1yu4-2btpqED-5m2r-sdIt1am98m_KsSM,9786
+monistode_linker-0.1.7.dist-info/METADATA,sha256=vSa6fG8_VbemWECY3aH8_IIrhmEPRKRYPrdWwp5_MrU,450
+monistode_linker-0.1.7.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+monistode_linker-0.1.7.dist-info/entry_points.txt,sha256=X4YCdMsWa3hEBw84FAsZ7D_y5XTIaLZILIvTo7poOr0,86
+monistode_linker-0.1.7.dist-info/RECORD,,
