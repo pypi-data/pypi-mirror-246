@@ -1,0 +1,11 @@
+
+[dev]
+black
+coverage
+mypy
+pdm
+pdoc3
+pyright
+pytest-cov
+pytest
+ruff
