@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: avalonia-net60
+Version: 0.1.0
+Summary: avalonia package
+Author: XiangQinxi
+Author-email: XiangQinxi@outlook.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Avalonia .NET 6.0
+
+提供Avalonia编译的`.NET 6.0`的包
+
+```Bash
+pip install avalonia-net60
+```
+
+安装后会包含在`avalonia`包中
+
