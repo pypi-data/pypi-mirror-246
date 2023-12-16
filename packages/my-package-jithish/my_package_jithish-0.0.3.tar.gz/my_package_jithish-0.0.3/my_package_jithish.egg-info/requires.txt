@@ -1,0 +1,19 @@
+numpy
+fastapi
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+my_package[release,static-code-qa,test]
+
+[release]
+build
+twine
+
+[static-code-qa]
+pre-commit
+
+[test]
+pytest
+pytest-cov
