@@ -1,0 +1,15 @@
+python_pdb/__init__.py,sha256=CHUdJvPS3l7PphMt_r17ufrpB0TIJkmifpqmTNjwh84,22
+python_pdb/aligners.py,sha256=lslEG09sMplJS2hWbWsxBBH7JyMdHz-zS_dpH7mRnR0,5873
+python_pdb/comparisons.py,sha256=j1kBQtUgBDC-72GYITGuGwlm5Pt1zXY4mmT4Iz9D97s,357
+python_pdb/entities.py,sha256=KUrk3oBj8yehZRUUJi1_UJAa2zU9g7CJiIh0qor7wEc,22480
+python_pdb/parsers.py,sha256=OJB_1HX3wkv2tPxBQlqx8L8sxHaZGCYNfNtRZkzCFYE,3366
+python_pdb/records.py,sha256=mrv9srrQ4cETKNEkMltjbK-urxrwn4sJjZ4BvWg_Mgs,1314
+python_pdb/formats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_pdb/formats/pandas.py,sha256=RoXsJj9UxGmvSleQdKsZRZUvqccaDcVCcco6YHyxZ20,2648
+python_pdb/formats/pdb.py,sha256=CVDzavJKZXV1BX_IIs-TNMVTX5QnEApBLGzfmpMgcjo,7696
+python_pdb/formats/residue.py,sha256=oBJLf4fugoIU2Pi8Hg2HKkVDWJ3Gt5GjKOWV3qUCidc,1001
+python_pdb-0.0.6.dist-info/LICENSE,sha256=NxMX0SZSIo-w4WENxZVNt--IxEE5pZe-4fbaXaaR8Ws,1525
+python_pdb-0.0.6.dist-info/METADATA,sha256=jzJtQ8_CDK_9xS2ug2luWpJgOu9xzzWdorH6Ip-wsVQ,911
+python_pdb-0.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_pdb-0.0.6.dist-info/top_level.txt,sha256=dBMrjntzkitsRLZhzXNATbo5WLCzfO9AXK1T7ezTl8k,11
+python_pdb-0.0.6.dist-info/RECORD,,

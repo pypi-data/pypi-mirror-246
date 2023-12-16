@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: python-pdb
+Version: 0.0.6
+Summary: Tools for working with Protein Data Bank Files
+Author-email: Benjamin McMaster <benjamin.mcmaster@rdm.ox.ac.uk>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: develop
+Requires-Dist: flake8 ; extra == 'develop'
+Requires-Dist: Flake8-pyproject ; extra == 'develop'
+Requires-Dist: isort ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: prysk[pytest-plugin] ; extra == 'develop'
+Requires-Dist: python-semantic-release ; extra == 'develop'
+Requires-Dist: sphinx ; extra == 'develop'
+Requires-Dist: sphinx-rtd-theme ; extra == 'develop'
+
+# PythonPDB
+Tools for working with Protein Data Bank Files
+
+## Documentation
+
+Documentation can be found at [https://benjiemc.github.io/PythonPDB/](https://benjiemc.github.io/PythonPDB/).
