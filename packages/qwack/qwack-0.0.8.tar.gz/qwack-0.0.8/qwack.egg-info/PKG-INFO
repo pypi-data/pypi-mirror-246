@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qwack
+Version: 0.0.8
+Summary: a rogue-like game of mysterious origins!
+Home-page: https://github.com/jquast/qwack
+Author: Jeff Quast
+Author-email: contact@jeffquast.com
+License: MIT
+Requires-Dist: pyyaml
+Requires-Dist: blessed
+
+qwack
+=====
+
+qwack: a quickly written hack_ (1985) variant for Python.
+
+.. _hack: https://en.wikipedia.org/wiki/Hack_%28Unix_video_game%29
