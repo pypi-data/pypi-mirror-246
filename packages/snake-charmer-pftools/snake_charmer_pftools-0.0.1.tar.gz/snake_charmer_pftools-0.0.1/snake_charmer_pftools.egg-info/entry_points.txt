@@ -1,0 +1,2 @@
+[package_tools]
+snake_charmer_docs = snake_charmer.tools.utils:list_package_tools

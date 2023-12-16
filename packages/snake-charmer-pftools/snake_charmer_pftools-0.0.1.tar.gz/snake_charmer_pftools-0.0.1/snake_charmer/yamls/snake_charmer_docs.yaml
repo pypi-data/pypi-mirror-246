@@ -1,0 +1,10 @@
+snake_charmer.tools.snake_charmer_docs.query_doc:
+  function: query_doc
+  inputs:
+    input_text:
+      type:
+      - string
+  module: snake_charmer.tools.snake_charmer_docs
+  name: Snake Charmer Docs Tool
+  description: Enables querying and generation of visualisations for semi-structured files such as Excel or CSV.
+  type: python
