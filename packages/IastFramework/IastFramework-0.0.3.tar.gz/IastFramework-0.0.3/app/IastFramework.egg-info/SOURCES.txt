@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+app/IastFramework.egg-info/PKG-INFO
+app/IastFramework.egg-info/SOURCES.txt
+app/IastFramework.egg-info/dependency_links.txt
+app/IastFramework.egg-info/requires.txt
+app/IastFramework.egg-info/top_level.txt
