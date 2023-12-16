@@ -1,0 +1,2 @@
+[console_scripts]
+pylive-played-clip = pylive_played_clip.__main__:_main
