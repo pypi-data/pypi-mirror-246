@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+QuickVisualization/__init__.py
+QuickVisualization/data_visualization.py
+QuickVisualization.egg-info/PKG-INFO
+QuickVisualization.egg-info/SOURCES.txt
+QuickVisualization.egg-info/dependency_links.txt
+QuickVisualization.egg-info/requires.txt
+QuickVisualization.egg-info/top_level.txt

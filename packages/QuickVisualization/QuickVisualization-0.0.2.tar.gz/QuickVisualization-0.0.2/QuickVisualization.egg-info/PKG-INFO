@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: QuickVisualization
+Version: 0.0.2
+Summary: A data visualization package for quick visualizations
+Author: Harika Ankathi
+Author-email: <harikaankathi7@gmail.com>
+Keywords: python,visualization
+License-File: LICENSE
+Requires-Dist: seaborn
+Requires-Dist: matplotlib>=3.0.0
+Requires-Dist: ipywidgets
