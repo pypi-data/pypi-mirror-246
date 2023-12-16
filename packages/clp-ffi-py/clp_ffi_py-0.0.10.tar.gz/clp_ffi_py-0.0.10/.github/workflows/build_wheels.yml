@@ -1,0 +1,61 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  linters:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      
+      - run: |
+          pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - run: docformatter --check --diff clp_ffi_py tests
+
+      - run: black --diff --check clp_ffi_py tests
+
+      - run: ruff check --output-format=github clp_ffi_py tests
+
+      - run: mypy clp_ffi_py tests
+
+      - run: |
+          find src/clp_ffi_py/ -type f | xargs clang-format --dry-run --Werror
+
+  build_wheels:
+    needs: [linters]
+    name: Build wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, macos-12]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Set up QEMU
+        if: runner.os == 'Linux'
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: all
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.16.2
+        env:
+          CIBW_ARCHS_LINUX: auto aarch64
+          MACOSX_DEPLOYMENT_TARGET: 10.15
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheel-${{ matrix.os }}
+          path: ./wheelhouse/*.whl
