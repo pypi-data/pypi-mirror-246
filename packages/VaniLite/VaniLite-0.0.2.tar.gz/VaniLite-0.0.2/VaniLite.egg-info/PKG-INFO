@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: VaniLite
+Version: 0.0.2
+Summary: Multi-Language Support Library for Python Projects
+Home-page: https://github.com/TelegramExtended/VaniLite
+Author: WarnerStark
+Author-email: starktechfriday@gmail.com
+Keywords: multi-language,localization,i18n,python,VaniLite,VaniLite-lite
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# VaniLite - Multi-Language Support for Your Project
+
+## Overview
+
+VaniLite is a lightweight Python library designed to simplify the implementation of multi-language support in your projects. It provides a straightforward way to manage and retrieve localized strings, making your application accessible to users in different languages.
+
+## Features
+
+- **Easy Integration**: Simply import the VaniLite class into your project, and you're ready to start using multi-language support.
+
+- **JSON and YAML Support**: VaniLite supports both JSON and YAML formats for language files, giving you flexibility in how you structure your translations.
+
+- **Dynamic String Retrieval**: Retrieve localized strings with ease, including support for dynamic formatting with arguments.
+
+## Getting Started
+
+1. **Installation**:
+
+    ```bash
+    pip install VaniLite
+    ```
+
+2. **Usage**:
+
+    ```python
+    from VaniLite import VaniLite
+
+    # Initialize VaniLite with optional parameters
+    VaniLite = VaniLite(language="en_US")
+
+    # Retrieve a localized string
+    greeting = VaniLite.retrieve_string("hello", default_string="Hello, World!")
+
+    # Use dynamic formatting
+    formatted_greeting = VaniLite.retrieve_string("greet_with_name", default_string="Hello, {}!", "John")
+    ```
+
+3. **Language Files**:
+
+    Place your language files in the `/strings/` directory. VaniLite supports both JSON and YAML files. For example, for English (en_US), you can have `en_US.json` or `en_US.yaml` with the translation key-value pairs.
+
+4. **Changing Language Dynamically**:
+
+    ```python
+    # Change the language dynamically
+    VaniLite.reload_language("fr_FR")
+    ```
+
+
+## License
+
+This project is licensed under the GNU v3.0 License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+Happy coding with multi-language support using VaniLite!
