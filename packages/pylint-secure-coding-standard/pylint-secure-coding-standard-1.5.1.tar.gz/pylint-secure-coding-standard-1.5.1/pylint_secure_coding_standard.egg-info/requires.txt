@@ -1,0 +1,7 @@
+pylint>=3.0
+
+[test]
+mock
+pytest
+pytest-cov
+pytest-mock
