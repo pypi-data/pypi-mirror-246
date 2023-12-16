@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: progxec
+Version: 0.1.0
+Author: Jaysheel
+Requires-Dist: subprocess
+Requires-Dist: os
