@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyvfw/__init__.py
+src/pyvfw.egg-info/PKG-INFO
+src/pyvfw.egg-info/SOURCES.txt
+src/pyvfw.egg-info/dependency_links.txt
+src/pyvfw.egg-info/requires.txt
+src/pyvfw.egg-info/top_level.txt

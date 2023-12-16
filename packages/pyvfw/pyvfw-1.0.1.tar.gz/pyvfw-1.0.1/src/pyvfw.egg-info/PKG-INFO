@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: pyvfw
+Version: 1.0.1
+Summary: A small Python package to change, increase, mute, or unmute the volume on Windows.
+Author: TerinalTech
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/TerinalTech/pyvfw
+Project-URL: Issues, https://github.com/TerinalTech/pyvfw/issues
+Keywords: pyvfw,volume for windows,windows,windows volume
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyVFW
+What is PyVFW?
+PyVFW stands for Python Volume For Windows. Written in Python, you can use it to change, increase, mute, or unmute volume in Windows.
+
+# Get the latest version
+~~~
+pip install pyvfw
+~~~
+
+# How to properly import
+~~~
+import pyvfw
+~~~
+
+# What modules does PyVFW use?
+In the code, PyVFW uses the following modules:
+
+`ctypes` - For accessing the `cast` and `POINTER` functions.
+
+`comtypes` - For accessing the `CLSCTX_ALL` value.
+
+`pycaw` - For accessing the `AudioUtilities`, `ISimpleAudioVolume`, and `IAudioEndpointVolume` values.
+
+# Install the modules used seperately
+
+~~~
+pip install comtypes pycaw
+~~~
+
+Or, you can install it from the requirements.txt file:
+
+~~~
+pip install -r requirements.txt
+~~~
+
+# Examples
+Calling `setVolume(...)`:
+`vol`: The exact volume to set.
+
+`max`: The maximum that the current volume must be in order for the new volume to be set.
+
+`force`: determines if **all** apps' volumes should be the same as the master volume.
+
+Actual parameters passed:
+
+`setVolume(44)` - sets the master volume to 44.
+
+`setVolume(44, max=40) or setVolume(44, 40)` - sets the master volume to 44, **if** the current volume is less than or equal to the max parameter.
+
+`setVolume(44, force=True)` - sets the master volume to 44, *and* makes all applications the same volume as the master volume.
+
+You can also use the `alignSounds` method to make all volumes the same as the master volume, without having to call `setVolume` or `incVolume`.
+
+For example, if obs64, chrome, and msedge were all open and had these volumes:
+
+Master Volume: 68%
+
+obs64: 36%
+
+Google Chrome: 64%
+
+Microsoft Edge: 52%
+
+And you wanted to make them all to the master volume, you could just call alignSounds, and the applications will have this now:
+
+Speakers (Master): 68%
+
+obs64: 68%
+
+Google Chrome: 68%
+
+Microsoft Edge: 68%

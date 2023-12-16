@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyvfw"
+version = "1.0.1"
+authors = [
+  { name="TerinalTech" },
+]
+dependencies = ['pycaw', 'comtypes']
+description = "A small Python package to change, increase, mute, or unmute the volume on Windows."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+keywords = ["pyvfw", "volume for windows", "windows", "windows volume"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+Homepage = "https://github.com/TerinalTech/pyvfw"
+Issues = "https://github.com/TerinalTech/pyvfw/issues"
