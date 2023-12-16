@@ -1,0 +1,8 @@
+dist/
+__pycache__/
+variable_registry.yaml
+.vscode/
+_build/
+test/
+metadata.yaml
+temp_img/
