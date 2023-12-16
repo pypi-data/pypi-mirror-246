@@ -1,0 +1,2 @@
+[console_scripts]
+wxinfo = pywxdump_mini.cli:console_run
