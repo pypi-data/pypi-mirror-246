@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: corsaclib
+Version: 0.0.1
+Summary: Securely managing logs the easy way
+Home-page: UNKNOWN
+Author: mvedu (Marijn van Dijk)
+Author-email: <dijkmarijnvan@gmail.com>
+License: UNKNOWN
+Description: 
+        # CorsacLib
+        The python package that manages logs for Corsac.
+        
+Keywords: python,log management,key management,files,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

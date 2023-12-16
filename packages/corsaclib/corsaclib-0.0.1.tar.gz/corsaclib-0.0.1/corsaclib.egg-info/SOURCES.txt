@@ -1,0 +1,10 @@
+README.md
+setup.py
+corsaclib/__init__.py
+corsaclib/loghandler.py
+corsaclib/utils.py
+corsaclib.egg-info/PKG-INFO
+corsaclib.egg-info/SOURCES.txt
+corsaclib.egg-info/dependency_links.txt
+corsaclib.egg-info/requires.txt
+corsaclib.egg-info/top_level.txt
