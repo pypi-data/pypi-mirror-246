@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MyLyric"
+version = "3.0.0"
+authors = [
+  { name="Ding Zedong", email="2701690963@qq.com" },
+]
+description = "A small, light lyric file process packagee"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+     "lyric",
+     "lyric processing",
+     "lyric file",
+     "lrc",
+     "lrc file",
+     "lrc processing",
+     "lrc file process",
+     "PyLrc",
+     "MyLyric",
+     "MyLrc"
+    ]
+
+
+[project.urls]
+"Homepage" = "https://github.com/Byron-Ding/MyLyric"
+"Bug Tracker" = "https://github.com/Byron-Ding/MyLyric/issues"

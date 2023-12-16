@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MyLyric
+Version: 3.0.0
+Summary: A small, light lyric file process packagee
+Home-page: https://github.com/Byron-Ding/MyLyric
+Author: Ding Zedong
+Author-email: Ding Zedong <2701690963@qq.com>
+Project-URL: Homepage, https://github.com/Byron-Ding/MyLyric
+Project-URL: Bug Tracker, https://github.com/Byron-Ding/MyLyric/issues
+Keywords: lyric,lyric processing,lyric file,lrc,lrc file,lrc processing,lrc file process,PyLrc,MyLyric,MyLrc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MyLyric
+A python modual for processing and analysising Lrc files. 
+
+```python
+import MyLyric.Lyric_file
+```
+
+Basic Functions are available, completing...
