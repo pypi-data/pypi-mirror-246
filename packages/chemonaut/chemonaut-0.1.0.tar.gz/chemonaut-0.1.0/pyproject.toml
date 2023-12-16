@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "chemonaut"
+version = "0.1.0"
+description = "An open-source library for exploring chemical and reaction space"
+authors = ["Daniel Choi <choi@ibm.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "chemonaut", format = "wheel"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+
+[tool.mypy]
+exclude = ['.venv', 'docs']
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "7.1.2"
+black = "^23.11.0"
+flake8 = "^6.1.0"
+pytest = "^7.4.3"
+pydantic = "^2.5.1"
+mypy = "^1.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: chemonaut
+Version: 0.1.0
+Summary: An open-source library for exploring chemical and reaction space
+License: MIT
+Author: Daniel Choi
+Author-email: choi@ibm.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+[banner goes here]
+
+[Badges for pypi version (0.1.0), crates version (0.1.0), python versions supported (3.8-3.12), code style (black), license (MIT), tests (passing), perhaps a doi eventually]
+
+# ```chemonaut```: An open-source library for exploring chemical and reaction space
+
+## Create molecular simulation and machine learning workflows to predict chemical properties and reactivity.
+
+```bash
+pip install chemonaut
+```
+
+Some example code:
+
+```python
+import chemonaut as cn
+# example python code
+```
