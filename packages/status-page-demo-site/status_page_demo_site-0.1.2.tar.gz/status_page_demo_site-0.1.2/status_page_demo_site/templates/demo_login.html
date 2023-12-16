@@ -1,0 +1,43 @@
+{% extends 'base/layout.html' %}
+{% load helpers %}
+{% load form_helpers %}
+
+{% block title %}
+Create User
+{% endblock %}
+
+{% block content %}
+<div style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-content: center; flex-wrap: wrap; text-align: center;">
+  <div style="font-size: 1.5rem; line-height: 2rem;">Create a Personal Demo Account</div>
+  <div>Complete the form below to create a new user and log in.</div>
+  <div>If no username/password is provided, credentials will be generated automatically.</div>
+  <div style="margin-top: 10px;"></div>
+  <div class="bg-white dark:bg-zinc-800 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+    <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      <div class="space-y-6">
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Username</label>
+          <div class="mt-1">
+            <input id="username" name="username" type="text" autocomplete="username" value="{% if form.username.value %}{{ form.username.value }}{% endif %}" class="block w-full appearance-none rounded-md border border-gray-300 dark:border-gray-700 px-3 py-2 placeholder-gray-400 dark:placeholder-gray-600 shadow-sm focus:outline-none sm:text-sm text-black">
+          </div>
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
+          <div class="mt-1">
+            <input id="password" name="password" type="password" autocomplete="current-password" class="block w-full appearance-none rounded-md border border-gray-300 dark:border-gray-700 px-3 py-2 placeholder-gray-400 dark:placeholder-gray-600 shadow-sm focus:outline-none sm:text-sm text-black">
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3 flex flex-row items-center justify-end space-x-2">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white px-2 py-1 rounded-md font-medium h-8 flex items-center">
+          Create & Sign in
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}

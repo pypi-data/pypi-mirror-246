@@ -1,0 +1,51 @@
+---
+version: '3'
+services:
+  status-page:
+    build: 
+        context: ..
+        dockerfile: development/Dockerfile
+    depends_on:
+      - postgres
+      - redis
+    env_file: ./dev.env    
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./configuration.py:/opt/status-page/statuspage/statuspage/configuration.py
+      - ../:/plugin
+  worker:
+    build:
+        context: ..
+        dockerfile: development/Dockerfile
+    command: sh -c "python manage.py rqworker"
+    depends_on:
+      - status-page
+    env_file: ./dev.env
+    volumes:
+      - ./configuration.py:/opt/status-page/statuspage/statuspage/configuration.py
+      - ../:/plugin
+  scheduler:
+    build:
+        context: ..
+        dockerfile: development/Dockerfile
+    command: sh -c "python manage.py rqscheduler"
+    depends_on:
+      - status-page
+    env_file: ./dev.env
+    volumes:
+      - ./configuration.py:/opt/status-page/statuspage/statuspage/configuration.py
+      - ../:/plugin
+  postgres:
+    image: postgres:13
+    env_file: ./dev.env    
+  redis:
+    image: redis:6
+    env_file: ./dev.env
+    command:
+      - sh
+      - -c  # this is to evaluate the $REDIS_PASSWORD from the env
+      - redis-server --appendonly yes --requirepass $$REDIS_PASSWORD  ## $$ because of docker-compose
