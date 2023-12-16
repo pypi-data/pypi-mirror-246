@@ -1,0 +1,2 @@
+[console_scripts]
+infer_license = infer_license.cmdline:main
