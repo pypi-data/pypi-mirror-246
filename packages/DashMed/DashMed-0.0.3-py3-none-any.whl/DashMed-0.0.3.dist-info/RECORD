@@ -1,0 +1,23 @@
+dashmed/Initialize.py,sha256=o_dUNiDhm0RLQVAEfK9ttpGzeozkL5U3PJzG2Xdsnbk,1218
+dashmed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dashmed/main.py,sha256=Dul2mW9JHJlkjMXRFo5oHSzUd-cU13IB8Fr6NZlNmvY,2420
+dashmed/dash/__init__ .py,sha256=jiwfcnJ20wztcvpny4SHcqmAIWK-w5tCqN9TWf0GOkw,11
+dashmed/dash/bpgraph.py,sha256=0OCUh_HHlvQV-JQrk8NYvZDSST655PPoUvjAmn4bj8k,2805
+dashmed/dash/display.py,sha256=FzADuuAK-BXL1rzgdChUcfGb9_G_Fid2qGK9GKDZTeM,3165
+dashmed/database/__init__ .py,sha256=jiwfcnJ20wztcvpny4SHcqmAIWK-w5tCqN9TWf0GOkw,11
+dashmed/database/role.py,sha256=zf5g4aDDoLeYgBAoCrkEISlui9jRREBhwixC4zYNI_0,3171
+dashmed/database/sqlite.py,sha256=HaQ9RJ9RuFHG45a4WbWWgKE45CTSvHhgnu16kRpqXZA,5600
+dashmed/patient_data/patients.csv,sha256=n7wMCxkU7iyzHCirw8D8phTILT0KoavdnzIMGwj1NyA,982
+dashmed/patient_data/patient_bp/23989_BP.csv,sha256=iOGaNbkAaRPNyxb_HHMgvEs6FE-8yexF-C2SXziuwd0,630
+dashmed/patient_data/patient_bp/30110_BP.csv,sha256=6Lhy62coli1CARe21Z3nvzE05jHaFwdeh38cdOvWfLE,565
+dashmed/patient_data/patient_bp/30111_BP.csv,sha256=0kw5a6pzUGgqqXYouM3LrBigTkjgoEQcWOaURsJoY0s,565
+dashmed/patient_data/patient_bp/33764_BP.csv,sha256=6mRyp_Mu-R_c4SFkZk6C9K8AA-_T6TpC-3LO3VPzHKA,576
+dashmed/patient_data/patient_bp/40284_BP.csv,sha256=EKyWnJT-UHa-Z9h91_EQB9p9OEopv0AhCL0Tlc_nZtA,565
+dashmed/patient_data/patient_bp/54658_BP.csv,sha256=QaO-2Kn8XcfwQkYoQ1zYU33ZOzIQdQ7WxDbNxcZOXV0,565
+dashmed/patient_data/patient_bp/57180_BP.csv,sha256=RVaND-02dzF5JMaS_RGSVr5324HGD7b4kchGkWpkymw,565
+dashmed/patient_data/patient_bp/97021_BP.csv,sha256=knlYHbe5-MxxiaMo4-5V9WS9OsKH4nm5RI1tE77n-aY,565
+DashMed-0.0.3.dist-info/LICENSE.txt,sha256=XBfERyxZ3PDCxy8bDXxk23V7lpALs7hdcAVaxeMUvFI,1093
+DashMed-0.0.3.dist-info/METADATA,sha256=xIM2kWwuKIv5ExN-zMMJH_DG5q9PGamR4ns-HzBokfo,15332
+DashMed-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+DashMed-0.0.3.dist-info/top_level.txt,sha256=j2Sq9h5DVLNkozXnpiJAwYkFIXxnCCuJIWSAhzKWOvM,8
+DashMed-0.0.3.dist-info/RECORD,,
