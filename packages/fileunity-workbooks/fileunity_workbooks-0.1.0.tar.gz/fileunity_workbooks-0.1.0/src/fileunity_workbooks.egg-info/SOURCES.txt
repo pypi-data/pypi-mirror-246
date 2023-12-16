@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/fileunity_workbooks/__init__.py
+src/fileunity_workbooks.egg-info/PKG-INFO
+src/fileunity_workbooks.egg-info/SOURCES.txt
+src/fileunity_workbooks.egg-info/dependency_links.txt
+src/fileunity_workbooks.egg-info/requires.txt
+src/fileunity_workbooks.egg-info/top_level.txt
