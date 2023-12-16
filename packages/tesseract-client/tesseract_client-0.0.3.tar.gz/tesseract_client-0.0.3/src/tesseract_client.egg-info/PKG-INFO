@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tesseract-client
+Version: 0.0.3
+Summary: Client for Tesseract API
+Author-email: Mikalai Stelmakh <mikalai.stelmakh@gmail.com>
+Project-URL: Homepage, https://gitlab-stud.elka.pw.edu.pl/mstelmak/zprp-cloud-storage
+Project-URL: Issues, https://gitlab-stud.elka.pw.edu.pl/mstelmak/zprp-cloud-storage/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: annotated-types==0.6.0
+Requires-Dist: attrs==23.1.0
+Requires-Dist: certifi==2023.7.22
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: exceptiongroup==1.2.0
+Requires-Dist: hypothesis==6.92.0
+Requires-Dist: idna==3.4
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: loguru==0.7.2
+Requires-Dist: keyring==24.3.0
+Requires-Dist: packaging==23.2
+Requires-Dist: pluggy==1.3.0
+Requires-Dist: pydantic==2.4.2
+Requires-Dist: pydantic-settings==2.0.3
+Requires-Dist: pydantic_core==2.10.1
+Requires-Dist: pytest==7.4.3
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: responses==0.24.1
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: tomli==2.0.1
+Requires-Dist: typing_extensions==4.8.0
+Requires-Dist: urllib3==2.0.7
+Requires-Dist: watchdog==3.0.0
+
+# Tesseract
