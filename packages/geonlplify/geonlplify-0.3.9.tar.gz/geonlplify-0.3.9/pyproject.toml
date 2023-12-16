@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GeoNLPlify"
+version = "0.3.9"
+authors = [
+  { name="Rémy Decoupes", email="remy.decoupes@inrae.fr" },
+]
+description = "A NLP library for data augmentation focusing on spatial information contained in text."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/remydecoupes/GeoNLPlify"
+"Bug Tracker" = "https://github.com/remydecoupes/GeoNLPlify/issues"
+"Documentation" = "https://geonlplify.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pandas = "*"
+requests = "*"
+spacy = ">=2.3.0,<=2.3.999"
+importlib-metadata = ">=3.7.0,<=3.999"
+typing-extensions = ">=3.7.4,<=3.999"
+transformers = ">=3.4.0,<=4.15.999"
