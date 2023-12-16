@@ -1,0 +1,14 @@
+asyncpg~=0.28.0
+
+[api]
+streamcast[services]
+
+[db]
+python-dotenv~=1.0.0
+psycopg2-binary~=2.9.7
+
+[prefect-agent]
+streamcast[services]
+
+[services]
+streamcast[db]
