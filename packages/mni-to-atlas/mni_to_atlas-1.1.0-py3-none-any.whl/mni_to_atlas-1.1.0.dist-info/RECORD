@@ -1,0 +1,13 @@
+mni_to_atlas/__init__.py,sha256=VWilbxJg11qb1FOtp2jpCcRmkKPx1r7QfAXWwHJ_Owk,119
+mni_to_atlas/atlas_browser.py,sha256=0z9b3QOrT22wM2JWI-oRYIAroWvgB58JWwpjeThYjAY,19132
+mni_to_atlas/atlases/AAL.nii,sha256=KSb8yY78cJ93yMyi-cHXl-uj6aGyIqjgz6cKsTE5TIA,7109489
+mni_to_atlas/atlases/AAL.txt,sha256=ndN6sLInn7BMlNGHFVY_uYAg_Bp-6kQZApzt4TzTe_8,2014
+mni_to_atlas/atlases/AAL3.nii,sha256=qkS7F2dZT1YOgRzZF_7lgzwvhDuBqP69YU2yAoSxGjQ,7109489
+mni_to_atlas/atlases/AAL3.txt,sha256=kALZF0w_ocZHKHZmPcExosWXKpAe5zpvpBewoHaRxGw,2789
+mni_to_atlas/atlases/HCPEx.nii,sha256=psaOJ2ON9LqGn3U8ka7ZumzYtW6L5NXKz7VFk2oqwrc,34120436
+mni_to_atlas/atlases/HCPEx.txt,sha256=xLag4epOGvfCp0pBL4InqbAw3IpA92v4H_0FpDHURUk,10758
+mni_to_atlas/atlases/__init__.py,sha256=pq3CHrpE65wX3-zj0zCxFtW-pnneAlFOq5EixBNoZt4,141
+mni_to_atlas-1.1.0.dist-info/METADATA,sha256=c4lDVQzA3nExPCENEvaWX4TbRjHKqkshKI6dtlsPUF4,3282
+mni_to_atlas-1.1.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+mni_to_atlas-1.1.0.dist-info/licenses/LICENSE.txt,sha256=G5sfkFNRuCM1hTZyzxrbHYdb-TxD7_Fn3vhcLm7bQUU,1095
+mni_to_atlas-1.1.0.dist-info/RECORD,,
