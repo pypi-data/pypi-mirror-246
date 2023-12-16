@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "DashMed"
+version = "0.0.1"
+authors = [
+    { name="Matthew Angoh", email="mattangoh@gmail.com" },
+    { name="Shayla Tran", email="shaylaannatran@gmail.com" },
+]
+description = "A Python package that imports patient data from .csv files into a SQLite database, creates a dashboard displaying patient data with a graph of blood pressure over time, and manages user roles with varying permissions for data access and modification."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/mattangoh/DashMed"
+Issues = "https://github.com/mattangoh/DashMed/issues"
