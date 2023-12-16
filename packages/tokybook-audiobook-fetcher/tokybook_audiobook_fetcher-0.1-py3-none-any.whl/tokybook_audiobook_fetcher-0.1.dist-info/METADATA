@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tokybook-audiobook-fetcher
+Version: 0.1
+Requires-Dist: beautifulsoup4 ==4.12.2
+Requires-Dist: requests ==2.31.0
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: urllib3 ==2.1.0
+
