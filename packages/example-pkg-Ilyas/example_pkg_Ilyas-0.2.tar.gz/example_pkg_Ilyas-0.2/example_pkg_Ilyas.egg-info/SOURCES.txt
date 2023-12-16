@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+example_pkg_Ilyas.egg-info/PKG-INFO
+example_pkg_Ilyas.egg-info/SOURCES.txt
+example_pkg_Ilyas.egg-info/dependency_links.txt
+example_pkg_Ilyas.egg-info/top_level.txt
