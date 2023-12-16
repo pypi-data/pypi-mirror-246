@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sjlang
+Version: 1.2
+Summary: it's very cool korean lang
+Home-page: https://github.com/sejin0104/sejinjin-lang
+Author: Sejinjin
+Author-email: sejinjin1101@gmail.com
+License: MIT
+Keywords: sejinjin,language,funny
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+English : https://github.com/sejin0104/sejinjin-lang/blob/main/README.md#english
+
+Korean : https://github.com/sejin0104/sejinjin-lang/blob/main/README.md#%ED%95%9C%EA%B5%AD%EC%96%B4
