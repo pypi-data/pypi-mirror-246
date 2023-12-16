@@ -1,0 +1,9 @@
+README.md
+setup.py
+sjlang/__init__.py
+sjlang/sjlang.py
+sjlang.egg-info/PKG-INFO
+sjlang.egg-info/SOURCES.txt
+sjlang.egg-info/dependency_links.txt
+sjlang.egg-info/not-zip-safe
+sjlang.egg-info/top_level.txt
