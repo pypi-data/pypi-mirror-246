@@ -1,0 +1,61 @@
+# core-processes 
+
+
+Core implementations of `process-bigraph.composite.Process()` aligning with BioSimulators simulator
+tools.
+
+
+## Getting Started (PyPI)
+
+The simulation tools that live at the heart of the Core Processes are individually installed and imported as 
+optional requirements. To interact with this repository and the related simulation tools therein, the syntax for 
+installing from the Python Package Index (PyPI) is as follows:
+
+    pip install core-processes[<SIMULATOR>]
+
+where `<SIMULATOR>` can be one of the following simulator options:
+
+    cobra 
+    copasi 
+    tellurium
+    smoldyn
+
+
+For example, if you wish to create an instance of `TelluriumProcess`, 
+the install-command would be:
+
+    pip install core-processes[tellurium]
+
+We recommend using an environment/package manager [like Conda](https://conda.io/projects/conda/en/latest/index.html) to 
+install the dependencies required for your use.
+
+
+### PLEASE NOTE:
+
+The `SmoldynProcess` process dependency installation requires the installation of Smoldyn.
+The following procedure demonstrates how to install Smoldyn using the `conda` package manager.
+
+1. Create a virtual environment:
+            
+        conda create -n smoldyn-process python=3.10 && conda activate smoldyn_process
+
+#### Linux:
+2. Install Smoldyn from PyPI:
+      
+       pip install smoldyn
+
+#### Mac:
+
+2. [Download the appropriate Mac distribution package from smoldyn.org.](https://www.smoldyn.org/download.html)
+3. Navigate to the root of the distribution folder:
+
+        cd ../smoldyn-mac-2.72
+4. `sudo -H ./install.sh`
+
+#### Windows:
+1. Follow the same steps for Mac, but for Windows.
+
+
+## TODO: Add DatabaseEmitter to this README
+
+
