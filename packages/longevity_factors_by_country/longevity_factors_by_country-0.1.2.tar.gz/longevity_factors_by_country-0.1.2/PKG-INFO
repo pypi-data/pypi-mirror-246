@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: longevity_factors_by_country
+Version: 0.1.2
+Summary: This package provides data on various factors that surround and potentially influence longevity by country. Data includes the average lifespan, healthcare expenditure, by country, education spend, and more.
+Home-page: https://github.com/QMSS-G5072-2023/rao_anjana
+License: MIT
+Author: Anjana Rao
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: psycopg2 (>=2.9.9,<3.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Project-URL: Repository, https://github.com/QMSS-G5072-2023/rao_anjana
+Description-Content-Type: text/markdown
+
+# longevity_factors_by_country
+
+This package provides data on various factors that surround and potentially influence longevity by country. Data includes the average lifespan, healthcare expenditure, by country, education spend, and more.
+
+## Installation
+
+```bash
+$ pip install longevity_factors_by_country
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`longevity_factors_by_country` was created by Anjana Rao. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`longevity_factors_by_country` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
