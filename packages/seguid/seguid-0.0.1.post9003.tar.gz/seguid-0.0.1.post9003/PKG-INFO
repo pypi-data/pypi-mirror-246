@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: seguid
+Version: 0.0.1.post9003
+Summary: Python implementation of SEGUID checksums for biological sequences
+License: MIT
+Author: BjornFJohansson
+Author-email: bjornjobb@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydivsufsort (>=0.0.12,<0.0.13)
+Description-Content-Type: text/markdown
+
+# SEGUID checksums for single or double stranded linear or circular DNA
+
+[![Documentation Status](https://readthedocs.org/projects/seguid/badge/?version=latest)](https://seguid.readthedocs.io/en/latest/?badge=latest)
+
+Install with:
+
+    pip install seguid
+
+
+use:
+
+    Python 3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:44:36)
+    [GCC 12.3.0] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> from seguid import dsseguid
+    >>> dsseguid("TATGCC", "gcatac", 1)
+    'Jv9Z9JJ0IYnG-dTPBGwhDyAqnmU'
+    >>>
+
+
+
+Run tests with pytest:
+
+	pytest
+
+without arguments in the Python directory.
