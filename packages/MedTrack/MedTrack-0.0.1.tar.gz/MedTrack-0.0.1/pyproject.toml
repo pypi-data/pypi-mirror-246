@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MedTrack"
+version = "0.0.1"
+authors = [
+  { name="Hanwen Zhang", email="wzha258@aucklanduni.ac.nz" },
+  { name="Zerui Zhang", email="zzerui96@gmail.com" }
+]
+description = "A medecine management system"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/HHWZHANG/MedTrack.git"
