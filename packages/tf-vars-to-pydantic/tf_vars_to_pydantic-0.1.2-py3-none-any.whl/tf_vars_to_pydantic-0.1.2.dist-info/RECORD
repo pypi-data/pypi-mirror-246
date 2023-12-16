@@ -1,0 +1,9 @@
+tf_vars_to_pydantic/__init__.py,sha256=KlnP6HOf_tsYrvY3KArdGhhYhHztH_siKtI1ldifTRU,144
+tf_vars_to_pydantic/_typing.py,sha256=5LklVyTJf1DPSPdosCKFifFthk5FgXf9Tt83vB-R208,325
+tf_vars_to_pydantic/convert.py,sha256=edSKVSBzs0DmoC5lpx8uxfIK7_X-sYjSjZebstP_V0I,5134
+tf_vars_to_pydantic/exceptions.py,sha256=M-97uJtPGp3wkMo0C0uI7Ejpgrb6tUON2O-YZnvkiWI,160
+tf_vars_to_pydantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tf_vars_to_pydantic-0.1.2.dist-info/LICENSE,sha256=ydFqvrkXKaeJO0zNAfdoLuguBT2avDp3jLWzOSyU14Y,1073
+tf_vars_to_pydantic-0.1.2.dist-info/METADATA,sha256=bOOeYnGxtkMnDmM-S-nm2DdEfeCSkM2gNULHBrQGvX4,4852
+tf_vars_to_pydantic-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tf_vars_to_pydantic-0.1.2.dist-info/RECORD,,
