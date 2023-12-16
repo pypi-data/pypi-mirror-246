@@ -1,0 +1,28 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools>=61.0.0", "wheel"]  # PEP 508 specifications.
+
+[tool.setuptools.package-data]
+mypkg = ["*.json"]
+
+[project]
+name = "my_package_jithish"
+authors = [
+    {name = "Josiah Carberry", email = "josiah_carberry@brown.edu"},
+]
+description = "My package description"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+version = "0.0.4"
+
+dependencies = [
+    "numpy",
+    "fastapi",
+    'importlib-metadata; python_version<"3.8"',
+]
+
+[project.optional-dependencies]
+test= ["pytest", "pytest-cov"]
+release = ["build", "twine"]
+static-code-qa = ["pre-commit"]
+dev =["my_package[test,release, static-code-qa]"]

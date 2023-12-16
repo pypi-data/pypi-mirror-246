@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+my_package_jithish.egg-info/PKG-INFO
+my_package_jithish.egg-info/SOURCES.txt
+my_package_jithish.egg-info/dependency_links.txt
+my_package_jithish.egg-info/requires.txt
+my_package_jithish.egg-info/top_level.txt
+package/__init__.py
+package/cities.json
+package/file.py
+package/states_info.py
+package/my_folder/__init__.py
+package/my_folder/my_nested_file.py
