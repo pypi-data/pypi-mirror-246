@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quantumsculpt
+Version: 0.1.0
+Summary: quantumsculpt
+Home-page: https://gitlab.tue.nl/inorganic-materials-chemistry/quantumsculpt
+Author: Ivo Filot
+Author-email: Ivo Filot <i.a.w.filot@tue.nl>
+Maintainer-email: Ivo Filot <i.a.w.filot@tue.nl>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://gitlab.tue.nl/
+Project-URL: Bug Tracker, https://gitlab.tue.nl/inorganic-materials-chemistry/quantumsculpt/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# QuantumSculpt
