@@ -1,0 +1,8 @@
+README.md
+setup.py
+thebestmaths/__init__.py
+thebestmaths/main.py
+thebestmaths.egg-info/PKG-INFO
+thebestmaths.egg-info/SOURCES.txt
+thebestmaths.egg-info/dependency_links.txt
+thebestmaths.egg-info/top_level.txt
