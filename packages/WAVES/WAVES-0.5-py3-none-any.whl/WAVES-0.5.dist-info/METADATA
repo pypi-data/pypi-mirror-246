@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: WAVES
+Version: 0.5
+Summary: Wind Asset Value Estimation System
+Author-email: Rob Hammond <rob.hammond@nrel.gov>
+Project-URL: source, https://github.com/NREL/WAVES
+Project-URL: documentation, https://nrel.github.io/WAVES/
+Project-URL: issues, https://github.com/NREL/WAVES/issues
+Project-URL: changelog, https://github.com/NREL/WAVES/blob/main/CHANGELOG.md
+Keywords: python3,wind-energy,operations-maintenance,operations-and-maintenance,balance-of-system,levelized-cost-of-energy,lcoe,aep,wakes,wake-analysis,energy-production,discrete-event-simulation,simulation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: <3.11,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: attrs
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib >=3.6
+Requires-Dist: numpy-financial >=1.0.0
+Requires-Dist: floris >=3.3
+Requires-Dist: wombat >=0.9.1
+Requires-Dist: orbit-nrel >=1.0.8
+Requires-Dist: typer[all]
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: jupyter-book ; extra == 'docs'
+Requires-Dist: myst-nb ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinxcontrib-autoyaml ; extra == 'docs'
+Requires-Dist: sphinx-click ; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: jupyterlab ; extra == 'examples'
+Requires-Dist: jupyterlab-myst ; extra == 'examples'
+
+# WAVES: Wind Asset Value Estimation System
+
+## Overview
+
+Runs analyses for offshore wind projects by utilizing ORBIT (CapEx), WOMBAT (OpEx), and FLORIS (AEP)
+to estimate the lifecycle costs using NREL's flagship technoeconomic models.
+
+## Requirements
+
+Python 3.9 or 3.10
+
+## Environment Setup
+
+Download the latest version of `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_
+for the appropriate OS. Follow the remaining `steps <https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation>`_
+for the appropriate OS version.
+
+Using conda, create a new virtual environment:
+
+```console
+conda create -n <environment_name>
+conda activate <environment_name>
+conda install -c anaconda pip
+conda config --set pip_interop_enabled true
+
+# to deactivate
+conda deactivate
+```
+
+## Installation
+
+Requires Python 3.10.
+
+For basic usage, users can install WAVES directly from PyPI, or from source for more advanced usage.
+
+### Pip
+
+`pip install waves`
+
+### From Source
+
+A source installation is great for users that want to work with the provided example, and
+potentially modify the code at a later point in time.
+
+```bash
+git clone https://github.com/NREL/WAVES.git
+cd WAVES
+pip install .
+```
+
+If working with the example, or running with Jupyter Notebooks, be sure to install the examples
+dependencies like the following:
+
+```bash
+pip install ".[examples]"
+```
+
+#### Tinkering
+
+Use the `-e` for an editable installation, in case you plan on editing any underlying code.
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+After installation, the package can imported:
+
+```console
+python
+import waves
+waves.__version__
+```
