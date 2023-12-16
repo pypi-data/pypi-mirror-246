@@ -1,0 +1,12 @@
+numpy
+pandas
+
+[develop]
+flake8
+Flake8-pyproject
+isort
+pytest
+prysk[pytest-plugin]
+python-semantic-release
+sphinx
+sphinx-rtd-theme
