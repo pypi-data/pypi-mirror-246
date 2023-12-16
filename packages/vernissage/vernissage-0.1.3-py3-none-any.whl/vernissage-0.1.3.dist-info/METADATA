@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: vernissage
+Version: 0.1.3
+Summary: Photo editing, add border and resize.
+Author: Rikles
+Author-email: dev@rikles.fr
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pillow (>=10.1.0,<11.0.0)
+Description-Content-Type: text/markdown
+
+# Vernissage
+
+## Install
+```shell
+pipx install Vernissage
+```
+
+## Run
+```shell
+vernissage 'input_file.tif' 'output_file.jpg'
+
