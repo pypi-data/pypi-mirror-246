@@ -1,0 +1,14 @@
+pyyaml
+python-dateutil
+typing-extensions
+
+[preload]
+pandas
+polars
+pyarrow
+xarray
+netCDF4
+
+[tests]
+pytest
+pytest-cov
