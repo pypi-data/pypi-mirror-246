@@ -1,0 +1,5 @@
+py-cord
+colorama
+aiosqlite
+aiohttp
+acecord
