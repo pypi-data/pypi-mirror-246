@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/viss/__init__.py
+src/viss/__main__.py
+src/viss.egg-info/PKG-INFO
+src/viss.egg-info/SOURCES.txt
+src/viss.egg-info/dependency_links.txt
+src/viss.egg-info/entry_points.txt
+src/viss.egg-info/requires.txt
+src/viss.egg-info/top_level.txt
