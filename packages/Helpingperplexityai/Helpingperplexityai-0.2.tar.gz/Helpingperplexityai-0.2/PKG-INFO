@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Helpingperplexityai
+Version: 0.2
+Summary: A simple module to use Perplexity AI in Python.
+Home-page: https://github.com/HelpingAI/HelpingAIperplexity.git
+Author: OEvortex
+License: GPLv3
+Project-URL: Source, https://github.com/HelpingAI/HelpingAIperplexity.git
+Keywords: artificial-intelligence,perplexityai,perplexity,python,api,ai
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Helpingperplexityai
+
+A simple module to use Perplexity AI in Python.
+
+## Get started:
+
+```
+python -m pip install -U Helpingperplexityai
+```
+
+## Example:
+
+```python
+from Helpingperplexityai import Perplexity
+
+prompt = input("👦: ")
+for a in Perplexity().generate_answer(prompt):
+    print(f"🤖: {a['answer']}")
+```
+
