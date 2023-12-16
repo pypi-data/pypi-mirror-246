@@ -1,0 +1,15 @@
+typedal/__about__.py,sha256=CpDqz7869cqu_aa_1jP0MU0cg3e-9NlmOm4i57TXIvg,206
+typedal/__init__.py,sha256=QQpLiVl9w9hm2LBxey49Y_tCF_VB2bScVaS_mCjYy54,366
+typedal/caching.py,sha256=53WU5J_yRLygkKoDfD0rV_dkh5oqqT--64R9Mvz050Y,7457
+typedal/cli.py,sha256=F7M9D2pu2D-FoKZJrT3K9Wmbv5_ScUR8j5jNGoTgOfk,11800
+typedal/config.py,sha256=h5JSpQalnEyWA-TLzOFnzqPpemfA3ZBoa6r_-ni6FdY,11826
+typedal/core.py,sha256=LV0Fszbmh0pojAiARD1GKj5ooxakJmmj_4ebpvZZkcs,93644
+typedal/fields.py,sha256=z2PD9vLWqBR_zXtiY0DthqTG4AeF3yxKoeuVfGXnSdg,5197
+typedal/for_py4web.py,sha256=kw44_55-dBWlYmepB7YEev5sj7tbYcgzvp-Ecc7K9_I,2230
+typedal/helpers.py,sha256=ZpHdwBMSANw-P9I5gs56Vf6GUbxGzFsIwbBvASKXX8s,6487
+typedal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typedal/types.py,sha256=5qm3PgS8DXGCu9ZTUWQiIi2XXD8gz4_4Csg_vZlu_yo,3379
+typedal-2.2.3.dist-info/METADATA,sha256=hG_bGGqzcMao-EQ6xlKtez0vZTtrkqqU-jyfkCIGnUg,7623
+typedal-2.2.3.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+typedal-2.2.3.dist-info/entry_points.txt,sha256=m1wqcc_10rHWPdlQ71zEkmJDADUAnZtn7Jac_6mbyUc,44
+typedal-2.2.3.dist-info/RECORD,,
