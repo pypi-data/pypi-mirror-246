@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: r0b0-io
+Version: 0.0.0
+Summary: Library for connecting hardware and software, like aconnect for anything.
+Author-email: Michael Suguitan <m.jp.sgtn@icloud.com>
+License: MIT License
+        
+        Copyright (c) 2023 Michael Suguitan
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Repository, https://github.com/msgtn/r0b0.git
+Requires-Python: ~=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: aiohttp==3.9.0
+Requires-Dist: aioice==0.9.0
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: annotated-types==0.5.0
+Requires-Dist: anyio==3.7.1
+Requires-Dist: async-timeout==4.0.2
+Requires-Dist: attrs==23.1.0
+Requires-Dist: av==10.0.0
+Requires-Dist: bidict==0.22.1
+Requires-Dist: bottle==0.12.25
+Requires-Dist: certifi==2023.7.22
+Requires-Dist: cffi==1.15.1
+Requires-Dist: charset-normalizer==2.1.1
+Requires-Dist: click==8.1.6
+Requires-Dist: colorzero==2.0
+Requires-Dist: crc32c==2.3.post0
+Requires-Dist: cryptography==41.0.6
+Requires-Dist: dnspython==2.2.1
+Requires-Dist: eventlet==0.33.2
+Requires-Dist: exceptiongroup==1.1.2
+Requires-Dist: fire==0.5.0
+Requires-Dist: Flask==2.2.5
+Requires-Dist: Flask-Cors==3.0.10
+Requires-Dist: Flask-SocketIO==5.3.2
+Requires-Dist: frozenlist==1.4.0
+Requires-Dist: google-crc32c==1.5.0
+Requires-Dist: gpiozero==1.6.2
+Requires-Dist: greenlet==2.0.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: httpcore==0.17.3
+Requires-Dist: httpx==0.24.1
+Requires-Dist: idna==3.4
+Requires-Dist: ifaddr==0.2.0
+Requires-Dist: ikpy==3.0.1
+Requires-Dist: itsdangerous==2.1.2
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==2.1.3
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.0.4
+Requires-Dist: numpy==1.24.0
+Requires-Dist: opencv-contrib-python==4.8.0.74
+Requires-Dist: opencv-python==4.8.0.74
+Requires-Dist: orjson==3.9.2
+Requires-Dist: pycparser==2.21
+Requires-Dist: pydantic==2.0.3
+Requires-Dist: pydantic_core==2.3.0
+Requires-Dist: pyee==11.0.0
+Requires-Dist: pygame==2.4.0
+Requires-Dist: Pygments==2.15.1
+Requires-Dist: pylibsrtp==0.8.0
+Requires-Dist: pyOpenSSL==23.2.0
+Requires-Dist: pyserial==3.5
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: python-engineio==4.3.4
+Requires-Dist: python-socketio==5.8.0
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: rich==13.4.2
+Requires-Dist: scipy==1.11.1
+Requires-Dist: six==1.16.0
+Requires-Dist: sniffio==1.3.0
+Requires-Dist: sympy==1.12
+Requires-Dist: termcolor==2.3.0
+Requires-Dist: tornado==6.3.3
+Requires-Dist: typing_extensions==4.7.1
+Requires-Dist: urllib3==1.26.18
+Requires-Dist: websocket-client==1.6.1
+Requires-Dist: Werkzeug==2.3.8
+Requires-Dist: wget==3.2
+Requires-Dist: yarl==1.9.2
+Provides-Extra: robot
+
+# `r0b0`
+
+r0b0 is a communication system for connecting human interface device (HID) hardware and system software.
+Think of it like [`aconnect`](https://man.archlinux.org/man/aconnect.1.en) for things beyond MIDI devices.
+The system is my general-purpose tool for quickly prototyping mechatronic systems with a bend towards creative applications.
+
+## Design rationale
+r0b0 started as a refactor of the control software for Blossom, the open-source robot platform that I developed during my PhD.
+Other existing robot-/mechatronic-oriented communication frameworks are very heavy and geared towards technical applications.
+r0b0
+Some design goals:
+- Parity with Blossom's functionality by the last subproject of my PhD: remote motion-based telepresence.
+- Portability: like Blossom's codebase which ran identically on any UNIX-based system, r0b0 should be easy to set up and run whether on a macOS laptop or Raspberry Pi.
+- Extensibility and modularity: the structure is based on devices (Gadgets) that communicate among each other through messaging functions (Cables) in networked groups (Rigs). Components should be ignorant of each other to enable ease of modification.
+
+## Structure
+
+![Example structure of the r0b0 framework](docs/assets/r0b0.png)
+*Example `Rig` configuration.*
+
+This section provides a brief overview of the structure.
+More technical and implementation information is available on the respective READMEs in each module.
+
+The main structural metaphor comes from connecting musical instruments, either through MIDI cables or direct audio inputs and outputs.
+
+
+### Gadgets
+Gadgets are individual hardware devices or software services, e.g. motors and joysticks (hardware), emulated mice and key presses (software).
+Gadgets can exist as standalone objects, e.g. a single motor controlled manually through the command line.
+Gadgets also exist as nodes in a network of other Gadgets, transmitting and receiving messages through Cables.
+Gadget docs are [here](/r0b0/gadgets/README.md).
+
+### Cables
+Cables are connections that translate between Gadgets.
+For example, a `midi2motor` Cable could translate incoming MIDI messages from the turning of a MIDI controller knob into the outgoing motor position message to the actuation of a robot's motor.
+Cables are small, lightweight functions that abstract Gadgets from each other, preserving the system's modularity.
+Defining Cables is where most domain knowledge/personal taste comes in.
+Cable docs are [here](/r0b0/cables//README.md).
+
+### Rigs
+Rigs are networks of Gadgets connected by Cables; they essentially represent the entire system/project.
+Rigs manage the connections and higher-level functionalities required to use the system.
+Rigs are largely static wrappers that should not need much modification on a case-by-case basis.
+
+
+## Example Rigs
+I've used r0b0 to power not just Blossom, but also other non-robotic platforms.
+
+### Blossom
+Blossom-specific documentation is available [here](/docs/blsm.md).
+
+### Leica MPi
+The [Leica MPi](https://psychomugs.github.io/mpi) is a Raspberry Pi-powered digital back for my Leica M2 film camera.
+The hardware includes a Raspberry Pi Zero as the main board, the Raspberry Pi HQ Camera Module as the digital sensor, and an LCD module with buttons as an interface.
+This Rig uses two Gadgets:
+- A `PiButton` Gadget for the buttons on the LCD module and the shutter sync cable. The sync cable connects the flash sync socket to a GPIO pin on the Pi; pressing the mechanical shutter closes the flash sync socket as if it were a physical button.
+- A `PiCamera` Gadget for the camera module.
+
+Cables between the Gadgets handle:
+- Using the flash sync socket as a `PiButton` to begin an exposure with the `PiCamera`'s electronic shutter.
+- Using the `PiButton`'s physical buttons to control the `PiCamera` settings, e.g. shutter speed.
+
+### Joystick-controlled mouse
+I was born too early to actualize my true calling as a giant robot pilot.
+Controlling my computer's mouse with a consumer-grade gaming joystick is a close simulation.
+This Rig uses two Gadgets:
+- A `PyGameJoystick` Gadget to handle events from the physical joystick. On a technical note, the use of `pygame` alters the behavior of the Rig's event loop, which (is/will be) explained in the Rig's README.
+- A `Mouse` Gadget to control the software mouse, including motion and button press/release/click.
+
+Cables between the Gadgets handle:
+- Mapping `PyGameJoystick` absolute position `Mouse` relative motion.
+- Mapping `PyGameJoystick` button presses to `Mouse` left/middle/right presses/releases/clicks.
+
+### Robot Death Star Lamp
+A [motorized IKEA PS2014 lamp](https://psychomugs.github.io/ps2014).
+
+## Setup
+### Install
+Clone this repo and pull the submodules
+```
+git clone https://github.com/psychomugs/r0b0
+cd r0b0
+git submodule update --init --recursive
+```
+
+### Environment setup
+Create a Python virtual environment (`venv`) and install from `requirements/requirements.txt`.
+This has been tested on `python3.10.12`.
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements/requirements.txt
+```
+If you run into errors, you may not be on `python3.10`. 
+In that case, change the `venv` initialization from `python3` -> `python3.10`.
+```
+python3.10 -m venv venv
+```
+This will install the base dependencies.
+To avoid clogging the `venv`, specific dependencies for specific gadgets are broken out into separate files in `requirements/`.
+For example, to install the dependencies for the `Mouse` gadget:
+```
+pip3 install -r requirements/mouse.txt
+```
+Peruse `requirements/` for other gadget dependencies to install.
+
+~~Set up [conda](https://conda.io), then set up a conda environment and install some other dependencies with `pip` (because of issues with [`mouse`](https://github.com/boppreh/mouse/issues/75)). Docker maybe coming soon (maybe).~~ It's best to just use a `venv` — keeping this here for backup.
+```
+conda env create r0b0 -f env.yaml
+conda activate r0b0
+pip3 install -r req.txt 
+```

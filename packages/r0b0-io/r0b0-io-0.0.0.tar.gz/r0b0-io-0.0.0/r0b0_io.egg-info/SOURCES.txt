@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+r0b0/__init__.py
+r0b0/config.py
+r0b0_io.egg-info/PKG-INFO
+r0b0_io.egg-info/SOURCES.txt
+r0b0_io.egg-info/dependency_links.txt
+r0b0_io.egg-info/requires.txt
+r0b0_io.egg-info/top_level.txt
+requirements/requirements.txt
