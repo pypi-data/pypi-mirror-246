@@ -1,0 +1,9 @@
+stucco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stucco/detection.py,sha256=qWd290M10Wz1FEAf9iMVvzb11_O80KYBt-zekqQnalI,22175
+stucco/movable_sdf.py,sha256=2-KIqbWwn94jg4O_Q2ufXifMxowKqkIKTvUY1UWlrx8,1784
+stucco/tracking.py,sha256=1COgvH4nNtZA2rq7IcN2sIwktxXaFIxDZ-wzKnyhlLA,13728
+stucco-1.2.1.dist-info/LICENSE.txt,sha256=eahFSPSgykRKwod_HlbwhGNEvwP910E1LXb6jvN2geg,1075
+stucco-1.2.1.dist-info/METADATA,sha256=G0HHlrWEKvJtSFU0G3IuSH2oOqny6yPOVNz1XpdufLw,10199
+stucco-1.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+stucco-1.2.1.dist-info/top_level.txt,sha256=sZGSNLkyZGfX1UZ6HGr32RePVFNXO6Qf4Oy8oPauFug,7
+stucco-1.2.1.dist-info/RECORD,,
