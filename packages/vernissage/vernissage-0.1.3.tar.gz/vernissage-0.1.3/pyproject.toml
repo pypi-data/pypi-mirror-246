@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "vernissage"
+version = "0.1.3"
+description = "Photo editing, add border and resize."
+authors = ["Rikles <dev@rikles.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pillow = "^10.1.0"
+
+[tool.poetry.scripts]
+vernissage = "vernissage.cli:cli"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
