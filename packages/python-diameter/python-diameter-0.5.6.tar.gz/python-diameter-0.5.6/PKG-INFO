@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: python-diameter
+Version: 0.5.6
+Summary: A diameter stack implemented in python
+Author: Mikko Mensonen
+License: MIT License
+        
+        Copyright (c) 2023 Mikko Mensonen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://mensonen.github.io/diameter/
+Project-URL: Repository, https://github.com/mensonen/diameter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Communications :: Telephony
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Diameter Stack
+
+This Python package provides tools to create and parse Diameter Messags and 
+AVPs, to communicate with diameter peers using the diameter base protocol and 
+to write diameter applications, as defined in `rfc6733`, `rfc8506` and 
+`rfc5777`. 
+
+The package contains an extensive AVP dictionary and allows constructing
+AVPs and Diameter messages either manually, or by parsing network-received 
+bytes. For messages described in the Diameter Base and Diameter Credit Control
+RFCs, additional python types are provided, which permit reading and updating
+message AVPs as python instance properties.
+
+The `diameter` package provides tools for:
+
+- [Parsing and writing AVPs](https://mensonen.github.io/diameter/guide/avp)
+- [Parsing and writing diameter Mesages](https://mensonen.github.io/diameter/guide/message)
+- [Creating diameter nodes and connecting to other peers](https://mensonen.github.io/diameter/guide/node)
+- [Writing diameter applications](https://mensonen.github.io/diameter/guide/application)
+
+In terms of diameter connectivity, the diameter stack supports both *TCP* and
+*SCTP*, with SCTP support provided by an optional depency on 
+[pysctp](https://pypi.org/project/pysctp/).
+
+The diameter Application and Node implementations handle the majority of the 
+basic protocol-level operations automatically, such as managing peer tables, 
+sending CER/CEA, DWR/DEA and disconnecting with DPR/DPA. 
+
+The latest version can be installed from PyPI as 
+[python-diameter](https://pypi.org/project/python-diameter/):
+
+```shell
+~# pip install python-diameter
+```
