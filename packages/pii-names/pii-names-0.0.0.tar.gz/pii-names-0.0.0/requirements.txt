@@ -1,0 +1,11 @@
+httpx >= 0.20
+regex >= 2023.6.3
+marisa-trie >= 1.0.0, <2.0.0
+
+pii-data >= 0.4.0, <1.0.0
+pii-extract-base >= 0.5.0, <1.0.0
+
+# These are needed to build some data objects from sources
+xlrd >= 2.0.1
+
+

@@ -1,0 +1,4 @@
+[console_scripts]
+pii-names-build = pii_names.app.build:main
+pii-names-db = pii_names.app.namedb:main
+pii-names-info = pii_names.app.info:main

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pii-names
+Version: 0.0.0
+Summary: Management of name dictionaries for PII processing
+Home-page: https://github.com/piisa/pii-names
+Download-URL: https://github.com/piisa/pii-names/tarball/v0.0.0
+Author: Paulo Villegas
+Author-email: paulo.vllgs@gmail.com
+License: Apache
+Keywords: PIISA, PII
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# pii-names
+
+This is a Python package to manage dictionaries of person names

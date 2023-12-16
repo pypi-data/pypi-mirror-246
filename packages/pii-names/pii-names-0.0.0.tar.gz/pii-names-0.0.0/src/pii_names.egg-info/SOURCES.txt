@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/pii_names/__init__.py
+src/pii_names.egg-info/PKG-INFO
+src/pii_names.egg-info/SOURCES.txt
+src/pii_names.egg-info/dependency_links.txt
+src/pii_names.egg-info/entry_points.txt
+src/pii_names.egg-info/requires.txt
+src/pii_names.egg-info/top_level.txt

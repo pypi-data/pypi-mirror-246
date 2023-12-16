@@ -1,0 +1,11 @@
+httpx>=0.20
+regex>=2023.6.3
+marisa-trie<2.0.0,>=1.0.0
+pii-data<1.0.0,>=0.4.0
+pii-extract-base<1.0.0,>=0.5.0
+xlrd>=2.0.1
+
+[test]
+pytest
+nose
+coverage
