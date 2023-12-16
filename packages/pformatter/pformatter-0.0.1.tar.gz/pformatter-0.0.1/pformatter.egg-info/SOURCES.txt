@@ -1,0 +1,8 @@
+README.md
+setup.py
+pformatter/__init__.py
+pformatter/main.py
+pformatter.egg-info/PKG-INFO
+pformatter.egg-info/SOURCES.txt
+pformatter.egg-info/dependency_links.txt
+pformatter.egg-info/top_level.txt
