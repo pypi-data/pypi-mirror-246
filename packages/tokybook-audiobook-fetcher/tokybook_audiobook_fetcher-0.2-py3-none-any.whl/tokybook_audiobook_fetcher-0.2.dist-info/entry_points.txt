@@ -1,0 +1,2 @@
+[console_scripts]
+tokybook_audiobook_fetcher = tokybook_audiobook_fetcher.main:main_function
