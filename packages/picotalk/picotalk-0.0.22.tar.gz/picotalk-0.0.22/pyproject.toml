@@ -1,0 +1,50 @@
+# SPDX-FileCopyrightText: 2023 Thomas Kramer
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[project]
+name = "picotalk"
+version = "0.0.22"
+description='Simple voice call tool.'
+readme = {file = "README.md", content-type="text/markdown"}
+license = {text = "AGPL-3.0-or-later"}
+
+requires-python = ">=3.8"
+
+keywords= ["cmos", "cell", "characterization", "vlsi", "asic"]
+
+authors = [ 
+  {name = "T. Kramer", email = "code@tkramer.ch"}
+]
+
+classifiers = [
+    'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+    'Development Status :: 4 - Beta',
+    'Programming Language :: Python :: 3.8',
+    'Topic :: Communications :: Conferencing'
+]
+
+dependencies = [
+  "aiohttp",
+  "pyaudio",
+  "numpy",
+  "scipy"
+]
+
+[project.scripts]
+picotalk-client = "picotalk.client:main"
+picotalk-server = "picotalk.server:main"
+
+[project.urls]
+'Homepage' = 'https://codeberg.org/tok/picotalk'
+'Repository' = 'https://codeberg.org/tok/picotalk'
+'Issue Tracker' = 'https://codeberg.org/tok/picotalk/issues'
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"

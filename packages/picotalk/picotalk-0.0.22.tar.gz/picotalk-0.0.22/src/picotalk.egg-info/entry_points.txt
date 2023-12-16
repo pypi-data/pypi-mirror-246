@@ -1,0 +1,3 @@
+[console_scripts]
+picotalk-client = picotalk.client:main
+picotalk-server = picotalk.server:main
