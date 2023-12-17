@@ -1,0 +1,11 @@
+cached_ipaddress/__init__.py,sha256=mR8zaWSDPtzNMRHfXVbUZ4rQ2U0gFoKR2mRCNgfqBz4,101
+cached_ipaddress/backports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cached_ipaddress/backports/functools.py,sha256=5RcUxmHuiu86s7W5DUiUvzBwwRMSYTBQE68yYQi0ZBk,2626
+cached_ipaddress/ipaddress.pxd,sha256=m-b2lrV1E4tNIHicnyr1ycsE4_xRrgBrsA8v2YqqE8Q,115
+cached_ipaddress/ipaddress.py,sha256=iCqzKeDVG_EiJiybvbmI79Dd6TO9yhToKwdbrLwC9Ec,2837
+cached_ipaddress/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cached_ipaddress/ipaddress.cpython-310-x86_64-linux-gnu.so,sha256=36gjMMx9VSqKGhc1--kZbt5A20YopyWxklzjyrXrKJU,576072
+cached_ipaddress-0.2.0.dist-info/LICENSE,sha256=nN_MmFjPQjKwG1FuQ_x2IzN1uAZidiJoA9t21N2sv-E,1072
+cached_ipaddress-0.2.0.dist-info/METADATA,sha256=L1ZTWJkhG1xvaL3xisvW46xmF96odQLFJfrwCn5fjlA,5150
+cached_ipaddress-0.2.0.dist-info/WHEEL,sha256=nIz3lu-6nTSKECb4KbwuYXkiYsmyBvvzQyU0_qlvgDM,110
+cached_ipaddress-0.2.0.dist-info/RECORD,,
