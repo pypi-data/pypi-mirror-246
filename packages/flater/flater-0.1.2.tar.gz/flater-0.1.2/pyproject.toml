@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "Flater"
+version = "0.1.2"
+description = "WinForms UI Pack"
+authors = ["XiangQinxi <XiangQinxi@outlook.com>"]
+readme = "README.md"
+packages = [
+    { include = "flater" },
+    { include = "flaterlog.py"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pythonnet = "^3.0.3"
+darkdetect = "^0.8.0"
+colorama = "^0.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
