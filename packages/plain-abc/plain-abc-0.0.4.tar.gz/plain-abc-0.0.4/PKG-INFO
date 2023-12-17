@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: plain-abc
+Version: 0.0.4
+Summary: An ABC implementation without metaclass
+Author-email: Chielo Newctle <ChieloNewctle@Yandex.com>
+License: MIT License
+        
+        Copyright (c) 2023 Chielo
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ChieloNewctle/plain-abc
+Project-URL: Bug Tracker, https://github.com/ChieloNewctle/plain-abc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+
+# plain-abc
+
+An ABC implementation without metaclass.
+
+It is a little bit annoying to have metaclass conflict,
+especially when trying to use ABC along with other libraries.
+
+`plain-abc` provides a simple ABC implementation without metaclass.
+
+## Solving metaclass conflict without `plain-abc`
+
+Here is an example of metaclass conflict
+and a solution to mix ABCMeta and other metaclasses.
+
+```python
+from abc import ABC, ABCMeta, abstractmethod
+
+
+class _SomeHiddenMetaclass(type):
+    pass
+
+
+class Base(metaclass=_SomeHiddenMetaclass):
+    pass
+
+
+class IFoo(ABC):
+    @abstractmethod
+    def foo(self): ...
+
+
+# oh no, metaclass conflict!
+# class Foo(Base, IFoo):
+#     def foo(self): ...
+
+
+# create a new metaclass for either IFoo or Foo
+class NewMetaclass(_SomeHiddenMetaclass, ABCMeta):
+    ...
+
+
+class Foo(Base, IFoo, metaclass=NewMetaclass):
+    def foo(self): ...
+```
+
+## Usage
+
+But you can also use `plain-abc` to solve the problem:
+
+```python
+from abc import abstractmethod
+
+from plain_abc import PlainABC
+
+
+class _SomeHiddenMetaclass(type):
+    pass
+
+
+class Base(metaclass=_SomeHiddenMetaclass):
+    pass
+
+
+class IFoo(PlainABC):
+    @abstractmethod
+    def foo(self): ...
+
+
+class Foo(Base, IFoo):
+    def foo(self): ...
+```
+
+To extend an abstract class **as another abstract class**,
+`PlainABC` is required to be one of the bases:
+
+```python
+from abc import abstractmethod
+
+from plain_abc import PlainABC
+
+
+class IEntity(PlainABC):
+    @abstractmethod
+    def get_id(self) -> str: ...
+
+
+class IProjectile(IEntity, PlainABC):
+    @abstractmethod
+    def get_speed(self) -> float: ...
+
+
+class Arrow(IProjectile):
+    def get_id(self) -> str: ...
+    def get_speed(self) -> float: ...
+```
+
+To skip signature checking,
+you can add the member names in `__abc_concrete_members__` of a subclass:
+
+```python
+from abc import abstractmethod
+from enum import Enum
+
+from plain_abc import PlainABC
+
+
+class IEnum(PlainABC):
+    @property
+    @abstractmethod
+    def foo(self) -> str:
+        ...
+
+
+class Foo(IEnum, Enum):
+    # for python 3.10 or lower
+    __abc_concrete_members__ = ('foo',)
+    foo = 'foo'
+
+
+assert Foo.foo.value == 'foo'
+```

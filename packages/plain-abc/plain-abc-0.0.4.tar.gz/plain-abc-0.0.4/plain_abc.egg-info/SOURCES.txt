@@ -1,0 +1,10 @@
+LICENSE
+README.md
+plain_abc.py
+pyproject.toml
+plain_abc.egg-info/PKG-INFO
+plain_abc.egg-info/SOURCES.txt
+plain_abc.egg-info/dependency_links.txt
+plain_abc.egg-info/requires.txt
+plain_abc.egg-info/top_level.txt
+tests/test_plain_abc.py
