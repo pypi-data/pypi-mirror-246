@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: cloud-import
+Version: 0.4
+Summary: Import Python modules straight from the cloud (e.g. GitHub) at runtime!
+Home-page: https://github.com/Henri-J-Norden/py-cloud-import
+Download-URL: https://github.com/Henri-J-Norden/py-cloud-import.git
+Author: Henri J. Norden (originally by James Murphy)
+License: MIT
+Keywords: CLOUD,IMPORT,ARBITRARY CODE EXECUTION
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Import Python modules straight from the cloud (e.g. GitHub) at runtime!
+
+## Installation
+* pip: `pip install cloud_import`
+* no pip: copy [cloud_import.py](cloud_import/could_import.py) into your project
+
+## Usage
+See [examples/example1.py](examples/example1.py)
+
+## Why?
+This can be used to entirely skip the "deployment" step for internal tooling, that's not meant for distribution or public usage.
+
+Originally by [James Murphy](https://github.com/mCodingLLC/VideosSampleCode/blob/master/videos/133_cloud_imports/cloud_imports.py) - check out his video "[You won't believe it! Import from the Cloud](https://www.youtube.com/watch?v=2f7YKoOU6_g)"  
+
+## Limitations
+* No dependency handling
+* Fixed URL structure: the source code for module `foo.bar` must be accessible at `<url>/foo/bar/*.py`
+* Bad things will happen if the cloud source code changes while a package (with multiple modules) is being imported 
+
+    
