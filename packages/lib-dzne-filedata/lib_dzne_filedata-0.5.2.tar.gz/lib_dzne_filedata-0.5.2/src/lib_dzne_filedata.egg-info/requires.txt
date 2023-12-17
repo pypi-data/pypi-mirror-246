@@ -1,0 +1,2 @@
+tomli_w>=1.0.0
+lib_dzne_math>=0.2.3
