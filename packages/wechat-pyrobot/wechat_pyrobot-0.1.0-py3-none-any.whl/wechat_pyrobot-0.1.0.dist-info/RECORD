@@ -1,0 +1,10 @@
+wechat_pyrobot/__init__.py,sha256=APhJ8PRmWRB70jNGFfOgB-7ZOLTXN4zAlRx5zaZsitU,303
+wechat_pyrobot/hooklog32.py,sha256=K_595iyVQsk23qffI8clIdvtZZTmrB3Xsrr76J99mwg,1589
+wechat_pyrobot/hooklog64.py,sha256=ljKiHMJqQsmfu3rC6gZAhQ3X_T8piMm_lnmGEdMGt58,1312
+wechat_pyrobot/offset.py,sha256=hwI3tFYkSmI0Itcnaqh4ONtY6KzV7nVpuNH8soW5Uoo,1115
+wechat_pyrobot/sendmsg32.py,sha256=oPZ4rI7TooDEveYeeMgBzoLl_4960bPBLxl8n5AUO3E,6836
+wechat_pyrobot/sendmsg64.py,sha256=AAj7dbi58IZLUXQ1NlWb2KlQo9yFlm4YpzHHOBekFHY,4054
+wechat_pyrobot-0.1.0.dist-info/METADATA,sha256=Nl2LiPDeolAAAtMM8ZtXzmDf-142bVxgtMk5XS5cWW4,6437
+wechat_pyrobot-0.1.0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+wechat_pyrobot-0.1.0.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+wechat_pyrobot-0.1.0.dist-info/RECORD,,
