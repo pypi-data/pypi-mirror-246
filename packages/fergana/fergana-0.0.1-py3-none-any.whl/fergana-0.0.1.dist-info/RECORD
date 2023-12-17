@@ -1,0 +1,11 @@
+fergana/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fergana/math/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+fergana/math/functions.py,sha256=RTXL5j28pbG7vY3cqMQ0-0w6lt1CvA24xv8HIIQWvtY,1513
+fergana/math/optimizers.py,sha256=J2Vq0ZM1YL5ZO3r2y3GTisFIa3pIHn0Vdbxlrr9LwHE,6572
+fergana/structures/__init__.py,sha256=FYXmG8S0rPVKErgNrI9dknLT03_bhEkDZrwuBZwPzZQ,70
+fergana/structures/layers.py,sha256=MV0nzUuMK4M-6R6Lp8XRVKKc7_4xEPyFHA-ThS-cVgo,4291
+fergana/structures/models.py,sha256=H7mmpKuW1LH-aGgjBl0N81AWIsd79NJcUiOdSnLMcyw,6695
+fergana/structures/neurons.py,sha256=_ZfY6QeEMSGri0DmUt12jEFkYZLjm4-WD7QI_XEIq10,2997
+fergana-0.0.1.dist-info/METADATA,sha256=rNaaUoftrFLOUcPDMK-F4fesuyhlXTL7wYbc_AmGakE,390
+fergana-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+fergana-0.0.1.dist-info/RECORD,,
