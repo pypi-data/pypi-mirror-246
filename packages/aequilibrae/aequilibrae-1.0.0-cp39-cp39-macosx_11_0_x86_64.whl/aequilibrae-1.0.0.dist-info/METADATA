@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aequilibrae
+Version: 1.0.0
+Summary: A package for transportation modeling
+Home-page: https://github.com/AequilibraE/aequilibrae
+Author: Pedro Camargo
+Author-email: c@margo.co
+License: See license.txt
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pyaml
+Requires-Dist: cython
+Requires-Dist: requests
+Requires-Dist: shapely
+Requires-Dist: pandas
+Requires-Dist: pyproj
+Requires-Dist: rtree
+Requires-Dist: openmatrix
+
