@@ -1,0 +1,13 @@
+[workspace]
+members = ["src/*"]
+resolver = "2"
+
+# Unoptimized backtrace crate has atrocious performance.
+[profile.dev.package.backtrace]
+opt-level = 3
+
+[profile.release]
+strip = true
+codegen-units = 1
+lto = true
+panic = "abort"
