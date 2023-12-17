@@ -1,0 +1,10 @@
+numpy
+pandas
+Pillow
+tqdm
+scipy
+cellpose
+matlotlib
+skimage
+sklearn
+tensorflow
