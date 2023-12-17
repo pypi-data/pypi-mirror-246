@@ -1,0 +1,16 @@
+jsonschema
+colorama
+
+[dev]
+snakeviz
+
+[player]
+pyside6
+pytube
+
+[pypi]
+build
+twine
+
+[test]
+pytest
