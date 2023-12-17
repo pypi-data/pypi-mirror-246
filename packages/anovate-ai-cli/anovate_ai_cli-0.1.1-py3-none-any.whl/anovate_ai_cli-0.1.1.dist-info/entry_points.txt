@@ -1,0 +1,3 @@
+[console_scripts]
+anovate_ai_cli=anovate_ai_cli.anovate_ai_cli:app
+
