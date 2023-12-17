@@ -1,0 +1,46 @@
+# sodom
+
+__sodom__ if you like to write HTML in Python. __Faster x2.5 than `dominate`__
+## Installation
+```bash
+python -m pip install sodom
+```
+
+## Examples
+
+You can check demo via `python -m sodom` or preview code in `sodom.__main__`.
+```python
+from sodom import *
+...
+def card(_header: str, _price: str, _submit_text: str, *_conditions: str):
+    with div(class_='card mb-4 box-shadow'):
+        with div(class_='card-header'), h4(class_='my-0 font-weight-normal'):
+            text(_header)
+        with div(class_='card-body'):
+            with h1(class_='card-title pricing-card-title'):
+                text(_price)
+                with small(class_='text-muted'):
+                    text(' mo')
+            with ul(class_='list-unstyled mt-3 mb-4'):
+                for _c in _conditions:
+                    li(_c)
+            with button(type_='button', class_='btn btn-lg btn-block btn-primary'):
+                text(_submit_text)
+...
+```
+
+## Features
+
+- supported standart html element (normal/void). Check `sodom.consts.NORMAL_TAGS` and `sodom.consts.VOID_TAGS`.
+- supported several _special_ attributes like `data-`, `v-`... Check `sodom.consts.SPECIAL_ATTRS`. You can extend them in runtime __before__ library usage.
+- sodom is 2.5 times more productive than `dominate` (1.6 if `SODOM_TAG_CACHE=0`) and ~5.5-6 times than `fast_html`. Check `sodom.tests.test_performance_*`.
+- avoided builtin keyword trouble via cutting off leading and ending `_`. For example, `[py]class_='button'` equals `[html]class="button"`.
+- supported `ContextVar`. Tested on `asyncio` and `ThreadPool`.
+
+## Environment Variables
+
+`SODOM_TAG_CACHE=128` - cache size, check [it](https://docs.python.org/3/library/functools.html#functools.lru_cache)
+
+## Feedback
+
+If you have any feedback, text me at inbox@protaz.ru
