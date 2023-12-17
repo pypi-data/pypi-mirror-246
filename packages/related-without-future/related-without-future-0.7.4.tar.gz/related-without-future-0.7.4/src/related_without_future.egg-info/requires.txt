@@ -1,0 +1,6 @@
+attrs>=19.3.0
+PyYAML
+python-dateutil
+
+[:python_version < "3.4"]
+singledispatch
