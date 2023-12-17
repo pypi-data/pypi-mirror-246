@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sequentium
+Version: 0.0.1a0
+Summary: A package to work with sequences
+Home-page: https://github.com/VascoSch92/sequentium
+Author: Vasco Schiavo
+Author-email: vasco.schiavo@protonmail.com
+License: MIT
+Keywords: math,mathematics,sequence,fibonacci
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.9
+License-File: LICENSE.txt
