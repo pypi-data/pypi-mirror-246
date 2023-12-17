@@ -1,0 +1,6 @@
+setup.py
+fuck_image.egg-info/PKG-INFO
+fuck_image.egg-info/SOURCES.txt
+fuck_image.egg-info/dependency_links.txt
+fuck_image.egg-info/requires.txt
+fuck_image.egg-info/top_level.txt
