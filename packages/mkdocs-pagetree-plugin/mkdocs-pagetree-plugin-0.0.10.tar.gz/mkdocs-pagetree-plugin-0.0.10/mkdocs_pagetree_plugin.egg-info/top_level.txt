@@ -1,0 +1,4 @@
+LICENSES
+dist
+docs
+mkdocs_pagetree_plugin
