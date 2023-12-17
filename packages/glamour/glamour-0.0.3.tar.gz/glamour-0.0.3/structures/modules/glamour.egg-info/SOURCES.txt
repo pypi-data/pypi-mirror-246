@@ -1,0 +1,12 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/glamour/__init__.py
+structures/modules/glamour/status_1.py
+structures/modules/glamour.egg-info/PKG-INFO
+structures/modules/glamour.egg-info/SOURCES.txt
+structures/modules/glamour.egg-info/dependency_links.txt
+structures/modules/glamour.egg-info/top_level.txt
+structures/modules/glamour/_clique/__init__.py
+structures/modules/glamour/_clique/group/__init__.py
+structures/modules/glamour/_status/insurance.proc.py
