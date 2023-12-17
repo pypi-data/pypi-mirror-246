@@ -1,0 +1,11 @@
+pyallel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyallel/errors.py,sha256=Y-ETaHnG69e0QE0qz7AiFRndQKixkTlPt2-TnLPy63o,368
+pyallel/main.py,sha256=zDymsk8vLgJd0cTSjvApBFLGlVQiuXrZjU_7Va24JaQ,5102
+pyallel/parser.py,sha256=kz1-27pRQA40LhfGBBxhtl1HMdAoabIxU8qY903dOGo,1877
+pyallel/process.py,sha256=aJQIDLJDwATcxwy0j9sWkFauelzf5DUvywPTjnvjuEE,1658
+pyallel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyallel-0.4.1.dist-info/LICENSE,sha256=OC5x5NCgrwLKf3OOacir7vDYIUr4u6W3sxQjYtNBG0g,1069
+pyallel-0.4.1.dist-info/METADATA,sha256=QHguXjTutA3orMxbmxulhL5SY2reVF6kFpsTh-UU0Cs,2581
+pyallel-0.4.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pyallel-0.4.1.dist-info/entry_points.txt,sha256=0vqMYmzYIZe-sRW5wu5lJdSfZsB0y3KC7HeTTwDpnEc,52
+pyallel-0.4.1.dist-info/RECORD,,
