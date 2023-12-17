@@ -1,0 +1,13 @@
+gammaspotter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gammaspotter/catalogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gammaspotter/catalogs/gamma-energies-common.csv,sha256=vII-tElQzIggjn9vrL8W94omT5zniLH3li19lN8QBp0,861
+gammaspotter/catalogs/gamma-energies.csv,sha256=piUcf6Y0yxX7FgawbPHt5MqADQ5O53S3TAL9s1AxHIs,6165
+gammaspotter/fit_models.py,sha256=z_Sw__H83oMflGu3SRmQA5vj5tclNOgnS09t7vBLmB4,303
+gammaspotter/gui.py,sha256=wzb3btKz5-xxs1ytBuodN3ezgP8uPBM8FkjlGh8FbyQ,27061
+gammaspotter/match_features.py,sha256=Bs2PcuYLtIqU8N4EX7LegBK68kcZxSWcvWaYP-N7MX8,2522
+gammaspotter/process_data.py,sha256=73-qsX-CWIAI9aATKMfcwgRmdfd-eboocpAlfV_ndRs,6163
+gammaspotter-0.2.4.dist-info/entry_points.txt,sha256=cAbZVAvVOVIfQ-U7pwdeqRZiNqrvKzNxFOnz9mtVB58,54
+gammaspotter-0.2.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+gammaspotter-0.2.4.dist-info/METADATA,sha256=-V_6Wy0styViPYsxRJSvfU3tfFwKw7pRv1obZzm5crI,2658
+gammaspotter-0.2.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+gammaspotter-0.2.4.dist-info/RECORD,,
