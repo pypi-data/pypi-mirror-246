@@ -1,0 +1,5 @@
+setup.py
+aliusmangondalfinal.egg-info/PKG-INFO
+aliusmangondalfinal.egg-info/SOURCES.txt
+aliusmangondalfinal.egg-info/dependency_links.txt
+aliusmangondalfinal.egg-info/top_level.txt
