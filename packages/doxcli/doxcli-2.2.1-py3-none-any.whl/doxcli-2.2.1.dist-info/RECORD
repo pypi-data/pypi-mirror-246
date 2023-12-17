@@ -1,0 +1,15 @@
+doxcli/__init__.py,sha256=-7agX4LcQ0956RU4mY0EYyxYQU9llH7JklZOsqoujdU,22
+doxcli/bootstrap.py,sha256=ZTWBPZvDPOyZSS_9PihL-Q2jCjujOG7t-C9HXdiccT8,3834
+doxcli/config/app.py,sha256=9HTF8EZlhBj2oCvlLI5EyKOG9jy-o8Nh6mkrHTrPvlk,815
+doxcli/exceptions/general.py,sha256=T46DT1g747bUkyFDvXdyGybM_ewdX8XZkLBaUdQJI3s,96
+doxcli/services/faker/fakes.py,sha256=dLvC684E4jCI7BM5wH_kLHSCwB_tNZqE5Oz9YSnGrTU,486
+doxcli/services/godaddy/godaddy.py,sha256=IXkXnHC7qvHBHkqFqNtoTRr9K0XKDdHEbKWK-dAmrvs,2164
+doxcli/utils/file.py,sha256=Eho6WNR7TAq7IyDo_apOhH5apFw02E9mHZ1oLdB_FiA,265
+doxcli/utils/general.py,sha256=v7ynCqox7g8Nb-NApgVVU2-GiWHr4f4u3_RhHZDKkTU,622
+doxcli-2.2.1.data/scripts/cli.py,sha256=A6cEwvAtR2e0t4rZbeX8iKbQWCbYdT-6TmuxRjUjukE,808
+doxcli-2.2.1.dist-info/LICENSE,sha256=V45n_BuEx1HHIhRUgjFu4Hnsam4jK7Wy-VGf2YZtiYk,1066
+doxcli-2.2.1.dist-info/METADATA,sha256=7NCkklDuH7XVGtbfs1QuACpHF_GFmja_kpYM6zND4zA,2819
+doxcli-2.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+doxcli-2.2.1.dist-info/entry_points.txt,sha256=LkPGVlfbubdf8kHtiT5FtNR2UYicNcp0pqF0k95jRUI,33
+doxcli-2.2.1.dist-info/top_level.txt,sha256=tO6Ngzejtiz3TIzudDisPfXuyqIml_xC76YtqZqjW-c,7
+doxcli-2.2.1.dist-info/RECORD,,
