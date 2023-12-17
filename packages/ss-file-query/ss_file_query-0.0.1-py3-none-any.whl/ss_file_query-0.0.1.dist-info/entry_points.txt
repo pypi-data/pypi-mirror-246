@@ -1,0 +1,2 @@
+[package_tools]
+query_tool = ss_file_query.tools.utils:list_package_tools

@@ -1,0 +1,13 @@
+file_query.tools.file_query_tool.query_doc:
+  function: query_doc
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: file_query.tools.file_query_tool
+  name: Hello World Tool
+  description: This is hello world tool
+  type: python
