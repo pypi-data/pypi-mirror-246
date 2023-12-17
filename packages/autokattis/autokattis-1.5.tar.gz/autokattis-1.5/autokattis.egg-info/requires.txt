@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+lxml
+pandas==2.0.3
+matplotlib
+seaborn==0.12.2
+thefuzz
+thefuzz[speedup]
