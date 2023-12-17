@@ -1,0 +1,10 @@
+hasura_ndc/__init__.py,sha256=tOCRD16OctN_F7ZL5OJLxjBYN1CVxSGuigtJNwEgPCI,30
+hasura_ndc/configuration_server.py,sha256=oMWJ3YE6ITjzAc_eZklX9wrTQoKG5ImbJocdlR8Txdc,2024
+hasura_ndc/connector.py,sha256=XDPY6bmd6loCNqm4tIOp1jvlSdJoLNNQVS68U8bsyS4,2607
+hasura_ndc/main.py,sha256=lfOMFkpo8OC7j3K7NI-4imerq8HlIy6bBL5P5z2uNVU,1884
+hasura_ndc/models.py,sha256=dlR_OctjlRdhcslmIh-M0knnJmJ2skHqsMJ_Iv9ijlM,8937
+hasura_ndc/server.py,sha256=GJ1d4Z5V9i39n-_pXfT-siUfvYiVwjPX4WpydvNXmOE,3253
+hasura_ndc-0.3.dist-info/METADATA,sha256=tqh0D-2RGhRwT7y_eA753Nz4AAtqu8GhncgAlfyXd3c,980
+hasura_ndc-0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hasura_ndc-0.3.dist-info/top_level.txt,sha256=4ucXUk80DvYeyC8BcNkYl5sOB52uT7Ox7Um82fLzFcM,11
+hasura_ndc-0.3.dist-info/RECORD,,
