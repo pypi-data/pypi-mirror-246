@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: validateall
+Version: 0.1.6
+Requires-Dist: phonenumbers (>=8.13.26)
+
