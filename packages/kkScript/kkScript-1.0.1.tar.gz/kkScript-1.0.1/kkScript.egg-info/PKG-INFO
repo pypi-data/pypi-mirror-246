@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: kkScript
+Version: 1.0.1
+Summary: Simple database with own programming languge.
+Author-email: EasyOmny <omenplay325@gmail.com>
+License: Copyright (c) 2023 EasyOmny
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/EasyOmny/kkscript
+Keywords: python,database,language
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kkScript
+> ```database```
+ 
+***
+
+###### Установка
+
+> Команда pip
+>> ```
+>> pip install kkscript
+>> 
+>> ```
+
+***
+
+###### Применение
+
+> Работа с NoSQL базами данных kkdb через .kks файл.
+>> ***.py файл***
+>> ```
+>> from kkScript import script
+>>
+>> script("code")
+>> ```
+>> ***.kks файл***
+>> ```
+>> $kkdb=create.DB."db"."db1".db1
+>>
+>> $kkdb.setData."age".89.db1
+>> $kkdb.updateData.db1
+>>
+>> printLn=db1.getData("age", "int")
+>> ```
+>> ***Вывод***
+>>
+>> ```
+>> 89
+>> 
+>> ```
+>> ***Файл базы данных .kkdb***
+>> ```
+>> age=\data/=89
+>> 
+>> ```
+> Работа с NoSQL базами данных kkdb через .py файл
+>> ***.py файл***
+>> ```
+>> from kkScript import kkdb
+>>
+>>db1 = kkdb.DB("db", "db1")
+>>
+>>db1.setData("age",89)
+>>db1.updateData()
+>>
+>>print(db1.getData("age", "int"))
+>> ```
+>> ***Вывод***
+>>
+>> ```
+>> 89
+>> 
+>> ```
+>> ***Файл базы данных .kkdb***
+>> ```
+>> age=\data/=89
+>> 
+>> ```
+
+***
+
+###### Автор
+
+>Никнейм
+>> ***Никнейм 1***
+>> ```
+>> Omny
+>> 
+>> ```
+>> ***Никнейм 2***
+>> ```
+>> xDrey
+>> 
+>> ```
+>Контакты
+>>***Эл. почта***
+>>```
+>>omenplay325@gmail.com
+>>
+>>```
+>Соц сети
+>>***Telegram***
+>>>[EasyOmny](https://t.me/EasyOmny)
+>>
+>>***YouTube***
+>>>[Omny](https://youtube.com/@omnycus?si=SoT0Cady7HjVtZ_S)
+>>>
+>>>[xDrey](https://youtube.com/@xDrey-gnp?si=dt1ryQAAAcEuFC-g)
+
+***
+
+###### Документация
+
+>Ссылка
+>>[Пока нет!]()

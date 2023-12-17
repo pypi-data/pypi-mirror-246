@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+kkScript/__init__.py
+kkScript/kkdb.py
+kkScript.egg-info/PKG-INFO
+kkScript.egg-info/SOURCES.txt
+kkScript.egg-info/dependency_links.txt
+kkScript.egg-info/top_level.txt
