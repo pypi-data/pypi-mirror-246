@@ -1,0 +1,13 @@
+README.md
+setup.py
+hasura_ndc.egg-info/PKG-INFO
+hasura_ndc.egg-info/SOURCES.txt
+hasura_ndc.egg-info/dependency_links.txt
+hasura_ndc.egg-info/requires.txt
+hasura_ndc.egg-info/top_level.txt
+src/__init__.py
+src/configuration_server.py
+src/connector.py
+src/main.py
+src/models.py
+src/server.py
