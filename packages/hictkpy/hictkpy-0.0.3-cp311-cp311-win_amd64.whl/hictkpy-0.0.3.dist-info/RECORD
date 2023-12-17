@@ -1,0 +1,12 @@
+hictkpy/hictkpy.cp311-win_amd64.pyd,sha256=tneLZAmkrYPgeZQKQ5_0AyanTMZUxjTZm2_mm5pBtxo,1219072
+hictkpy/__init__.py,sha256=z6eAhux60M2FAU5DMVG9CmB_yd8g4nNGpl0wRtSjzoI,609
+hictkpy-0.0.3.dist-info/DELVEWHEEL,sha256=WHlIVH__41zJJZXGtiUjuwaH0wrb1zZS0MNlnqBLzAw,179
+hictkpy-0.0.3.dist-info/LICENSE,sha256=k3wYuQL9G6HjLn2OEwrGzJE1Mz5WtgZsSPuWSHoX27I,1093
+hictkpy-0.0.3.dist-info/METADATA,sha256=KtflGrYvEknVHh8rCslm2uB_lojsSI50bfaQ2u4SHtw,3809
+hictkpy-0.0.3.dist-info/RECORD,,
+hictkpy-0.0.3.dist-info/top_level.txt,sha256=X0CN7J0A7AIZz-BHiqNen2RCU1FR1nO-TvUOH7VNs5I,8
+hictkpy-0.0.3.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+hictkpy.libs/deflate-3c8dbc0e8e095febe7024be01774bf71.dll,sha256=zdjztlnJhXFLeg1t5FhZIIYDjX3w4WzVvJ03WhUoqK4,78848
+hictkpy.libs/hdf5-e7afc7966e9def95efc4551839ebdd0a.dll,sha256=ZGstuuffyNW3pRrxN5pDrGQC8FhUnANNfwTIDiMMZzk,3461632
+hictkpy.libs/msvcp140-8d5ebb56e120fe987b6f5b33645564ad.dll,sha256=BSsZeLCOIhn6U-ay9YhGpjFQvPACvTblS2vBBkRoRII,621960
+hictkpy.libs/zlib1-99d15d92d289c6aeb5411e7fe6d30d15.dll,sha256=mGXiVvPHNJqIX6e7R0Ws48oOPF8uBN4S43HKT-4eTLs,83968
