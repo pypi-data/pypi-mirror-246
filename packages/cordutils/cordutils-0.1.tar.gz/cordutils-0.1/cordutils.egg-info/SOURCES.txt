@@ -1,0 +1,8 @@
+setup.py
+cordutils/__init__.py
+cordutils/cordutils.py
+cordutils.egg-info/PKG-INFO
+cordutils.egg-info/SOURCES.txt
+cordutils.egg-info/dependency_links.txt
+cordutils.egg-info/requires.txt
+cordutils.egg-info/top_level.txt
