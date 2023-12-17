@@ -1,0 +1,8 @@
+src/cirrus_lib/__init__.py,sha256=HCyb8CgfmMPHwuJB8hFUVMdADfhx4FgK8hDDzFT1Ca8,50
+src/cirrus_lib/configs.py,sha256=zUeZawFiOdXpo71Vd13bXR38bMuDdPvvhQo9GSIMUUw,4265
+src/cirrus_lib/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cirrus_lib/components/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cirrus_lib/components/aws/vpc.py,sha256=O5hnUc_U8To7vxkdhS0uZcWsau-3jCCVscf2Lx0Mccc,3498
+stratos_lib-0.1.1rc0.dist-info/METADATA,sha256=vDzhRUYG1aXZD5MJIZ_f4nvldIW4E8R7iHyvNRWFAvM,397
+stratos_lib-0.1.1rc0.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+stratos_lib-0.1.1rc0.dist-info/RECORD,,
