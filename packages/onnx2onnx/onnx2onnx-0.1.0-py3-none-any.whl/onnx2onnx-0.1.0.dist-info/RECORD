@@ -1,0 +1,16 @@
+onnx2onnx/__init__.py,sha256=B7dNltcFY9gJt15ySdzkEFvyd-ia2B9QfOYgUxYHtmA,1984
+onnx2onnx/__main__.py,sha256=F6vs4gQOVj8XQBZmJuDDxyNnwmltqufcsd3-5SoqgZU,1826
+onnx2onnx/graph.py,sha256=LX5HrylvtlhaA2Swax1dNtRZpH_-lUuFHr_9GDmiDgs,5410
+onnx2onnx/pass_manager.py,sha256=5UXwKdkvAnBA7OM6tKs3wKNLvKpBM5M_fnmPkdV2nNQ,1820
+onnx2onnx/passes/__init__.py,sha256=VNhUb2Z1YiVRqp_nkPzdnpj50nM31GW6DsMQ3PBzyHQ,2294
+onnx2onnx/passes/convert.py,sha256=1ZhoXRUUfFt_JAC78ofrAi155llHWwkVPkRo_FDmfg4,7009
+onnx2onnx/passes/optimize.py,sha256=I6PlSP5a_4P2OGRPs102XyPM3zZH-zoMS-ryaPMP0Ic,383
+onnx2onnx/passes/pattern.py,sha256=UhiPDEtwFUmNWpheflTXatMiDKUXPS-ePe2LA9tYbhM,5565
+onnx2onnx/passes/rewriter.py,sha256=xIzJAJNGgSJhy6_RnT_Lkw4tqSBx2zhj0KWMmuDztcA,7315
+onnx2onnx/passes/transforms.py,sha256=fuin6TJh4Vahqsi8p8JaGImR3HIWT5oOforbFSerTnk,4309
+onnx2onnx/passes/utils.py,sha256=_iI_VphNxxLeN1Czm5zuc2q3cHP8siUxZczK9cY5a6k,1656
+onnx2onnx-0.1.0.dist-info/entry_points.txt,sha256=5b-RbheB-v_HeHPPUGxAeu0OvJjIIlQgV70T-8kuXrQ,53
+onnx2onnx-0.1.0.dist-info/LICENSE,sha256=LmldnwUZoCZ7a1W3C3meFp4ZnAU3kISnrfDBFgyklEM,1068
+onnx2onnx-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+onnx2onnx-0.1.0.dist-info/METADATA,sha256=jXjXmBmeBNQWIC67_FOIHrxdk68djknBKGKInbV6aAo,754
+onnx2onnx-0.1.0.dist-info/RECORD,,
