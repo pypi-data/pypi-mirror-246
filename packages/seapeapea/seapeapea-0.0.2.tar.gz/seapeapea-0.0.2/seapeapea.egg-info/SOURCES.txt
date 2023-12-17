@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+seapeapea/__init__.py
+seapeapea/cpp.lark
+seapeapea.egg-info/PKG-INFO
+seapeapea.egg-info/SOURCES.txt
+seapeapea.egg-info/dependency_links.txt
+seapeapea.egg-info/entry_points.txt
+seapeapea.egg-info/requires.txt
+seapeapea.egg-info/top_level.txt
