@@ -1,0 +1,102 @@
+# SnoSample
+
+Template and tools for Python projects.
+
+## Installation
+
+To install the SnoSample package either:
+- Run the command 'pip install snosample' in the command line.
+- Install the package via your IDE.
+
+## Features
+
+#### Testing module
+
+1. The user is able to define test cases inside a child class of the TestSuite class.
+2. The user is able to run all test cases with a single command:
+   1. this command shows if the test suite succeeded.
+3. The user is able to see the test case results after each run:
+   1. these results show if a test case failed.
+   2. these results show why a test case failed.
+   3. these results reset before each run.
+4. The user is able to define a test suite setup:
+   1. this setup is optional.
+   2. this setup can be run independently of the test cases.
+   3. this setup triggers automatically when the test suite is run.
+   4. the test cases will not be run when this setup fails.
+5. The user is able to define a test suite teardown:
+   1. this teardown is optional.
+   2. this teardown can be run independently of the test cases.
+   3. this teardown triggers automatically when the test suite is run.
+6. The user is able to define a test case setup:
+   1. this setup is optional.
+   2. this setup can be run independently of the test cases.
+   3. this setup triggers automatically before each test case.
+   4. this setup shows its results under the respective test case when not successful.
+7. The user is able to define a test case teardown:
+   1. this teardown is optional.
+   2. this teardown can be run independently of the test cases.
+   3. this teardown triggers automatically after each test case. 
+   4. this teardown shows its results under the respective test case when not successful.
+
+#### Logging module
+
+1. The logger is able to show messages in the console:
+   1. the user can define these messages.
+2. The logger is able to write messages to a text file:
+   1. the user can define these messages.
+   2. the user can define this file path.
+   3. the logger raises an error when the file path does not exist.
+   4. this text file does not need to exist.
+   5. this text file is overwritten by the messages.
+3. The logger is able to show the time at which the message was generated.
+4. The logger is able to show the level of the message:
+   1. the user can define this level.
+   2. the accepted message levels are: 'debug', 'info', 'warning', 'error'.
+   3. an error is raised when an unacceptable message level is given.
+5. The user is able to define a message level threshold:
+   1. the accepted thresholds are: 'debug', 'info', 'warning', 'error'.
+   2. an error is raised when an unacceptable message level is given.
+   3. all messages below this threshold will not be shown by the logger.
+   4. this threshold can be different for the file and the console messages.
+6. The user is able to define a layout for the messages:
+   1. an error is raised when the message is not included in the layout.
+   2. this layout can include extra substrings defined by the user.
+
+## Usage
+
+#### Testing module
+
+1. Define a child class from the 'TestSuite' parent class located in the 'testing' module.
+2. In this class, define your test cases.
+3. Optionally, define test suite or test case setups and teardowns.
+4. Create an instance of the child class and run the 'run_test_suite' method.  
+   It returns the boolean 'True' if the test suite succeeded.
+5. Optionally, get detailed results from the instance 'results' attribute.
+
+#### Logging module
+
+1. Create an instance of the 'Logger' class located in the 'logging' module.  
+   By default, the messages will be printed in the console and will not be written to a file.  
+   Optionally, to view all logging options, run 'help(Logger)'.
+2. Create messages by running the instance method 'message'.  
+   By default, the message level is 'info', this can be changed to: 'debug', 'warning', 'error'.
+
+## Changelog
+
+#### v2.0.1
+
+- Revision of documentation.
+- Revision of naming conventions.
+
+#### v2.0.0
+
+- Logging features 1 through 6 added.
+
+#### v1.0.0
+
+- Testing features 1 through 7 added.
+
+#### v0.1.0
+
+- Initial release.
