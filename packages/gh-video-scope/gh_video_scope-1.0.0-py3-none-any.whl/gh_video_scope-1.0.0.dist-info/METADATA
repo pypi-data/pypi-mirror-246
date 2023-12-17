@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: gh-video-scope
+Version: 1.0.0
+Summary: Pacchetto per l'estrazione di metadati da file video
+Author: Massimo Ghiani
+Author-email: m.ghiani@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: LICENSE.md
+Requires-Dist: ffmpeg-python
+Requires-Dist: future
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+# VideoInfo
+
+VideoInfo è una libreria Python progettata per facilitare l'estrazione di metadati e informazioni da file video. Utilizzando potenti strumenti come FFmpeg e OpenCV, VideoInfo permette agli sviluppatori e agli appassionati di multimedia di accedere facilmente a una vasta gamma di dati video, tra cui bit rate, frame rate, codec, e molto altro.
+
+## Caratteristiche
+
+- Estrazione di metadati dettagliati dai file video.
+- Generazione di miniature dai frame video.
+- Supporto per diversi formati video.
+- Interfacce ben definite per facilitare l'estensibilità e la manutenzione del codice.
+- Facilità di integrazione in progetti esistenti.
+
+## Installazione
+
+Per installare VideoInfo, è sufficiente eseguire il seguente comando:
+
+```bash
+pip install gh-video-info
+```
