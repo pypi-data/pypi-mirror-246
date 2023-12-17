@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/dropgrad/__init__.py
+src/dropgrad/dropgrad_opt.py
+src/dropgrad.egg-info/PKG-INFO
+src/dropgrad.egg-info/SOURCES.txt
+src/dropgrad.egg-info/dependency_links.txt
+src/dropgrad.egg-info/requires.txt
+src/dropgrad.egg-info/top_level.txt
+src/test/__init__.py
+src/test/test.py
