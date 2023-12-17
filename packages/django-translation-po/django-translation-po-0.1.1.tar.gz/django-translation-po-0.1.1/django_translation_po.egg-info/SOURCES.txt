@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_translation_po.egg-info/PKG-INFO
+django_translation_po.egg-info/SOURCES.txt
+django_translation_po.egg-info/dependency_links.txt
+django_translation_po.egg-info/top_level.txt
