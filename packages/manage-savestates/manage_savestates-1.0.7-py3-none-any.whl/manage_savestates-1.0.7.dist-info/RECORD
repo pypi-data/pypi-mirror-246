@@ -1,0 +1,12 @@
+manage_savestates/__init__.py,sha256=GZDJPwN7p_Hi9YHniiIA27zDY86MgEuiCu4VtaOXzJM,146
+manage_savestates/backup.py,sha256=8uwLOnva7ZenGxuDiA-iOgEVgugncFvgNX-hXVuMR-I,1668
+manage_savestates/common.py,sha256=k96RMHT9X1ugaqZbRcXcAN78eMBO_93fMqmqCM9IJdQ,6992
+manage_savestates/main.py,sha256=4hJZNPvP0sIKgnOiM9Icb5S4uwOOFRxCgdyxDZud0XY,1331
+manage_savestates/manage_savestates.py,sha256=xA8VtVahq-DCEgt2rbQOfmlyvDs0KOqdH5KEjNGa8hk,28
+manage_savestates/organize.py,sha256=ieT6FvIaYlKKbDMucFlbUZ7daTHugkedh6wTVjZyhKk,9024
+manage_savestates/settings.py,sha256=XFhLslNE12RrhhhTv4VzOesWfIIM2ZvJ2kdPcrMut4E,5400
+manage_savestates-1.0.7.dist-info/METADATA,sha256=i9-sBs3BbbM46MEyPIIqfuxGYjKyf99CbXhQThMYKNU,6388
+manage_savestates-1.0.7.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+manage_savestates-1.0.7.dist-info/entry_points.txt,sha256=r08nLBUICz52SA7tA_tnPyQQJZhV7jx7jyDsoKpYrq4,55
+manage_savestates-1.0.7.dist-info/licenses/LICENSE,sha256=qlQTQ8PwYjrbufCkPUpWl-lAZl975pXsmiu29ZlhFN0,1491
+manage_savestates-1.0.7.dist-info/RECORD,,
