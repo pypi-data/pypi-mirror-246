@@ -1,0 +1,5 @@
+autogluon.core[all]==1.0.1b20231217
+autogluon.features==1.0.1b20231217
+autogluon.tabular[all]==1.0.1b20231217
+autogluon.multimodal==1.0.1b20231217
+autogluon.timeseries[all]==1.0.1b20231217
