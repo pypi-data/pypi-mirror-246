@@ -1,0 +1,3 @@
+[ocr_translate.tsl_data]
+tsl.manual=ocr_translate.ocr_tsl.tsl:manual_data
+
