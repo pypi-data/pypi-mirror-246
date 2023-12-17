@@ -1,0 +1,4 @@
+Qt.py>=1.3.0
+
+[:platform_system == "Windows"]
+pywinpty>=2.0.1
