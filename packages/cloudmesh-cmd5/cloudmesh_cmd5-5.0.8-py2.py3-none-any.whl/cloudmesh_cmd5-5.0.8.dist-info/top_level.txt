@@ -1,0 +1,11 @@
+cloudmesh
+cmd5
+debug
+default
+dryrun
+man
+set
+shell
+sysinfo
+terminal
+var
