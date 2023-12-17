@@ -1,0 +1,8 @@
+setup.py
+aliusmangondalfinal2/__init__.py
+aliusmangondalfinal2/add.py
+aliusmangondalfinal2/subtract.py
+aliusmangondalfinal2.egg-info/PKG-INFO
+aliusmangondalfinal2.egg-info/SOURCES.txt
+aliusmangondalfinal2.egg-info/dependency_links.txt
+aliusmangondalfinal2.egg-info/top_level.txt
