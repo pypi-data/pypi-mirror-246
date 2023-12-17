@@ -1,0 +1,5 @@
+basecmd
+croniter
+paho-mqtt==1.4.*
+ply==3.*
+toml
