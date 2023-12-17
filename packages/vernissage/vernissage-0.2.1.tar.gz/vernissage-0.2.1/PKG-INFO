@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vernissage
+Version: 0.2.1
+Summary: Photo editing, add border and resize.
+Home-page: https://codeberg.org/rikles/vernissage
+Author: Rikles
+Author-email: dev@rikles.fr
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pillow (>=10.1.0,<11.0.0)
+Project-URL: Repository, https://codeberg.org/rikles/vernissage
+Description-Content-Type: text/markdown
+
+# Vernissage
+
+## Install
+```shell
+pipx install vernissage
+```
+
+## Run
+```shell
+vernissage image 'input.tif' 'output.jpg'
+
