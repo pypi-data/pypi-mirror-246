@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #282c34;
+}
+
+.header__logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #f39c12;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header__feedback {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.header__feedback:hover {
+  background-color: #2980b9;
+}
