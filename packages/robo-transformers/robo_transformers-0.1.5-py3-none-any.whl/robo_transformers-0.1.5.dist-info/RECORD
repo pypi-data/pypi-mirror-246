@@ -1,0 +1,9 @@
+robo_transformers/demo_imgs/gripper_almost_grasp.png,sha256=pnqhGxtSDVutWgOulSy3WE4rCSa7LPpN16zprJr76sg,1490187
+robo_transformers/demo_imgs/gripper_far_from_grasp.png,sha256=0spcSdCYcznCnHgUFtzwzkdkpF_Vlf4CzHhnW1reOEY,1327813
+robo_transformers/demo_imgs/gripper_mid_to_grasp.png,sha256=awiDxW9tXLKMwufuVZ18am_N2HVGxTp6SIRlhPAz568,1311097
+robo_transformers/inference.py,sha256=plPJjkDw_xI6tEKdTLQVFxGhczH1-D6R96E7mwe9yMk,4237
+robo_transformers/rt1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robo_transformers/rt1/rt1_inference.py,sha256=FEo62MPhQL6DbJSD-NSHjgexAYhHwrvD2P-oDf34nRE,9455
+robo_transformers-0.1.5.dist-info/METADATA,sha256=VEgpznjMCYZeTAkmM6aHEXilj7Ap90F6OCMJpESnv9k,5140
+robo_transformers-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+robo_transformers-0.1.5.dist-info/RECORD,,
