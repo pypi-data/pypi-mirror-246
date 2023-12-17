@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dj-paddle-billing
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/websideproject/dj-paddle-billing#readme
+Project-URL: Issues, https://github.com/websideproject/dj-paddle-billing/issues
+Project-URL: Source, https://github.com/websideproject/dj-paddle-billing
+Author-email: Benjamin Gervan <benjamin@websideproject.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Django Paddle Billing
+
+[![PyPI - Version](https://img.shields.io/pypi/v/dj-paddle-billing.svg)](https://pypi.org/project/dj-paddle-billing)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dj-paddle-billing.svg)](https://pypi.org/project/dj-paddle-billing)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install dj-paddle-billing
+```
+
+## License
+
+`dj-paddle-billing` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
