@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fgddem-py
+Version: 0.1.1
+Summary: convert FGD-DEM to GeoTIFF
+License: MIT
+Author: Kanahiro
+Author-email: kanahiro.iguchi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lxml (>=4.9.3,<5.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: rasterio (>=1.3.9,<2.0.0)
+Description-Content-Type: text/markdown
+
+# fgddem-py
+
+基盤地図情報「数値標高モデル」（FG-GML-DEM）をGeoTIFFに変換するCLIツールです。
+
+## usage
+
+```sh
+pip install fgddem-py
+fgddem input.xml output_dir
+fgddem input.zip output_dir # zipファイルも指定可能
+fgddem input_dir output_dir # ディレクトリも指定可能
+fgddem input_dir output_dir --max_workers 4 # 並列処理数を指定可能
+```
+
