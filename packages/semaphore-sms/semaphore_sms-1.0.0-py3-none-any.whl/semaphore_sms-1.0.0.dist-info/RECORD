@@ -1,0 +1,8 @@
+semaphore_sms/__init__.py,sha256=yE3Fcf0UaneSGxUBzAfDfoqcKiiN9jqavtcJ5TA6xiM,35
+semaphore_sms/client.py,sha256=QCchwbyigSJ4cIXfOQs5Huu-W0qRFdz8Fa3qfL-jUmE,10514
+semaphore_sms/exceptions.py,sha256=SnjSnJuGtFStn2n8KuaorREUXKjUb3jWFtoifKeRQaI,46
+semaphore_sms/http.py,sha256=NUmK5ucYkMZGIXq4MAxjWh66KlpeMQKMbhrDjuhdsrw,4735
+semaphore_sms-1.0.0.dist-info/METADATA,sha256=GrSjXk7fCqVhAJkHbK1yo7fcpcmbwhPnYLTti5kyv6c,4093
+semaphore_sms-1.0.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+semaphore_sms-1.0.0.dist-info/licenses/LICENSE,sha256=sZgNKwOCLqKOsaZEkS3UXNdTSSX54FYSA0bOLUDOk7c,1071
+semaphore_sms-1.0.0.dist-info/RECORD,,
