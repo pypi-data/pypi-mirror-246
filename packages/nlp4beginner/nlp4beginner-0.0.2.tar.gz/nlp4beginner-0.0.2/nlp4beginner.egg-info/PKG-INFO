@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nlp4beginner
+Version: 0.0.2
+Summary: PYPI tutorial package creation written by Dale Kwon
+Home-page: https://github.com/mlKwon/crawling
+Author: Dale Kwon
+Author-email: lk38ll@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+
+nlp4beginner https://github.com/mlKwon/crawling
+

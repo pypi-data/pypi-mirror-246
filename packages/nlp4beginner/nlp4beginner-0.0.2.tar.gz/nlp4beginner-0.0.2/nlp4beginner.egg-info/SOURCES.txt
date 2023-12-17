@@ -1,0 +1,8 @@
+README.md
+setup.py
+nlp4beginner.egg-info/PKG-INFO
+nlp4beginner.egg-info/SOURCES.txt
+nlp4beginner.egg-info/dependency_links.txt
+nlp4beginner.egg-info/not-zip-safe
+nlp4beginner.egg-info/requires.txt
+nlp4beginner.egg-info/top_level.txt
