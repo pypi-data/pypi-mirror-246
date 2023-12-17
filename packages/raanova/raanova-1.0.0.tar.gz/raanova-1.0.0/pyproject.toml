@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raanova"
+version = "1.0.0"
+authors = [
+    {name = "Aurélien Bück-Kaeffer", email = "aurelien.buck.kaeffer@gmail.com"},
+    {name = "Mila Pourali"},
+    {name = "Andrew Rambidis"}
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.12.0"
+keywords = []
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "scipy>=1.11.0",
+    "matplotlib>=3.8.0"]
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Repository = 'https://github.com/Scezaquer/MATH-533-F2023'
+
+[tool.setuptools.packages.find]
+where = ["src"]
