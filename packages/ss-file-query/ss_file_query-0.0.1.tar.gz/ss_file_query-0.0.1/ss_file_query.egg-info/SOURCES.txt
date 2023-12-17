@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+ss_file_query/__init__.py
+ss_file_query.egg-info/PKG-INFO
+ss_file_query.egg-info/SOURCES.txt
+ss_file_query.egg-info/dependency_links.txt
+ss_file_query.egg-info/entry_points.txt
+ss_file_query.egg-info/top_level.txt
+ss_file_query/tools/__init__.py
+ss_file_query/tools/query_tool.py
+ss_file_query/tools/utils.py
+ss_file_query/yamls/file_query_tool.yaml
+tests/__init__.py
+tests/test_file_query_tool.py
