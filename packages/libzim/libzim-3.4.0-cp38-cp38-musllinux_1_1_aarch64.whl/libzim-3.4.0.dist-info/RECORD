@@ -1,0 +1,17 @@
+libzim.cpython-38-aarch64-linux-gnu.so,sha256=e83pKDxswur7tlNpqDFMNmo7DaDzyPJK9xGeWYI_crM,8142129
+libzim-3.4.0.dist-info/WHEEL,sha256=KE4oX03isb3bCiRtWKI33CD2dg2F2leOy2S318WTZNw,112
+libzim-3.4.0.dist-info/top_level.txt,sha256=GdZ3eu3o1TZ8u4YE89CdUK2IPSei-1_pQ0Ipw32EMmo,7
+libzim-3.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+libzim-3.4.0.dist-info/RECORD,,
+libzim-3.4.0.dist-info/METADATA,sha256=SaCx2yqSQj8Nu_34x64ejGoTsuiNGSkNE-gTaaReSb0,8622
+libzim/libzim.h,sha256=1i2l8uV5sOqNckOWCEoldJG1blMH1Z8FOBiJMwp0fng,2981
+libzim/libzim.pyx,sha256=jK6U1gOsuj2FKewN5_KdGKWeu_Zt-SCN575rRRWThE4,45406
+libzim/libwrapper.cpp,sha256=fEdJj-kifW6eRYLoL0ccCpu-mYOKmdbXeXFvrXTJNZE,6532
+libzim/libwrapper.h,sha256=dRndYPdMJhpPJ9jKsrcbQzssbAnlpdcjAp7FmnB15vE,11058
+libzim/libzim.so.9,sha256=ylFyfeQfB4xT0mQE3Qog1gZWW69rxgaa-ctarsUtyls,19028193
+libzim/zim.pxd,sha256=cajSht5OSdCqpbqKh-1u3HmtsIQ7WDTehKPF5uKEZhI,7860
+libzim/libzim.cpp,sha256=aNu3IAGEFRz9Wiwdz6ZvNLJ00jvTLaxvI-QQ-4LqUf4,2059402
+libzim/libzim_api.h,sha256=d4Tszp3DjLnP1-f7qmUe6_D9_KcYUEOTgz0iATfFTn4,5693
+libzim.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+libzim.libs/ld-musl-aarch64-99c589a2.so.1,sha256=biJEcDnMjz7uC-sXE_L2-i1Z4DsasWxoYM36xDjeJc0,681921
+libzim.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
