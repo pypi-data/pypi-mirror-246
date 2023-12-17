@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: azucar-web-driver
+Version: 0.1
+Summary: Automatización de navegadores con Selenium
+Description-Content-Type: text/markdown
+
+# Automation Library
+
+## DescripciÃ³n
+La biblioteca `azucar_web_driver` facilita la automatizaciÃ³n de navegadores web usando Selenium. Ideal para tareas de navegaciÃ³n y pruebas automatizadas.
+
+## InstalaciÃ³n
+Instala desde GitHub:
+
+pip install git+https://github.com/juank704/azucar_web_driver.git
+
+## Uso
+```python
+from automation.chrome_factory import ChromeFactory
+driver = ChromeFactory.create_instance()
+```
+
+## Contribuciones
+Contribuciones son bienvenidas. EnvÃ­a tus PRs al repositorio.
+
+## Licencia
+Licenciado bajo [MIT]
+
+## Contacto
+Para soporte: [juan_k704@hotmail.com]
