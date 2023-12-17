@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+HelloPypiApacph/__init__.py
+HelloPypiApacph/calc.py
+HelloPypiApacph/dt.py
+HelloPypiApacph.egg-info/PKG-INFO
+HelloPypiApacph.egg-info/SOURCES.txt
+HelloPypiApacph.egg-info/dependency_links.txt
+HelloPypiApacph.egg-info/top_level.txt

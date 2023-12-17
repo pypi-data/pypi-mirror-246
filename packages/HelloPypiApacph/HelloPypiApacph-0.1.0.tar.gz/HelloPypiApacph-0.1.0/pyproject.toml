@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.2.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HelloPypiApacph"
+description = "A small example package"
+authors = [
+    { name = "Po-Hsun Cheng", email = "apacph@gmail.com" }
+]
+license = { text = "MIT License" }
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "HelloPypiApacph.__version__"}
+
+[project.urls]
+Homepage = "https://gitlab.com/apacph/HelloPypiApacph"
+Issues = "https://gitlab.com/apacph/HelloPypiApacph/issues"
