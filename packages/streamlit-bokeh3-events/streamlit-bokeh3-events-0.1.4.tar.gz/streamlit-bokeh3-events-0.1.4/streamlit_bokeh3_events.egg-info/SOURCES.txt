@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_bokeh3_events/__init__.py
+streamlit_bokeh3_events.egg-info/PKG-INFO
+streamlit_bokeh3_events.egg-info/SOURCES.txt
+streamlit_bokeh3_events.egg-info/dependency_links.txt
+streamlit_bokeh3_events.egg-info/requires.txt
+streamlit_bokeh3_events.egg-info/top_level.txt
+streamlit_bokeh3_events/frontend/build/asset-manifest.json
+streamlit_bokeh3_events/frontend/build/bootstrap.min.css
+streamlit_bokeh3_events/frontend/build/index.html
+streamlit_bokeh3_events/frontend/build/static/js/main.a9d1ae85.js
