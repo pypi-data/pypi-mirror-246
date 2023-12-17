@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test279
+Version: 0.3.0
+Summary: A test.
+Home-page: https://github.com/test/test
+Author: test
+Author-email: test@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# test lib
+
+- this is a lib test
