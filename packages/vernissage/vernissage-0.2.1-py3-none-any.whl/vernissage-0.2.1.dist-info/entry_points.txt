@@ -1,0 +1,3 @@
+[console_scripts]
+vernissage=vernissage.cli:cli
+
