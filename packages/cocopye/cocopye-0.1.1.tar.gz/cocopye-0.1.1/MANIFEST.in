@@ -1,0 +1,2 @@
+recursive-include src/cocopye/ui/web/static *
+include src/cocopye/ui/config.toml
