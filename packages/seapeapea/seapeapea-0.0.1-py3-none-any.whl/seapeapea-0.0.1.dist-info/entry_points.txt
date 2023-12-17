@@ -1,0 +1,2 @@
+[console_scripts]
+seapeapea = seapeapea:main
