@@ -1,0 +1,8 @@
+setup.py
+tuchuang/__main__.py
+tuchuang/upload.py
+tuchuang.egg-info/PKG-INFO
+tuchuang.egg-info/SOURCES.txt
+tuchuang.egg-info/dependency_links.txt
+tuchuang.egg-info/requires.txt
+tuchuang.egg-info/top_level.txt
