@@ -1,0 +1,10 @@
+setup.py
+googleaistudio/README.md
+googleaistudio/geminipro.py
+googleaistudio/requirements.txt
+googleaistudio.egg-info/PKG-INFO
+googleaistudio.egg-info/SOURCES.txt
+googleaistudio.egg-info/dependency_links.txt
+googleaistudio.egg-info/entry_points.txt
+googleaistudio.egg-info/requires.txt
+googleaistudio.egg-info/top_level.txt
