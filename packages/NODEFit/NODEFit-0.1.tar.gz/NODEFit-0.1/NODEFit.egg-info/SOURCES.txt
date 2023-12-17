@@ -1,0 +1,12 @@
+README.md
+setup.py
+NODEFit.egg-info/PKG-INFO
+NODEFit.egg-info/SOURCES.txt
+NODEFit.egg-info/dependency_links.txt
+NODEFit.egg-info/not-zip-safe
+NODEFit.egg-info/requires.txt
+NODEFit.egg-info/top_level.txt
+nodefit/__init__.py
+nodefit/constants.py
+nodefit/neural_ode.py
+nodefit/neural_sde.py
