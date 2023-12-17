@@ -1,0 +1,297 @@
+start: (stat | decl | qtmacro)*
+
+decl: decl_fn 
+ | decl_class 
+ | decl_class_fw 
+ | decl_enum 
+ | decl_oper 
+ | decl_ns 
+ | decl_using
+ | decl_friend
+
+inh_item: attr_access* type
+
+decl_mem_name: "*"? NAME ("[" expr "]")*
+
+decl_mem: ("mutable" | "const" | "static")* type decl_mem_name ("," decl_mem_name)* ("=" expr)? ";"
+
+named_item: NAME ("=" expr)?
+
+named: named_item ("," named_item)*
+
+decl_enum: "enum" "class"? NAME? "{" named? ","? "}" named? ";"
+
+decl_ns: "namespace" NAME? "{" ( decl | stat | qtmacro)* "}"
+
+inh: ":" inh_item ("," inh_item)*
+
+attr_access: ("public" | "private" | "protected")
+
+access: attr_access ("slots" | "Q_SLOTS")? ":"
+
+signals: ("signals" | "Q_SIGNALS") ":"
+
+QTMACRO: /Q(T)?(EST)?_[A-Z_]+/
+
+qtmacro_args: "(" (qname | STR | ",")* ")" 
+
+qtmacro.1: QTMACRO qtmacro_args? ";"?
+
+qtmacro_: "QT_BEGIN_NAMESPACE" | "QT_END_NAMESPACE" | "Q_OBJECT"
+ | "QT_FORWARD_DECLARE_CLASS" "(" qname ")" | "QT_USE_NAMESPACE" 
+ | "Q_PROPERTY" "(" qname+ ")" | "Q_ENUMS" "(" qname+ ")" | "Q_ENUM" "(" qname ")" 
+ | "Q_DISABLE_COPY" "(" qname ")" | "Q_PLUGIN_METADATA" "(" (qname | STR)+ ")"
+ | "Q_IMPORT_PLUGIN" "(" qname ")" | "Q_DECLARE_INTERFACE" "(" qname "," qname ")"
+ | "Q_INTERFACES" "(" qname ")" | "QTEST_MAIN" "(" qname ")"
+ | "Q_LOGGING_CATEGORY" "(" qname "," STR ")" | "Q_GADGET" ";"
+ | "Q_DECLARE_METATYPE" "(" qname ")" | "Q_FALLTHROUGH" "(" ")" ";"
+
+decl_class_fw.1: "class" NAME ";"
+
+decl_friend: "friend" "class" NAME ";"
+
+decl_using: "using" NAME "=" type ";" | "using" "namespace"? qname ";"
+
+templ: "template" "<" (("class"|"typename") NAME ("," NAME)?) ">"
+
+decl_class: templ? ("class" | "struct") NAME* inh? "{" (access | signals | decl | decl_mem | qtmacro | stat_typedef)* "}" named? ";"
+
+decl_arg: attr* type NAME? ("[" (NAME | INT)? "]")* ("=" expr)?
+
+decl_args: decl_arg ("," decl_arg)*
+
+qname: "~"? NAME ("::" "~"? NAME)*
+
+mem_init_item: NAME "(" expr? ("," expr)* ")"
+
+mem_init: ":" mem_init_item ("," mem_init_item)*
+
+fn_body: "{" (stat | decl_fn | decl_class | decl_enum | decl_using)* "}" ";"?
+
+decl_fn: templ? attr* type? attr* qname "(" decl_args? ")" mem_init? ("override" | "const")* ("=" ("default" | "0"))? (";" | fn_body)
+
+decl_oper_op: "=" | "<<" | "==" | ">>" | "!=" | "<" | ">"
+
+decl_oper: attr* type "operator" decl_oper_op "(" decl_args? ")" "const"? ("=" "default")? (";" | "{" stat* "}")
+
+stat_expr: expr ";" 
+
+stat_stdfn: ("std" "::")? "function" "<" type "(" decl_args? ")" ">" NAME ("=" expr_lambda)? ";"
+
+stat: stat_expr
+ | stat_assign 
+ | stat_for 
+ | stat_foreach
+ | stat_foreach_macro
+ | stat_do_while
+ | stat_if 
+ | stat_emit
+ | stat_stack_array
+ | stat_stack 
+ | stat_switch
+ | stat_var 
+ | stat_return 
+ | stat_while 
+ | stat_typedef
+ | stat_forever
+ | stat_delete
+ | stat_scope
+ | stat_stdfn
+ | qtmacro
+
+stat_scope: "{" stat+ "}"
+
+stat_typedef_alias: "typedef" type ("::" NAME)? NAME ";"
+
+stat_typedef_pfn: "typedef" type "(" "APIENTRY"? (NAME "::")? "*" NAME ")" "(" decl_args? ")" ";"
+
+stat_typedef: stat_typedef_alias | stat_typedef_pfn
+
+stat_var_name: "*"? qname ("[" expr? "]")*
+
+stat_var: attr* type ("::" type)* stat_var_name "=" expr ("," stat_var_name "=" expr)* ";"
+
+assing_op: "+=" | "-=" | "*=" | "/=" | "=" | "|=" | "&=" | "^="
+
+stat_assing_var: "*"? NAME ("[" expr "]")*  (assing_op expr)+ ";"
+
+stat_assing_ref: expr_call (assing_op expr)+ ";"
+
+stat_assign: stat_assing_var | stat_assing_ref
+
+stat_stack.1: attr* type qname ("," "*"? qname)* ("(" args? ")" | "{" args? "}")? ";"
+
+stat_stack_array: type NAME ("[" expr "]")+ ";"
+
+stat_emit.2: "emit" expr ";"
+
+comp_stat: (stat | "{" stat* "}")
+
+for_init_item: type? NAME "=" expr
+
+for_init: for_init_item ("," for_init_item)*
+
+for_test: expr
+
+inc_item: expr (assing_op expr)?
+
+for_inc: inc_item ("," inc_item)*
+
+stat_for: "for" "(" for_init? ";" for_test? ";" for_inc? ")" comp_stat
+
+stat_forever: "forever" comp_stat
+
+stat_do_while: "do" comp_stat "while" "(" expr ")" ";"
+
+stat_foreach: "for" "(" type? NAME ":" expr ")" comp_stat
+
+stat_foreach_macro: "foreach" "(" type? NAME "," expr ")" comp_stat
+
+stat_switch_case: "case"  (qname | expr_lit) ":" stat* | "default" ":" stat* ";"?
+
+stat_switch: "switch" "(" expr ")" "{" stat_switch_case+ "}"
+
+stat_while: "while" "(" ( NAME "=" )? expr ")" comp_stat
+
+stat_if_if: "if" "(" (type? NAME "=")? expr ")" comp_stat
+
+stat_if_else_if.1: "else" "if" "(" expr ")" comp_stat
+
+stat_if_else: "else" comp_stat
+
+stat_if: stat_if_if stat_if_else_if* stat_if_else? 
+
+stat_return.2: "return" expr ";"
+
+stat_delete.2: "delete" ("[" "]")? expr ";"
+
+attr: "static" 
+ | "const" 
+ | "inline" 
+ | "virtual" 
+ | "explicit" 
+ | "constexpr" 
+ | "extern"
+ | "volatile"
+
+subtype: "const"? (NAME | INT) "*"?
+
+type_depr: "const"? qname ("<" ("," | subtype)+ ">")? ("&" | "*")*
+
+type: ("const" | "unsigned")* "struct"? qname ("<" (type | INT) ("," (type | INT))* ">" ("::" NAME)? )? ("&" | "*" | "const")*
+
+init_list: "{" (expr ("," expr)*)? ","? "}"
+
+args: (NAME "=")? expr ("," expr)*
+
+expr_overload: "QOverload" "<" NAME? ">" "::" "of" "(" expr ")"
+
+temp_arg: "<" ("," | type)* ">"
+
+subscr: ("[" args "]")+
+
+call: "(" args? ")"
+
+constr: "{" args? "}"
+
+call_item: ("." | "->" | "::") NAME temp_arg? (subscr | call)?
+
+call_base: ("::" | "&" | "*")* (NAME | expr_cast | expr_sub) temp_arg?
+
+expr_call_simple: call_base (subscr | call | constr)
+
+expr_call_chain: call_base (subscr | call)? call_item+ 
+
+expr_call: expr_call_chain | expr_call_simple
+
+expr_new: "new" qname temp_arg? ("(" args? ")" | "[" args? "]" | "{" args? "}")?
+
+expr_sub: "(" (NAME "=")? expr ")"
+
+expr_inc: "++" expr | expr "++"
+
+expr_dec: "--" expr | expr "--"
+
+expr_name: NAME ("[" (NAME "=")? expr "]")*
+
+expr_fnref: "&"? NAME "::" NAME
+
+expr_nref: "&" NAME
+
+expr_inf_op: "/" | "*" | "<" | ">" | ">=" | "<=" | "+" | "-" | "%" | "&"
+  | "==" | "!=" | "<<" | ">>" | "|" | "&&" | "||" | "^"
+
+expr_inf: expr expr_inf_op expr
+
+expr_pref: ("-" | "+" | "!" | "~" | "*") expr
+
+expr_lit: STR+ | INT | FLOAT | CHAR | HEXINT
+
+expr_tern: expr "?" expr ":" expr
+
+expr_cast: ("qobject_cast" | "static_cast" | "reinterpret_cast") "<" type ">" "(" expr ")"
+
+expr_ccast: "(" type ")" expr
+
+capture: (NAME | "&")+ | "=" 
+
+expr_lambda: "[" (capture ("," capture)*)? "]" ("(" decl_args? ")")? ("->" type)? "{" stat* "}" 
+
+expr_pass: "*" NAME ("++" | "--") "=" expr
+
+expr_signal.1: "SIGNAL" "(" qname "(" decl_args? ")" ")"
+
+expr_slot.1: "SLOT" "(" qname "(" decl_args? ")" ")"
+
+expr: init_list 
+ | expr_call
+ | expr_fnref
+ | expr_inc
+ | expr_dec
+ | expr_sub
+ | expr_new
+ | expr_inf
+ | expr_pref
+ | expr_overload
+ | expr_lit
+ | expr_name
+ | expr_nref
+ | expr_tern
+ | expr_cast
+ | expr_ccast
+ | expr_lambda
+ | expr_pass
+ | expr_signal
+ | expr_slot
+
+INT: /[0-9]+[ul]*/i
+
+FLOAT: /[0-9]*[.][0-9]+[f]?/ | /[0-9]+[.][0-9]*[f]?/
+
+NAME: /[a-z_][a-z0-9_]*/i
+
+COMMENT : /\/\// /.*/
+
+COMMENT_MULTILINE: "/*" /(.|\n|\r)+/ "*/" 
+
+_STRING_INNER: /.*?/
+
+_STRING_ESC_INNER: _STRING_INNER /(?<!\\)(\\\\)*?/ 
+
+STR : "R"? "\"" _STRING_ESC_INNER "\""
+
+HEXINT: "0x" /[0-9a-f]+/i
+
+CHAR: /'.'/ | "'\\''" | "'\\\\'" | "'\\" /[rnt0-9]/ "'"
+
+PREPR: "#" /([^\\\n]|\\\n|\\)+/
+
+%ignore COMMENT
+
+%ignore COMMENT_MULTILINE
+
+%ignore PREPR
+
+%import common.WS
+
+%ignore WS
