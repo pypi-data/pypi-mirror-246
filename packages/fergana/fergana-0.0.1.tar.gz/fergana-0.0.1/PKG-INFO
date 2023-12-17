@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fergana
+Version: 0.0.1
+Summary: Simple Ml framework
+Author: egor-mashtakov
+Author-email: egor190707e@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+A machine learning framework that allows you to work with classification problems
