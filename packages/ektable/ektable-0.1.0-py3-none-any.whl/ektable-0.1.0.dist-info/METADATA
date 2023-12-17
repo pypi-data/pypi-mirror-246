@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ektable
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/SamuelBroster/ek
+License: MIT
+Keywords: ek,onetable,python,dynamo,dynamodb,aws,one table,one-table,orm
+Author: Samuel Broster
+Author-email: sam@broster.dev
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/SamuelBroster/ek
+Description-Content-Type: text/markdown
+
+# Ek
+
+A python library for DynamoDB single table designs.
+
