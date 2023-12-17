@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Ejercicio1-Mikexy21
+Version: 0.1.0
+Summary: Ejemplo 1
+Author: Mikeee
+Description-Content-Type: text/markdown
+
+# Hacku4 Cursos Ejemplo 1
+
+Es un ejemplo donde muestra los cursos de Hack4u
+
+## Cursos Disponibles
+
+- Intro a linux
+- Intro a Hacking
+- etc..
+
+## Instalacion
+
+Instala usando el paquete ´pip3´:
+
+
