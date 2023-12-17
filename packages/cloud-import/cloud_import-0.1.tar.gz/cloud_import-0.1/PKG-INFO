@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cloud_import
+Version: 0.1
+Summary: Import Python modules straight from the cloud (e.g. GitHub) at runtime!
+Home-page: https://github.com/Henri-J-Norden/py-cloud-import
+Download-URL: https://github.com/Henri-J-Norden/py-cloud-import.git
+Author: Henri J. Norden (originally by James Murphy)
+License: MIT
+Keywords: CLOUD,IMPORT,ARBITRARY CODE EXECUTION
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
