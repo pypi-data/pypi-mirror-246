@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: whichlang-py
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# whichlang-py
+
+Python bindings for [Whichlang](https://github.com/quickwit-oss/whichlang), a
+natural language detection library library written in Rust.
+
+## Installation
+
+Install like any other python package:
+
+```bash
+pip install whichlang-py
+```
+
+## Usage
+
+
+```python
+from whichlang_py import detect_language
+
+detect_language(
+  "A neblina enconbre o Cristo e a lagoa se ilumina" \
+  "com edifícios de cabeça para baixo e refletores do Jockey Club")
+```
+
