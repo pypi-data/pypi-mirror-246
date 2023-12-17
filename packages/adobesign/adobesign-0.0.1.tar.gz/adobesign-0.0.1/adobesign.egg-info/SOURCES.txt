@@ -1,0 +1,6 @@
+setup.py
+adobesign.egg-info/PKG-INFO
+adobesign.egg-info/SOURCES.txt
+adobesign.egg-info/dependency_links.txt
+adobesign.egg-info/not-zip-safe
+adobesign.egg-info/top_level.txt
