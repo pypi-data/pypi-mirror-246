@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: convolution
+Version: 0.0.1b0
+Summary: Convolution pakage
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# 🔢 Convolution
