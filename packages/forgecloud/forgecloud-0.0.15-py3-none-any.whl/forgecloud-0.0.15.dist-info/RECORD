@@ -1,0 +1,15 @@
+forgecloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forgecloud/config.py,sha256=0xf6z0dTzilfYnd7CdA26z9lH7XTkRhn7dXn4BIeL68,197
+forgecloud/forge.py,sha256=moZxvZ-Jyu_lcLuqGU8718nITsIOz39-eXQO3FJhh2I,3458
+forgecloud/post_process.py,sha256=RqEOq-5aTZlFGMy0Rq02Grbfgbo4nxFBEjGKF40u1RE,4157
+forgecloud/pre_process.py,sha256=aISdBg3qpbbutKnEAAnSEIzFf8t4OpaZzq7VeaCGhrA,6240
+forgecloud/print_test.py,sha256=Ikoc7yBS54stS6Y2x8-rQ5_DVH1cj2zO5AHqc4hZc5E,57
+forgecloud/run_app.py,sha256=IHQ5LEUy1amixls2mX4wfvcEO771E4pybBz9GgzUYOo,4799
+forgecloud/utils.py,sha256=Twy1t08Nyttig_MwhydxzuEYqPlH0KS-bt-4-gpB0OY,2686
+forgecloud/view_app.py,sha256=hOHc3oFbPeh9RY6TRnq5NsnAI7SpC0QIZruG0jaCr-w,1264
+forgecloud/cloudfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forgecloud/cloudfunctions/firestore_save.py,sha256=fotWy9VKotd7N2o8NiqxNsYrW9Kj6hleo8ZCBAZ_uCE,328
+forgecloud-0.0.15.dist-info/METADATA,sha256=ORscCbao1KR4DpWuefmGsZfR88kTWdM42b51HjWHZdg,1367
+forgecloud-0.0.15.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+forgecloud-0.0.15.dist-info/top_level.txt,sha256=cFHpM0yNDgkM5KU0oG-ldZ9zlLneM61WvhtGL3bjGr8,11
+forgecloud-0.0.15.dist-info/RECORD,,
