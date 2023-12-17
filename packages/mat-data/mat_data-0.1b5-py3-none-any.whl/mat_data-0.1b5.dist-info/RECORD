@@ -1,0 +1,14 @@
+matdata/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+matdata/README.md,sha256=vk1paFaWIm2hX84saQM3SQxc6A2aj0VeKbRgqHUBepY,3165
+matdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matdata/generator.py,sha256=3SmlATJB5E7GUJpG7iqgq25R8VHA_31mGIBtMOA7ly8,26386
+matdata/preprocess.py,sha256=dAmhfH5AuDf2IhTbmJCOopOEJZMiPmJyIleDFz9JCU8,33310
+matdata/assets/sample/Foursquare_Sample.csv,sha256=5CVBnYcuL_uj2oD2KdWZI1ldSnXvjOtCofP3k1n-vIY,7716732
+matdata/inc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matdata/inc/converter.py,sha256=GApooM84II5h-HvVS9iAdjH3mp_9PB4-ewDZrQt80HM,13677
+matdata/inc/ts_io.py,sha256=miOt4dJnTKXqY5SVKNaHslKBUWQLekaur2WEEcDazgw,52699
+mat_data-0.1b5.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+mat_data-0.1b5.dist-info/METADATA,sha256=6BwX040ZOoBKIEMLjdhP_lk3ZJ0XQGMvGz4t2ZnwTx0,5444
+mat_data-0.1b5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mat_data-0.1b5.dist-info/top_level.txt,sha256=sHwLBMSLQ2dINA8fXwo9hKqHsDYF0ZXHv8njIVo7j9M,8
+mat_data-0.1b5.dist-info/RECORD,,
