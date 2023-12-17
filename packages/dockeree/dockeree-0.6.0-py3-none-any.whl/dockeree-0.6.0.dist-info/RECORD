@@ -1,0 +1,6 @@
+dockeree/__init__.py,sha256=PN3IQVfeWq1kZtthvTlHpMt6MEqA1Mut6uvVHMHVhkI,6799
+dockeree/builder.py,sha256=I5omlPic2dqljIhxM68qkokwtoFtavhvn2okr2z1Euw,25016
+dockeree-0.6.0.dist-info/LICENSE,sha256=6k0qmJo9XjeO6VXEieeI_UUUUnFFm00HJcKzJZEpXIQ,60340
+dockeree-0.6.0.dist-info/METADATA,sha256=mc9lhdwYoLsho9bM_f9kF7nBBFnIBMi8QZ_B7xiTnAI,1352
+dockeree-0.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dockeree-0.6.0.dist-info/RECORD,,
