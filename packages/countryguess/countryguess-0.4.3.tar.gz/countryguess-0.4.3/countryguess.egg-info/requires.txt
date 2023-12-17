@@ -1,0 +1,9 @@
+
+[dev]
+pytest
+tox
+coverage
+pytest-cov
+ruff
+flake8
+isort
