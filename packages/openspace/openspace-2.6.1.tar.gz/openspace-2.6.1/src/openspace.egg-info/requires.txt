@@ -1,0 +1,10 @@
+requests
+matplotlib
+
+[dev]
+poetry
+black
+pre-commit
+isort
+mypy
+flake8
