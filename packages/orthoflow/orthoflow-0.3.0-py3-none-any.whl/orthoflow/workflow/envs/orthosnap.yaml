@@ -1,0 +1,11 @@
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # WARNING: The below versions **must** match the dependencies of orthosnap to allow the build to work on M1 macs.
+  - numpy=1.20.1
+  - mafft=7.490 
+  - fasttree=2.1.11
+  - pip
+  - pip:
+    - orthosnap==1.1.0
