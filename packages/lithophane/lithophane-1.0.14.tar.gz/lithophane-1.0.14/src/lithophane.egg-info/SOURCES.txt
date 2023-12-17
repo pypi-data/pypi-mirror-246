@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+bin/lithophane
+src/lithophane/__init__.py
+src/lithophane/__main__.py
+src/lithophane/metadata.py
+src/lithophane.egg-info/PKG-INFO
+src/lithophane.egg-info/SOURCES.txt
+src/lithophane.egg-info/dependency_links.txt
+src/lithophane.egg-info/requires.txt
+src/lithophane.egg-info/top_level.txt
