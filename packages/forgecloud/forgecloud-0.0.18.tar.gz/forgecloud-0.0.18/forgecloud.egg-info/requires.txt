@@ -1,0 +1,6 @@
+pydantic==1.10.13
+firebase-functions
+firebase_admin
+aiohttp
+asyncio
+python-dotenv
