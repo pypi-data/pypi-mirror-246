@@ -1,0 +1,14 @@
+ML_medic_kit/__init__.py,sha256=eA5SZF6d64XC7mN41XAWiJE0zrWPQYjbIL2rmQKy-_8,98
+ML_medic_kit/cross_validation.py,sha256=c1alnyLwQVz9N8oBG8mlIu1A134HaSiILAZ57Z3Vqsg,692
+ML_medic_kit/data_preprocessing.py,sha256=h-D2AAriIwWzvEtIESp8cUf1ucaaCMbuJvqafohiJuU,5029
+ML_medic_kit/hyperparameter_tuning.py,sha256=aANBddud2RnVTV_VtywmoaA6zAVNYFI_e7TUwKCtytM,1410
+ML_medic_kit/model_evaluation.py,sha256=8Y8aSHAa6gz0TnLhy1tc9JlWhtI8UnGMLghhVYQPJic,4975
+ML_medic_kit/model_selection.py,sha256=s2FAXJ6AB3fBhTl7PJL5CSPcC9zk7JSiO0W3VTCPuMk,4043
+ML_medic_kit/visualisation.py,sha256=zgaGV_sq6oIelneFwVUTCgzBVLH8QhZO6oWC67h0TaM,14156
+ML_medic_kit/data/breast_cancer_data.csv,sha256=FCXZr_p4uo5Tr8gdDvihkGnuEMSyH-ibPPUUBxsS7jM,125204
+ML_medic_kit/data/heart_disease_data.csv,sha256=y6gKlpqDKI6E9PmB5_wz_k7xKKlwiVkpI2jkIifJwss,11928
+ML_medic_kit-0.1.9.dist-info/LICENSE,sha256=z_Yym1KE8lPlAW0vnCUVuW3_3SGU-oX1yXcIqRkLPQs,1071
+ML_medic_kit-0.1.9.dist-info/METADATA,sha256=aE4QYhMGnzxuE-Y1TCdWqTw5lQCxcCvDLYICn0pmUnc,3699
+ML_medic_kit-0.1.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ML_medic_kit-0.1.9.dist-info/top_level.txt,sha256=3qCtYb-ixkmxh9akB1HzIEievEx_k_AiGirHVXzTKxo,13
+ML_medic_kit-0.1.9.dist-info/RECORD,,
