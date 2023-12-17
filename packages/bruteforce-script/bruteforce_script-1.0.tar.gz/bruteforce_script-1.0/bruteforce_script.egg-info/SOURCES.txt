@@ -1,0 +1,7 @@
+setup.py
+bruteforce_script.egg-info/PKG-INFO
+bruteforce_script.egg-info/SOURCES.txt
+bruteforce_script.egg-info/dependency_links.txt
+bruteforce_script.egg-info/entry_points.txt
+bruteforce_script.egg-info/requires.txt
+bruteforce_script.egg-info/top_level.txt
