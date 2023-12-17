@@ -1,0 +1,165 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "twlib"
+version = "2.3.0"
+description = ""
+authors = [
+    { name = "sysid", email = "sysid@gmx.de" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "typer",
+    "appdirs",
+    "pydantic",
+    "python-dateutil",
+    "pytz",
+    "pillow",
+    "pillow-heif",
+    "boto3",
+    "alembic",
+    "psycopg2-binary",
+    "sqlalchemy",
+    "pydantic-settings>=2.1.0",
+    "matplotlib>=3.8.2",
+    "bs4>=0.0.1",
+    "english-dictionary>=1.0.24",
+    "markdown>=3.5.1",
+    "transformers>=4.36.1",
+    "markdown2>=2.4.11",
+    "tiktoken>=0.5.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+git-open = "twlib.bin.git_open:app"
+twlib = "twlib:__main__"
+tokenize = "twlib.bin.tokenize_vimwiki:main"
+
+[tool.pdm]
+source = [
+    { name = "pypi", url = "https://pypi.python.org/simple", verify_ssl = true },
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff",
+    "coverage",
+    "bump-my-version",
+    "ipython",
+    "isort",
+    "pre-commit",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "boto3-stubs[essential]",
+    "mypy",
+]
+
+[tool.pdm.build]
+excludes = [
+    "./**/.git",
+]
+package-dir = "src"
+includes = [
+    "src/twlib",
+    "py.typed",
+    "*.md",
+]
+source-includes = [
+    "tests",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "tox.ini",
+]
+editable-backend = "path"
+
+[tool.bumpversion]
+current_version = "2.3.0"
+commit = true
+tag = false
+message = "Bump version to {new_version}"
+files = [
+    { filename = "src/twlib/bin/main.py" },
+    { filename = "VERSION" },
+    { filename = "pyproject.toml" },
+]
+
+[tool.bumpversion.file_patterns]
+"src/twlib/bin/main.py" = [
+    { search = "__version__ = '{current_version}'", replace = "__version__ = '{new_version}'" },
+]
+VERSION = [
+    { search = "{current_version}", replace = "{new_version}" },
+]
+"pyproject.toml" = [
+    { search = "version = {current_version}", replace = "version = {new_version}" },
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: marks tests as integration tests",
+    "e2e: marks tests as e2e tests, not to be run in CICD",
+]
+python_files = "*.py"
+norecursedirs = [
+    "wip",
+]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+
+[tool.mypy]
+ignore_missing_imports = false
+namespace_packages = true
+
+[[tool.mypy.overrides]]
+module = "awslambdaric.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "pydevd_pycharm",
+]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = [
+    "src/twlib",
+]
+omit = [
+    "tests/*",
+    "**/__main__.py",
+    "**/.venv/*",
+    "**/site-packages/*",
+    "examples/*",
+    "**/buku.py",
+    "**/buku",
+    "twlib/entrypoints/**",
+]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 70
