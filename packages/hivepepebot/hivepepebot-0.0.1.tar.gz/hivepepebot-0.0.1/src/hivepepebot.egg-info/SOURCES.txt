@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hivepepebot/__init__.py
+src/hivepepebot/hivepepebot.py
+src/hivepepebot.egg-info/PKG-INFO
+src/hivepepebot.egg-info/SOURCES.txt
+src/hivepepebot.egg-info/dependency_links.txt
+src/hivepepebot.egg-info/not-zip-safe
+src/hivepepebot.egg-info/top_level.txt
