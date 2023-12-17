@@ -1,0 +1,8 @@
+setup.py
+postikodi/__init__.py
+postikodi/postikodi.py
+postikodi.egg-info/PKG-INFO
+postikodi.egg-info/SOURCES.txt
+postikodi.egg-info/dependency_links.txt
+postikodi.egg-info/not-zip-safe
+postikodi.egg-info/top_level.txt

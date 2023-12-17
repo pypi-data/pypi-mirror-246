@@ -1,0 +1,1 @@
+from .postikodi import PersonalBMI
