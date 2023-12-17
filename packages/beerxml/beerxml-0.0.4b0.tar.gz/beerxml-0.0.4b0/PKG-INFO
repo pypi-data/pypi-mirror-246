@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: beerxml
+Version: 0.0.4b0
+Summary: The beerxml python package is a powerful tool designed to streamline the process of working with BeerXML files, ensuring that specific beer recipes adhere to the BeerXML standard. BeerXML is a widely adopted XML-based standard for representing brewing recipes, allowing brewers to share and exchange their recipes seamlessly.
+Home-page: https://yourownbeer.de
+License: MIT
+Keywords: beerxml,beer,xml,beerxml standard
+Author: YourOwnBeer
+Author-email: brew@yourownbeer.de
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Project-URL: Repository, https://github.com/lowmann15/beerxml
+Description-Content-Type: text/markdown
+
+
