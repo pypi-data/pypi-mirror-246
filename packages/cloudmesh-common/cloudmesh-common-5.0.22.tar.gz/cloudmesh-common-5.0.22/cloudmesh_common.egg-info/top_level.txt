@@ -1,0 +1,4 @@
+bin
+cloudmesh
+dist
+shell-new-dir
