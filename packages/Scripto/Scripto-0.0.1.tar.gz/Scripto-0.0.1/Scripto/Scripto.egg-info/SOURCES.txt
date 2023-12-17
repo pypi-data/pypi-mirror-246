@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Scripto/Scripto.egg-info/PKG-INFO
+Scripto/Scripto.egg-info/SOURCES.txt
+Scripto/Scripto.egg-info/dependency_links.txt
+Scripto/Scripto.egg-info/top_level.txt
