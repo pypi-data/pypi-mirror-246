@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: polars-pc
+Version: 0.0.1
+Summary: registers pyarrow-compute function as expressions to pc namespace
+Author-email: Dean MacGregor <powertrading121@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Polars-pc
+
+Registers pyarrow-compute functions to expressions namespace under "pc". This isn't a rust port, it just calls them as they are with `map_batches`. There is no type checking as all of the methods are loaded dynamically from a list of strings.
