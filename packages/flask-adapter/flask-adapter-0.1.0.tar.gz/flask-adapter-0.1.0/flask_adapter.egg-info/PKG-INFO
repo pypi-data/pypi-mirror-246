@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: flask-adapter
+Version: 0.1.0
+Summary: A simple adapter for flask to inject DTOs into route functions.
+Author: Diogo Souza
+Author-email: diogommtdes@gmail.com

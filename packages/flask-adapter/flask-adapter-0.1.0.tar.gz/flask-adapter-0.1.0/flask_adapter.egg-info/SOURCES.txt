@@ -1,0 +1,8 @@
+setup.py
+adapter/__init__.py
+adapter/injection.py
+flask_adapter.egg-info/PKG-INFO
+flask_adapter.egg-info/SOURCES.txt
+flask_adapter.egg-info/dependency_links.txt
+flask_adapter.egg-info/requires.txt
+flask_adapter.egg-info/top_level.txt
