@@ -1,0 +1,9 @@
+bilifm-0.1.8.dist-info/METADATA,sha256=Czao2NyLa3ogJuINILCiFmH2p1qYVJbS7tDm2S5j6XU,3498
+bilifm-0.1.8.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+bilifm-0.1.8.dist-info/entry_points.txt,sha256=RzUuUkrtG2AQvIEBX_VB1-IHS56U5GwS4X8W-LJAj5w,48
+bilifm-0.1.8.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+bilifm/__init__.py,sha256=D7FERxTbFIxqYZ3f6KUDh8eqSDEjmeF3h05p4R5iDc4,664
+bilifm/audio.py,sha256=NGOHOrg7L-pdlmjo9sFZhbL3oAVXAT1i324lykiNLKM,3906
+bilifm/fav.py,sha256=-JTr-vapfX0V0KYY-1K5kIxgzpHhfGQuiEmXyiARwHY,1099
+bilifm/user.py,sha256=ipl2czxi9adfH6iJ803i2txySoKuoeveUo0QeDU5rCw,1836
+bilifm-0.1.8.dist-info/RECORD,,
