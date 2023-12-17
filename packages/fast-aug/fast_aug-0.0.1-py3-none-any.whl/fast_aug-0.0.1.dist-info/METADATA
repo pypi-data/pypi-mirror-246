@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fast-aug
+Version: 0.0.1
+Summary: Fast nlp augmentation library with rust backend
+Project-URL: Homepage, https://github.com/k4black/fast-aug
+Author-email: Konstantin Chernyshev <kdchernyshev@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# fast-aug
