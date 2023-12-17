@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: erodecor
+Version: 0.1
+Author: Torrez
+Description-Content-Type: text/markdown
+
+# Error Decorator
+
+This module allows you to use the decorator class "Error" and you'll have to provide your
+error class.
