@@ -1,0 +1,57 @@
+# Schema validator for the depletion
+# author: Thomas Cokelaer
+
+type: map
+mapping:
+    "sequana_wrappers":
+        type: str
+    "input_directory":
+        type: str
+        required: False
+    "input_readtag":
+        type: str
+        required: False
+    "input_pattern":
+        type: str
+        required: False
+
+    "general":
+        type: map
+        mapping:
+            "reference":
+               type: str
+               required: True
+            "mode":
+               type: str
+               required: True
+               enum: [selection, depletion]
+
+    "apptainers":
+        type: any
+
+    "bwa":
+        type: map
+        mapping:
+            "threads":
+                type: int
+                range: { min: 1}
+            "options":
+                type: str
+                required: False
+            "resources":
+                type: map
+                mapping:
+                    "mem":
+                        type: str
+
+
+    "bwa_index":
+        type: map
+        mapping:
+            "resources":
+                type: map
+                mapping:
+                    "mem":
+                        type: str
+ 
+
