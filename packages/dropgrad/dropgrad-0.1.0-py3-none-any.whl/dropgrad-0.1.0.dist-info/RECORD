@@ -1,0 +1,10 @@
+__init__.py,sha256=EVBQZn1NpXMP_uJ-bjFjhoAaPCB2VJPNjLP7QuHApfM,65
+dropgrad/__init__.py,sha256=WB3GEiYItfK1u0___HBltHf7nDgW-AJgAk_zlxPMatY,72
+dropgrad/dropgrad_opt.py,sha256=HGy-NY5_Sf_98c9fjehwRwDt6Pz1jHkE-3BV3YfLyNQ,2789
+test/__init__.py,sha256=TOgHWi9HD26a-E27SQK1LB_IIjYTEHNRvLs8EB1VIUw,33
+test/test.py,sha256=oAb3n2dIaNpkkk9ivCDS0yg3YPWv0Fm60v3UOgEyEn8,1191
+dropgrad-0.1.0.dist-info/LICENSE,sha256=yiMrg5MEfq8bcP1y7F2H__FTl1HQfmSGoFYy0iHohfA,1068
+dropgrad-0.1.0.dist-info/METADATA,sha256=7ultm8M7ooq9XXlcyd6b40BN38k5N2UHDwyY39aVADY,6472
+dropgrad-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dropgrad-0.1.0.dist-info/top_level.txt,sha256=UX3NKq4_2sQYKMLgCbawIkRKLhJA_aDIfY_2gXG7i9c,23
+dropgrad-0.1.0.dist-info/RECORD,,
