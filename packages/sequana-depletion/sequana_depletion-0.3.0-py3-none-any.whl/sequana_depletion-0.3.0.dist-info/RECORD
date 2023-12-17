@@ -1,0 +1,11 @@
+sequana_pipelines/depletion/__init__.py,sha256=H1ZUTyMQBLQwfxdCtKO_jEi6mkLXrqovt6xy_q8UnDk,86
+sequana_pipelines/depletion/config.yaml,sha256=iDZ9tVxvBCj_ja3685hekLrDIkUFM2UnQ2BWId2b3qQ,1461
+sequana_pipelines/depletion/depletion.rules,sha256=0EZVc7gx42UcbTGAx2YEfH1r5Son0WVYHu8c1SlhHfg,4315
+sequana_pipelines/depletion/main.py,sha256=3IBBL_qa2yy6bbI3Xy3OceSrFyDkG3SEeWbZdceoYE0,2032
+sequana_pipelines/depletion/schema.yaml,sha256=eYF8vMV_qtahU2HskTHr7Evpxk6nTboD9-jssSWaYKE,1144
+sequana_pipelines/depletion/tools.txt,sha256=x4wBKjFx2go11kW9hbpE4-ncViuqOB6Qbr7gL-WTkgk,22
+sequana_depletion-0.3.0.dist-info/LICENSE,sha256=tifUGMwXA9uaq2g1wFz0ZgRRPOFCfqsOxRj8JneHZ3M,1530
+sequana_depletion-0.3.0.dist-info/METADATA,sha256=JtCGH9W82L0SlctqqrGhyIAtcOBjFSbEYVeYZW9fN7E,4470
+sequana_depletion-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sequana_depletion-0.3.0.dist-info/entry_points.txt,sha256=-rZfZEXYM1OoPtPfu3ZWH-ZuRtABr7q7FV9Kf2wfL8k,75
+sequana_depletion-0.3.0.dist-info/RECORD,,

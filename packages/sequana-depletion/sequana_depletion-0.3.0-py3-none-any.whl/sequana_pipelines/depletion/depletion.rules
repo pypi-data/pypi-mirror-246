@@ -1,0 +1,161 @@
+#
+#  This file is part of Sequana software
+#
+#  Copyright (c) 2016-2021 - Sequana Dev Team (https://sequana.readthedocs.io)
+#
+#  Distributed under the terms of the 3-clause BSD license.
+#  The full license is in the LICENSE file, distributed with this software.
+#
+#  Website:       https://github.com/sequana/sequana
+#  Documentation: http://sequana.readthedocs.io
+#  Contributors:  https://github.com/sequana/sequana/graphs/contributors
+##############################################################################
+import os
+
+from sequana_pipetools import snaketools as sm
+
+# This must be defined before the include
+configfile: "config.yaml"
+
+
+# A convenient manager
+manager = sm.PipelineManager("depletion", config)
+
+
+
+def get_final_outputs():
+    expected_output = expand("cleaned/{sample}_R1_.fastq.gz", sample=manager.samples)
+    if manager.paired:
+        expected_output += expand("cleaned/{sample}_R2_.fastq.gz", sample=manager.samples)
+    return expected_output
+
+
+rule all:
+    input:
+        get_final_outputs()
+
+
+rule bwa_index:
+    input:
+        reference=str(config['general']['reference'])
+    output:
+        bwa_bwt=str(config['general']['reference'])+".bwt",
+        fai=str(config['general']['reference'])+".fai",
+    log:
+        "reference/build.log"
+    params:
+        options="",
+        index_algorithm=config["bwa_index"]["index_algorithm"]
+    threads: 2
+    resources:
+        **config["bwa_index"]["resources"]
+    container:
+        config['apptainers']['bwa']
+    wrapper:
+       f"{manager.wrappers}/wrappers/bwa/build"
+
+
+rule bwa:
+    input:
+        fastq=manager.getrawdata(),
+        index=rules.bwa_index.output.bwa_bwt,
+        fai=rules.bwa_index.output.fai,
+        reference=rules.bwa_index.input.reference
+    output:
+        sorted=temp("{sample}/mapping/{sample}.sam"),
+    log:
+        "{sample}/bwa/bwa.log"
+    params:
+        options=config['bwa'].get("options", ""),
+        tmp_directory=config["bwa"]["tmp_directory"]
+    threads:
+        config["bwa"]["threads"]
+    resources:
+        **config["bwa"]["resources"]
+    container:
+        config['apptainers']['bwa']
+    wrapper:
+        f"{manager.wrappers}/wrappers/bwa/align"
+
+
+rule sam2bam:
+    """SAM to BAM conversion"""
+    input:
+        "{sample}/mapping/{sample}.sam"
+    output:
+        temp("{sample}/mapping/{sample}.bam")
+    container:
+        config['apptainers']['samtools']
+    shell:
+        """
+        samtools view -bS {input} > {output}
+        """
+
+
+def get_depletion_selection_outputs():
+    if manager.paired:
+        return ("cleaned/{sample}_R1_.fastq", "cleaned/{sample}_R2_.fastq")
+    else:
+        return ("cleaned/{sample}_R1_.fastq",)
+
+
+def get_final_outputs():
+    if manager.paired:
+        return ("cleaned/{sample}_R1_.fastq.gz", "cleaned/{sample}_R2_.fastq.gz")
+    else:
+        return ("cleaned/{sample}_R1_.fastq.gz",)
+
+
+rule depletion_selection:
+    input:
+        "{sample}/mapping/{sample}.bam"
+    output:
+        fastq=get_depletion_selection_outputs(),
+        both_mapped=temp("{sample}/mapping/{sample}_both_mapped.bam")
+    params:
+        ref    = config["general"]["reference"],
+        paired = manager.paired,
+        mode   = config["general"]["mode"]
+    log:
+        "{sample}/mapping/{sample}.log"
+    container:
+        config['apptainers']['samtools']
+    shell:
+        """
+        # uses -f2 to keep only read mapped in proper paired
+        if test {params.mode} == "selection"
+        then
+            samtools view -b -f2 -F 256 {input} 1> {output.both_mapped} 2>{log}
+        else
+            samtools view -b -f 12 -F 256 {input} 1> {output.both_mapped} 2>{log}
+        fi
+
+        if [ {params.paired} == "True" ]
+        then
+             samtools fastq {output.both_mapped} -1 {output.fastq[0]} -2 {output.fastq[1]} -n 2>>{log}
+        else
+             samtools fastq {output.both_mapped} -n > {output.fastq[0]} 2>>{log}
+        fi
+        """
+
+rule compression:
+    input:
+        fastq=get_depletion_selection_outputs(),
+    output:
+        get_final_outputs(),
+    container:
+        config['apptainers']['pigz']
+    shell:
+       """
+       pigz {input}
+       """
+
+
+onsuccess:
+    shell("chmod -R g+w .")
+
+    manager.teardown()
+    print("Once done, please clean up the directory using\n'make clean'")
+
+onerror:
+    manager.onerror()
