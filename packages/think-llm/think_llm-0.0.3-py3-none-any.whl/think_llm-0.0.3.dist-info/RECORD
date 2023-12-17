@@ -1,0 +1,13 @@
+think/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+think/ai.py,sha256=OiJ06YALyM8PMHNZkBBNjrQMDWZWA6vxGryRNDYQ_Hc,3939
+think/chat.py,sha256=ZfNr0oxyGmH1aUFBlyqrWt3ng2oRBJ5rx-oXz_8-yDY,5134
+think/llm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+think/llm/anthropic.py,sha256=tVMm5c59Fm8an4Sn5LOkt8H490i17Kb1qsHCvnTrdLY,4144
+think/llm/openai.py,sha256=JL0XfNcJQO81NEuIgbG1wmcIu1M3j-iKJXS73YSbnos,5354
+think/parser.py,sha256=O70MOQQaCNbGdMH1FL_o1mykZfTuCnYtihQXTVhnOac,3225
+think/prompt.py,sha256=2j37HY196XOjSVvl6eZku1ZyJC7JX8A3aUYrA45GSlE,1280
+think/tool.py,sha256=D7-LhG3JDSLX7NdhMMtmtuMuWr5rW0sm84WKVlhgyHY,4394
+think_llm-0.0.3.dist-info/LICENSE,sha256=ynOeMJy5ayXQfgqb-U1hli0MQMunKYjDHJYcgZW7TZU,1070
+think_llm-0.0.3.dist-info/METADATA,sha256=A8k1n5ief3sD3HPEkCICWbX-AFNFSBw1lLuzOcl7ytg,4574
+think_llm-0.0.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+think_llm-0.0.3.dist-info/RECORD,,
