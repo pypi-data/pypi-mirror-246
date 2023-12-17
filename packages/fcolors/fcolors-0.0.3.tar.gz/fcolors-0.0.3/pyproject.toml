@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fcolors"
+version = "0.0.3"
+authors = [
+  { name="Jayson Bunnell", email="jaysonbunnell@gmail.com" },
+]
+description = "A simple fstring-friendly string colorizer"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/jbunnell/colors"
+Issues = "https://gitlab.com/jbunnell/colors/issues"
+
