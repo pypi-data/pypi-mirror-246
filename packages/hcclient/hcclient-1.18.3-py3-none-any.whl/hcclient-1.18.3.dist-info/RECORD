@@ -1,0 +1,11 @@
+hcclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hcclient/__main__.py,sha256=XJHC9hSJ8rI2AUKW9J3lZwYh_Slc2vS0ZQfuLtdHm18,5267
+hcclient/client.py,sha256=-jEcFmcWXbiZ0-1jVD261OrcyBEyoHMjSE9bd6ssRpA,57378
+hcclient/config.py,sha256=DFfqbxeJZU10zza0WDWgWfPEXD2NXJeb22cMGRqH-IA,8345
+hcclient/formatter.py,sha256=zSUrEEu1GxR2hA-KM_S1T9sHpCLJZiW50ThXSO0IPGQ,5255
+hcclient/hook.py,sha256=mQRDmhwcQ9AHJ2DwrFtW-sOdsGAjopgYaa_3_-_6h6c,1019
+hcclient-1.18.3.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+hcclient-1.18.3.dist-info/METADATA,sha256=A3Y_VX9oe457QJaJzYg2OihKd3nG3EhkryP34MorW4Q,15818
+hcclient-1.18.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hcclient-1.18.3.dist-info/entry_points.txt,sha256=8zYYxk8FZ0Bi0Jfw51WVNxCAqzocQVEybmuzMOTA4L4,51
+hcclient-1.18.3.dist-info/RECORD,,
