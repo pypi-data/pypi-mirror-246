@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PypiPackagexample
+Version: 0.0.1
+Summary: paquete de prueba para una clase de Udemy
+Home-page: https://github.com/Shushant94/pypipackageexample.git
+Author: Shushant Mohan Kumari
+License: MIT
+License-File: LICENSE

@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+PypiPackagexample.egg-info/PKG-INFO
+PypiPackagexample.egg-info/SOURCES.txt
+PypiPackagexample.egg-info/dependency_links.txt
+PypiPackagexample.egg-info/requires.txt
+PypiPackagexample.egg-info/top_level.txt
+economypackage/__init__.py
+economypackage/mathseconomy/__init__.py
+economypackage/mathseconomy/mathsadvancefuncs.py
+economypackage/mathseconomy/mymathsUtils.py
