@@ -1,0 +1,10 @@
+seguid/__init__.py,sha256=cx8L9jfTs2ZVoSRaT_0_URkg2DN-YdYydfO9oCsYN6Y,139
+seguid/asserts.py,sha256=j4GnLkwMIXBlUTFVAsG6M3vMOU9IiscXi2uXeStIrwE,2193
+seguid/chksum.py,sha256=xQkXVmJmSKPG1rFffd3FT9U7aB7dAf18aeFJbb8W4P0,9148
+seguid/manip.py,sha256=EW6HIFwggmvAfl2OQ7lWeeXpdGVeCjCTtZcVlNbTebI,4216
+seguid/reprutils.py,sha256=r6kF2dInc6LfXrjTSJZ_4RFdClbbjziIP4OVfwjvRkc,2328
+seguid/tables.py,sha256=Kf9lsQkrDm8AQJXcpU1RA2Ay29xyEyqFsRiodUv-Las,3042
+seguid-0.0.1.post9004.dist-info/LICENSE.txt,sha256=pmNQqliHXX-C3t5RmWfs79OCoZPX2aIcimOxC1E3TYw,1092
+seguid-0.0.1.post9004.dist-info/METADATA,sha256=Xl2e9nfV797NG_FImOg6BDq6b8QVYZ1U8osWeOe8Hec,3017
+seguid-0.0.1.post9004.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+seguid-0.0.1.post9004.dist-info/RECORD,,
