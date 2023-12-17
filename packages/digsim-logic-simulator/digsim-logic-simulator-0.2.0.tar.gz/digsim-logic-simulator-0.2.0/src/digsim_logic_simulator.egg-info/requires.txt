@@ -1,0 +1,5 @@
+pyvcd>=0.3.0
+pyside6>=6.6.0
+pexpect==4.8.0
+qtawesome
+yowasp-yosys==0.36.0.8.post620
