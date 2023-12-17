@@ -1,0 +1,25 @@
+[project]
+name = "dj-rest-kit"
+version = "0.0.1-alpha"
+authors = [
+    { name = "Prashant Gabu", email = "prashantgabu.earn@gmail.com" },
+]
+description = "A small utility package for DRF"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "Django==4.2",
+    "djangorestframework==3.14.0",
+    "django-filter==23.5",
+    "django-model-utils==4.3.1",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"

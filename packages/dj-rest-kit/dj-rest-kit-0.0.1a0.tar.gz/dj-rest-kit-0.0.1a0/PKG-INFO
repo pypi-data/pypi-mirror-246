@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dj-rest-kit
+Version: 0.0.1a0
+Summary: A small utility package for DRF
+Author-email: Prashant Gabu <prashantgabu.earn@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django==4.2
+Requires-Dist: djangorestframework==3.14.0
+Requires-Dist: django-filter==23.5
+Requires-Dist: django-model-utils==4.3.1
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
