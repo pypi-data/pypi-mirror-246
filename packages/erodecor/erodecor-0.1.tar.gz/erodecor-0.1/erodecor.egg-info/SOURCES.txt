@@ -1,0 +1,8 @@
+README.md
+setup.py
+erodecor/__init__.py
+erodecor/main.py
+erodecor.egg-info/PKG-INFO
+erodecor.egg-info/SOURCES.txt
+erodecor.egg-info/dependency_links.txt
+erodecor.egg-info/top_level.txt
