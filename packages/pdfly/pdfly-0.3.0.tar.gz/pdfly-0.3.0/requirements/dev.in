@@ -1,0 +1,9 @@
+black
+pip-tools
+pre-commit>=3.2.0
+pytest
+pytest-cov
+pytest-socket
+pytest-timeout
+twine
+wheel
