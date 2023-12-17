@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+list3r/list3r.py
+list3r.egg-info/PKG-INFO
+list3r.egg-info/SOURCES.txt
+list3r.egg-info/dependency_links.txt
+list3r.egg-info/requires.txt
+list3r.egg-info/top_level.txt
