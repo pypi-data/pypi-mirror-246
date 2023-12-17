@@ -1,0 +1,9 @@
+PyMieSim
+PyMieSim/binary
+build
+dist
+docs
+extern
+libraries
+requirements
+tests
