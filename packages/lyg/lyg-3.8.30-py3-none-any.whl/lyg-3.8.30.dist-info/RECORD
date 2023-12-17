@@ -1,0 +1,13 @@
+lyg/__init__.py,sha256=QGFdyFwc8SNqWwrGB0zMIT32G24ab3yLAIC7U4-69VQ,420
+lyg/tx.cp310-win_amd64.pyd,sha256=0ioOf2YeOSa4Zrv0XxCGSggI0uA0WjBqP5GV0rFg6-M,914432
+lyg/tx.cp311-win_amd64.pyd,sha256=IKJPKMo-lubc-5BTLHLsem_cJGmYbXHwd-2Z1PzJRoU,925696
+lyg/tx.cp38-win_amd64.pyd,sha256=Uj1fXy1UHmceBktpB5d5z-y0Js76pL5fA3Sm1DQCcYw,825856
+lyg/tx.cp39-win_amd64.pyd,sha256=Snft9XGEPG0vSsX3KV6XnsE4RaACJecleyPkgA3UnX8,826368
+lyg/tx.cpython-310-x86_64-linux-gnu.so,sha256=supuFrctqmhzEyBqqZT_UU2-LhhwijzPOH7JvcIp_gU,8559928
+lyg/tx.cpython-311-x86_64-linux-gnu.so,sha256=pK41TWASh6mPGCOzn4COD2xFub2Tjg6QBKVXeoGwPwk,9163024
+lyg/tx.cpython-38-x86_64-linux-gnu.so,sha256=l3lclRz-_MngJjQur1IaAq0etNGfsPBoP-dGqID1Ee8,24780248
+lyg/tx.cpython-39-x86_64-linux-gnu.so,sha256=BiFlluCmvlhIH-M-GPklUU1wVRiRs73Py7q2zLjFChw,8574776
+lyg-3.8.30.dist-info/METADATA,sha256=rYOfKtxOtAHVXZlO0zjhvdmBkNUECwDKZnN052EhZ-M,430
+lyg-3.8.30.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lyg-3.8.30.dist-info/top_level.txt,sha256=91CIlQxDtfyIeB-J0xtSjdq8y1lrF4EI8mhJieVbiaQ,4
+lyg-3.8.30.dist-info/RECORD,,
