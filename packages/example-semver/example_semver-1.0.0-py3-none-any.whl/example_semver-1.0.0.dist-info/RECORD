@@ -1,0 +1,5 @@
+example_semver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_semver/greet.py,sha256=pVwUNGtcDhHahzeT2xde_SjUhAozCl7boY0D19cxBiY,46
+example_semver-1.0.0.dist-info/METADATA,sha256=fsOtIC3rYUNb1Vol3eQQf8wdgSyAMRMZwNZlfmUxgd0,450
+example_semver-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+example_semver-1.0.0.dist-info/RECORD,,
