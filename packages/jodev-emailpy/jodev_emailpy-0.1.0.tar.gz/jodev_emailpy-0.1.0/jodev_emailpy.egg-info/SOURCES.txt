@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+jodev_emailpy/__init__.py
+jodev_emailpy/client.py
+jodev_emailpy/errors.py
+jodev_emailpy/utils.py
+jodev_emailpy.egg-info/PKG-INFO
+jodev_emailpy.egg-info/SOURCES.txt
+jodev_emailpy.egg-info/dependency_links.txt
+jodev_emailpy.egg-info/requires.txt
+jodev_emailpy.egg-info/top_level.txt
