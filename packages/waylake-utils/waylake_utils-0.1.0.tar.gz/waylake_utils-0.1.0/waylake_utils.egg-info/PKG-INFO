@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: waylake-utils
+Version: 0.1.0
+Summary: Custom logging utility
+Home-page: UNKNOWN
+Author: waylake
+Author-email: plmokn7034soo@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# python-utils
+python 의 공통된 모듈을 다루는 저장소
+
+
