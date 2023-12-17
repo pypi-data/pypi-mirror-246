@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: multtestlib
+Version: 2023.4
+Summary: Library for executing unit tests, in Python, using parallel processing.
+Author-email: Ricardo Alvarenga <alvarenga.r.ricardo@gmail.com>
+License: Copyright (c) 2022 Ricardo Ribeiro de Alvarenga
+        
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+        
+         The above copyright notice and this permission notice shall be included in
+         all copies or substantial portions of the Software.
+        
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+         THE SOFTWARE.
+Project-URL: Homepage, https://github.com/alvarengaricardo/multtestlib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ # multtestlib
+
+**multtestlib** (2023.4) is a library for running unit tests using processing parallel, written in Python.
+
+![table](https://github.com/alvarengaricardo/multtestlib/blob/main/table.png?raw=true.png)
+
+## Example
+
+**Code:**
+
+    import multtestlib as mtl
+    import library_to_test as ltt
+    
+
+    def main():
+        # Specify the number of CPUs to be used.
+        cpus = 4
+
+        # Create one, or two, array with the input parameters.
+        array_in1 = [a, b, c, d, e]
+        array_in2 = [aa, bb, cc, dd, ee]
+
+        # Create one, or two, array with the output parameters (expected values).
+        array_out = [f, g, h, i, j]
+
+        # Provide the parameters for the selected test function.
+        # In this example "test_equal".
+        mtl.test_equal(cpus, array_in1, array_in1, array_out, ltt.function_to_test)
+
+
+    if __name__ == "__main__":
+        mtl.init()
+        main()
+        mtl.end()
+
+
+**Generated Files, with the results**
+
+    filepass.txt -> Contains passed tests
+    filefail.txt -> Contains failed tests
+    filetot.txt -> Contains all tests
