@@ -1,0 +1,25 @@
+[project]
+name = "automatically"
+authors = [
+    {name = "Jonas Loos", email = "automatically@jloos.de"}
+]
+description = "Install packages automatically"
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/JonasLoos/automatically"
+
+[build-system]
+requires = [
+    "setuptools>=61",
+    "setuptools-scm>=8.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "automatically/_version.py"

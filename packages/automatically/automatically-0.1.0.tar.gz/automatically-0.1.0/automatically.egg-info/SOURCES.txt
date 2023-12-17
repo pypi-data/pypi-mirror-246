@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+automatically/__init__.py
+automatically/_version.py
+automatically/unsafe.py
+automatically.egg-info/PKG-INFO
+automatically.egg-info/SOURCES.txt
+automatically.egg-info/dependency_links.txt
+automatically.egg-info/top_level.txt
