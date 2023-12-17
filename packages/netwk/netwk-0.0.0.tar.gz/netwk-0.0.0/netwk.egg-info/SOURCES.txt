@@ -1,0 +1,9 @@
+README.md
+setup.py
+netwk/__init__.py
+netwk/activations.py
+netwk.egg-info/PKG-INFO
+netwk.egg-info/SOURCES.txt
+netwk.egg-info/dependency_links.txt
+netwk.egg-info/requires.txt
+netwk.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: netwk
+Version: 0.0.0
+Summary: planning
+Home-page: https://github.com/flowa-ai/netwk
+Author: flowa.ai
+Author-email: flowa.dev@gmail.com
+Keywords: network,machine learning,ai,neural network
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+planning
