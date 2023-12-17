@@ -1,0 +1,5 @@
+bdfparser
+pillow
+tqdm
+
+[dev]

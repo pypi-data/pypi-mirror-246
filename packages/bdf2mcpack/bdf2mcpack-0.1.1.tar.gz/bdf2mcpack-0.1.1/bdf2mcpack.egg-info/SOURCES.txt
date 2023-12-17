@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bdf2mcpack/main.py
+bdf2mcpack.egg-info/PKG-INFO
+bdf2mcpack.egg-info/SOURCES.txt
+bdf2mcpack.egg-info/dependency_links.txt
+bdf2mcpack.egg-info/entry_points.txt
+bdf2mcpack.egg-info/requires.txt
+bdf2mcpack.egg-info/top_level.txt
