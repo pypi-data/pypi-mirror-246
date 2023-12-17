@@ -1,0 +1,5 @@
+opentelemetry/instrumentation/weaviate/__init__.py,sha256=GoIDD1Ts6KS_AjsZz4y7ssNLZj_FUGZNwbPw6tJcfX4,45
+opentelemetry/instrumentation/weaviate/version.py,sha256=cID1jLnC_vj48GgMN6Yb1FA3JsQ95zNmCHmRYE8TFhY,22
+opentelemetry_instrumentation_weaviate-0.6.0.dist-info/METADATA,sha256=yru07IUCd4tCZOzZKO8avMUO0jfxxfAc4Bl15uC0erQ,792
+opentelemetry_instrumentation_weaviate-0.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+opentelemetry_instrumentation_weaviate-0.6.0.dist-info/RECORD,,
