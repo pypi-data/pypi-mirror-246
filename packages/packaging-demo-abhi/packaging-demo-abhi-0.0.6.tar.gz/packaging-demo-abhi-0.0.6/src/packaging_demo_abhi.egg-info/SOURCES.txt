@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+version.txt
+src/packaging_demo/__init__.py
+src/packaging_demo/slow.py
+src/packaging_demo/states_capital.json
+src/packaging_demo/states_info.py
+src/packaging_demo/folder/__init__.py
+src/packaging_demo/folder/nested_folder/__init__.py
+src/packaging_demo/folder/nested_folder/nested_module.py
+src/packaging_demo_abhi.egg-info/PKG-INFO
+src/packaging_demo_abhi.egg-info/SOURCES.txt
+src/packaging_demo_abhi.egg-info/dependency_links.txt
+src/packaging_demo_abhi.egg-info/requires.txt
+src/packaging_demo_abhi.egg-info/top_level.txt
+tests/test_slow.py
+tests/test_states_info.py
