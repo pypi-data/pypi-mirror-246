@@ -1,0 +1,12 @@
+sprig_essentials/__init__.py,sha256=02C4rtq9ju1oh18dk_Si93hzY7COxf-8chxs3qohYdo,838
+sprig_essentials/audio.py,sha256=-v4UXgfNUInEzWw2X9zlOZNvQ7tAhqs-S53r4DwJIV0,3885
+sprig_essentials/buttons.py,sha256=IOe4i2QNmo1MMPPzqGtrE_hRDMdgiZzUWHvzU65w-g8,3330
+sprig_essentials/display.py,sha256=sP35F3STQ-ZFdwuJy_TcjHNT_IRDDA-Rus3cHGJpc8c,5035
+sprig_essentials/graphics/__init__.py,sha256=EhHNnx5XDwr0O4jZvGxnBp4K1NKuTIS7-I2ENiHYgvo,57
+sprig_essentials/graphics/shapes.py,sha256=Ie9MHIS1uWRPV0IbJSvYVypHB6sSV8ykwiG1RF2No34,72
+sprig_essentials/graphics/text.py,sha256=DYP80wvt5R2aaTB_KGu7O8Tosj31fdQlKhfBMD9lzmA,71
+sprig_essentials-0.3.0.dist-info/LICENSE,sha256=u4oyAhKcS9iVcIVrMWn4QfWdQv8vMPpht7Yg2xi5V9Y,1075
+sprig_essentials-0.3.0.dist-info/METADATA,sha256=_qS0yPNrDfsFwsLs398MxgIL3ImEXtJm9Nnzeyob1RI,14306
+sprig_essentials-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sprig_essentials-0.3.0.dist-info/top_level.txt,sha256=s_AWVLUn0MyEQPqQ5hJWuW4QPqjSxQ-6VLepM5JiiGA,17
+sprig_essentials-0.3.0.dist-info/RECORD,,
