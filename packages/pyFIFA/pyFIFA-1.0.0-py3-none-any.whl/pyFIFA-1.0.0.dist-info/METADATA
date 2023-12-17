@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyFIFA
+Version: 1.0.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyfiglet >=0.8.post1
+
+# Team Members
+`alexh212`- Alex Hmitti
+
+`as13909` - Aaron Stein :)
+
+`Rafinator123` - Rafael Nadal-Scala
+
+# Concept
+Our project is inspired by the 2023 FIFA World Cup which took place in Qatar. Our overall ambition was to create a fun and low stakes text driven soccer game aimed at those who enjoy the sport. The game is pretty straightforward, all a user has to do is answer world cup trivia questions to score goals and win games moving up in the bracket and hopefully winning it all! The main benefits of the program are like most other games, a form of relaxation and escapism from stress. The final advantage of the game is that it is easy to install, all a person needs is pip and python on their computer and they can play our game for free.
+
+# Installation
+To install and run this game the user has two options. For both options a user must have [Python](https://www.python.org/downloads/) installed on their computer if they do not already. If you are unsure whether or not your computer has python attempt to run one of the following commands: `python --version` or `python3 --version`. 
+
+To simply play the game the user must first [install](https://pip.pypa.io/en/stable/installation/) pip (if not already installed). Next the user must type in the command `pip install pyFIFA`. From there the user will have the game installed locally on their machine. To run the game simply type the command `pyFIFA-play` and the game will be playable. More information about the game can be found on [pyFIFA's project page](https://pypi.org/project/pyFIFA/) on pip's website. 
+
+The other way to play is for those who want a more indepth view of the code. To do so users must clone this repository by typing the following command into their terminal: `git clone https://github.com/Rafinator123/OOP_Fifa_In_Terminal`. From there a user must navigate over to the `OOP_Fifa_In_Terminal` directory and from the root of that directory run the following command `python3 main.py` or `python main.py` depending on which version of python your computer is running.
+
+# Dependencies
+The only external dependency for this project is [pyFiglet](https://pypi.org/project/pyfiglet/).
