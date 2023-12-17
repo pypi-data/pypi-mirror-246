@@ -1,0 +1,12 @@
+microbin/__init__.py,sha256=ZespgXjIETqZ52_Vagy3w4yOvclb2j5YtvIuJERH0oI,137
+microbin/__version__.py,sha256=8Wv5xVSe1ZBCAqA_6tUxNjAZSNcJFYNl94t2KJuRzWE,23
+microbin/json2mb.py,sha256=KN04UTwJl_IxQfF8y3GXyqeiqZOaeudDSRuAQBgmEXA,1193
+microbin/mb2json.py,sha256=ODpMYzTxMpXi0vWxuqHxgcrpE1n2q7rw4zDv_KM53gw,1450
+microbin/mbstat.py,sha256=v0P_JLOcIlshEhz2zwt73wDA4f-KWV-1qMDm6YWkreE,2658
+microbin/reader.py,sha256=WSt1c2Ao6apGxgCFeqnGg4A6dxD_-RMJSKJ1ML3TmQU,9235
+microbin/type.py,sha256=KYlYeuTym4lD4ZDHKJg0ANctnq-pT-OZVQTVPnxmJgE,711
+microbin/writer.py,sha256=Bi2ha9E798hduA3Gh9AXeyN36iiftN7YHjEflm5SYUA,8258
+microbin-1.0.1.dist-info/METADATA,sha256=WzcXiNk4uIcvrI828ak1FRKUDgxkeUYY-QPSGvYS-2k,3011
+microbin-1.0.1.dist-info/WHEEL,sha256=rKV0FgtKSxe-Q3jTBlmgn27qdhTm0_K1YKwPwAPskZ0,87
+microbin-1.0.1.dist-info/licenses/LICENSE,sha256=Udl2CowQp6BjsG_vwo4StSEJuqEzOgSscwhiXc0uOf4,1090
+microbin-1.0.1.dist-info/RECORD,,
