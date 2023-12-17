@@ -1,0 +1,50 @@
+# HelloPypiApacph
+
+This is a test for sharing my project to PyPI for public usage.
+
+## Description
+
+It is an initial step for my project.
+
+## Getting Started
+
+### Dependencies
+
+* This testing project should be workable for all operating systems with any prerequisites, libraries, OS version, etc.
+* Python v3.8+
+
+### Installing
+
+* Source: https://gitlab.com/apacph/HelloPypiApacph.git
+* 
+### Use APIs
+
+* How to use our APIs
+```
+import HelloPypiApacph as hp
+from HelloPypiApacph import calc, dt
+hp.print2()          # Print hello message
+calc.printPi()       # Print PI value
+dt.printDT()         # Print current date/time
+```
+* Output
+```
+Hello, PyPI...
+PI = 3.141592653589793
+Date/Time = Fri Dec 15 11:06:33 2023
+```
+
+## Authors
+
+Contributors names and contact info
+
+ex. Po-Hsun CHENG (apacph@gmail.com)
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
