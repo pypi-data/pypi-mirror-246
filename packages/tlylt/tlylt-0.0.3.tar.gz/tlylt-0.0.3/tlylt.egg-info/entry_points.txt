@@ -1,0 +1,2 @@
+[console_scripts]
+tlylt = tlylt.scripts.cli:app
