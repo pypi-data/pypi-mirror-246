@@ -1,0 +1,9 @@
+vecml/__init__.py,sha256=6Qr2xGRcGCKCYqrp4kxy1j2Em4FDGNk5t8ZxsRD2gPA,127
+vecml/client.py,sha256=LEOrOEJ6dhAdEV2tjAxaj7mTNqb-6JKWyCR4kjQTHTo,10300
+vecml/vdb_pb2.py,sha256=102_2KR1VxYciqgPkBLhgC4-uZ4G4XRXZ2n8mUdpYO4,7637
+vecml/vdb_pb2_grpc.py,sha256=uZSMvZ0lHqzxUS7r-jcTRzzYdlQyNbsyUEv9nCz7l6s,29388
+vecml-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vecml-0.0.5.dist-info/METADATA,sha256=i-vZgSFXHJzt1SGv39R860VpTU9UqyICCe8cCvmLov8,313
+vecml-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vecml-0.0.5.dist-info/top_level.txt,sha256=9Vqg8inuVRSLk4m-sLIPLYTSjihoTjCvJZnojsl4TRo,6
+vecml-0.0.5.dist-info/RECORD,,
