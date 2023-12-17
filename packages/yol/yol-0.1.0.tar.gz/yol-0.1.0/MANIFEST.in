@@ -1,0 +1,7 @@
+include yol_app/trace_display/package.json
+include yol_app/trace_display/package-lock.json
+recursive-include yol_app/trace_display/public *
+recursive-include yol_app/trace_display/src *
+prune yol_app/trace_display/build
+prune yol_app/trace_display/node_modules
+prune build
