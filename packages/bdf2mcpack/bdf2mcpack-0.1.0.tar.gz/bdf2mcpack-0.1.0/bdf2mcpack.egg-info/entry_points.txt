@@ -1,0 +1,2 @@
+[console_scripts]
+bdf2mcpack = bdf2mcpack.main:main

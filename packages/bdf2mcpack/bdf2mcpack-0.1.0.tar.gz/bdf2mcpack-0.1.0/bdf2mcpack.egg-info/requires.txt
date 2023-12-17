@@ -1,0 +1,4 @@
+bdfparser
+pillow
+
+[dev]
