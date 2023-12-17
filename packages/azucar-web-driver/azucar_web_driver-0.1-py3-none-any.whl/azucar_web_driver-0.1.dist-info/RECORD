@@ -1,0 +1,12 @@
+automation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automation/chrome_factory.py,sha256=UdDfWYRLXxca3Z-Fi4HZdkpOG6_1WwSjSTNsD4seExw,989
+automation/chrome_manager.py,sha256=ay3eoUp0L_wezNl7O3CSDEcdFhEINJxMl6ESrUgAe_g,492
+automation/chrome_singleton.py,sha256=_ZGn5MJH3NQvA3xeTr7TSTDqPFanKuRJC4ryLz9c0vM,699
+azucar_web_driver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azucar_web_driver/chrome_factory.py,sha256=UdDfWYRLXxca3Z-Fi4HZdkpOG6_1WwSjSTNsD4seExw,989
+azucar_web_driver/chrome_manager.py,sha256=ay3eoUp0L_wezNl7O3CSDEcdFhEINJxMl6ESrUgAe_g,492
+azucar_web_driver/chrome_singleton.py,sha256=_ZGn5MJH3NQvA3xeTr7TSTDqPFanKuRJC4ryLz9c0vM,699
+azucar_web_driver-0.1.dist-info/METADATA,sha256=CTGr8n0VlSj36Nz3MMhMwVrUYePbk52Mn1gBsnTkG-8,1503
+azucar_web_driver-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+azucar_web_driver-0.1.dist-info/top_level.txt,sha256=qEXDnt3D3LznCsN9QF_aja4ZE4i1tyXc1vswIJ3Ua4I,18
+azucar_web_driver-0.1.dist-info/RECORD,,

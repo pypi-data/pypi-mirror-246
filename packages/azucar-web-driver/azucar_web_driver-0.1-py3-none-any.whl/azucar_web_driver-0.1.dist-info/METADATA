@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: azucar-web-driver
+Version: 0.1
+Summary: Automatización de navegadores con Selenium
+Description-Content-Type: text/markdown
+Requires-Dist: attrs ==23.1.0
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: exceptiongroup ==1.2.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: idna ==3.6
+Requires-Dist: outcome ==1.3.0.post0
+Requires-Dist: packaging ==23.2
+Requires-Dist: pycparser ==2.21
+Requires-Dist: PySocks ==1.7.1
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: selenium ==4.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: sortedcontainers ==2.4.0
+Requires-Dist: trio ==0.23.2
+Requires-Dist: trio-websocket ==0.11.1
+Requires-Dist: urllib3 ==2.1.0
+Requires-Dist: webdriver-manager ==4.0.1
+Requires-Dist: wsproto ==1.2.0
+
+# Automation Library
+
+## DescripciÃ³n
+La biblioteca `azucar_web_driver` facilita la automatizaciÃ³n de navegadores web usando Selenium. Ideal para tareas de navegaciÃ³n y pruebas automatizadas.
+
+## InstalaciÃ³n
+Instala desde GitHub:
+
+pip install git+https://github.com/juank704/azucar_web_driver.git
+
+## Uso
+```python
+from automation.chrome_factory import ChromeFactory
+driver = ChromeFactory.create_instance()
+```
+
+## Contribuciones
+Contribuciones son bienvenidas. EnvÃ­a tus PRs al repositorio.
+
+## Licencia
+Licenciado bajo [MIT]
+
+## Contacto
+Para soporte: [juan_k704@hotmail.com]
