@@ -1,0 +1,9 @@
+enum_tools
+jpype1
+urlib
+numpy
+pandas
+matplotlib
+scipy
+pprint
+os
