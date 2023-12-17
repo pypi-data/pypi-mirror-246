@@ -1,0 +1,5 @@
+[console_scripts]
+git-open = twlib.bin.git_open:app
+tokenize = twlib.bin.tokenize_vimwiki:main
+twlib = twlib:__main__
+
