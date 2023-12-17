@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "Flater-ReaLTaiizor"
+version = "0.1.2"
+description = "WinForms UI Pack"
+authors = ["XiangQinxi <XiangQinxi@outlook.com>"]
+readme = "README.md"
+packages = [
+    { include = "flater" },
+]
+
+[tool.poetry.dependencies]
+flater = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
