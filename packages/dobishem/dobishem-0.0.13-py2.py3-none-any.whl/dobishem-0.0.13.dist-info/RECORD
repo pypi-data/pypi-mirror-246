@@ -1,0 +1,9 @@
+dobishem/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+dobishem/data.py,sha256=3OrGxGnOsiCWidPHd_hqhGssOstsgYzWTBXlXaR5oyM,860
+dobishem/dates.py,sha256=BdkZHzoitbX2sXmUfAhScRg1g0OlOU7jpV44FiUsbiw,3580
+dobishem/nested_messages.py,sha256=Usd3aLZ3ZYwT8gB_kpr6uIFR7qeuPCaTyF47jmWt510,738
+dobishem/storage.py,sha256=UFwuIBPO3RFMz36Yvc6CZcAFz0T0QpBuSxsIfXWomT4,7459
+dobishem-0.0.13.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dobishem-0.0.13.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+dobishem-0.0.13.dist-info/METADATA,sha256=BdnOB26068jEMbn-tl99mES8bfi2ucKSPeqSmVDFpsE,534
+dobishem-0.0.13.dist-info/RECORD,,
