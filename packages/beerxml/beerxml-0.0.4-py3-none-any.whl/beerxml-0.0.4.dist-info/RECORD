@@ -1,0 +1,7 @@
+beerxml/__init__.py,sha256=gOsSKFW1MSSZi9SyXVlTzRwnbpZTADKpfhif-9Ge9ms,92
+beerxml/beerxml_parser.py,sha256=OIJQHaVaCVOX1_FRKrzLIJfPJagQSG3VJVJScxq7zAA,292
+beerxml/models.py,sha256=PHw3SJwCrodxmAlAh71etBtEiKcct5NBeZY6H9ul0pc,18751
+beerxml-0.0.4.dist-info/LICENSE,sha256=KtJao1Ou4oPbZkgsdDXcXq7QDzsoNVK5bMRszn3Lu6k,1072
+beerxml-0.0.4.dist-info/METADATA,sha256=pDZF31FfuDbu-mcSy6flqcTN4fdM0rf3QMpRTqhwJPs,3498
+beerxml-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+beerxml-0.0.4.dist-info/RECORD,,
