@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: colorama-EX
+Version: 0.4.6.256
+Summary: A 256-color expansion module on Colorama.
+Requires-Dist: colorama
+
