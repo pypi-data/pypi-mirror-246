@@ -1,0 +1,5 @@
+snakemake_storage_plugin_fsspec/__init__.py,sha256=lEdqKZlywB866TTunZh__b0W5ZmklpWShFOgBBY1Cqo,11417
+snakemake_storage_plugin_fsspec-0.1.0.dist-info/LICENSE,sha256=jpg1rXzRGPY4l7MAusB21rpc-5SrPkesCFTHCSO0-Vs,1066
+snakemake_storage_plugin_fsspec-0.1.0.dist-info/METADATA,sha256=M3-clmfZzXTF5DZVzMVPYVmcV16Jk4MxGc3cKXQZy18,1089
+snakemake_storage_plugin_fsspec-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snakemake_storage_plugin_fsspec-0.1.0.dist-info/RECORD,,
