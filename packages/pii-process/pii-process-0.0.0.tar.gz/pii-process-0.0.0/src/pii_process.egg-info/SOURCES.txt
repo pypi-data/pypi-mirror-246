@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/pii_process/__init__.py
+src/pii_process.egg-info/PKG-INFO
+src/pii_process.egg-info/SOURCES.txt
+src/pii_process.egg-info/dependency_links.txt
+src/pii_process.egg-info/requires.txt
+src/pii_process.egg-info/top_level.txt
