@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tspiral/__init__.py
+tspiral/forecasting.py
+tspiral/model_selection.py
+tspiral.egg-info/PKG-INFO
+tspiral.egg-info/SOURCES.txt
+tspiral.egg-info/dependency_links.txt
+tspiral.egg-info/requires.txt
+tspiral.egg-info/top_level.txt
