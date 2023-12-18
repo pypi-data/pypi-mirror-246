@@ -1,0 +1,8 @@
+setup.py
+gmoji/__init__.py
+gmoji/gmoji.py
+gmoji.egg-info/PKG-INFO
+gmoji.egg-info/SOURCES.txt
+gmoji.egg-info/dependency_links.txt
+gmoji.egg-info/requires.txt
+gmoji.egg-info/top_level.txt
