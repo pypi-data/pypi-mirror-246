@@ -1,0 +1,4 @@
+vonage>=3.11.0
+message-local>=0.0.3
+logger-local>=0.0.71
+database-mysql-local>=0.0.121
