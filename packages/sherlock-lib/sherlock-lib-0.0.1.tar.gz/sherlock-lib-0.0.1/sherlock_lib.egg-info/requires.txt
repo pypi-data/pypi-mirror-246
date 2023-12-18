@@ -1,0 +1,6 @@
+certifi==2019.6.16
+PySocks
+requests
+requests-futures
+stem
+exrex
