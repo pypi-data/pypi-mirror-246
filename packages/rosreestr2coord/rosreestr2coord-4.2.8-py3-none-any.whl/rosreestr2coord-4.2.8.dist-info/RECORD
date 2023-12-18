@@ -1,0 +1,17 @@
+rosreestr2coord/__init__.py,sha256=x4Oq8IXHW4-0BqPg2ur16_OHBAtZX5P79t3Yxyxs0V8,84
+rosreestr2coord/__main__.py,sha256=1vuYokfe87TbmCk-1mVh19ZC8pPzIax6NKbhFWvdTP0,169
+rosreestr2coord/batch.py,sha256=rXD9Pcgi-FA3r3mPpdhJYdjJcXrIzsIbGHeKWO1SAeU,2815
+rosreestr2coord/console.py,sha256=wDdr-zVVGVHKb90Lyne7qhHMz0u_OT5cVQyByJ6dKuI,5938
+rosreestr2coord/export.py,sha256=WEFae_Tp0Wp2_wXmebeag-5TVy93zJZl17esDr6FnF0,5596
+rosreestr2coord/logger.py,sha256=pvK1X8BM356gRYqqzI7mcX2STN6gxWvh_SzF4khITaU,116
+rosreestr2coord/merge_tiles.py,sha256=voTWDwAFFZO4EozXWwSHUkurBEmlBydISSjPOzsx8K8,22196
+rosreestr2coord/parser.py,sha256=yCRfsiF8TI_MaOXzyk8YNJspgiZRt4l1ZK4xB-w-5to,14497
+rosreestr2coord/proxy_handling.py,sha256=P8-XJovK2AB7jGxPJbKMHFn6vbYYGsyuaQrrabEdtT0,3361
+rosreestr2coord/tox.ini,sha256=hdi4WgZlJH3StMT8nRCDTn_XZY6aRgzHuWlsljY2FOw,187
+rosreestr2coord/utils.py,sha256=HRX7OKP41kFF6LF6_BvJipG9M-OjLxAQrus-SyxQYrs,4612
+rosreestr2coord/version.py,sha256=VAvTvSkCf5A_0-MFYTgxwhfNae6oaxu64wya7zeGlGY,18
+rosreestr2coord-4.2.8.dist-info/entry_points.txt,sha256=Is3092HlDuFeO8YhmB3kvm5Nf_vPz85e3kzFcc64v8s,56
+rosreestr2coord-4.2.8.dist-info/LICENSE.md,sha256=61YsLFQ73Tz8XSfQSXYhuu414UhkvZRJCC8kS5fo63Y,1064
+rosreestr2coord-4.2.8.dist-info/METADATA,sha256=VpLxBFmmVT_DZONBL005nVzOJLR8gLIy-KefMqkM00Q,12793
+rosreestr2coord-4.2.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rosreestr2coord-4.2.8.dist-info/RECORD,,
