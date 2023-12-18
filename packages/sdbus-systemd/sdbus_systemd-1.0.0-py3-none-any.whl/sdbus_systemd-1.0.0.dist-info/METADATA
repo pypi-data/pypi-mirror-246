@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sdbus-systemd
+Version: 1.0.0
+Summary: Systemd binds for sdbus.
+Home-page: https://github.com/igo95862/python-sdbus
+Author: Bernhard Kaindl
+Author-email: contact@bernhard.kaindl.dev
+License: LGPL-2.1-or-later
+Project-URL: Documentation, https://python-sdbus-systemd.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/bernhardkaindl/python-sdbus-systemd/
+Project-URL: Tracker, https://github.com/bernhardkaindl/python-sdbus-systemd/issues/
+Keywords: dbus systemd networking linux freedesktop
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: COPYING.LESSER
+Requires-Dist: sdbus >=0.10.2
+
+[![Documentation Status](https://readthedocs.org/projects/python-sdbus-systemd/badge/?version=latest)](https://python-sdbus-systemd.readthedocs.io/en/latest/?badge=latest)
+# Systemd binds for python-sdbus
+
+Makes the interfaces and objects of the Systemd D-Bus API accessible.
+
+More info on the D-Bus API of systemd:
+http://0pointer.net/blog/the-new-sd-bus-api-of-systemd.html
+
+## Requirements
+
+* `python-sdbus` version 0.10.2 or newer
+
+See [python-sdbus requirements](https://github.com/igo95862/python-sdbus#requirements).
+
+## Installation
+
+`pip install --only-binary ':all:' sdbus-systemd`
+
+# [Documentation](https://python-sdbus-systemd.readthedocs.io/en/latest/)
+
+This is a sub-project of [python-sdbus](https://github.com/igo95862/python-sdbus).
+
+See the [python-sdbus documentation](https://python-sdbus.readthedocs.io/en/latest/).
+
+Please refer to it for all further information like dependencies and installation.
