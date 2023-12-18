@@ -1,0 +1,3 @@
+better_proxy>=0.2.2
+httpx>=0.24.1
+requests>=2.31.0

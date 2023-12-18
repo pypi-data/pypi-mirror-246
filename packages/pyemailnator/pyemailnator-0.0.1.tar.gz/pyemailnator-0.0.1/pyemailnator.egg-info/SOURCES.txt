@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyemailnator/__init__.py
+pyemailnator/create_client.py
+pyemailnator/validate_proxy.py
+pyemailnator.egg-info/PKG-INFO
+pyemailnator.egg-info/SOURCES.txt
+pyemailnator.egg-info/dependency_links.txt
+pyemailnator.egg-info/requires.txt
+pyemailnator.egg-info/top_level.txt
