@@ -1,0 +1,12 @@
+tensorflow>=2.8.0
+scikit-learn
+numpy
+h5py
+pyyaml
+ase
+pymatgen>=2023.8.10
+
+[test]
+pytest
+pytest-datadir
+pytest-benchmark
