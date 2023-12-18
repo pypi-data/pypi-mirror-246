@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mlflow_plugin_proxy_auth/__init__.py
+mlflow_plugin_proxy_auth/proxy_auth_header_provider.py
+mlflow_plugin_proxy_auth.egg-info/PKG-INFO
+mlflow_plugin_proxy_auth.egg-info/SOURCES.txt
+mlflow_plugin_proxy_auth.egg-info/dependency_links.txt
+mlflow_plugin_proxy_auth.egg-info/entry_points.txt
+mlflow_plugin_proxy_auth.egg-info/requires.txt
+mlflow_plugin_proxy_auth.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[mlflow.request_auth_provider]
+dummy-backend = mlflow_plugin_proxy_auth.proxy_auth_header_provider:ProxyAuthProvider
