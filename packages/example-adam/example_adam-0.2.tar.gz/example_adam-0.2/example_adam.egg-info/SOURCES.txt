@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+example_adam.egg-info/PKG-INFO
+example_adam.egg-info/SOURCES.txt
+example_adam.egg-info/dependency_links.txt
+example_adam.egg-info/top_level.txt
