@@ -1,0 +1,13 @@
+tgnet/__init__.py,sha256=Sou0x7kicNq0zAT_MOVoTlyZ-7yVpxMh7rDQk7TQtkQ,81
+tgnet/models/__init__.py,sha256=bbhg2_kH1E3CSh8JoRu3xmY7H9OKnhUFM8TIibccngU,189
+tgnet/models/auth.py,sha256=Hv75SgFSuk-C4hMhjAb8vm3tvoRz8x_M4qPcgRV2Xvw,2800
+tgnet/models/datacenter.py,sha256=gr_t0ebuO9CVMqyghnSyGeC_fHGwiv_owbnK93uDC6Y,2717
+tgnet/models/headers.py,sha256=0JzandBAT0LabLcWWTfzOuDz3tTj57JqdQKGEUz2r5o,3005
+tgnet/models/ip.py,sha256=KpQR7Bt3q9o_cKC_V18eL_K2vdpc9WWTSSur40HZG9U,1429
+tgnet/models/salt.py,sha256=ggAjpkweL-TQ5zP-uZui7WWxe9_4YYGWKBE4a27v4tk,677
+tgnet/models/tg_android_session.py,sha256=7SphGTnBylkLtlM-G-gBlByDiCuI4BlotoW2oW9Q7cI,1476
+tgnet/native_byte_buffer.py,sha256=XzxkHH9ZiiGZ45TUq0fbMn7i1NfIQnFpWP92r_0yNrQ,2544
+tgnet-0.1.1.dist-info/LICENSE,sha256=w4uLf5yMkwwsebsdOfU0LK06D6F2a2-F_lryLceRKJo,1066
+tgnet-0.1.1.dist-info/METADATA,sha256=988hDrKnCBO6wrWj0VuquM_VEK_V_fJVeVxLDIl1rvI,1616
+tgnet-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tgnet-0.1.1.dist-info/RECORD,,
