@@ -1,0 +1,13 @@
+lang/__init__.py,sha256=P9VXOAFHHkH-WcCkUn_XhkO1POpuQKykHKjLwrCbKow,455
+lang/context_processors.py,sha256=5FyaqozEvymm7pZFwKPzUvj5aa-ELzHeQOQYejun5CU,279
+lang/static/lang/css/nav-link.css,sha256=PcVGd8xSop1vqTX2-9wOji4zG3A6Rlquo44-16ugJI0,318
+lang/templates/hreflang.html,sha256=x1KFoCTu0omOFIfuhbjVWJlVycjVWO3HRml5MK4-_7Q,340
+lang/templates/nav-link.html,sha256=SYb2tzbIG41BQAtsNuQf6NjBlceqc-Ryhfo9Znm0YqY,753
+lang/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lang/templatetags/languages_helpers.py,sha256=hkxdQcsqrVtthVTAnSAIAjNeT6zB4ww0LQK5KElt-oo,1974
+lang/templatetags/urls.py,sha256=Y_aLFL2XDgZJpxHBz6QNcxG2sFNCwzsn2CzP0DWLHE0,448
+django_lang-0.3.1.dist-info/LICENSE,sha256=lea6YyyICc5SM-8jvboUSCWiCpPwBrUPJAb8cHxAP5A,1114
+django_lang-0.3.1.dist-info/METADATA,sha256=KoH3-R9-xnML6A7ppvqlg2ysjz_GKUulUZRvvOR52CA,5533
+django_lang-0.3.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_lang-0.3.1.dist-info/top_level.txt,sha256=k1z7040BUci34YPBCxIsaMA0DGeL-qBF3vBS1z3Ro28,5
+django_lang-0.3.1.dist-info/RECORD,,
