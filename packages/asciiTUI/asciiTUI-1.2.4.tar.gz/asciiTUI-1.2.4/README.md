@@ -1,0 +1,331 @@
+Python asciiTUI
+===============
+
+Description
+-----------
+This is a library of tools for you to use with your needs for an attractive type of terminal (console) display.
+Type `print(dir(asciiTUI))` for further functions, then type `print(asciiTUI.<func>.__doc__)` for further document information of each function.
+
+Installation
+------------
+To install the Python libraries and command line utilities, run:
+```shell
+pip install asciiTUI
+```
+If you want to upgrade this library do the command:
+```shell
+pip install asciiTUI --upgrade
+```
+or
+```shell
+pip install asciiTUI==<version>
+```
+When the installation is complete, import the `asciiTUI` module
+```pycon
+>>> import asciiTUI as tui
+```
+
+Libary usage - Variable
+=======================
+
+lorem_ipsum
+-----------
+This is a `lorem_ipsum` variable which contains the lorem ipsum text in English form. With the following usage:
+```pycon
+>>> print(tui.lorem_ipsum)
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+```
+
+Libary usage - Functions and Class
+==================================
+
+remove_ansi
+-----------
+The `remove ansi()` function is used to remove or clean existing ansi escape codes \\033, \\x1b, and others and return the cleaned text. As usage:
+```pycon
+>>> text = '\033[32mHello World!\033[36m'
+>>> len(text) # check length
+22
+>>> len(tui.remove_ansi(text=text)) # check length and removing ansi escape
+12
+```
+Args:
+-   `text` (required) : The main text that will remove the ansi code
+
+terminal_size
+-------------
+The `terminal_size()` function is used to get the terminal size `x`:width or `y`:height. As usage:
+```pycon
+>>> tui.terminal_size(get='x')
+120
+>>> # The numbers above will not match the output results you get. It all depends on the size of your terminal when executed.
+>>> tui.terminal_size(get='xy')
+(120, 30)
+```
+You can directly get x and y in one function with `get='xy'` or `get='yx'` as usage:
+```pycon
+>>> x, y = tui.terminal_size(get='xy')
+>>> print(x)
+120
+>>> print(y)
+30
+>>>
+```
+Args:
+-   `get` (required) : The type of terminal size you will get. `x`: width, `y`: height
+
+Raises:
+-   `OptionNotFoundError` : If the `get` option is not found for example searching for anything other than `x` and `y` the results will throw this exception
+
+rgb
+---
+The `rgb()` function is used to display colored text with the number of colors depending on the code `r, g, b` entered and can display `style` format in the form of `fg` (foreground) or `bg` (background). As usage:
+```pycon
+>>> print(tui.rgb(r=23, g=102, b=7, style='fg')+'Hello World!'+tui.rgb())
+Hello World!
+>>> # The resulting output is in the form of RGB colors in general. Style as foreground (fg) or background (bg) type. The resulting color depends on the type of console used.
+```
+Args:
+-   `r` (default: 255) : Red value (0-255)
+-   `g` (default: 255) : Green value (0-255)
+-   `b` (default: 255) : Blue value (0-255)
+-   `style` (default: 'fg') : Color style, either `fg` for foreground or `bg` for background
+
+Raises:
+-   `TypeError` : If type `r, g, b` is not `int`
+-   `ValueError` : If `r, g, b` is one of the values less than 0 and more than 255
+-   `OptionNotFoundError` : If `style` option is not found
+
+table
+-----
+The `table()` function is used to create an art ASCII table with headers and data in list form. As usage:
+```pycon
+>>> print(tui.table(
+...   headers = ['NUM', 'Name'],
+...   data    = [
+...               [1, 'Alice'],
+...               [2, 'Steve'],
+...             ],
+...   typefmt  = 'table',
+...   borders = ['\u2500', '\u2502', '\u250c', '\u2510', '\u2514', '\u2518', '\u252c', '\u2534', '\u251c', '\u2524', '\u253c'] # need 11 borders
+... ))
+┌─────┬───────┐
+│ NUM │  Name │
+├─────┼───────┤
+│ 1   │ Alice │
+├─────┼───────┤
+│ 2   │ Steve │
+└─────┴───────┘
+```
+If you experience problems with the console displaying borders, you can change the borders as follows:
+`borders=['-', '|', '+', '+', '+', '+', '+', '+', '+', '+', '+']`
+Output:
+```shell
++-----+-------+
+| NUM |  Name |
++-----+-------+
+| 1   | Alice |
++-----+-------+
+| 2   | Steve |
++-----+-------+
+```
+There are 3 types of table displays, namely `table`, `table_fancy-grid`, `tabulate`, here are some displays of each type:
+```shell
+typefmt='table'
+┌─────┬───────┐
+│ NUM │  Name │
+├─────┼───────┤
+│ 1   │ Alice │
+├─────┼───────┤
+│ 2   │ Steve │
+└─────┴───────┘
+
+typefmt='table_fancy-grid'
+┌─────┬───────┐
+│ NUM │  Name │
+├─────┼───────┤
+│ 1   │ Alice │
+│ 2   │ Steve │
+└─────┴───────┘
+
+typefmt='tabulate'
+NUM │ Name 
+───────────
+1   │ Alice
+2   │ Steve
+```
+Args:
+-   `headers` (required) : The header list is in the form of a list type. Example: `['NUM', 'Name'] [<col 1>, <col 2>]`
+-   `data` (requared) : The data list is in the form of a list type. Example: `[[1, 'Alice'], [2, 'Steve']] [<row 1>, <row 2>]`
+-   `typefmt` (default: 'table') : Table model type (`table` or `table_fancy-grid` or `tabulate`)
+-   `borders` (default: ['\\u2500', '\\u2502', '\\u250c', '\\u2510', '\\u2514', '\\u2518', '\\u252c', '\\u2534', '\\u251c', '\\u2524', '\\u253c']) : Changing borders
+
+Raises:
+-   `TypeError` : If the `header, data, borders` type is not a list
+-   `ValueError` : If the contents of the `borders` list are less or more than 11
+-   `OptionNotFoundError` : If `typefmt` option is not found
+
+progress_bar
+------------
+The `progress_bar()` function is used to load a loading or progress display on the console. As usage:
+```pycon
+>>> from time import sleep
+>>> pbg = tui.progress_bar(typefmt='line', width=50, max=100, bar_progress="#", bar_space=".", bar_box="[]")
+>>> for i in pbg:
+...   print(next(pbg), end='\r')
+...   sleep(0.01)
+... print() # Adding a new line
+[.........................................] 0.2%
+>>> # Progress will increase for 0.01 seconds.
+```
+To continue progress, you can use Python's built-in `next()` function to continue progress.
+Here are some types of progress bars:
+```shell
+typefmt='line'
+[.........................................] 0.2%
+
+typefmt='circle', text='Hello World! - asciiTUI '
+Hello World! - asciiTUI -
+```
+Args:
+-   `typefmt` (default: 'line') : Type of progress model (`line` or `circle`)
+-   `width` (default: 50) : Width length of the progress bar (applies to `line` type)
+-   `max` (default: 100) : Maximum progress percentage (applies to `line` type). If it is in the `circle` type then it is a progress time limit
+-   `bar_progress` (default: '#') : Progress symbol (valid in `line` type)
+-   `bar_space` (default: '.') : Space bar symbol (valid in `line` type)
+-   `bar_box` (default: '[]') : Progress symbol box (valid in `line` type)
+-   `text` (default: 'Hello World! - asciiTUI ') : Display text in `circle` type
+-   `isdone` (default: ' ') : Display done in `circle` type if is done
+
+Raises:
+-   `TypeError` : If `width, max` are not `int`
+-   `ValueError` : If the length of `bar_box` is less or more than 2 characters
+-   `OptionNotFoundError` : If `typefmt` option is not found
+
+justify
+-------
+The `justify()` function is used to load string text to be in the middle or on the left and can adjust the width size to suit the terminal size or not according to needs. As usage:
+```pycon
+>>> print(tui.justify(content=tui.lorem_ipsum, width=50, make='center', height=50, fill=' ', align=False))
+Lorem Ipsum is simply dummy text of the printing a
+nd typesetting industry. Lorem Ipsum has been the
+industry's standard dummy text ever since the 1500
+s, when an unknown printer took a galley of type a
+nd scrambled it to make a type specimen book. It h
+as survived not only five centuries, but also the
+leap into electronic typesetting, remaining essent
+ially unchanged. It was popularised in the 1960s w
+ith the release of Letraset sheets containing Lore
+m Ipsum passages, and more recently with desktop p
+ublishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.
+```
+There are types of `make` that can be printed, namely:
+```shell
+make='center'
+Lorem Ipsum is simply dummy text of the printing a
+nd typesetting industry. Lorem Ipsum has been the
+industry's standard dummy text ever since the 1500
+s, when an unknown printer took a galley of type a
+nd scrambled it to make a type specimen book. It h
+as survived not only five centuries, but also the
+leap into electronic typesetting, remaining essent
+ially unchanged. It was popularised in the 1960s w
+ith the release of Letraset sheets containing Lore
+m Ipsum passages, and more recently with desktop p
+ublishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.
+
+make='right'
+Lorem Ipsum is simply dummy text of the printing a
+nd typesetting industry. Lorem Ipsum has been the
+industry's standard dummy text ever since the 1500
+s, when an unknown printer took a galley of type a
+nd scrambled it to make a type specimen book. It h
+as survived not only five centuries, but also the
+leap into electronic typesetting, remaining essent
+ially unchanged. It was popularised in the 1960s w
+ith the release of Letraset sheets containing Lore
+m Ipsum passages, and more recently with desktop p
+ublishing software like Aldus PageMaker including
+                          versions of Lorem Ipsum.
+```
+Args:
+-   `content` (required) : Content string to be justified
+-   `width` (required) : Set the width size
+-   `make` (default: 'center') : Make the string printed with the center `center` or to the right `right`
+-   `height` (default: 50) : Set the height size
+-   `fill` (default: ' ') : Fill character
+-   `align` (default: False) : Makes text center align (depending on size in height)
+
+Raises:
+-   `TypeError` : If `width, height` are not `int`
+-   `OptionNotFoundError` : If `typefmt` option is not found
+
+cmd_split
+---------
+The `cmd_split()` class is an init character used to split command line arguments separated by delimiters defined in this class, such as escape characters, quotes, line breaks, and other special characters. As usage:
+```pycon
+>>> cs = tui.cmd_split(esc_char='\\', quotes_char='"', ln_char=';', backslash_char='\\', param_char=' ')
+>>> command = 'pip install asciiTUI; echo "Hello World!\\""; py' # main command
+```
+Args:
+-   `esc_char` (default: '\\') : Escape character
+-   `quotes_char` (default: '"') : Quote character
+-   `ln_char` (default: ';') : Line character. To separate and create rows
+-   `backslash_char` (default: '\\') : Backslash character
+-   `param_char` (default: ' ') : Parameter character. To separate parameters
+
+Functions (method):
+
+split_args
+----------
+This method will separate arguments and lines in list form as usage:
+```pycon
+>>> cs.split_args(cmd=command)
+[['pip', 'install', 'asciiTUI'], ['echo', 'Hello World!"'], ['py']]
+```
+
+split_ln
+--------
+This method will separate only rows in list form as usage:
+```pycon
+>>> cs.split_ln(cmd=command)
+['pip install asciiTUI', 'echo "Hello World!""', 'py']
+```
+
+Raises:
+-   `cmd_split`: `ValueError` : If all arguments or parameters are less or more than 1 in length
+
+pwinput
+-------
+The `pwinput` function is used to take input from the user, but the typed display is only a mask so that the input entered cannot be read. As usage:
+```pycon
+>>> pw = tui.pwinput(prompt='Password: ', mask='*'); print(pw)
+Password: ***********
+Hello World
+```
+Args:
+-   `prompt` (default: '') : Appearance of prompt or text.
+-   `mask` (default: '*') : As the character mask displayed.
+
+Raises:
+-   `ValueError` : If the `mask` length is more than 1 character
+
+Errors
+======
+
+OptionNotFoundError
+-------------------
+If an option or type entered is not found
+
+PythonVersionError
+------------------
+If you are using Python version 2
+
+CHANGE LOG
+==========
+
+1.2.4
+-----
+-   Documentation improvements
