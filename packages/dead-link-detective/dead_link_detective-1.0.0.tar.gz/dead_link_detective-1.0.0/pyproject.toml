@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dead-link-detective"
+dynamic = ["version"]
+description = "A simple asynchronous dead link detector for any website."
+readme = "README.md"
+authors = [{ name = "Ahmed Bin Nasser", email = "munnaa329@gmail.com" }]
+dependencies = ['httpx == 0.25.2', 'beautifulsoup4 == 4.10.0']
+
+[project.scripts]
+dead-link-detective = "detective.__main__:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "detective.__version__" }
+
+[tool.flit.module]
+name = "detective"
