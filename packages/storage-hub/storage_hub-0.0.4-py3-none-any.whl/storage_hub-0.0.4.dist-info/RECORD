@@ -1,0 +1,17 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/main.py,sha256=nICvzkIwHwivPvu2uj5Gu6SGgOfPhk98BPuUfo0e5ak,259
+fastapi_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_storage/exceptions.py,sha256=lCvOPjBsQ_fS0K2mLCKMf8is7PfTjrQ7ZqM1BPw7qok,39
+fastapi_storage/settings.py,sha256=UXicbAsI0s_wXpu0U2VDy0CQ_iiyl_7OmsrJkBfyFuI,109
+fastapi_storage/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_storage/backends/filesystem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_storage/backends/filesystem/async.py,sha256=dG3451GKC4QXiVXIq53ACXeyDKEafAm05_ws0F1WT64,101
+fastapi_storage/backends/filesystem/sync.py,sha256=5zgTDQf8oc6NbbDbStU_x83wvs1EGUoBVsXmRd_SZ1Y,96
+fastapi_storage/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_storage/integrations/mongo.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_storage/integrations/sqlalchemy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_storage/integrations/tortoise.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storage_hub-0.0.4.dist-info/METADATA,sha256=ixxaBiJ_vkIxMwfzV02FxDJanbnon1P6-IjF5Rq85_k,3808
+storage_hub-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+storage_hub-0.0.4.dist-info/top_level.txt,sha256=QWqYR2t-jl-BKp-hQgdCK6OXZbi_ou_pefpO7YYz68E,24
+storage_hub-0.0.4.dist-info/RECORD,,
