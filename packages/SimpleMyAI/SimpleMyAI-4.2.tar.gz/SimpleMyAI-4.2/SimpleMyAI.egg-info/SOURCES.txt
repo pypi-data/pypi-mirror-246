@@ -1,0 +1,11 @@
+README.md
+setup.py
+SimpleMyAI/Ai_Funcs.py
+SimpleMyAI/Code_My_AI.py
+SimpleMyAI/Ensemble_AI.py
+SimpleMyAI/__init__.py
+SimpleMyAI.egg-info/PKG-INFO
+SimpleMyAI.egg-info/SOURCES.txt
+SimpleMyAI.egg-info/dependency_links.txt
+SimpleMyAI.egg-info/not-zip-safe
+SimpleMyAI.egg-info/top_level.txt
