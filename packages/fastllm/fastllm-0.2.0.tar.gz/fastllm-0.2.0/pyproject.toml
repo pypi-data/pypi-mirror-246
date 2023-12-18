@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "fastllm"
+version = "0.2.0"
+description = "Fast and easy wrapper around LLMs."
+authors = ["Clemens Kriechbaumer <clemens.kriechbaumer@gmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/clemens33/fastllm"
+repository = "https://github.com/clemens33/fastllm"
+keywords = ["agents", "chatbots", "openai", "llm", "ai"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+packages = [{ include = "fastllm" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.2"
+backoff = "^2.2.1"
+openai = "^1.5.0"
+jsonschema = "^4.20.0"
+tiktoken = "^0.5.2"
+exrex = "^0.11.0"
+requests = {version = "^2.31.0", extras = ["samples"]}
+beautifulsoup4 = {version = "^4.12.2", extras = ["samples"]}
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.8"
+black = "^23.12.0"
+pyright = "^1.1.341"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.samples.dependencies]
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["E", "W", "F", "D", "N"]
+ignore = ["D202"]
+target-version = "py310"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.black]
+target-version = ["py310", "py311", "py312"]
+
+[tool.pyright]
+pythonVersion = "3.10"
+typeCheckingMode = "basic"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+markers = ["openai: mark tests requiring openai api key"]
+
+[tool.coverage.report]
+show_missing = true
