@@ -1,0 +1,30 @@
+[tool.poetry]
+authors = ["Daniel CAUNE <daniel.caune@gmail.com>"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries",
+]
+description = "Xeberus Core Python Library"
+include = [
+    "CHANGELOG.md"
+]
+keywords = ["core", "library", "xeberus"]
+license = "SEE LICENSE IN <LICENSE.md>"
+name = "xeberus-core-library"
+packages = [{ include = "majormode", from = "src" }]
+readme = "README.md"
+repository = "https://github.com/majormode/xeberus-core-python-library"
+version = "1.3.1"
+
+[tool.poetry.dependencies]
+perseus-core-library = "*"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
