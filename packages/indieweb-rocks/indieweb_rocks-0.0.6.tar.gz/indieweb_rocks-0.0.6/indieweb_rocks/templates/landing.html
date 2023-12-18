@@ -1,0 +1,33 @@
+$def with ()
+<h1 class=h-app><span p-name>IndieWeb Site Validator</span></h1>
+
+<form id=search action=/search method=get>
+<label style=font-size:.8em><strong>Website Address</strong><br>
+<input name=q type=text placeholder="e.g. example.com"></label>
+<button>Validate</button>
+</form>
+
+<h2>Supported Specifications</h2>
+<h3>Technical Reports (TRs)</h3>
+<ul id=tr style=columns:2>
+<li><a href=https://www.w3.org/TR/webmention>Webmention</a></li>
+<li><a href=https://www.w3.org/TR/micropub>Micropub</a></li>
+<li><a href=https://www.w3.org/TR/websub>WebSub</a></li>
+</ul>
+<h3>Works in Progress</h3>
+<div id=wip style="display:grid;grid-template-columns:50% 50%">
+<ul>
+<li><a href=https://microformats.org/wiki/rel-me>rel=me</a></li>
+<li><a href=https://www.w3.org/TR/indieauth>IndieAuth</a></li>
+<li><a href=https://indieweb.org/IndieAuth_Ticket_Auth>Ticket Auth</a></li>
+<li><a href=https://www.w3.org/TR/post-type-discovery>Post Type Discovery</a></li>
+<li><a href=https://www.w3.org/TR/jf2>JF2</a></li>
+<li><a href=https://indieweb.org/fragmention>Fragmention</a></li>
+<li><a href=https://indieweb.org/Microsub>Microsub</a></li>
+</ul>
+</div>
+
+<style>
+#wip ul {
+    margin-top: 0; }
+</style>
