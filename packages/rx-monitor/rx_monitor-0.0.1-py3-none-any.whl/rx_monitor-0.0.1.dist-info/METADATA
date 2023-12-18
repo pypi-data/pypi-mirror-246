@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rx-monitor
+Version: 0.0.1
+Summary: Project used to carry out several checks
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: rx-selection >=0.0.3
+Requires-Dist: rx-scripts >=0.2.7
+

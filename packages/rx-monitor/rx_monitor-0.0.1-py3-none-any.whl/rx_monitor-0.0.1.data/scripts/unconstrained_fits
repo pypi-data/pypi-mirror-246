@@ -1,0 +1,225 @@
+#!python
+
+import os
+import re
+import ROOT
+import zfit
+import argparse
+import tensorflow         as tf
+import zutils.utils       as zut
+import utils_noroot       as utnr
+import read_selection     as rs
+import version_management as vmg
+
+from rk.model          import zmodel
+from zutils.pdf        import SUJohnson   as zpdf_jh
+from logzero           import logger      as log
+from rk.musg_extractor import extractor   as ext
+
+#--------------------------------------
+class data:
+    l_year  = ['2011', '2012', '2015', '2016', '2017', '2018']
+    l_trig  = ['MTOS', 'ETOS', 'GTIS']
+    l_brem  = ['0', '1', '2' ]
+    nent    = None
+    out_dir = None 
+    bdt_cut = None
+    qsq_cut = None
+
+    scl_dir = utnr.make_dir_path(f'{os.environ["CASDIR"]}/monitor/mass_scales')
+    cas_dir = os.environ['CASDIR']
+
+    mu  = zfit.param.Parameter('mu' , 5280, 5200, 5300)
+    sg  = zfit.param.Parameter('sg' ,   10,    5,   80)
+#--------------------------------------
+def delete_all_pars():
+    d_par = zfit.Parameter._existing_params
+    l_key = list(d_par.keys())
+
+    for key in l_key:
+        del(d_par[key])
+#--------------------------------------
+def get_args():
+    parser = argparse.ArgumentParser(description='Used to do fits to unconstrained mass distributions')
+    parser.add_argument('-y', '--year', nargs='+', help='Year'   , default=data.l_year, choices=data.l_year)
+    parser.add_argument('-t', '--trig', nargs='+', help='Trigger', default=data.l_trig, choices=data.l_trig)
+    parser.add_argument('-b', '--brem', nargs='+', help='Bremsstrahlung', default=data.l_brem, choices=data.l_brem)
+    parser.add_argument('-e', '--nent', type=int , help='Number of entries, for tests', default = -1)
+    args = parser.parse_args()
+
+    data.l_year = args.year
+    data.l_trig = args.trig
+    data.l_brem = args.brem
+    data.nent   = args.nent
+#--------------------------------------
+def get_arr(trig,  dat_pat):
+    rdf = ROOT.RDataFrame(trig, f'{dat_pat}/*.root')
+    rdf = rdf.Filter(data.bdt_cut, 'BDT')
+    rdf = rdf.Filter(data.qsq_cut, 'QSQ')
+
+    rep = rdf.Report()
+    rep.Print()
+
+    if data.nent > 0:
+        log.warning(f'Running over subset of events: {data.nent}')
+        rdf=rdf.Range(data.nent)
+
+    if trig == 'MTOS':
+        arr_mas = rdf.AsNumpy(['B_M'])['B_M']
+        return arr_mas, None, None
+
+    rdf     = rdf.Define('nbrem', 'L1_BremMultiplicity + L2_BremMultiplicity')
+    rdf_0   = rdf.Filter('nbrem == 0')
+    rdf_1   = rdf.Filter('nbrem == 1')
+    rdf_2   = rdf.Filter('nbrem >= 2')
+
+    arr_mas_0 = rdf_0.AsNumpy(['B_M'])['B_M']
+    arr_mas_1 = rdf_1.AsNumpy(['B_M'])['B_M']
+    arr_mas_2 = rdf_2.AsNumpy(['B_M'])['B_M']
+
+    return arr_mas_0, arr_mas_1, arr_mas_2
+#--------------------------------------
+def get_data(year, trig):
+    sim_dir = f'{data.cas_dir}/tools/apply_selection/r_fits/ctrl/'
+    sim_pat = vmg.get_last_version(dir_path=sim_dir, version_only=False)
+
+    dat_dir = f'{data.cas_dir}/tools/apply_selection/r_fits/data/'
+    dat_pat = vmg.get_last_version(dir_path=dat_dir, version_only=False)
+
+    log.info(f'Picking up data from: {dat_pat}')
+    log.info(f'Picking up simulation from: {sim_pat}')
+
+    log.info('Extracting data')
+    arr_dat_0, arr_dat_1, arr_dat_2 = get_arr(trig, f'{dat_pat}/{year}_{trig}')
+
+    log.info('Extracting simulation')
+    arr_sim_0, arr_sim_1, arr_sim_2 = get_arr(trig, f'{sim_pat}/{year}_{trig}')
+
+    d_sim = {'0' : arr_sim_0, '1' : arr_sim_1, '2' : arr_sim_2}
+    d_dat = {'0' : arr_dat_0, '1' : arr_dat_1, '2' : arr_dat_2}
+
+    return d_sim, d_dat 
+#--------------------------------------
+def get_mass_range(year, trig):
+    cut   = rs.get('mass', trig, q2bin='central', year = year)
+    regex = '\(B_M\s*>\s*(\d{4})\)\s*&&\s*\(B_M\s*<\s*(\d{4})\)'
+    mtch  = re.match(regex, cut)
+    if not mtch:
+        log.error(f'Cannot extract B masses from: {cut}')
+        raise
+
+    min_m = mtch.group(1)
+    max_m = mtch.group(2)
+
+    return int(min_m), int(max_m)
+#--------------------------------------
+def get_dscb(obs, brem):
+    ar  = zfit.param.Parameter(f'ar' ,    1,    0,    5)
+    al  = zfit.param.Parameter(f'al' ,    1,    0,    5)
+    nr  = zfit.param.Parameter(f'nr' ,    2,    1,    5)
+    nl  = zfit.param.Parameter(f'nl' ,    2,    0,    5)
+    
+    pdf = zfit.pdf.DoubleCB(data.mu, data.sg, al, nl, ar, nr, obs)
+
+    return pdf
+#--------------------------------------
+def get_john(obs, brem):
+    gm = zfit.Parameter(f'gm',    1,  0.1,    2)
+    dl = zfit.Parameter(f'dl',    1,  0.1,    2)
+
+    pdf = zpdf_jh(obs=obs, mu=data.mu, lm=data.sg, gamma=gm, delta=dl)
+
+    return pdf
+#--------------------------------------
+def get_signal(obs, trig, brem):
+    nsig = zfit.Parameter(f'yld_sig', 10e5, 0, 10e6)
+
+    if trig == 'MTOS':
+        pdf = get_dscb(obs, brem)
+    else:
+        if   brem == '0':
+            pdf = get_john(obs, brem)
+        elif brem == '1':
+            pdf = get_dscb(obs, brem)
+        elif brem == '2':
+            pdf = get_dscb(obs, brem)
+        else:
+            log.error(f'Invalid brem: {brem}')
+            raise
+
+    pdf = pdf.create_extended(nsig, name='Signal') 
+
+    return pdf
+#--------------------------------------
+def replace_signal(pdf, trig, brem):
+    obs   = pdf.space
+    l_pdf = pdf.models
+    l_pdf[0] = get_signal(obs, trig, brem)
+    pdf      = zfit.pdf.SumPDF(l_pdf)
+
+    return pdf
+#--------------------------------------
+def get_model(year, trig, brem):
+    tp_mass_range = get_mass_range(year, trig)
+    obs           = zfit.Space('mass', limits=tp_mass_range)
+    mod           = zmodel(proc='ctrl', trig=trig, year=year, q2bin='jpsi', obs=obs, mass='mass')
+    pdf           = mod.get_model(suffix=f'{brem}', skip_csp = True, prc_kind='ke_merged', brem=brem)
+    pdf           = replace_signal(pdf, trig, brem)
+
+    return pdf 
+#--------------------------------------
+def get_names(trig):
+    d_name = {}
+    #d_name['sname'] = r'$B^+\to J/\psi(\to \ell\ell)K^+$'
+    #if trig != 'MTOS':
+    #    d_name['mu'] = 'mu__kp_ctrl'
+    #    d_name['sg'] = 'sg1__kp_ctrl'
+    #else:
+    #    d_name['mu'] = 'mu_dscb__kp_ctrl'
+    #    d_name['sg'] = 'sg_dscb__kp_ctrl'
+
+    return d_name
+#--------------------------------------
+def calculate_scales(year, trig):
+    log.info(f'Running for: {year},{trig}')
+
+    data.out_dir = utnr.make_dir_path(f'{data.scl_dir}/{year}_{trig}')
+
+    d_mc_mass, d_dt_mass = get_data(year, trig)
+
+    for cat in data.l_brem:
+        md_pdf       = get_model(year, trig, cat) 
+        arr_mc       = d_mc_mass[cat]
+        arr_dt       = d_dt_mass[cat]
+
+        d_name       = get_names(trig)
+        obj          = ext(mc=arr_mc, dt=arr_dt, names=d_name)
+        obj.cache_dir= f'{data.out_dir}/pars/cat_{cat}'
+        obj.plot_dir = f'{data.out_dir}/json/cat_{cat}' 
+        obj.model    = md_pdf 
+        obj.get_scales()
+
+        delete_all_pars()
+#--------------------------------------
+def set_cuts(year, trig):
+    data.bdt_cut = rs.get('bdt', trig, 'jpsi', year)
+    data.qsq_cut = rs.get('q2' , trig, 'jpsi', year)
+#--------------------------------------
+def main():
+    l_brem = data.l_brem
+
+    for year in data.l_year:
+        for trig in data.l_trig:
+            if trig == 'MTOS':
+                data.l_brem = ['0']
+            else:
+                data.l_brem = l_brem
+
+            set_cuts(year, trig)
+            calculate_scales(year, trig)
+#--------------------------------------
+if __name__ == '__main__':
+    get_args()
+    main()
+#--------------------------------------
+
