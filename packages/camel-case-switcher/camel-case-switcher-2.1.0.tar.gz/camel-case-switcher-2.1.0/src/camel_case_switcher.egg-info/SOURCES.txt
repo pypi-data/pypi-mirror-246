@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+src/camel_case_switcher/__init__.py
+src/camel_case_switcher/_impl_fallback.py
+src/camel_case_switcher/_impl_regex.py
+src/camel_case_switcher/deprecated.py
+src/camel_case_switcher/dict_processor.py
+src/camel_case_switcher/string_processor.py
+src/camel_case_switcher.egg-info/PKG-INFO
+src/camel_case_switcher.egg-info/SOURCES.txt
+src/camel_case_switcher.egg-info/dependency_links.txt
+src/camel_case_switcher.egg-info/requires.txt
+src/camel_case_switcher.egg-info/top_level.txt
+tests/test_camel_case_to_camel.py
+tests/test_dict_processor.py
+tests/test_snake_to_camel.py
