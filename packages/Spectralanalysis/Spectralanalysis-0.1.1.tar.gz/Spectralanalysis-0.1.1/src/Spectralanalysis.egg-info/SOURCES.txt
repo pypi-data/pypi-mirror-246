@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/Spectralanalysis.egg-info/PKG-INFO
+src/Spectralanalysis.egg-info/SOURCES.txt
+src/Spectralanalysis.egg-info/dependency_links.txt
+src/Spectralanalysis.egg-info/requires.txt
+src/Spectralanalysis.egg-info/top_level.txt
+tests/test_integration.py
