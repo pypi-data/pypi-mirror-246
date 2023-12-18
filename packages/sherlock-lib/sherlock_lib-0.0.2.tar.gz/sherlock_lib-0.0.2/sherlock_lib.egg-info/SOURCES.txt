@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sherlock_lib/__init__.py
+sherlock_lib/__main__.py
+sherlock_lib.egg-info/PKG-INFO
+sherlock_lib.egg-info/SOURCES.txt
+sherlock_lib.egg-info/dependency_links.txt
+sherlock_lib.egg-info/requires.txt
+sherlock_lib.egg-info/top_level.txt
