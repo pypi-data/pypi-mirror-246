@@ -1,0 +1,14 @@
+xsc/__init__.py,sha256=exmdA-jLYS3mropCrP56y6r_molorxV2XVZohhYKYrk,315
+xsc/_modidx.py,sha256=VW-FFNwCCiwerVGNW6HGS4Mk5jkGZWO2LZSTQXlAg8k,8404
+xsc/attr.py,sha256=wO0Atc3tdKQHVpOJNUD47nuyUblKHNdhb9h47_EZuCM,6217
+xsc/data.py,sha256=CYXx4Fgq-HDYKSQ71skFI74f16neKb9FApNdXCZmux0,14339
+xsc/plot.py,sha256=mBoumwj5VmYKsK_RwOsoMNXDghTcuv-_O1nPCEuvhkk,11751
+xsc/sens.py,sha256=2ZKe2QljFvs4B5CYyFx68b5qy3hSzOHlYINruHq3O-U,1979
+xsc/test.py,sha256=u3_zN7bIJA5abb0xQbluuicL6hox0D6nuQhBHvueofM,4070
+xsc/util.py,sha256=FhPNlzMW51H7yn096Kb2ZTnvXEHCok0loZztjMmh4d8,334
+xsc-0.0.10.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+xsc-0.0.10.dist-info/METADATA,sha256=jO7ctCLujjDl07Wjn1kw32e2YhuCQfVnR4xv-PGrxe0,2753
+xsc-0.0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+xsc-0.0.10.dist-info/entry_points.txt,sha256=EVTkL_Wkn8Uy7qQ3N1hsyDxHRYzfTdYgF328Cb_9XJE,28
+xsc-0.0.10.dist-info/top_level.txt,sha256=kXaI1Awz_TQ-nG7fs2fA0nOGXo2Y4boyBdYTfncgEas,4
+xsc-0.0.10.dist-info/RECORD,,
