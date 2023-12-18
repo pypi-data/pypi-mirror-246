@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mormorsql
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+
+A simple solution to work with Pandas dataframes using SQL
+
