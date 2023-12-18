@@ -1,0 +1,9 @@
+README.md
+setup.py
+aitoolsAPI/__init__.py
+aitoolsAPI/module.py
+aitoolsAPI.egg-info/PKG-INFO
+aitoolsAPI.egg-info/SOURCES.txt
+aitoolsAPI.egg-info/dependency_links.txt
+aitoolsAPI.egg-info/requires.txt
+aitoolsAPI.egg-info/top_level.txt
