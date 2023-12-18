@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pyprops.egg-info/PKG-INFO
+pyprops.egg-info/SOURCES.txt
+pyprops.egg-info/dependency_links.txt
+pyprops.egg-info/top_level.txt
