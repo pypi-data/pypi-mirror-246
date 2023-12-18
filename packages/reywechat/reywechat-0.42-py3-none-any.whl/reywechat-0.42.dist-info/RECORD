@@ -1,0 +1,11 @@
+reywechat/__init__.py,sha256=V6qEJntN5ti_yfMzfyPOEU6QJeiXS7ZpLjh3l_rZsLQ,439
+reywechat/rall.py,sha256=8Ymh23KaKbbrBuIVDF1isiXhA70EV_cd9I9qFAxGvnk,262
+reywechat/rclient.py,sha256=6kln37rj-Qm6kOAKoPzLcN0JSOwXRtaXtPZ8HqjXc-4,9400
+reywechat/rdatabase.py,sha256=L9daojWgLMTbGtp3AXp7s_nC4N92pb-MNlwaPKqikd8,7319
+reywechat/rreceive.py,sha256=TBXnCxbWZjUkcOgBjrgHBF4NOLlbmVbzacWVRGUMwQU,10476
+reywechat/rwechat.py,sha256=Fhr77zPYWNjH-B0NL629yl-ZTZIhwFGe3ygGK91XIsw,2476
+reywechat/data/client_api.dll,sha256=H9uj-x9Ztg0jFZK0yY6NsnyH5_119dQRFfoVVMidxRs,592384
+reywechat-0.42.dist-info/METADATA,sha256=ln0AtMM-jvniCmyjf1ZDrDLb5Q1VSwUkrcsl4JMY0C8,214
+reywechat-0.42.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+reywechat-0.42.dist-info/top_level.txt,sha256=HPH4GX32nqYu_rMcIB0dJJKvCj71Z0OnSNUr18-5cLs,10
+reywechat-0.42.dist-info/RECORD,,
