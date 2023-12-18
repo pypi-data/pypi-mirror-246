@@ -1,0 +1,8 @@
+# Components
+# WF 2023-12-17
+components:
+- name: diagrams.py
+  source: /dgs/diagrams.py
+  issue: 2
+  demo_url: http://diagrams2.bitplan.com/
+  demo_image_url: https://github.com/BITPlan/diagrams/assets/1336221/4abd5904-4193-427b-89c6-4434f15ae62d
