@@ -1,0 +1,5 @@
+libcst>=0.4.10
+django
+
+[:platform_system == "Windows"]
+colorama>=0.4.6
