@@ -1,0 +1,2 @@
+recursive-include streamlit_sweethome3d/frontend/dist *
+include streamlit_sweethome3d/pypi_readme.md
