@@ -1,0 +1,7 @@
+nchr
+nlit
+atyp
+pstr
+ston
+
+[dev]

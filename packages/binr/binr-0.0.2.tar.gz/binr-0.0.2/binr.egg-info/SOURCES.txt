@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+binr/__init__.py
+binr/_modidx.py
+binr/bin.py
+binr.egg-info/PKG-INFO
+binr.egg-info/SOURCES.txt
+binr.egg-info/dependency_links.txt
+binr.egg-info/entry_points.txt
+binr.egg-info/not-zip-safe
+binr.egg-info/requires.txt
+binr.egg-info/top_level.txt
