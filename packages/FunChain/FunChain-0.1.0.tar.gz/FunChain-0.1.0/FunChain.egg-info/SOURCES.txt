@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+FunChain.egg-info/PKG-INFO
+FunChain.egg-info/SOURCES.txt
+FunChain.egg-info/dependency_links.txt
+FunChain.egg-info/requires.txt
+FunChain.egg-info/top_level.txt
+funchain/__init__.py
+funchain/_tools.py
+funchain/core.py
+funchain/py.typed
+tests/test_fastchain_nodes.py
