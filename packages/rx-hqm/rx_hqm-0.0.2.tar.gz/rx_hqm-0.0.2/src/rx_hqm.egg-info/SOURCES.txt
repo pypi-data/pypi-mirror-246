@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/hqm_data/__init__.py
+src/rx_hqm.egg-info/PKG-INFO
+src/rx_hqm.egg-info/SOURCES.txt
+src/rx_hqm.egg-info/dependency_links.txt
+src/rx_hqm.egg-info/requires.txt
+src/rx_hqm.egg-info/top_level.txt
+tests/test_eff_calc.py
+tests/test_pdf.py
+tests/test_scales.py
