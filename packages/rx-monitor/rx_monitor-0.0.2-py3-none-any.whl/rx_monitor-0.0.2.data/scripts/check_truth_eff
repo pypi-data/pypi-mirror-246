@@ -1,0 +1,267 @@
+#!python
+
+import ROOT
+import os
+import numpy
+import utils 
+import argparse 
+import logging 
+
+import plot_fit     as pf
+import utils_noroot as utnr
+
+from fit_manager  import fit_manager as fm
+from rk.selection import selection   as rksl
+
+import pandas            as pnd
+import matplotlib.pyplot as plt
+
+log=utnr.getLogger(__name__)
+
+pnd.options.mode.chained_assignment = None
+#--------------------------------------------------
+class data:
+    l_proc    = None 
+    l_year    = ['2011', '2012', '2015', '2016', '2017', '2018']
+
+    file_version = None 
+
+    cut_jpsi_mm = 'TMath::Abs(B_TRUEID) == 521 && TMath::Abs(Jpsi_TRUEID) ==    443 && TMath::Abs(Jpsi_MC_MOTHER_ID) == 521 && TMath::Abs(L1_TRUEID) == 13 && TMath::Abs(L2_TRUEID) == 13 && TMath::Abs(L1_MC_MOTHER_ID) ==    443 && TMath::Abs(L2_MC_MOTHER_ID) ==    443 && TMath::Abs(H_TRUEID) == 321 && TMath::Abs(H_MC_MOTHER_ID) == 521'
+    cut_jpsi_ee = 'TMath::Abs(B_TRUEID) == 521 && TMath::Abs(Jpsi_TRUEID) ==    443 && TMath::Abs(Jpsi_MC_MOTHER_ID) == 521 && TMath::Abs(L1_TRUEID) == 11 && TMath::Abs(L2_TRUEID) == 11 && TMath::Abs(L1_MC_MOTHER_ID) ==    443 && TMath::Abs(L2_MC_MOTHER_ID) ==    443 && TMath::Abs(H_TRUEID) == 321 && TMath::Abs(H_MC_MOTHER_ID) == 521'
+
+    cut_psi2_mm = 'TMath::Abs(B_TRUEID) == 521 && TMath::Abs(Jpsi_TRUEID) == 100443 && TMath::Abs(Jpsi_MC_MOTHER_ID) == 521 && TMath::Abs(L1_TRUEID) == 13 && TMath::Abs(L2_TRUEID) == 13 && TMath::Abs(L1_MC_MOTHER_ID) == 100443 && TMath::Abs(L2_MC_MOTHER_ID) == 100443 && TMath::Abs(H_TRUEID) == 321 && TMath::Abs(H_MC_MOTHER_ID) == 521'
+    cut_psi2_ee = 'TMath::Abs(B_TRUEID) == 521 && TMath::Abs(Jpsi_TRUEID) == 100443 && TMath::Abs(Jpsi_MC_MOTHER_ID) == 521 && TMath::Abs(L1_TRUEID) == 11 && TMath::Abs(L2_TRUEID) == 11 && TMath::Abs(L1_MC_MOTHER_ID) == 100443 && TMath::Abs(L2_MC_MOTHER_ID) == 100443 && TMath::Abs(H_TRUEID) == 321 && TMath::Abs(H_MC_MOTHER_ID) == 521'
+
+    cut_sign_mm = 'TMath::Abs(B_TRUEID) == 521 && TMath::Abs(L1_TRUEID) == 13 && TMath::Abs(L2_TRUEID) == 13 && TMath::Abs(L1_MC_MOTHER_ID) == 521 && TMath::Abs(L2_MC_MOTHER_ID) == 521 && TMath::Abs(H_TRUEID) == 321 && TMath::Abs(H_MC_MOTHER_ID) == 521'
+    cut_sign_ee = 'TMath::Abs(B_TRUEID) == 521 && TMath::Abs(L1_TRUEID) == 11 && TMath::Abs(L2_TRUEID) == 11 && TMath::Abs(L1_MC_MOTHER_ID) == 521 && TMath::Abs(L2_MC_MOTHER_ID) == 521 && TMath::Abs(H_TRUEID) == 321 && TMath::Abs(H_MC_MOTHER_ID) == 521'
+
+    d_cut = {'ctrl_mm' : cut_jpsi_mm, 'ctrl_ee' : cut_jpsi_ee, 'psi2_ee' : cut_psi2_ee, 'psi2_mm' : cut_psi2_mm, 'sign_ee' : cut_sign_ee, 'sign_mm' : cut_sign_mm}
+
+    cas_dir = os.environ['CASDIR']
+
+    out_dir = utnr.make_dir_path(f'{cas_dir}/monitor/truth_eff')
+#--------------------------------------------------
+def get_cut(proc, trig):
+    chan    = 'mm' if trig == 'MTOS' else 'ee'
+    key     = f'{proc}_{chan}'
+    sig_cut = utnr.get_from_dic(data.d_cut, key)
+    bkg_cut = f'({sig_cut}) == 0'
+
+    log.info(f'Getting cut for {key}')
+
+    return sig_cut, bkg_cut
+#--------------------------------------------------
+def get_obs(proc, trig):
+    if   proc == 'ctrl' and trig in ['ETOS', 'GTIS']:
+        mass= ROOT.RooRealVar('B_const_mass_M', '#it{M^{DTF}_{J/#psi}(K^{+}e^{+}e^{-})}'    , 5000, 6000, 'MeV/#it{c}^{2}')
+    elif proc == 'ctrl' and trig == 'MTOS':
+        mass= ROOT.RooRealVar('B_const_mass_M', '#it{M^{DTF}_{J/#psi}(K^{+}#mu^{+}#mu^{-})}', 5000, 6000, 'MeV/#it{c}^{2}')
+    elif proc == 'psi2' and trig in ['ETOS', 'GTIS']: 
+        mass= ROOT.RooRealVar('B_const_mass_psi2S_M', '#it{M^{DTF}_{#psi(2S)}(K^{+}e^{+}e^{-})}'    , 5000, 6000, 'MeV/#it{c}^{2}')
+    elif proc == 'psi2' and trig == 'MTOS': 
+        mass= ROOT.RooRealVar('B_const_mass_psi2S_M', '#it{M^{DTF}_{#psi(2S)}(K^{+}#mu^{+}#mu^{-})}', 5000, 6000, 'MeV/#it{c}^{2}')
+    elif proc == 'sign' and trig in ['ETOS', 'GTIS']: 
+        mass= ROOT.RooRealVar('B_M', '#it{M(K^{+}e^{+}e^{-})}'    , 5000, 6000, 'MeV/#it{c}^{2}')
+    elif proc == 'sign' and trig == 'MTOS': 
+        mass= ROOT.RooRealVar('B_M', '#it{M(K^{+}#mu^{+}#mu^{-})}', 5000, 6000, 'MeV/#it{c}^{2}')
+    else:
+        log.error(f'Invalid process/channel: {proc}/{trig}')
+        raise
+
+    return mass
+#--------------------------------------------------
+def get_wks(proc, trig):
+    obs     = get_obs(proc, trig)
+
+    if   data.file_version == 'v10.13':
+        c       = ROOT.RooRealVar('c_comb', 'c', -0.04 -0.1, 0.1)
+        bkg     = ROOT.RooExponential('bkg', 'Combinatorial', obs, c)
+    elif data.file_version in ['v10.11tf', 'v10.21p2']:
+        c_1     = ROOT.RooRealVar('c_1', '', 0, 1) 
+        c_2     = ROOT.RooRealVar('c_2', '', 0, 1) 
+        c_3     = ROOT.RooRealVar('c_3', '', 0, 1) 
+
+        bkg     = ROOT.RooBernstein('bkg', 'Pol2', obs, ROOT.RooArgList(c_1, c_2, c_3))
+    else:
+        log.error(f'Wrong file version: {data.file_version}')
+        raise
+
+    mu      = ROOT.RooRealVar('mu_sig', '', 5280, 5250, 5400)
+    lb      = ROOT.RooRealVar('lb_sig', '', 20, 2,  40)
+    gm      = ROOT.RooRealVar('gm_sig', '', -2, 5)
+    dl      = ROOT.RooRealVar('dl_sig', '', 0, 4)
+    sig     = ROOT.RooJohnson('sig', 'Johnson', obs, mu, lb, gm, dl)
+
+    nsig    = ROOT.RooRealVar('nsig', 'n_{sig}', 1e3, 0, 1e8) 
+    nbkg    = ROOT.RooRealVar('nbkg', 'n_{bkg}', 1e5, 0, 1e8) 
+
+    pdf     = ROOT.RooAddPdf('model', 'Model', ROOT.RooArgList(sig, bkg), ROOT.RooArgList(nsig, nbkg))
+
+    wks     = ROOT.RooWorkspace('wks', '')
+    wks.Import(pdf)
+
+    return wks
+#--------------------------------------------------
+def get_cached_yield(out_dir):
+    out_path = f'{out_dir}/fit_results.root'
+    if not os.path.isfile(out_path):
+        return
+
+    ifile = ROOT.TFile(out_path)
+    l_key = ifile.GetListOfKeys()
+    res   = None
+    for key in l_key:
+        obj = key.ReadObj()
+        if not obj.InheritsFrom('RooFitResult'):
+            continue
+
+        res = obj
+
+        break
+
+    if res is None:
+        log.error(f'No result object found in: {out_path}')
+        ifile.ls()
+        raise
+
+    s_par = res.floatParsFinal()
+    par   = s_par.find('nsig')
+
+    val   = par.getVal()
+
+    ifile.Close()
+
+    return val
+#--------------------------------------------------
+def get_yield(proc, trig, year, df):
+    outdir = f'{data.out_dir}/{data.file_version}/{data.kind}/{proc}_{trig}_{year}'
+    nsig   = get_cached_yield(outdir)
+    if nsig is not None:
+        return nsig
+
+    log.info(f'Saving fit results to: {outdir}')
+
+    d_opt                  = {}
+    d_opt['weight']        = None 
+    d_opt['fix_par']       = None 
+    d_opt['nbins']         = 500 
+    d_opt['max_attempts']  = 10 
+    d_opt['bin_threshold'] = 50000
+    d_opt['pval_threshold']= 0.05 
+    d_opt['outdir']        = outdir
+
+    wks  = get_wks(proc, trig)
+    pdf  = wks.pdf('model')
+
+    l_col_mass   = ['B_M', 'B_const_mass_M', 'B_const_mass_psi2S_M']
+    itree, ifile = utils.get_tree_from_df(df, tree_name=trig, file_path=None, l_col=l_col_mass)
+
+    obj=fm(pdf, itree, d_opt)
+    obj.fit()
+    d_fit_par = obj.get_pars()
+    pf.doPlot(outdir)
+
+    nsig = d_fit_par['nsig']
+
+    return nsig
+#--------------------------------------------------
+def get_df(proc, trig, year):
+    if data.input == 'default':
+        root_wc = f'{data.cas_dir}/tools/apply_selection/truth_eff/{proc}/{data.file_version}/{year}_{trig}/*.root'
+        log.info(f'Taking input ntuples from: {root_wc}')
+    else:
+        root_wc = f'{data.input}/truth_eff/{proc}/{data.file_version}/{year}_{trig}/*.root'
+        log.warning(f'Taking input ntuples from: {root_wc}')
+
+    df_sel  = ROOT.RDataFrame(trig, root_wc)
+
+    sig_cut, bkg_cut = get_cut(proc, trig)
+
+    df_pas=df_sel.Filter(sig_cut)
+    df_fal=df_sel.Filter(bkg_cut)
+
+    return df_pas, df_fal
+#--------------------------------------------------
+def check_truth_eff(proc, trig, year):
+    df_truth, df_bkg = get_df(proc, trig, year)
+
+    pas = df_truth.Count().GetValue()
+    fal = get_yield(proc, trig, year, df_bkg)
+
+    return pas, fal
+#--------------------------------------------------
+def get_args():
+    parser = argparse.ArgumentParser(description='Used to store truth matching efficiency information')
+    parser.add_argument('-p', '--proc', nargs='+', help='Process', default=['ctrl', 'psi2', 'sign'])
+    parser.add_argument('-t', '--trig', nargs='+', help='Trigger', default=['MTOS', 'ETOS', 'GTIS'])
+    parser.add_argument('-y', '--year', nargs='+', help='Year'   , default=['2011', '2012', '2015', '2016', '2017', '2018'])
+
+    parser.add_argument('-v', '--vers', type=str, help='Version of input'           , required=True, choices=['v10.11tf', 'v10.13', 'v10.21p2'])
+    parser.add_argument('-k', '--kind', type=str, help='Selection that input passed', required=True, choices=['no_cut', 'all_gorder_no_truth_mass_bdt'])
+    parser.add_argument('-i', '--input',type=str, help='Path with truth_eff directory'             , default='default' )
+    args = parser.parse_args()
+
+    data.l_proc = args.proc
+    data.l_trig = args.trig
+    data.l_year = args.year
+
+    data.file_version = args.vers
+    data.kind         = args.kind
+    data.input        = args.input
+#--------------------------------------------------
+def save(d_yld):
+    df = pnd.DataFrame(d_yld)
+    save_table(df)
+    save_json(df)
+#--------------------------------------------------
+def save_table(df):
+    f1 = lambda x : x
+    f2 = lambda x : f'{x:.0f}'
+    f3 = lambda x : f'{x:.0f}'
+    f4 = lambda x : f'{x:.3f}'
+
+    l_form = [f1, f2, f3, f4] 
+
+    df.to_latex(buf=f'{data.out_dir}/{data.file_version}/stats.tex', formatters=l_form, index=False)
+#--------------------------------------------------
+def save_json(df):
+    json_dir  = utnr.make_dir_path(f'{data.out_dir}/{data.file_version}/{data.kind}')
+
+    for [sam, pas, fal, eff ] in df.values.tolist():
+        json_path = f'{json_dir}/{sam}.json'
+        utnr.dump_json([pas, fal], json_path)
+#--------------------------------------------------
+def get_data():
+    pickle_path = f'{data.out_dir}/{data.file_version}/data.pkl'
+    if os.path.isfile(pickle_path):
+        log.visible(f'Reusing cached: {pickle_path}')
+        d_yld = utnr.load_pickle(pickle_path)
+        return d_yld
+
+    d_yld = {'Sample' : [], 'Passed' : [], 'Failed' : [], 'Efficiency' : []}
+    for proc in data.l_proc:
+        for trig in data.l_trig:
+            for year in data.l_year:
+                pas, [fal, err]  = check_truth_eff(proc, trig, year)
+                l_data           = [pas, fal]
+
+                sample = f'{proc}_{trig}_{year}'
+                eff    = pas / (pas + fal)
+
+                d_yld['Sample']     += [sample]
+                d_yld['Passed']     += [pas   ]
+                d_yld['Failed']     += [fal   ]
+                d_yld['Efficiency'] += [eff   ]
+
+    utnr.dump_pickle(d_yld, pickle_path)
+
+    return d_yld
+#--------------------------------------------------
+def main():
+    get_args()
+    d_yld = get_data()
+    save(d_yld)
+#--------------------------------------------------
+if __name__ == '__main__':
+    main()
+
