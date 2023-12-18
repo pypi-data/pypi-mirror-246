@@ -1,0 +1,3 @@
+differential-crosscheck-fits>=0.0.3
+rx_scripts>=0.2.8
+rx-tools>=0.0.7
