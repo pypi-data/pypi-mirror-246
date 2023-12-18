@@ -1,0 +1,19 @@
+{
+  "inchEighthFormat": "{0,number,integer}{1}\"",
+  "inchFormat": "{0,number,integer}\"",
+  "footInchSeparator": "",
+  "footFormat": "{0,number,integer}''",
+  "centimeterUnit": "cm",
+  "millimeterUnit": "mm",
+  "squareMeterUnit": "m²",
+  "squareFootUnit": "sq ft",
+  "footUnit": "ft",
+  "inchDecimalsFormatWithUnit": "{0,number}\"",
+  "inchUnit": "inch",
+  "footDecimalsFormat": "{0,number}",
+  "footDecimalsFormatWithUnit": "{0,number}'",
+  "meterUnit": "m",
+  "footInchEighthFormat": "{0,number,integer}''{1,number,integer}{2}\"",
+  "inchDecimalsFormat": "{0,number}",
+  "footInchFormat": "{0,number,integer}''{1,number}\""
+}
