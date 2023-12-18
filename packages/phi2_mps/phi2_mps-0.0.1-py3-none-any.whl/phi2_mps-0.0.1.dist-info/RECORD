@@ -1,0 +1,7 @@
+phi2_mps-0.0.1.dist-info/METADATA,sha256=mc-oT1mQo_v5RY3m9xZQU4Lr6hb9wZxkCFkFCjEvROQ,250
+phi2_mps-0.0.1.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+phi2_mps-0.0.1.dist-info/entry_points.txt,sha256=6JZe2bMVTiT1XKRXZBk-Qjtzq80NuqKEUBt_rXAJQrc,48
+phi2_mps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phi2_mps/cli.py,sha256=88IugaJpnxCQ2lGzI_9UM1ltVLrA9f7FDnFLjguUX-c,1882
+phi2_mps/phi2.py,sha256=ymqVmSkowVFheusEoRIod6JKHW6wlh2TpDGR1BmMiNQ,5088
+phi2_mps-0.0.1.dist-info/RECORD,,
