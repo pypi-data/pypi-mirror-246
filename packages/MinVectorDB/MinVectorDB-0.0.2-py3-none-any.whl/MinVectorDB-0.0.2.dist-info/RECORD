@@ -1,0 +1,10 @@
+min_vec/__init__.py,sha256=rWrQyrBPmSFTs7L6Fk5OqPyfv__PG6oB1hIzJUNNEsw,55
+min_vec/model.py,sha256=76JT7YfTZjwkFEhzM7O70Qilsznwchax9U8VrB5s97I,12132
+min_vec/utils.py,sha256=xnESzsVy1H6bAFgzSg5Z97foNyaTTMNNGBbAn6VGLBs,147
+test/__init__.py,sha256=8iAdIJXYqel1zBdyHUyY24Y-yRBAk4HaMMOUb-sSi90,31
+test/test_model.py,sha256=iU9YMSHQDFDeZwXDUS9jRFGAujc-Z1fnDVhYGvYEtkU,6179
+MinVectorDB-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+MinVectorDB-0.0.2.dist-info/METADATA,sha256=4YeEWrbAwZP58XaVNUUcHd_xue7EMjphWON-ntJnlYk,6460
+MinVectorDB-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MinVectorDB-0.0.2.dist-info/top_level.txt,sha256=7OPyLy5SC6yZzz8uaC_kK33stioSR7_pxdldOZRFTFE,13
+MinVectorDB-0.0.2.dist-info/RECORD,,
