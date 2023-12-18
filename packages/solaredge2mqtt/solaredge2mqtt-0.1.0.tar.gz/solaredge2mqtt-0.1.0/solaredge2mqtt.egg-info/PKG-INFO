@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: solaredge2mqtt
+Version: 0.1.0
+Summary: Read data from SolarEdge Inverter and publish it to MQTT
+Home-page: https://github.com/deroetzi/solaredge2mqtt
+Author: Johannes Ott
+Author-email: info@johannes-ott.net
+Project-URL: Bug Reports, https://github.com/deroetzi/solaredge2mqtt/issues
+Keywords: smart home
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Home Automation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: solaredge_modbus==0.8.0
+Requires-Dist: pydantic==2.3.0
+Requires-Dist: pydantic-settings==2.0.3
+Requires-Dist: loguru==0.7.2
+Requires-Dist: gmqtt==0.6.13
+
+# Solaredge 2 MQTT
