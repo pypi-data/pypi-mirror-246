@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: maxlog
+Version: 0.0.1
+Summary: Loguru logging for personal projects
+Author-Email: Max Ludden <dev@maxludden.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: ruff>=0.1.7
+Requires-Dist: python-dotenv>=1.0.0
+Description-Content-Type: text/markdown
+
+# maxlog
