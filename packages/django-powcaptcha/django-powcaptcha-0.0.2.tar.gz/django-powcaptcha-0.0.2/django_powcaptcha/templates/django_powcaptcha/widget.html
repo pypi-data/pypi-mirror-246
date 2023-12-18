@@ -1,0 +1,29 @@
+<input type="hidden" name="powcaptcha_challenge" value="{{ captcha_challenge }}" />
+
+<div
+    class="captcha-container"
+    data-sqr-captcha-url="{{ captcha_url }}"
+    data-sqr-captcha-challenge="{{ captcha_challenge }}"
+    data-sqr-captcha-callback="myCaptchaCallback">
+</div>
+
+<script src="{{ captcha_url }}/static/captcha.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof window.myCaptchaCallback === 'function') {
+        return;
+    }
+
+    window.myCaptchaCallback = (nonce) => {
+        Array.from(document.querySelectorAll("input[name='powcaptcha_nonce']")).forEach(e => e.value = nonce);
+        Array.from(document.querySelectorAll("input[type='submit']")).forEach(e => e.disabled = false);
+        Array.from(document.querySelectorAll("button[type='submit']")).forEach(e => e.disabled = false);
+    };
+});
+</script>
+
+<style>
+.sqr-captcha-hidden {
+    display: none !important;
+}
+</style>
