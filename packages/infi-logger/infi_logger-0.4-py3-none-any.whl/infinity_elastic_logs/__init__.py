@@ -1,0 +1,1 @@
+from infinity_elastic_logs.elastic_logger import ElasticLogger
