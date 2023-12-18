@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Automation-Framework-by-Gauge
+Version: 0.0.1
+Summary: Test Automation framework with Gauge
+Home-page: https://github.com/pypa/dale_auto
+Author: Dale Hoang
+Author-email: huy.quochoang2308@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+This test framework intend to test api/web/mobiles 
