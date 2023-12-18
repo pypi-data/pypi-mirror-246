@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: conson
+Version: 2.1
+Summary: A simple json configuration file manager
+Author: Paweł Gabryś
+Author-email: p.gabrys@int.pl
+
+./README.md
