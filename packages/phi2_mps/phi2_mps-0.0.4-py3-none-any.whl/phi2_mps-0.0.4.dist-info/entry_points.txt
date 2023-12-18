@@ -1,0 +1,3 @@
+[console_scripts]
+phi2-mps = phi2_mps.cli:main
+
