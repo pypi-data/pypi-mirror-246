@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/dolfen.py
+src/dolfen.egg-info/PKG-INFO
+src/dolfen.egg-info/SOURCES.txt
+src/dolfen.egg-info/dependency_links.txt
+src/dolfen.egg-info/requires.txt
+src/dolfen.egg-info/top_level.txt
