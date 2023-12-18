@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+django_rtl_unfold.egg-info/PKG-INFO
+django_rtl_unfold.egg-info/SOURCES.txt
+django_rtl_unfold.egg-info/dependency_links.txt
+django_rtl_unfold.egg-info/top_level.txt
