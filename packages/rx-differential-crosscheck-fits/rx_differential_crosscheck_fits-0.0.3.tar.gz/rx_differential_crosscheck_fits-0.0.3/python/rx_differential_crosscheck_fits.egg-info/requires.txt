@@ -1,0 +1,6 @@
+pandas
+matplotlib
+scipy
+generic-analysis-scripts>=0.1.1
+rx-selection>=0.0.3
+rx-tools>=0.0.7
