@@ -1,0 +1,3 @@
+[console_scripts]
+dead-link-detective=detective.__main__:main
+
