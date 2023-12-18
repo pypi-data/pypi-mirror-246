@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tracescopio
+Version: 0.0.1
+Summary: Tracescopio - um capturador simples de tracebacks
+Home-page: UNKNOWN
+Author: Tercio A Oliveira
+Author-email: t3rcio@gmail.com
+License: UNKNOWN
+Description: Tracescopio - Captura tracebacks de projetos Django. Use um middleware ou um decorator para otbter os traces e envia-los a um servidor
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
