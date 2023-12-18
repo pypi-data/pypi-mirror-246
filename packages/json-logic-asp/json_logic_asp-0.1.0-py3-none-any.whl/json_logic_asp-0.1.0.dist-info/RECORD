@@ -1,0 +1,10 @@
+json_logic_clingo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_logic_clingo/demo.py,sha256=ReCPcz6RnWSw5v6aHanfnPC2BCeY59rRgOrsEXeaExM,39
+json_logic_simplifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_logic_simplifier/demo.py,sha256=ReCPcz6RnWSw5v6aHanfnPC2BCeY59rRgOrsEXeaExM,39
+json_logic_translator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_logic_translator/demo.py,sha256=ReCPcz6RnWSw5v6aHanfnPC2BCeY59rRgOrsEXeaExM,39
+json_logic_asp-0.1.0.dist-info/LICENSE,sha256=lgwK3AKpHFmLX7Wz5bLRL1MIzkTw5mDtFmOENSlKjIY,1098
+json_logic_asp-0.1.0.dist-info/METADATA,sha256=27E5k_XfOXHZ7hIR-r4TytbGFPrzJKouHWPBUJFG-mI,683
+json_logic_asp-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+json_logic_asp-0.1.0.dist-info/RECORD,,
