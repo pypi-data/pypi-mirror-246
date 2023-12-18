@@ -1,0 +1,9 @@
+airflow/providers/daskexecutor/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/daskexecutor/__init__.py,sha256=aMFXSbfY6eSJJ1U4ViC3CUVZnGzImTJQVgyF1oR9OTM,1587
+airflow/providers/daskexecutor/get_provider_info.py,sha256=4JrpUN7g0b3Jivp2WjXfQopkKetp2HHtnpLa3XSqkXk,3546
+airflow/providers/daskexecutor/executors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/daskexecutor/executors/dask_executor.py,sha256=u_ey0bWQ_1QWwZl2LhOtpO3JnoETUTei3wElYJGtMP0,5043
+apache_airflow_providers_daskexecutor-1.1.1.dist-info/entry_points.txt,sha256=jbs1MxWEDrtT5MNyziaLpHTY9fDsyLHWSWaKKkJFLoo,108
+apache_airflow_providers_daskexecutor-1.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_daskexecutor-1.1.1.dist-info/METADATA,sha256=jaYcGBkDt1NY51kxT1Bgx2oWFkj-RM9o4hVDDEG7DUM,5416
+apache_airflow_providers_daskexecutor-1.1.1.dist-info/RECORD,,
