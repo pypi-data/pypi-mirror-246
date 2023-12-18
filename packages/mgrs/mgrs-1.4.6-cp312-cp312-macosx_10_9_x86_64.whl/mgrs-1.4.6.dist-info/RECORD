@@ -1,0 +1,8 @@
+libmgrs.cpython-312-darwin.so,sha256=jqLK2fDus-_U9MODgudfeswRib9psfIseNK0GViKxPc,60024
+mgrs/__init__.py,sha256=AnqsRbAyWsmnA43tqs7TZsn_qJj4ZjuWa3tWUK8cloI,4439
+mgrs/core.py,sha256=yiD-UDvCTPgUUy6GigcVMpy767GGPNpl20xEz8K3BPM,9660
+mgrs-1.4.6.dist-info/LICENSE,sha256=i8ecw76xRH2ZtH_3nSpkEiVOhbVtX_f5vRPh9pd6n24,1096
+mgrs-1.4.6.dist-info/METADATA,sha256=ggTpKHYw7sQCJm87dQDb3LcJraenGnvdMFyWv3GLxaA,3096
+mgrs-1.4.6.dist-info/WHEEL,sha256=1_erwh2TCU3TrYzgBQGCtZskLEmw2vbfn7Xu2mHHvyU,111
+mgrs-1.4.6.dist-info/top_level.txt,sha256=U7WN6DNOWDFVjPenTwmtLTqZib5NQRJP0g95POdi4M4,13
+mgrs-1.4.6.dist-info/RECORD,,
