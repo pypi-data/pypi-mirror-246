@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: camel-case-switcher
+Version: 2.1.0
+Summary: Python tool for changing style in name of functions etc. from camelCase/CamelCase to the snake_case.
+Home-page: https://gitlab.com/Hares-Lab/library/camel-case-switcher
+Author: Peter Zaitcev / USSX Hares
+Author-email: ussx.hares@yandex.ru
+Maintainer: Peter Zaitcev / USSX Hares
+License: MIT Licence
+Keywords: camel_case,strings,snake_case
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: regex
+Provides-Extra: all
+Requires-Dist: wheel ; extra == 'all'
+Requires-Dist: lxml ; extra == 'all'
+Requires-Dist: unittest-xml-reporting ; extra == 'all'
+Provides-Extra: test
+Requires-Dist: wheel ; extra == 'test'
+Requires-Dist: lxml ; extra == 'test'
+Requires-Dist: unittest-xml-reporting ; extra == 'test'
+
+
+# Package camel-case-switcher
+ - Version: 2.1.0
+ - ReadMe: **TBD**

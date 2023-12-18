@@ -1,0 +1,11 @@
+camel_case_switcher/__init__.py,sha256=FUKIIXCgHcya5dSf3Spo7q74bpt10DpdMO0k5eOoR24,1651
+camel_case_switcher/_impl_fallback.py,sha256=Eylks3otY1kDDqgZBnCs0Uu29ew1TdXR_HO8ziZ_glE,1788
+camel_case_switcher/_impl_regex.py,sha256=0RI5pf1KMqgpt8TzUYAcegZXaTDNFabnQpz-3tBItYw,1368
+camel_case_switcher/deprecated.py,sha256=oPQCfxzcvq7Z6lqDHlgZ7pMDXO5lmuu5X2Wc1WWrm-w,1942
+camel_case_switcher/dict_processor.py,sha256=lGeyWf_Kh6CDgaAQkxDnZlEIE1UflV4nBEe2yHsFxY0,2871
+camel_case_switcher/string_processor.py,sha256=Jmt37ZYr7qslPb4jOsr6POrNIaiglF1psYztrNdMHYA,171
+camel_case_switcher-2.1.0.dist-info/LICENSE.txt,sha256=LPP1y5lEZZTnckYhP-twt1h1wMD5DbqqND3yXvv0oek,1075
+camel_case_switcher-2.1.0.dist-info/METADATA,sha256=04RbzpaYB3kZI4nAzP4B2vzCx1m0fCk2bMOEZ56I7Hk,1384
+camel_case_switcher-2.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+camel_case_switcher-2.1.0.dist-info/top_level.txt,sha256=AdZow9Cc2pVO01sxpwljqtFQSS6WfnzonjQvm133t2Y,20
+camel_case_switcher-2.1.0.dist-info/RECORD,,
