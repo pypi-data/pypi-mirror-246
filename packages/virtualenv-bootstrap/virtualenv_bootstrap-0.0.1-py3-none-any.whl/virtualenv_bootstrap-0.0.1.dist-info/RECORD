@@ -1,0 +1,16 @@
+virtualenv_bootstrap/__init__.py,sha256=FmmontVLUlsI56lSRwdwzRzNexqS9jedqX-vcjI6MPE,331
+virtualenv_bootstrap/_version.py,sha256=cW-ZWkvI8hd2WB45U48UUY3NqYDy4rPf0etHg29ZU5s,93
+virtualenv_bootstrap/api.py,sha256=84pD9AtdWw5i9rWr9zVJeZ12UuqC03DOffmJk4H9uBE,57
+virtualenv_bootstrap/automation.py,sha256=Gm-f6-nnLR-ar8Ssfqhi5HjyVAuXsE9N3R5jWb_9S6k,4102
+virtualenv_bootstrap/paths.py,sha256=97S8BLeL_V7rmEA-I0RmMZCJ8p1lZseMiorow53W4C8,642
+virtualenv_bootstrap/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+virtualenv_bootstrap/tests/__init__.py,sha256=2nfXkz9TigdtVWm0YAeP8qD83i0KvM74AWag9WJMw4Q,58
+virtualenv_bootstrap/tests/helper.py,sha256=p_oZhY0NE1HTQ50ftj1y4sJ6nVOLxQrPwseOlX0AD4s,447
+virtualenv_bootstrap/vendor/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+virtualenv_bootstrap/vendor/pytest_cov_helper.py,sha256=nR-I6d8j0P1JQy6dxIiZtG9Gz0DkfJFpk6EPCCpfnm8,3572
+virtualenv_bootstrap-0.0.1.dist-info/AUTHORS.rst,sha256=nHTveFzFQh1uHjbLOIj6LbooSLAAByNffYkdIMKP-Pc,670
+virtualenv_bootstrap-0.0.1.dist-info/LICENSE.txt,sha256=jq9kndvbxMXbqztcOpWx2wVuQxT2EJ7uy0UN3HG9TPA,1131
+virtualenv_bootstrap-0.0.1.dist-info/METADATA,sha256=xQy7bB0Yt3TfByKKTm7Z4VnNSrZWS6W27rahc8x9P5s,4973
+virtualenv_bootstrap-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+virtualenv_bootstrap-0.0.1.dist-info/top_level.txt,sha256=SKaRXFVASKNYyJSMipQzm8Oqol-ZtytRMisQFi-6pzk,21
+virtualenv_bootstrap-0.0.1.dist-info/RECORD,,
