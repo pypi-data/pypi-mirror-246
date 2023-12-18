@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: phi2_mps
+Version: 0.0.3
+Summary: phi2 command line tools with apple mps support
+Author-Email: wushuhong <wushuhong@atomgradient.com>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# phi2_mps
