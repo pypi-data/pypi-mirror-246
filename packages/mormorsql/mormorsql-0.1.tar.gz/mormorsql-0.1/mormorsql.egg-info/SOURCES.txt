@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mormorsql/__init__.py
+mormorsql/dfsql.py
+mormorsql.egg-info/PKG-INFO
+mormorsql.egg-info/SOURCES.txt
+mormorsql.egg-info/dependency_links.txt
+mormorsql.egg-info/requires.txt
+mormorsql.egg-info/top_level.txt
+tests/test.py
