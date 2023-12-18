@@ -1,0 +1,8 @@
+README.md
+setup.py
+fucker/fucker.py
+fucktheimage.egg-info/PKG-INFO
+fucktheimage.egg-info/SOURCES.txt
+fucktheimage.egg-info/dependency_links.txt
+fucktheimage.egg-info/requires.txt
+fucktheimage.egg-info/top_level.txt
