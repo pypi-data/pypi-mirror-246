@@ -1,0 +1,8 @@
+libmgrs.cp312-win_amd64.pyd,sha256=9XO6X62J2PTiMwyhDIVJyTGnYalUG8EosUsYvqIPtMs,32256
+mgrs/__init__.py,sha256=0qST7Qod6fNyjmB2QuGExnaaAowLn6N5vz_WFEuYHos,4589
+mgrs/core.py,sha256=FwEerYQ0g4ljsJ4Ry8c2bOq4dU9LM4o6gSxw_K99Nhk,9967
+mgrs-1.4.6.dist-info/LICENSE,sha256=P_9-FZ5Kk26LSpjbfrYKJ4aUjQYzzoH0MSqVrSuli08,1116
+mgrs-1.4.6.dist-info/METADATA,sha256=38XXM9aG-VGjZp6DNRD4auB6hGGptvsHqAdPYwV_lDo,3454
+mgrs-1.4.6.dist-info/WHEEL,sha256=j9Aissza3750LQHFAQyYerNjmkEON1-8w_RaZNFtKSs,102
+mgrs-1.4.6.dist-info/top_level.txt,sha256=U7WN6DNOWDFVjPenTwmtLTqZib5NQRJP0g95POdi4M4,13
+mgrs-1.4.6.dist-info/RECORD,,
