@@ -1,0 +1,9 @@
+cythoninstallhelpers
+xarray
+h5netcdf
+
+[docs]
+sphinx
+sphinxcontrib-napoleon
+sphinx-autodoc-typehints
+m2r2
