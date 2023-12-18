@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ml-solution
+Version: 0.0.1
+Summary: A mechine learn pipline lib.
+Home-page: https://github.com/test/test
+Author: hugo
+Author-email: hugo279@foxmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas >=2.0
+
+# ml_toolbox
+
+This package is used to quickly build a pipline for mechine learning.
