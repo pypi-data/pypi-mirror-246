@@ -1,0 +1,7 @@
+build/
+dist/
+minecraft_data.egg-info
+*.pyc
+__pycache__
+.vscode
+.idea
