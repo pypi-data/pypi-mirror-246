@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mlflow-plugin-proxy-auth
+Version: 0.1.0
+Summary: Provides authentication to Mlflow server using Proxy-Authorization header.
+Home-page: https://github.com/LordMathis/mlflow-plugin-proxy-auth
+Author: Matúš Námešný
+Author-email: matus@namesny.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mlflow
+
+# Mlflow Plugin Proxy Auth
+
+Provides authentication to Mlflow server using [Proxy-Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authorization).
+
+## Usage
+
+Install the package into your virtual environment.
+
+```
+pip install mlflow-plugin-proxy-auth
+```
+
+Set up mlflow environment variables
+
+```env
+MLFLOW_PROXY_USERNAME=username
+MLFLOW_PROXY_PASSWORD=password
+MLFLOW_TRACKING_AUTH="proxy_auth_provider"
+```
