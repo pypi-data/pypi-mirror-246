@@ -1,0 +1,16 @@
+COPYING.LESSER
+README.md
+setup.py
+sdbus_async/systemd/__init__.py
+sdbus_async/systemd/interfaces.py
+sdbus_async/systemd/objects.py
+sdbus_async/systemd/py.typed
+sdbus_block/systemd/__init__.py
+sdbus_block/systemd/interfaces.py
+sdbus_block/systemd/objects.py
+sdbus_block/systemd/py.typed
+sdbus_systemd.egg-info/PKG-INFO
+sdbus_systemd.egg-info/SOURCES.txt
+sdbus_systemd.egg-info/dependency_links.txt
+sdbus_systemd.egg-info/requires.txt
+sdbus_systemd.egg-info/top_level.txt
