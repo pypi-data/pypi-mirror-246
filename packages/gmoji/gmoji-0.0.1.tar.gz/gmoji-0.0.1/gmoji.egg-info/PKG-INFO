@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gmoji
+Version: 0.0.1
+Summary: Emoji converter from text
+Author: Ganesh PS
+Author-email: <ganeshps97@gmail.com>
+Keywords: python,NLP,emoji converter,emoji meaning,emoji to text
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that allows to convert a text with emojies into their corresponding meaning to allow NLP language models to help interpret them easier
