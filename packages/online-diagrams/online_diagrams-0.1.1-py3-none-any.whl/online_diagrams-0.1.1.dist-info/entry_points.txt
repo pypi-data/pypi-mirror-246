@@ -1,0 +1,2 @@
+[console_scripts]
+diagrams = dgs.diagrams_cmd:main
