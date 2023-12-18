@@ -1,0 +1,8 @@
+rpds_py-0.15.1.dist-info/METADATA,sha256=spF8tSa0sfCkzptXC7rU9JouloskzxL386uBf-oRHLw,4203
+rpds_py-0.15.1.dist-info/WHEEL,sha256=r4Te48OdXB4bdfpHUw4V5gHpGacxTrI9wQ9WUHbsGok,90
+rpds_py-0.15.1.dist-info/license_files/LICENSE,sha256=i8tyyC6ornSAIpPEHZOtfVFDQAGwrkWmA6WvD1B67go,1076
+rpds/__init__.py,sha256=w3MgXW7lpTCICw0KXbw20QX573_kbsEnWIeMsCAugvM,99
+rpds/__init__.pyi,sha256=Pma0wcuI8VZfazuS0Wg3VKk5d7UzxhQ6zGsV1gHhCdM,2262
+rpds/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpds/rpds.cp39-win32.pyd,sha256=IO7Qzi3eok1D0l3mbzpE8o-ExpOIPsr4Mz1HBvZriGs,417792
+rpds_py-0.15.1.dist-info/RECORD,,
